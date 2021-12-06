@@ -1,0 +1,49 @@
+#app-mount {
+	.wrapper-2jXpOf {
+		&:hover .content-1x5b-n {
+			background: var(--background-4);
+			.icon-1DeIlz {
+				color: var(--interactive-normal);
+			}
+		}
+		&.modeSelected-346R90 .content-1x5b-n {
+			background: var(--background-4);
+		}
+		&.modeSelected-346R90 .content-1x5b-n {
+			.icon-1DeIlz {
+				color: var(--interactive-active);
+			}
+			&::before {
+				content: "";
+				border-radius: 50px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 4px;
+				height: 16px;
+				left: 0;
+				background: rgb(var(--accent));
+			}
+		}
+	}
+	.content-1x5b-n {
+		border-radius: var(--rounded);
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0 16px;
+	}
+	.mainContent-u_9PKf {
+		padding: 8px 0;
+		cursor: var(--cursor);
+	}
+	.unread-2lAfLh {
+		border-radius: 50px;
+		left: 0;
+		width: 4px;
+		height: 10px;
+		margin-top: 0;
+		transform: translateY(-50%);
+		background: var(--pill-unread);
+		z-index: 1;
+	}
+}

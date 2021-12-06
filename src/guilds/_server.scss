@@ -1,0 +1,49 @@
+#app-mount {
+	.guilds-1SWlCJ {
+		.listItem-2Ig28I foreignObject {
+			mask: none;
+			border-radius: var(--rounded-high);
+		}
+		.wrapper-25eVIn {
+			border-radius: var(--rounded);
+		}
+
+		[class*="pill"] {
+			width: 4px;
+			margin-left: 0px;
+			span {
+				height: 50% !important;
+				width: 100% !important;
+				transform: scale(0,1) !important;
+				transition: 0.15s ease !important;
+				margin-left: 0;
+				border-radius: var(--rounded-high);
+			}
+			@for $i from 0 through 8 {
+				span[style*="height: #{$i}"] {
+					transform: scale(1,.24) !important;
+					background: var(--pill-unread);
+				}
+			}
+			// Hovered
+			@for $i from 9 through 20 {
+				span[style*="height: #{$i}"] {
+					transform: scale(1,.7) !important;
+					background: var(--pill-hovered);
+				}
+			}
+			// Selected
+			@for $i from 21 through 40 {
+				span[style*="height: #{$i}"] {
+					transform: scale(1,1) !important;
+					background: rgb(var(--accent));
+				}
+			}
+		}
+		
+		.svg-1X37T1,
+		.wrapper-25eVIn {
+			border-radius: var(--rounded-high);
+		}
+	}
+}

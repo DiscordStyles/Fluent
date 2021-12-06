@@ -1,0 +1,42 @@
+#app-mount {
+	.cozy-3raOZG {
+		.avatar-1BDn8e {
+			left: 32px;
+		}
+
+		.contents-2mQqc9 > .messageContent-2qWWxC:not(:empty) {
+			margin-left: 0;
+			padding: 12px 16px;
+			background: var(--background-5);
+			border-radius: var(--rounded);
+			display: inline-block;
+		}
+
+		&.groupStart-23k01U .contents-2mQqc9 {
+			background: var(--background-5);
+			display: inline-block;
+			border-radius: var(--rounded) var(--rounded);
+			
+			.header-23xsNx {
+				padding: 12px 16px 4px;
+			}
+			.messageContent-2qWWxC {
+				&:empty {
+					margin-top: 8px;
+					display: block;
+				}
+				&:not(:empty) {
+					padding-top: 0;
+				}
+			}
+		}
+
+
+
+
+		&.wrapper-2a6GCs {
+			padding-left: 88px;
+			padding-right: 64px !important;
+		}
+	}
+}

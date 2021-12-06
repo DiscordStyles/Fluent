@@ -1,0 +1,13 @@
+/**
+ * @name THEME
+ * @author Gibbu
+ * @version 1.0.0
+ * @description Literally the best theme there is for BetterDiscord.
+ * @source https://github.com/BDThemeTemplate
+*/
+
+@import url('https://gibbu.github.io/BDThemeTemplate/THEME.css');
+
+:root {
+	--username-colour: red;
+}

@@ -1,0 +1,25 @@
+name: 'Compile SCSS'
+
+on: 'push'
+
+jobs:
+  build:
+    name: 'Build CSS'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'Checkout Repo'
+        uses: 'actions/checkout@v2'
+      - name: 'Setup NodeJS'
+        uses: 'actions/setup-node@v1'
+        with:
+          node-version: 12
+      - name: 'Clean install of dependencies'
+        run: 'npm ci'
+      - name: 'Run build script'
+        run: 'npm run build'
+      - name: 'Deploy'
+        uses: 'peaceiris/actions-gh-pages@v3'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: 'deploy'
+          publish_dir: './dist'

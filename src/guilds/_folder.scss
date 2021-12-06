@@ -1,0 +1,20 @@
+#app-mount {
+	.wrapper-shyHJt {
+		width: var(--server-container);
+	}
+	.folderIconWrapper-1Ml_1q {
+		border-radius: var(--rounded);
+	}
+	.expandedFolderBackground-3ZDF05 {
+		width: var(--server-size);
+		border-radius: var(--rounded);
+		height: 100%;
+	}
+	.guildIcon-d5nahd {
+		border-radius: 2px;
+	}
+
+	[id^="folder-items"][role="group"] {
+		height: auto !important;
+	}
+}

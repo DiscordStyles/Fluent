@@ -1,0 +1,22 @@
+// Wack ass text flickering
+html, span:not([class*="spinner-"]):not([class*="spinnerItem"]) {
+	backface-visibility: hidden;
+}
+
+body,
+.appMount-3lHmkl,
+.bg-h5JY_x {
+	background: var(--background-2);
+}
+
+// Remove pointer from clickable
+.clickable-536fPF {
+	cursor: var(--cursor);
+}
+
+// Version
+[aria-label="USER_SETTINGS"] .info-1VyQPT > span:first-child::before {
+	display: block;
+	content: "Fluent v" var(--fluent-version);
+	text-transform: none;
+}

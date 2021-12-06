@@ -1,0 +1,27 @@
+.theme-dark,
+html.theme-dark #app-mount .theme-light .root-1gCeng,
+html.theme-dark .force-theme.theme-light {
+	--background-1: #171717;
+	--background-2: #202020;
+	--background-3: #272727;
+	--background-4: #2b2b2b;
+	--background-5: #2f2f2f;
+	--background-6: #2d2d2d;
+	--background-7: #343434;
+
+	--border: #1d1d1d;
+	--border-high: #3b3b3b; // Used for context menus
+
+	--pill-unread: #9a9a9a;
+	--pill-hovered: #fff;
+
+	--btn-bg: var(--background-4);
+	--btn-bg-hover: var(--background-7);
+
+	--scrollbar-background: hsl(0 0% 50%);
+
+	--textbox-bg: #2f2f2f;
+	--textbox-bg-hover: #333333;
+	--textbox-border: hsl(0 0% 100% / .045);
+	--textbox-underline: #a1a1a1;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "bdthemetemplate",
+  "version": "1.0.0",
+  "description": "Quick template to create BetterDiscord themes using SCSS.",
+  "repository": "https://github.com/Gibbu/BDThemeTemplate",
+  "author": "Gibbu <Gibbu_@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "node ./scripts/dev",
+    "build": "node ./scripts/build"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "sass": "^1.42.1"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.2"
+  }
+}

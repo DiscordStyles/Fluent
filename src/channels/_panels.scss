@@ -1,0 +1,21 @@
+#app-mount {
+	.panels-j1Uci_ {
+		background: transparent;
+		background: var(--background-3);
+		border-radius: var(--rounded);
+		border: 1px solid var(--border);
+		margin-bottom: 16px;
+	}
+
+	// Voice connected
+	.container-1giJp5 {
+		&:only-child {
+			border: none;
+		}
+	}
+
+	// User area
+	.container-3baos1 {
+		padding: 0 8px;
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"compiler": {
+		"prefix": true
+	},
+	"dev": [
+		{
+			"target": ["src", "main.scss"],
+			"output": ["Fluent.theme.css"]
+		}
+	],
+	"build": [
+		{
+			"target": ["src", "_base.scss"],
+			"output": ["dist", "Fluent.css"]
+		}
+	]
+}

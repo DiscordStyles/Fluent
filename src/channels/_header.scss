@@ -1,0 +1,42 @@
+#app-mount {
+	.sidebar-2K8pFh {
+		.content-3YMskv > div[style="height: 84px;"] {
+			margin-top: 42px;
+		}
+	}
+
+	.container-1taM1r {
+		margin: 0 0 16px;
+	}
+
+	.header-2V-4Sw {
+		background: var(--btn-bg);
+		box-shadow: none;
+		border-radius: var(--rounded);
+		border: 1px solid var(--border);
+		transition: none;
+		cursor: var(--cursor);
+		filter: none;
+		&:hover {
+			background: var(--btn-bg-hover);
+		}
+	}
+
+	// Banner
+	.animatedContainer-1NSq4T {
+		background: transparent;
+		box-shadow: none;
+		width: 268px;
+		margin: 0 16px;
+		height: 200px;
+	}
+	.bannerImage-3KhIJ6 {
+		border-radius: var(--rounded);
+		overflow: hidden;
+		width: 100%;
+		margin-top: 64px;
+		img {
+			width: 100%;
+		}
+	}
+}
