@@ -3,7 +3,6 @@ So, you're looking to contribute? Nice!
 This will help you get started.
 
 ## Prerequisites
-- Having [pnpm](https://pnpm.io/) installed.
 - Basic knowledge of NodeJS.
 - Basic knowledge of SCSS/CSS.
 - Basic knowledge of Git/GitHub.
