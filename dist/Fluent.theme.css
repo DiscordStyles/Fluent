@@ -1,13 +1,14 @@
 /**
- * @name THEME
- * @author Gibbu
- * @version 1.0.0
- * @description Literally the best theme there is for BetterDiscord.
- * @source https://github.com/BDThemeTemplate
+ * @name Fluent
+ * @author Gibbu#1211
+ * @version 0.0.1
+ * @description Brings the Windows 11 design system to Discord.
+ * @source https://github.com/DiscordStyles/Fluent
 */
 
-@import url('https://gibbu.github.io/BDThemeTemplate/THEME.css');
-
 :root {
-	--username-colour: red;
+	--accent: 98, 205, 254;
+
+	--channels-width: 300px;
+	--members-width: 280px;
 }
