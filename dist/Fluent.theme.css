@@ -6,6 +6,8 @@
  * @source https://github.com/DiscordStyles/Fluent
 */
 
+@import url("https://discordstyles.github.io/Fluent/Fluent.css");
+
 :root {
 	--accent: 98, 205, 254;
 
