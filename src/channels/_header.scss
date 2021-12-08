@@ -26,8 +26,7 @@
 	.animatedContainer-1NSq4T {
 		background: transparent;
 		box-shadow: none;
-		width: 268px;
-		margin: 0 16px;
+		width: var(--channels-width);
 		height: 200px;
 	}
 	.bannerImage-3KhIJ6 {
@@ -37,6 +36,10 @@
 		margin-top: 64px;
 		img {
 			width: 100%;
+		}
+
+		&::before {
+			content: none;
 		}
 	}
 }

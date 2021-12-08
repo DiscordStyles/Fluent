@@ -2,4 +2,56 @@
 	.container-1r6BKw {
 		background: var(--background-2);
 	}
+
+	.children-19S4PO::after {
+		content: none;
+	}
+
+
+	// Search
+	.search-2oPWTC {
+		border-radius: var(--rounded);
+		overflow: hidden;	
+	}
+	.searchBar-3dMhjb {
+		background: var(--textbox-bg);
+		border: 1px solid var(--textbox-border);
+		height: 32px;
+		padding: 0;
+
+		.DraftEditor-root {
+			padding-top: 4px;
+		}
+		.public-DraftEditor-content,
+		.public-DraftEditorPlaceholder-root {
+			padding-left: 8px;
+			padding-right: 8px;
+		}
+		.icon-38sknP {
+			height: 28px;
+		}
+
+
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: var(--textbox-underline);
+		}
+
+		&:hover {
+			background: var(--textbox-bg-hover);
+		}
+		&:focus-within {
+			background: var(--background-3);
+			&::before {
+				height: 2px;
+				background: rgb(var(--accent));
+			}
+		}
+	}
 }

@@ -6,6 +6,7 @@
 		}
 		.wrapper-25eVIn {
 			border-radius: var(--rounded);
+			cursor: var(--cursor);
 		}
 
 		[class*="pill"] {
@@ -44,6 +45,20 @@
 		.svg-1X37T1,
 		.wrapper-25eVIn {
 			border-radius: var(--rounded-high);
+		}
+	}
+
+	.childWrapper-anI2G9 {
+		background: var(--background-7);
+	}
+	.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 {
+		background: rgb(var(--accent));
+	}
+
+	.circleIconButton-hZmpE8 {
+		background: var(--background-7);
+		&.selected-3mFF3I {
+			background: rgb(var(--accent));
 		}
 	}
 }

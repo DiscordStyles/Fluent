@@ -6,9 +6,13 @@
 		border-radius: var(--rounded);
 	}
 	.expandedFolderBackground-3ZDF05 {
-		width: var(--server-size);
-		border-radius: var(--rounded);
+		border-radius: var(--rounded-high);
 		height: 100%;
+		background: var(--background-7);
+	}
+	.folder-2w6LX1 {
+		background: var(--background-7);
+		cursor: var(--cursor);
 	}
 	.guildIcon-d5nahd {
 		border-radius: 2px;
