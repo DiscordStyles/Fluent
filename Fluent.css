@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "0.0.1 [BETA]";
+  --fluent-version: "0.0.2 [BETA]";
   --rounded-high: 8px;
   --rounded: 4px;
   --font-weight-light: 300;
@@ -19,8 +19,8 @@
   --line-height-xl: 28px;
   --line-height-2xl: 36px;
   --line-height-3xl: 52px;
-  --font-display: "Segoe UI";
-  --font-primary: "Segoe UI";
+  --font-display: "Segoe UI", sans-serif;
+  --font-primary: "Segoe UI", sans-serif;
   --cursor: default;
   --server-container: 16px;
   --win-btn-height: 32px;
@@ -107,6 +107,49 @@ body,
 #app-mount .container-1r6BKw {
   background: var(--background-2);
 }
+#app-mount .children-19S4PO::after {
+  content: none;
+}
+#app-mount .search-2oPWTC {
+  border-radius: var(--rounded);
+  overflow: hidden;
+}
+#app-mount .searchBar-3dMhjb {
+  background: var(--textbox-bg);
+  border: 1px solid var(--textbox-border);
+  height: 32px;
+  padding: 0;
+}
+#app-mount .searchBar-3dMhjb .DraftEditor-root {
+  padding-top: 4px;
+}
+#app-mount .searchBar-3dMhjb .public-DraftEditor-content,
+#app-mount .searchBar-3dMhjb .public-DraftEditorPlaceholder-root {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#app-mount .searchBar-3dMhjb .icon-38sknP {
+  height: 28px;
+}
+#app-mount .searchBar-3dMhjb::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--textbox-underline);
+}
+#app-mount .searchBar-3dMhjb:hover {
+  background: var(--textbox-bg-hover);
+}
+#app-mount .searchBar-3dMhjb:focus-within {
+  background: var(--background-3);
+}
+#app-mount .searchBar-3dMhjb:focus-within::before {
+  height: 2px;
+  background: rgb(var(--accent));
+}
 
 .typeWindows-1za-n7 {
   height: var(--win-btn-height);
@@ -131,6 +174,7 @@ body,
 }
 #app-mount .guilds-1SWlCJ .wrapper-25eVIn {
   border-radius: var(--rounded);
+  cursor: var(--cursor);
 }
 #app-mount .guilds-1SWlCJ [class*=pill] {
   width: 4px;
@@ -312,6 +356,18 @@ body,
 #app-mount .guilds-1SWlCJ .wrapper-25eVIn {
   border-radius: var(--rounded-high);
 }
+#app-mount .childWrapper-anI2G9 {
+  background: var(--background-7);
+}
+#app-mount .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 {
+  background: rgb(var(--accent));
+}
+#app-mount .circleIconButton-hZmpE8 {
+  background: var(--background-7);
+}
+#app-mount .circleIconButton-hZmpE8.selected-3mFF3I {
+  background: rgb(var(--accent));
+}
 
 #app-mount .wrapper-shyHJt {
   width: var(--server-container);
@@ -320,9 +376,13 @@ body,
   border-radius: var(--rounded);
 }
 #app-mount .expandedFolderBackground-3ZDF05 {
-  width: var(--server-size);
-  border-radius: var(--rounded);
+  border-radius: var(--rounded-high);
   height: 100%;
+  background: var(--background-7);
+}
+#app-mount .folder-2w6LX1 {
+  background: var(--background-7);
+  cursor: var(--cursor);
 }
 #app-mount .guildIcon-d5nahd {
   border-radius: 2px;
@@ -409,8 +469,7 @@ body,
 #app-mount .animatedContainer-1NSq4T {
   background: transparent;
   box-shadow: none;
-  width: 268px;
-  margin: 0 16px;
+  width: var(--channels-width);
   height: 200px;
 }
 #app-mount .bannerImage-3KhIJ6 {
@@ -421,6 +480,9 @@ body,
 }
 #app-mount .bannerImage-3KhIJ6 img {
   width: 100%;
+}
+#app-mount .bannerImage-3KhIJ6::before {
+  content: none;
 }
 
 #app-mount .panels-j1Uci_ {
@@ -458,8 +520,21 @@ body,
   height: 0;
 }
 
+#app-mount .message-2qnXI6.selected-2P5D_Z.cozyMessage-3V1Y8y .contents-2mQqc9 {
+  display: block;
+}
+#app-mount .message-2qnXI6.selected-2P5D_Z.cozyMessage-3V1Y8y .contents-2mQqc9 .channelTextArea-3bF57p {
+  margin-top: 0;
+}
+#app-mount .message-2qnXI6.selected-2P5D_Z.cozyMessage-3V1Y8y .contents-2mQqc9 .slateTextArea-1Mkdgw {
+  padding-top: 0;
+}
+#app-mount .operations-36ENbA {
+  padding: 12px;
+}
 #app-mount .cozy-3raOZG .avatar-1BDn8e {
   left: 32px;
+  margin-top: 0;
 }
 #app-mount .cozy-3raOZG .contents-2mQqc9 > .messageContent-2qWWxC:not(:empty) {
   margin-left: 0;
@@ -474,7 +549,7 @@ body,
   border-radius: var(--rounded) var(--rounded);
 }
 #app-mount .cozy-3raOZG.groupStart-23k01U .contents-2mQqc9 .header-23xsNx {
-  padding: 12px 16px 4px;
+  padding: 12px 16px 2px;
 }
 #app-mount .cozy-3raOZG.groupStart-23k01U .contents-2mQqc9 .messageContent-2qWWxC:empty {
   margin-top: 8px;
