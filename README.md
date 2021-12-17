@@ -10,7 +10,7 @@ Powercord Install: `git clone https://github.com/DiscordStyles/Fluent`
 ## Previews
 
 Server Chat
-![Server Chat](https://i.imgur.com/s81QyVP.png)
+![Server Chat](https://i.imgur.com/cxyRrHZ.png)
 
 ## Contributing
 
