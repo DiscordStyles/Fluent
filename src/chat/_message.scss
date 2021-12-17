@@ -25,6 +25,9 @@
 			border-radius: var(--rounded);
 			display: inline-block;
 		}
+		.container-3-pyIM {
+			padding: 0;
+		}
 
 		&.groupStart-23k01U .contents-2mQqc9 {
 			background: var(--background-5);
@@ -45,12 +48,34 @@
 			}
 		}
 
-
-
+		&.isSystemMessage-2MkNHd .messageContent-2qWWxC {
+			padding: 16px !important;
+		}
 
 		&.wrapper-2a6GCs {
 			padding-left: 88px;
-			padding-right: 64px !important;
+			padding-right: 78px !important;
+		}
+		&[data-is-author-self="true"] {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			.contents-2mQqc9 {
+				width: fit-content;
+				background: rgb(var(--accent),.05);
+				& > .messageContent-2qWWxC {
+					background: transparent;
+				}
+			}
+			.headerText-3Uvj1Y {
+				display: none;
+			}
+			.timestamp-3ZCmNB {
+				margin-left: 0;
+			}
+			.avatar-1BDn8e {
+				display: none;
+			}
 		}
 	}
 }

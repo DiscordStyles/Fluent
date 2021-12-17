@@ -1,0 +1,42 @@
+#app-mount {
+	.privateChannels-1nO12o {
+		background: transparent;
+	}
+	.scroller-1JbKMe {
+		background: transparent;
+	}
+
+	.channel-2QD9_O {
+		max-width: unset;
+		margin: 0;
+		.layout-2DM8Md {
+			cursor: var(--cursor);
+			height: 52px;
+			padding: 0 18px;
+		}
+		.content-3QAtGj {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		&:hover .layout-2DM8Md {
+			background: var(--background-4);
+		}
+		&.selected-aXhQR6 .layout-2DM8Md {
+			background: var(--background-4);
+			&::before {
+				content: "";
+				border-radius: 50px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 4px;
+				height: 16px;
+				left: 0;
+				background: rgb(var(--accent));
+			}
+		}
+	}
+}
