@@ -1,6 +1,7 @@
 #app-mount {
 	.message-2qnXI6.selected-2P5D_Z.cozyMessage-3V1Y8y .contents-2mQqc9 {
 		display: block;
+		width: 100%;
 		.channelTextArea-3bF57p {
 			margin-top: 0;
 		}
@@ -77,5 +78,9 @@
 				display: none;
 			}
 		}
+	}
+
+	.embedFull-2tM8-- {
+		background: var(--background-5);
 	}
 }
