@@ -1,5 +1,27 @@
 :root {
-  --fluent-version: "0.0.3 [BETA]";
+  --background-1: #171717;
+  --background-2: #202020;
+  --background-3: #272727;
+  --background-4: #2b2b2b;
+  --background-5: #2f2f2f;
+  --background-6: #2d2d2d;
+  --background-7: #343434;
+  --background-8: #3a3a3a;
+  --background-9: #484848;
+  --border: #1d1d1d;
+  --border-high: #3b3b3b;
+  --pill-unread: #9a9a9a;
+  --pill-hovered: #fff;
+  --btn-bg: var(--background-4);
+  --btn-bg-hover: var(--background-7);
+  --scrollbar-background: hsl(0 0% 50%);
+  --elevation-1: 0px 8px 16px hsl(0 0% 0% / .14);
+  --elevation-2: 0px 12px 22px hsl(0 0% 0% / .20);
+  --textbox-bg: #2f2f2f;
+  --textbox-bg-hover: #333333;
+  --textbox-border: hsl(0 0% 100% / .045);
+  --textbox-underline: #a1a1a1;
+  --fluent-version: "0.0.4 [BETA]";
   --rounded-high: 8px;
   --rounded: 4px;
   --font-weight-light: 300;
@@ -25,29 +47,7 @@
   --server-container: 16px;
   --win-btn-height: 32px;
   --win-btn-width: 52px;
-}
-
-.theme-dark,
-html.theme-dark #app-mount .theme-light .root-1gCeng,
-html.theme-dark .force-theme.theme-light {
-  --background-1: #171717;
-  --background-2: #202020;
-  --background-3: #272727;
-  --background-4: #2b2b2b;
-  --background-5: #2f2f2f;
-  --background-6: #2d2d2d;
-  --background-7: #343434;
-  --border: #1d1d1d;
-  --border-high: #3b3b3b;
-  --pill-unread: #9a9a9a;
-  --pill-hovered: #fff;
-  --btn-bg: var(--background-4);
-  --btn-bg-hover: var(--background-7);
-  --scrollbar-background: hsl(0 0% 50%);
-  --textbox-bg: #2f2f2f;
-  --textbox-bg-hover: #333333;
-  --textbox-border: hsl(0 0% 100% / .045);
-  --textbox-underline: #a1a1a1;
+  --discord-pink: hsl(302,calc(var(--saturation-factor, 1)*100%),72.5%);
 }
 
 @font-face {
@@ -561,6 +561,7 @@ body,
 
 #app-mount .message-2qnXI6.selected-2P5D_Z.cozyMessage-3V1Y8y .contents-2mQqc9 {
   display: block;
+  width: 100%;
 }
 #app-mount .message-2qnXI6.selected-2P5D_Z.cozyMessage-3V1Y8y .contents-2mQqc9 .channelTextArea-3bF57p {
   margin-top: 0;
@@ -629,6 +630,9 @@ body,
 }
 #app-mount .cozy-3raOZG[data-is-author-self=true] .avatar-1BDn8e {
   display: none;
+}
+#app-mount .embedFull-2tM8-- {
+  background: var(--background-5);
 }
 
 #app-mount .form-2fGMdU {
@@ -779,4 +783,159 @@ body,
 #app-mount .membersGroup-v9BXpm {
   padding: 24px 16px 8px;
   height: auto;
+}
+
+#app-mount .menu-3sdvDG {
+  min-width: 280px;
+  background: var(--background-5);
+  border: 1px solid var(--border-high);
+  border-radius: var(--rounded-high);
+  box-shadow: var(--elevation-1);
+}
+#app-mount .menu-3sdvDG .scroller-3BxosC {
+  padding: 0 !important;
+}
+#app-mount .menu-3sdvDG .scroller-3BxosC::-webkit-scrollbar {
+  display: none;
+}
+#app-mount .menu-3sdvDG .scroller-3BxosC > .item-1tOPte, #app-mount .menu-3sdvDG .scroller-3BxosC > .submenuContainer-2gbm7M {
+  margin: 6px;
+}
+#app-mount .menu-3sdvDG .submenuContainer-2gbm7M .item-1tOPte {
+  flex-direction: row;
+}
+#app-mount .menu-3sdvDG .submenuContainer-2gbm7M .item-1tOPte .iconContainer-2-XQPY {
+  margin: 0 0 0 8px;
+}
+#app-mount .menu-3sdvDG .submenuContainer-2gbm7M .layer-v9HyYc {
+  margin-top: -6px;
+}
+#app-mount .menu-3sdvDG .wrapper-3_530D {
+  padding-bottom: 0 !important;
+}
+#app-mount .menu-3sdvDG .wrapper-3_530D::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  grid-column: 1/-1;
+  background: var(--border-high);
+  margin-top: 6px;
+}
+#app-mount .menu-3sdvDG .customItem-a8hq58 {
+  width: 100%;
+}
+#app-mount .menu-3sdvDG .button-F9qN4n {
+  width: 100%;
+  border-radius: var(--rounded);
+  background: transparent;
+  cursor: var(--cursor);
+  padding: 4px 0;
+}
+#app-mount .menu-3sdvDG .button-F9qN4n:hover {
+  background: var(--background-8);
+}
+#app-mount .menu-3sdvDG [role=group] {
+  padding: 6px;
+}
+#app-mount .menu-3sdvDG [role=separator] {
+  margin: 2px 6px;
+  border-color: var(--border-high);
+}
+#app-mount .menu-3sdvDG .item-1tOPte {
+  margin: 0;
+  border-radius: var(--rounded);
+  padding: 8px 12px;
+  cursor: var(--cursor);
+  flex-direction: row-reverse;
+}
+#app-mount .menu-3sdvDG .item-1tOPte .iconContainer-2-XQPY {
+  margin: 0 8px 0 0;
+}
+#app-mount .menu-3sdvDG .item-1tOPte.hideInteraction-1iHO1O {
+  padding: 0;
+}
+#app-mount .menu-3sdvDG .item-1tOPte.focused-3afm-j {
+  background: var(--background-8);
+}
+#app-mount .menu-3sdvDG .item-1tOPte.colorPremium-p4p7qO {
+  color: var(--discord-pink);
+}
+#app-mount .menu-3sdvDG .item-1tOPte.colorPremium-p4p7qO .icon-LYJorE {
+  color: var(--discord-pink);
+}
+#app-mount .menu-3sdvDG .item-1tOPte.colorBrand-ROmMP1 {
+  color: rgb(var(--accent));
+}
+
+[role=slider] .bar-2Qqk5Z {
+  height: 4px;
+}
+[role=slider] .barFill-23-gu- {
+  background: rgb(var(--accent));
+}
+[role=slider] .grabber-3mFHz2 {
+  border: 4px solid var(--background-9);
+  margin-top: 0;
+  background: rgb(var(--accent));
+  box-shadow: var(--elevation-1);
+}
+
+#app-mount [role=menuitemcheckbox] .iconContainer-2-XQPY {
+  border: 1px solid var(--text-muted);
+  border-radius: var(--rounded);
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app-mount [role=menuitemcheckbox] .iconContainer-2-XQPY::before {
+  content: "";
+  width: 10px;
+  height: 4px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(-45deg);
+  margin-top: -2px;
+  opacity: 0;
+}
+#app-mount [role=menuitemcheckbox] svg {
+  display: none;
+}
+#app-mount [role=menuitemcheckbox][aria-checked=true] .iconContainer-2-XQPY {
+  border-color: rgb(var(--accent));
+  background: rgb(var(--accent));
+}
+#app-mount [role=menuitemcheckbox][aria-checked=true] .iconContainer-2-XQPY::before {
+  opacity: 1;
+}
+
+#app-mount [role=menuitemradio] .iconContainer-2-XQPY {
+  border: 1px solid var(--text-muted);
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app-mount [role=menuitemradio] .iconContainer-2-XQPY::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0;
+}
+#app-mount [role=menuitemradio] svg {
+  display: none;
+}
+#app-mount [role=menuitemradio][aria-checked=true] .iconContainer-2-XQPY {
+  border-color: rgb(var(--accent));
+  background: rgb(var(--accent));
+}
+#app-mount [role=menuitemradio][aria-checked=true] .iconContainer-2-XQPY::before {
+  opacity: 1;
 }
