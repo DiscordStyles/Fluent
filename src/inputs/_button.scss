@@ -1,0 +1,13 @@
+#app-mount {
+	.button-1YfofB {
+		border-radius: var(--rounded-high);
+		padding: 4px 6px;
+		
+		&.buttonColor-7qQbGO {
+			background: var(--btn-bg);
+			&:hover {
+				background: var(--btn-bg-hover);
+			}
+		}
+	}
+}

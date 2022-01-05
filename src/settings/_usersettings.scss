@@ -1,0 +1,31 @@
+@use '../assets/coloured' as *;
+
+#app-mount .layer-3QrUeG[aria-label="USER_SETTINGS"] {
+
+}
+
+// Icons
+$icons: (
+	'my-account-tab': $user-admin,
+	'profile-customization-tab': $user-settings,
+	'privacy-&-safety-tab': $shield-check,
+	'authorized-apps-tab': $system-check,
+	'connections-tab': $connections,
+	'appearance-tab': $colour-settings,
+	'nitro-server-boost-tab': $battery,
+	'subscriptions-tab': $briefcase,
+	'language-tab': $languages,
+	'windows-tab': $drive-windows,
+	'advanced-tab': $cog,
+	'voice-&-video-tab': $mic,
+
+	'themes-tab': $colour-swatch,
+	'plugins-tab': $nodejs
+);
+.item-PXvHYJ {
+	@each $control, $icon in $icons {
+		&[aria-controls="#{$control}"]::before {
+			background-image: url($icon);
+		}
+	}
+}

@@ -1,4 +1,6 @@
 :root {
+	--fluent-version: '0.0.5 [BETA]';
+
 	--background-1: #171717;
 	--background-2: #202020;
 	--background-3: #272727;
@@ -21,14 +23,12 @@
 	--scrollbar-background: hsl(0 0% 50%);
 
 	--elevation-1: 0px 8px 16px hsl(0 0% 0% / .14);
-	--elevation-2: 0px 12px 22px hsl(0 0% 0% / .20);
+	--elevation-2: 0px 10px 14px 2px hsl(0 0% 0% / .24);
 
 	--textbox-bg: #2f2f2f;
 	--textbox-bg-hover: #333333;
 	--textbox-border: hsl(0 0% 100% / .045);
 	--textbox-underline: #a1a1a1;
-
-	--fluent-version: '0.0.4 [BETA]';
 
 	--rounded-high: 8px;
 	--rounded: 4px;
@@ -63,5 +63,6 @@
 	--win-btn-height: 32px;
 	--win-btn-width: 52px;
 
-	--discord-pink: hsl(302,calc(var(--saturation-factor, 1)*100%),72.5%);
+	--discord-pink: 302 calc(var(--saturation-factor, 1) * 100%) 72.5%;
+	--discord-red: 359 calc(var(--saturation-factor, 1) * 82.6%) 59.4%;
 }

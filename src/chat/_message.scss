@@ -68,6 +68,9 @@
 					background: transparent;
 				}
 			}
+			.container-3hZ-gs {
+				justify-self: flex-end;
+			}
 			.headerText-3Uvj1Y {
 				display: none;
 			}
@@ -78,9 +81,19 @@
 				display: none;
 			}
 		}
+		&.hasThread-2k82W0::after {
+			left: unset;
+			right: 2.2rem;
+			transform: scaleX(-1);
+		}
 	}
 
 	.embedFull-2tM8-- {
 		background: var(--background-5);
+	}
+
+	.markup-2BOw-j pre {
+		margin: 0;
+		max-width: 100%;
 	}
 }
