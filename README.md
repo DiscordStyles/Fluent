@@ -1,6 +1,6 @@
 # Fluent (EARLY DEVELOPMENT)
 
-Brings the Windows 11 design system to Discord.
+Brings the look of Windows 11 to Discord.
 
 - - -
 BetterDiscord Download: Soon™  

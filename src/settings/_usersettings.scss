@@ -6,26 +6,50 @@
 
 // Icons
 $icons: (
-	'my-account-tab': $user-admin,
-	'profile-customization-tab': $user-settings,
-	'privacy-&-safety-tab': $shield-check,
-	'authorized-apps-tab': $system-check,
-	'connections-tab': $connections,
-	'appearance-tab': $colour-settings,
-	'nitro-server-boost-tab': $battery,
-	'subscriptions-tab': $briefcase,
-	'language-tab': $languages,
-	'windows-tab': $drive-windows,
-	'advanced-tab': $cog,
-	'voice-&-video-tab': $mic,
+	'my-account': $user,
+	'profile-customization': $user-settings,
+	'privacy-&-safety': $shield-lock,
+	'authorized-apps': $approval,
+	'connections': $connections,
+	'nitro-server-boost': $rocket,
+	'subscriptions': $credit-card,
+	'library-inventory': $gift,
+	'billing': $billing,
+	'appearance': $eye,
+	'accessibility': $accessibility,
+	'voice-&-video': $mic,
+	'text-&-images': $chat-settings,
+	'notifications': $bell,
+	'keybinds': $esc,
+	'language': $language,
+	'windows': $windows,
+	'streamer-mode': $camera,
+	'advanced': $cogs,
+	'game-activity': $wifi,
+	'overlay': $monitor,
 
-	'themes-tab': $colour-swatch,
-	'plugins-tab': $nodejs
+	'settings': $cog,
+	'customcss': $code,
+	'plugins': $plugin,
+	'themes': $palette,
+	'changelog': $change,
+	'hypesquad-online': $star,
+
+	'logout': $logout
 );
 .item-PXvHYJ {
-	@each $control, $icon in $icons {
-		&[aria-controls="#{$control}"]::before {
+	@each $label, $icon in $icons {
+		&[aria-controls="#{$label}-tab"]::before {
 			background-image: url($icon);
+		}
+	}
+	&[aria-controls="discord-nitro-tab"] {
+		&::before {
+			content: none !important;
+		}
+		.premiumLabel-fDtYys {
+			gap: 12px;
+			flex-direction: row-reverse;
 		}
 	}
 }

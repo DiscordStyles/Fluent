@@ -32,6 +32,11 @@
 			gap: 12px;
 			position: relative;
 			cursor: var(--cursor);
+
+			.selectedBackground-2KQZ6B {
+				background: rgb(var(--accent));
+			}
+
 			&::before {
 				content: "";
 				width: 18px;
