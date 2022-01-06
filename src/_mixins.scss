@@ -1,0 +1,6 @@
+@mixin title {
+	color: var(--header-primary);
+	font-size: var(--text-size-title);
+	line-height: var(--line-height-2xl);
+	margin-bottom: 48px;
+}

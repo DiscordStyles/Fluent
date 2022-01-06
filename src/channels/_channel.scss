@@ -6,24 +6,36 @@
 				color: var(--interactive-normal);
 			}
 		}
-		&.modeSelected-346R90 .content-1x5b-n {
-			background: var(--background-4);
+		&.modeUnread-1qO3K1::before {
+			height: 10px;
+			background: var(--pill-unread);
+			opacity: 1;
 		}
-		&.modeSelected-346R90 .content-1x5b-n {
-			.icon-1DeIlz {
-				color: var(--interactive-active);
-			}
+		&.modeSelected-346R90 {
 			&::before {
-				content: "";
-				border-radius: 50px;
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				width: 4px;
 				height: 16px;
-				left: 0;
 				background: rgb(var(--accent));
+				opacity: 1;
 			}
+			.content-1x5b-n {
+				background: var(--background-4);
+				.icon-1DeIlz {
+					color: var(--interactive-active);
+				}
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			border-radius: 50px;
+			height: 0;
+			opacity: 1;
+			width: 4px;
+			transform: translateY(-50%);
+			transition: height .15s ease, opacity .15s ease;
+			z-index: 1;
 		}
 	}
 	.content-1x5b-n {

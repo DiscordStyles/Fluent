@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '0.0.6 [BETA]';
+	--fluent-version: '0.0.7 [BETA]';
 
 	--background-1: #171717;
 	--background-2: #202020;
@@ -11,14 +11,17 @@
 	--background-8: #3a3a3a;
 	--background-9: #484848;
 
+	--accent-text: #000;
+
 	--border: #1d1d1d;
-	--border-high: #3b3b3b; // Used for context menus
+	--border-high: #3b3b3b;
 
 	--pill-unread: #9a9a9a;
 	--pill-hovered: #fff;
 
 	--btn-bg: var(--background-4);
 	--btn-bg-hover: var(--background-7);
+	--btn-radius: 4px;
 
 	--scrollbar-background: hsl(0 0% 50%);
 

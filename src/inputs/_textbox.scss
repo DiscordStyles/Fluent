@@ -1,0 +1,32 @@
+#app-mount {
+	.input-cIJ7To:not(.multiInput-2AiDV2):not(.multiInputField-3K361B),
+	.input-cIJ7To.multiInput-2AiDV2 {
+		background: var(--textbox-bg);
+		border: 1px solid var(--textbox-border);
+		height: 32px;
+		padding: 0;
+		border-radius: var(--rounded);
+		padding: 8px 10px;
+		font-size: var(--text-size-body);
+		box-sizing: border-box;
+		border-bottom-color: var(--textbox-underline);
+		transition: none;
+
+		&::placeholder {
+			font-size: var(--text-size-body);
+			color: var(--text-muted);
+		}
+
+		&:hover {
+			background: var(--textbox-bg-hover);
+		}
+		&:focus {
+			background: transparent;
+			box-shadow: inset 0 -1px 0 rgb(var(--accent));
+			border-bottom-color: rgb(var(--accent));
+		}
+	}
+	.input-cIJ7To.textArea-1Lj-Ns {
+		height: auto !important;
+	}
+}

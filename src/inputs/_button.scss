@@ -1,13 +1,35 @@
 #app-mount {
-	.button-1YfofB {
-		border-radius: var(--rounded-high);
-		padding: 4px 6px;
-		
-		&.buttonColor-7qQbGO {
-			background: var(--btn-bg);
-			&:hover {
-				background: var(--btn-bg-hover);
+	.button-1YfofB,
+	.button-38aScr {
+		border-radius: var(--btn-radius);
+		padding: 4px 10px;
+		line-height: 20px;
+		cursor: var(--cursor);
+
+		[role="button"] {
+			cursor: var(--cursor) !important;
+		}
+
+		&.lookFilled-1Gx00P {
+			border: 1px solid hsl(0 0% 100% / .07);
+			border-top-color:hsl(0 0% 100% / .2);
+			font-weight: var(--font-weight-semibold);
+			transition: box-shadow .15s ease;
+			&.colorBrand-3pXr91 {
+				background: rgb(var(--accent));
+				color: var(--accent-text);
 			}
+
+			&:hover {
+				box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / .1);
+			}
+			&:focus {
+				box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / .2);
+			}
+		}
+		&.buttonColor-7qQbGO {
+			background: rgb(var(--accent));
+			color: var(--accent-text);
 		}
 	}
 }

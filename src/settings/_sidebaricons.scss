@@ -1,0 +1,72 @@
+@use '../assets/coloured' as *;
+
+// Icons
+$icons: (
+	// User Settings
+	'my-account': $user,
+	'profile-customization': $user-settings,
+	'privacy-&-safety': $shield-lock,
+	'authorized-apps': $approval,
+	'connections': $connections,
+	'nitro-server-boost': $rocket,
+	'subscriptions': $credit-card,
+	'library-inventory': $gift,
+	'billing': $billing,
+	'appearance': $eye,
+	'accessibility': $accessibility,
+	'voice-&-video': $mic,
+	'text-&-images': $chat-settings,
+	'notifications': $bell,
+	'keybinds': $esc,
+	'language': $language,
+	'windows': $windows,
+	'streamer-mode': $camera,
+	'advanced': $cogs,
+	'game-activity': $wifi,
+	'overlay': $monitor,
+
+	'settings': $cog,
+	'customcss': $code,
+	'plugins': $plugin,
+	'themes': $palette,
+
+	'changelog': $change,
+	'hypesquad-online': $star,
+	'logout': $logout,
+
+	// Guild Settings
+	'overview': $overview,
+	'roles': $management,
+	'emoji': $emoji,
+	'stickers': $sticker,
+	'moderation': $cog-admin,
+	'audit_log': $auditlog,
+	'integrations': $integrations,
+	'widget': $applet,
+	'guild_templates': $template,
+
+	'community': $users,
+
+	'members': $people-group,
+	'instant_invites': $invite,
+	'bans': $user-cross,
+
+	'delete': $trash
+);
+
+.item-PXvHYJ {
+	@each $label, $icon in $icons {
+		&[aria-controls="#{$label}-tab"]::before {
+			background-image: url($icon);
+		}
+	}
+	&[aria-controls="discord-nitro-tab"] {
+		&::before {
+			content: none !important;
+		}
+		.premiumLabel-fDtYys {
+			gap: 12px;
+			flex-direction: row-reverse;
+		}
+	}
+}
