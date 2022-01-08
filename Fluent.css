@@ -557,7 +557,7 @@ body,
 }
 #app-mount .actionButtons-14eAc_ .button-1YfofB.buttonColor-7qQbGO.colorBrand-3pXr91:active {
   background: var(--btn-bg-active);
-  border-color: rgba(255, 255, 255, 0.06);
+  border-color: var(--btn-border-primary);
 }
 #app-mount .container-3baos1 {
   padding: 0 8px;
@@ -1627,7 +1627,7 @@ body,
 }
 #app-mount .layer-3QrUeG[aria-label=USER_SETTINGS] .userSettingsSecurity-3IYeMF > .children-rWhLdy > div:first-child button:active {
   background: var(--btn-bg-active);
-  border-color: rgba(255, 255, 255, 0.06);
+  border-color: var(--btn-border-primary);
 }
 #app-mount .layer-3QrUeG[aria-label=USER_SETTINGS] .userSettingsSecurity-3IYeMF > .children-rWhLdy > div:first-child::before {
   content: "";
