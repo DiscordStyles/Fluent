@@ -80,11 +80,9 @@
 			.avatar-1BDn8e {
 				display: none;
 			}
-		}
-		&.hasThread-2k82W0::after {
-			left: unset;
-			right: 2.2rem;
-			transform: scaleX(-1);
+			&.hasThread-2k82W0::after {
+				content: none;
+			}
 		}
 	}
 

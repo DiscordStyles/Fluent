@@ -1,3 +1,5 @@
+@use '../mixins';
+
 #app-mount {
 	.panels-j1Uci_ {
 		background: transparent;
@@ -8,10 +10,11 @@
 	}
 
 	// Voice connected
-	.container-1giJp5 {
-		&:only-child {
-			border: none;
-		}
+	.container-1giJp5:only-child {
+		border: none;
+	}
+	.actionButtons-14eAc_ .button-1YfofB.buttonColor-7qQbGO.colorBrand-3pXr91 {
+		@include mixins.btnReset;
 	}
 
 	// User area

@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '0.0.7 [BETA]';
+	--fluent-version: '0.0.8 [BETA]';
 
 	--background-1: #171717;
 	--background-2: #202020;
@@ -19,9 +19,12 @@
 	--pill-unread: #9a9a9a;
 	--pill-hovered: #fff;
 
-	--btn-bg: var(--background-4);
-	--btn-bg-hover: var(--background-7);
-	--btn-radius: 4px;
+	--btn-bg: hsl(0 0% 100% / .06);
+	--btn-bg-hover: hsl(0 0% 100% / .08);
+	--btn-bg-active: hsl(0 0% 100% / .03);
+	--btn-radius: 6px;
+	--btn-border-primary: hsl(0 0% 100% / .06);
+	--btn-border-secondary: hsl(0 0% 100% / .01);
 
 	--scrollbar-background: hsl(0 0% 50%);
 
@@ -42,12 +45,17 @@
 	--font-weight-semibold: 600;
 	--font-weight-bold: 700;
 
-	--text-size-caption: 12px;
-	--text-size-body: 14px;
-	--text-size-body-large: 18px;
-	--text-size-subtitle: 20px;
-	--text-size-title: 28px;
-	--text-size-title-large: 40px;
+	--text-size-xs: 12px;
+	--text-size-sm: 14px;
+	--text-size: 16px;
+	--text-size-md: 18px;
+	--text-size-lg: 20px;
+	--text-size-xl: 28px;
+	--text-size-2xl: 40px;
+
+	--text-primary: hsl(0 0% 100% / 100%);
+	--text-secondary: hsl(0 0% 100% / 75%);
+	--text-tertiary: hsl(0 0% 100% / 55%);
 
 	--line-height: 16px;
 	--line-height-md: 20px;
@@ -68,4 +76,8 @@
 
 	--discord-pink: 302 calc(var(--saturation-factor, 1) * 100%) 72.5%;
 	--discord-red: 359 calc(var(--saturation-factor, 1) * 82.6%) 59.4%;
+	--discord-grey: 217 8% 34%;
+
+	--text-normal: var(--text-primary);
+	--text-muted: var(--text-tertiary);
 }

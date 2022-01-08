@@ -1,0 +1,189 @@
+@use '../../assets/mono';
+@use '../../mixins';
+
+#app-mount .layer-3QrUeG[aria-label="USER_SETTINGS"] {
+
+	.accountProfileCard-1XCH88 {
+		background: transparent;
+	}
+	.banner-2QYc2d {
+		display: none;
+	}
+	.userInfo-iCloHO {
+		padding: 18px;
+		margin: 0 0 4px 0;
+		height: auto;
+		@include mixins.card;
+		
+		.avatar-1uQSZT {
+			width: 22px !important;
+			height: 22px !important;
+			background: var(--text-primary);
+			border: none;
+			position: relative;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			mask: url(mono.$pen) center/cover;
+			svg {
+				display: none;
+			}
+		}
+		& > div:nth-child(2) {
+			position: relative;
+			z-index: 1;
+			flex: 1;
+			pointer-events: none;
+			& > div {
+				display: none;
+			}
+			&::before {
+				content: "Profile";
+				@include mixins.cardTitle;
+			}
+			&::after {
+				content: "Avatar, banner, about me, profile colour";
+				@include mixins.cardDesc;
+			}
+		}
+		& > button {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			background: transparent !important;
+			border: none !important;
+			box-shadow: none !important;
+			display: flex;
+			color: var(--text-primary);
+			padding: 0 0 0 60px;
+			z-index: 0;
+			div {
+				width: 100%;
+				font-size: 0;
+				padding-right: 18px;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				&::before {
+					content: "";
+					width: 16px;
+					height: 16px;
+					mask: url(mono.$chevron-right) center/cover;
+					background: var(--text-primary);
+					display: block;
+				}
+			}
+		}
+		&:hover > button {
+			background: var(--background-5) !important;
+		}
+	}
+	.background-1QDuV2 {
+		margin: 0;
+		background: transparent;
+		padding: 0;
+	}
+	.fieldList-21DyL8 {
+		background: transparent;
+		border-radius: 0;
+		.field-1HUseB {
+			&:first-child::before {
+				mask-image: url(mono.$user);
+			}
+			&:nth-child(2)::before {
+				mask-image: url(mono.$mail);
+			}
+			&:last-child::before {
+				mask-image: url(mono.$phone);
+			}
+		}
+	}
+	.field-1HUseB {
+		@include mixins.card;
+		.sizeMin-1mJd1x {
+			margin-left: 8px;
+			padding: 0;
+			background: transparent;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&::before {
+			content: "";
+			@include mixins.cardIcon;
+		}
+		&:not(:first-child) {
+			margin-top: 4px;
+		}
+	}
+	.constrainedRow-2GB6Ki .size16-1P40sf {
+		font-size: var(--text-size-xs);
+		color: var(--text-muted);
+	}
+	.fieldTitle-3h2iLW {
+		@include mixins.cardTitle;
+	}
+
+
+
+	.userSettingsSecurity-3IYeMF {
+		.h1-1qdNzo {
+			@include mixins.subtitle;
+		}
+
+		& > .children-rWhLdy {
+			& > div:first-child {
+				@include mixins.card;
+				margin-bottom: 40px;
+				button {
+					margin: 0;
+					order: 1;
+					@include mixins.btnReset;
+				}
+				&::before {
+					content: "";
+					mask-image: url(mono.$password);
+					@include mixins.cardIcon;
+				}
+				&::after {
+					content: "Password";
+					@include mixins.cardTitle;
+					flex: 1;
+				}
+			}
+		}
+
+		// Account removal
+		& ~ [class="marginTop40-i-78cZ"] {
+			.title-3sZWYQ {
+				@include mixins.subtitle;
+				color: transparent;
+				user-select: none;
+				&::before {
+					content: "Danger zone";
+					font-size: var(--text-size);
+					color: var(--text-primary);
+				}
+			}
+			.children-rWhLdy {
+				@include mixins.card;
+				&::before {
+					content: "";
+					@include mixins.cardIcon;
+					mask-image: url(mono.$user-delete);
+				}
+			}
+			.description-3_Ncsb {
+				margin-bottom: 0;
+				flex: 1;
+				@include mixins.cardDesc;
+				&::before {
+					content: "Disable account";
+					@include mixins.cardTitle;
+				}
+			}
+		}
+	}
+
+}

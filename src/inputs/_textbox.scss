@@ -7,13 +7,13 @@
 		padding: 0;
 		border-radius: var(--rounded);
 		padding: 8px 10px;
-		font-size: var(--text-size-body);
+		font-size: var(--text-size-sm);
 		box-sizing: border-box;
 		border-bottom-color: var(--textbox-underline);
 		transition: none;
 
 		&::placeholder {
-			font-size: var(--text-size-body);
+			font-size: var(--text-size-sm);
 			color: var(--text-muted);
 		}
 
