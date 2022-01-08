@@ -9,10 +9,10 @@ This will help you get started.
 - Basic knowledge of the terminal/command prompt.
 
 Install Dependencies:  
-Open a terminal/command prompt and use the following command: `pnpm install` in the Fluent folder.
+Open a terminal/command prompt and use the following command: `npm run install` in the Fluent folder.
 
 ## Development
-Run the `dev` script with: `pnpm dev`.  
+Run the `dev` script with: `npm run dev`.  
 This will watch for changes inside the `/src` folder and then auto compile them into your BetterDiscord themes folder.
 
 ## Deploying
