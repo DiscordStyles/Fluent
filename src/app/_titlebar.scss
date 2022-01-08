@@ -1,7 +1,17 @@
 .typeWindows-1za-n7 {
-    height: var(--win-btn-height);
+	height: var(--win-btn-height);
+	z-index: 2;
+	background: transparent;
+	position: fixed;
+	width: 100%;
+	user-select: none;
+	height: 10px;
+	pointer-events: none;
 }
 .winButton-iRh8-Z {
-    height: calc(var(--win-btn-height) + 4px);
-    width: var(--win-btn-width);
+	height: calc(var(--win-btn-height) + 4px);
+	width: var(--win-btn-width);
+}
+.wordmarkWindows-1v0lYD {
+	display: none;
 }

@@ -1,0 +1,91 @@
+@use '../../assets/mono';
+@use '../../mixins';
+
+#app-mount .layer-3QrUeG[aria-label="USER_SETTINGS"] {
+	.notice-ZSe05e {
+		border: 1px solid var(--border);
+		background: var(--bg6);
+		border-radius: var(--rounded);
+		min-height: 48px;
+		padding: 0 12px;
+	}
+
+	// Avatar
+	.baseLayout-NX_bpH {
+		flex-direction: column;
+	}
+	.customizationSection-2f2fhI {
+		&:not(.preview-1nip2n) {
+			@include mixins.card;
+			margin-bottom: 4px;
+	
+			&::before {
+				content: "";
+				@include mixins.cardIcon;
+				grid-area: icon;
+			}
+	
+			.inputWrapper-31_8H8 {
+				grid-area: input;
+				margin-top: 18px;
+			}
+			.description-3_Ncsb {
+				margin: 0;
+				grid-area: desc;
+			}
+			.buttonsContainer-36m3gd {
+				flex-direction: row-reverse;
+				gap: 18px;
+			}
+			button {
+				margin: 0;
+			}
+			.h5-18_1nd {
+				@include mixins.cardTitle;
+				margin-bottom: 0;
+				grid-area: title;
+			}
+			.lookFilled-1Gx00P.colorBrand-3pXr91 {
+				@include mixins.btnReset;
+			}
+		}
+		&:nth-child(1)::before {
+			mask-image: url(mono.$user);
+		}
+		&:nth-child(2)::before {
+			mask-image: url(mono.$palette);
+		}
+		&:nth-child(3) {
+			display: grid;
+			grid-template-columns: 22px 1fr auto;
+			grid-template-areas:
+				"icon title button"
+				"icon desc button";
+			&::before {
+				mask-image: url(mono.$image);
+			}
+			button {
+				@include mixins.btnReset;
+				grid-area: button;
+			}
+		}
+		&:nth-child(4) {
+			display: grid;
+			grid-template-columns: 22px 1fr;
+			grid-template-areas:
+				"icon title"
+				"icon desc"
+				"input input";
+			&::before {
+				mask-image: url(mono.$user-question);
+			}
+		}
+	}
+	.preview-1nip2n {
+		margin: 0;
+		padding: 32px 0 0;
+		& > h5 {
+			display: none;
+		}
+	}
+}

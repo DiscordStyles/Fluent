@@ -13,7 +13,7 @@ Server Chat
 ![Server Chat](https://i.imgur.com/5Mfcoba.png)
 
 User Settings
-![User Settings](https://i.imgur.com/gV00fXC.png)
+![User Settings](https://i.imgur.com/3uL8y2m.png)
 
 ## Contributing
 

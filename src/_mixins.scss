@@ -13,13 +13,13 @@
 }
 
 @mixin card {
-	background: var(--background-4);
+	background: var(--bg4);
 	border: 1px solid var(--border);
 	border-radius: var(--rounded);
 	padding: 18px;
 	display: flex;
 	align-items: center;
-	gap: 18px;
+	gap: 0 18px;
 	position: relative;
 	flex-direction: row;
 }

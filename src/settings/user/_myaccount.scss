@@ -76,7 +76,7 @@
 			}
 		}
 		&:hover > button {
-			background: var(--background-5) !important;
+			background: var(--bg5) !important;
 		}
 	}
 	.background-1QDuV2 {
@@ -109,6 +109,12 @@
 				text-decoration: underline;
 			}
 		}
+		.fieldButtonList-16Wn0S {
+			gap: 18px;
+			button {
+				margin: 0;
+			}
+		}
 		&::before {
 			content: "";
 			@include mixins.cardIcon;
@@ -117,9 +123,12 @@
 			margin-top: 4px;
 		}
 	}
-	.constrainedRow-2GB6Ki .size16-1P40sf {
-		font-size: var(--text-size-xs);
-		color: var(--text-muted);
+	.constrainedRow-2GB6Ki {
+		margin: 0;
+		.size16-1P40sf {
+			font-size: var(--text-size-xs);
+			color: var(--text-muted);
+		}
 	}
 	.fieldTitle-3h2iLW {
 		@include mixins.cardTitle;
@@ -133,6 +142,7 @@
 		}
 
 		& > .children-rWhLdy {
+			// Password and authentication
 			& > div:first-child {
 				@include mixins.card;
 				margin-bottom: 40px;
@@ -150,6 +160,99 @@
 					content: "Password";
 					@include mixins.cardTitle;
 					flex: 1;
+				}
+			}
+			// 2FA Enabled
+			& > div:last-child > div > div {
+				& > .title-3sZWYQ {
+					@include mixins.subtitle;
+					color: transparent;
+					&::before {
+						content: "Security";
+						color: var(--text-primary);
+					}
+					img {
+						display: none
+					}
+				}
+				& > .modeDefault-3a2Ph1 {
+					@include mixins.card;
+					@include mixins.cardDesc;
+					padding-left: 60px;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 4px;
+					border-radius: var(--rounded) var(--rounded) 0 0;
+					margin-bottom: 0;
+					&::before {
+						content: "Two-factor authentication";
+						@include mixins.cardTitle;
+					}
+					&::after {
+						content: "";
+						@include mixins.cardIcon;
+						mask-image: url(mono.$lock-closed);
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 18px;
+					}
+					& + div {
+						@include mixins.card;
+						margin-top: 0;
+						border-top: none;
+						border-radius: 0 0 var(--rounded) var(--rounded);
+						justify-content: flex-start;
+						flex-direction: row-reverse;
+						margin-bottom: 4px;
+						& > div {
+							flex: none !important;
+							margin: 0;
+						}
+						.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91 {
+							@include mixins.btnReset;
+						}
+					}
+				}
+				& > .marginTop40-i-78cZ {
+					margin-top: 0;
+					.sectionTitle-2vauyC {
+						display: none;
+					}
+					.marginBottom8-AtZOdT {
+						margin: 0;
+					}
+					.children-rWhLdy {
+						@include mixins.card;
+						flex-direction: column;
+						align-items: flex-start;
+						padding-left: 60px;
+						&::before {
+							content: "";
+							@include mixins.cardIcon;
+							mask-image: url(mono.$phone-lock);
+							position: absolute;
+							top: calc(50% - 35px);
+							transform: translateY(-50%);
+							left: 18px;
+						}
+						.modeDefault-3a2Ph1:first-child::before {
+							content: "SMS backup";
+							@include mixins.cardTitle;
+							margin-bottom: 4px;
+						}
+						.flex-1xMQg5 {
+							padding: 18px;
+							border-top: 1px solid var(--border);
+							margin: 16px -60px -18px;
+							width: calc(100% + 78px);
+							flex-direction: row-reverse;
+							gap: 18px;
+							.lookFilled-1Gx00P.colorBrand-3pXr91 {
+								@include mixins.btnReset;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -181,6 +284,13 @@
 				&::before {
 					content: "Disable account";
 					@include mixins.cardTitle;
+				}
+			}
+			.buttonContainer-1zBNxN {
+				flex-direction: row-reverse;
+				gap: 16px;
+				button {
+					margin: 0;
 				}
 			}
 		}

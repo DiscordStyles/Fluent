@@ -4,9 +4,11 @@ html, span:not([class*="spinner-"]):not([class*="spinnerItem"]) {
 }
 
 body,
-.appMount-3lHmkl,
+.appMount-3lHmkl {
+	background: var(--bg2);
+}
 .bg-h5JY_x {
-	background: var(--background-2);
+	background: transparent;
 }
 
 // Remove pointer from clickable
@@ -19,4 +21,16 @@ body,
 	display: block;
 	content: "Fluent v" var(--fluent-version);
 	text-transform: none;
+}
+
+// Settings animation fixes
+.layer-3QrUeG {
+	transform: scale(1) !important;
+	z-index: 1;
+	&.baseLayer-35bLyl {
+		transform: none !important;
+		opacity: 1 !important;
+		padding-top: 0 !important;
+		transition: none !important;
+	}
 }

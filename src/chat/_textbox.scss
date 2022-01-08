@@ -27,7 +27,7 @@
 			background: var(--textbox-bg-hover);
 		}
 		&:focus-within {
-			background: var(--background-3);
+			background: var(--bg3);
 			&::before {
 				height: 2px;
 				background: rgb(var(--accent));

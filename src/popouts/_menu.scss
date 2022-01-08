@@ -1,6 +1,6 @@
 #app-mount .menu-3sdvDG {
 	min-width: 280px;
-	background: var(--background-5);
+	background: var(--bg5);
 	border: 1px solid var(--border-high);
 	border-radius: var(--rounded-high);
 	box-shadow: var(--elevation-1);
@@ -38,7 +38,7 @@
 		cursor: var(--cursor);
 		padding: 4px 0;
 		&:hover {
-			background: var(--background-8);
+			background: var(--bg8);
 		}
 	}
 
@@ -79,7 +79,7 @@
 		}
 		&.focused-3afm-j,
 		&:active:not(.hideInteraction-1iHO1O) {
-			background: var(--background-8);
+			background: var(--bg8);
 		}
 		&.colorPremium-p4p7qO {
 			color: hsl(var(--discord-pink));

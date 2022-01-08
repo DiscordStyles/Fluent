@@ -1,17 +1,78 @@
 @use '../mixins';
+@use '../assets/mono';
 
 #app-mount .layer-3QrUeG {
-	background: var(--background-2);
+	background: var(--bg2);
+
+	.toolsContainer-1edPuj {
+		margin: 0;
+		padding: 0;
+		flex: none;
+		width: auto;
+		position: fixed;
+		top: 5px;
+		left: 5px;
+		z-index: 2;
+		width: auto;
+		-webkit-user-drag: none;
+		-webkit-app-region: none;
+	}
+	.tools-3-3s-N {
+		position: static;
+	}
+	.container-1sFeqf {
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		gap: 8px;
+	}
+	.closeButton-1tv5uR {
+		border-radius: var(--rounded);
+		width: 42px;
+		flex: 0 0 42px;
+		border: none;
+		cursor: var(--cursor);
+		svg {
+			mask: url(mono.$arrow-left) center/cover;
+			width: 16px;
+			height: 16px;
+			background: var(--text-primary);
+		}
+		path {
+			display: none;
+		}
+		&:hover {
+			background: var(--btn-bg-hover);
+		}
+		&:active {
+			background: var(--btn-bg-active);
+			transform: none;
+		}
+	}
+	.keybind-KpFkfr {
+		margin-top: 0;
+		font-size: 0;
+		color: var(--text-primary);
+		&::before {
+			content: "Settings";
+			font-size: var(--text-size-xs);
+			display: block;
+		}
+	}
+
 	&[aria-label*="SETTINGS"] {
 		.standardSidebarView-3F1I7i {
-			background: var(--background-2);
+			background: var(--bg2);
 		}
 
 
-
+		.sidebarRegion-VFTUkN {
+			flex: 0;
+			margin-top: 46px;
+		}
 		.sidebar-CFHs9e {
 			width: 270px;
-			padding: 16px;
+			padding: 0 16px 16px;
 			.item-PXvHYJ {
 				font-size: var(--text-size-sm);
 				border-radius: var(--rounded);
@@ -46,10 +107,10 @@
 					transition: .15s ease;
 				}
 				&:hover {
-					background: var(--background-4);
+					background: var(--bg4);
 				}
 				&.selected-3s45Ha {
-					background: var(--background-4);
+					background: var(--bg4);
 					.premiumLabel-fDtYys {
 						color: var(--accent-text);
 					}
@@ -63,11 +124,8 @@
 				}
 			}
 		}
-		.sidebarRegion-VFTUkN {
-			flex: 0;
-		}
 		.sidebarRegionScroller-3MXcoP {
-			background: var(--background-2);
+			background: var(--bg2);
 		}
 		.header-2RyJ0Y {
 			display: none;
@@ -79,13 +137,13 @@
 
 
 		.contentRegion-3nDuYy {
-			background: var(--background-2);
+			background: var(--bg2);
 		}
 		.contentRegionScroller-26nc1e {
-			background: var(--background-2);
+			background: var(--bg2);
 		}
 		.contentColumn-2hrIYH {
-			padding: 16px 32px;
+			padding: 44px 32px 32px;
 			max-width: 1000px;
 			& > div {
 				animation: in .25s ease forwards;
@@ -95,12 +153,12 @@
 
 
 
-
 		// Global
 		h1.title-3sZWYQ {
 			@include mixins.title;
 		}
-		.divider-3573oO {
+		.divider-3573oO,
+		.divider-3Ll72z {
 			display: none;
 		}
 
