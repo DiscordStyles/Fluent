@@ -138,7 +138,7 @@
 
 	.userSettingsSecurity-3IYeMF {
 		.h1-1qdNzo {
-			@include mixins.subtitle;
+			@include mixins.subTitle;
 		}
 
 		& > .children-rWhLdy {
@@ -165,7 +165,7 @@
 			// 2FA Enabled
 			& > div:last-child > div > div {
 				& > .title-3sZWYQ {
-					@include mixins.subtitle;
+					@include mixins.subTitle;
 					color: transparent;
 					&::before {
 						content: "Security";
@@ -260,7 +260,7 @@
 		// Account removal
 		& ~ [class="marginTop40-i-78cZ"] {
 			.title-3sZWYQ {
-				@include mixins.subtitle;
+				@include mixins.subTitle;
 				color: transparent;
 				user-select: none;
 				&::before {

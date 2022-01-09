@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '0.0.9 [BETA]';
+	--fluent-version: '0.0.10 [BETA]';
 
 	--bg1: #171717;
 	--bg2: #202020;
@@ -38,6 +38,8 @@
 
 	--rounded-high: 8px;
 	--rounded: 4px;
+
+	--switch-border: hsl(0 0% 100% / 54.42%);
 
 	--font-weight-light: 300;
 	--font-weight-semilight: 350;
@@ -80,4 +82,5 @@
 
 	--text-normal: var(--text-primary);
 	--text-muted: var(--text-tertiary);
+	--text-link: rgb(var(--accent));
 }

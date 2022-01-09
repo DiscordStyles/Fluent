@@ -1,14 +1,23 @@
-[role="slider"] {
+#app-mount [role="slider"] {
 	.bar-2Qqk5Z {
 		height: 4px;
 	}
 	.barFill-23-gu- {
 		background: rgb(var(--accent));
 	}
+	.track-11EASc {
+		left: 10px;
+	}
 	.grabber-3mFHz2 {
 		border: 4px solid var(--bg9);
 		margin-top: 0;
 		background: rgb(var(--accent));
 		box-shadow: var(--elevation-1);
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		transform: translateY(-50%);
+		margin-left: -10px;
+		margin-top: -2px;
 	}
 }

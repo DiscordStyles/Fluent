@@ -1,0 +1,42 @@
+@use '../assets/mono';
+@use '../mixins';
+
+#app-mount .layer-3QrUeG[aria-label*="SETTINGS"] {
+	h1.title-3sZWYQ {
+		@include mixins.title;
+	}
+	.divider-3573oO,
+	.divider-3Ll72z {
+		display: none;
+	}
+	.title-31JmR4 {
+		cursor: var(--cursor);
+	}
+
+	// Cards
+	.title-3sZWYQ {
+		@include mixins.subTitle;
+	}
+	// Switches
+	.container-2_Tvc_ {
+		@include mixins.card;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 0;
+		margin-bottom: 4px;
+		.title-31JmR4 {
+			@include mixins.cardTitle;
+		}
+		.note-1V3kyJ {
+			@include mixins.cardDesc;
+		}
+		& + .title-3sZWYQ,
+		& + div[class^="margin"]:not(.container-2_Tvc_) {
+			margin-top: 40px;
+		}
+	}
+	[class^="margin"] + [class^="margin"] {
+		margin-top: 40px;
+		margin-bottom: 0;
+	}
+}
