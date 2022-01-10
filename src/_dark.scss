@@ -1,0 +1,49 @@
+.theme-dark,
+html.theme-dark #app-mount .theme-light .root-1gCeng,
+html.theme-dark .force-theme.theme-light {
+	--bg-main: #202020;
+	--bg-alt: #272727;
+	--bg-content: #2b2b2b;
+	--bg-content-alt: #2d2d2d;
+
+	--bg-interactive: #2d2d2d;
+	--bg-interactive-hover: #292929;
+
+	--bg-high: #343434;
+	--bg-higher: #3a3a3a;
+	--bg-highest: #484848;
+	
+	--bg-menu: #2c2c2c;
+	--bg-menu-item: #383838;
+	--bg-menu-item-hover: #343434;
+
+	--chat-bubble-bg: #2f2f2f;
+
+	--border: #1d1d1d;
+	--border-high: #3b3b3b;
+
+	--pill-unread: #9a9a9a;
+	--pill-hovered: #fff;
+
+	--btn-bg: hsl(0 0% 100% / .06);
+	--btn-bg-hover: hsl(0 0% 100% / .08);
+	--btn-bg-active: hsl(0 0% 100% / .03);
+	--btn-border-primary: hsl(0 0% 100% / .06);
+	--btn-border-secondary: hsl(0 0% 100% / .01);
+
+	--scrollbar-background: hsl(0 0% 50%);
+
+	--elevation-1: 0px 8px 16px hsl(0 0% 0% / .14);
+	--elevation-2: 0px 10px 14px 2px hsl(0 0% 0% / .24);
+
+	--textbox-bg: #2d2d2d;
+	--textbox-bg-hover: #323232;
+	--textbox-border: #303030;
+	--textbox-underline: #9a9a9a;
+
+	--switch-border: hsl(0 0% 100% / 54.42%);
+
+	--text-primary: hsl(0 0% 100% / 100%);
+	--text-secondary: hsl(0 0% 100% / 75%);
+	--text-tertiary: hsl(0 0% 100% / 55%);
+}

@@ -22,7 +22,7 @@
 		.contents-2mQqc9 > .messageContent-2qWWxC:not(:empty) {
 			margin-left: 0;
 			padding: 12px 16px;
-			background: var(--bg5);
+			background: var(--chat-bubble-bg);
 			border-radius: var(--rounded);
 			display: inline-block;
 		}
@@ -31,7 +31,7 @@
 		}
 
 		&.groupStart-23k01U .contents-2mQqc9 {
-			background: var(--bg5);
+			background: var(--chat-bubble-bg);
 			display: inline-block;
 			border-radius: var(--rounded) var(--rounded);
 			
@@ -87,7 +87,7 @@
 	}
 
 	.embedFull-2tM8-- {
-		background: var(--bg5);
+		background: var(--chat-bubble-bg);
 	}
 
 	.markup-2BOw-j pre {

@@ -2,9 +2,34 @@
 	.member-3-YXUe {
 		max-width: none;
 		margin: 0;
+		padding: 2px 0;
 		.layout-2DM8Md {
-			height: 52px;
+			height: 48px;
 			padding: 0 16px;
+			cursor: var(--cursor);
+			&::before {
+				content: "";
+				border-radius: 50px;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: var(--pill-width);
+				height: 0;
+				left: 0;
+				opacity: 0;
+				background: rgb(var(--accent));
+				transition: var(--pill-transition);
+			}
+		}
+		&:hover .layout-2DM8Md {
+			background: var(--bg-content);
+		}
+		&.selected-aXhQR6 .layout-2DM8Md {
+			background: var(--bg-content);
+			&::before {
+				height: var(--pill-height);
+				opacity: 1;
+			}
 		}
 	}
 }

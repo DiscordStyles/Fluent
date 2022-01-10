@@ -1,9 +1,9 @@
 #app-mount .menu-3sdvDG {
 	min-width: 280px;
-	background: var(--bg5);
+	background: var(--bg-menu);
 	border: 1px solid var(--border-high);
 	border-radius: var(--rounded-high);
-	box-shadow: var(--elevation-1);
+	box-shadow: none;
 
 	.scroller-3BxosC {
 		padding: 0 !important;
@@ -38,7 +38,7 @@
 		cursor: var(--cursor);
 		padding: 4px 0;
 		&:hover {
-			background: var(--bg8);
+			background: var(--bg-higher);
 		}
 	}
 
@@ -86,7 +86,8 @@
 		}
 		&.focused-3afm-j,
 		&:active:not(.hideInteraction-1iHO1O) {
-			background: var(--bg8);
+			background: var(--bg-menu-item);
+			color: var(--text-primary);
 		}
 		&.colorPremium-p4p7qO {
 			color: hsl(var(--discord-pink));

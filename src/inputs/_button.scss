@@ -24,8 +24,9 @@
 			color: var(--accent-text);
 		}
 		&.lookFilled-1Gx00P {
-			border: 1px solid var(--btn-border-secondary);
-			border-top-color: var(--btn-border-primary);
+			border: 1px solid var(--btn-border-x);
+			border-top-color: var(--btn-border-t);
+			border-bottom-color: var(--btn-border-b);
 			font-weight: var(--font-weight-semibold);
 			transition: box-shadow .15s ease;
 			&.colorBrand-3pXr91 {
@@ -38,12 +39,13 @@
 			&.colorGrey-2DXtkV {
 				background: var(--btn-bg);
 				font-weight: var(--font-weight-regular);
+				color: var(--text-normal);
 				&:hover {
 					background: var(--btn-bg-hover);
 				}
 				&:active {
 					background: var(--btn-bg-active);
-					border-color: var(--btn-border-primary);
+					border-color: var(--btn-border-x);
 				}
 			}
 			&:not(.colorGrey-2DXtkV) {

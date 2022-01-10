@@ -1,5 +1,8 @@
 #app-mount {
 	.userPopout-xaxa6l {
+		border: 1px solid var(--border-high);
+		box-shadow: var(--elevation-2);
+		background: var(--bg-menu);
 		.note-1oo11U {
 			margin: 0;
 		}
@@ -7,5 +10,11 @@
 			height: auto !important;
 			margin: 0;
 		}
+	}
+	.bodyInnerWrapper-26fQXj {
+		background: transparent;
+	}
+	.footer-3UKYOU {
+		background: transparent;
 	}
 }

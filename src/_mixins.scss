@@ -13,7 +13,7 @@
 }
 
 @mixin card {
-	background: var(--bg4);
+	background: var(--bg-content);
 	border: 1px solid var(--border);
 	border-radius: var(--rounded);
 	padding: 18px;
@@ -52,10 +52,10 @@
 	box-shadow: none !important;
 	&:hover {
 		background: var(--btn-bg-hover);
-		border-color: var(--btn-border-primary) var(--btn-border-secondary) var(--btn-border-secondary);
+		border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 	}
 	&:active {
 		background: var(--btn-bg-active);
-		border-color: var(--btn-border-primary);
+		border-color: var(--btn-border-x);
 	}
 }

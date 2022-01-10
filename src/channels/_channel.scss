@@ -1,7 +1,8 @@
 #app-mount {
 	.wrapper-2jXpOf {
+		padding: 2px 0;
 		&:hover .content-1x5b-n {
-			background: var(--bg4);
+			background: var(--bg-interactive);
 			.icon-1DeIlz {
 				color: var(--interactive-normal);
 			}
@@ -18,10 +19,13 @@
 				opacity: 1;
 			}
 			.content-1x5b-n {
-				background: var(--bg4);
+				background: var(--bg-interactive);
 				.icon-1DeIlz {
 					color: var(--interactive-active);
 				}
+			}
+			&:hover .content-1x5b-n {
+				background: var(--bg-interactive-hover);
 			}
 		}
 		&::before {

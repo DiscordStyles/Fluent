@@ -1,45 +1,16 @@
 :root {
-	--fluent-version: '0.0.10 [BETA]';
-
-	--bg1: #171717;
-	--bg2: #202020;
-	--bg3: #272727;
-	--bg4: #2b2b2b;
-	--bg5: #2f2f2f;
-	--bg6: #2d2d2d;
-	--bg7: #343434;
-	--bg8: #3a3a3a;
-	--bg9: #484848;
+	--fluent-version: '0.0.11 [BETA]';
 
 	--accent-text: #000;
 
-	--border: #1d1d1d;
-	--border-high: #3b3b3b;
+	--pill-width: 4px;
+	--pill-height: 16px;
+	--pill-transition: opacity .15s ease, height .15s ease;
 
-	--pill-unread: #9a9a9a;
-	--pill-hovered: #fff;
-
-	--btn-bg: hsl(0 0% 100% / .06);
-	--btn-bg-hover: hsl(0 0% 100% / .08);
-	--btn-bg-active: hsl(0 0% 100% / .03);
 	--btn-radius: 6px;
-	--btn-border-primary: hsl(0 0% 100% / .06);
-	--btn-border-secondary: hsl(0 0% 100% / .01);
-
-	--scrollbar-background: hsl(0 0% 50%);
-
-	--elevation-1: 0px 8px 16px hsl(0 0% 0% / .14);
-	--elevation-2: 0px 10px 14px 2px hsl(0 0% 0% / .24);
-
-	--textbox-bg: #2f2f2f;
-	--textbox-bg-hover: #333333;
-	--textbox-border: hsl(0 0% 100% / .045);
-	--textbox-underline: #a1a1a1;
 
 	--rounded-high: 8px;
 	--rounded: 4px;
-
-	--switch-border: hsl(0 0% 100% / 54.42%);
 
 	--font-weight-light: 300;
 	--font-weight-semilight: 350;
@@ -54,10 +25,6 @@
 	--text-size-lg: 20px;
 	--text-size-xl: 28px;
 	--text-size-2xl: 40px;
-
-	--text-primary: hsl(0 0% 100% / 100%);
-	--text-secondary: hsl(0 0% 100% / 75%);
-	--text-tertiary: hsl(0 0% 100% / 55%);
 
 	--line-height: 16px;
 	--line-height-md: 20px;

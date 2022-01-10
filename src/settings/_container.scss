@@ -2,7 +2,7 @@
 @use '../assets/mono';
 
 #app-mount .layer-3QrUeG {
-	background: var(--bg2);
+	background: var(--bg-main);
 
 	.toolsContainer-1edPuj {
 		margin: 0;
@@ -62,7 +62,7 @@
 
 	&[aria-label*="SETTINGS"] {
 		.standardSidebarView-3F1I7i {
-			background: var(--bg2);
+			background: var(--bg-main);
 		}
 
 
@@ -107,10 +107,10 @@
 					transition: .15s ease;
 				}
 				&:hover {
-					background: var(--bg4);
+					background: var(--bg-content);
 				}
 				&.selected-3s45Ha {
-					background: var(--bg4);
+					background: var(--bg-content);
 					.premiumLabel-fDtYys {
 						color: var(--accent-text);
 					}
@@ -125,7 +125,7 @@
 			}
 		}
 		.sidebarRegionScroller-3MXcoP {
-			background: var(--bg2);
+			background: var(--bg-main);
 		}
 		.header-2RyJ0Y {
 			display: none;
@@ -137,10 +137,10 @@
 
 
 		.contentRegion-3nDuYy {
-			background: var(--bg2);
+			background: var(--bg-main);
 		}
 		.contentRegionScroller-26nc1e {
-			background: var(--bg2);
+			background: var(--bg-main);
 		}
 		.contentColumn-2hrIYH {
 			padding: 44px 32px 32px;

@@ -1,6 +1,6 @@
 #app-mount {
 	.container-1r6BKw {
-		background: var(--bg2);
+		background: var(--bg-main);
 	}
 
 	.children-19S4PO::after {
@@ -47,7 +47,7 @@
 			background: var(--textbox-bg-hover);
 		}
 		&:focus-within {
-			background: var(--bg3);
+			background: var(--bg-alt);
 			&::before {
 				height: 2px;
 				background: rgb(var(--accent));
