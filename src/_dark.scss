@@ -12,7 +12,7 @@ html.theme-dark .force-theme.theme-light {
 	--bg-high: #343434;
 	--bg-higher: #3a3a3a;
 	--bg-highest: #484848;
-	
+
 	--bg-menu: #2c2c2c;
 	--bg-menu-item: #383838;
 	--bg-menu-item-hover: #343434;
@@ -28,9 +28,11 @@ html.theme-dark .force-theme.theme-light {
 	--btn-bg: hsl(0 0% 100% / .06);
 	--btn-bg-hover: hsl(0 0% 100% / .08);
 	--btn-bg-active: hsl(0 0% 100% / .03);
-	--btn-border-primary: hsl(0 0% 100% / .06);
-	--btn-border-secondary: hsl(0 0% 100% / .01);
-
+	--btn-border-t: hsl(0 0% 100% / .06);
+	--btn-border-x: hsl(0 0% 100% / .01);
+	--btn-border-b: hsl(0 0% 100% / .01);
+	--btn-border-active: hsl(0 0% 100% / .06);
+	
 	--scrollbar-background: hsl(0 0% 50%);
 
 	--elevation-1: 0px 8px 16px hsl(0 0% 0% / .14);

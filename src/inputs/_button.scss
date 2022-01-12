@@ -6,6 +6,7 @@
 		line-height: 20px;
 		font-size: var(--text-size-sm);
 		cursor: var(--cursor);
+		margin: 0;
 
 		[role="button"] {
 			cursor: var(--cursor) !important;
@@ -23,20 +24,20 @@
 			background: rgb(var(--accent));
 			color: var(--accent-text);
 		}
-		&.lookFilled-1Gx00P {
+		&.lookFilled-yCfaCM {
 			border: 1px solid var(--btn-border-x);
 			border-top-color: var(--btn-border-t);
 			border-bottom-color: var(--btn-border-b);
 			font-weight: var(--font-weight-semibold);
 			transition: box-shadow .15s ease;
-			&.colorBrand-3pXr91 {
+			&.colorBrand-I6CyqQ {
 				background: rgb(var(--accent));
 				color: var(--accent-text);
 			}
-			&.colorRed-1TFJan {
+			&.colorRed-rQXKgM {
 				background: hsl(var(--discord-red));
 			}
-			&.colorGrey-2DXtkV {
+			&.colorGrey-2iAG-B {
 				background: var(--btn-bg);
 				font-weight: var(--font-weight-regular);
 				color: var(--text-normal);
@@ -45,10 +46,10 @@
 				}
 				&:active {
 					background: var(--btn-bg-active);
-					border-color: var(--btn-border-x);
+					border-color: var(--btn-border-active);
 				}
 			}
-			&:not(.colorGrey-2DXtkV) {
+			&:not(.colorGrey-2iAG-B) {
 				&:hover {
 					box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / .1);
 					border-color: hsl(0 0% 0% / .1);
@@ -59,7 +60,7 @@
 				}
 			}
 		}
-		&.lookOutlined-3sRXeN {
+		&.lookOutlined-3yKVGo {
 			cursor: pointer;
 			border: none;
 			background: transparent !important;
@@ -80,7 +81,7 @@
 				opacity: 0;
 				pointer-events: none;
 			}
-			&.sizeMin-1mJd1x {
+			&.sizeMin-DfpWCE {
 				font-size: var(--text-size-xs);
 			}
 			&:hover::before {
@@ -90,14 +91,14 @@
 				opacity: .07;
 			}
 		}
-		&.lookLink-9FtZy- {
+		&.lookLink-15mFoz {
 			cursor: pointer;
 			color: rgb(var(--accent));
 			.contents-3ca1mk {
 				background: none;
 			}
 
-			&.sizeMin-1mJd1x {
+			&.sizeMin-DfpWCE {
 				font-size: var(--text-size-xs);
 			}
 			&:hover {

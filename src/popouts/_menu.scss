@@ -74,14 +74,6 @@
 			padding: 0 4px;
 		}
 
-		&:not([role="menuitemcheckbox"]):not([aria-haspopup="true"]) {
-			flex-direction: row-reverse;
-			.iconContainer-1-SsTR,
-			.imageContainer-1wSPgI {
-				margin: 0 8px 0 0;
-			}
-		}
-
 		&.hideInteraction-2jPGL_ {
 			padding: 0;
 		}
