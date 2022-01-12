@@ -1,9 +1,9 @@
 #app-mount {
-	.member-3-YXUe {
+	.member-2gU6Ar {
 		max-width: none;
 		margin: 0;
 		padding: 2px 0;
-		.layout-2DM8Md {
+		.layout-1qmrhw {
 			height: 48px;
 			padding: 0 16px;
 			cursor: var(--cursor);
@@ -21,14 +21,17 @@
 				transition: var(--pill-transition);
 			}
 		}
-		&:hover .layout-2DM8Md {
+		&:hover .layout-1qmrhw {
 			background: var(--bg-content);
 		}
-		&.selected-aXhQR6 .layout-2DM8Md {
+		&.selected-1-Z6gm .layout-1qmrhw {
 			background: var(--bg-content);
 			&::before {
 				height: var(--pill-height);
 				opacity: 1;
+			}
+			&:hover {
+				background: var(--bg-interactive-hover);
 			}
 		}
 	}

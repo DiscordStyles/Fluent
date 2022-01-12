@@ -1,10 +1,10 @@
 @use '../mixins';
 @use '../assets/mono';
 
-#app-mount .layer-3QrUeG {
+#app-mount .layer-86YKbF {
 	background: var(--bg-main);
 
-	.toolsContainer-1edPuj {
+	.toolsContainer-25FL6V {
 		margin: 0;
 		padding: 0;
 		flex: none;
@@ -17,16 +17,16 @@
 		-webkit-user-drag: none;
 		-webkit-app-region: none;
 	}
-	.tools-3-3s-N {
+	.tools-kIrEGr {
 		position: static;
 	}
-	.container-1sFeqf {
+	.container-O54IuJ {
 		flex-direction: row;
 		align-items: center;
 		width: 100%;
 		gap: 8px;
 	}
-	.closeButton-1tv5uR {
+	.closeButton-PCZcma {
 		border-radius: var(--rounded);
 		width: 42px;
 		flex: 0 0 42px;
@@ -49,7 +49,7 @@
 			transform: none;
 		}
 	}
-	.keybind-KpFkfr {
+	.keybind-13vtq8 {
 		margin-top: 0;
 		font-size: 0;
 		color: var(--text-primary);
@@ -61,19 +61,19 @@
 	}
 
 	&[aria-label*="SETTINGS"] {
-		.standardSidebarView-3F1I7i {
+		.standardSidebarView-E9Pc3j {
 			background: var(--bg-main);
 		}
 
 
-		.sidebarRegion-VFTUkN {
+		.sidebarRegion-1VBisG {
 			flex: 0;
 			margin-top: 46px;
 		}
-		.sidebar-CFHs9e {
+		.sidebar-nqHbhN {
 			width: 270px;
 			padding: 0 16px 16px;
-			.item-PXvHYJ {
+			.item-3XjbnG {
 				font-size: var(--text-size-sm);
 				border-radius: var(--rounded);
 				padding: 8px 12px;
@@ -83,7 +83,7 @@
 				position: relative;
 				cursor: var(--cursor);
 	
-				.selectedBackground-2KQZ6B {
+				.selectedBackground-1qyzak {
 					background: rgb(var(--accent));
 				}
 	
@@ -109,12 +109,12 @@
 				&:hover {
 					background: var(--bg-content);
 				}
-				&.selected-3s45Ha {
+				&.selected-g-kMVV {
 					background: var(--bg-content);
-					.premiumLabel-fDtYys {
+					.premiumLabel-V52REm {
 						color: var(--accent-text);
 					}
-					.selectedIcon-T40qOF {
+					.selectedIcon-3rJcYb {
 						fill: var(--accent-text);
 					}
 					&::after {
@@ -124,25 +124,25 @@
 				}
 			}
 		}
-		.sidebarRegionScroller-3MXcoP {
+		.sidebarRegionScroller-FXiQOh {
 			background: var(--bg-main);
 		}
-		.header-2RyJ0Y {
+		.header-2Kx1US {
 			display: none;
 		}
-		.separator-gCa7yv {
+		.separator-2wx7h6 {
 			height: 0;
 		}
 
 
 
-		.contentRegion-3nDuYy {
+		.contentRegion-3HkfJJ {
 			background: var(--bg-main);
 		}
-		.contentRegionScroller-26nc1e {
+		.contentRegionScroller-2_GT_N {
 			background: var(--bg-main);
 		}
-		.contentColumn-2hrIYH {
+		.contentColumn-1C7as6 {
 			padding: 44px 32px 32px;
 			max-width: 1000px;
 			& > div {

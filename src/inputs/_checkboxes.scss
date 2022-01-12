@@ -1,5 +1,5 @@
 #app-mount [role="menuitemcheckbox"] {
-	.iconContainer-2-XQPY {
+	.iconContainer-1-SsTR {
 		border: 1px solid var(--text-muted);
 		border-radius: var(--rounded);
 		width: 18px;
@@ -23,7 +23,7 @@
 	svg {
 		display: none;
 	}
-	&[aria-checked="true"] .iconContainer-2-XQPY {
+	&[aria-checked="true"] .iconContainer-1-SsTR {
 		border-color: rgb(var(--accent));
 		background: rgb(var(--accent));
 		&::before {

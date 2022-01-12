@@ -1,7 +1,7 @@
 @use '../mixins';
 
 #app-mount {
-	.panels-j1Uci_ {
+	.panels-3wFtMD {
 		background: transparent;
 		background: var(--bg-alt);
 		border-radius: var(--rounded);
@@ -10,15 +10,15 @@
 	}
 
 	// Voice connected
-	.container-1giJp5:only-child {
+	.container-1zzFcN:only-child {
 		border: none;
 	}
-	.actionButtons-14eAc_ .button-1YfofB.buttonColor-7qQbGO.colorBrand-3pXr91 {
+	.actionButtons-2vEOUh .button-1EGGcP.buttonColor-3bP3fX.colorBrand-3pXr91 {
 		@include mixins.btnReset;
 	}
 
 	// User area
-	.container-3baos1 {
+	.container-YkUktl {
 		padding: 0 8px;
 	}
 }

@@ -1,8 +1,9 @@
 #app-mount {
 	.userPopout-xaxa6l {
 		border: 1px solid var(--border-high);
-		box-shadow: var(--elevation-2);
+		box-shadow: none;
 		background: var(--bg-menu);
+		border-radius: var(--rounded);
 		.note-1oo11U {
 			margin: 0;
 		}
@@ -10,10 +11,28 @@
 			height: auto !important;
 			margin: 0;
 		}
+		.avatar-37jOim {
+			border-color: var(--bg-menu);
+			background: var(--bg-menu);
+		}
+	}
+
+	.headerTop-3vNv-a {
+		padding: 64px 18px 18px;
+	}
+	
+	.body-3HBlXn {
+		padding: 0 18px 18px;
+		.divider-ewBQKj {
+			background: var(--border-high);
+			margin-bottom: 18px;
+		}
 	}
 	.bodyInnerWrapper-26fQXj {
 		background: transparent;
 	}
+
+
 	.footer-3UKYOU {
 		background: transparent;
 	}

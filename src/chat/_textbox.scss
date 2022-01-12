@@ -1,14 +1,14 @@
 @use '../assets/mono';
 
 #app-mount {
-	.form-2fGMdU {
+	.form-3gdLxP {
 		padding: 28px 88px 0;
 		margin-top: 0;
 		&::before {
 			content: none;
 		}
 	}
-	.channelTextArea-rNsIhG {
+	.channelTextArea-1FufC0 {
 		background: var(--textbox-bg);
 		border-radius: var(--rounded);
 		border: 1px solid var(--textbox-border);
@@ -34,15 +34,15 @@
 			}
 		}
 	}
-	.scrollableContainer-2NUZem {
+	.scrollableContainer-15eg7h {
 		background: transparent;
 		overflow: visible;
-		.inner-MADQqc {
+		.inner-NQg18Y {
 			position: unset;
 		}
 	}
 
-	.buttons-3JBrkn {
+	.buttons-uaqb-5 {
 		position: absolute;
 		bottom: -44px;
 		top: unset;
@@ -50,7 +50,7 @@
 		.lookBlank-3eh9lL {
 			padding: 0;
 		}
-		.buttonWrapper-1ZmCpA {
+		.buttonWrapper-3YFQGJ {
 			cursor: var(--cursor);
 		}
 	}
@@ -70,7 +70,7 @@
 	}
 
 
-	.attachWrapper-2TRKBi {
+	.attachWrapper-3slhXI {
 		position: absolute;
 		bottom: -44px;
 		left: 0;
@@ -79,7 +79,7 @@
 			margin: 0;
 		}
 	}
-	.attachButton-2WznTc {
+	.attachButton-_ACFSu {
 		svg {
 			mask: url(mono.$plus-circle) center/cover;
 			background: var(--interactive-normal);
@@ -97,7 +97,7 @@
 			}
 	}
 	// Gift Icon
-	.buttons-3JBrkn > button[aria-label] {
+	.buttons-uaqb-5 > button[aria-label] {
 		svg {
 			mask: url(mono.$gift) center/cover;
 			background: var(--interactive-normal);
@@ -112,7 +112,7 @@
 		}
 	}
 	// Emoji Icon
-	.sprite-2iCowe {
+	.sprite-2lxwfc {
 		width: 26px;
 		height: 26px;
 		mask: url(mono.$emoji) center/cover;
@@ -125,7 +125,7 @@
 		}
 	}
 	// GIF Icon
-	.stickerButton-3OEgwj {
+	.stickerButton-1-nFh2 {
 		padding: 0;
 		svg {
 			width: 24px !important;

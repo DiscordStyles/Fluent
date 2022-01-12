@@ -4,30 +4,31 @@ html, span:not([class*="spinner-"]):not([class*="spinnerItem"]) {
 }
 
 body,
-.appMount-3lHmkl {
+.appMount-2yBXZl,
+.app-2CXKsg {
 	background: var(--bg-main);
 }
-.bg-h5JY_x {
+.bg-1QIAus {
 	background: transparent;
 }
 
 // Remove pointer from clickable
-.clickable-536fPF {
+.clickable-2AoIYN {
 	cursor: var(--cursor);
 }
 
 // Version
-[aria-label="USER_SETTINGS"] .info-1VyQPT > span:first-child::before {
+[aria-label="USER_SETTINGS"] .info-1sUqUG > span:first-child::before {
 	display: block;
 	content: "Fluent v" var(--fluent-version);
 	text-transform: none;
 }
 
 // Settings animation fixes
-.layer-3QrUeG {
+.layer-86YKbF {
 	transform: scale(1) !important;
 	z-index: 1;
-	&.baseLayer-35bLyl {
+	&.baseLayer-W6S8cY {
 		transform: none !important;
 		opacity: 1 !important;
 		padding-top: 0 !important;

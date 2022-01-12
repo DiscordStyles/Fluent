@@ -1,44 +1,44 @@
 #app-mount {
-	.message-2qnXI6.selected-2P5D_Z.cozyMessage-3V1Y8y .contents-2mQqc9 {
+	.message-2CShn3.selected-2LX7Jy.cozyMessage-1DWF9U .contents-2MsGLg {
 		display: block;
 		width: 100%;
-		.channelTextArea-3bF57p {
+		.channelTextArea-220_Gz {
 			margin-top: 0;
 		}
-		.slateTextArea-1Mkdgw {
+		.slateTextArea-27tjG0 {
 			padding-top: 0;
 		}
 	}
-	.operations-36ENbA {
+	.operations-3q3u6E {
 		padding: 12px;
 	}
 
-	.cozy-3raOZG {
-		.avatar-1BDn8e {
+	.cozy-VmLDNB {
+		.avatar-2e8lTP {
 			left: 32px;
 			margin-top: 0;
 		}
 
-		.contents-2mQqc9 > .messageContent-2qWWxC:not(:empty) {
+		.contents-2MsGLg > .messageContent-2t3eCI:not(:empty) {
 			margin-left: 0;
 			padding: 12px 16px;
 			background: var(--chat-bubble-bg);
 			border-radius: var(--rounded);
 			display: inline-block;
 		}
-		.container-3-pyIM {
+		.container-x059i8 {
 			padding: 0;
 		}
 
-		&.groupStart-23k01U .contents-2mQqc9 {
+		&.groupStart-3Mlgv1 .contents-2MsGLg {
 			background: var(--chat-bubble-bg);
 			display: inline-block;
 			border-radius: var(--rounded) var(--rounded);
 			
-			.header-23xsNx {
+			.header-2jRmjb {
 				padding: 12px 16px 2px;
 			}
-			.messageContent-2qWWxC {
+			.messageContent-2t3eCI {
 				&:empty {
 					margin-top: 8px;
 					display: block;
@@ -49,11 +49,11 @@
 			}
 		}
 
-		&.isSystemMessage-2MkNHd .messageContent-2qWWxC {
+		&.isSystemMessage-QNv9ZH .messageContent-2t3eCI {
 			padding: 16px !important;
 		}
 
-		&.wrapper-2a6GCs {
+		&.wrapper-30-Nkg {
 			padding-left: 88px;
 			padding-right: 78px !important;
 		}
@@ -61,36 +61,36 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
-			.contents-2mQqc9 {
+			.contents-2MsGLg {
 				width: fit-content;
 				background: rgb(var(--accent),.05);
-				& > .messageContent-2qWWxC {
+				& > .messageContent-2t3eCI {
 					background: transparent;
 				}
 			}
-			.container-3hZ-gs {
+			.container-3i3IzO {
 				justify-self: flex-end;
 			}
-			.headerText-3Uvj1Y {
+			.headerText-2z4IhQ {
 				display: none;
 			}
-			.timestamp-3ZCmNB {
+			.timestamp-p1Df1m {
 				margin-left: 0;
 			}
-			.avatar-1BDn8e {
+			.avatar-2e8lTP {
 				display: none;
 			}
-			&.hasThread-2k82W0::after {
+			&.hasThread-3h-KJV::after {
 				content: none;
 			}
 		}
 	}
 
-	.embedFull-2tM8-- {
+	.embedFull-1HGV2S {
 		background: var(--chat-bubble-bg);
 	}
 
-	.markup-2BOw-j pre {
+	.markup-eYLPri pre {
 		margin: 0;
 		max-width: 100%;
 	}

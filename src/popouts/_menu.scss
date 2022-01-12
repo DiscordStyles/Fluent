@@ -1,22 +1,22 @@
-#app-mount .menu-3sdvDG {
+#app-mount .menu-1QACrS {
 	min-width: 280px;
 	background: var(--bg-menu);
 	border: 1px solid var(--border-high);
 	border-radius: var(--rounded-high);
 	box-shadow: none;
 
-	.scroller-3BxosC {
+	.scroller-1bVxF5 {
 		padding: 0 !important;
 		&::-webkit-scrollbar {
 			display: none;
 		}
-		& > .item-1tOPte,
-		& > .submenuContainer-2gbm7M {
+		& > .item-1OdjEX,
+		& > .submenuContainer-3EVTeH {
 			margin: 6px;
 		}
 	}
 
-	.wrapper-3_530D {
+	.wrapper--nA0oy {
 		padding-bottom: 0 !important;
 		&::after {
 			content: "";
@@ -28,10 +28,10 @@
 			margin-top: 6px;
 		}
 	}
-	.customItem-a8hq58 {
+	.customItem-2CxBSo {
 		width: 100%;
 	}
-	.button-F9qN4n {
+	.button-1zW0-r {
 		width: 100%;
 		border-radius: var(--rounded);
 		background: transparent;
@@ -44,7 +44,7 @@
 
 	[role="group"] {
 		padding: 6px;
-		& > .item-1tOPte:last-child {
+		& > .item-1OdjEX:last-child {
 			margin-bottom: 0;
 		}
 	}
@@ -53,20 +53,20 @@
 		border-color: var(--border-high);
 	}
 	[role="slider"] {
-		.grabber-3mFHz2 {
+		.grabber-2GQyvM {
 			width: 14px;
 			height: 14px;
 			transform: translateY(0);
 		}
 	}
 
-	.item-1tOPte {
+	.item-1OdjEX {
 		margin: 0 0 4px;
 		border-radius: var(--rounded);
 		padding: 8px 12px;
 		cursor: var(--cursor);
 
-		.newBadge-34a1Fs {
+		.newBadge-1bHewI {
 			font-size: 10px;
 			border-radius: var(--rounded);
 			margin-top: -4px;
@@ -74,40 +74,44 @@
 			padding: 0 4px;
 		}
 
-		&:not([role="menuitemcheckbox"]) {
+		&:not([role="menuitemcheckbox"]):not([aria-haspopup="true"]) {
 			flex-direction: row-reverse;
-			.iconContainer-2-XQPY {
+			.iconContainer-1-SsTR,
+			.imageContainer-1wSPgI {
 				margin: 0 8px 0 0;
 			}
 		}
 
-		&.hideInteraction-1iHO1O {
+		&.hideInteraction-2jPGL_ {
 			padding: 0;
 		}
-		&.focused-3afm-j,
-		&:active:not(.hideInteraction-1iHO1O) {
+		&.focused-3qFvc8,
+		&:active:not(.hideInteraction-2jPGL_) {
 			background: var(--bg-menu-item);
 			color: var(--text-primary);
 		}
-		&.colorPremium-p4p7qO {
+		&.colorPremium-vwmYZQ {
 			color: hsl(var(--discord-pink));
 			.icon-LYJorE {
 				color: hsl(var(--discord-pink));
 			}
+			&.focused-3qFvc8 {
+				color: var(--text-primary);
+			}
 		}
-		&.colorBrand-ROmMP1 {
+		&.colorBrand-3cPPsm {
 			color: rgb(var(--accent));
 		}
 	}
 
-	.submenuContainer-2gbm7M {
+	.submenuContainer-3EVTeH {
 		.item-1tOPte {
 			flex-direction: row;
-			.iconContainer-2-XQPY {
+			.iconContainer-1-SsTR {
 				margin: 0 0 0 8px;
 			}
 		}
-		.layer-v9HyYc {
+		.layer-2aCOJ3 {
 			margin-top: -6px;
 		}
 	}

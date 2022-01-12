@@ -1,30 +1,30 @@
 #app-mount {
-	.wrapper-2jXpOf {
+	.wrapper-NhbLHG {
 		padding: 2px 0;
-		&:hover .content-1x5b-n {
+		&:hover .content-1gYQeQ {
 			background: var(--bg-interactive);
-			.icon-1DeIlz {
+			.icon-2W8DHg {
 				color: var(--interactive-normal);
 			}
 		}
-		&.modeUnread-1qO3K1::before {
+		&.modeUnread-3Cxepe::before {
 			height: 10px;
 			background: var(--pill-unread);
 			opacity: 1;
 		}
-		&.modeSelected-346R90 {
+		&.modeSelected-3DmyhH {
 			&::before {
 				height: 16px;
 				background: rgb(var(--accent));
 				opacity: 1;
 			}
-			.content-1x5b-n {
+			.content-1gYQeQ {
 				background: var(--bg-interactive);
-				.icon-1DeIlz {
+				.icon-2W8DHg {
 					color: var(--interactive-active);
 				}
 			}
-			&:hover .content-1x5b-n {
+			&:hover .content-1gYQeQ {
 				background: var(--bg-interactive-hover);
 			}
 		}
@@ -42,17 +42,17 @@
 			z-index: 1;
 		}
 	}
-	.content-1x5b-n {
+	.content-1gYQeQ {
 		border-radius: var(--rounded);
 		margin-left: 0;
 		margin-right: 0;
 		padding: 0 16px;
 	}
-	.mainContent-u_9PKf {
+	.mainContent-20q_Hp {
 		padding: 8px 0;
 		cursor: var(--cursor);
 	}
-	.unread-2lAfLh {
+	.unread-36eUEm {
 		border-radius: 50px;
 		left: 0;
 		width: 4px;
