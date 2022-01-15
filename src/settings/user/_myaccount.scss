@@ -126,7 +126,7 @@
 	.constrainedRow-3y91Xf {
 		margin: 0;
 		.size16-rrJ6ag {
-			font-size: var(--text-size-xs);
+			font-size: var(--font-size-xs);
 			color: var(--text-muted);
 		}
 	}
@@ -265,7 +265,7 @@
 				user-select: none;
 				&::before {
 					content: "Danger zone";
-					font-size: var(--text-size);
+					font-size: var(--font-size);
 					color: var(--text-primary);
 				}
 			}

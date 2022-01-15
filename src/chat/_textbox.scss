@@ -53,22 +53,10 @@
 		.buttonWrapper-3YFQGJ {
 			cursor: var(--cursor);
 		}
-	}
-	.button-38aScr {
-		#icon svg {
-			mask: url(mono.$gif) center/cover;
-			background: var(--interactive-normal);
-			transition: var(--transition);
-			transition-property: background;
-			path {
-				display: none;
-			}
-		}
-		&:hover #icon svg {
-			background: var(--interactive-active);
+		& > *:not(:last-child) {
+			margin-right: 16px !important;
 		}
 	}
-
 
 	.attachWrapper-3slhXI {
 		position: absolute;
@@ -93,13 +81,39 @@
 			background: var(--interactive-active);
 		}
 		&[aria-expanded="true"] svg {
-				background: rgb(var(--accent)) !important;
-			}
+			background: rgb(var(--accent)) !important;
+		}
 	}
-	// Gift Icon
-	.buttons-uaqb-5 > button[aria-label] {
-		svg {
-			mask: url(mono.$gift) center/cover;
+	.buttons-uaqb-5 {
+		// Gift Icon
+
+		.button-f2h6uQ {
+			padding: 0 !important;
+		}
+
+		& > button[aria-label] {
+		 svg {
+			 mask: url(mono.$gift) center/cover;
+			 background: var(--interactive-normal);
+			 transition: var(--transition);
+			 transition-property: background;
+			 path {
+				 display: none;
+			 }
+		 }
+		 &:hover svg {
+			 background: var(--interactive-normal);
+		 }
+	 }
+	}
+	// GIF
+	.button-f2h6uQ {
+		.contents-3ca1mk {
+			margin: 0;
+			padding: 0;
+		}
+		#icon svg {
+			mask: url(mono.$gif) center/cover;
 			background: var(--interactive-normal);
 			transition: var(--transition);
 			transition-property: background;
@@ -107,8 +121,8 @@
 				display: none;
 			}
 		}
-		&:hover svg {
-			background: var(--interactive-normal);
+		&:hover #icon svg {
+			background: var(--interactive-active);
 		}
 	}
 	// Emoji Icon
@@ -124,13 +138,13 @@
 			background: var(--interactive-active);
 		}
 	}
-	// GIF Icon
+	// Sticker Icon
 	.stickerButton-1-nFh2 {
 		padding: 0;
 		svg {
 			width: 24px !important;
 			height: 24px !important;
-			mask: url(mono.$gift) center/cover;
+			mask: url(mono.$sticker) center/cover;
 			background: var(--interactive-normal);
 			transition: var(--transition);
 			transition-property: background;

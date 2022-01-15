@@ -4,7 +4,7 @@
 		border-radius: var(--btn-radius);
 		padding: 4px 10px;
 		line-height: 20px;
-		font-size: var(--text-size-sm);
+		font-size: var(--font-size-sm);
 		cursor: var(--cursor);
 		margin: 0;
 
@@ -82,7 +82,7 @@
 				pointer-events: none;
 			}
 			&.sizeMin-DfpWCE {
-				font-size: var(--text-size-xs);
+				font-size: var(--font-size-xs);
 			}
 			&:hover::before {
 				opacity: .1;
@@ -99,7 +99,7 @@
 			}
 
 			&.sizeMin-DfpWCE {
-				font-size: var(--text-size-xs);
+				font-size: var(--font-size-xs);
 			}
 			&:hover {
 				background: var(--btn-bg);

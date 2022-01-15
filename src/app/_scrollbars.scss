@@ -1,10 +1,34 @@
-// Main scrollbars (chat)
+// Global
+::-webkit-scrollbar-track {
+	background: transparent !important;
+	border-color: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-background) !important;
+}
+
+
+// Chat scrollbar
 .chatContent-3KubbW .scroller-kQBbkU {
 	&::-webkit-scrollbar {
 		width: 10px;
 		height: 10px;
 	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+		border-color: transparent;
+	}
 	&::-webkit-scrollbar-thumb {
 		background-color: var(--scrollbar-background);
+	}
+}
+
+// Other scrollbars
+.members-3WRCEx,
+.container-1NXEtd .scroller-1ox3I2,
+.sidebarRegionScroller-FXiQOh {
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
 	}
 }

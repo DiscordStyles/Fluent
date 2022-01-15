@@ -17,6 +17,7 @@
 		transition: none;
 		cursor: var(--cursor);
 		filter: none;
+		color: var(--text-primary);
 		&:hover {
 			background: var(--btn-bg-hover);
 		}

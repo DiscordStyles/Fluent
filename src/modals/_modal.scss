@@ -1,0 +1,67 @@
+@use '../mixins';
+
+#app-mount .root-g14mjS {
+	border: 1px solid var(--border-high);
+	border-radius: var(--rounded);
+	background: var(--bg-content);
+	box-shadow: none;
+
+	[class^="modalCloseButton-"] {
+		display: none;
+	}
+	.input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
+	.input-2g-os5.multiInput-1VARjC {
+		background: var(--bg-high);
+		&:hover {
+			background: var(--bg-higher);
+		}
+	}
+
+	.header-1kWa4s,
+	.header-1R3myj,
+	.header-1zd7se {
+		padding: 24px 24px 0;
+		align-items: flex-start;
+		height: auto;
+		overflow: hidden;
+		.size24-17l95E {
+			@include mixins.modalTitle;
+		}
+	}
+	
+	.content-2hZxGK {
+		padding: 24px;
+		.marginBottom20-315RVT {
+			margin-bottom: 0;
+			& + * {
+				margin-top: 20px;
+			}
+		}
+		div[style^="position: absolute;"] {
+			display: none;
+		}
+	}
+	.size16-rrJ6ag {
+		@include mixins.text;
+		margin: 0;
+	}
+
+	.footer-31IekZ {
+		padding: 24px;
+		background: var(--bg-main);
+		box-shadow: none;
+		border-radius: 0 0 var(--rounded) var(--rounded);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 8px;
+
+		button {
+			&:only-child {
+				grid-column: 2/3;
+			}
+			&[type="button"] {
+				@include mixins.btnReset;
+			}
+		}
+	}
+}

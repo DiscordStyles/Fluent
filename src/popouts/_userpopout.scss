@@ -1,26 +1,46 @@
+@use '../mixins';
+
 #app-mount {
-	.userPopout-xaxa6l {
+	.userPopout-2j1gM4 {
 		border: 1px solid var(--border-high);
 		box-shadow: none;
 		background: var(--bg-menu);
 		border-radius: var(--rounded);
-		.note-1oo11U {
+		.note-Go5ZP2 {
 			margin: 0;
+		}
+		.input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
+		.input-2g-os5.multiInput-1VARjC {
+			background: var(--bg-high);
+			&:hover {
+				background: var(--bg-higher);
+			}
 		}
 		.textarea-2r0oV8 {
 			height: auto !important;
 			margin: 0;
 		}
-		.avatar-37jOim {
+		.avatar-2Vndt_ {
 			border-color: var(--bg-menu);
 			background: var(--bg-menu);
+		}
+
+		.fontDisplay-3Gtuks {
+			@include mixins.subText;
 		}
 	}
 
 	.headerTop-3vNv-a {
 		padding: 64px 18px 18px;
 	}
-	
+	.nameTag-H6kSJ0 {
+		@include mixins.text;
+	}
+	.username-3JLfHz,
+	.discrimBase-1VOoau {
+		font-weight: var(--font-weight-regular);
+	}
+
 	.body-3HBlXn {
 		padding: 0 18px 18px;
 		.divider-ewBQKj {
@@ -28,12 +48,12 @@
 			margin-bottom: 18px;
 		}
 	}
-	.bodyInnerWrapper-26fQXj {
+	.bodyInnerWrapper-2bQs1k {
 		background: transparent;
 	}
 
 
-	.footer-3UKYOU {
+	.footer-3naVBw {
 		background: transparent;
 	}
 }

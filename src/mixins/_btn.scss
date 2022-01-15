@@ -1,0 +1,18 @@
+@mixin btnReset {
+	background: var(--btn-bg);
+	font-weight: var(--font-weight-regular);
+	color: var(--text-primary);
+	box-shadow: none !important;
+	border: 1px solid var(--btn-border-x);
+	border-top-color: var(--btn-border-t);
+	border-bottom-color: var(--btn-border-b);
+	cursor: var(--cursor);
+	&:hover {
+		background: var(--btn-bg-hover);
+		border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+	}
+	&:active {
+		background: var(--btn-bg-active);
+		border-color: var(--btn-border-active);
+	}
+}
