@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "0.0.13 [BETA]";
+  --fluent-version: "0.0.14 [BETA]";
   --accent-text: #000;
   --pill-width: 4px;
   --pill-height: 16px;
@@ -692,7 +692,8 @@ body,
 }
 #app-mount .channel-1Shao0 {
   max-width: unset;
-  margin: 0;
+  margin: 4px 0;
+  padding: 0;
 }
 #app-mount .channel-1Shao0 .layout-1qmrhw {
   cursor: var(--cursor);
@@ -719,14 +720,17 @@ body,
   justify-content: center;
 }
 #app-mount .channel-1Shao0:hover .layout-1qmrhw {
-  background: var(--bg-content);
+  background: var(--bg-interactive);
 }
 #app-mount .channel-1Shao0.selected-1-Z6gm .layout-1qmrhw {
-  background: var(--bg-content);
+  background: var(--bg-interactive);
 }
 #app-mount .channel-1Shao0.selected-1-Z6gm .layout-1qmrhw::before {
   height: var(--pill-height);
   opacity: 1;
+}
+#app-mount .channel-1Shao0.selected-1-Z6gm .layout-1qmrhw:hover {
+  background: var(--bg-interactive-hover);
 }
 
 #app-mount .chat-2ZfjoI {
@@ -843,14 +847,16 @@ body,
 #app-mount .form-3gdLxP::before {
   content: none;
 }
-#app-mount .channelTextArea-1FufC0 {
+#app-mount .channelTextArea-1FufC0,
+#app-mount .channelTextArea-1VQBuV {
   background: var(--textbox-bg);
   border-radius: var(--rounded);
   border: 1px solid var(--textbox-border);
   position: relative;
   margin-bottom: 42px;
 }
-#app-mount .channelTextArea-1FufC0::before {
+#app-mount .channelTextArea-1FufC0::before,
+#app-mount .channelTextArea-1VQBuV::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -859,13 +865,16 @@ body,
   height: 1px;
   background: var(--textbox-underline);
 }
-#app-mount .channelTextArea-1FufC0:hover {
+#app-mount .channelTextArea-1FufC0:hover,
+#app-mount .channelTextArea-1VQBuV:hover {
   background: var(--textbox-bg-hover);
 }
-#app-mount .channelTextArea-1FufC0:focus-within {
+#app-mount .channelTextArea-1FufC0:focus-within,
+#app-mount .channelTextArea-1VQBuV:focus-within {
   background: var(--bg-alt);
 }
-#app-mount .channelTextArea-1FufC0:focus-within::before {
+#app-mount .channelTextArea-1FufC0:focus-within::before,
+#app-mount .channelTextArea-1VQBuV:focus-within::before {
   height: 2px;
   background: rgb(var(--accent));
 }
@@ -915,6 +924,9 @@ body,
 }
 #app-mount .attachButton-_ACFSu[aria-expanded=true] svg {
   background: rgb(var(--accent)) !important;
+}
+#app-mount .buttons-uaqb-5 {
+  margin-right: 0;
 }
 #app-mount .buttons-uaqb-5 .button-f2h6uQ {
   padding: 0 !important;
@@ -2419,9 +2431,12 @@ body,
   display: block;
   grid-area: icon;
 }
-#app-mount .layer-86YKbF[aria-label=USER_SETTINGS] .customizationSection-IGy2fS:not(.preview-Z55SA3) .inputWrapper-1YNMmM {
+#app-mount .layer-86YKbF[aria-label=USER_SETTINGS] .customizationSection-IGy2fS:not(.preview-Z55SA3) .channelTextArea-1VQBuV {
   grid-area: input;
-  margin-top: 18px;
+  margin: 18px 0 36px;
+}
+#app-mount .layer-86YKbF[aria-label=USER_SETTINGS] .customizationSection-IGy2fS:not(.preview-Z55SA3) .bioTextArea-dDGOeC {
+  border: none;
 }
 #app-mount .layer-86YKbF[aria-label=USER_SETTINGS] .customizationSection-IGy2fS:not(.preview-Z55SA3) .description-30xx7u {
   margin: 0;
@@ -2559,6 +2574,13 @@ body,
 #app-mount .root-g14mjS .content-2hZxGK div[style^="position: absolute;"] {
   display: none;
 }
+#app-mount .root-g14mjS .content-2hZxGK .title-3hptVQ {
+  text-transform: none;
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height);
+}
 #app-mount .root-g14mjS .size16-rrJ6ag {
   color: var(--text-secondary);
   font-size: var(--font-size);
@@ -2610,4 +2632,115 @@ body,
 
 #app-mount .bd-sidebar-header {
   display: none;
+}
+
+#app-mount .bd-switch {
+  background: transparent !important;
+  width: 40px;
+  height: 20px;
+}
+#app-mount .bd-switch svg {
+  display: none;
+}
+#app-mount .bd-switch input {
+  display: inline-flex;
+  align-items: center;
+  opacity: 1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid var(--switch-border);
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0 4px;
+  cursor: var(--cursor);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+#app-mount .bd-switch input::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 7px;
+  display: block;
+  background: var(--text-secondary);
+  transition: background 0.15s ease, transform 0.15s ease, width 0.15s ease, height 0.15s ease;
+}
+#app-mount .bd-switch input:hover:not(:checked) {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+#app-mount .bd-switch input:hover::before {
+  width: 14px;
+  height: 14px;
+}
+#app-mount .bd-switch input:active::before {
+  width: 18px;
+}
+#app-mount .bd-switch input:checked {
+  background: rgb(var(--accent));
+  border-color: rgb(var(--accent));
+}
+#app-mount .bd-switch input:checked::before {
+  background: var(--accent-text);
+  transform: translateX(18px);
+}
+#app-mount .bd-switch input:checked:hover {
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+#app-mount .bd-switch input:checked:active::before {
+  transform: translateX(13px);
+}
+#app-mount .bd-switch-body {
+  display: none;
+}
+
+#app-mount .bd-addon-card {
+  border-radius: var(--rounded);
+  background: var(--bg-content-alt);
+}
+#app-mount .bd-addon-header {
+  background: transparent;
+  padding: 16px 16px 8px;
+}
+#app-mount .bd-title {
+  color: var(--text-secondary);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-md);
+}
+#app-mount .bd-description-wrap {
+  padding: 0 16px 16px;
+}
+#app-mount .bd-footer {
+  padding: 16px 16px;
+  background: var(--bg-content);
+}
+#app-mount .bd-footer .bd-controls {
+  gap: 8px;
+}
+#app-mount .bd-footer .bd-button {
+  background: var(--btn-bg);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  box-shadow: none !important;
+  border: 1px solid var(--btn-border-x);
+  border-top-color: var(--btn-border-t);
+  border-bottom-color: var(--btn-border-b);
+  cursor: var(--cursor);
+  border-radius: var(--btn-radius);
+  padding: 4px 10px;
+  min-width: 50px;
+}
+#app-mount .bd-footer .bd-button:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+}
+#app-mount .bd-footer .bd-button:active {
+  background: var(--btn-bg-active);
+  border-color: var(--btn-border-active);
+}
+#app-mount .bd-footer .bd-button.bd-button-danger svg {
+  fill: hsl(var(--discord-red));
 }
