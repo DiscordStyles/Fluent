@@ -7,15 +7,10 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "dev": "node ./scripts/dev",
-    "build": "node ./scripts/build"
+    "dev": "bd-scss dev",
+    "build": "bd-scss build"
   },
   "dependencies": {
-    "autoprefixer": "^10.3.7",
-    "postcss": "^8.3.9",
-    "sass": "^1.42.1"
-  },
-  "devDependencies": {
-    "chokidar": "^3.5.2"
+    "bd-scss": "^1.0.4"
   }
 }

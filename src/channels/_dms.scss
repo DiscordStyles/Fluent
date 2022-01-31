@@ -8,7 +8,8 @@
 
 	.channel-1Shao0 {
 		max-width: unset;
-		margin: 0;
+		margin: 4px 0;
+		padding: 0;
 		.layout-1qmrhw {
 			cursor: var(--cursor);
 			height: 48px;
@@ -35,13 +36,16 @@
 		}
 
 		&:hover .layout-1qmrhw {
-			background: var(--bg-content);
+			background: var(--bg-interactive);
 		}
 		&.selected-1-Z6gm .layout-1qmrhw {
-			background: var(--bg-content);
+			background: var(--bg-interactive);
 			&::before {
 				height: var(--pill-height);
 				opacity: 1;
+			}
+			&:hover {
+				background: var(--bg-interactive-hover);
 			}
 		}
 	}

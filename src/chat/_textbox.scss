@@ -8,7 +8,8 @@
 			content: none;
 		}
 	}
-	.channelTextArea-1FufC0 {
+	.channelTextArea-1FufC0,
+	.channelTextArea-1VQBuV {
 		background: var(--textbox-bg);
 		border-radius: var(--rounded);
 		border: 1px solid var(--textbox-border);
@@ -85,12 +86,12 @@
 		}
 	}
 	.buttons-uaqb-5 {
-		// Gift Icon
-
+		margin-right: 0;
 		.button-f2h6uQ {
 			padding: 0 !important;
 		}
-
+		
+		// Gift Icon
 		& > button[aria-label] {
 		 svg {
 			 mask: url(mono.$gift) center/cover;

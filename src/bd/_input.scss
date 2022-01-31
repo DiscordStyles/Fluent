@@ -1,0 +1,66 @@
+#app-mount {
+	.bd-switch {
+		background: transparent !important;
+		width: 40px;
+		height: 20px;
+		svg {
+			display: none;
+		}
+		input {
+			display: inline-flex;
+			align-items: center;
+			opacity: 1;
+			appearance: none;
+			border: 1px solid var(--switch-border);
+			width: 40px;
+			height: 20px;
+			border-radius: 20px;
+			margin: 0;
+			padding: 0 4px;
+			cursor: var(--cursor);
+			transition: background .15s ease, border-color .15s ease;
+			&::before {
+				content: "";
+				width: 12px;
+				height: 12px;
+				border-radius: 7px;
+				display: block;
+				background: var(--text-secondary);
+				transition: background .15s ease,
+										transform .15s ease,
+										width .15s ease,
+										height .15s ease;
+			}
+			&:hover {
+				&:not(:checked) {
+					background: hsl(0 0% 100% / .05) !important;
+				}
+				&::before {
+					width: 14px;
+					height: 14px;
+				}
+			}
+			&:active::before {
+				width: 18px;
+			}
+			&:checked {
+				background: rgb(var(--accent));
+				border-color: rgb(var(--accent));
+				&::before {
+					background: var(--accent-text);
+					transform: translateX(18px);
+				}
+				&:hover {
+					box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / .12);
+					border-color: hsl(0 0% 0% / .12);
+				}
+				&:active::before {
+					transform: translateX(13px);
+				}
+			}
+		}
+		&-body {
+			display: none;
+		}
+	}
+}

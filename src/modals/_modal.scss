@@ -40,6 +40,10 @@
 		div[style^="position: absolute;"] {
 			display: none;
 		}
+		.title-3hptVQ {
+			text-transform: none;
+			@include mixins.subText;
+		}
 	}
 	.size16-rrJ6ag {
 		@include mixins.text;

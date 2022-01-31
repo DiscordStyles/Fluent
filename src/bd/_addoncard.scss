@@ -1,0 +1,38 @@
+@use '../mixins';
+@use '../assets/mono';
+
+#app-mount {
+	.bd-addon-card {
+		border-radius: var(--rounded);
+		background: var(--bg-content-alt);
+	}
+	.bd-addon-header {
+		background: transparent;
+		padding: 16px 16px 8px;
+	}
+	.bd-title {
+		@include mixins.text;
+	}
+
+	.bd-description-wrap {
+		padding: 0 16px 16px;
+	}
+
+	.bd-footer {
+		padding: 16px 16px;
+		background: var(--bg-content);
+
+		.bd-controls {
+			gap: 8px;
+		}
+		.bd-button {
+			@include mixins.btnReset;
+			border-radius: var(--btn-radius);
+			padding: 4px 10px;
+			min-width: 50px;
+			&.bd-button-danger svg {
+				fill: hsl(var(--discord-red));
+			}
+		}
+	}
+}
