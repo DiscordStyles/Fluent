@@ -1,6 +1,7 @@
 :root {
-  --fluent-version: "0.0.14 [BETA]";
+  --fluent-version: "0.0.15 [BETA]";
   --accent-text: #000;
+  --accent-solid: rgb(var(--accent));
   --pill-width: 4px;
   --pill-height: 16px;
   --pill-transition: opacity .15s ease, height .15s ease;
@@ -115,7 +116,7 @@ html.theme-light .force-theme.theme-light {
   --textbox-bg-active: #f6f6f6;
   --textbox-border: #e5e5e5;
   --textbox-underline: #868686;
-  --switch-border: hsl(0 0% 100% / 54.42%);
+  --switch-border: hsl(0 0% 0% / 54.42%);
   --text-primary: hsl(0 0% 0% / 100%);
   --text-secondary: hsl(0 0% 0% / 75%);
   --text-tertiary: hsl(0 0% 0% / 55%);
@@ -1571,6 +1572,75 @@ body,
   transform: translateX(13px);
 }
 
+#app-mount [role=radiogroup] {
+  border: 1px solid var(--border);
+  background: var(--bg-content);
+  border-radius: var(--rounded);
+  overflow: hidden;
+}
+#app-mount [role=radiogroup] .item-2idW98 {
+  background: transparent;
+  margin: 0;
+  border-radius: 0;
+}
+#app-mount [role=radiogroup] .item-2idW98:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+#app-mount [role=radiogroup] .item-2idW98:hover {
+  background: var(--bg-content-alt);
+}
+#app-mount [role=radiogroup] .item-2idW98[aria-checked=true] .radioBar-3w9XY- > div:first-child {
+  background: var(--radio-bar-accent-color, var(--accent-solid));
+  border-color: var(--radio-bar-accent-color, var(--accent-solid));
+}
+#app-mount [role=radiogroup] .item-2idW98[aria-checked=true] .radioBar-3w9XY- > div:first-child::before {
+  background: var(--accent-text);
+}
+#app-mount [role=radiogroup] .radioBar-3w9XY- {
+  border-radius: 0;
+  padding: 16px !important;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: none;
+}
+#app-mount [role=radiogroup] .radioBar-3w9XY- > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--text-muted);
+}
+#app-mount [role=radiogroup] .radioBar-3w9XY- > div:first-child::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+#app-mount [role=radiogroup] .radioBar-3w9XY- svg {
+  display: none;
+}
+#app-mount [role=radiogroup] .info-2FZci4 {
+  gap: 0;
+}
+#app-mount [role=radiogroup] .title-1yyp9V {
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  text-transform: none;
+  display: block;
+}
+#app-mount [role=radiogroup] .size14-3fJ-ot {
+  display: block;
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
 #app-mount .layer-86YKbF {
   background: var(--bg-main);
 }
@@ -1887,12 +1957,22 @@ body,
 #app-mount .layer-86YKbF[aria-label*=SETTINGS] .title-2dsDLn {
   cursor: var(--cursor);
 }
-#app-mount .layer-86YKbF[aria-label*=SETTINGS] [class^=margin] > .title-3hptVQ {
+#app-mount .layer-86YKbF[aria-label*=SETTINGS] [class^=margin] > .title-3hptVQ,
+#app-mount .layer-86YKbF[aria-label*=SETTINGS] .marginBottom40-fvAlAV > .sectionTitle-3j2YI1 > .title-3hptVQ,
+#app-mount .layer-86YKbF[aria-label*=SETTINGS] .title-3hptVQ.marginBottom8-emkd0_ {
   color: var(--text-primary);
   font-size: var(--font-size);
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-md);
   margin-bottom: 12px;
   text-transform: none;
+}
+#app-mount .layer-86YKbF[aria-label*=SETTINGS] .title-3hptVQ.marginBottom8-emkd0_ + .description-30xx7u.formText-2ngGjI,
+#app-mount .layer-86YKbF[aria-label*=SETTINGS] .title-3hptVQ.defaultMarginh3-2aILfT + .description-30xx7u.formText-2ngGjI {
+  background: var(--bg-content);
+  border-radius: var(--rounded);
+  border: 1px solid var(--border);
+  padding: 16px;
 }
 #app-mount .layer-86YKbF[aria-label*=SETTINGS] .container-1zDvAE {
   background: var(--bg-content);
@@ -1928,6 +2008,12 @@ body,
 #app-mount .layer-86YKbF[aria-label*=SETTINGS] [class^=margin] + [class^=margin] {
   margin-top: 40px;
   margin-bottom: 0;
+}
+#app-mount .layer-86YKbF[aria-label*=SETTINGS] .children-1xdcWE > [class^=marginBottom]:not(:only-child):first-child {
+  margin-bottom: 0;
+}
+#app-mount .layer-86YKbF[aria-label*=SETTINGS] .title-3hptVQ.defaultMarginh3-2aILfT {
+  margin-top: 40px;
 }
 
 #app-mount .layer-86YKbF[aria-label=USER_SETTINGS] .accountProfileCard-lbN7n- {
@@ -2099,6 +2185,7 @@ body,
 #app-mount .layer-86YKbF[aria-label=USER_SETTINGS] .userSettingsSecurity-3C5Hg5 .h1-34Txb0 {
   color: var(--text-primary);
   font-size: var(--font-size);
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-md);
   margin-bottom: 12px;
   text-transform: none;
@@ -2160,6 +2247,7 @@ body,
 #app-mount .layer-86YKbF[aria-label=USER_SETTINGS] .userSettingsSecurity-3C5Hg5 > .children-1xdcWE > div:last-child > div > div > .title-3hptVQ {
   color: var(--text-primary);
   font-size: var(--font-size);
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-md);
   margin-bottom: 12px;
   text-transform: none;
@@ -2335,6 +2423,7 @@ body,
 #app-mount .layer-86YKbF[aria-label=USER_SETTINGS] .userSettingsSecurity-3C5Hg5 ~ [class=marginTop40-Q4o1tS] .title-3hptVQ {
   color: var(--text-primary);
   font-size: var(--font-size);
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-md);
   margin-bottom: 12px;
   text-transform: none;
@@ -2698,7 +2787,8 @@ body,
 
 #app-mount .bd-addon-card {
   border-radius: var(--rounded);
-  background: var(--bg-content-alt);
+  border: 1px solid var(--border);
+  background: var(--bg-content);
 }
 #app-mount .bd-addon-header {
   background: transparent;
@@ -2715,7 +2805,7 @@ body,
 }
 #app-mount .bd-footer {
   padding: 16px 16px;
-  background: var(--bg-content);
+  border-top: 1px solid var(--border);
 }
 #app-mount .bd-footer .bd-controls {
   gap: 8px;
@@ -2740,6 +2830,9 @@ body,
 #app-mount .bd-footer .bd-button:active {
   background: var(--btn-bg-active);
   border-color: var(--btn-border-active);
+}
+#app-mount .bd-footer .bd-button svg {
+  fill: var(--text-secondary);
 }
 #app-mount .bd-footer .bd-button.bd-button-danger svg {
   fill: hsl(var(--discord-red));
