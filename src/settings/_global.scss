@@ -14,9 +14,23 @@
 	}
 
 	// Cards
-	[class^="margin"] > .title-3hptVQ {
+	[class^="margin"] > .title-3hptVQ,
+	.marginBottom40-fvAlAV > .sectionTitle-3j2YI1 > .title-3hptVQ,
+	.title-3hptVQ.marginBottom8-emkd0_ {
 		@include mixins.subTitle;
 	}
+
+	// Form description (use data to make discord work, ect...)
+	.title-3hptVQ.marginBottom8-emkd0_,
+	.title-3hptVQ.defaultMarginh3-2aILfT {
+		& + .description-30xx7u.formText-2ngGjI {
+			background: var(--bg-content);
+			border-radius: var(--rounded);
+			border: 1px solid var(--border);
+			padding: 16px;
+		}
+	}
+
 	// Switches
 	.container-1zDvAE {
 		@include mixins.card;
@@ -35,8 +49,16 @@
 			margin-top: 40px;
 		}
 	}
+
+	// Spacing resets
 	[class^="margin"] + [class^="margin"] {
 		margin-top: 40px;
 		margin-bottom: 0;
+	}
+	.children-1xdcWE > [class^="marginBottom"]:not(:only-child):first-child {
+		margin-bottom: 0;
+	}
+	.title-3hptVQ.defaultMarginh3-2aILfT {
+		margin-top: 40px;
 	}
 }

@@ -1,7 +1,8 @@
 :root {
-	--fluent-version: '0.0.14 [BETA]';
+	--fluent-version: '0.0.15 [BETA]';
 
 	--accent-text: #000;
+	--accent-solid: rgb(var(--accent));
 
 	--pill-width: 4px;
 	--pill-height: 16px;

@@ -7,6 +7,7 @@
 @mixin subTitle {
 	color: var(--text-primary);
 	font-size: var(--font-size);
+	font-weight: var(--font-weight-semibold);
 	line-height: var(--line-height-md);
 	margin-bottom: 12px;
 	text-transform: none;
