@@ -16,17 +16,39 @@
 				background: var(--bg-higher);
 			}
 		}
-		.textarea-2r0oV8 {
-			height: auto !important;
-			margin: 0;
-		}
 		.avatar-2Vndt_ {
 			border-color: var(--bg-menu);
 			background: var(--bg-menu);
 		}
-
+		
+		.textarea-2r0oV8 {
+			height: auto !important;
+			margin: 0;
+		}
 		.fontDisplay-3Gtuks {
 			@include mixins.subText;
+		}
+
+		.rolesList-3uZoaa {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px;
+		}
+		.role-2TIOKu {
+			height: unset;
+			margin: 0;
+			padding: 6px 8px;
+			background: var(--bg-alt);
+			border-radius: var(--rounded);
+			display: flex;
+			gap: 8px;
+		}
+		.roleCircle-1EgnFN {
+			margin: 0;
+		}
+		.roleName-2ZJJYR {
+			@include mixins.subText;
+			margin: 0;
 		}
 	}
 

@@ -63,7 +63,7 @@
 			&:only-child {
 				grid-column: 2/3;
 			}
-			&[type="button"] {
+			&[type="button"]:not(.lookFilled-yCfaCM) {
 				@include mixins.btnReset;
 			}
 		}

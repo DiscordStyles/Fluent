@@ -44,6 +44,9 @@
 
 	[role="group"] {
 		padding: 6px;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
 		& > .item-1OdjEX:last-child {
 			margin-bottom: 0;
 		}
@@ -61,11 +64,19 @@
 	}
 
 	.item-1OdjEX {
-		margin: 0 0 4px;
+		margin: 0;
 		border-radius: var(--rounded);
 		padding: 8px 12px;
 		cursor: var(--cursor);
+		flex-direction: row-reverse;
+		gap: 8px;
 
+		.label-2gNW3x:only-child {
+			order: -1;
+		}
+		.iconContainer-1-SsTR {
+			margin: 0;
+		}
 		.newBadge-1bHewI {
 			font-size: 10px;
 			border-radius: var(--rounded);
@@ -96,12 +107,10 @@
 		}
 	}
 
+	// Reset
 	.submenuContainer-3EVTeH {
-		.item-1tOPte {
+		.item-1OdjEX {
 			flex-direction: row;
-			.iconContainer-1-SsTR {
-				margin: 0 0 0 8px;
-			}
 		}
 		.layer-2aCOJ3 {
 			margin-top: -6px;

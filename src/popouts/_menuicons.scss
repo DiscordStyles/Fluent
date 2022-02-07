@@ -1,0 +1,83 @@
+@use '../assets/mono';
+@use '../assets/brand';
+@use 'sass:list';
+
+// Icons
+$icons: (
+	// Messages
+	'message-add-reaction': mono.$emoji,
+	'message-edit': mono.$pen,
+	'message-pin': mono.$pin,
+	'message-reply': mono.$reply,
+	'message-thread': mono.$comment-multi,
+	'message-mark-unread': mono.$comment-dismiss,
+	'message-copy-link': mono.$link,
+	'message-tts': mono.$speaker,
+	'message-delete': (mono.$delete, 'danger'),
+	'message-devmode-copy-id': mono.$copy,
+
+	// User
+	'user-context-user-profile': mono.$user,
+	'user-context-mention': mono.$chat,
+	'user-context-message-user': mono.$comment,
+	'user-context-call': mono.$call,
+	'user-context-note': mono.$note,
+	'user-context-change-nickname': mono.$rename,
+	'user-context-invite-to-server': mono.$plus,
+	'user-context-add-friend': mono.$user-add,
+	'user-context-remove-friend': mono.$user-delete,
+	'user-context-block': mono.$user-denied,
+	'user-context-timeout': (mono.$timer-off, 'danger'),
+	'user-context-kick': (mono.$user-delete, 'danger'),
+	'user-context-ban': (mono.$user-denied, 'danger'),
+	'user-context-roles': mono.$tag,
+	'user-context-devmode-copy-id': mono.$copy,
+
+	// Settings
+	'user-settings-cog-My_Account': mono.$user,
+	'user-settings-cog-Profile_Customization': mono.$user-question,
+	'user-settings-cog-Privacy___Safety': mono.$lock-shield,
+	'user-settings-cog-Authorized_Apps': mono.$apps,
+	'user-settings-cog-Connections': mono.$link,
+	'user-settings-cog-Discord_Nitro': brand.$discord-nitro,
+	'user-settings-cog-Nitro_Server_Boost': mono.$rocket,
+	'user-settings-cog-Subscriptions': mono.$credit-user,
+	'user-settings-cog-Library_Inventory': mono.$gift,
+	'user-settings-cog-Billing': mono.$money-recepit,
+	'user-settings-cog-Appearance': mono.$eye,
+	'user-settings-cog-Accessibility': mono.$accessibility,
+	'user-settings-cog-Voice___Video': mono.$mic,
+	'user-settings-cog-Text___Images': mono.$chat,
+	'user-settings-cog-Notifications': mono.$bell,
+	'user-settings-cog-Keybinds': mono.$keyboard,
+	'user-settings-cog-Language': mono.$language,
+	'user-settings-cog-Windows': brand.$windows,
+	'user-settings-cog-Streamer_Mode': mono.$live,
+	'user-settings-cog-Advanced': mono.$cog,
+	'user-settings-cog-Game_Activity': mono.$rss,
+	'user-settings-cog-Overlay': mono.$overlay,
+	'user-settings-cog-changelog': mono.$document-clock,
+	'user-settings-cog-Hypesquad_Online': mono.$star,
+);
+
+.item-1OdjEX {
+	@each $label, $icon in $icons {
+		&[id="#{$label}"][role="menuitem"] {
+			&::before {
+				content: "";
+				width: 18px;
+				height: 18px;
+				@if list.index($icon, 'danger') {
+					background: hsl(var(--discord-red));
+					mask: url(list.nth($icon, 1)) center/cover no-repeat;
+				} @else {
+					background: var(--text-secondary);
+					mask: url($icon) center/cover no-repeat;
+				}
+			}
+			&.focused-3qFvc8::before {
+				background: var(--text-primary);
+			}
+		}
+	}
+}
