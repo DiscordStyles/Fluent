@@ -30,6 +30,7 @@
 		flex-direction: row-reverse;
 		align-items: center;
 		border: none;
+		cursor: var(--cursor);
 		& > div:first-child {
 			display: flex;
 			align-items: center;

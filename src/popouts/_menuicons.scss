@@ -36,7 +36,7 @@ $icons: (
 	// Settings
 	'user-settings-cog-My_Account': mono.$user,
 	'user-settings-cog-Profile_Customization': mono.$user-question,
-	'user-settings-cog-Privacy___Safety': mono.$lock-shield,
+	'user-settings-cog-Privacy___Safety': mono.$shield-lock,
 	'user-settings-cog-Authorized_Apps': mono.$apps,
 	'user-settings-cog-Connections': mono.$link,
 	'user-settings-cog-Discord_Nitro': brand.$discord-nitro,
@@ -58,25 +58,51 @@ $icons: (
 	'user-settings-cog-Overlay': mono.$overlay,
 	'user-settings-cog-changelog': mono.$document-clock,
 	'user-settings-cog-Hypesquad_Online': mono.$star,
+
+	// Channel (right click toolbar)
+	'channel-context-mute-channel': mono.$speaker-mute,
+	'channel-context-copy-channel-topic': mono.$copy,
+	'channel-context-edit-channel': mono.$pen,
+	'channel-context-invite-people': mono.$user-add,
+	'channel-context-clone-channel': mono.$save-copy,
+	'channel-context-create-text-channel': mono.$text,
+	'channel-context-create-voice-channel': mono.$mic,
+	'channel-context-delete-channel': mono.$delete,
+	'channel-context-devmode-copy-id': mono.$copy,
+
+	// Server dropdown (right click)
+	'guild-context-mark-guild-read': mono.$eye,
+	'guild-context-invite-people': mono.$user-add,
+	'guild-context-unmute-guild': mono.$speaker-mute,
+	'guild-context-mute-guild': mono.$speaker-mute,
+	'guild-context-guild-notifications': mono.$bell,
+	'guild-context-guild-settings': mono.$cog,
+	'guild-context-privacy': mono.$shield-check,
+	'guild-context-change-nickname': mono.$pen,
+	'guild-context-leave-guild': mono.$sign-out,
+	'guild-context-devmode-copy-id': mono.$copy,
 );
 
 .item-1OdjEX {
+	&[role="menuitem"]:not([id^="message-add-reaction-"]) {
+		&::before {
+			width: 18px;
+			height: 18px;
+			mask-size: cover;
+			mask-position: center;
+			background: currentColor;
+		}
+		&.focused-3qFvc8::before {
+			background: var(--text-primary);
+		}
+	}
 	@each $label, $icon in $icons {
-		&[id="#{$label}"][role="menuitem"] {
-			&::before {
-				content: "";
-				width: 18px;
-				height: 18px;
-				@if list.index($icon, 'danger') {
-					background: hsl(var(--discord-red));
-					mask: url(list.nth($icon, 1)) center/cover no-repeat;
-				} @else {
-					background: var(--text-secondary);
-					mask: url($icon) center/cover no-repeat;
-				}
-			}
-			&.focused-3qFvc8::before {
-				background: var(--text-primary);
+		&[id="#{$label}"]::before {
+			content: "";
+			@if list.index($icon, 'danger') {
+				mask-image: url(list.nth($icon, 1));
+			} @else {
+				mask-image: url($icon);
 			}
 		}
 	}

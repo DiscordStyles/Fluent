@@ -17,7 +17,7 @@
 	}
 
 	.wrapper--nA0oy {
-		padding-bottom: 0 !important;
+		padding: 6px 6px 0 !important;
 		&::after {
 			content: "";
 			display: block;
@@ -42,7 +42,7 @@
 		}
 	}
 
-	[role="group"] {
+	[role="group"]:not(.wrapper--nA0oy) {
 		padding: 6px;
 		display: flex;
 		flex-direction: column;
@@ -77,6 +77,9 @@
 		.iconContainer-1-SsTR {
 			margin: 0;
 		}
+		.icon-LYJorE {
+			color: currentColor;
+		}
 		.newBadge-1bHewI {
 			font-size: 10px;
 			border-radius: var(--rounded);
@@ -91,16 +94,10 @@
 		&.focused-3qFvc8,
 		&:active:not(.hideInteraction-2jPGL_) {
 			background: var(--bg-menu-item);
-			color: var(--text-primary);
+			color: var(--text-primary) !important;
 		}
 		&.colorPremium-vwmYZQ {
 			color: hsl(var(--discord-pink));
-			.icon-LYJorE {
-				color: hsl(var(--discord-pink));
-			}
-			&.focused-3qFvc8 {
-				color: var(--text-primary);
-			}
 		}
 		&.colorBrand-3cPPsm {
 			color: rgb(var(--accent));
