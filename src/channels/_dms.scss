@@ -10,10 +10,15 @@
 		max-width: unset;
 		margin: 4px 0;
 		padding: 0;
-		.layout-1qmrhw {
-			cursor: var(--cursor);
+
+		.layout-1LjVue {
 			height: 48px;
 			padding: 0 18px;
+			cursor: var(--cursor);
+		}
+
+		.interactive-1vLZ_I {
+			cursor: var(--cursor);
 			&::before {
 				content: "";
 				border-radius: 50px;
@@ -28,17 +33,18 @@
 				transition: var(--pill-transition);
 			}
 		}
-		.content-1U25dZ {
+
+		.content-66wMin {
 			height: 100%;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 		}
 
-		&:hover .layout-1qmrhw {
+		&:hover .interactive-1vLZ_I {
 			background: var(--bg-interactive);
 		}
-		&.selected-1-Z6gm .layout-1qmrhw {
+		.selected-3veCBZ {
 			background: var(--bg-interactive);
 			&::before {
 				height: var(--pill-height);

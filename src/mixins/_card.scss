@@ -1,13 +1,13 @@
-@mixin card {
+@mixin card($fdir: row, $aitem: center) {
 	background: var(--bg-content);
 	border: 1px solid var(--border);
 	border-radius: var(--rounded);
 	padding: 18px;
 	display: flex;
-	align-items: center;
+	flex-direction: $fdir;
+	align-items: $aitem;
 	gap: 0 18px;
 	position: relative;
-	flex-direction: row;
 }
 @mixin cardIcon {
 	width: 22px;

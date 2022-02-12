@@ -27,10 +27,16 @@ $icons: (
 	'user-context-add-friend': mono.$user-add,
 	'user-context-remove-friend': mono.$user-delete,
 	'user-context-block': mono.$user-denied,
+	'user-context-mute': mono.$speaker-off,
+	'user-context-disable-video': mono.$video-off,
+	'user-context-voice-mute': mono.$mic-off,
+	'user-context-voice-deafen': mono.$speaker-off,
 	'user-context-timeout': (mono.$timer-off, 'danger'),
+	'user-context-voice-disconnect': (mono.$disconnect, 'danger'),
 	'user-context-kick': (mono.$user-delete, 'danger'),
 	'user-context-ban': (mono.$user-denied, 'danger'),
 	'user-context-roles': mono.$tag,
+	'user-context-voice-move': mono.$move,
 	'user-context-devmode-copy-id': mono.$copy,
 
 	// Settings
@@ -60,7 +66,7 @@ $icons: (
 	'user-settings-cog-Hypesquad_Online': mono.$star,
 
 	// Channel (right click toolbar)
-	'channel-context-mute-channel': mono.$speaker-mute,
+	'channel-context-mute-channel': mono.$speaker-off,
 	'channel-context-copy-channel-topic': mono.$copy,
 	'channel-context-edit-channel': mono.$pen,
 	'channel-context-invite-people': mono.$user-add,
@@ -70,21 +76,41 @@ $icons: (
 	'channel-context-delete-channel': mono.$delete,
 	'channel-context-devmode-copy-id': mono.$copy,
 
+	// Server dropdown (left click)
+	'guild-header-popout-premium-subscribe': mono.$rocket,
+	'guild-header-popout-invite-people': mono.$user-add,
+	'guild-header-popout-settings': mono.$cog,
+	'guild-header-popout-create-channel': mono.$collection,
+	'guild-header-popout-create-category': mono.$collection-add,
+	'guild-header-popout-create-event': mono.$calendar,
+	'guild-header-popout-notifications': mono.$bell,
+	'guild-header-popout-privacy': mono.$shield-check,
+	'guild-header-popout-change-nickname': mono.$pen,
+	'guild-header-popout-hide-muted-channels': mono.$eye,
+
 	// Server dropdown (right click)
 	'guild-context-mark-guild-read': mono.$eye,
 	'guild-context-invite-people': mono.$user-add,
-	'guild-context-unmute-guild': mono.$speaker-mute,
-	'guild-context-mute-guild': mono.$speaker-mute,
+	'guild-context-unmute-guild': mono.$speaker-off,
+	'guild-context-mute-guild': mono.$speaker-off,
 	'guild-context-guild-notifications': mono.$bell,
+	'guild-context-hide-muted-channels': mono.$eye,
 	'guild-context-guild-settings': mono.$cog,
 	'guild-context-privacy': mono.$shield-check,
 	'guild-context-change-nickname': mono.$pen,
 	'guild-context-leave-guild': mono.$sign-out,
 	'guild-context-devmode-copy-id': mono.$copy,
+	'guild-context-create-channel': mono.$collection,
+	'guild-context-create-category': mono.$collection-add,
+	'guild-context-create-event': mono.$calendar,
 );
 
 .item-1OdjEX {
-	&[role="menuitem"]:not([id^="message-add-reaction-"]) {
+	.icon-E4cW1l {
+		display: none;
+	}
+	&[role="menuitem"]:not([id^="message-add-reaction-"]),
+	&[role="menuitemcheckbox"] {
 		&::before {
 			width: 18px;
 			height: 18px;

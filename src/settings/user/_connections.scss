@@ -1,0 +1,77 @@
+@use '../../mixins';
+
+#app-mount .layer-86YKbF[aria-label="USER_SETTINGS"] {
+	.accountList-305sx3 {
+		@include mixins.card(column, stretch);
+		margin-bottom: 4px;
+
+		.title-3hptVQ {
+			@include mixins.cardTitle;
+		}
+		.formText-2ngGjI {
+			@include mixins.cardDesc;
+			margin-bottom: 16px;
+		}
+		& + .container-1zDvAE {
+			padding: 16px;
+		}
+	}
+	.connectedAccounts-26X_gr {
+		display: flex;
+		gap: 8px;
+	}
+	.accountBtn-1YkMgV {
+		margin: 0;
+	}
+
+	.connectionList-1NoxUk {
+		margin-top: 40px;
+		gap: 4px;
+	}
+	.connection-107AGH {
+		background: var(--bg-content);
+		border-radius: var(--rounded);
+		border: 1px solid var(--border);
+		margin: 0;
+		.container-1zDvAE {
+			border: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
+	.connectionHeader-2rV1ze {
+		padding: 16px;
+		background: transparent;
+	}
+	.connectionOptions-3T485D {
+		display: flex;
+		gap: 16px;
+	}
+	.connectionOptionsWrapper-1ipqUo {
+		padding: 16px;
+		border-top: 1px solid var(--border);
+	}
+	.subEnabledTitle-2MHkAH {
+		@include mixins.cardDesc;
+		margin: 0;
+	}
+	.integrationsWrapper-3a2pGd {
+		padding: 0;
+		margin: 0 16px 16px;
+		border: 1px solid var(--border);
+		border-radius: var(--rounded);
+		background: var(--bg-alt);
+		overflow: hidden;
+		.title-3hptVQ {
+			display: none;
+		}
+	}
+	.integration-1f5IUi {
+		margin: 0;
+		border-radius: 0;
+		background: transparent;
+		&:not(:last-child) {
+			border-bottom: 1px solid var(--border);
+		}
+	}
+}

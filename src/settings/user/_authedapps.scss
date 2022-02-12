@@ -1,0 +1,18 @@
+@use '../../mixins';
+
+#app-mount .layer-86YKbF[aria-label="USER_SETTINGS"] {
+	.formNotice-2nS8ey {
+		@include mixins.card;
+		.h5-2RwDNl {
+			@include mixins.cardTitle;
+		}
+		.formNoticeBody-1GTGJa {
+			@include mixins.cardDesc;
+		}
+	}
+
+	.authedApp-1tw-eT {
+		@include mixins.card(column, stretch);
+		margin-bottom: 4px;
+	}
+}
