@@ -22,7 +22,7 @@
 			}
 			@for $i from 0 through 8 {
 				span[style*="height: #{$i}"] {
-					transform: scale(1,.24) !important;
+					transform: scale(1,.5) !important;
 					background: var(--pill-unread);
 				}
 			}

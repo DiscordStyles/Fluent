@@ -1,3 +1,6 @@
+@use '../assets/mono';
+@use '../mixins';
+
 #app-mount {
 	// Typing
 	.typing-2J1mQU {
@@ -6,5 +9,55 @@
 		left: 0;
 		padding: 0 88px;
 		right: 0;
+	}
+
+	// New message & jump to present
+	.newMessagesBar-1hF-9G,
+	.jumpToPresentBar-1cEnH0 {
+		border-radius: var(--btn-radius);
+		opacity: 1;
+		left: unset;
+		opacity: 1;
+		background: var(--bg-alt);
+		box-shadow: none;
+		button {
+			@include mixins.btn;
+			cursor: var(--cursor);
+			height: auto;
+			&:first-child {
+				border-radius: var(--btn-radius) 0 0 var(--btn-radius);
+				margin-right: -1px;
+			}
+			&:last-child {
+				border-radius: 0 var(--btn-radius) var(--btn-radius) 0;
+			}
+		}
+		&:active {
+			padding-top: 0;
+		}
+	}
+
+	// New message
+	.newMessagesBar-1hF-9G {
+		top: 16px;
+		.barButtonIcon-bMvzp2 {
+			mask: url(mono.$comment-check) center/cover;
+			background: currentColor;
+			path {
+				display: none;
+			}
+		}
+	}
+
+	// Jump to present
+	.jumpToPresentBar-1cEnH0 {
+		bottom: 0;
+		padding-bottom: 0;
+		& > span {
+			@include mixins.btn;
+			border-radius: 0 var(--btn-radius) var(--btn-radius) 0;
+			height: 30px;
+			box-sizing: border-box;
+		}
 	}
 }
