@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "0.0.18 [BETA]";
+  --fluent-version: "0.0.19 [BETA]";
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
   --pill-width: 4px;
@@ -330,39 +330,39 @@ body,
   border-radius: var(--rounded-high);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 0"] {
-  transform: scale(1, 0.24) !important;
+  transform: scale(1, 0.5) !important;
   background: var(--pill-unread);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 1"] {
-  transform: scale(1, 0.24) !important;
+  transform: scale(1, 0.5) !important;
   background: var(--pill-unread);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 2"] {
-  transform: scale(1, 0.24) !important;
+  transform: scale(1, 0.5) !important;
   background: var(--pill-unread);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 3"] {
-  transform: scale(1, 0.24) !important;
+  transform: scale(1, 0.5) !important;
   background: var(--pill-unread);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 4"] {
-  transform: scale(1, 0.24) !important;
+  transform: scale(1, 0.5) !important;
   background: var(--pill-unread);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 5"] {
-  transform: scale(1, 0.24) !important;
+  transform: scale(1, 0.5) !important;
   background: var(--pill-unread);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 6"] {
-  transform: scale(1, 0.24) !important;
+  transform: scale(1, 0.5) !important;
   background: var(--pill-unread);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 7"] {
-  transform: scale(1, 0.24) !important;
+  transform: scale(1, 0.5) !important;
   background: var(--pill-unread);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 8"] {
-  transform: scale(1, 0.24) !important;
+  transform: scale(1, 0.5) !important;
   background: var(--pill-unread);
 }
 #app-mount .guilds-2JjMmN [class*=pill] span[style*="height: 9"] {
@@ -999,6 +999,95 @@ body,
   padding: 0 88px;
   right: 0;
 }
+#app-mount .newMessagesBar-1hF-9G,
+#app-mount .jumpToPresentBar-1cEnH0 {
+  border-radius: var(--btn-radius);
+  opacity: 1;
+  left: unset;
+  opacity: 1;
+  background: var(--bg-alt);
+  box-shadow: none;
+}
+#app-mount .newMessagesBar-1hF-9G button,
+#app-mount .jumpToPresentBar-1cEnH0 button {
+  background: var(--btn-bg);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  box-shadow: none !important;
+  border: 1px solid var(--btn-border-x);
+  border-top-color: var(--btn-border-t);
+  border-bottom-color: var(--btn-border-b);
+  cursor: var(--cursor);
+  border-radius: var(--btn-radius);
+  padding: 4px 10px;
+  line-height: 20px;
+  font-size: var(--font-size-sm);
+  cursor: var(--cursor);
+  height: auto;
+}
+#app-mount .newMessagesBar-1hF-9G button:hover,
+#app-mount .jumpToPresentBar-1cEnH0 button:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+}
+#app-mount .newMessagesBar-1hF-9G button:active,
+#app-mount .jumpToPresentBar-1cEnH0 button:active {
+  background: var(--btn-bg-active);
+  border-color: var(--btn-border-active);
+}
+#app-mount .newMessagesBar-1hF-9G button:first-child,
+#app-mount .jumpToPresentBar-1cEnH0 button:first-child {
+  border-radius: var(--btn-radius) 0 0 var(--btn-radius);
+  margin-right: -1px;
+}
+#app-mount .newMessagesBar-1hF-9G button:last-child,
+#app-mount .jumpToPresentBar-1cEnH0 button:last-child {
+  border-radius: 0 var(--btn-radius) var(--btn-radius) 0;
+}
+#app-mount .newMessagesBar-1hF-9G:active,
+#app-mount .jumpToPresentBar-1cEnH0:active {
+  padding-top: 0;
+}
+#app-mount .newMessagesBar-1hF-9G {
+  top: 16px;
+}
+#app-mount .newMessagesBar-1hF-9G .barButtonIcon-bMvzp2 {
+  -webkit-mask: url('data:image/svg+xml; utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.023 2.999a6.47 6.47 0 0 0-.71 1.5L5.25 4.5A1.75 1.75 0 0 0 3.5 6.25v8.5c0 .966.784 1.75 1.75 1.75h2.249v3.75l5.015-3.75h6.236a1.75 1.75 0 0 0 1.75-1.75l.001-2.483a6.517 6.517 0 0 0 1.5-1.077L22 14.75A3.25 3.25 0 0 1 18.75 18h-5.738L8 21.75a1.25 1.25 0 0 1-1.999-1V18h-.75A3.25 3.25 0 0 1 2 14.75v-8.5A3.25 3.25 0 0 1 5.25 3l6.773-.001ZM17.5 1a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm2.646 3.146L16.055 8.24 14.9 6.7a.5.5 0 0 0-.8.6l1.5 2a.5.5 0 0 0 .754.054l4.5-4.5a.5.5 0 0 0-.707-.708Z" /></svg>') center/cover;
+          mask: url('data:image/svg+xml; utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.023 2.999a6.47 6.47 0 0 0-.71 1.5L5.25 4.5A1.75 1.75 0 0 0 3.5 6.25v8.5c0 .966.784 1.75 1.75 1.75h2.249v3.75l5.015-3.75h6.236a1.75 1.75 0 0 0 1.75-1.75l.001-2.483a6.517 6.517 0 0 0 1.5-1.077L22 14.75A3.25 3.25 0 0 1 18.75 18h-5.738L8 21.75a1.25 1.25 0 0 1-1.999-1V18h-.75A3.25 3.25 0 0 1 2 14.75v-8.5A3.25 3.25 0 0 1 5.25 3l6.773-.001ZM17.5 1a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm2.646 3.146L16.055 8.24 14.9 6.7a.5.5 0 0 0-.8.6l1.5 2a.5.5 0 0 0 .754.054l4.5-4.5a.5.5 0 0 0-.707-.708Z" /></svg>') center/cover;
+  background: currentColor;
+}
+#app-mount .newMessagesBar-1hF-9G .barButtonIcon-bMvzp2 path {
+  display: none;
+}
+#app-mount .jumpToPresentBar-1cEnH0 {
+  bottom: 0;
+  padding-bottom: 0;
+}
+#app-mount .jumpToPresentBar-1cEnH0 > span {
+  background: var(--btn-bg);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  box-shadow: none !important;
+  border: 1px solid var(--btn-border-x);
+  border-top-color: var(--btn-border-t);
+  border-bottom-color: var(--btn-border-b);
+  cursor: var(--cursor);
+  border-radius: var(--btn-radius);
+  padding: 4px 10px;
+  line-height: 20px;
+  font-size: var(--font-size-sm);
+  border-radius: 0 var(--btn-radius) var(--btn-radius) 0;
+  height: 30px;
+  box-sizing: border-box;
+}
+#app-mount .jumpToPresentBar-1cEnH0 > span:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+}
+#app-mount .jumpToPresentBar-1cEnH0 > span:active {
+  background: var(--btn-bg-active);
+  border-color: var(--btn-border-active);
+}
 
 #app-mount .divider-IqmEqJ {
   margin: 32px 78px 32px 28px;
@@ -1009,9 +1098,9 @@ body,
   border-color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
 }
 #app-mount .content-3spvdd {
-  border-radius: var(--rounded);
-  border: 1px solid var(--border-high);
-  background: var(--bg-high);
+  border: none;
+  background: var(--bg-alt);
+  padding: 2px 32px;
 }
 
 #app-mount .container-2o3qEW,
