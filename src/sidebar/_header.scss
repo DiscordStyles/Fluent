@@ -1,0 +1,47 @@
+@use '../mixins';
+
+#app-mount {
+	.sidebar-1tnWFu .content-2a4AW9 > div[style="height: 84px;"],
+	.sidebar-1tnWFu .content-2a4AW9 > div[style="height: 16px;"] {
+		display: none;
+	}
+
+	.container-1-ERn5 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.header-3OsQeK {
+		@include mixins.btn;
+		margin: 8px;
+		filter: none;
+		height: 42px;
+		transition: none;
+		&:hover {
+			background: var(--btn-bg-hover);
+		}
+	}
+
+	// Banner
+	.animatedContainer-2laTjx {
+		background: transparent;
+		box-shadow: none;
+		width: var(--channels-width);
+		position: relative;
+		transform: none !important;
+		opacity: 1 !important;
+		border-bottom: 1px solid var(--border-mid);
+	}
+	.bannerImage-ubW8K- {
+		overflow: hidden;
+		width: 100%;
+		transform: none !important;
+		img {
+			width: 100%;
+		}
+
+		&::before {
+			content: none;
+		}
+	}
+}

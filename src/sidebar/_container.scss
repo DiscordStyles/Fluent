@@ -1,0 +1,20 @@
+#app-mount {
+	.sidebar-1tnWFu {
+		width: var(--channels-width);
+		background: var(--bg-alt);
+		border-right: 1px solid var(--border-mid);
+		box-sizing: border-box;
+		.scroller-1ox3I2 {
+			padding: 8px !important;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			& > ul > li:first-of-type {
+				padding-top: 0;
+			}
+		}
+	}
+	.container-1NXEtd {
+		background: var(--bg-alt);
+	}
+}

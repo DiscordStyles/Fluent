@@ -1,12 +1,10 @@
 @use '../mixins';
+@use '../assets/mono';
 
 #app-mount {
 	.panels-3wFtMD {
 		background: transparent;
-		background: var(--bg-alt);
-		border-radius: var(--rounded);
-		border: 1px solid var(--border);
-		margin-bottom: 16px;
+		border-top: 1px solid var(--border-mid);
 	}
 
 	// Voice connected
@@ -20,5 +18,11 @@
 	// User area
 	.container-YkUktl {
 		padding: 0 8px;
+		& > .flex-2S1XBF {
+			gap: 4px;
+		}
+		button {
+			@include mixins.btn;
+		}
 	}
 }

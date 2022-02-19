@@ -1,19 +1,19 @@
 #app-mount {
 	.container-ZMc96U {
-		background: var(--bg-main);
+		background: transparent;
+		border-bottom: 1px solid var(--border-mid);
 	}
 
 	.children-3xh0VB::after {
 		content: none;
 	}
 
-
 	// Search
-	.search-1FM8Qc {
+	.search-39IXmY {
 		border-radius: var(--rounded);
 		overflow: hidden;	
 	}
-	.searchBar-zdmu7v {
+	.searchBar-jGtisZ {
 		background: var(--textbox-bg);
 		border: 1px solid var(--textbox-border);
 		height: 30px;
@@ -27,11 +27,9 @@
 			padding-left: 8px;
 			padding-right: 8px;
 		}
-		.icon-1nNws_ {
+		.icon-tZMHgY {
 			height: 28px;
 		}
-
-
 
 		&::before {
 			content: "";

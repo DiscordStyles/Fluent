@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '0.0.19 [BETA]';
+	--fluent-version: '0.1.0 (BETA)';
 
 	--accent-text: #000;
 	--accent-solid: rgb(var(--accent));
@@ -39,7 +39,8 @@
 
 	--cursor: default;
 
-	--server-container: 16px;
+	--chat-mention-colour: var(--accent);
+	--chat-mention-bubble: rgb(255 255 255 / .05);
 
 	--win-btn-height: 32px;
 	--win-btn-width: 52px;

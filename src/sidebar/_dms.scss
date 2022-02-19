@@ -42,16 +42,16 @@
 		}
 
 		&:hover .interactive-1vLZ_I {
-			background: var(--bg-interactive);
+			background: var(--bg-interactive-high);
 		}
 		.selected-3veCBZ {
-			background: var(--bg-interactive);
+			background: var(--bg-interactive-high);
 			&::before {
 				height: var(--pill-height);
 				opacity: 1;
 			}
 			&:hover {
-				background: var(--bg-interactive-hover);
+				background: var(--bg-interactive-high-hover);
 			}
 		}
 	}

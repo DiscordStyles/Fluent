@@ -103,6 +103,13 @@ $icons: (
 	'guild-context-create-channel': mono.$collection,
 	'guild-context-create-category': mono.$collection-add,
 	'guild-context-create-event': mono.$calendar,
+
+	// Message more options
+	'message-actions-reply': mono.$reply,
+	'message-actions-mark-unread': mono.$comment-note,
+	'message-actions-copy-link': mono.$link,
+	'message-actions-tts': mono.$speaker,
+	'message-actions-copy-id': mono.$copy
 );
 
 .item-1OdjEX {

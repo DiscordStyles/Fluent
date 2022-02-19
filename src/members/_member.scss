@@ -22,16 +22,16 @@
 			}
 		}
 		&:hover .layout-1qmrhw {
-			background: var(--bg-interactive);
+			background: var(--bg-interactive-high);
 		}
 		&.selected-1-Z6gm .layout-1qmrhw {
-			background: var(--bg-interactive);
+			background: var(--bg-interactive-high);
 			&::before {
 				height: var(--pill-height);
 				opacity: 1;
 			}
 			&:hover {
-				background: var(--bg-interactive-hover);
+				background: var(--bg-interactive-high-hover);
 			}
 		}
 	}

@@ -1,19 +1,14 @@
-# Fluent (EARLY DEVELOPMENT)
+# Fluent (Beta)
 
 Brings the look of Windows 11 to Discord.
 
-- - -
+![Server Chat](https://i.imgur.com/oU14DTy.png)
+![User Settings](https://i.imgur.com/3uL8y2m.png)
+
+## Download
+
 BetterDiscord Download: Soon™  
 Powercord Install: `git clone https://github.com/DiscordStyles/Fluent`
-- - -
-
-## Previews
-
-Server Chat
-![Server Chat](https://i.imgur.com/5Mfcoba.png)
-
-User Settings
-![User Settings](https://i.imgur.com/3uL8y2m.png)
 
 ## Contributing
 

@@ -1,8 +1,11 @@
 #app-mount {
+	.container-2o3qEW {
+		border-left: 1px solid var(--border-mid);
+	}
 	.container-2o3qEW,
 	.members-3WRCEx,
 	.members-3WRCEx > div {
-		background: var(--bg-main);
+		background: var(--bg-alt);
 		height: 100%;
 	}
 	
@@ -13,5 +16,7 @@
 	}
 	.members-3WRCEx {
 		width: 100%;
+		padding: 8px 2px 8px 8px !important;
+		box-sizing: border-box;
 	}
 }

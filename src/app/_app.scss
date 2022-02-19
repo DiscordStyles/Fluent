@@ -17,8 +17,16 @@ body,
 	cursor: var(--cursor);
 }
 
+// Content
+.base-2jDfDU {
+	background: var(--bg-alt);
+	border-top: 1px solid var(--border-high);
+	border-left: 1px solid var(--border-high);
+	border-top-left-radius: var(--rounded);
+}
+
 // Version
-[aria-label="USER_SETTINGS"] .info-1sUqUG > span:first-child::before {
+[aria-label="USER_SETTINGS"] .info-3pQQBb > span:first-child::before {
 	display: block;
 	content: "Fluent v" var(--fluent-version);
 	text-transform: none;

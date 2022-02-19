@@ -12,6 +12,22 @@
 	.operations-3q3u6E {
 		padding: 12px;
 	}
+	.mentioned-Tre-dv {
+		background: rgb(var(--chat-mention-colour), 0.05);
+		&::before {
+			background: rgb(var(--chat-mention-colour));
+		}
+
+		&.groupStart-3Mlgv1 .contents-2MsGLg {
+			background: var(--chat-mention-bubble) !important;
+			.messageContent-2t3eCI:not(:empty) {
+				background: transparent !important;
+			}
+		}
+		&:not(.groupStart-3Mlgv1) .messageContent-2t3eCI:not(:empty) {
+			background: var(--chat-mention-bubble) !important;
+		}
+	}
 
 	.cozy-VmLDNB {
 		.avatar-2e8lTP {

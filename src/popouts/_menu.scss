@@ -104,7 +104,8 @@
 		}
 	}
 
-	[role="menuitemcheckbox"] {
+	[role="menuitemcheckbox"],
+	[id^="message-actions-"] {
 		flex-direction: row;
 	}
 

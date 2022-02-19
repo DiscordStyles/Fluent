@@ -2,12 +2,14 @@
 html.theme-light #app-mount .theme-light .root-g14mjS,
 html.theme-light .force-theme.theme-light {
 	--bg-main: #f3f3f3;
-	--bg-alt: #f6f6f6;
+	--bg-alt: #fafafa;
 	--bg-content: #fbfbfb;
 	--bg-content-alt: #f6f6f6;
 
 	--bg-interactive: #eaeaea;
 	--bg-interactive-hover: #ededed;
+	--bg-interactive-high: #eeeeee;
+	--bg-interactive-high-hover: #f1f1f1;
 
 	--bg-high: #fff;
 	--bg-higher: #fff;
@@ -17,9 +19,10 @@ html.theme-light .force-theme.theme-light {
 	--bg-menu-item: #f0f0f0;
 	--bg-menu-item-hover: #f3f3f3;
 
-	--chat-bubble-bg: var(--bg-highest);
+	--chat-bubble-bg: var(--bg-main);
 
 	--border: #e5e5e5;
+	--border-mid: #e8e8e8;
 	--border-high: #ececec;
 
 	--pill-unread: #9a9a9a;

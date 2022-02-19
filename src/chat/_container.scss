@@ -1,16 +1,16 @@
 #app-mount {
 	.chat-2ZfjoI {
-		background: var(--bg-main);
+		background: transparent;
 	}
 	.content-1jQy2l::before {
 		content: none;
 	}
 	.chatContent-3KubbW {
 		background: var(--bg-alt);
-		border: 1px solid var(--border);
-		border-bottom: none;
+		// border: 1px solid var(--border);
+		// border-bottom: none;
 		border-radius: var(--rounded-high) var(--rounded-high) 0 0;
-		margin: 0 16px;
+		// margin: 0 16px;
 		&:only-child {
 			margin-right: 0;
 			border-top-right-radius: 0;
