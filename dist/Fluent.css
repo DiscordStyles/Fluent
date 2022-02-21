@@ -1,6 +1,6 @@
 :root {
   --fluent-version: "0.1.0 (BETA)";
-  --accent-text: #000;
+  --accent-text: rgb(39, 39, 39);
   --accent-solid: rgb(var(--accent));
   --pill-width: 4px;
   --pill-height: 16px;
@@ -2064,6 +2064,20 @@ body,
   display: none;
 }
 
+#app-mount .searchResultsWrap-5RVOkx {
+  background-color: var(--bg-content);
+  width: 475px;
+}
+#app-mount .colorHeaderPrimary-jN_yGr {
+  background-color: var(--bg-content);
+}
+#app-mount .searchHeader-1r_ZSh {
+  background-color: var(--bg-main);
+}
+#app-mount .message-24k8JL {
+  background-color: var(--bg-alt);
+}
+
 #app-mount [role=slider] .bar-1Bhnl9 {
   height: 4px;
 }
@@ -3761,6 +3775,18 @@ body,
 #app-mount .root-g14mjS .footer-31IekZ button[type=button]:not(.lookFilled-yCfaCM):active {
   background: var(--btn-bg-active) !important;
   border-color: var(--btn-border-active);
+}
+
+#app-mount .container-2cd8Mz, #app-mount .container-1oAagU {
+  background-color: var(--bg-alt);
+}
+
+#app-mount .stickyScroller-2KHfQk, #app-mount .stickyHeader-fX4ei6 {
+  background-color: var(--bg-alt);
+}
+
+#app-mount .container-ZMc96U, #app-mount .scroller-29cQFV {
+  background-color: var(--bg-alt);
 }
 
 .platform-win #app-mount .layer-86YKbF {
