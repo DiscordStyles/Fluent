@@ -10,7 +10,11 @@
 @import url("https://raw.githack.com/xsm2/Fluent/main/dist/Fluent.css");
 
 :root {
-	--accent: 98, 205, 254;
+	--accent: 0, 166, 255;/*strong blue*/
+	/*--accent: 98, 205, 254;*//*blue*/
+	/*--accent: 255, 119, 0;*//*orange*/
+	/*--accent: 255, 0, 0;*//*red*/
+	
 
 	--channels-width: 280pxpx;
 	--members-width: 255px;
