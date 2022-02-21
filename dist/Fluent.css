@@ -3763,8 +3763,11 @@ body,
   border-color: var(--btn-border-active);
 }
 
+.platform-win #app-mount .layer-86YKbF {
+  top: 0;
+}
 .platform-win #app-mount .layer-86YKbF.baseLayer-W6S8cY {
-  padding-top: 20px !important;
+  padding-top: 0px !important;
 }
 .platform-win #app-mount .standardSidebarView-E9Pc3j {
   top: 0;
