@@ -2,22 +2,29 @@
 	.container-ZMc96U {
 		background: transparent;
 		border-bottom: 1px solid var(--border-mid);
+		padding-right: 160px;
 	}
 
 	.children-3xh0VB::after {
 		content: none;
 	}
-
+	//Icons near Search
+	.iconWrapper-2awDjA.clickable-ZD7xvu{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 	// Search
 	.search-39IXmY {
 		border-radius: var(--rounded);
 		overflow: hidden;	
+		width: 200px;
 	}
 	.searchBar-jGtisZ {
 		background: var(--textbox-bg);
 		border: 1px solid var(--textbox-border);
 		height: 30px;
 		padding: 0;
+		width: 200px;
 
 		.DraftEditor-root {
 			padding-top: 4px;

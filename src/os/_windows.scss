@@ -1,12 +1,48 @@
 .platform-win #app-mount {
 	.layer-86YKbF {
-		top: 0;
-		padding-top: 0;
+		//top: 0;
+		//padding-top: 0;
 		&.baseLayer-W6S8cY {
-			padding-top: 36px !important;
+			padding-top: 20px !important; //36
 		}
 	}
 	.standardSidebarView-E9Pc3j {
 		top: 0;
 	}
+	
+}
+
+.platform-win{
+    .wordmarkWindows-1v0lYD {
+        display: none;
+    }
+    .toolbar-1t6TWx:last-child, .toolbar-1t6TWx:nth-last-child(2) {
+        margin-right: 120px !important;
+    }
+    .sidebar-2K8pFh {
+        border-radius: 0;
+    }
+    .typeWindows-1za-n7{
+        position: fixed;
+        top: 15px;
+        right: 8px;
+        margin: 0;
+        -webkit-app-region: none;
+        .winButton-iRh8-Z{
+            height: 26px;
+        }
+    }
+    .avatarWrapper-2yR4wp{
+        right: 88px !important;
+    }
+    .panels-j1Uci_>.container-3baos1>.flex-1xMQg5{
+        right: 96px !important;
+        -webkit-app-region: none;
+    }
+    .title-3qD0b-{
+        -webkit-app-region: drag;
+        *{
+            -webkit-app-region: none;
+        }
+    }
 }
