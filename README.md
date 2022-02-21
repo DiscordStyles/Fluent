@@ -7,7 +7,8 @@ Brings the look of Windows 11 to Discord.
 
 ## Download
 
-BetterDiscord: <a href="https://github.com/xsm2/Fluent/releases/latest/download/Fluent.zip" download>Download</a> 
+BetterDiscord: [Download](https://github.com/xsm2/Fluent/releases/latest/download/Fluent.zip)
+
 Powercord Install: `git clone https://github.com/xsm2/Fluent`
 
 ## Contributing
