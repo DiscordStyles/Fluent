@@ -24,4 +24,4 @@ This is a little fork by me, xsm2, to fix and modify a few things, all the credi
 
 - Less padding/margins in general
 - Reverted the distinction between your messages and other peoples messages(so no more messages on the right)
-- Moved Minimize, Maximize and Close buttons to the Toolbar
+- Moved Minimize, Maximize and Close buttons to the Toolbar (Thanks to [doggybootsy](https://github.com/doggybootsy/FluentCord) for the ""inspiration""(aka the code))

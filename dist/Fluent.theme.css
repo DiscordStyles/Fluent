@@ -6,11 +6,12 @@
  * @source https://github.com/DiscordStyles/Fluent
 */
 
-@import url("https://discordstyles.github.io/Fluent/Fluent.css");
+/*https://xsm2.github.io/xsm2/Fluent.css"*/
+@import url("https://raw.githubusercontent.com/xsm2/Fluent/main/dist/Fluent.css");
 
 :root {
 	--accent: 98, 205, 254;
 
-	--channels-width: 300px;
-	--members-width: 280px;
+	--channels-width: 280pxpx;
+	--members-width: 255px;
 }
