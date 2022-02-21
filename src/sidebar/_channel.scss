@@ -60,6 +60,17 @@
 				mask: url(mono.$cog) center/cover;
 			}
 		}
+		.iconItem-1EjiK0.cursorPointer-B3uwDA {
+			svg {
+				background: var(--interactive-normal);
+			}
+			&:first-child svg {
+				mask: url(mono.$user-add) center/cover;
+			}
+			&:last-child svg {
+				mask: url(mono.$lock-closed) center/cover;
+			}
+		}
 	}
 	.name-28HaxV {
 		font-weight: var(--font-weight-normal);
