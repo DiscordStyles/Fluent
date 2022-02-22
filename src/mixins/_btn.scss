@@ -22,5 +22,6 @@
 	padding: 4px 10px;
 	line-height: 20px;
 	font-size: var(--font-size-sm);
+	min-height: 32px;
 	@include btnReset;
 }

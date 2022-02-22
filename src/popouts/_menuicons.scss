@@ -17,11 +17,13 @@ $icons: (
 	'message-devmode-copy-id': mono.$copy,
 
 	// User
+	'user-context-mark-channel-read': mono.$eye,
 	'user-context-user-profile': mono.$user,
 	'user-context-mention': mono.$chat,
 	'user-context-message-user': mono.$comment,
 	'user-context-call': mono.$call,
 	'user-context-note': mono.$note,
+	'user-context-close-dm': mono.$comment-dismiss,
 	'user-context-change-nickname': mono.$rename,
 	'user-context-invite-to-server': mono.$plus,
 	'user-context-add-friend': mono.$user-add,
@@ -36,6 +38,7 @@ $icons: (
 	'user-context-kick': (mono.$user-delete, 'danger'),
 	'user-context-ban': (mono.$user-denied, 'danger'),
 	'user-context-roles': mono.$tag,
+	'user-context-mute-channel': mono.$speaker-off,
 	'user-context-voice-move': mono.$move,
 	'user-context-devmode-copy-id': mono.$copy,
 
@@ -74,6 +77,8 @@ $icons: (
 	'channel-context-create-text-channel': mono.$text,
 	'channel-context-create-voice-channel': mono.$mic,
 	'channel-context-delete-channel': mono.$delete,
+	'channel-context-channel-notifications': mono.$bell,
+	'channel-context-channel-copy-link': mono.$link,
 	'channel-context-devmode-copy-id': mono.$copy,
 
 	// Server dropdown (left click)
@@ -87,6 +92,7 @@ $icons: (
 	'guild-header-popout-privacy': mono.$shield-check,
 	'guild-header-popout-change-nickname': mono.$pen,
 	'guild-header-popout-hide-muted-channels': mono.$eye,
+	'guild-header-popout-leave': mono.$sign-out,
 
 	// Server dropdown (right click)
 	'guild-context-mark-guild-read': mono.$eye,

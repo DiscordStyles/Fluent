@@ -10,6 +10,12 @@
 	// Voice connected
 	.container-1zzFcN:only-child {
 		border: none;
+		& > .flex-2S1XBF > .flex-2S1XBF {
+			gap: 4px;
+			button {
+				@include mixins.btn;
+			}
+		}
 	}
 	.actionButtons-2vEOUh .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ {
 		@include mixins.btnReset;

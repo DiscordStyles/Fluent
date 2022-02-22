@@ -2,22 +2,48 @@
 	.container-ZMc96U {
 		background: transparent;
 		border-bottom: 1px solid var(--border-mid);
+		height: var(--toolbar-height);
+		padding: 0 16px;
+	}
+	// title-31SJ6t container-ZMc96U
+	.children-3xh0VB {
+		margin-right: 16px;
+
+		& > .iconWrapper-2awDjA {
+			margin: 0 16px 0 0;
+		}
+		.divider-q3P9HC {
+			display: none;
+		}
+
+		&::after {
+			content: none;
+		}
 	}
 
-	.children-3xh0VB::after {
-		content: none;
+	.toolbar-3_r2xA {
+		gap: 16px;
+		.iconWrapper-2awDjA {
+			margin: 0;
+		}
+		a[href="https://support.discord.com"] {
+			display: none;
+		}
 	}
 
 	// Search
 	.search-39IXmY {
 		border-radius: var(--rounded);
-		overflow: hidden;	
+		overflow: hidden;
+		margin: 0 0 0 8px;
+		order: 1;
 	}
 	.searchBar-jGtisZ {
 		background: var(--textbox-bg);
 		border: 1px solid var(--textbox-border);
 		height: 30px;
 		padding: 0;
+		width: calc(var(--members-width) - 32px);
 
 		.DraftEditor-root {
 			padding-top: 4px;

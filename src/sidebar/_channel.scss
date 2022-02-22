@@ -56,10 +56,13 @@
 			&:first-child svg {
 				mask: url(mono.$user-add) center/cover;
 			}
-			&:last-child svg {
+			&:not(:only-child):last-child svg {
 				mask: url(mono.$cog) center/cover;
 			}
 		}
+	}
+	.name-28HaxV {
+		font-weight: var(--font-weight-normal);
 	}
 	.mainContent-20q_Hp {
 		padding: 0;

@@ -105,7 +105,9 @@
 	}
 
 	[role="menuitemcheckbox"],
-	[id^="message-actions-"] {
+	[id^="message-actions-"],
+	[id^="message-"],
+	[id*="copy-id"] {
 		flex-direction: row;
 	}
 
