@@ -1323,6 +1323,11 @@ body,
   padding: 2px 32px;
 }
 
+#app-mount .contextMenuContainer-1RO4DQ > svg > foreignObject > div {
+  margin-left: 5px;
+  margin-top: 12px;
+}
+
 #app-mount .container-2o3qEW {
   border-left: 1px solid var(--border-mid);
 }
