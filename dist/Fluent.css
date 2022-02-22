@@ -28,7 +28,7 @@
   --line-height-3xl: 52px;
   --font-display: "Segoe UI", sans-serif;
   --font-primary: "Segoe UI", sans-serif;
-  --cursor: default;
+  --cursor: pointer;
   --chat-mention-colour: var(--accent);
   --chat-mention-bubble: rgb(255 255 255 / .05);
   --win-btn-height: 32px;
