@@ -2082,6 +2082,25 @@ body,
   background-color: var(--bg-alt);
 }
 
+#app-mount {
+  /*.layer-2aCOJ3, .messagesPopoutWrap-3zryHW{
+      width: 550px;
+  }*/
+}
+#app-mount .header-1w9Q93, #app-mount .messagesPopout-eVzQcI {
+  background-color: var(--bg-content);
+}
+#app-mount .messageGroupWrapper-1jf_7C {
+  background-color: var(--bg-alt);
+}
+#app-mount .layer-2aCOJ3 .messagesPopoutWrap-3zryHW {
+  width: 550px;
+}
+
+#app-mount .header-3_zmOb, #app-mount .container-2c4_8A, #app-mount .list-1uSVgu {
+  background-color: var(--bg-content);
+}
+
 #app-mount [role=slider] .bar-1Bhnl9 {
   height: 4px;
 }
