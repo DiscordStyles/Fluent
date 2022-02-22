@@ -1,14 +1,31 @@
+@use '../mixins';
+
 #app-mount {
 	.privateChannels-oVe7HL {
 		background: transparent;
 	}
 	.scroller-WSmht3 {
 		background: transparent;
+		padding: 8px !important;
+		div[style="height: 8px;"] {
+			display: none;
+		}
+	}
+
+	.searchBar-3TnChZ {
+		height: var(--toolbar-height);
+		box-shadow: none;
+		border-bottom: 1px solid var(--border-mid);
+		box-sizing: border-box;
+		padding: 0 8px;
+		button {
+			@include mixins.btn;
+		}
 	}
 
 	.channel-1Shao0 {
 		max-width: unset;
-		margin: 4px 0;
+		margin: 0 0 4px 0;
 		padding: 0;
 
 		.layout-1LjVue {

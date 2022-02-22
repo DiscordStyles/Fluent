@@ -4,6 +4,7 @@
 		background: var(--bg-alt);
 		border-right: 1px solid var(--border-mid);
 		box-sizing: border-box;
+		border-radius: var(--rounded) 0 0 0;
 		.scroller-1ox3I2 {
 			padding: 8px !important;
 			&::-webkit-scrollbar {
