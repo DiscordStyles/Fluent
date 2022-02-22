@@ -17,6 +17,15 @@
 		filter: none;
 		height: 42px;
 		transition: none;
+
+		.guildIconContainer-3QvE6w {
+			display: none;
+		}
+		.name-3Uvkvr {
+			font-weight: var(--font-weight-normal);
+		}
+
+
 		&:hover {
 			background: var(--btn-bg-hover);
 		}

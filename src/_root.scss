@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '0.1.0 (BETA)';
+	--fluent-version: '0.1.1 (BETA)';
 
 	--accent-text: rgb(39, 39, 39);
 	--accent-solid: rgb(var(--accent));
@@ -12,6 +12,8 @@
 
 	--rounded-high: 8px;
 	--rounded: 4px;
+
+	--toolbar-height: 45px;//64px
 
 	--font-weight-light: 300;
 	--font-weight-semilight: 350;
@@ -34,8 +36,8 @@
 	--line-height-2xl: 36px;
 	--line-height-3xl: 52px;
 
-	--font-display: 'Segoe UI', sans-serif;
-	--font-primary: 'Segoe UI', sans-serif;
+	--font-display: 'Segoe UI Variable Text', sans-serif;
+	--font-primary: 'Segoe UI Variable Text', sans-serif;
 
 	--cursor: pointer;
 
