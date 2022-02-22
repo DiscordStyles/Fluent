@@ -302,6 +302,8 @@ body,
 
 .typeWindows-2-g3UY {
   height: var(--win-btn-height);
+  margin-left: calc(82px + var(--channels-width));
+  max-width: calc(100% - calc(82px + var(--channels-width)));
   z-index: 2;
   background: transparent;
   position: fixed;
@@ -916,6 +918,9 @@ body,
 #app-mount .channel-1Shao0 .selected-3veCBZ:hover {
   background: var(--bg-interactive-high-hover);
 }
+#app-mount .arrowIcon-3Q91hj {
+  display: none;
+}
 
 #app-mount .list-2x9Cl9 {
   padding: 4px 0 0 0;
@@ -1325,7 +1330,6 @@ body,
 #app-mount .members-3WRCEx,
 #app-mount .members-3WRCEx > div {
   background: var(--bg-alt);
-  height: 100%;
 }
 #app-mount .membersWrap-3NUR2t {
   min-width: var(--members-width);
