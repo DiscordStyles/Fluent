@@ -1,5 +1,15 @@
 #app-mount {
-    .header-3_zmOb, .container-2c4_8A, .list-1uSVgu{
+    .header-3_zmOb, .container-2c4_8A, .list-1uSVgu, 
+    .scroller-oTbAWP {
         background-color: var(--bg-content);
+    }
+
+    .root-g14mjS{
+        background-color: var(--bg-content) !important;
+    }
+
+    .container-1Bj0eq{
+        padding-left: 35px;
+        height: 35px;
     }
 }

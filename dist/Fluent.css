@@ -2097,8 +2097,16 @@ body,
   width: 550px;
 }
 
-#app-mount .header-3_zmOb, #app-mount .container-2c4_8A, #app-mount .list-1uSVgu {
+#app-mount .header-3_zmOb, #app-mount .container-2c4_8A, #app-mount .list-1uSVgu,
+#app-mount .scroller-oTbAWP {
   background-color: var(--bg-content);
+}
+#app-mount .root-g14mjS {
+  background-color: var(--bg-content) !important;
+}
+#app-mount .container-1Bj0eq {
+  padding-left: 35px;
+  height: 35px;
 }
 
 #app-mount [role=slider] .bar-1Bhnl9 {
