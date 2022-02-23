@@ -1,0 +1,98 @@
+@use '../mixins';
+
+#app-mount {
+	.container-2cd8Mz {
+		background: var(--bg-alt);
+	}
+	.tabBody-2dgbAs::before {
+		content: none;
+	}
+
+	.searchBar-2aylmZ {
+		margin: 16px 16px 0;
+		background: var(--textbox-bg);
+		position: relative;
+		overflow: hidden;
+		border: 1px solid var(--textbox-border);
+		border-radius: var(--rounded);
+
+		.input-2m5SfJ {
+			height: auto;
+			padding: 4px 8px;
+			min-height: auto;
+			margin: 0;
+			line-height: var(--line-height);
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			background: var(--textbox-underline);
+			bottom: 0;
+		}
+
+		&:hover {
+			background: var(--textbox-bg-hover);
+		}
+		&:focus-within {
+			background: var(--textbox-bg-active);
+			&::before {
+				height: 2px;
+				background: rgb(var(--accent));
+			}
+		}
+	}
+
+	.title-x4dI75 {
+		margin: 16px;
+	}
+	.peopleList-2VBrVI {
+		margin: 0 0 49px;
+		border-bottom: 1px solid var(--border-mid);
+	}
+	.peopleListItem-u6dGxF {
+		height: auto !important;
+		margin: 0 4px 4px 16px;
+		padding: 8px 16px;
+		border-radius: var(--rounded);
+		cursor: var(--cursor);
+		border: none;
+		position: relative;
+
+		&::before {
+			content: "";
+			display: block;
+			height: 0;
+			width: var(--pill-width);
+			background: rgb(var(--accent));
+			border-radius: 50px;
+			transition: var(--pill-transition);
+			opacity: 0;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+		}
+
+		.actionButton-3-B2x- {
+			@include mixins.btn;
+			width: auto;
+			height: auto;
+		}
+
+		&:hover {
+			background: var(--bg-interactive-high);
+		}
+		&.active-2UF8Zh {
+			background: var(--bg-interactive-high);
+			&::before {
+				height: var(--pill-height);
+				opacity: 1;
+			}
+		}
+	}
+
+}

@@ -1,9 +1,10 @@
 .platform-win #app-mount {
 	.layer-86YKbF {
 		top: 0;
-		//padding-top: 0;
+		padding-top: 0;
 		&.baseLayer-W6S8cY {
 			padding-top: 0px !important; //36
+			//padding-top: calc(var(--win-btn-height) + 4px) !important;
 		}
 	}
 	.standardSidebarView-E9Pc3j {
@@ -12,37 +13,25 @@
 	
 }
 
-.platform-win{
-    .wordmarkWindows-1v0lYD {
-        display: none;
-    }
-    .toolbar-1t6TWx:last-child, .toolbar-1t6TWx:nth-last-child(2) {
-        margin-right: 120px !important;
-    }
-    .sidebar-2K8pFh {
-        border-radius: 0;
-    }
-    .typeWindows-1za-n7{
-        position: fixed;
-        top: 15px;
-        right: 8px;
-        margin: 0;
-        -webkit-app-region: none;
-        .winButton-iRh8-Z{
-            height: 26px;
-        }
-    }
-    .avatarWrapper-2yR4wp{
-        right: 88px !important;
-    }
-    .panels-j1Uci_>.container-3baos1>.flex-1xMQg5{
-        right: 96px !important;
-        -webkit-app-region: none;
-    }
-    .title-3qD0b-{
-        -webkit-app-region: drag;
-        *{
-            -webkit-app-region: none;
-        }
-    }
+.typeWindows-2-g3UY {
+	height: var(--win-btn-height);
+    $withd-title: calc(82px + var(--channels-width));
+	margin-left: #{$withd-title};
+	max-width: calc(100% - #{$withd-title});
+    margin-top: 0px;
+    height: calc(var(--win-btn-height) + 14px);
+	z-index: 2;
+	background: transparent;
+	position: fixed;
+	width: calc(100% - 72px - var(--server-container));
+	user-select: none;
+	pointer-events: none;
+	right: 0;
+}
+.winButton-3UMjdg {
+	height: calc(var(--win-btn-height) + 14px);
+	width: var(--win-btn-width);
+}
+.wordmarkWindows-2dq6rw {
+	display: none;
 }
