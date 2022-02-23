@@ -10,8 +10,36 @@
 	}
 	.voiceUser-3nRK-K {
 		height: auto;
+		&::before {
+			content: "";
+			display: block;
+			height: 0;
+			width: var(--pill-width);
+			background: rgb(var(--accent));
+			border-radius: 50px;
+			transition: var(--pill-transition);
+			opacity: 0;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+		}
+
 		&:hover .content-1Tgc42 {
 			background: var(--bg-interactive-high);
+		}
+		&.selected-1oxcpH {
+			&::before {
+				height: var(--pill-height);
+				opacity: 1;
+			}
+			.content-1Tgc42 {
+				background: var(--bg-interactive-high);
+			}
+			&:hover .content-1Tgc42 {
+				background: var(--bg-interactive-high-hover);
+			}
 		}
 	}
 	.content-1Tgc42 {
