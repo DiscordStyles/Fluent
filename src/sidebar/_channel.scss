@@ -16,7 +16,7 @@
 		}
 		&.modeSelected-3DmyhH {
 			&::before {
-				height: 16px;
+				height: var(--pill-height);
 				background: rgb(var(--accent));
 				opacity: 1;
 			}
@@ -38,9 +38,9 @@
 			border-radius: 50px;
 			height: 0;
 			opacity: 1;
-			width: 4px;
+			width: var(--pill-width);
 			transform: translateY(-50%);
-			transition: height .15s ease, opacity .15s ease;
+			transition: var(--pill-transition);
 			z-index: 1;
 		}
 	}

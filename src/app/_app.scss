@@ -13,8 +13,7 @@ body,
 }
 
 // Remove pointer from clickable
-.clickable-2AoIYN,
-.clickable-ZD7xvu {
+[class*="clickable-"] {
 	cursor: var(--cursor);
 }
 
