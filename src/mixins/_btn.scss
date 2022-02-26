@@ -1,4 +1,15 @@
-@mixin btnReset {
+@mixin btn {
+	border-radius: var(--btn-radius);
+	padding: 4px 10px;
+	line-height: 20px;
+	font-size: var(--font-size-sm);
+	display: inline-flex;
+	align-items: center;
+	box-sizing: border-box
+}
+
+@mixin btnSecondary {
+	@include btn;
 	background: var(--btn-bg);
 	font-weight: var(--font-weight-regular);
 	color: var(--text-primary);
@@ -12,16 +23,24 @@
 		border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 	}
 	&:active {
-		background: var(--btn-bg-active) !important;
+		background: var(--btn-bg-active);
 		border-color: var(--btn-border-active);
 	}
 }
 
-@mixin btn {
-	border-radius: var(--btn-radius);
-	padding: 4px 10px;
-	line-height: 20px;
-	font-size: var(--font-size-sm);
-	min-height: 32px;
-	@include btnReset;
+@mixin btnPrimary {
+	@include btn;
+	background: rgb(var(--accent));
+	color: var(--accent-text);
+	transition: box-shadow .15s ease;
+	&:hover {
+		background: rgb(var(--accent));
+		box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / .1) !important;
+		border-color: hsl(0 0% 0% / .1);
+	}
+	&:active {
+		background: rgb(var(--accent));
+		box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / .2) !important;
+		border-color: hsl(0 0% 0% / .2);
+	}
 }
