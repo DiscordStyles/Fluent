@@ -21,6 +21,7 @@
 		background: var(--bg-alt);
 		box-shadow: none;
 		button {
+			@include mixins.btn;
 			@include mixins.btnSecondary;
 			cursor: var(--cursor);
 			height: auto;
@@ -54,6 +55,7 @@
 		bottom: 0;
 		padding-bottom: 0;
 		& > span {
+			@include mixins.btn;
 			@include mixins.btnSecondary;
 			border-radius: 0 var(--btn-radius) var(--btn-radius) 0;
 			height: 30px;
