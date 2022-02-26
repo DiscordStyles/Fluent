@@ -3,10 +3,28 @@
 		top: 0;
 		padding-top: 0;
 		&.baseLayer-W6S8cY {
-			padding-top: 36px !important;
+			padding-top: calc(var(--win-btn-height) + 4px) !important;
 		}
 	}
 	.standardSidebarView-E9Pc3j {
 		top: 0;
 	}
+}
+
+.typeWindows-2-g3UY {
+	height: var(--win-btn-height);
+	z-index: 2;
+	background: transparent;
+	position: fixed;
+	width: calc(100% - 72px - var(--server-container));
+	user-select: none;
+	pointer-events: none;
+	right: 0;
+}
+.winButton-3UMjdg {
+	height: calc(var(--win-btn-height) + 4px);
+	width: var(--win-btn-width);
+}
+.wordmarkWindows-2dq6rw {
+	display: none;
 }

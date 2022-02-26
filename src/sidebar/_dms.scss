@@ -1,4 +1,5 @@
 @use '../mixins';
+@use '../assets/mono';
 
 #app-mount {
 	.privateChannels-oVe7HL {
@@ -6,7 +7,7 @@
 	}
 	.scroller-WSmht3 {
 		background: transparent;
-		padding: 8px !important;
+		padding: 8px 2px 8px 8px !important;
 		div[style="height: 8px;"] {
 			display: none;
 		}
@@ -19,7 +20,7 @@
 		box-sizing: border-box;
 		padding: 0 8px;
 		button {
-			@include mixins.btn;
+			@include mixins.btnSecondary;
 		}
 	}
 
@@ -70,6 +71,14 @@
 			&:hover {
 				background: var(--bg-interactive-high-hover);
 			}
+		}
+	}
+
+	.link-39sEB3[href="/channels/@me"] .linkButtonIcon-7rsZcu {
+		mask: url(mono.$people) center/cover;
+		background: var(--interactive-normal);
+		g {
+			display: none;
 		}
 	}
 }

@@ -9,7 +9,8 @@
 
 
 // Chat scrollbar
-.chatContent-3KubbW .scroller-kQBbkU {
+.chatContent-3KubbW .scroller-kQBbkU,
+.peopleList-2VBrVI {
 	&::-webkit-scrollbar {
 		width: 10px;
 		height: 10px;
@@ -26,7 +27,8 @@
 // Other scrollbars
 .members-3WRCEx,
 .container-1NXEtd .scroller-1ox3I2,
-.sidebarRegionScroller-FXiQOh {
+.sidebarRegionScroller-FXiQOh,
+.scroller-WSmht3 {
 	&::-webkit-scrollbar {
 		width: 6px;
 		height: 6px;

@@ -8,27 +8,48 @@
 	}
 
 	// Voice connected
-	.container-1zzFcN:only-child {
-		border: none;
+	.container-1zzFcN {
+		padding-bottom: 0;
 		& > .flex-2S1XBF > .flex-2S1XBF {
 			gap: 4px;
 			button {
-				@include mixins.btn;
+				@include mixins.btnSecondary;
 			}
+		}
+		&:only-child {
+			border: none;
 		}
 	}
 	.actionButtons-2vEOUh .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ {
-		@include mixins.btnReset;
+		@include mixins.btnSecondary;
 	}
 
 	// User area
 	.container-YkUktl {
-		padding: 0 8px;
+		padding: 8px;
+		height: auto;
 		& > .flex-2S1XBF {
-			gap: 4px;
+			gap: 8px;
+			width: 100%;
 		}
 		button {
-			@include mixins.btn;
+			@include mixins.btnSecondary;
+			flex: 1;
+			svg {
+				width: 18px;
+				height: 18px;
+			}
+		}
+
+		// Move avatar to chat area.
+		.avatarWrapper-1B9FTW {
+			position: absolute;
+			left: calc(var(--channels-width) + var(--chat-spacing-x));
+			margin-top: -91px;
+		}
+
+		.nameTag-sc-gpq {
+			display: none;
 		}
 	}
 }
