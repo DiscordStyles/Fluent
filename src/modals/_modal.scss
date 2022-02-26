@@ -68,6 +68,7 @@
 				grid-column: 2/3;
 			}
 			&[type="button"]:not(.lookFilled-yCfaCM) {
+				@include mixins.btn;
 				@include mixins.btnSecondary;
 			}
 		}

@@ -26,6 +26,5 @@ See the [LICENSE](https://github.com/xsm2/Fluent/blob/main/LICENSE.md) file for 
 This is a little fork by me, xsm2, to fix and modify a few things, all the credit should go to [Gibbu](https://github.com/Gibbu)/[DiscordStyles](https://github.com/DiscordStyles). If you want to see the changes just look at the commits, but the most important ones are:
 
 - Less padding/margins in general
-- Reverted the distinction between your messages and other peoples messages(so no more messages on the right)
+- Disabled seflmessages addon(so no more messages on the right)
 - Moved Minimize, Maximize and Close buttons to the Toolbar (Thanks to [doggybootsy](https://github.com/doggybootsy/FluentCord) for the ""inspiration""(aka the code))
-- Themed some parts that weren't theme yet (Friends, Library and Nitro pages, Searchbar, Threads, Pinned messages,...) 
