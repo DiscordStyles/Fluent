@@ -56,7 +56,7 @@
 			&:first-child svg {
 				mask: url(mono.$user-add) center/cover;
 			}
-			&:not(:only-child):last-child svg {
+			& + .iconItem-1EjiK0 svg {
 				mask: url(mono.$cog) center/cover;
 			}
 		}

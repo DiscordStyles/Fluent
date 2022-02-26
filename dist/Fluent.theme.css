@@ -10,13 +10,13 @@
 @import url("https://raw.githack.com/xsm2/Fluent/main/dist/Fluent.css");
 
 :root {
+	/* The colour used throughout the app | R,G,B format | Default: 98, 205, 254 */
 	/*--accent: 0, 166, 255;*//*strong blue*/
-	/*--accent: 98, 205, 254;*//*blue*/
 	/*--accent: 255, 119, 0;*//*orange*/
 	/*--accent: 255, 0, 0;*//*red*/
 	--accent: 114, 137, 218;/*discord purple*/
 	
 
-	--channels-width: 280px;
-	--members-width: 255px;
+	--channels-width: 280px; /* The size of the server channel/dms list | Default: 300px | Fork default: 280px*/
+	--members-width: 255px; /* The size of the members list | Default: 280px | Fork default: 255px*/
 }

@@ -13,7 +13,7 @@
 		& > .flex-2S1XBF > .flex-2S1XBF {
 			gap: 4px;
 			button {
-				@include mixins.btn;
+				@include mixins.btnSecondary;
 			}
 		}
 		&:only-child {
@@ -21,7 +21,7 @@
 		}
 	}
 	.actionButtons-2vEOUh .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ {
-		@include mixins.btnReset;
+		@include mixins.btnSecondary;
 	}
 
 	// User area
@@ -33,7 +33,7 @@
 			width: 100%;
 		}
 		button {
-			@include mixins.btn;
+			@include mixins.btnSecondary;
 			flex: 1;
 			svg {
 				width: 18px;

@@ -4,9 +4,6 @@
 #app-mount {
 	.privateChannels-oVe7HL {
 		background: transparent;
-		& + .panels-3wFtMD .avatarWrapper-1B9FTW {
-			margin-top: 0;
-		}
 	}
 	.scroller-WSmht3 {
 		background: transparent;
@@ -23,7 +20,7 @@
 		box-sizing: border-box;
 		padding: 0 8px;
 		button {
-			@include mixins.btn;
+			@include mixins.btnSecondary;
 		}
 	}
 

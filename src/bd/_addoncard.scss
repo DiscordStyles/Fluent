@@ -27,7 +27,7 @@
 			gap: 8px;
 		}
 		.bd-button {
-			@include mixins.btnReset;
+			@include mixins.btnSecondary;
 			border-radius: var(--btn-radius);
 			padding: 4px 10px;
 			min-width: 50px;
