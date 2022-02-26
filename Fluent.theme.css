@@ -6,11 +6,15 @@
  * @source https://github.com/DiscordStyles/Fluent
 */
 
-@import url("https://discordstyles.github.io/Fluent/Fluent.css");
+/* Fluent base CSS */
+@import "https://discordstyles.github.io/Fluent/Fluent.css";
+
+/* Self Messages - Moves your messages to the right of the chat box. Remove to disable */
+@import "https://discordstyles.github.io/Fluent/SelfMessages.css";
 
 :root {
-	--accent: 98, 205, 254;
+	--accent: 98, 205, 254; /* The colour used throughout the app | R,G,B format | Default: 98, 205, 254 */
 
-	--channels-width: 300px;
-	--members-width: 280px;
+	--channels-width: 300px; /* The size of the server channel/dms list | Default: 300px */
+	--members-width: 280px; /* The size of the members list | Default: 28px */
 }

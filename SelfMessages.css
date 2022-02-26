@@ -1,0 +1,29 @@
+#app-mount .cozy-VmLDNB[data-is-author-self=true] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#app-mount .cozy-VmLDNB[data-is-author-self=true] .contents-2MsGLg {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: rgb(var(--accent), 0.05);
+}
+#app-mount .cozy-VmLDNB[data-is-author-self=true] .contents-2MsGLg > .messageContent-2t3eCI {
+  background: transparent;
+}
+#app-mount .cozy-VmLDNB[data-is-author-self=true] .container-3i3IzO {
+  justify-self: flex-end;
+}
+#app-mount .cozy-VmLDNB[data-is-author-self=true] .headerText-2z4IhQ {
+  display: none;
+}
+#app-mount .cozy-VmLDNB[data-is-author-self=true] .timestamp-p1Df1m {
+  margin-left: 0;
+}
+#app-mount .cozy-VmLDNB[data-is-author-self=true] .avatar-2e8lTP {
+  display: none;
+}
+#app-mount .cozy-VmLDNB[data-is-author-self=true].hasThread-3h-KJV::after {
+  content: none;
+}
