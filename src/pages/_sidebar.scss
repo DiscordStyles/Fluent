@@ -1,0 +1,30 @@
+@use '../mixins';
+
+#app-mount {
+	.container-1oAagU {
+		background: transparent;
+	}
+	.nowPlayingColumn-1eCBCN {
+		background: transparent;
+	}
+
+	.scroller-hE2gWq {
+		border-left: 1px solid var(--border-mid);
+		margin: 0;
+	}
+
+	.header-Imy05m {
+		margin: 0 0 16px;
+		@include mixins.subTitle;
+	}
+
+	.itemCard-3Etziu {
+		border-radius: var(--rounded);
+		border: none;
+		background: var(--bg-content);
+		cursor: var(--cursor);
+		&:hover {
+			background: var(--bg-content-alt);
+		}
+	}
+}

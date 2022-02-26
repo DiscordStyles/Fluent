@@ -68,7 +68,7 @@
 				grid-column: 2/3;
 			}
 			&[type="button"]:not(.lookFilled-yCfaCM) {
-				@include mixins.btnReset;
+				@include mixins.btnSecondary;
 			}
 		}
 	}

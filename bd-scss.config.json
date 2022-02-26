@@ -12,6 +12,10 @@
 		{
 			"target": ["src", "_base.scss"],
 			"output": ["dist", "Fluent.css"]
+		},
+		{
+			"target": ["src", "addons", "_selfmessages.scss"],
+			"output": ["dist", "SelfMessages.css"]
 		}
 	]
 }
