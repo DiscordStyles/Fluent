@@ -1,0 +1,77 @@
+@use '../mixins';
+
+#app-mount {
+	.searchResultsWrap-5RVOkx {
+		border-left: 1px solid var(--border-mid);
+		background: var(--bg-alt);
+		width: 475px;
+	}
+	.searchHeader-1r_ZSh {
+		background: var(--bg-main);
+		border-bottom: 1px solid var(--border-mid);
+		padding: 8px 8px 8px 16px;
+		.size16-rrJ6ag {
+			@include mixins.text;
+		}
+		.item-3XjbnG {
+			@include mixins.btnSecondary;
+			margin: 0;
+			height: auto;
+			&.selected-g-kMVV {
+				@include mixins.btnPrimary;
+			}
+		}
+	}
+	.channelName-3w2Y3c {
+		background: transparent;
+	}
+	.container-rZM65Y .button-cfOvv- {
+		@include mixins.btnSecondary;
+		height: auto;
+	}
+	.searchResult-O9NDji {
+		background: transparent;
+		border-radius: 0;
+		margin-bottom: 0;
+		cursor: var(--cursor);
+		.cozy-VmLDNB {
+			padding-left: calc(var(--chat-spacing-x) + 20px);
+		}
+		.avatar-2e8lTP {
+			left: calc(var(--chat-spacing-x) / 2 - 16px);
+		}
+	}
+	.message-24k8JL {
+		padding-bottom: 0;
+	}
+	
+	.pageControl-1XvHg0 {
+		padding-bottom: 16px;
+		& > .pageButton-1GMGeJ,
+		div[role="button"] {
+			@include mixins.btnSecondary;
+			min-height: 32px;
+			max-height: 32px;
+			margin: 0;
+			border-radius: 0 !important;
+		}
+		& > .pageButton-1GMGeJ.activeButton-LRWFC_ {
+			@include mixins.btnPrimary;
+		}
+		& > button {
+			&:first-child {
+				border-radius: var(--rounded) 0 0 var(--rounded) !important;
+			}
+			&:last-child {
+				border-radius: 0 var(--rounded) var(--rounded) 0 !important;
+			}
+		}
+		.gap-35QmZH {
+			margin: 0;
+			width: auto;
+			height: auto;
+			min-width: unset;
+			padding: 0;
+		}
+	}
+}
