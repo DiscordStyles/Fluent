@@ -13,6 +13,7 @@
 		& > .flex-2S1XBF > .flex-2S1XBF {
 			gap: 4px;
 			button {
+				@include mixins.btn;
 				@include mixins.btnSecondary;
 			}
 		}
@@ -21,6 +22,7 @@
 		}
 	}
 	.actionButtons-2vEOUh .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ {
+		@include mixins.btn;
 		@include mixins.btnSecondary;
 	}
 
@@ -33,6 +35,7 @@
 			width: 100%;
 		}
 		button {
+			@include mixins.btn;
 			@include mixins.btnSecondary;
 			flex: 1;
 			svg {

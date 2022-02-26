@@ -1,15 +1,12 @@
 #app-mount {
-	.container-2o3qEW {
-		border-left: 1px solid var(--border-mid);
-	}
 	.container-2o3qEW,
 	.members-3WRCEx,
 	.members-3WRCEx > div {
 		background: var(--bg-alt);
-		height: 100%;
 	}
-	
+
 	.membersWrap-3NUR2t {
+		border-left: 1px solid var(--border-mid);
 		min-width: var(--members-width);
 		width: var(--members-width);
 		height: 100%;

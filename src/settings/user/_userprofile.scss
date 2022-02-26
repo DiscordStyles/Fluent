@@ -50,6 +50,7 @@
 				grid-area: title;
 			}
 			.lookFilled-1Gx00P.colorBrand-3pXr91 {
+				@include mixins.btn;
 				@include mixins.btnSecondary;
 			}
 		}
@@ -69,6 +70,7 @@
 				mask-image: url(mono.$image);
 			}
 			button {
+				@include mixins.btn;
 				@include mixins.btnSecondary;
 				grid-area: button;
 			}

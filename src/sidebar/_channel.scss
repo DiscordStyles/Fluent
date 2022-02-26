@@ -50,14 +50,16 @@
 		margin-right: 0;
 		padding: 0 8px 0 16px;
 		.iconItem-1EjiK0 {
-			svg {
-				background: var(--interactive-normal);
-			}
-			&:first-child svg {
-				mask: url(mono.$user-add) center/cover;
-			}
-			& + .iconItem-1EjiK0 svg {
-				mask: url(mono.$cog) center/cover;
+			&:not(.cursorPointer-B3uwDA) {
+				svg {
+					background: var(--interactive-normal);
+				}
+				&:first-child svg {
+					mask: url(mono.$user-add) center/cover;
+				}
+				& + .iconItem-1EjiK0 svg {
+					mask: url(mono.$cog) center/cover;
+				}
 			}
 		}
 	}

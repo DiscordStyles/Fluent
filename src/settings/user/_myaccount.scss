@@ -149,6 +149,7 @@
 				button {
 					margin: 0;
 					order: 1;
+					@include mixins.btn;
 					@include mixins.btnSecondary;
 				}
 				&::before {
@@ -210,6 +211,7 @@
 							margin: 0;
 						}
 						.button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91 {
+							@include mixins.btn;
 							@include mixins.btnSecondary;
 						}
 					}
@@ -249,6 +251,7 @@
 							flex-direction: row-reverse;
 							gap: 18px;
 							.lookFilled-1Gx00P.colorBrand-3pXr91 {
+								@include mixins.btn;
 								@include mixins.btnSecondary;
 							}
 						}

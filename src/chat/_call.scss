@@ -1,0 +1,77 @@
+@use '../mixins';
+
+#app-mount {
+	.wrapper-1gVUIN {
+		background: var(--bg-main);
+		border-bottom: 1px solid var(--border-mid);
+		&.minimum-fXpVNc {
+			height: 300px;
+		}
+	}
+	.voiceCallWrapper-3UtDiC {
+		padding-bottom: 0;
+		gap: 12px;
+	}
+	.participant-1l6khj {
+		margin: 0;
+	}
+
+	.wrapper-3t3Yqv {
+		gap: 8px;
+		.button-f2h6uQ {
+			@include mixins.btn;
+			@include mixins.btnSecondary;
+			height: 32px;
+			width: 44px;
+			svg {
+				width: 18px;
+				height: 18px;
+			}
+		}
+		button.red-3T8maV {
+			@include mixins.btnDanger;
+		}
+	}
+
+	div.controlButton-2PMNom {
+		margin: 0;
+	}
+
+	.contextMenuContainer-1RO4DQ {
+		display: flex;
+		height: 32px;
+		width: 70px;
+		overflow: hidden;
+		& > svg {
+			transform: translateX(6px) scale(1.2726);
+		}
+		foreignObject {
+			mask: none;
+		}
+		button {
+			@include mixins.btn;
+			@include mixins.btnSecondary;
+			border-radius: var(--btn-radius) 0 0 var(--btn-radius) !important;
+			height: 32px;
+			width: 44px;
+		}
+	}
+	.contextMenuNub-NuTZ_U {
+		@include mixins.btn;
+		@include mixins.btnSecondary;
+		height: 32px;
+		padding: 4px;
+		width: auto;
+		position: static;
+		border-radius: 0 var(--btn-radius) var(--btn-radius) 0 !important;
+		svg {
+			cursor: var(--cursor);
+		}
+	}
+
+	// Video
+	.video-3n15R6 .transparent-1lUmft {
+		background: transparent;
+		border-bottom: none;
+	}
+}

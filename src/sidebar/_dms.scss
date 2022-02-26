@@ -20,6 +20,7 @@
 		box-sizing: border-box;
 		padding: 0 8px;
 		button {
+			@include mixins.btn;
 			@include mixins.btnSecondary;
 		}
 	}

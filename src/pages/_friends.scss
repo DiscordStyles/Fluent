@@ -78,6 +78,7 @@
 		}
 
 		.actionButton-3-B2x- {
+			@include mixins.btn;
 			@include mixins.btnSecondary;
 			width: auto;
 			height: auto;

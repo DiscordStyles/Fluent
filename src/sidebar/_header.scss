@@ -12,6 +12,7 @@
 	}
 
 	.header-3OsQeK {
+		@include mixins.btn;
 		@include mixins.btnSecondary;
 		margin: 8px;
 		filter: none;
