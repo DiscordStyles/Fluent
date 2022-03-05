@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "0.1.4 (BETA)";
+  --fluent-version: "0.1.5 (BETA)";
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
   --pill-width: 4px;
@@ -27,8 +27,8 @@
   --line-height-xl: 28px;
   --line-height-2xl: 36px;
   --line-height-3xl: 52px;
-  --font-display: "Segoe UI Variable Text", sans-serif;
-  --font-primary: "Segoe UI Variable Text", sans-serif;
+  --font-display: "Segoe UI", sans-serif;
+  --font-primary: "Segoe UI", sans-serif;
   --cursor: default;
   --chat-mention-colour: var(--accent);
   --chat-padding-y: 12px;
@@ -138,28 +138,28 @@ html.theme-light .force-theme.theme-light {
 }
 
 @font-face {
-  font-family: "Segoe UI Variable Text";
-  src: local("Segoe UI Variable Text Light"), url("https://discordstyles.github.io/Fluent/fonts/light.ttf") format("ttf");
+  font-family: "Segoe UI";
+  src: local("Segoe UI Light"), url("https://discordstyles.github.io/Fluent/fonts/light.woff2") format("woff2");
   font-weight: 100;
 }
 @font-face {
-  font-family: "Segoe UI Variable Text";
-  src: local("Segoe UI Variable Text Semilight"), url("https://discordstyles.github.io/Fluent/fonts/semilight.ttf") format("ttf");
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semilight"), url("https://discordstyles.github.io/Fluent/fonts/semilight.woff2") format("woff2");
   font-weight: 200;
 }
 @font-face {
-  font-family: "Segoe UI Variable Text";
-  src: local("Segoe UI Variable Text"), url("https://discordstyles.github.io/Fluent/fonts/normal.ttf") format("ttf");
+  font-family: "Segoe UI";
+  src: local("Segoe UI"), url("https://discordstyles.github.io/Fluent/fonts/normal.woff2") format("woff2");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Segoe UI Variable Text";
-  src: local("Segoe UI Variable Text Semibold"), url("https://discordstyles.github.io/Fluent/fonts/semibold.ttf") format("ttf");
+  font-family: "Segoe UI";
+  src: local("Segoe UI Semibold"), url("https://discordstyles.github.io/Fluent/fonts/semibold.woff2") format("woff2");
   font-weight: 600;
 }
 @font-face {
-  font-family: "Segoe UI Variable Text";
-  src: local("Segoe UI Variable Text Bold"), url("https://discordstyles.github.io/Fluent/fonts/bold.ttf") format("ttf");
+  font-family: "Segoe UI";
+  src: local("Segoe UI Bold"), url("https://discordstyles.github.io/Fluent/fonts/bold.woff2") format("woff2");
   font-weight: 700;
 }
 html, span:not([class*=spinner-], [class*=spinnerItem]) {
@@ -840,6 +840,52 @@ body,
   background: transparent;
   border-top: 1px solid var(--border-mid);
 }
+#app-mount .panels-3wFtMD > .container-YkUktl {
+  padding: 8px;
+  height: auto;
+}
+#app-mount .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF {
+  gap: 8px;
+  width: 100%;
+}
+#app-mount .panels-3wFtMD > .container-YkUktl button {
+  border-radius: var(--btn-radius);
+  padding: 4px 10px;
+  line-height: 20px;
+  font-size: var(--font-size-sm);
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  background: var(--btn-bg);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  box-shadow: none !important;
+  border: 1px solid var(--btn-border-x);
+  border-top-color: var(--btn-border-t);
+  border-bottom-color: var(--btn-border-b);
+  cursor: var(--cursor);
+  flex: 1;
+}
+#app-mount .panels-3wFtMD > .container-YkUktl button:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+}
+#app-mount .panels-3wFtMD > .container-YkUktl button:active {
+  background: var(--btn-bg-active);
+  border-color: var(--btn-border-active);
+}
+#app-mount .panels-3wFtMD > .container-YkUktl button svg {
+  width: 18px;
+  height: 18px;
+}
+#app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW {
+  position: absolute;
+  left: calc(var(--channels-width) + var(--chat-spacing-x));
+  margin-top: -91px;
+}
+#app-mount .panels-3wFtMD > .container-YkUktl .nameTag-sc-gpq {
+  display: none;
+}
 #app-mount .container-1zzFcN {
   padding-bottom: 0;
 }
@@ -898,52 +944,6 @@ body,
 #app-mount .actionButtons-2vEOUh .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ:active {
   background: var(--btn-bg-active);
   border-color: var(--btn-border-active);
-}
-#app-mount .container-YkUktl {
-  padding: 8px;
-  height: auto;
-}
-#app-mount .container-YkUktl > .flex-2S1XBF {
-  gap: 8px;
-  width: 100%;
-}
-#app-mount .container-YkUktl button {
-  border-radius: var(--btn-radius);
-  padding: 4px 10px;
-  line-height: 20px;
-  font-size: var(--font-size-sm);
-  display: inline-flex;
-  align-items: center;
-  box-sizing: border-box;
-  background: var(--btn-bg);
-  font-weight: var(--font-weight-regular);
-  color: var(--text-primary);
-  box-shadow: none !important;
-  border: 1px solid var(--btn-border-x);
-  border-top-color: var(--btn-border-t);
-  border-bottom-color: var(--btn-border-b);
-  cursor: var(--cursor);
-  flex: 1;
-}
-#app-mount .container-YkUktl button:hover {
-  background: var(--btn-bg-hover);
-  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
-}
-#app-mount .container-YkUktl button:active {
-  background: var(--btn-bg-active);
-  border-color: var(--btn-border-active);
-}
-#app-mount .container-YkUktl button svg {
-  width: 18px;
-  height: 18px;
-}
-#app-mount .container-YkUktl .avatarWrapper-1B9FTW {
-  position: absolute;
-  left: calc(var(--channels-width) + var(--chat-spacing-x));
-  margin-top: -91px;
-}
-#app-mount .container-YkUktl .nameTag-sc-gpq {
-  display: none;
 }
 
 #app-mount .privateChannels-oVe7HL {
@@ -1219,7 +1219,6 @@ body,
 }
 #app-mount .scrollableContainer-15eg7h {
   background: transparent;
-  overflow: visible;
 }
 #app-mount .scrollableContainer-15eg7h .inner-NQg18Y {
   position: unset;
@@ -1495,6 +1494,7 @@ body,
   background: rgb(var(--accent));
   color: var(--accent-text);
   transition: box-shadow 0.15s ease;
+  font-weight: var(--font-weight-semibold);
 }
 #app-mount .searchHeader-1r_ZSh .item-3XjbnG.selected-g-kMVV:hover {
   background: rgb(var(--accent));
@@ -1589,6 +1589,7 @@ body,
   background: rgb(var(--accent));
   color: var(--accent-text);
   transition: box-shadow 0.15s ease;
+  font-weight: var(--font-weight-semibold);
 }
 #app-mount .pageControl-1XvHg0 > .pageButton-1GMGeJ.activeButton-LRWFC_:hover {
   background: rgb(var(--accent));
@@ -2629,7 +2630,7 @@ body,
   margin: 16px;
 }
 #app-mount .peopleList-2VBrVI {
-  margin: 0 0 49px;
+  margin: 0 0 109px;
   border-bottom: 1px solid var(--border-mid);
 }
 #app-mount .peopleListItem-u6dGxF {
@@ -3191,7 +3192,7 @@ body,
   color: var(--header-primary);
   font-size: var(--font-size-xl);
   line-height: var(--line-height-2xl);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   margin-bottom: 48px;
 }
 #app-mount .layer-86YKbF[aria-label*=SETTINGS] .divider-_0um2u,
@@ -3248,6 +3249,9 @@ body,
 }
 #app-mount .layer-86YKbF[aria-label*=SETTINGS] .container-1zDvAE + .title-3hptVQ, #app-mount .layer-86YKbF[aria-label*=SETTINGS] .container-1zDvAE + div[class^=margin]:not(.container-1zDvAE) {
   margin-top: 40px;
+}
+#app-mount .layer-86YKbF[aria-label*=SETTINGS] .contentRegionScroller-2_GT_N {
+  margin-top: calc(var(--win-btn-height) + 16px);
 }
 #app-mount .layer-86YKbF[aria-label*=SETTINGS] [class^=margin] + [class^=margin] {
   margin-top: 40px;
@@ -3400,7 +3404,7 @@ body,
   background: var(--bg-main);
 }
 #app-mount .layer-86YKbF[aria-label*=SETTINGS] .contentColumn-1C7as6 {
-  padding: 44px 32px 32px;
+  padding: 0 32px 32px;
   max-width: 1000px;
 }
 #app-mount .layer-86YKbF[aria-label*=SETTINGS] .contentColumn-1C7as6 > div {
