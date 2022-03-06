@@ -22,7 +22,7 @@
 		border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 	}
 	&:active {
-		background: var(--btn-bg-active);
+		background: var(--btn-bg-active) !important;
 		border-color: var(--btn-border-active);
 	}
 }

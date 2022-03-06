@@ -2,80 +2,135 @@
 
 #app-mount {
 	.userPopout-2j1gM4 {
-		border: 1px solid var(--border-high);
-		box-shadow: none;
-		background: var(--bg-menu);
 		border-radius: var(--rounded);
-		.note-Go5ZP2 {
-			margin: 0;
-		}
-		.input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
-		.input-2g-os5.multiInput-1VARjC {
-			background: var(--bg-high);
-			&:hover {
-				background: var(--bg-higher);
-			}
+		box-shadow: 0 0 0 1px var(--border-high);
+		width: 400px !important;
+		box-sizing: border-box;
+		.avatarWrapper-eenWra {
+			position: absolute;
+			top: 24px;
+			right: 24px;
+			left: unset;
 		}
 		.avatar-2Vndt_ {
-			border-color: var(--bg-menu);
-			background: var(--bg-menu);
+			background: hsl(0 0% 100% / .2);
+			border-color: transparent;
+			box-shadow: 0 0 0 2px hsl(0 0% 100% / .2);
 		}
-		
-		.textarea-2r0oV8 {
-			height: auto !important;
-			margin: 0;
-		}
-		.fontDisplay-3Gtuks {
+		.size12-oc4dx4 {
 			@include mixins.subText;
+			text-transform: none;
 		}
-
-		.rolesList-3uZoaa {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 4px;
+	}
+	.headerNormal-3Zn_yu {
+		width: 100%;
+		border-radius: var(--rounded) var(--rounded) 0 0;
+		overflow: hidden;
+		height: 160px;
+		position: relative;
+		.banner-1YaD3N {
+			mask: linear-gradient(hsl(0 0% 0% / .5), transparent 90%);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
 		}
-		.role-2TIOKu {
-			height: unset;
-			margin: 0;
-			padding: 6px 8px;
-			background: var(--bg-alt);
-			border-radius: var(--rounded);
-			display: flex;
-			gap: 8px;
-		}
-		.roleCircle-1EgnFN {
-			margin: 0;
-		}
-		.roleName-2ZJJYR {
-			@include mixins.subText;
-			margin: 0;
-		}
+	}
+	.headerTop-3GPUSF {
+		padding: 0;
+		position: absolute;
+		top: 0;
+		padding: 24px;
+		box-sizing: border-box;
+		height: 160px;
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		gap: 8px;
+	}
+	.nickname-t08Mck {
+		max-width: 180px;
+	}
+	.profileBadges-2pItdR {
+		position: static;
+		max-width: unset;
+		justify-content: flex-start;
 	}
 
-	.headerTop-3vNv-a {
-		padding: 64px 18px 18px;
-	}
-	.nameTag-H6kSJ0 {
-		@include mixins.text;
-	}
-	.username-3JLfHz,
-	.discrimBase-1VOoau {
-		font-weight: var(--font-weight-regular);
-	}
-
-	.body-3HBlXn {
-		padding: 0 18px 18px;
-		.divider-ewBQKj {
-			background: var(--border-high);
-			margin-bottom: 18px;
+	.body-2wLx-E {
+		margin-top: -24px;
+		padding: 0 24px 24px !important;
+		& > div[aria-hidden="true"] {
+			display: none;
+		}
+		&::-webkit-scrollbar {
+			display: none;
 		}
 	}
 	.bodyInnerWrapper-2bQs1k {
 		background: transparent;
 	}
-
+	.note-Go5ZP2 {
+		margin: 0;
+	}
+	.divider-1wtgZ3 {
+		display: none;
+	}
+	.button-f2h6uQ ~ .aboutMeSection-PUghFQ {
+		margin-top: 24px;
+	}
+	.rolesList-3uZoaa {
+		gap: 8px;
+	}
+	.role-2TIOKu {
+		@include mixins.subText;
+		margin: 0;
+		height: auto;
+		padding: 6px 8px;
+		border-radius: var(--rounded);
+		color: var(--text-primary);
+		gap: 4px;
+		position: relative;
+		overflow: hidden;
+		&:hover .roleCircle-1EgnFN {
+			width: 100%;
+			opacity: 1;
+			&:not(:empty) ~ .roleName-2ZJJYR {
+				margin-left: 22px;
+			}
+		}
+	}
+	.roleCircle-1EgnFN {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+		height: 100%;
+		border-radius: 0;
+		width: 90%;
+		mask: linear-gradient(90deg, hsl(0 0% 0%), transparent);
+		filter: none;
+		opacity: .35;
+		justify-content: flex-start;
+		padding: 8px;
+		box-sizing: border-box;
+		transition: .15s ease;
+	}
+	.roleName-2ZJJYR {
+		position: relative;
+		margin: 0;
+		transition: margin-left .15s ease;
+	}
+	.roleRemoveIcon-387wKV {
+		width: 16px;
+		height: 16px;
+	}
 
 	.footer-3naVBw {
-		background: transparent;
+		padding: 0 24px 24px;
+		margin: 0;
 	}
 }
