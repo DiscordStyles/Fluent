@@ -7,12 +7,16 @@ $icons: (
 	// Messages
 	'message-add-reaction': mono.$emoji,
 	'message-edit': mono.$pen,
+	'message-actions-edit': mono.$pen,
+	'message-actions-pin': mono.$pin,
 	'message-pin': mono.$pin,
 	'message-reply': mono.$reply,
+	'message-actions-thread': mono.$comment-multi,
 	'message-thread': mono.$comment-multi,
 	'message-mark-unread': mono.$comment-dismiss,
 	'message-copy-link': mono.$link,
 	'message-tts': mono.$speaker,
+	'message-actions-delete': (mono.$delete, 'danger'),
 	'message-delete': (mono.$delete, 'danger'),
 	'message-devmode-copy-id': mono.$copy,
 

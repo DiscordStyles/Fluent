@@ -22,7 +22,7 @@
 		border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 	}
 	&:active {
-		background: var(--btn-bg-active);
+		background: var(--btn-bg-active) !important;
 		border-color: var(--btn-border-active);
 	}
 }
@@ -31,6 +31,7 @@
 	background: rgb(var(--accent));
 	color: var(--accent-text);
 	transition: box-shadow .15s ease;
+	font-weight: var(--font-weight-semibold);
 	&:hover {
 		background: rgb(var(--accent));
 		box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / .1) !important;
