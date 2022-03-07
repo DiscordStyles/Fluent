@@ -50,6 +50,11 @@
 		}
 	}
 
+	// Scrollbars
+	.contentRegionScroller-2_GT_N {
+		margin-top: calc(var(--win-btn-height) + 16px);
+	}
+
 	// Spacing resets
 	[class^="margin"] + [class^="margin"] {
 		margin-top: 40px;
