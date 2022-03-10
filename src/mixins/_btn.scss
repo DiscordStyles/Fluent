@@ -32,6 +32,9 @@
 	color: var(--accent-text);
 	transition: box-shadow .15s ease;
 	font-weight: var(--font-weight-semibold);
+	border: 1px solid var(--btn-border-x);
+	border-top-color: var(--btn-border-t);
+	border-bottom-color: var(--btn-border-b);
 	&:hover {
 		background: rgb(var(--accent));
 		box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / .1) !important;
