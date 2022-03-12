@@ -1,7 +1,7 @@
 @use '../assets/mono';
 @use '../mixins';
 
-#app-mount .layer-86YKbF[aria-label*="SETTINGS"] {
+#app-mount .layer-86YKbF.layer-86YKbF:not(.baseLayer-W6S8cY) {
 	h1.title-3hptVQ {
 		@include mixins.title;
 	}
@@ -13,9 +13,9 @@
 		cursor: var(--cursor);
 	}
 
-	// Cards
+	// Section title
 	[class^="margin"] > .title-3hptVQ,
-	.marginBottom40-fvAlAV > .sectionTitle-3j2YI1 > .title-3hptVQ,
+	.marginTop40-Q4o1tS > .sectionTitle-3j2YI1 > .title-3hptVQ,
 	.title-3hptVQ.marginBottom8-emkd0_ {
 		@include mixins.subTitle;
 	}

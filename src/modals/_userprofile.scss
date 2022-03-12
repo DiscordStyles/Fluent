@@ -1,0 +1,230 @@
+@use '../mixins';
+@use '../assets/mono';
+
+$banner-height: 300px;
+
+#app-mount {
+	.root-8LYsGj {
+		border-radius: var(--rounded);
+		border: 1px solid var(--border-mid);
+		background: var(--bg-main);
+		width: 700px;
+		.tabBarContainer-sCZC4w {
+			padding-left: 0;
+			border: none;
+			position: absolute;
+			bottom: 24px;
+			left: 24px;
+		}
+		.tabBar-2hXqzU {
+			display: flex;
+			gap: 8px;
+			height: auto;
+		}
+		.tabBarItem-30Te4- {
+			@include mixins.btn;
+			margin: 0;
+			gap: 4px;
+			&::before {
+				width: 18px;
+				height: 18px;
+				mask-size: cover;
+				mask-position: center;
+				background: currentColor;
+			}
+			&[aria-controls="user_info-tab"]::before {
+				content: "";
+				mask-image: url(mono.$user);
+			}
+			&[aria-controls="activity-tab"]::before {
+				content: "";
+				mask-image: url(mono.$rss);
+			}
+			&[aria-controls="mutual_guilds-tab"]::before {
+				content: "";
+				mask-image: url(mono.$server);
+			}
+			&[aria-controls="mutual_friends-tab"]::before {
+				content: "";
+				mask-image: url(mono.$people);
+			}
+
+			&:not(.selected-g-kMVV) {
+				@include mixins.btnSecondary;
+				font-weight: var(--font-weight-semibold)
+			}
+			&.selected-g-kMVV {
+				@include mixins.btnPrimary;
+			}
+		}
+	}
+	.topSection-13QKHs {
+		background: transparent;
+		height: $banner-height;
+		position: relative;
+		border-bottom: 1px solid var(--border-mid);
+		padding: 24px;
+		box-sizing: border-box;
+		header {
+			height: $banner-height - 56px;
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: flex-end;
+		}
+		.banner-1YaD3N {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: $banner-height;
+			mask: linear-gradient(hsl(0 0% 0% / .5), transparent 80%);
+			pointer-events: none;
+			width: 100%;
+			z-index: -2;
+		}
+	}
+	.avatar-3QF_VA {
+		left: unset;
+		right: 24px;
+		top: 24px;
+		background: hsl(0 0% 100% / .2);
+		border-color: transparent;
+	}
+	.pencilContainer-18TrEJ {
+		display: none;
+	}
+	.header-S26rhB {
+		position: unset;
+	}
+	.headerTop-1PNKck {
+		position: unset;
+	}
+	.actionButton-iarQTd {
+		position: absolute;
+		top: 32px;
+		right: 32px;
+		height: 120px;
+		width: 120px;
+		border-radius: 50%;
+		padding: 0;
+		text-align: center;
+		background: hsl(0 0% 0% / .75) !important;
+		color: #fff !important;
+		opacity: 0;
+		transition: opacity .15s ease !important;
+		z-index: 1;
+		.contents-3ca1mk {
+			white-space: pre-wrap;
+			text-overflow: none;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.additionalActionsIcon-3Cy8UU {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		margin: 0;
+	}
+	.applicationInstallButton-1-58qm {
+		position: absolute;
+		right: 24px;
+		bottom: 24px;
+	}
+	.nameTag-2Nlmsy {
+		@include mixins.title;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.customStatusActivity-WKWGD- {
+		@include mixins.subText;
+		font-style: italic;
+		padding: 12px 0 0 0;
+		max-width: calc(100% - 160px);
+		order: -1;
+		box-sizing: border-box;
+		height: 100px;
+		max-height: 100px;
+		overflow: hidden auto;
+	}
+
+
+
+	.body-1Ukv50 {
+		background: transparent;
+		height: 420px;
+		border: none;
+		.scrollerBase-_bVAAt {
+			padding: 0 !important;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+	.userInfoSection-2u2hir {
+		padding: 0 24px;
+		border: none;
+		&:first-child {
+			padding-top: 24px;
+		}
+		&:not(:last-child) {
+			padding-bottom: 24px;
+		}
+	}
+	.userInfoSectionHeader-2mYYun {
+		@include mixins.subText;
+		text-transform: none;
+	}
+	.userBio-2-tr00 {
+		margin-bottom: 24px;
+	}
+
+
+	.note-3M15gE {
+		margin: 0;
+	}
+	.listRow-2nO1T6 {
+		margin: 4px;
+		padding: 8px 24px;
+		.icon-1zKOXL {
+			border-radius: var(--rounded);
+		}
+		&:hover {
+			background: var(--bg-interactive);
+		}
+	}
+
+	.connectedAccounts-1YaT2t {
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 24px;
+	}
+	.connectedAccount-1xKpli {
+		margin: 0;
+		width: 100%;
+		box-sizing: border-box;
+		background: var(--bg-content);
+		border-radius: var(--rounded);
+		border: none;
+		padding: 12px;
+		gap: 8px;
+	}
+	.connectedAccountIcon-2vls0t {
+		width: 24px;
+		height: 24px;
+	}
+	.connectedAccountName-j0meX4 {
+		@include mixins.text;
+		margin: 0;
+	}
+
+	.activityProfile-1712BN {
+		padding: 24px;
+	}
+	.headerText-3g1XK9 {
+		@include mixins.subText;
+		text-transform: none;
+	}
+}

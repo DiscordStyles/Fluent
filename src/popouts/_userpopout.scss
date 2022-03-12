@@ -98,9 +98,6 @@
 		&:hover .roleCircle-1EgnFN {
 			width: 100%;
 			opacity: 1;
-			&:not(:empty) ~ .roleName-2ZJJYR {
-				margin-left: 22px;
-			}
 		}
 	}
 	.roleCircle-1EgnFN {
@@ -110,7 +107,7 @@
 		margin: 0;
 		height: 100%;
 		border-radius: 0;
-		width: 90%;
+		width: 100%;
 		mask: linear-gradient(90deg, hsl(0 0% 0%), transparent);
 		filter: none;
 		opacity: .35;
@@ -118,6 +115,9 @@
 		padding: 8px;
 		box-sizing: border-box;
 		transition: .15s ease;
+		&:not(:empty) ~ .roleName-2ZJJYR {
+			margin-left: 22px;
+		}
 	}
 	.roleName-2ZJJYR {
 		position: relative;
@@ -127,6 +127,7 @@
 	.roleRemoveIcon-387wKV {
 		width: 16px;
 		height: 16px;
+		display: block;
 	}
 
 	.footer-3naVBw {
