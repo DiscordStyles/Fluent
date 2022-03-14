@@ -20,11 +20,33 @@
 
 	.itemCard-3Etziu {
 		border-radius: var(--rounded);
-		border: none;
+		border: 1px solid var(--border);
 		background: var(--bg-content);
 		cursor: var(--cursor);
+		padding: 0;
+		.sectionTitle-2AR_TY {
+			@include mixins.text;
+		}
+		.size14-3fJ-ot {
+			@include mixins.subText;
+		}
 		&:hover {
 			background: var(--bg-content-alt);
 		}
+	}
+	.header-3jUeHi {
+		padding: 12px;
+	}
+	.body-16rSsp {
+		margin: 0;
+		border-top: 1px solid var(--border);
+		border-radius: 0;
+		background: transparent;
+	}
+	.section-3G9aLW {
+		background: transparent;
+	}
+	.voiceSectionDetails-3jGIB4 {
+		cursor: var(--cursor);
 	}
 }

@@ -45,7 +45,7 @@
 			background: var(--chat-bubble-bg);
 			border-radius: var(--rounded);
 			display: inline-block;
-			max-width: calc(100% - 32px);
+			max-width: calc(100% - var(--chat-spacing-x));
 		}
 		.container-x059i8 {
 			padding: 0;
@@ -56,6 +56,7 @@
 			display: inline-block;
 			max-width: 100%;
 			border-radius: var(--rounded) var(--rounded);
+			max-width: 100%;
 			
 			.header-2jRmjb {
 				padding-top: var(--chat-padding-y);

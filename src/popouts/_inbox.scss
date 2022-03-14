@@ -1,0 +1,20 @@
+@use '../mixins';
+
+#app-mount {
+	.container-2ebMPP {
+		@include mixins.popoutContainer;
+	}
+	.container-iA3Qrz {
+		padding: 0;
+		margin: 0;
+	}
+	.channelHeader-DFRX8q {
+		background: var(--bg-main);
+		padding: 0 12px;
+	}
+	.messageContainer-3VTXBC {
+		padding-top: 0;
+		margin-left: 0;
+		background: transparent;
+	}
+}

@@ -1,8 +1,10 @@
+@forward './popout';
 @forward './menu';
 @forward './userpopout';
 @forward './statuspicker';
 @forward './menuicons';
 @forward './serverdropdown';
-@forward './pinnedmessages';
-@forward './threads';
 @forward './searchsuggestions';
+@forward './threads';
+@forward './pinnedmessages';
+@forward './inbox';
