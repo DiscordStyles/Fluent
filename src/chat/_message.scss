@@ -45,6 +45,7 @@
 			background: var(--chat-bubble-bg);
 			border-radius: var(--rounded);
 			display: inline-block;
+			max-width: calc(100% - 32px);
 		}
 		.container-x059i8 {
 			padding: 0;
@@ -53,6 +54,7 @@
 		&.groupStart-3Mlgv1 .contents-2MsGLg {
 			background: var(--chat-bubble-bg);
 			display: inline-block;
+			max-width: 100%;
 			border-radius: var(--rounded) var(--rounded);
 			
 			.header-2jRmjb {
