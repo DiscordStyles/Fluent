@@ -1,0 +1,41 @@
+@use '../mixins';
+
+#app-mount [role="dialog"] {
+	.header-3_zmOb,
+	.header-1w9Q93 {
+		border-bottom: 1px solid var(--border-high);
+		background: var(--bg-alt);
+		box-shadow: none;
+		padding: 0 12px;
+		display: flex;
+		align-items: center;
+		height: 48px;
+		min-height: 48px;
+		.size16-rrJ6ag {
+			@include mixins.textHigh;
+		}
+	}
+	[class*="tabBar-"] {
+		display: flex;
+		gap: 8px;
+	}
+	[class*="tab-"] {
+		@include mixins.btn;
+		margin-right: 0;
+		&:not([class*="active-"]) {
+			@include mixins.btnSecondary;
+		}
+		&[class*="active-"] {
+			@include mixins.btnPrimary;
+		}
+	}
+
+	[class^="jumpButton-"] {
+		@include mixins.btn;
+		@include mixins.btnSecondary;
+		height: auto;
+		margin: 0;
+		top: 0;
+		right: 12px;
+	}
+}

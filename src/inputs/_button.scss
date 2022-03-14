@@ -7,6 +7,8 @@
 		font-size: var(--font-size-sm);
 		cursor: var(--cursor);
 		margin: 0;
+		min-height: auto;
+		height: auto;
 
 		[role="button"] {
 			cursor: var(--cursor) !important;
@@ -30,7 +32,8 @@
 			border-bottom-color: var(--btn-border-b);
 			font-weight: var(--font-weight-semibold);
 			transition: box-shadow .15s ease;
-			&.colorBrand-I6CyqQ {
+			&.colorBrand-I6CyqQ,
+			&.colorGreen-3y-Z79 {
 				background: rgb(var(--accent));
 				color: var(--accent-text);
 			}
@@ -107,6 +110,14 @@
 			&:active {
 				background: var(--btn-bg-active);
 			}
+		}
+	}
+	.applicationInstallButtonContent-2GoIj7 {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		.launchIcon-RTf7He {
+			margin-left: 0;
 		}
 	}
 }
