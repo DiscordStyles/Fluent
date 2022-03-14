@@ -1,7 +1,7 @@
 @use '../../assets/mono';
 @use '../../mixins';
 
-#app-mount .layer-86YKbF[aria-label="USER_SETTINGS"] {
+#app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) {
 	.notice-1Qe0b_ {
 		border: 1px solid var(--border);
 		background: var(--bg-content-alt);

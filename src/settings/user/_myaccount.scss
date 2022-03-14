@@ -1,7 +1,7 @@
 @use '../../assets/mono';
 @use '../../mixins';
 
-#app-mount .layer-86YKbF[aria-label="USER_SETTINGS"] {
+#app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) {
 
 	.accountProfileCard-lbN7n- {
 		background: transparent;
@@ -179,7 +179,7 @@
 				& > .modeDefault-2fEh7a {
 					@include mixins.card;
 					@include mixins.cardDesc;
-					padding-left: 60px;
+					padding-left: 60px !important;
 					flex-direction: column;
 					align-items: flex-start;
 					gap: 4px;
@@ -261,11 +261,12 @@
 		}
 
 		// Account removal
-		& ~ [class="marginTop40-Q4o1tS"] {
+		& ~ .marginTop40-Q4o1tS {
 			.title-3hptVQ {
 				@include mixins.subTitle;
 				color: transparent;
 				user-select: none;
+				font-size: 0 !important;
 				&::before {
 					content: "Danger zone";
 					font-size: var(--font-size);
