@@ -1,0 +1,24 @@
+@use '../mixins';
+
+#app-mount {
+	.messagesPopoutWrap-3zryHW {
+		@include mixins.popoutContainer;
+
+		.messageGroupWrapper-1jf_7C {
+			background: transparent;
+		}
+		.cozy-VmLDNB.wrapper-30-Nkg {
+			padding: 8px 16px 8px 72px;
+			img {
+				left: 16px;
+			}
+			.header-2jRmjb {
+				margin-bottom: 6px;
+			}
+		}
+		.actionButtons-2mNSAB {
+			top: 0;
+			right: 0;
+		}
+	}
+}
