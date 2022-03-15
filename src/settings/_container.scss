@@ -108,7 +108,7 @@
 					border-radius: 35%;
 					background: rgb(var(--accent));
 					opacity: 0;
-					transition: .15s ease;
+					transition: .15s var(--transition);
 				}
 				&:hover {
 					background: var(--bg-interactive);

@@ -25,7 +25,7 @@
 	.expandedFolderBackground-1kSAf6 {
 		border-radius: var(--rounded);
 		height: 100%;
-		width: calc(var(--server-size) + 2px);
+		width: calc(var(--server-size) + 4px);
 		left: 50%;
 		transform: translateX(-50%);
 		&:not(.collapsed-uGXEbi) {

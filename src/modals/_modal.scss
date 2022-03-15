@@ -6,7 +6,7 @@
 	background: var(--bg-content);
 	box-shadow: none;
 	transform: none !important;
-	animation: fadeInFromBottom .15s ease forwards !important;
+	animation: fadeInFromBottom .15s var(--transition) forwards !important;
 
 	[class^="modalCloseButton-"] {
 		display: none;

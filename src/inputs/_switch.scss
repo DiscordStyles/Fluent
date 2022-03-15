@@ -17,7 +17,7 @@
 		margin: 0;
 		padding: 0 4px;
 		cursor: var(--cursor);
-		transition: background .15s ease, border-color .15s ease;
+		transition: background .15s var(--transition), border-color .15s var(--transition);
 		&::before {
 			content: "";
 			width: 12px;
@@ -25,10 +25,10 @@
 			border-radius: 7px;
 			display: block;
 			background: var(--text-secondary);
-			transition: background .15s ease,
-									transform .15s ease,
-									width .15s ease,
-									height .15s ease;
+			transition: background .15s var(--transition),
+									transform .15s var(--transition),
+									width .15s var(--transition),
+									height .15s var(--transition);
 		}
 		&:hover {
 			&:not(:checked) {

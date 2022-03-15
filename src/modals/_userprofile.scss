@@ -13,48 +13,36 @@ $banner-height: 300px;
 			padding-left: 0;
 			border: none;
 			position: absolute;
-			bottom: 24px;
-			left: 24px;
+			bottom: 16px;
+			left: 10px;
 		}
 		.tabBar-2hXqzU {
 			display: flex;
-			gap: 8px;
 			height: auto;
 		}
 		.tabBarItem-30Te4- {
-			@include mixins.btn;
 			margin: 0;
-			gap: 4px;
+			border: none;
+			padding: 10px 12px;
+			border-radius: var(--btn-radius);
+			cursor: var(--cursor);
 			&::before {
-				width: 18px;
-				height: 18px;
-				mask-size: cover;
-				mask-position: center;
-				background: currentColor;
-			}
-			&[aria-controls="user_info-tab"]::before {
 				content: "";
-				mask-image: url(mono.$user);
+				height: 2px;
+				width: 0%;
+				display: block;
+				opacity: 0;
+				border-radius: 30px;
+				background: rgb(var(--accent));
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: opacity .15s var(--transition), width .15s var(--transition);
 			}
-			&[aria-controls="activity-tab"]::before {
-				content: "";
-				mask-image: url(mono.$rss);
-			}
-			&[aria-controls="mutual_guilds-tab"]::before {
-				content: "";
-				mask-image: url(mono.$server);
-			}
-			&[aria-controls="mutual_friends-tab"]::before {
-				content: "";
-				mask-image: url(mono.$people);
-			}
-
-			&:not(.selected-g-kMVV) {
-				@include mixins.btnSecondary;
-				font-weight: var(--font-weight-semibold)
-			}
-			&.selected-g-kMVV {
-				@include mixins.btnPrimary;
+			&.selected-g-kMVV::before {
+				width: 40%;
+				opacity: 1;
 			}
 		}
 	}
@@ -110,7 +98,7 @@ $banner-height: 300px;
 		background: hsl(0 0% 0% / .75) !important;
 		color: #fff !important;
 		opacity: 0;
-		transition: opacity .15s ease !important;
+		transition: opacity .15s var(--transition) !important;
 		z-index: 1;
 		.contents-3ca1mk {
 			white-space: pre-wrap;

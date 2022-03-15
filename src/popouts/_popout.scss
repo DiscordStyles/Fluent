@@ -17,16 +17,33 @@
 	}
 	[class*="tabBar-"] {
 		display: flex;
-		gap: 8px;
+		height: auto;
 	}
 	[class*="tab-"] {
-		@include mixins.btn;
-		margin-right: 0;
-		&:not([class*="active-"]) {
-			@include mixins.btnSecondary;
+		margin: 0;
+		border: none;
+		padding: 10px 12px;
+		border-radius: var(--btn-radius);
+		cursor: var(--cursor);
+		height: auto;
+		background: transparent;
+		&::before {
+			content: "";
+			height: 2px;
+			width: 0%;
+			display: block;
+			opacity: 0;
+			border-radius: 30px;
+			background: rgb(var(--accent));
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			transition: opacity .15s var(--transition), width .15s var(--transition);
 		}
-		&[class*="active-"] {
-			@include mixins.btnPrimary;
+		&[aria-selected="true"]::before {
+			width: 40%;
+			opacity: 1;
 		}
 	}
 

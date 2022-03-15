@@ -5,14 +5,15 @@
 	.guilds-2JjMmN {
 		width: var(--server-width);
 
-		.listItem-3SmSlK foreignObject {
-			mask: none;
-			border-radius: var(--rounded);
-			box-sizing: border-box;
-		}
 		.listItem-3SmSlK {
 			margin: 0 0 4px;
 			width: var(--server-width);
+			position: relative;
+			foreignObject {
+				mask: none;
+				border-radius: var(--rounded);
+				box-sizing: border-box;
+			}
 		}
 		.wrapper-28eC3z {
 			border-radius: var(--rounded);
@@ -30,13 +31,13 @@
 
 		[class*="pill"] {
 			width: 3px;
-			margin-left: 8px;
+			margin-left: calc(var(--server-icon-size) / 2 - 5px);
 			z-index: 1;
 			span {
 				height: var(--pill-height) !important;
 				width: 100% !important;
 				transform: scale(0,1) !important;
-				transition: 0.15s ease !important;
+				transition: .15s var(--transition) !important;
 				margin-left: 0;
 				border-radius: var(--rounded-high);
 			}

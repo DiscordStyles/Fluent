@@ -8,7 +8,7 @@
 		border-bottom-color: var(--btn-border-b);
 		border-radius: var(--btn-radius);
 		cursor: var(--cursor);
-		transition: box-shadow .15s ease;
+		transition: box-shadow .15s var(--transition);
 		&:hover {
 			background: var(--btn-bg-hover);
 		}

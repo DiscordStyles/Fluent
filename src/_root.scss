@@ -1,12 +1,13 @@
 :root {
-	--fluent-version: '0.1.9 (BETA)';
+	--fluent-version: '0.1.10 (BETA)';
+	--transition: cubic-bezier(0,0,0,1);
 
 	--accent-text: #000;
 	--accent-solid: rgb(var(--accent));
 
 	--pill-width: 4px;
 	--pill-height: 16px;
-	--pill-transition: opacity .15s ease, height .15s ease;
+	--pill-transition: opacity .15s var(--transition), height .15s var(--transition);
 
 	--btn-radius: 6px;
 	--rounded-high: 8px;

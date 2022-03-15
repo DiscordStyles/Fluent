@@ -114,7 +114,7 @@
 		justify-content: flex-start;
 		padding: 8px;
 		box-sizing: border-box;
-		transition: .15s ease;
+		transition: .15s var(--transition);
 		&:not(:empty) ~ .roleName-2ZJJYR {
 			margin-left: 22px;
 		}
@@ -122,7 +122,7 @@
 	.roleName-2ZJJYR {
 		position: relative;
 		margin: 0;
-		transition: margin-left .15s ease;
+		transition: margin-left .15s var(--transition);
 	}
 	.roleRemoveIcon-387wKV {
 		width: 16px;
