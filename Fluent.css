@@ -194,7 +194,7 @@ body,
   border-top-left-radius: var(--rounded);
 }
 
-[aria-label=USER_SETTINGS] .info-3pQQBb > span:first-child::before {
+.layer-86YKbF:not(.baseLayer-W6S8cY) .info-3pQQBb > span:first-child::before {
   display: block;
   content: "Fluent v" var(--fluent-version);
   text-transform: none;
