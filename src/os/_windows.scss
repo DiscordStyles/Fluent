@@ -16,7 +16,7 @@
 	z-index: 2;
 	background: transparent;
 	position: fixed;
-	width: calc(100% - 72px - var(--server-container));
+	width: calc(100% - 72px - var(--server-size));
 	user-select: none;
 	pointer-events: none;
 	right: 0;

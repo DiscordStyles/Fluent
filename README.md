@@ -2,7 +2,7 @@
 
 Brings the look of Windows 11 to Discord.
 
-![Server Chat](https://i.imgur.com/JhCH4HR.png)
+![Server Chat](https://i.imgur.com/WasgeFy.png)
 ![User Settings](https://i.imgur.com/3uL8y2m.png)
 
 ## Download
