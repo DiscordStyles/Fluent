@@ -1,3 +1,5 @@
+@use '../mixins';
+
 #app-mount {
 	.message-2CShn3.selected-2LX7Jy.cozyMessage-1DWF9U .contents-2MsGLg {
 		display: block;
@@ -87,6 +89,47 @@
 	.markup-eYLPri pre {
 		margin: 0;
 		max-width: 100%;
+	}
+
+	// Codeblocks/file embeds
+	.markup-eYLPri code {
+		background: var(--bg-alt);
+		border-color: var(--border-mid);
+	}
+
+	.textContainer-36wgKK {
+		background: var(--bg-content);
+		border-radius: var(--rounded);
+		border: 1px solid var(--border-mid);
+	}
+	.footer-GXWBBp {
+		background: transparent;
+		border: none;
+		margin-top: 4px;
+		padding: 0;
+		height: auto;
+	}
+	.toggleExpandSection-1710zV,
+	.anchor-1MIwyf.downloadSection-20OayS,
+	.codeIcon-Ni8XUA {
+		@include mixins.btn;
+		@include mixins.btnSecondary;
+		margin-right: 4px;
+		min-height: 34px;
+		min-width: 38px;
+	}
+	.openFullPreviewSection-31zc2v {
+		@include mixins.btn;
+		@include mixins.btnSecondary;
+		min-height: 34px;
+	}
+	.downloadButton-2PkwZg {
+		padding: 0;
+		width: 16px;
+		height: 16px;
+	}
+	.anchor-1MIwyf.downloadSection-20OayS {
+		margin-left: 8px;
 	}
 }
 

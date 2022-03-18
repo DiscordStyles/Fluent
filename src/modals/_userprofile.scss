@@ -16,35 +16,6 @@ $banner-height: 300px;
 			bottom: 16px;
 			left: 10px;
 		}
-		.tabBar-2hXqzU {
-			display: flex;
-			height: auto;
-		}
-		.tabBarItem-30Te4- {
-			margin: 0;
-			border: none;
-			padding: 10px 12px;
-			border-radius: var(--btn-radius);
-			cursor: var(--cursor);
-			&::before {
-				content: "";
-				height: 2px;
-				width: 0%;
-				display: block;
-				opacity: 0;
-				border-radius: 30px;
-				background: rgb(var(--accent));
-				position: absolute;
-				bottom: 0;
-				left: 50%;
-				transform: translateX(-50%);
-				transition: opacity .15s var(--transition), width .15s var(--transition);
-			}
-			&.selected-g-kMVV::before {
-				width: 40%;
-				opacity: 1;
-			}
-		}
 	}
 	.topSection-13QKHs {
 		background: transparent;

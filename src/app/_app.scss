@@ -14,7 +14,8 @@ body,
 
 // Remove pointer from clickable
 [class*="clickable-"],
-[class*="cursorPointer-"] {
+[class*="cursorPointer-"],
+[class*="selectable-"] {
 	cursor: var(--cursor) !important;
 }
 

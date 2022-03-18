@@ -1,0 +1,50 @@
+#app-mount {
+	.autocomplete-3jLKb0j,
+	.outerWrapper-3UdjNj {
+		background: var(--bg-menu);
+		border: 1px solid var(--border-high);
+		box-shadow: var(--elevation-2);
+	}
+
+	// Left side
+	.wrapper-3z7DuG,
+	.wrapper-22rqw6 {
+		background: var(--bg-main);
+	}
+
+
+
+	// Right side
+	.wrapper-1NNaWG {
+		background: var(--bg-menu);
+	}
+	
+	.autocompleteRow-14iwvH {
+		border-radius: var(--rounded);
+		padding: 0 4px;
+		.base-2v-uc0 {
+			padding: 6px 16px;
+			position: relative;
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: var(--pill-width);
+				height: 0;
+				border-radius: 30px;
+				background: rgb(var(--accent));
+				opacity: 0;
+				transition: var(--pill-transition);
+			}
+		}
+		.selected-3H3-RC {
+			background: var(--bg-menu-item);
+			&::before {
+				height: var(--pill-height);
+				opacity: 1;
+			}
+		}
+	}
+}

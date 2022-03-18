@@ -1,0 +1,99 @@
+#app-mount {
+	.contentWrapper-3vHNP2 {
+		background: var(--bg-menu);
+		border-radius: var(--rounded);
+		border: 1px solid var(--border-high);
+		box-shadow: var(--elevation-2);
+		grid-template-rows: 40px auto;
+		padding-top: 4px;
+		[class^="header-"]:not([aria-expanded]) {
+			border-bottom: 1px solid var(--border-high);
+			box-shadow: none;
+		}
+	}
+	.inspector-DFKXwB {
+		border-top: 1px solid var(--border-high);
+		background: var(--bg-alt);
+		padding: 0 12px;
+	}
+	.nav-1zWVQw {
+		padding: 0 8px;
+		.navButton-1XuvI- {
+			margin: 0;
+			border: none;
+			padding: 10px 12px;
+			height: auto;
+			border-radius: var(--btn-radius);
+			cursor: var(--cursor);
+			background: transparent !important;
+			color: var(--text-secondary) !important;
+			text-transform: none;
+			font-weight: var(--font-weight-normal);
+			&::before {
+				content: "";
+				height: 2px;
+				width: 0%;
+				display: block;
+				opacity: 0;
+				border-radius: 30px;
+				background: rgb(var(--accent));
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: opacity .15s var(--transition), width .15s var(--transition);
+			}
+			&:hover {
+				color: var(--text-primary) !important;
+			}
+			&[aria-selected="true"] {
+				color: var(--text-primary) !important;
+				&::before {
+					width: 40%;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.container-2oNtJn,
+	.container-1SX9VC {
+		background: var(--textbox-bg-high);
+		border: 1px solid var(--textbox-border);
+		padding: 0;
+		border-radius: var(--rounded);
+		font-size: var(--font-size-sm);
+		box-sizing: border-box;
+		border-bottom-color: var(--textbox-underline);
+		transition: none;
+
+		[class^="input-"],
+		[class^="inner-"] {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+		[class^="input-"] {
+			padding: 0 8px;
+		}
+
+		&::placeholder {
+			font-size: var(--font-size-sm);
+			color: var(--text-muted);
+		}
+		&:hover {
+			background: var(--textbox-bg-high-hover);
+		}
+		&:focus-within {
+			background: var(--textbox-bg-high-active) !important;
+			box-shadow: inset 0 -1px 0 rgb(var(--accent));
+			border-bottom-color: rgb(var(--accent));
+		}
+	}
+
+	.listWrapper-2DwCYS {
+		border-left: 1px solid var(--border-high);
+	}
+}

@@ -15,37 +15,6 @@
 			@include mixins.textHigh;
 		}
 	}
-	[class*="tabBar-"] {
-		display: flex;
-		height: auto;
-	}
-	[class*="tab-"] {
-		margin: 0;
-		border: none;
-		padding: 10px 12px;
-		border-radius: var(--btn-radius);
-		cursor: var(--cursor);
-		height: auto;
-		background: transparent;
-		&::before {
-			content: "";
-			height: 2px;
-			width: 0%;
-			display: block;
-			opacity: 0;
-			border-radius: 30px;
-			background: rgb(var(--accent));
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			transform: translateX(-50%);
-			transition: opacity .15s var(--transition), width .15s var(--transition);
-		}
-		&[aria-selected="true"]::before {
-			width: 40%;
-			opacity: 1;
-		}
-	}
 
 	[class^="jumpButton-"] {
 		@include mixins.btn;
