@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '0.1.11 (BETA)';
+	--fluent-version: '0.1.12 (BETA)';
 	--transition: cubic-bezier(0,0,0,1);
 
 	--accent-text: #000;
@@ -39,13 +39,16 @@
 	--font-display: 'Segoe UI', sans-serif;
 	--font-primary: 'Segoe UI', sans-serif;
 
+	--shadow-flyout: 0px 8px 16px hsla(0 0% 0% / 0.14);
+	--shadow-dialog: 0px 32px 64px hsla(0 0% 0% / 0.188) 0px 2px 21px hsla(0 0% 0% / 0.147);
+
 	--cursor: default;
 
 	--chat-mention-colour: var(--accent);
 	--chat-padding-y: 12px;
 	--chat-padding-x: 16px;
 	--chat-spacing-y: 32px;
-	--chat-spacing-x: 32px;
+	--chat-spacing-x: 24px;
 
 	--server-icon-size: 28px;
 	--server-size: calc(var(--server-icon-size) + 16px);

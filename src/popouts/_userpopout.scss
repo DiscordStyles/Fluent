@@ -2,8 +2,8 @@
 
 #app-mount {
 	.userPopout-2j1gM4 {
-		border-radius: var(--rounded);
-		box-shadow: 0 0 0 1px var(--border-high);
+		border-radius: var(--rounded-high);
+		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
 		width: 400px !important;
 		box-sizing: border-box;
 		.avatarWrapper-eenWra {

@@ -3,7 +3,7 @@
 		background: var(--bg-menu);
 		border-radius: var(--rounded);
 		border: 1px solid var(--border-high);
-		box-shadow: var(--elevation-2);
+		box-shadow: var(--shadow-flyout);
 		grid-template-rows: 40px auto;
 		padding-top: 4px;
 		[class^="header-"]:not([aria-expanded]) {

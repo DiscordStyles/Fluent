@@ -149,23 +149,12 @@
 		.contentRegionScroller-2_GT_N {
 			background: var(--bg-main);
 		}
-		.contentColumn-1C7as6 {
+		.contentColumn-1C7as6:not(.contentColumnMinimal-32PuDO) {
 			padding: 0 32px 32px;
 			max-width: 1000px;
 			& > div {
-				animation: in .25s ease forwards;
+				animation: settingsIn .25s ease forwards;
 			}
 		}
-	}
-}
-
-@keyframes in {
-	from {
-		transform: translateY(100px);
-		opacity: 0;
-	}
-	to {
-		transform: translateY(0%);
-		opacity: 1;
 	}
 }

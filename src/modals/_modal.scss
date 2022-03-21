@@ -4,7 +4,7 @@
 	border: 1px solid var(--border-high);
 	border-radius: var(--rounded);
 	background: var(--bg-content);
-	box-shadow: none;
+	box-shadow: var(--shadow-modal);
 	transform: none !important;
 	animation: fadeInFromBottom .15s var(--transition) forwards !important;
 
@@ -43,7 +43,7 @@
 				margin-top: 20px;
 			}
 		}
-		div[style^="position: absolute;"] {
+		div[style^="position: absolute;"]:not(.file-input) {
 			display: none;
 		}
 		.title-3hptVQ {
@@ -74,5 +74,8 @@
 				@include mixins.btnSecondary;
 			}
 		}
+	}
+	.buttonsRight-21z8KV {
+		gap: 8px;
 	}
 }
