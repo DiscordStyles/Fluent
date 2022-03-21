@@ -2,8 +2,8 @@
 
 #app-mount {
 	.userPopout-2j1gM4 {
-		border-radius: var(--rounded);
-		box-shadow: 0 0 0 1px var(--border-high);
+		border-radius: var(--rounded-high);
+		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
 		width: 400px !important;
 		box-sizing: border-box;
 		.avatarWrapper-eenWra {
@@ -114,7 +114,7 @@
 		justify-content: flex-start;
 		padding: 8px;
 		box-sizing: border-box;
-		transition: .15s ease;
+		transition: .15s var(--transition);
 		&:not(:empty) ~ .roleName-2ZJJYR {
 			margin-left: 22px;
 		}
@@ -122,7 +122,7 @@
 	.roleName-2ZJJYR {
 		position: relative;
 		margin: 0;
-		transition: margin-left .15s ease;
+		transition: margin-left .15s var(--transition);
 	}
 	.roleRemoveIcon-387wKV {
 		width: 16px;

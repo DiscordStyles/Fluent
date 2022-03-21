@@ -15,20 +15,6 @@
 			@include mixins.textHigh;
 		}
 	}
-	[class*="tabBar-"] {
-		display: flex;
-		gap: 8px;
-	}
-	[class*="tab-"] {
-		@include mixins.btn;
-		margin-right: 0;
-		&:not([class*="active-"]) {
-			@include mixins.btnSecondary;
-		}
-		&[class*="active-"] {
-			@include mixins.btnPrimary;
-		}
-	}
 
 	[class^="jumpButton-"] {
 		@include mixins.btn;

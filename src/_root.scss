@@ -1,12 +1,13 @@
 :root {
-	--fluent-version: '0.1.8 (BETA)';
+	--fluent-version: '0.1.12 (BETA)';
+	--transition: cubic-bezier(0,0,0,1);
 
 	--accent-text: rgb(39, 39, 39);
 	--accent-solid: rgb(var(--accent));
 
 	--pill-width: 4px;
 	--pill-height: 16px;
-	--pill-transition: opacity .15s ease, height .15s ease;
+	--pill-transition: opacity .15s var(--transition), height .15s var(--transition);
 
 	--btn-radius: 6px;
 	--rounded-high: 8px;
@@ -38,15 +39,20 @@
 	--font-display: 'Segoe UI', sans-serif;
 	--font-primary: 'Segoe UI', sans-serif;
 
+	--shadow-flyout: 0px 8px 16px hsla(0 0% 0% / 0.14);
+	--shadow-dialog: 0px 32px 64px hsla(0 0% 0% / 0.188) 0px 2px 21px hsla(0 0% 0% / 0.147);
+
 	--cursor: pointer;
 
 	--chat-mention-colour: var(--accent);
 	--chat-padding-y: 12px;
 	--chat-padding-x: 16px;
 	--chat-spacing-y: 32px;
-	--chat-spacing-x: 32px;
+	--chat-spacing-x: 24px;
 
-	--server-container: 8px;
+	--server-icon-size: 38px;
+	--server-size: calc(var(--server-icon-size) + 16px);
+	--server-width: 64px;
 
 	--banner-height: 155px;
 

@@ -24,6 +24,11 @@
 			height: 1px;
 			background: var(--textbox-underline);
 		}
+
+		.buttonWrapper-3YFQGJ {
+			display: flex;
+		}
+
 		&:hover {
 			background: var(--textbox-bg-hover);
 		}
@@ -60,7 +65,7 @@
 
 	.attachWrapper-3slhXI {
 		position: absolute;
-		bottom: -44px;
+		bottom: -32px;
 		left: 0;
 		button {
 			padding: 0;

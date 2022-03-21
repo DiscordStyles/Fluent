@@ -30,7 +30,7 @@
 @mixin btnPrimary {
 	background: rgb(var(--accent));
 	color: var(--accent-text);
-	transition: box-shadow .15s ease;
+	transition: box-shadow .15s var(--transition);
 	font-weight: var(--font-weight-semibold);
 	border: 1px solid var(--btn-border-x);
 	border-top-color: var(--btn-border-t);

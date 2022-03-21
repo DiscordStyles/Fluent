@@ -2,7 +2,7 @@
 	background: var(--bg-main);
 	border-radius: var(--rounded);
 	border: 1px solid var(--border-high);
-	box-shadow: var(--elevation-1);
+	box-shadow: var(--shadow-flyout);
 	width: var(--popout-width, 650px);
 	max-width: var(--popout-width, 650px);
 	max-height: calc(100vh - var(--toolbar-height) - var(--win-btn-height) - 16px) !important;
