@@ -12,6 +12,7 @@
 :root {
 	/* The colour used throughout the app | R,G,B format | Default: 98, 205, 254 */
 	/*--accent: 0, 166, 255;*//*strong blue*/
+	/*--accent: 0, 120, 212;*//*windows 11 blue*/
 	/*--accent: 255, 119, 0;*//*orange*/
 	/*--accent: 255, 0, 0;*//*red*/
 	--accent: 114, 137, 218;/*discord purple*/
