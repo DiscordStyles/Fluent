@@ -1,0 +1,43 @@
+#app-mount {
+	[class*="tabBar-"] {
+		display: flex;
+		height: auto;
+		[class*="item-"],
+		[class*="tabBarItem-"] {
+			margin: 0;
+			border: none;
+			padding: 10px 12px;
+			height: auto;
+			border-radius: var(--btn-radius);
+			cursor: var(--cursor);
+			background: transparent !important;
+			color: var(--text-secondary) !important;
+			text-transform: none;
+			font-weight: var(--font-weight-normal);
+			&::before {
+				content: "";
+				height: 2px;
+				width: 0%;
+				display: block;
+				opacity: 0;
+				border-radius: 30px;
+				background: rgb(var(--accent));
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				transition: opacity .15s var(--transition), width .15s var(--transition);
+			}
+			&:hover {
+				color: var(--text-primary) !important;
+			}
+			&[aria-selected="true"] {
+				color: var(--text-primary) !important;
+				&::before {
+					width: 40%;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

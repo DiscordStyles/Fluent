@@ -1,17 +1,39 @@
+@use '../mixins';
+
 #app-mount {
 	.wrapper-38slSD {
 		width: var(--server-container);
 	}
+	.closedFolderIconWrapper-3tRb2d {
+		padding: 6px;
+		position: relative;
+		z-index: 1;
+	}
 	.folderIconWrapper-1oRIZr {
 		border-radius: var(--rounded);
+		&[style^="background-color"] {
+			background: transparent !important;
+			&::before {
+				content: "";
+				@include mixins.serverBg;
+			}
+			&:hover::before {
+				opacity: 1;
+			}
+		}
 	}
 	.expandedFolderBackground-1kSAf6 {
-		border-radius: var(--rounded-high);
+		border-radius: var(--rounded);
 		height: 100%;
-		background: var(--bg-high);
+		width: calc(var(--server-size) + 4px);
+		left: 50%;
+		transform: translateX(-50%);
+		&:not(.collapsed-uGXEbi) {
+			background: var(--server-bg);
+		}
 	}
 	.folder-241Joy {
-		background: var(--bg-high);
+		background: transparent;
 		cursor: var(--cursor);
 	}
 	.guildIcon-2I5sfu {

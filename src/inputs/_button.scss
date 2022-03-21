@@ -31,7 +31,7 @@
 			border-top-color: var(--btn-border-t);
 			border-bottom-color: var(--btn-border-b);
 			font-weight: var(--font-weight-semibold);
-			transition: box-shadow .15s ease;
+			transition: box-shadow .15s var(--transition);
 			&.colorBrand-I6CyqQ,
 			&.colorGreen-3y-Z79 {
 				background: rgb(var(--accent));
@@ -119,5 +119,8 @@
 		.launchIcon-RTf7He {
 			margin-left: 0;
 		}
+	}
+	.component-ifCTxY {
+		margin: 4px !important;
 	}
 }

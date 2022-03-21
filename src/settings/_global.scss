@@ -16,9 +16,16 @@
 	// Section title
 	[class^="margin"] > .title-3hptVQ,
 	.marginTop40-Q4o1tS > .sectionTitle-3j2YI1 > .title-3hptVQ,
-	.title-3hptVQ.marginBottom8-emkd0_ {
+	.title-3hptVQ.marginBottom8-emkd0_,
+	.sectionTitle-3j2YI1 .title-3hptVQ:not(h1) {
 		@include mixins.subTitle;
 	}
+
+	// Section description/text
+	.children-1xdcWE > .description-30xx7u.formText-2ngGjI {
+		@include mixins.subText;
+	}
+
 
 	// Form description (use data to make discord work, ect...)
 	.title-3hptVQ.marginBottom8-emkd0_,
@@ -29,6 +36,11 @@
 			border: 1px solid var(--border);
 			padding: 16px;
 		}
+	}
+
+	// Spacing
+	.children-1xdcWE > .divider-_0um2u + div {
+		margin-top: 40px;
 	}
 
 	// Switches

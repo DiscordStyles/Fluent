@@ -1,0 +1,104 @@
+@use '../../mixins';
+
+#app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) {
+	.customColumn-2n-oKU {
+		padding: 0 32px 32px;
+		max-width: 1000px;
+		& > div {
+			animation: settingsIn .25s ease forwards;
+		}
+		div[aria-hidden="true"][style="height: 60px;"] {
+			display: none;
+		}
+	}
+
+	.container-3EtAkD {
+		@include mixins.card;
+		cursor: var(--cursor);
+		.icon-2DGsye {
+			width: 22px;
+			height: 22px;
+			background: transparent;
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.description-18M4UD {
+			margin: 0;
+		}
+		.label-2Pe5f1 {
+			@include mixins.cardTitle;
+		}
+		.size12-oc4dx4 {
+			@include mixins.cardDesc;
+		}
+
+		&:hover {
+			background: var(--bg-content-alt);
+		}
+	}
+
+	.searchContainer-16qhPt {
+		gap: 16px;
+	}
+	.tableHeader-2h-wc8 {
+		margin: 0;
+		padding: 16px;
+		.tableTitle-3zdrSx {
+			@include mixins.subText;
+		}
+		.dragSpacing-2GB_1h {
+			display: none;
+		}
+		.memberSpacing-1RRW7k {
+			margin-left: 28px;
+		}
+	}
+	.roleRow-3LoHQ6 {
+		margin: 0;
+		position: relative;
+		padding: 0 16px;
+		cursor: var(--cursor);
+		border-radius: 0;
+		border-left: 1px solid var(--border);
+		border-right: 1px solid var(--border);
+		background: var(--bg-content);
+
+		& + .roleRow-3LoHQ6 {
+			border-top: 1px solid var(--border);
+		}
+
+		&:not(.roleRow-3LoHQ6 + .roleRow-3LoHQ6) {
+			border-radius: var(--rounded-high) var(--rounded-high) 0 0;	
+		}
+
+		&:first-of-type {
+			border-top: 1px solid var(--border);
+		}
+		&:last-of-type {
+			border-bottom: 1px solid var(--border);
+			border-radius: 0 0 var(--rounded-high) var(--rounded-high);
+		}
+
+		&::before,
+		&::after {
+			content: none;
+		}
+
+		.dragIcon-kQZ0Jv {
+			position: absolute;
+			left: 10px;
+			background: var(--bg-content-alt);
+			z-index: 1;
+		}
+		.circleButton-33AIyY {
+			@include mixins.btn;
+			@include mixins.btnSecondary;
+		}
+
+		&:hover {
+			background: var(--bg-content-alt);
+		}
+	}
+}

@@ -1,22 +1,43 @@
+@use '../assets/mono';
+@use '../mixins';
+
 #app-mount {
 	.guilds-2JjMmN {
-		.listItem-3SmSlK foreignObject {
-			mask: none;
-			border-radius: var(--rounded-high);
+		width: var(--server-width);
+
+		.listItem-3SmSlK {
+			margin: 0 0 4px;
+			width: var(--server-width);
+			position: relative;
+			foreignObject {
+				mask: none;
+				border-radius: var(--rounded);
+				box-sizing: border-box;
+			}
 		}
 		.wrapper-28eC3z {
 			border-radius: var(--rounded);
 			cursor: var(--cursor);
 		}
+		.wrapper-3kah-n {
+			&::before {
+				content: "";
+				@include mixins.serverBg;
+			}
+			&.selected-1Drb7Z::before {
+				opacity: 1;
+			}
+		}
 
 		[class*="pill"] {
-			width: 4px;
-			margin-left: 0px;
+			width: 3px;
+			margin-left: calc(var(--server-icon-size) / 2 - 13px);
+			z-index: 1;
 			span {
-				height: 50% !important;
+				height: var(--pill-height) !important;
 				width: 100% !important;
 				transform: scale(0,1) !important;
-				transition: 0.15s ease !important;
+				transition: .15s var(--transition) !important;
 				margin-left: 0;
 				border-radius: var(--rounded-high);
 			}
@@ -42,25 +63,48 @@
 			}
 		}
 		
-		.svg-2zuE5p,
-		.wrapper-28eC3z {
-			border-radius: var(--rounded-high);
+		.svg-2zuE5p {
+			border-radius: 50%;
+			box-sizing: border-box;
+		}
+	}
+
+	.icon-3AqZ2e,
+	.childWrapper-1j_1ub {
+		width: var(--server-icon-size);
+		height: var(--server-icon-size);
+		border-radius: 50%;
+		position: relative;
+		z-index: 2;
+	}
+
+	.homeIcon-r0w4ny {
+		width: 75%;
+		height: 75%;
+		mask: url(mono.$home) center/cover;
+		background: var(--interactive-normal);
+		path {
+			display: none;
 		}
 	}
 
 	.childWrapper-1j_1ub {
-		background: var(--bg-high);
+		background: transparent;
 		font-weight: var(--font-weight-semibold);
 	}
 	.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
-		background: rgb(var(--accent));
-		color: var(--accent-text);
+		background: transparent;
+		color: var(--text-primary);
 	}
 
 	.circleIconButton-1VxDrg {
-		background: var(--bg-high);
+		background: transparent;
 		&.selected-2r1Hvo {
-			background: rgb(var(--accent));
+			background: transparent;
 		}
+	}
+
+	.blobContainer-ikKyFs:active {
+		transform: none;
 	}
 }
