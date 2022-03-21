@@ -29,4 +29,4 @@ This is a little fork by me, xsm2, to fix and modify a few things, all the credi
 - Less padding/margins in general
 - Disabled seflmessages addon(so no more messages on the right)
 - Moved Minimize, Maximize and Close buttons to the Toolbar (Thanks to [doggybootsy](https://github.com/doggybootsy/FluentCord) for the ""inspiration""(aka the code))
-- Modified to be scaled for 4k screens with 150% scaling in Windows (Isn0t tested in other resolutions)
+- Modified to be scaled for 4k screens with 150% scaling in Windows (Some elements are bigger and there are a few scaling "bug fixes"). Not tested in other resolutions or scaling combinations
