@@ -4,8 +4,9 @@ Brings the look of Windows 11 to Discord.
 
 ![Server Chat](./screenshots/2022-02-22_170832.png)
 ![User Settings](https://i.imgur.com/3uL8y2m.png)
-<sup>1 In the screenshots I also use [this](https://betterdiscord.app/theme/RadialStatus) theme</sup>
-<sup>2 The screenshots are taken in a 4k screen with 150% scaling</sup>
+<sup>1 In the screenshots I also use [this](https://betterdiscord.app/theme/RadialStatus) theme</sup><br/>
+<sup>2 The screenshots are taken in a 4k screen with 150% scaling</sup><br/>
+<sup>3 The screenshots are not frecuently updated, the theme will probably be more similar to the ones found in [Fluent](https://github.com/DiscordStyles/Fluent)</sup><br/>
 
 ## Download
 
@@ -28,3 +29,4 @@ This is a little fork by me, xsm2, to fix and modify a few things, all the credi
 - Less padding/margins in general
 - Disabled seflmessages addon(so no more messages on the right)
 - Moved Minimize, Maximize and Close buttons to the Toolbar (Thanks to [doggybootsy](https://github.com/doggybootsy/FluentCord) for the ""inspiration""(aka the code))
+- Modified to be scaled for 4k screens with 150% scaling in Windows (Isn0t tested in other resolutions)
