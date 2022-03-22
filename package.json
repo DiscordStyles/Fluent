@@ -1,8 +1,8 @@
 {
-  "name": "bdthemetemplate",
+  "name": "fluent",
   "version": "1.0.0",
-  "description": "Quick template to create BetterDiscord themes using SCSS.",
-  "repository": "https://github.com/Gibbu/BDThemeTemplate",
+  "description": "Brings the look of Windows 11 to Discord.",
+  "repository": "https://github.com/DiscordStyles/Fluent",
   "author": "Gibbu <Gibbu_@hotmail.com>",
   "license": "MIT",
   "private": false,
