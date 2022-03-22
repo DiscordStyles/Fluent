@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "0.1.12 (BETA)";
+  --fluent-version: "1.0.0";
   --transition: cubic-bezier(0,0,0,1);
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
@@ -1306,6 +1306,7 @@ body,
   padding-right: var(--chat-padding-x);
   padding-bottom: 2px;
   padding-left: var(--chat-padding-x);
+  margin-left: 0;
 }
 #app-mount .cozy-VmLDNB.groupStart-3Mlgv1 .contents-2MsGLg .messageContent-2t3eCI:empty {
   margin-top: 8px;
@@ -1327,6 +1328,44 @@ body,
 #app-mount .markup-eYLPri pre {
   margin: 0;
   max-width: 100%;
+}
+#app-mount .wrapper-2vIMkT {
+  background: var(--bg-content);
+  border-radius: var(--btn-radius);
+  box-shadow: var(--shadow-flyout);
+  height: auto;
+}
+#app-mount .wrapper-2vIMkT .button-3bklZh {
+  border-radius: var(--btn-radius);
+  padding: 4px 10px;
+  line-height: 20px;
+  font-size: var(--font-size-sm);
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  background: var(--btn-bg);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  box-shadow: none !important;
+  border: 1px solid var(--btn-border-x);
+  border-top-color: var(--btn-border-t);
+  border-bottom-color: var(--btn-border-b);
+  cursor: var(--cursor);
+  width: auto;
+  height: auto;
+  min-width: auto;
+  border-radius: 0;
+}
+#app-mount .wrapper-2vIMkT .button-3bklZh:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+}
+#app-mount .wrapper-2vIMkT .button-3bklZh:active {
+  background: var(--btn-bg-active) !important;
+  border-color: var(--btn-border-active);
+}
+#app-mount .wrapper-2vIMkT .button-3bklZh.dangerous-Y36ifs {
+  color: hsl(var(--discord-red));
 }
 #app-mount .markup-eYLPri code {
   background: var(--bg-alt);
@@ -1999,6 +2038,15 @@ body,
 #app-mount .video-3n15R6 .transparent-1lUmft {
   background: transparent;
   border-bottom: none;
+}
+
+#app-mount .channelAttachmentArea-HwpkuQ {
+  margin: 0;
+  padding: 16px;
+}
+#app-mount .upload-vLbqu- {
+  background: var(--bg-alt);
+  border: 1px solid var(--border-high);
 }
 
 #app-mount .container-2o3qEW,
