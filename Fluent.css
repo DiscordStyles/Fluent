@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "1.0.0";
+  --fluent-version: "1.0.1";
   --transition: cubic-bezier(0,0,0,1);
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
@@ -2295,6 +2295,19 @@ body,
   line-height: var(--line-height);
   text-transform: none;
 }
+#app-mount .userPopout-2j1gM4 .headerTop-3GPUSF {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  padding: 24px;
+  box-sizing: border-box;
+  height: 160px;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 8px;
+}
 #app-mount .headerNormal-3Zn_yu {
   width: 100%;
   border-radius: var(--rounded) var(--rounded) 0 0;
@@ -2311,19 +2324,6 @@ body,
   top: 0;
   right: 0;
   bottom: 0;
-}
-#app-mount .headerTop-3GPUSF {
-  padding: 0;
-  position: absolute;
-  top: 0;
-  padding: 24px;
-  box-sizing: border-box;
-  height: 160px;
-  width: 100%;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
-  gap: 8px;
 }
 #app-mount .nickname-t08Mck {
   max-width: 180px;
@@ -3408,6 +3408,37 @@ body,
 }
 #app-mount .voiceSectionDetails-3jGIB4 {
   cursor: var(--cursor);
+}
+
+#app-mount .perksModal-CLcR1c {
+  background: var(--bg-main);
+}
+#app-mount .perksModal-CLcR1c .ctaBar-Nhk8yY {
+  border-radius: var(--rounded);
+  border: 1px solid var(--border);
+  background: var(--bg-content);
+}
+#app-mount .perksModal-CLcR1c .tierWrapper-CsnudO {
+  box-shadow: none !important;
+}
+#app-mount .perksModal-CLcR1c .tierWrapper-CsnudO[style*="box-shadow: rgba(0, 0, 0, 0.2)"] {
+  box-shadow: var(--shadow-flyout) !important;
+}
+#app-mount .perksModal-CLcR1c .tier-lFqDUs {
+  border: 1px solid var(--border-high);
+}
+#app-mount .perksModal-CLcR1c .tierHeaderLocked-3ItHYn {
+  background: var(--bg-alt);
+  box-shadow: inset 0 -1px 0 var(--border-high);
+}
+#app-mount .perksModal-CLcR1c .tierBody-3ju-rc {
+  background: var(--bg-content);
+  border-radius: 0 0 var(--rounded) var(--rounded);
+}
+#app-mount .perksModal-CLcR1c .perk-19D_HN {
+  border-radius: var(--rounded);
+  border: 1px solid var(--border);
+  background: var(--bg-content);
 }
 
 #app-mount [role=slider] .bar-1Bhnl9 {
@@ -4933,6 +4964,60 @@ body,
   border: 1px solid var(--border-high);
   border-radius: var(--rounded);
 }
+#app-mount .profileBannerPreview-3mLIdO {
+  border-radius: var(--rounded-high);
+  box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
+  width: 400px !important;
+  box-sizing: border-box;
+}
+#app-mount .profileBannerPreview-3mLIdO .banner-3D8GgT {
+  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.5), transparent 90%);
+          mask: linear-gradient(rgba(0, 0, 0, 0.5), transparent 90%);
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 0;
+}
+#app-mount .profileBannerPreview-3mLIdO .avatarUploader-qEFQS2 {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  left: unset;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: transparent;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+#app-mount .profileBannerPreview-3mLIdO .headerTop-3GPUSF {
+  padding: 0;
+  padding: 24px;
+  box-sizing: border-box;
+  height: 160px;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 8px;
+}
+#app-mount .profileBannerPreview-3mLIdO .popoutInfo-16MuYF {
+  position: relative;
+  z-index: 1;
+}
+#app-mount .profileBannerPreview-3mLIdO .size12-oc4dx4 {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height);
+  text-transform: none;
+}
 
 #app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) .formNotice-2nS8ey {
   background: var(--bg-content);
@@ -5495,6 +5580,17 @@ body,
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
   text-transform: none;
+}
+
+#app-mount .content-2hZxGK .message-G6O-Wv {
+  background: transparent;
+  box-shadow: none;
+}
+#app-mount .content-2hZxGK .cozy-VmLDNB {
+  padding-left: 54px;
+}
+#app-mount .content-2hZxGK .cozy-VmLDNB .avatar-2e8lTP {
+  left: 0;
 }
 
 @-webkit-keyframes fadeInFromBottom {
