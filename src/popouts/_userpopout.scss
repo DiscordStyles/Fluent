@@ -21,6 +21,19 @@
 			@include mixins.subText;
 			text-transform: none;
 		}
+		.headerTop-3GPUSF {
+			padding: 0;
+			position: absolute;
+			top: 0;
+			padding: 24px;
+			box-sizing: border-box;
+			height: 160px;
+			width: 100%;
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: flex-end;
+			gap: 8px;
+		}
 	}
 	.headerNormal-3Zn_yu {
 		width: 100%;
@@ -37,19 +50,6 @@
 			right: 0;
 			bottom: 0;
 		}
-	}
-	.headerTop-3GPUSF {
-		padding: 0;
-		position: absolute;
-		top: 0;
-		padding: 24px;
-		box-sizing: border-box;
-		height: 160px;
-		width: 100%;
-		display: flex;
-		flex-direction: column-reverse;
-		justify-content: flex-end;
-		gap: 8px;
 	}
 	.nickname-t08Mck {
 		max-width: 180px;
