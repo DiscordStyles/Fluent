@@ -1,4 +1,4 @@
-# Fluent (Beta)
+# Fluent
 
 Brings the look of Windows 11 to Discord.
 

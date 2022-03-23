@@ -65,6 +65,7 @@
 				padding-right: var(--chat-padding-x);
 				padding-bottom: 2px;
 				padding-left: var(--chat-padding-x);
+				margin-left: 0;
 			}
 			.messageContent-2t3eCI {
 				&:empty {
@@ -94,6 +95,25 @@
 	.markup-eYLPri pre {
 		margin: 0;
 		max-width: 100%;
+	}
+
+	// Message/attachment actions
+	.wrapper-2vIMkT {
+		background: var(--bg-content);
+		border-radius: var(--btn-radius);
+		box-shadow: var(--shadow-flyout);
+		height: auto;
+		.button-3bklZh {
+			@include mixins.btn;
+			@include mixins.btnSecondary;
+			width: auto;
+			height: auto;
+			min-width: auto;
+			border-radius: 0;
+			&.dangerous-Y36ifs {
+				color: hsl(var(--discord-red));
+			}
+		}
 	}
 
 	// Codeblocks/file embeds
@@ -137,6 +157,7 @@
 		margin-left: 8px;
 	}
 }
+
 
 // Light theme
 .theme-light #app-mount .mentioned-Tre-dv {

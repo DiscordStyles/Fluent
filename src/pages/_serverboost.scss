@@ -1,0 +1,33 @@
+#app-mount .perksModal-CLcR1c {
+	background: var(--bg-main);
+
+	.ctaBar-Nhk8yY {
+		border-radius: var(--rounded);
+		border: 1px solid var(--border);
+		background: var(--bg-content);
+	}
+
+	.tierWrapper-CsnudO {
+		box-shadow: none !important;
+		&[style*="box-shadow: rgba(0, 0, 0, 0.2)"] {
+			box-shadow: var(--shadow-flyout) !important;
+		}
+	}
+	.tier-lFqDUs {
+		border: 1px solid var(--border-high);
+	}
+	.tierHeaderLocked-3ItHYn {
+		background: var(--bg-alt);
+		box-shadow: inset 0 -1px 0 var(--border-high);
+	}
+	.tierBody-3ju-rc {
+		background: var(--bg-content);
+		border-radius: 0 0 var(--rounded) var(--rounded);
+	}
+
+	.perk-19D_HN {
+		border-radius: var(--rounded);
+		border: 1px solid var(--border);
+		background: var(--bg-content);
+	}
+}
