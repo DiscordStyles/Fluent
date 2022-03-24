@@ -4,6 +4,9 @@
 		border-bottom: 1px solid var(--border-mid);
 		height: var(--toolbar-height);
 		padding: 0 16px;
+		&::before {
+			content: none;
+		}
 	}
 	// title-31SJ6t container-ZMc96U
 	.children-3xh0VB {

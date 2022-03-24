@@ -10,14 +10,15 @@
 
 // Chat scrollbar
 .chatContent-3KubbW .scroller-kQBbkU,
-.peopleList-2VBrVI {
+.peopleList-2VBrVI,
+.scroller-2qwVWY {
 	&::-webkit-scrollbar {
 		width: 10px;
 		height: 10px;
 	}
 	&::-webkit-scrollbar-track {
-		background: transparent;
-		border-color: transparent;
+		background: transparent !important;
+		border-color: transparent !important;
 	}
 	&::-webkit-scrollbar-thumb {
 		background-color: var(--scrollbar-background);
