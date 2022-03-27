@@ -1,8 +1,6 @@
-@use '../mixins';
-
 #app-mount {
 	.wrapper-38slSD {
-		width: var(--server-container);
+		width: 100%;
 	}
 	.closedFolderIconWrapper-3tRb2d {
 		padding: 6px;
@@ -11,21 +9,18 @@
 	}
 	.folderIconWrapper-1oRIZr {
 		border-radius: var(--rounded);
+		transition: box-shadow .15s var(--transition);
 		&[style^="background-color"] {
 			background: transparent !important;
-			&::before {
-				content: "";
-				@include mixins.serverBg;
-			}
-			&:hover::before {
-				opacity: 1;
+			&:hover {
+				box-shadow: var(--server-hover-selected);
 			}
 		}
 	}
 	.expandedFolderBackground-1kSAf6 {
 		border-radius: var(--rounded);
 		height: 100%;
-		width: calc(var(--server-size) + 4px);
+		width: var(--server-size);
 		left: 50%;
 		transform: translateX(-50%);
 		&:not(.collapsed-uGXEbi) {
@@ -38,6 +33,8 @@
 	}
 	.guildIcon-2I5sfu {
 		border-radius: 2px;
+		width: calc(var(--server-icon-size) / 1.8);
+		height: calc(var(--server-icon-size) / 1.8);
 	}
 
 	[id^="folder-items"][role="group"] {

@@ -1,8 +1,13 @@
 #app-mount {
 	.guilds-2JjMmN {
+		width: var(--server-container);
 	}
 	.scroller-3X7KbA {
 		background: var(--bg-main);
 		padding-top: 0;
+		.tutorialContainer-1pL9QS + div:not([class]) {
+			height: var(--server-size) !important;
+			margin-bottom: 4px;
+		}
 	}
 }

@@ -3,36 +3,12 @@
 
 #app-mount {
 	.guilds-2JjMmN {
-		width: var(--server-width);
-
-		.listItem-3SmSlK {
-			margin: 0 0 4px;
-			width: var(--server-width);
-			position: relative;
-			foreignObject {
-				mask: none;
-				border-radius: var(--rounded);
-				box-sizing: border-box;
-			}
-		}
-		.wrapper-28eC3z {
-			border-radius: var(--rounded);
-			cursor: var(--cursor);
-		}
-		.wrapper-3kah-n {
-			&::before {
-				content: "";
-				@include mixins.serverBg;
-			}
-			&.selected-1Drb7Z::before {
-				opacity: 1;
-			}
-		}
-
 		[class*="pill"] {
 			width: 3px;
-			margin-left: calc(var(--server-icon-size) / 2 - 5px);
+			margin-left: 0;
+			left: calc((var(--server-container) / 2) - (var(--server-size) / 2));
 			z-index: 1;
+			height: var(--server-size);
 			span {
 				height: var(--pill-height) !important;
 				width: 100% !important;
@@ -62,10 +38,41 @@
 				}
 			}
 		}
-		
-		.svg-2zuE5p {
-			border-radius: 50%;
+	}
+	.listItem-3SmSlK {
+		margin: 0 0 4px;
+		width: var(--server-container);
+		position: relative;
+		foreignObject {
+			mask: none;
+			border-radius: var(--rounded);
 			box-sizing: border-box;
+		}
+	}
+	.wrapper-28eC3z {
+		border-radius: var(--rounded);
+		cursor: var(--cursor);
+		width: var(--server-size);
+		height: var(--server-size);
+	}
+	.wrapper-3kah-n {
+		position: relative;
+		transition: box-shadow .15s var(--transition);
+		&:hover,
+		&.selected-1Drb7Z {
+			box-shadow: var(--server-hover-selected);
+		}
+	}
+
+	
+	.svg-2zuE5p {
+		border-radius: 50%;
+		box-sizing: border-box;
+		width: var(--server-size);
+		height: var(--server-size);
+		foreignObject {
+			width: 100%;
+			height: 100%;
 		}
 	}
 
