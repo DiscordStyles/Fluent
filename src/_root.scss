@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '1.0.2';
+	--fluent-version: '1.0.3';
 	--transition: cubic-bezier(0,0,0,1);
 
 	--accent-text: rgb(39, 39, 39);
@@ -50,9 +50,10 @@
 	--chat-spacing-y: 32px;
 	--chat-spacing-x: 24px;
 
-	--server-icon-size: 38px;
-	--server-size: calc(var(--server-icon-size) + 16px);
-	--server-width: 64px;
+	--server-icon-size: 37px;
+	--server-container: calc(var(--server-size) + 16px);
+	--server-size: 48px;
+	--server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x), inset 0 1px 0 var(--btn-border-t), inset -1px 0 var(--btn-border-x), inset 0 -1px 0 var(--btn-border-b);
 
 	--banner-height: 155px;
 

@@ -1,7 +1,7 @@
 /**
  * @name Fluent
  * @author Gibbu#1211
- * @version 1.0.0
+ * @version 1.0.3
  * @description Brings the look of Windows 11 to Discord.
  * @source https://github.com/DiscordStyles/Fluent
 */
@@ -20,4 +20,5 @@
 
 	--channels-width: 280px; /* The size of the server channel/dms list | Default: 300px | Fork default: 280px*/
 	--members-width: 255px; /* The size of the members list | Default: 280px | Fork default: 255px*/
+	--server-size: 48px; /* Size of each server in the server list | Default: 48px */
 }

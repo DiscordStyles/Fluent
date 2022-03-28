@@ -177,11 +177,9 @@
 					}
 				}
 				& > .modeDefault-2fEh7a {
-					@include mixins.card;
+					@include mixins.card(column, flex-start);
 					@include mixins.cardDesc;
 					padding-left: 60px !important;
-					flex-direction: column;
-					align-items: flex-start;
 					gap: 4px;
 					border-radius: var(--rounded) var(--rounded) 0 0;
 					margin-bottom: 0;
@@ -225,9 +223,7 @@
 						margin: 0;
 					}
 					.children-1xdcWE {
-						@include mixins.card;
-						flex-direction: column;
-						align-items: flex-start;
+						@include mixins.card(column, flex-start);
 						padding-left: 60px;
 						&::before {
 							content: "";
