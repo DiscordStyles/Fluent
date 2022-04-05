@@ -1,4 +1,4 @@
-@use '../mixins';
+@use "../mixins";
 
 #app-mount {
 	.container-2McqkF {
@@ -19,7 +19,8 @@
 		padding: 8px 12px;
 		cursor: var(--cursor);
 		margin: 0;
-		&::before, &::after {
+		&::before,
+		&::after {
 			content: none;
 		}
 		&:hover {
@@ -29,7 +30,7 @@
 	.plusIcon-1RVszG {
 		display: none;
 	}
-	
+
 	.header-1BR0Ro {
 		padding: 8px 12px;
 	}
