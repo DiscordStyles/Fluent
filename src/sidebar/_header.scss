@@ -1,4 +1,4 @@
-@use '../mixins';
+@use "../mixins";
 
 #app-mount {
 	.sidebar-1tnWFu .content-2a4AW9 > div[style="height: 84px;"],
@@ -19,13 +19,20 @@
 		height: 42px;
 		transition: none;
 
+		.headerContent-2SNbie {
+			flex: 1;
+		}
+		.headerChildren-2qV9P8 {
+			display: flex;
+		}
+
 		.guildIconContainer-3QvE6w {
 			display: none;
 		}
 		.name-3Uvkvr {
 			font-weight: var(--font-weight-normal);
+			max-width: calc(var(--channels-width) - 64px);
 		}
-
 
 		&:hover {
 			background: var(--btn-bg-hover);

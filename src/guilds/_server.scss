@@ -1,5 +1,5 @@
-@use '../assets/mono';
-@use '../mixins';
+@use "../assets/mono";
+@use "../mixins";
 
 #app-mount {
 	.guilds-2JjMmN {
@@ -13,28 +13,28 @@
 			span {
 				height: var(--pill-height) !important;
 				width: 100% !important;
-				transform: scale(0,1) !important;
-				transition: .15s var(--transition) !important;
+				transform: scale(0, 1) !important;
+				transition: 0.15s var(--transition) !important;
 				margin-left: 0;
 				border-radius: var(--rounded-high);
 			}
 			@for $i from 0 through 8 {
 				span[style*="height: #{$i}"] {
-					transform: scale(1,.5) !important;
+					transform: scale(1, 0.5) !important;
 					background: var(--pill-unread);
 				}
 			}
 			// Hovered
 			@for $i from 9 through 20 {
 				span[style*="height: #{$i}"] {
-					transform: scale(1,.7) !important;
+					transform: scale(1, 0.7) !important;
 					background: var(--pill-hovered);
 				}
 			}
 			// Selected
 			@for $i from 21 through 40 {
 				span[style*="height: #{$i}"] {
-					transform: scale(1,1) !important;
+					transform: scale(1, 1) !important;
 					background: rgb(var(--accent));
 				}
 			}
@@ -58,14 +58,13 @@
 	}
 	.wrapper-3kah-n {
 		position: relative;
-		transition: box-shadow .15s var(--transition);
+		transition: box-shadow 0.15s var(--transition);
 		&:hover,
 		&.selected-1Drb7Z {
 			box-shadow: var(--server-hover-selected);
 		}
 	}
 
-	
 	.svg-2zuE5p {
 		border-radius: 50%;
 		box-sizing: border-box;

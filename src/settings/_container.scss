@@ -70,6 +70,9 @@
 			flex: 0;
 			margin-top: 46px;
 		}
+		.sidebarRegionScroller-FXiQOh {
+			background: var(--bg-main);
+		}
 		.sidebar-nqHbhN {
 			width: 270px;
 			padding: 0 16px 16px;
@@ -85,6 +88,9 @@
 
 				&:not(:last-child) {
 					margin-bottom: 4px;
+				}
+				svg {
+					display: none;
 				}
 	
 				.selectedBackground-1qyzak {
@@ -130,18 +136,13 @@
 					}
 				}
 			}
+			.header-2Kx1US {
+				display: none;
+			}
+			.separator-2wx7h6 {
+				height: 0;
+			}
 		}
-		.sidebarRegionScroller-FXiQOh {
-			background: var(--bg-main);
-		}
-		.header-2Kx1US {
-			display: none;
-		}
-		.separator-2wx7h6 {
-			height: 0;
-		}
-
-
 
 		.contentRegion-3HkfJJ {
 			background: var(--bg-main);
