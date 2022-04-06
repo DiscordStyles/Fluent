@@ -1,10 +1,12 @@
-@forward "./global";
-@forward "./container";
-@forward "./sidebaricons";
+@forward './global';
+@forward './container';
+@forward './sidebaricons';
 
-@forward "./user/myaccount";
-@forward "./user/userprofile";
-@forward "./user/authedapps";
-@forward "./user/connections";
+@forward './user/myaccount';
+@forward './user/userprofile';
+@forward './user/authedapps';
+@forward './user/connections';
 
-@forward "./guild/roles";
+@forward './guild/roles';
+
+@forward './channel/permissions';
