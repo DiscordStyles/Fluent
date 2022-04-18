@@ -291,6 +291,9 @@ body,
   	content: none;
   }*/
 }
+#app-mount .fullScreen-KhZZcz .container-ZMc96U, #app-mount .fullScreen-KhZZcz .transparent-1lUmft {
+  padding-right: 0px;
+}
 #app-mount .children-3xh0VB {
   margin-right: 16px;
 }
@@ -472,6 +475,9 @@ body,
 #app-mount .scroller-3X7KbA .tutorialContainer-1pL9QS + div:not([class]) {
   height: var(--server-size) !important;
   margin-bottom: 4px;
+}
+#app-mount .hidden-10MsGQ {
+  display: none;
 }
 
 #app-mount .guilds-2JjMmN [class*=pill] {
@@ -917,7 +923,15 @@ body,
   d: path("M12 2.002a3.875 3.875 0 0 0-3.875 3.875c0 2.92 1.207 6.552 1.813 8.199a2.187 2.187 0 0 0 2.064 1.423c.904 0 1.739-.542 2.063-1.418.606-1.64 1.81-5.254 1.81-8.204A3.875 3.875 0 0 0 12 2.002ZM9.625 5.877a2.375 2.375 0 0 1 4.75 0c0 2.655-1.111 6.043-1.717 7.684a.686.686 0 0 1-.655.438.687.687 0 0 1-.657-.44c-.607-1.652-1.721-5.058-1.721-7.682ZM12.001 17.001a2.501 2.501 0 1 0 0 5.002 2.501 2.501 0 0 0 0-5.002ZM11 19.502a1.001 1.001 0 1 1 2.002 0 1.001 1.001 0 0 1-2.002 0Z");
   transform: scale(1.667);
 }
-
+#app-mount .communityInfoContainer-1dMVpU {
+  left: 170px;
+  top: 6px;
+}
+#app-mount .communityInfoContainer-1dMVpU .communityInfoPill-2Mll66 {
+  border-radius: 5px;
+  padding-right: 3px;
+  padding-left: 2px;
+}
 #app-mount .containerDefault-3TQ5YN {
   margin: 0;
 }
