@@ -1,6 +1,6 @@
 @use '../../mixins';
 
-#app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) {
+#app-mount .layer-86YKbF ~ .layer-86YKbF {
 	.customColumn-2n-oKU {
 		padding: 0 32px 32px;
 		max-width: 1000px;

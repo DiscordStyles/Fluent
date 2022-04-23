@@ -11,7 +11,7 @@
 		border-radius: var(--rounded);
 		transition: box-shadow .15s var(--transition);
 		&[style^="background-color"] {
-			background: transparent !important;
+			background: var(--folder-bg) !important;
 			&:hover {
 				box-shadow: var(--server-hover-selected);
 			}
