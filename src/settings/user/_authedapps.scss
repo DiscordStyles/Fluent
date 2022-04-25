@@ -1,6 +1,6 @@
 @use '../../mixins';
 
-#app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) {
+#app-mount .layer-86YKbF ~ .layer-86YKbF {
 	.formNotice-2nS8ey {
 		@include mixins.card;
 		.h5-2RwDNl {

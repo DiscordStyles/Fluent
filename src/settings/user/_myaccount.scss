@@ -1,7 +1,7 @@
 @use '../../assets/mono';
 @use '../../mixins';
 
-#app-mount .layer-86YKbF:not(.baseLayer-W6S8cY) {
+#app-mount .layer-86YKbF ~ .layer-86YKbF {
 	.accountProfileCard-lbN7n- {
 		background: transparent;
 	}

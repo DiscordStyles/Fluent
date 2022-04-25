@@ -1,0 +1,22 @@
+#app-mount .root-g14mjS {
+	.content-2hZxGK {
+		& > div[style*="relative"]:not([class]) {
+			width: 100% !important;
+			& > div {
+				width: 100% !important;
+			}
+		}
+		& + .footerSeparator-VzAYwb {
+			grid-template-columns: 1fr;
+			.inline-3eaUwP {
+				flex-direction: row-reverse;
+				width: 100%;
+				flex: 1;
+				gap: 8px;
+				button {
+					flex: 1;
+				}
+			}
+		}
+	}
+}

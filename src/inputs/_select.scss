@@ -1,3 +1,5 @@
+@use '../mixins';
+
 #app-mount {
 	.select-1Ia3hD {
 		background: var(--btn-bg);
@@ -9,6 +11,16 @@
 		border-radius: var(--btn-radius);
 		cursor: var(--cursor);
 		transition: box-shadow .15s var(--transition);
+		padding: 6px 6px 6px 12px;
+
+		.value-26hJ01 {
+			@include mixins.text;
+		}
+		.icons-2dXYop {
+			width: 18px;
+			height: 18px;
+		}
+
 		&:hover {
 			background: var(--btn-bg-hover);
 		}

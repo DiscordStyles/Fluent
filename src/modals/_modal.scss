@@ -7,6 +7,7 @@
 	box-shadow: var(--shadow-modal);
 	transform: none !important;
 	animation: fadeInFromBottom .15s var(--transition) forwards !important;
+	width: 548px;
 
 	[class^="modalCloseButton-"] {
 		display: none;
@@ -22,28 +23,31 @@
 	.header-1kWa4s,
 	.header-1R3myj,
 	.header-1zd7se {
-		padding: 24px 24px;
-		align-items: flex-start;
+		padding: 24px;
+		align-items: center;
 		height: auto;
 		overflow: hidden;
 		box-shadow: none;
 		.size24-17l95E {
 			@include mixins.modalTitle;
 		}
-		button[type="button"].button-f2h6uQ {
+		button[type="button"].button-f2h6uQ:not(.lookFilled-yCfaCM) {
 			display: none;
 		}
 	}
 	
 	.content-2hZxGK {
 		padding: 0 24px 24px !important;
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 24px;
 		.marginBottom20-315RVT {
 			margin-bottom: 0;
 			& + * {
 				margin-top: 20px;
 			}
 		}
-		div[style^="position: absolute;"]:not(.file-input) {
+		div[class][style^="position: absolute;"]:not(.file-input) {
 			display: none;
 		}
 		.title-3hptVQ {
