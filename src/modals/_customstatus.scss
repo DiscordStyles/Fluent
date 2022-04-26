@@ -1,4 +1,14 @@
+@use '../mixins';
+
 #app-mount {
+	.art-2Y6Pk3 {
+		display: none;
+	}
+	.header-VCOMen {
+		@include mixins.modalTitle;
+		padding-top: 0;
+		align-items: flex-start;
+	}
 	.emojiButtonContainer-gCE6AT {
 		margin: 0;
 		.sprite-2lxwfc {

@@ -1,0 +1,36 @@
+@use '../mixins';
+
+#app-mount {
+	.card-14SgW5 {
+		width: 100%;
+		background: transparent;
+		padding: 24px;
+		.title-3FQ39e {
+			@include mixins.modalTitle;
+			text-align: left;
+		}
+		.colorHeaderSecondary-g5teka.subtitle-N87Vzb {
+			@include mixins.modalSubTitle;
+			text-align: left;
+			padding: 0;
+		}
+	}
+
+	.accountCard-2lki2x {
+		background: var(--bg-high);
+		border: 1px solid var(--border);
+		border-radius: var(--rounded);
+	}
+
+	.navRow-dG-XX8 {
+		padding: 16px;
+		gap: 8px;
+		button {
+			flex: 1;
+			&.backButton-2rLJZw {
+				@include mixins.btn;
+				@include mixins.btnSecondary;
+			}
+		}
+	}
+}

@@ -2,6 +2,12 @@
 	.guilds-2JjMmN {
 		width: var(--server-container);
 		background: transparent;
+		&.hidden-10MsGQ {
+			display: none;
+			& + .base-2jDfDU {
+				border: none;
+			}
+		}
 	}
 	.scroller-3X7KbA {
 		background: var(--bg-main);

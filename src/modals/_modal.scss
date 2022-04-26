@@ -1,15 +1,16 @@
 @use '../mixins';
 
-#app-mount .root-g14mjS {
+#app-mount .root-g14mjS:not(.modal-3Crloo) {
 	border: 1px solid var(--border-high);
 	border-radius: var(--rounded);
 	background: var(--bg-content);
-	box-shadow: var(--shadow-modal);
+	box-shadow: var(--shadow-dialog);
 	transform: none !important;
 	animation: fadeInFromBottom .15s var(--transition) forwards !important;
 	width: 548px;
 
-	[class^="modalCloseButton-"] {
+	[class^="modalCloseButton-"],
+	[class^="closeButton-"] {
 		display: none;
 	}
 	.input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
@@ -28,6 +29,7 @@
 		height: auto;
 		overflow: hidden;
 		box-shadow: none;
+		background: var(--bg-content);
 		.size24-17l95E {
 			@include mixins.modalTitle;
 		}
@@ -40,7 +42,6 @@
 		padding: 0 24px 24px !important;
 		display: flex;
 		flex-direction: column-reverse;
-		gap: 24px;
 		.marginBottom20-315RVT {
 			margin-bottom: 0;
 			& + * {
