@@ -57,9 +57,6 @@
 				&:first-child svg {
 					mask: url(mono.$user-add) center/cover;
 				}
-				&:nth-child(2):nth-last-child(3)  svg {
-					mask: url(mono.$user-add) center/cover;
-				}
 				& + .iconItem-1EjiK0 svg {
 					mask: url(mono.$cog) center/cover;
 				}
@@ -72,9 +69,6 @@
 					}
 				}
 			}
-		}
-		.openChatIconItem-2kj5qO svg{
-			mask: url(mono.$chat) center/cover !important;
 		}
 		.iconItem-1EjiK0.cursorPointer-B3uwDA {
 			svg {
