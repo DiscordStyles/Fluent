@@ -63,6 +63,14 @@
 				& + .iconItem-1EjiK0 svg {
 					mask: url(mono.$cog) center/cover;
 				}
+				&.openChatIconItem-2kj5qO {
+					svg {
+						mask: url(mono.$chat) center/cover;
+					}
+					& + .iconItem-1EjiK0 svg {
+						mask: url(mono.$user-add) center/cover;
+					}
+				}
 			}
 		}
 		.openChatIconItem-2kj5qO svg{

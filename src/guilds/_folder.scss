@@ -32,7 +32,7 @@
 		cursor: var(--cursor);
 	}
 	.guildIcon-2I5sfu {
-		border-radius: 2px;
+		border-radius: var(--server-folder-icon-shape);
 		width: calc(var(--server-icon-size) / 1.8);
 		height: calc(var(--server-icon-size) / 1.8);
 	}

@@ -80,7 +80,7 @@
 	.childWrapper-1j_1ub {
 		width: var(--server-icon-size);
 		height: var(--server-icon-size);
-		border-radius: 50%;
+		border-radius: var(--server-icon-shape);
 		position: relative;
 		z-index: 2;
 	}
