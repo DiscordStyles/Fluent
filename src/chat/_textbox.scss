@@ -11,8 +11,8 @@
 	}
 	.channelTextArea-1FufC0 {
 		background: var(--textbox-bg);
-		border-radius: var(--rounded);
-		border: 1px solid var(--textbox-border);
+		//border-radius: var(--rounded);
+		//border: 1px solid var(--textbox-border);
 		position: relative;
 		margin-bottom: 42px;
 		&::before {
@@ -39,9 +39,41 @@
 				background: rgb(var(--accent));
 			}
 		}
+
+		.attachedBars-2BCP3l{
+			padding-bottom: 5px;
+			background: var(--bg-alt);
+
+			.replyBar-1oi75v{
+				border-radius: 7px;
+				background: var(--bg-higher);
+				&:hover {
+					background: var(--bg-highest);
+				}
+
+				.actions-1mkm4H{
+					.closeButton-3IEry2{
+						&:hover {
+							border-radius: 7px;
+							background: red;
+						}
+						svg {
+							background: var(--interactive-normal);
+							mask: url(mono.$plus) center/cover;
+							transform: rotate(45deg);
+							
+						}
+					}
+				}
+				
+			}
+		}
+		
 	}
 	.scrollableContainer-15eg7h {
 		background: transparent;
+		border-radius: var(--rounded);
+		border: 1px solid var(--textbox-border);
 		.inner-NQg18Y {
 			position: unset;
 		}
@@ -161,4 +193,5 @@
 			background: var(--interactive-active);
 		}
 	}
+
 }
