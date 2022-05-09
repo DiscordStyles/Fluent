@@ -8,7 +8,7 @@ $banner-height: 300px;
 		border-radius: var(--rounded);
 		border: 1px solid var(--border-mid);
 		background: var(--bg-main);
-		min-width: 700px;
+		min-width: 600px;
 		.tabBarContainer-sCZC4w {
 			padding-left: 0;
 			border: none;
@@ -19,7 +19,8 @@ $banner-height: 300px;
 	}
 	.topSection-13QKHs {
 		background: transparent;
-		height: $banner-height;
+		//height: $banner-height;
+		height: 200px;
 		position: relative;
 		border-bottom: 1px solid var(--border-mid);
 		padding: 24px;
@@ -31,14 +32,18 @@ $banner-height: 300px;
 			justify-content: flex-end;
 		}
 		.banner-1YaD3N {
+			display: none;
+		}
+		.bannerPremium-kkSkPv{
+			mask: linear-gradient(hsl(0 0% 0% / .5), transparent 90%);
 			position: absolute;
-			top: 0;
-			left: 0;
-			height: $banner-height;
-			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 80%);
-			pointer-events: none;
 			width: 100%;
-			z-index: -2;
+			//height: 100%;
+			height: $banner-height;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			display:block !important;
 		}
 	}
 	.avatar-3QF_VA {

@@ -4,7 +4,7 @@
 	.userPopout-2j1gM4 {
 		border-radius: var(--rounded-high);
 		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
-		width: 400px !important;
+		width: 300px !important;
 		box-sizing: border-box;
 		.avatarWrapper-eenWra {
 			position: absolute;
@@ -42,6 +42,9 @@
 		height: 160px;
 		position: relative;
 		.banner-1YaD3N {
+			display: none;
+		}
+		.bannerPremium-kkSkPv{
 			mask: linear-gradient(hsl(0 0% 0% / .5), transparent 90%);
 			position: absolute;
 			width: 100%;
@@ -49,6 +52,7 @@
 			top: 0;
 			right: 0;
 			bottom: 0;
+			display:block !important;
 		}
 	}
 	.nickname-t08Mck {
