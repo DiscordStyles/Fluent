@@ -112,9 +112,10 @@
 		height: 100%;
 		border-radius: 0;
 		width: 100%;
-		mask: linear-gradient(90deg, hsl(0 0% 0%), transparent);
+		//mask: linear-gradient(90deg, hsl(0 0% 0%), transparent);
 		filter: none;
-		opacity: .35;
+		//opacity: .35;
+		opacity: .85;
 		justify-content: flex-start;
 		padding: 8px;
 		box-sizing: border-box;
