@@ -44,7 +44,7 @@
 			&.colorPrimary-2AuQVo {
 				background: var(--btn-bg);
 				font-weight: var(--font-weight-regular);
-				color: var(--text-normal);
+				color: var(--text-primary);
 				&:hover {
 					background: var(--btn-bg-hover) !important;
 				}
@@ -96,6 +96,10 @@
 			}
 			&:active::before {
 				opacity: .07;
+			}
+
+			&.colorRed-rQXKgM {
+				color: hsl(var(--discord-red));
 			}
 		}
 		&.lookLink-15mFoz {
