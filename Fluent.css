@@ -6230,14 +6230,14 @@ body,
     opacity: 1;
   }
 }
-.platform-win #app-mount .typeWindows-2-g3UY + .appDevToolsWrapper-1QxdQf .app-3xd6d0 .layer-86YKbF {
+.platform-win #app-mount .typeWindows-2-g3UY + .app-3xd6d0 .layer-86YKbF {
   top: 0;
   padding-top: 0;
 }
-.platform-win #app-mount .typeWindows-2-g3UY + .appDevToolsWrapper-1QxdQf .app-3xd6d0 .layer-86YKbF.baseLayer-W6S8cY {
+.platform-win #app-mount .typeWindows-2-g3UY + .app-3xd6d0 .layer-86YKbF.baseLayer-W6S8cY {
   padding-top: calc(var(--win-btn-height) + 4px) !important;
 }
-.platform-win #app-mount .typeWindows-2-g3UY + .appDevToolsWrapper-1QxdQf .app-3xd6d0 .standardSidebarView-E9Pc3j {
+.platform-win #app-mount .typeWindows-2-g3UY + .app-3xd6d0 .standardSidebarView-E9Pc3j {
   top: 0;
 }
 
