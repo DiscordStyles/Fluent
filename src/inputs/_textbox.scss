@@ -11,6 +11,7 @@
 		box-sizing: border-box;
 		border-bottom-color: var(--textbox-underline);
 		transition: none;
+		color: var(--text-secondary) !important;
 
 		&::placeholder {
 			font-size: var(--font-size-sm);

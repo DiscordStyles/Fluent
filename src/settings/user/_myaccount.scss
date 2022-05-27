@@ -114,6 +114,19 @@
 				margin: 0;
 			}
 		}
+		.usernameInnerRow-1-STdK {
+			display: flex;
+			align-items: center;
+		}
+		.text-md-normal-304U3g {
+			@include mixins.cardDesc;
+			line-height: normal;
+			color: var(--text-muted) !important;
+			button {
+				padding: 0;
+				margin-left: 12px;
+			}
+		}
 		&::before {
 			content: "";
 			@include mixins.cardIcon;

@@ -1,0 +1,56 @@
+@use '../mixins';
+
+#app-mount .container-1Lk8p7 {
+	width: 100%;
+	& > div,
+	& > div > div {
+		width: 100% !important;
+	}
+
+	[class*="subtitle-"],
+	.title-1_TkpU {
+		text-align: left;
+	}
+
+	.header-1zd7se {
+		align-items: flex-start !important;
+	}
+	.heading-xl-medium-_XBxHT {
+		@include mixins.modalTitle;
+	}
+	[class*="subtitle-"] {
+		@include mixins.modalSubTitle;
+		margin-top: 0;
+		color: var(--text-secondary) !important;
+	}
+
+	.content-2hZxGK {
+		margin-top: 0;
+		flex-direction: column !important;
+	}
+	.container-x8Y1ix {
+		@include mixins.btn;
+		@include mixins.btnSecondary;
+		.icon-AynerZ {
+			margin: 0 10px 0 0;
+		}
+		.text-md-normal-304U3g {
+			color: var(--text-primary);
+			font-weight: var(--font-weight-normal);
+			font-size: var(--font-size-sm);
+		}
+		.arrow-2yY1Tm {
+			margin-right: 10px;
+			filter: invert(1);
+		}
+	}
+	.skip-2hTIXL {
+		@include mixins.subText;
+		color: var(--text-muted) !important;
+	}
+
+	.footerTitle-3Bslxi {
+		@include mixins.subText;
+		margin: 0;
+	}
+}
