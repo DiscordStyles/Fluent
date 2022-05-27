@@ -15,9 +15,15 @@
 	.participant-1l6khj {
 		margin: 0;
 	}
-
+	.actionButton-2S7dMn{
+		margin-left: 2px !important;
+		margin-right: 2px !important;
+	}
+	.flex-2S1XBF {
+		gap: 4px;
+	}
 	.wrapper-3t3Yqv {
-		gap: 8px;
+		gap: 4px;
 		.button-f2h6uQ {
 			@include mixins.btn;
 			@include mixins.btnSecondary;
