@@ -28,11 +28,10 @@ $icons: (
 	// BetterDiscord
 	'settings': $cog,
 	'ajustes': $cog, //icon used when discord is in spanish
+	'emotes': $emoji,
 	'customcss': $code,
 	'plugins': $plugin,
 	'themes': $palette,
-	'pluginrepo': $cloud-download,
-	'themerepo': $cloud-download,
 
 	'changelog': $change,
 	'hypesquad-online': $star,
@@ -55,7 +54,11 @@ $icons: (
 	'instant_invites': $invite,
 	'bans': $user-cross,
 
-	'delete': $trash
+	'delete': $trash,
+
+	// Plugins
+	'pluginrepo': $cooking-book,
+	'themerepo': $art-book
 );
 
 .item-3XjbnG {
@@ -71,6 +74,9 @@ $icons: (
 		.premiumLabel-3HPvdB {
 			gap: 12px;
 			flex-direction: row-reverse;
+		}
+		svg {
+			display: block !important;
 		}
 	}
 }
