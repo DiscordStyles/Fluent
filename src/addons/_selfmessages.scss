@@ -27,3 +27,29 @@
 		}
 	}
 }
+
+.cozy-VmLDNB[data-is-author-self="true"] .repliedMessage-3Z6XBG:before {
+	--spine-width: 2px;
+	content: "";
+	display: block;
+	position: absolute;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	top: 50%;
+	left: 100%;
+	bottom: 0;
+	right: calc(var(--avatar-size) / 2 * -1 + var(--gutter) * -1);
+
+	margin: calc(var(--spine-width) * -1 / 2) calc(var(--spine-width) * -1 / 2) calc(.125rem - 4px) var(--reply-spacing);
+
+	border-right: var(--spine-width) solid var(--interactive-muted);
+	border-bottom: 0 solid var(--interactive-muted);
+	border-left: 0 solid var(--interactive-muted);
+	border-top: var(--spine-width) solid var(--interactive-muted);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 6px;
+}
+
+.cozy-VmLDNB[data-is-author-self="true"] .repliedMessage-3Z6XBG {
+	transform: translateX(-50px);
+}
