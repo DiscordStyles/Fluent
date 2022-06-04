@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "1.0.7";
+  --fluent-version: "1.0.8";
   --transition: cubic-bezier(0,0,0,1);
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
@@ -1827,13 +1827,13 @@ body,
 }
 #app-mount .searchHeader-1r_ZSh .item-3XjbnG.selected-g-kMVV:hover {
   background: rgb(var(--accent));
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1) !important;
-  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.1) !important;
+  border-color: hsla(0deg, 0%, 0%, 0.1);
 }
 #app-mount .searchHeader-1r_ZSh .item-3XjbnG.selected-g-kMVV:active {
   background: rgb(var(--accent));
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.2) !important;
-  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.2) !important;
+  border-color: hsla(0deg, 0%, 0%, 0.2);
 }
 #app-mount .channelName-3w2Y3c {
   background: transparent;
@@ -1927,13 +1927,13 @@ body,
 }
 #app-mount .pageControl-1XvHg0 > .pageButton-1GMGeJ.activeButton-LRWFC_:hover {
   background: rgb(var(--accent));
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1) !important;
-  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.1) !important;
+  border-color: hsla(0deg, 0%, 0%, 0.1);
 }
 #app-mount .pageControl-1XvHg0 > .pageButton-1GMGeJ.activeButton-LRWFC_:active {
   background: rgb(var(--accent));
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.2) !important;
-  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.2) !important;
+  border-color: hsla(0deg, 0%, 0%, 0.2);
 }
 #app-mount .pageControl-1XvHg0 > button:first-child {
   border-radius: var(--rounded) 0 0 var(--rounded) !important;
@@ -2004,13 +2004,13 @@ body,
 }
 #app-mount .wrapper-3t3Yqv button.red-3T8maV:hover {
   background: hsl(var(--discord-red));
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1) !important;
-  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.1) !important;
+  border-color: hsla(0deg, 0%, 0%, 0.1);
 }
 #app-mount .wrapper-3t3Yqv button.red-3T8maV:active {
   background: hsl(var(--discord-red));
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.2) !important;
-  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.2) !important;
+  border-color: hsla(0deg, 0%, 0%, 0.2);
 }
 #app-mount div.controlButton-2PMNom {
   margin: 0;
@@ -2357,9 +2357,9 @@ body,
   left: unset;
 }
 #app-mount .userPopout-2j1gM4 .avatar-2Vndt_ {
-  background: rgba(255, 255, 255, 0.2);
+  background: hsla(0deg, 0%, 100%, 0.2);
   border-color: transparent;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 2px hsla(0deg, 0%, 100%, 0.2);
 }
 #app-mount .userPopout-2j1gM4 .size12-oc4dx4 {
   color: var(--text-muted);
@@ -2389,8 +2389,8 @@ body,
   position: relative;
 }
 #app-mount .headerNormal-3Zn_yu .banner-1YaD3N {
-  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.5), transparent 90%);
-          mask: linear-gradient(rgba(0, 0, 0, 0.5), transparent 90%);
+  -webkit-mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
+          mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2459,8 +2459,8 @@ body,
   height: 100%;
   border-radius: 0;
   width: 100%;
-  -webkit-mask: linear-gradient(90deg, black, transparent);
-          mask: linear-gradient(90deg, black, transparent);
+  -webkit-mask: linear-gradient(90deg, hsl(0deg, 0%, 0%), transparent);
+          mask: linear-gradient(90deg, hsl(0deg, 0%, 0%), transparent);
   filter: none;
   opacity: 0.35;
   justify-content: flex-start;
@@ -3703,15 +3703,15 @@ body,
 #app-mount .button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ:hover,
 #app-mount .button-f2h6uQ.lookFilled-yCfaCM.colorGreen-3y-Z79:hover,
 #app-mount .button-f2h6uQ.lookFilled-yCfaCM.colorRed-rQXKgM:hover {
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.1);
-  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.1);
+  border-color: hsla(0deg, 0%, 0%, 0.1);
 }
 #app-mount .button-1EGGcP.lookFilled-yCfaCM.colorBrand-I6CyqQ:active, #app-mount .button-1EGGcP.lookFilled-yCfaCM.colorGreen-3y-Z79:active, #app-mount .button-1EGGcP.lookFilled-yCfaCM.colorRed-rQXKgM:active,
 #app-mount .button-f2h6uQ.lookFilled-yCfaCM.colorBrand-I6CyqQ:active,
 #app-mount .button-f2h6uQ.lookFilled-yCfaCM.colorGreen-3y-Z79:active,
 #app-mount .button-f2h6uQ.lookFilled-yCfaCM.colorRed-rQXKgM:active {
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.2);
-  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.2);
+  border-color: hsla(0deg, 0%, 0%, 0.2);
 }
 #app-mount .button-1EGGcP.lookOutlined-3yKVGo,
 #app-mount .button-f2h6uQ.lookOutlined-3yKVGo {
@@ -3889,7 +3889,7 @@ body,
   transition: background 0.15s var(--transition), transform 0.15s var(--transition), width 0.15s var(--transition), height 0.15s var(--transition);
 }
 #app-mount .container-2nx-BQ input:hover:not(:checked) {
-  background: rgba(255, 255, 255, 0.05) !important;
+  background: hsla(0deg, 0%, 100%, 0.05) !important;
 }
 #app-mount .container-2nx-BQ input:hover::before {
   width: 14px;
@@ -3907,8 +3907,8 @@ body,
   transform: translateX(18px);
 }
 #app-mount .container-2nx-BQ input:checked:hover {
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.12);
-  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.12);
+  border-color: hsla(0deg, 0%, 0%, 0.12);
 }
 #app-mount .container-2nx-BQ input:checked:active::before {
   transform: translateX(13px);
@@ -5159,8 +5159,8 @@ body,
   box-sizing: border-box;
 }
 #app-mount .profileBannerPreview-3mLIdO .banner-3D8GgT {
-  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.5), transparent 90%);
-          mask: linear-gradient(rgba(0, 0, 0, 0.5), transparent 90%);
+  -webkit-mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
+          mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
   position: absolute;
   width: 100%;
   height: 60%;
@@ -5179,9 +5179,9 @@ body,
   top: 24px;
   right: 24px;
   left: unset;
-  background: rgba(255, 255, 255, 0.2);
+  background: hsla(0deg, 0%, 100%, 0.2);
   border-color: transparent;
-  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 4px hsla(0deg, 0%, 100%, 0.2);
   border-radius: 50%;
 }
 #app-mount .profileBannerPreview-3mLIdO .headerTop-3GPUSF {
@@ -5717,8 +5717,8 @@ body,
   top: 0;
   left: 0;
   height: 300px;
-  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0.5), transparent 80%);
-          mask: linear-gradient(rgba(0, 0, 0, 0.5), transparent 80%);
+  -webkit-mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 80%);
+          mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 80%);
   pointer-events: none;
   width: 100%;
   z-index: -2;
@@ -5727,7 +5727,7 @@ body,
   left: unset;
   right: 24px;
   top: 24px;
-  background: rgba(255, 255, 255, 0.2);
+  background: hsla(0deg, 0%, 100%, 0.2);
   border-color: transparent;
 }
 #app-mount .pencilContainer-18TrEJ {
@@ -5748,7 +5748,7 @@ body,
   border-radius: 50%;
   padding: 0;
   text-align: center;
-  background: rgba(0, 0, 0, 0.75) !important;
+  background: hsla(0deg, 0%, 0%, 0.75) !important;
   color: #fff !important;
   opacity: 0;
   transition: opacity 0.15s var(--transition) !important;
@@ -6230,14 +6230,14 @@ body,
     opacity: 1;
   }
 }
-.platform-win #app-mount .typeWindows-2-g3UY + .app-3xd6d0 .layer-86YKbF {
+.platform-win #app-mount .typeWindows-2-g3UY + div .layer-86YKbF {
   top: 0;
   padding-top: 0;
 }
-.platform-win #app-mount .typeWindows-2-g3UY + .app-3xd6d0 .layer-86YKbF.baseLayer-W6S8cY {
+.platform-win #app-mount .typeWindows-2-g3UY + div .layer-86YKbF.baseLayer-W6S8cY {
   padding-top: calc(var(--win-btn-height) + 4px) !important;
 }
-.platform-win #app-mount .typeWindows-2-g3UY + .app-3xd6d0 .standardSidebarView-E9Pc3j {
+.platform-win #app-mount .typeWindows-2-g3UY + div .standardSidebarView-E9Pc3j {
   top: 0;
 }
 
@@ -6303,7 +6303,7 @@ body,
   transition: background 0.15s var(--transition), transform 0.15s var(--transition), width 0.15s var(--transition), height 0.15s var(--transition);
 }
 #app-mount .bd-switch input:hover:not(:checked) {
-  background: rgba(255, 255, 255, 0.05) !important;
+  background: hsla(0deg, 0%, 100%, 0.05) !important;
 }
 #app-mount .bd-switch input:hover::before {
   width: 14px;
@@ -6321,8 +6321,8 @@ body,
   transform: translateX(18px);
 }
 #app-mount .bd-switch input:checked:hover {
-  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.12);
-  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 0 0 100vmax hsla(0deg, 0%, 0%, 0.12);
+  border-color: hsla(0deg, 0%, 0%, 0.12);
 }
 #app-mount .bd-switch input:checked:active::before {
   transform: translateX(13px);
