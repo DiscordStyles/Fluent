@@ -23,7 +23,7 @@
 			z-index: 1;
 			top: 0;
 			left: 0;
-			mask: url(mono.$pen) center/cover;
+			-webkit-mask: url(mono.$pen) center/cover;
 			svg {
 				display: none;
 			}
@@ -68,7 +68,7 @@
 					content: "";
 					width: 16px;
 					height: 16px;
-					mask: url(mono.$chevron-right) center/cover;
+					-webkit-mask: url(mono.$chevron-right) center/cover;
 					background: var(--text-primary);
 					display: block;
 				}

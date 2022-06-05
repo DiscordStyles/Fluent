@@ -35,7 +35,7 @@ $banner-height: 300px;
 			top: 0;
 			left: 0;
 			height: $banner-height;
-			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 80%);
+			-webkit-mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 80%);
 			pointer-events: none;
 			width: 100%;
 			z-index: -2;
