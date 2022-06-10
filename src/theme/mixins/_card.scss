@@ -12,8 +12,8 @@
 @mixin cardIcon {
 	width: 22px;
 	height: 22px;
-	mask-size: cover;
-	mask-position: center;
+	-webkit-mask-size: cover;
+	-webkit-mask-position: center;
 	background: var(--text-primary);
 	display: block;
 }

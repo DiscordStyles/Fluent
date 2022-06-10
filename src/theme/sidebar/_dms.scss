@@ -80,7 +80,7 @@
 	}
 	
 	.link-39sEB3[href="/channels/@me"] .linkButtonIcon-7rsZcu {
-		mask: url(mono.$people) center/cover;
+		-webkit-mask: url(mono.$people) center/cover;
 		background: var(--interactive-normal);
 		g {
 			display: none;

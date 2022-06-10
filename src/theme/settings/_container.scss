@@ -33,7 +33,7 @@
 		border: none;
 		cursor: var(--cursor);
 		svg {
-			mask: url(mono.$arrow-left) center/cover;
+			-webkit-mask: url(mono.$arrow-left) center/cover;
 			width: 16px;
 			height: 16px;
 			background: var(--text-primary);

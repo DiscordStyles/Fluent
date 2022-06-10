@@ -106,7 +106,7 @@
 	}
 	.attachButton-_ACFSu {
 		svg {
-			mask: url(mono.$plus-circle) center/cover;
+			-webkit-mask: url(mono.$plus-circle) center/cover;
 			background: var(--interactive-normal);
 			transition: var(--transition);
 			transition-property: background, filter;
@@ -130,7 +130,7 @@
 		// Gift Icon
 		& > button[aria-label] {
 		 svg {
-			 mask: url(mono.$gift) center/cover;
+			 -webkit-mask: url(mono.$gift) center/cover;
 			 background: var(--interactive-normal);
 			 transition: var(--transition);
 			 transition-property: background;
@@ -150,7 +150,7 @@
 			padding: 0;
 		}
 		#icon svg {
-			mask: url(mono.$gif) center/cover;
+			-webkit-mask: url(mono.$gif) center/cover;
 			background: var(--interactive-normal);
 			transition: var(--transition);
 			transition-property: background;
@@ -166,7 +166,7 @@
 	.sprite-2lxwfc {
 		width: 26px;
 		height: 26px;
-		mask: url(mono.$emoji) center/cover;
+		-webkit-mask: url(mono.$emoji) center/cover;
 		background: var(--interactive-normal);
 		filter: none !important;
 		transform: none !important;
@@ -181,7 +181,7 @@
 		svg {
 			width: 24px !important;
 			height: 24px !important;
-			mask: url(mono.$sticker) center/cover;
+			-webkit-mask: url(mono.$sticker) center/cover;
 			background: var(--interactive-normal);
 			transition: var(--transition);
 			transition-property: background;
