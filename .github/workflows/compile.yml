@@ -12,7 +12,7 @@ jobs:
       - name: "Setup NodeJS"
         uses: "actions/setup-node@v1"
         with:
-          node-version: 12
+          node-version: 16
       - name: "Install PNPM"
         uses: "pnpm/action-setup@v2.1.0"
         with:
