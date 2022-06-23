@@ -8,7 +8,7 @@ Brings the look of Windows 11 to Discord.
 ## Download
 
 BetterDiscord Download: [https://betterdiscord.app/theme/Fluent](https://betterdiscord.app/Download?id=662)  
-Powercord Install: `git clone https://github.com/DiscordStyles/Fluent`  
+Powercord Install: `git clone https://github.com/DiscordStyles/Fluent --branch deploy`  
 Goosemod Install: Search for `Fluent` in the Goosemod Theme store and install it from there.
 
 ## Contributing
