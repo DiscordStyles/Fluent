@@ -1,10 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
-  bd-scss: ^1.1.1
+  bd-scss: ^2.0.3
 
 dependencies:
-  bd-scss: 1.1.1
+  bd-scss: 2.0.3
 
 packages:
 
@@ -23,8 +23,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      browserslist: 4.20.3
-      caniuse-lite: 1.0.30001346
+      browserslist: 4.21.0
+      caniuse-lite: 1.0.30001358
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -32,8 +32,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: false
 
-  /bd-scss/1.1.1:
-    resolution: {integrity: sha512-+Zk09nP/PLPZbGoeCzODjfCxFtkS7b7hJ5bJdhcSziJk8Q7QqJNAD1sPsUP15uaAjS/LJfhpG0YIF1DPjG+ykw==}
+  /bd-scss/2.0.3:
+    resolution: {integrity: sha512-cGB/Yyf7l+/t6TPq2TNX2GiL2j7KLQfrQpZHYPlp0KpjL30ATEIsNVjIUZTI0Y0H3PuxfTj46NwrOUjrz2vm8A==}
     hasBin: true
     dependencies:
       autoprefixer: 10.4.7_postcss@8.4.14
@@ -42,7 +42,7 @@ packages:
       find-config: 1.0.0
       postcss: 8.4.14
       sade: 1.8.1
-      sass: 1.52.2
+      sass: 1.53.0
     dev: false
 
   /binary-extensions/2.2.0:
@@ -57,20 +57,19 @@ packages:
       fill-range: 7.0.1
     dev: false
 
-  /browserslist/4.20.3:
-    resolution: {integrity: sha512-NBhymBQl1zM0Y5dQT/O+xiLP9/rzOIQdKM/eMJBAq7yBgaB6krIYLGejrwVYnSHZdqjscB1SPuAjHwxjvN6Wdg==}
+  /browserslist/4.21.0:
+    resolution: {integrity: sha512-UQxE0DIhRB5z/zDz9iA03BOfxaN2+GQdBYH/2WrSIWEUrnpzTPJbhqt+umq6r3acaPRTW1FNTkrcp0PXgtFkvA==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001346
-      electron-to-chromium: 1.4.146
-      escalade: 3.1.1
+      caniuse-lite: 1.0.30001358
+      electron-to-chromium: 1.4.167
       node-releases: 2.0.5
-      picocolors: 1.0.0
+      update-browserslist-db: 1.0.3_browserslist@4.21.0
     dev: false
 
-  /caniuse-lite/1.0.30001346:
-    resolution: {integrity: sha512-q6ibZUO2t88QCIPayP/euuDREq+aMAxFE5S70PkrLh0iTDj/zEhgvJRKC2+CvXY6EWc6oQwUR48lL5vCW6jiXQ==}
+  /caniuse-lite/1.0.30001358:
+    resolution: {integrity: sha512-hvp8PSRymk85R20bsDra7ZTCpSVGN/PAz9pSAjPSjKC+rNmnUk5vCRgJwiTT/O4feQ/yu/drvZYpKxxhbFuChw==}
     dev: false
 
   /chalk/5.0.1:
@@ -93,8 +92,8 @@ packages:
       fsevents: 2.3.2
     dev: false
 
-  /electron-to-chromium/1.4.146:
-    resolution: {integrity: sha512-4eWebzDLd+hYLm4csbyMU2EbBnqhwl8Oe9eF/7CBDPWcRxFmqzx4izxvHH+lofQxzieg8UbB8ZuzNTxeukzfTg==}
+  /electron-to-chromium/1.4.167:
+    resolution: {integrity: sha512-lPHuHXBwpkr4RcfaZBKm6TKOWG/1N9mVggUpP4fY3l1JIUU2x4fkM8928smYdZ5lF+6KCTAxo1aK9JmqT+X71Q==}
     dev: false
 
   /escalade/3.1.1:
@@ -229,8 +228,8 @@ packages:
       mri: 1.2.0
     dev: false
 
-  /sass/1.52.2:
-    resolution: {integrity: sha512-mfHB2VSeFS7sZlPv9YohB9GB7yWIgQNTGniQwfQ04EoQN0wsQEv7SwpCwy/x48Af+Z3vDeFXz+iuXM3HK/phZQ==}
+  /sass/1.53.0:
+    resolution: {integrity: sha512-zb/oMirbKhUgRQ0/GFz8TSAwRq2IlR29vOUJZOx0l8sV+CkHUfHa4u5nqrG+1VceZp7Jfj59SVW9ogdhTvJDcQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -251,8 +250,19 @@ packages:
       is-number: 7.0.0
     dev: false
 
+  /update-browserslist-db/1.0.3_browserslist@4.21.0:
+    resolution: {integrity: sha512-ufSazemeh9Gty0qiWtoRpJ9F5Q5W3xdIPm1UZQqYQv/q0Nyb9EMHUB2lu+O9x1re9WsorpMAUu4Y6Lxcs5n+XQ==}
+    hasBin: true
+    peerDependencies:
+      browserslist: '>= 4.21.0'
+    dependencies:
+      browserslist: 4.21.0
+      escalade: 3.1.1
+      picocolors: 1.0.0
+    dev: false
+
   /user-home/2.0.0:
-    resolution: {integrity: sha1-nHC/2Babwdy/SGBODwS4tJzenp8=}
+    resolution: {integrity: sha512-KMWqdlOcjCYdtIJpicDSFBQ8nFwS2i9sslAd6f4+CBGcU4gist2REnr2fxj2YocvJFxSF3ZOHLYLVZnUxv4BZQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       os-homedir: 1.0.2

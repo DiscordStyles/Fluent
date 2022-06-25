@@ -6,11 +6,12 @@
   "author": "Gibbu <Gibbu_@hotmail.com>",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "scripts": {
     "dev": "bd-scss dev",
     "build": "bd-scss build"
   },
   "dependencies": {
-    "bd-scss": "^1.1.1"
+    "bd-scss": "^2.0.3"
   }
 }
