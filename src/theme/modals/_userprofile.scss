@@ -35,9 +35,10 @@ $banner-height: 300px;
 			top: 0;
 			left: 0;
 			height: $banner-height;
-			-webkit-mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 80%);
+			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 80%);
 			pointer-events: none;
 			width: 100%;
+			max-width: unset;
 			z-index: -2;
 		}
 	}
@@ -151,13 +152,16 @@ $banner-height: 300px;
 		}
 	}
 
-	.connectedAccounts-1YaT2t {
+	.connectedAccounts-fvr7-7 {
 		margin: 0;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 24px;
 	}
-	.connectedAccount-1xKpli {
+	.connectedAccountsColumn-2LgTkZ {
+		margin-left: 0;
+	}
+	.connectedAccountContainer-SlCC-S {
 		margin: 0;
 		width: 100%;
 		box-sizing: border-box;
@@ -165,15 +169,17 @@ $banner-height: 300px;
 		border-radius: var(--rounded);
 		border: none;
 		padding: 12px;
-		gap: 8px;
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
 	}
 	.connectedAccountIcon-2vls0t {
 		width: 24px;
 		height: 24px;
 	}
-	.connectedAccountName-j0meX4 {
+	.connectedAccountNameContainer-EXbBUQ {
 		@include mixins.text;
-		margin: 0;
+		margin: 0 0 0 8px;
 	}
 
 	.activityProfile-1712BN {

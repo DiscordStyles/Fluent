@@ -42,7 +42,7 @@
 		height: 160px;
 		position: relative;
 		.banner-1YaD3N {
-			-webkit-mask: linear-gradient(hsl(0 0% 0% / .5), transparent 90%);
+			mask: linear-gradient(hsl(0 0% 0% / .5), transparent 90%);
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -84,52 +84,28 @@
 	.button-f2h6uQ ~ .aboutMeSection-PUghFQ {
 		margin-top: 24px;
 	}
+
 	.rolesList-3uZoaa {
 		gap: 8px;
 	}
 	.role-2TIOKu {
 		@include mixins.subText;
+		background: var(--bg-content);
 		margin: 0;
-		height: auto;
 		padding: 6px 8px;
-		border-radius: var(--rounded);
-		color: var(--text-primary);
-		gap: 4px;
-		position: relative;
-		overflow: hidden;
-		&:hover .roleCircle-1EgnFN {
-			width: 100%;
-			opacity: 1;
-		}
+		height: unset;
+		border-radius: 50px;
 	}
-	.roleCircle-1EgnFN {
-		position: absolute;
-		top: 0;
-		left: 0;
+	.roleCircle-3K9O3d {
 		margin: 0;
-		height: 100%;
-		border-radius: 0;
-		width: 100%;
-		-webkit-mask: linear-gradient(90deg, hsl(0 0% 0%), transparent);
-		filter: none;
-		opacity: .35;
-		justify-content: flex-start;
-		padding: 8px;
-		box-sizing: border-box;
-		transition: .15s var(--transition);
-		&:not(:empty) ~ .roleName-2ZJJYR {
-			margin-left: 22px;
-		}
 	}
 	.roleName-2ZJJYR {
-		position: relative;
-		margin: 0;
-		transition: margin-left .15s var(--transition);
+		margin: 0 0 0 4px;
+	}
+	.roleRemoveButton-17oXnT {
 	}
 	.roleRemoveIcon-387wKV {
-		width: 16px;
-		height: 16px;
-		display: block;
+		
 	}
 
 	.footer-3naVBw {

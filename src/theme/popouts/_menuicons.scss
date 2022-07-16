@@ -131,8 +131,8 @@ $icons: (
 		&::before {
 			width: 18px;
 			height: 18px;
-			-webkit-mask-size: cover;
-			-webkit-mask-position: center;
+			mask-size: cover;
+			mask-position: center;
 			background: currentColor;
 		}
 		&.focused-3qFvc8::before {
@@ -143,9 +143,9 @@ $icons: (
 		&[id="#{$label}"]::before {
 			content: "";
 			@if list.index($icon, "danger") {
-				-webkit-mask-image: url(list.nth($icon, 1));
+				mask-image: url(list.nth($icon, 1));
 			} @else {
-				-webkit-mask-image: url($icon);
+				mask-image: url($icon);
 			}
 		}
 	}

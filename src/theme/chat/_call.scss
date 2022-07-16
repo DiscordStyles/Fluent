@@ -46,7 +46,7 @@
 			transform: translateX(6px) scale(1.2726);
 		}
 		foreignObject {
-			-webkit-mask: none;
+			mask: none;
 		}
 		button {
 			@include mixins.btn;
