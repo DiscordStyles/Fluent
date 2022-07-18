@@ -88,7 +88,7 @@
 	.homeIcon-r0w4ny {
 		width: 75%;
 		height: 75%;
-		-webkit-mask: url(mono.$home) center/cover;
+		mask: url(mono.$home) center/cover;
 		background: var(--interactive-normal);
 		path {
 			display: none;
