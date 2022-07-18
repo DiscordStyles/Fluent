@@ -55,17 +55,17 @@
 					background: var(--interactive-normal);
 				}
 				&:first-child svg {
-					-webkit-mask: url(mono.$user-add) center/cover;
+					mask: url(mono.$user-add) center/cover;
 				}
 				& + .iconItem-1EjiK0 svg {
-					-webkit-mask: url(mono.$cog) center/cover;
+					mask: url(mono.$cog) center/cover;
 				}
 				&.openChatIconItem-2kj5qO {
 					svg {
-						-webkit-mask: url(mono.$chat) center/cover;
+						mask: url(mono.$chat) center/cover;
 					}
 					& + .iconItem-1EjiK0 svg {
-						-webkit-mask: url(mono.$user-add) center/cover;
+						mask: url(mono.$user-add) center/cover;
 					}
 				}
 			}

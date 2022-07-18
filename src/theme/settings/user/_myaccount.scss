@@ -23,7 +23,7 @@
 			z-index: 1;
 			top: 0;
 			left: 0;
-			-webkit-mask: url(mono.$pen) center/cover;
+			mask: url(mono.$pen) center/cover;
 			svg {
 				display: none;
 			}
@@ -68,7 +68,7 @@
 					content: "";
 					width: 16px;
 					height: 16px;
-					-webkit-mask: url(mono.$chevron-right) center/cover;
+					mask: url(mono.$chevron-right) center/cover;
 					background: var(--text-primary);
 					display: block;
 				}
@@ -88,13 +88,13 @@
 		border-radius: 0;
 		.field-21XZwa {
 			&:first-child::before {
-				-webkit-mask-image: url(mono.$user);
+				mask-image: url(mono.$user);
 			}
 			&:nth-child(2)::before {
-				-webkit-mask-image: url(mono.$mail);
+				mask-image: url(mono.$mail);
 			}
 			&:last-child::before {
-				-webkit-mask-image: url(mono.$phone);
+				mask-image: url(mono.$phone);
 			}
 		}
 	}
@@ -166,7 +166,7 @@
 				}
 				&::before {
 					content: "";
-					-webkit-mask-image: url(mono.$password);
+					mask-image: url(mono.$password);
 					@include mixins.cardIcon;
 				}
 				&::after {
@@ -202,7 +202,7 @@
 					&::after {
 						content: "";
 						@include mixins.cardIcon;
-						-webkit-mask-image: url(mono.$lock-closed);
+						mask-image: url(mono.$lock-closed);
 						position: absolute;
 						top: 50%;
 						transform: translateY(-50%);
@@ -240,7 +240,7 @@
 						&::before {
 							content: "";
 							@include mixins.cardIcon;
-							-webkit-mask-image: url(mono.$phone-lock);
+							mask-image: url(mono.$phone-lock);
 							position: absolute;
 							top: calc(50% - 35px);
 							transform: translateY(-50%);
@@ -286,7 +286,7 @@
 				&::before {
 					content: "";
 					@include mixins.cardIcon;
-					-webkit-mask-image: url(mono.$user-delete);
+					mask-image: url(mono.$user-delete);
 				}
 			}
 			.description-30xx7u {
