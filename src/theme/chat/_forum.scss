@@ -1,0 +1,60 @@
+@use '../mixins';
+
+#app-mount {
+	.container-3wLKDe {
+		background: transparent;
+	}
+
+	.header-1Uy0p6 {
+		background: transparent;
+		box-shadow: none;
+		border: none;
+	}
+	.titleContainer-2YK93J {
+		align-items: center;
+		gap: 16px;
+		cursor: default;
+	}
+	.container-JhuCwn {
+		padding: 0;
+		.input-2g-os5 {
+			margin-top: 0;
+		}
+	}
+
+	.container-2qVG6q {
+		@include mixins.card($fgap: 0);
+		cursor: default;
+		transition: none;
+		&:hover {
+			box-shadow: none;
+			transform: none;
+			background: var(--bg-content-alt);
+		}
+	}
+
+	.sidebarCard-1Gn1ch,
+	.container-2IhveL {
+		@include mixins.card($fdir: column, $aitem: flex-start);
+	}
+
+	.pill-3pRQlO {
+		border: 1px solid var(--border-high);
+		background: transparent;
+		height: 28px;
+		.emoji-Z6vF9e {
+			margin-right: 8px;
+			width: 14px;
+			height: 14px;
+		}
+		.text-sm-semibold-3TWn25 {
+			font-size: var(--font-size-xs);
+		}
+		&:hover {
+			background: var(--bg-interactive-high);
+		}
+		&.selected-24z1Ou {
+			border-color: rgb(var(--accent));
+		}
+	}
+}

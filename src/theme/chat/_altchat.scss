@@ -1,0 +1,46 @@
+@use '../mixins';
+
+#app-mount {
+	.container-3XgAHv {
+		border-left: 1px solid var(--border-mid);
+		border-radius: 0;
+		background: transparent;
+	}
+	.chat-1rZYgu,
+	.chat-1-OBC7 {
+		&::before {
+			content: none;
+		}
+	}
+	.submitContainer-1DHMA0 {
+		padding: 16px;
+		button {
+			width: 100%;
+		}
+	}
+
+	.container-3YcgdM {
+		background: var(--bg-alt);
+		box-shadow: none;
+		border-top: 1px solid var(--border-mid);
+		border-bottom: 1px solid var(--border-mid);
+
+		.button-DAkLIy {
+			@include mixins.btn;
+			@include mixins.btnSecondary;
+			& > div {
+				background: transparent;
+				border-radius: 0;
+				border: none;
+			}
+		}
+	}
+	.divider-AZrXIA {
+		height: 0;
+		background: var(--border-mid);
+	}
+
+	.chat-25x62K::before {
+		content: none;
+	}
+}

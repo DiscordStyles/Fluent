@@ -6,6 +6,7 @@
 		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
 		width: 400px !important;
 		box-sizing: border-box;
+		background: var(--bg-main);
 		.avatarWrapper-eenWra {
 			position: absolute;
 			top: 24px;
@@ -102,14 +103,10 @@
 	.roleName-2ZJJYR {
 		margin: 0 0 0 4px;
 	}
-	.roleRemoveButton-17oXnT {
-	}
-	.roleRemoveIcon-387wKV {
-		
-	}
 
 	.footer-3naVBw {
 		padding: 0 24px 24px;
 		margin: 0;
+		background: transparent;
 	}
 }

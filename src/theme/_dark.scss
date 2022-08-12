@@ -1,54 +1,57 @@
 .theme-dark,
 html.theme-dark #app-mount .theme-light .root-g14mjS,
 html.theme-dark .theme-light {
-	--bg-main: #202020;
-	--bg-alt: #272727;
-	--bg-content: #2b2b2b;
-	--bg-content-alt: #2d2d2d;
+	--dark-bg-h: 0;
+	--dark-bg-s: 0%;
 
-	--bg-interactive: #2d2d2d;
-	--bg-interactive-high: #323232;
-	--bg-interactive-hover: #292929;
-	--bg-interactive-high-hover: #2e2e2e;
+	--bg-main: hsl(var(--dark-bg-h) var(--dark-bg-s) 13%);
+	--bg-alt: hsl(var(--dark-bg-h) var(--dark-bg-s) 15%);
+	--bg-content: hsl(var(--dark-bg-h) var(--dark-bg-s) 17%);
+	--bg-content-alt: hsl(var(--dark-bg-h) var(--dark-bg-s) 18%);
 
-	--bg-high: #343434;
-	--bg-higher: #3a3a3a;
-	--bg-highest: #484848;
+	--bg-interactive: hsl(var(--dark-bg-h) var(--dark-bg-s) 18%);
+	--bg-interactive-high: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
+	--bg-interactive-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 16%);
+	--bg-interactive-high-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 18%);
 
-	--bg-menu: #2c2c2c;
-	--bg-menu-item: #383838;
-	--bg-menu-item-hover: #343434;
+	--bg-high: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
+	--bg-higher: hsl(var(--dark-bg-h) var(--dark-bg-s) 23%);
+	--bg-highest: hsl(var(--dark-bg-h) var(--dark-bg-s) 28%);
 
-	--chat-bubble-bg: #2f2f2f;
-	--chat-mention-bubble: hsl(0 0% 100% / .05);
+	--bg-menu: hsl(var(--dark-bg-h) var(--dark-bg-s) 17%);
+	--bg-menu-item: hsl(var(--dark-bg-h) var(--dark-bg-s) 22%);
+	--bg-menu-item-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
 
-	--border: #1d1d1d;
-	--border-mid: #343434;
-	--border-high: #3b3b3b;
+	--chat-bubble-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 18%);
+	--chat-mention-bubble: hsl(var(--dark-bg-h) var(--dark-bg-s) 100% / .05);
+
+	--border: hsl(var(--dark-bg-h) var(--dark-bg-s) 11%);
+	--border-mid: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
+	--border-high: hsl(var(--dark-bg-h) var(--dark-bg-s) 23%);
 
 	--pill-unread: #9a9a9a;
 	--pill-hovered: #fff;
 
-	--btn-bg: hsl(0 0% 100% / .06);
-	--btn-bg-hover: hsl(0 0% 100% / .08);
-	--btn-bg-active: hsl(0 0% 100% / .03);
-	--btn-border-t: hsl(0 0% 100% / .06);
-	--btn-border-x: hsl(0 0% 100% / .01);
-	--btn-border-b: hsl(0 0% 100% / .01);
-	--btn-border-active: hsl(0 0% 100% / .06);
+	--btn-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .2);
+	--btn-bg-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .25);
+	--btn-bg-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .1);
+	--btn-border-t: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .3);
+	--btn-border-x: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .1);
+	--btn-border-b: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .1);
+	--btn-border-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .2);
 	
-	--scrollbar-background: hsl(0 0% 50%);
+	--scrollbar-background: hsl(var(--dark-bg-h) var(--dark-bg-s) 50%);
 
-	--server-bg: hsl(0 0% 100% / 0.08);
+	--server-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 50% / .2);
 	--folder-bg: var(--server-bg);
 
-	--textbox-bg: #2d2d2d;
-	--textbox-bg-high: #333;
-	--textbox-bg-hover: #323232;
-	--textbox-bg-high-hover: #383838;
-	--textbox-bg-active: #222;
-	--textbox-bg-high-active: #282828;
-	--textbox-border: #303030;
+	--textbox-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 18%);
+	--textbox-bg-high: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
+	--textbox-bg-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
+	--textbox-bg-high-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 22%);
+	--textbox-bg-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 13%);
+	--textbox-bg-high-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 16%);
+	--textbox-border: hsl(var(--dark-bg-h) var(--dark-bg-s) 19%);
 	--textbox-underline: #9a9a9a;
 
 	--switch-border: hsl(0 0% 100% / 54.42%);

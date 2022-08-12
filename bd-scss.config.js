@@ -2,11 +2,12 @@
 export default {
 	meta: {
 		name: 'Fluent',
-		author: 'Gibbu#1211',
-		version: '1.0.5',
+		author: 'Gibbu',
+		version: '1.0.9',
 		description: 'Brings the look of Windows 11 to Discord.',
 		source: 'https://github.com/DiscordStyles/Fluent',
-		invite: 'ZHthyCw'
+		invite: 'ZHthyCw',
+		authorId: '174868361040232448'
 	},
 	baseImport: 'https://discordstyles.github.io/Fluent/Fluent.css',
 	addons: [

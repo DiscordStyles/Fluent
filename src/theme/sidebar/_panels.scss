@@ -29,6 +29,10 @@
 				position: absolute;
 				left: calc(var(--channels-width) + var(--chat-spacing-x));
 				margin-top: -91px;
+				min-width: unset;
+				&:hover {
+					background: transparent;
+				}
 			}
 
 			.nameTag-sc-gpq {
