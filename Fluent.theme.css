@@ -1,10 +1,11 @@
 /**
  * @name Fluent
- * @author Gibbu#1211
- * @version 1.0.5
+ * @author Gibbu
+ * @version 1.0.9
  * @description Brings the look of Windows 11 to Discord.
  * @source https://github.com/DiscordStyles/Fluent
  * @invite ZHthyCw
+ * @authorId 174868361040232448
 */
 
 @import url('https://discordstyles.github.io/Fluent/Fluent.css');
@@ -15,34 +16,4 @@
   --channels-width: 300px; /* Size of the server channel/dms list | Default: 300px */
   --members-width: 280px; /* Size of the members list | Default: 280px */
   --server-size: 48px; /* Size of each server in the server list | Default: 48px */
-}
-
-#app-mount .cozy-VmLDNB[data-is-author-self=true] {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-#app-mount .cozy-VmLDNB[data-is-author-self=true] .contents-2MsGLg {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background: rgb(var(--accent), 0.05);
-}
-#app-mount .cozy-VmLDNB[data-is-author-self=true] .contents-2MsGLg > .messageContent-2t3eCI {
-  background: transparent;
-}
-#app-mount .cozy-VmLDNB[data-is-author-self=true] .container-3i3IzO {
-  justify-self: flex-end;
-}
-#app-mount .cozy-VmLDNB[data-is-author-self=true] .headerText-2z4IhQ {
-  display: none;
-}
-#app-mount .cozy-VmLDNB[data-is-author-self=true] .timestamp-p1Df1m {
-  margin-left: 0;
-}
-#app-mount .cozy-VmLDNB[data-is-author-self=true] .avatar-2e8lTP {
-  display: none;
-}
-#app-mount .cozy-VmLDNB[data-is-author-self=true].hasThread-3h-KJV::after {
-  content: none;
 }
