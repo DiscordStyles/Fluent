@@ -90,7 +90,8 @@
 		gap: 8px;
 	}
 	.role-2TIOKu {
-		@include mixins.subText;
+		color: var(--text-secondary);
+		line-height: var(--line-height);
 		background: var(--bg-content);
 		margin: 0;
 		padding: 6px 8px;
