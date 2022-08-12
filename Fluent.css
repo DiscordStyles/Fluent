@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "1.0.9";
+  --fluent-version: "1.0.10";
   --transition: cubic-bezier(0,0,0,1);
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
@@ -52,14 +52,15 @@
   --discord-grey: 217 8% 34%;
   --text-normal: var(--text-primary);
   --text-muted: var(--text-tertiary);
+  --interactive-muted: var(--text-quaternary);
   --text-link: rgb(var(--accent));
 }
 
 .theme-dark,
 html.theme-dark #app-mount .theme-light .root-g14mjS,
 html.theme-dark .theme-light {
-  --dark-bg-h: 0;
-  --dark-bg-s: 0%;
+  --dark-bg-h: 210deg;
+  --dark-bg-s: 30%;
   --bg-main: hsl(var(--dark-bg-h) var(--dark-bg-s) 13%);
   --bg-alt: hsl(var(--dark-bg-h) var(--dark-bg-s) 15%);
   --bg-content: hsl(var(--dark-bg-h) var(--dark-bg-s) 17%);
@@ -79,7 +80,7 @@ html.theme-dark .theme-light {
   --border: hsl(var(--dark-bg-h) var(--dark-bg-s) 11%);
   --border-mid: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
   --border-high: hsl(var(--dark-bg-h) var(--dark-bg-s) 23%);
-  --pill-unread: #9a9a9a;
+  --pill-unread: hsl(var(--dark-bg-h) var(--dark-bg-s) 60%);
   --pill-hovered: #fff;
   --btn-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .2);
   --btn-bg-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .25);
@@ -98,11 +99,12 @@ html.theme-dark .theme-light {
   --textbox-bg-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 13%);
   --textbox-bg-high-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 16%);
   --textbox-border: hsl(var(--dark-bg-h) var(--dark-bg-s) 19%);
-  --textbox-underline: #9a9a9a;
-  --switch-border: hsl(0 0% 100% / 54.42%);
-  --text-primary: hsl(0 0% 100% / 100%);
-  --text-secondary: hsl(0 0% 100% / 75%);
-  --text-tertiary: hsl(0 0% 100% / 55%);
+  --textbox-underline: hsl(var(--dark-bg-h) var(--dark-bg-s) 60%);
+  --switch-border: hsl(var(--dark-bg-h) var(--dark-bg-s) 94% / 54.42%);
+  --text-primary: hsl(var(--dark-bg-h) var(--dark-bg-s) 90%);
+  --text-secondary: hsl(var(--dark-bg-h) var(--dark-bg-s) 85% / 75%);
+  --text-tertiary: hsl(var(--dark-bg-h) var(--dark-bg-s) 80% / 55%);
+  --text-quaternary: hsl(var(--dark-bg-h) var(--dark-bg-s) 75% / 35%);
 }
 
 .theme-light,
@@ -2513,7 +2515,7 @@ body,
   box-shadow: 0 0 0 2px hsla(0deg, 0%, 100%, 0.2);
 }
 #app-mount .userPopout-2j1gM4 .size12-oc4dx4 {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -2585,9 +2587,7 @@ body,
   gap: 8px;
 }
 #app-mount .role-2TIOKu {
-  color: var(--text-muted);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-regular);
+  color: var(--text-secondary);
   line-height: var(--line-height);
   background: var(--bg-content);
   margin: 0;
@@ -3579,7 +3579,7 @@ body,
   line-height: var(--line-height-lg);
 }
 #app-mount .itemCard-3Etziu .size14-3fJ-ot {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -4213,7 +4213,7 @@ body,
   text-transform: none;
 }
 #app-mount .layer-86YKbF.layer-86YKbF ~ .layer-86YKbF .children-1xdcWE > .description-30xx7u.formText-2ngGjI {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -5327,7 +5327,7 @@ body,
   z-index: 1;
 }
 #app-mount .profileBannerPreview-3mLIdO .size12-oc4dx4 {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -5523,7 +5523,7 @@ body,
   padding: 16px;
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .tableHeader-2h-wc8 .tableTitle-3zdrSx {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -5650,7 +5650,7 @@ body,
   background: var(--bg-interactive);
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .titleText-3LapIU {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -5758,7 +5758,7 @@ body,
 }
 #app-mount .root-g14mjS:not(.modal-3Crloo) .content-2hZxGK .title-3hptVQ {
   text-transform: none;
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -5911,7 +5911,7 @@ body,
   box-sizing: border-box;
 }
 #app-mount .customStatusActivity-WKWGD- {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -5946,7 +5946,7 @@ body,
   padding-bottom: 24px;
 }
 #app-mount .userInfoSectionHeader-2mYYun {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -6004,7 +6004,7 @@ body,
   padding: 24px;
 }
 #app-mount .headerText-3g1XK9 {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -6077,7 +6077,7 @@ body,
 }
 #app-mount .header-1ZpMzy {
   margin: 0;
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
@@ -6304,14 +6304,14 @@ body,
   filter: invert(1);
 }
 #app-mount .container-1Lk8p7 .skip-2hTIXL {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
   color: var(--text-muted) !important;
 }
 #app-mount .container-1Lk8p7 .footerTitle-3Bslxi {
-  color: var(--text-muted);
+  color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
