@@ -5697,7 +5697,7 @@ body,
   margin-top: 40px;
 }
 
-#app-mount .root-g14mjS:not(.modal-3Crloo) {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) {
   border: 1px solid var(--border-high);
   border-radius: var(--rounded);
   background: var(--bg-content);
@@ -5707,21 +5707,21 @@ body,
           animation: fadeInFromBottom 0.15s var(--transition) forwards !important;
   width: 548px;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) [class^=modalCloseButton-],
-#app-mount .root-g14mjS:not(.modal-3Crloo) [class^=closeButton-] {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) [class^=modalCloseButton-],
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) [class^=closeButton-] {
   display: none;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
-#app-mount .root-g14mjS:not(.modal-3Crloo) .input-2g-os5.multiInput-1VARjC {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .input-2g-os5.multiInput-1VARjC {
   background: var(--bg-high);
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx):hover,
-#app-mount .root-g14mjS:not(.modal-3Crloo) .input-2g-os5.multiInput-1VARjC:hover {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx):hover,
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .input-2g-os5.multiInput-1VARjC:hover {
   background: var(--bg-higher);
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .header-1kWa4s,
-#app-mount .root-g14mjS:not(.modal-3Crloo) .header-1R3myj,
-#app-mount .root-g14mjS:not(.modal-3Crloo) .header-1zd7se {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .header-1kWa4s,
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .header-1R3myj,
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .header-1zd7se {
   padding: 24px;
   align-items: center;
   height: auto;
@@ -5729,48 +5729,48 @@ body,
   box-shadow: none;
   background: var(--bg-content);
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .header-1kWa4s .size24-17l95E,
-#app-mount .root-g14mjS:not(.modal-3Crloo) .header-1R3myj .size24-17l95E,
-#app-mount .root-g14mjS:not(.modal-3Crloo) .header-1zd7se .size24-17l95E {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .header-1kWa4s .size24-17l95E,
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .header-1R3myj .size24-17l95E,
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .header-1zd7se .size24-17l95E {
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-lg);
   margin-bottom: 12px;
   color: var(--text-primary);
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .header-1kWa4s button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM),
-#app-mount .root-g14mjS:not(.modal-3Crloo) .header-1R3myj button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM),
-#app-mount .root-g14mjS:not(.modal-3Crloo) .header-1zd7se button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM) {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .header-1kWa4s button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM),
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .header-1R3myj button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM),
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .header-1zd7se button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM) {
   display: none;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .content-2hZxGK {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .content-2hZxGK {
   padding: 0 24px 24px !important;
   display: flex;
   flex-direction: column-reverse;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .content-2hZxGK .marginBottom20-315RVT {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .content-2hZxGK .marginBottom20-315RVT {
   margin-bottom: 0;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .content-2hZxGK .marginBottom20-315RVT + * {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .content-2hZxGK .marginBottom20-315RVT + * {
   margin-top: 20px;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .content-2hZxGK div[class][style^="position: absolute;"]:not(.file-input) {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .content-2hZxGK div[class][style^="position: absolute;"]:not(.file-input) {
   display: none;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .content-2hZxGK .title-3hptVQ {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .content-2hZxGK .title-3hptVQ {
   text-transform: none;
   color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .size16-rrJ6ag {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .size16-rrJ6ag {
   color: var(--text-secondary);
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-lg);
   margin: 0;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .footer-31IekZ {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .footer-31IekZ {
   padding: 24px;
   background: var(--bg-main);
   box-shadow: none;
@@ -5779,10 +5779,10 @@ body,
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .footer-31IekZ button:only-child {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .footer-31IekZ button:only-child {
   grid-column: 2/3;
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .footer-31IekZ button[type=button]:not(.lookFilled-yCfaCM) {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .footer-31IekZ button[type=button]:not(.lookFilled-yCfaCM) {
   border-radius: var(--btn-radius);
   padding: 4px 10px;
   line-height: 20px;
@@ -5800,15 +5800,15 @@ body,
   border-bottom-color: var(--btn-border-b);
   cursor: var(--cursor);
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .footer-31IekZ button[type=button]:not(.lookFilled-yCfaCM):hover {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .footer-31IekZ button[type=button]:not(.lookFilled-yCfaCM):hover {
   background: var(--btn-bg-hover);
   border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .footer-31IekZ button[type=button]:not(.lookFilled-yCfaCM):active {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .footer-31IekZ button[type=button]:not(.lookFilled-yCfaCM):active {
   background: var(--btn-bg-active) !important;
   border-color: var(--btn-border-active);
 }
-#app-mount .root-g14mjS:not(.modal-3Crloo) .buttonsRight-21z8KV {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .buttonsRight-21z8KV {
   gap: 8px;
 }
 
