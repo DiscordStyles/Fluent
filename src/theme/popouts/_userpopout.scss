@@ -6,6 +6,7 @@
 		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
 		width: 300px !important;
 		box-sizing: border-box;
+		background: var(--bg-main);
 		.avatarWrapper-eenWra {
 			position: absolute;
 			top: 24px;
@@ -93,7 +94,8 @@
 		gap: 8px;
 	}
 	.role-2TIOKu {
-		@include mixins.subText;
+		color: var(--text-secondary);
+		line-height: var(--line-height);
 		background: var(--bg-content);
 		margin: 0;
 		padding: 6px 8px;
@@ -120,15 +122,11 @@
 	.roleName-2ZJJYR {
 		margin: 0 0 0 4px;
 	}
-	.roleRemoveButton-17oXnT {
-	}
-	.roleRemoveIcon-387wKV {
-		
-	}
 
 	.footer-3naVBw {
 		padding: 0 24px 24px;
 		margin: 0;
+		background: transparent;
 	}
 
 	.buttonInner-1RE0NV{
