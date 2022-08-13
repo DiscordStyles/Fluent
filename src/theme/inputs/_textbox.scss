@@ -12,6 +12,7 @@
 		border-bottom-color: var(--textbox-underline);
 		transition: none;
 		color: var(--text-secondary) !important;
+		cursor: text;
 
 		&::placeholder {
 			font-size: var(--font-size-sm);
@@ -40,5 +41,14 @@
 	 .multiInputLast-35zVz0 input {
 		 padding-left: 36px;
 	 }
+	}
+	.inputWrapper-1YNMmM > svg {
+		width: 18px;
+		height: 18px;
+		left: 8px;
+		top: 8px;
+		& + .input-2g-os5 {
+			padding-left: 32px;
+		}
 	}
 }

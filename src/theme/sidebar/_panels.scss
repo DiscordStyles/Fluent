@@ -29,8 +29,10 @@
 				position: absolute;
 				left: calc(var(--channels-width) + var(--chat-spacing-x));
 				margin-top: -91px;
-				background-color: transparent;
-				min-width: 10px !important;
+				min-width: unset;
+				&:hover {
+					background: transparent;
+				}
 			}
 
 			.nameTag-sc-gpq {

@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '1.0.8';
+	--fluent-version: '1.0.10';
 	--transition: cubic-bezier(0,0,0,1);
 
 	--accent-text: rgb(39, 39, 39);
@@ -68,5 +68,6 @@
 
 	--text-normal: var(--text-primary);
 	--text-muted: var(--text-tertiary);
+	--interactive-muted: var(--text-quaternary);
 	--text-link: rgb(var(--accent));
 }

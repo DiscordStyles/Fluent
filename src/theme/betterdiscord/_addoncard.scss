@@ -39,3 +39,21 @@
 		}
 	}
 }
+
+#Fluent-card {
+	position: relative;
+	z-index: -1;
+	&::before {
+		content: '';
+		background: url('https://i.imgur.com/HQVfRQy.jpg') center/cover;
+		position: absolute;
+		inset: 0;
+		z-index: 0;
+		opacity: .1;
+		pointer-events: none;
+	}
+	& > div {
+		position: relative;
+		z-index: 1;
+	}
+}

@@ -116,6 +116,35 @@
 		}
 	}
 
+	// Mention/Link Channel
+	.wrapper-1ZcZW- {
+		background: rgb(var(--accent));
+		color: var(--accent-text);
+		font-weight: var(--font-weight-semibold);
+		cursor: default;
+		&:hover {
+			box-shadow: inset 0 0 0 100vmax var(--btn-bg-hover);
+		}
+	}
+
+	// Reactions
+	.reaction-102jx9 {
+		background: transparent;
+		border-color: var(--border-high);
+		border-radius: 50px;
+		cursor: default;
+		transition: none;
+		&:hover {
+			background: var(--bg-interactive-high);
+		}
+		&.reactionMe-2zhiyZ {
+			border-color: rgb(var(--accent));
+			.reactionCount-SWXh9W {
+				color: rgb(var(--accent));
+			}
+		}
+	}
+
 	// Codeblocks/file embeds
 	.markup-eYLPri code {
 		background: var(--bg-alt);
