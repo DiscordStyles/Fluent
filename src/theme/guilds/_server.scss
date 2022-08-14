@@ -2,115 +2,128 @@
 @use "../mixins";
 
 #app-mount {
-	.guilds-2JjMmN {
-		[class*="pill"] {
-			width: 4px;
-			margin-left: 0;
-			left: calc((var(--server-container) / 2) - (var(--server-size) / 2));
-			z-index: 1;
-			height: var(--server-size);
-			span {
-				height: var(--pill-height) !important;
-				width: 100% !important;
-				transform: scale(0, 1) !important;
-				transition: 0.15s var(--transition) !important;
-				margin-left: 0;
-				border-radius: var(--rounded-high);
-			}
-			@for $i from 0 through 8 {
-				span[style*="height: #{$i}"] {
-					transform: scale(1, 0.5) !important;
-					background: var(--pill-unread);
-				}
-			}
-			// Hovered
-			@for $i from 9 through 20 {
-				span[style*="height: #{$i}"] {
-					transform: scale(1, 0.7) !important;
-					background: var(--pill-hovered);
-				}
-			}
-			// Selected
-			@for $i from 21 through 40 {
-				span[style*="height: #{$i}"] {
-					transform: scale(1, 1) !important;
-					background: rgb(var(--accent));
-				}
-			}
-		}
-	}
-	.listItem-3SmSlK {
-		margin: 0 0 4px;
-		width: var(--server-container);
-		position: relative;
-		foreignObject {
-			mask: none;
-			border-radius: var(--rounded);
-			box-sizing: border-box;
-		}
-	}
-	.wrapper-28eC3z {
-		border-radius: var(--rounded);
-		cursor: var(--cursor);
-		width: var(--server-size);
-		height: var(--server-size);
-	}
-	.wrapper-3kah-n {
-		position: relative;
-		transition: box-shadow 0.15s var(--transition);
-		&:hover,
-		&.selected-1Drb7Z {
-			box-shadow: var(--server-hover-selected);
-		}
-	}
+    .guilds-2JjMmN {
+        [class*="pill"] {
+            width: 4px;
+            margin-left: 0;
+            left: calc(
+                (var(--server-container) / 2) - (var(--server-size) / 2)
+            );
+            z-index: 1;
+            height: var(--server-size);
+            span {
+                height: var(--pill-height) !important;
+                width: 100% !important;
+                transform: scale(0, 1) !important;
+                transition: 0.15s var(--transition) !important;
+                margin-left: 0;
+                border-radius: var(--rounded-high);
+            }
+            @for $i from 0 through 8 {
+                span[style*="height: #{$i}"] {
+                    transform: scale(1, 0.5) !important;
+                    background: var(--pill-unread);
+                }
+            }
+            // Hovered
+            @for $i from 9 through 20 {
+                span[style*="height: #{$i}"] {
+                    transform: scale(1, 0.7) !important;
+                    background: var(--pill-hovered);
+                }
+            }
+            // Selected
+            @for $i from 21 through 40 {
+                span[style*="height: #{$i}"] {
+                    transform: scale(1, 1) !important;
+                    background: rgb(var(--accent));
+                }
+            }
+        }
+    }
+    .listItem-3SmSlK {
+        margin: 0 0 4px;
+        width: var(--server-container);
+        position: relative;
+        foreignObject {
+            mask: none;
+            border-radius: var(--rounded);
+            box-sizing: border-box;
+        }
+    }
+    .wrapper-28eC3z {
+        border-radius: var(--rounded);
+        cursor: var(--cursor);
+        width: var(--server-size);
+        height: var(--server-size);
+    }
+    .wrapper-3kah-n {
+        text-transform: uppercase;
+        color: var(--text-secondary);
+        position: relative;
+        transition: box-shadow 0.15s var(--transition);
+        &:hover,
+        &.selected-1Drb7Z {
+            color: var(--text-primary);
+            box-shadow: var(--server-hover-selected);
+        }
+    }
 
-	.svg-2zuE5p {
-		border-radius: 50%;
-		box-sizing: border-box;
-		width: var(--server-size);
-		height: var(--server-size);
-		foreignObject {
-			width: 100%;
-			height: 100%;
-		}
-	}
+    .wrapper-2fEmwW {
+        border-radius: var(--rounded);
+    }
 
-	.icon-3AqZ2e,
-	.childWrapper-1j_1ub {
-		width: var(--server-icon-size);
-		height: var(--server-icon-size);
-		border-radius: var(--server-icon-shape);
-		position: relative;
-		z-index: 2;
-	}
+    .users-2JoyGL {
+        background: var(--bg-content-alt);
+    }
 
-	.homeIcon-r0w4ny {
-		width: 75%;
-		height: 75%;
-		mask: url(mono.$home) center/cover;
-		background: var(--interactive-normal);
-		path {
-			display: none;
-		}
-	}
+    .svg-2zuE5p {
+        border-radius: 50%;
+        box-sizing: border-box;
+        width: var(--server-size);
+        height: var(--server-size);
+        foreignObject {
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-	.childWrapper-1j_1ub {
-		background: transparent;
-		font-weight: var(--font-weight-semibold);
-	}
-	.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
-		background: transparent;
-		color: var(--text-primary);
-	}
+    .icon-3AqZ2e,
+    .childWrapper-1j_1ub {
+        width: var(--server-icon-size);
+        height: var(--server-icon-size);
+        border-radius: var(--server-icon-shape);
+        position: relative;
+        z-index: 2;
+    }
 
-	.circleIconButton-1VxDrg {
-		background: transparent;
-		&.selected-2r1Hvo {
-			background: transparent;
-		}
-	}
+    .homeIcon-r0w4ny {
+        width: 75%;
+        height: 75%;
+        mask: url(mono.$home) center/cover;
+        background: var(--interactive-normal);
+        path {
+            display: none;
+        }
+    }
 
-	.blobContainer-ikKyFs:active {
-		transform: none;
-	}
+    .childWrapper-1j_1ub {
+        background: transparent;
+        font-weight: var(--font-weight-semibold);
+    }
+    .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
+        background: transparent;
+        color: var(--text-primary);
+    }
+
+    .circleIconButton-1VxDrg {
+        background: transparent;
+        &.selected-2r1Hvo {
+            background: transparent;
+        }
+    }
+
+    .blobContainer-ikKyFs:active {
+        transform: none;
+    }
 }

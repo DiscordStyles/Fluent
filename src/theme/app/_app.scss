@@ -1,47 +1,48 @@
 // Wack ass text flickering
-html, span:not([class*="spinner-"], [class*="spinnerItem"]) {
-	backface-visibility: hidden;
+html,
+span:not([class*="spinner-"], [class*="spinnerItem"]) {
+    backface-visibility: hidden;
 }
 
 body,
 .appMount-2yBXZl,
 .app-2CXKsg {
-	background: var(--bg-main);
+    background: var(--bg-main);
 }
 .bg-1QIAus {
-	background: transparent;
+    background: transparent;
 }
 
 // Remove pointer from clickable
 [class*="clickable-"],
 [class*="cursorPointer-"],
 [class*="selectable-"] {
-	cursor: var(--cursor) !important;
+    cursor: var(--cursor) !important;
 }
 
 // Content
 .base-2jDfDU {
-	background: var(--bg-alt);
-	border-top: 1px solid var(--border-high);
-	border-left: 1px solid var(--border-high);
-	border-top-left-radius: var(--rounded);
+    background: var(--bg-alt);
+    border-top: 1px solid var(--border-high);
+    border-left: 1px solid var(--border-high);
+    border-top-left-radius: var(--rounded-high);
 }
 
 // Version
 .layer-86YKbF:not(.baseLayer-W6S8cY) .info-3pQQBb > span:first-child::before {
-	display: block;
-	content: "Fluent v" var(--fluent-version);
-	text-transform: none;
+    display: block;
+    content: "Fluent v" var(--fluent-version);
+    text-transform: none;
 }
 
 // Settings animation fixes
 .layer-86YKbF {
-	transform: scale(1) !important;
-	z-index: 1;
-	&.baseLayer-W6S8cY {
-		transform: none !important;
-		opacity: 1 !important;
-		padding-top: 0 !important;
-		transition: none !important;
-	}
+    transform: scale(1) !important;
+    z-index: 1;
+    &.baseLayer-W6S8cY {
+        transform: none !important;
+        opacity: 1 !important;
+        padding-top: 0 !important;
+        transition: none !important;
+    }
 }
