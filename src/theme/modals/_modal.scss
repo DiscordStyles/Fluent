@@ -55,6 +55,9 @@
 			text-transform: none;
 			@include mixins.subText;
 		}
+		.optionHeader-27AHfD {
+			color: var(--text-secondary) !important;
+		}
 	}
 	.size16-rrJ6ag {
 		@include mixins.text;
