@@ -1067,7 +1067,7 @@ body,
 #app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW {
   position: absolute;
   left: calc(var(--channels-width) + var(--chat-spacing-x));
-  margin-top: -91px;
+  margin-top: -85px;
   min-width: unset;
 }
 #app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW:hover {
@@ -3757,7 +3757,7 @@ body,
   line-height: 20px;
   font-size: var(--font-size-sm);
   cursor: var(--cursor);
-  margin: 0;
+  margin: 1px;
   min-height: auto;
   height: auto;
 }
@@ -5603,6 +5603,9 @@ body,
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
 }
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .content-2hZxGK .optionHeader-27AHfD {
+  color: var(--text-secondary) !important;
+}
 #app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) .size16-rrJ6ag {
   color: var(--text-secondary);
   font-size: var(--font-size);
@@ -6142,6 +6145,9 @@ body,
 #app-mount .container-1Lk8p7 .container-x8Y1ix .arrow-2yY1Tm {
   margin-right: 10px;
   filter: invert(1);
+}
+#app-mount .container-1Lk8p7 .container-x8Y1ix .text-PdAsFQ {
+  color: var(--text-primary);
 }
 #app-mount .container-1Lk8p7 .skip-2hTIXL {
   color: var(--text-tertiary);
