@@ -2428,13 +2428,13 @@ body,
 #app-mount .menu-1QACrS .button-1zW0-r:hover {
   background: var(--bg-higher);
 }
-#app-mount .menu-1QACrS [role=group]:not(.wrapper--nA0oy) {
+#app-mount .menu-1QACrS [role=group]:not(.wrapper--nA0oy, .container-1gYwHN) {
   padding: 6px;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-#app-mount .menu-1QACrS [role=group]:not(.wrapper--nA0oy) > .item-1OdjEX:last-child {
+#app-mount .menu-1QACrS [role=group]:not(.wrapper--nA0oy, .container-1gYwHN) > .item-1OdjEX:last-child {
   margin-bottom: 0;
 }
 #app-mount .menu-1QACrS [role=separator] {
