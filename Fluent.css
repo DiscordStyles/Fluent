@@ -5680,7 +5680,7 @@ body,
   justify-content: flex-end;
   gap: 12px;
 }
-#app-mount .topSection-13QKHs .bannerSVGWrapper-qc0szY {
+#app-mount .bannerSVGWrapper-qc0szY {
   position: absolute;
   top: 0;
   left: 0;
@@ -5688,23 +5688,26 @@ body,
           mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent);
   z-index: -1;
 }
-#app-mount .topSection-13QKHs .bannerSVGWrapper-qc0szY circle {
+#app-mount .bannerSVGWrapper-qc0szY circle {
   display: none;
 }
-#app-mount .topSection-13QKHs .bannerSVGWrapper-qc0szY foreignObject {
+#app-mount .bannerSVGWrapper-qc0szY foreignObject {
   -webkit-mask: none;
           mask: none;
 }
-#app-mount .topSection-13QKHs .bannerSVGWrapper-qc0szY .banner-2boKnS {
+#app-mount .bannerSVGWrapper-qc0szY .banner-2boKnS {
   height: 300px;
 }
-#app-mount .topSection-13QKHs .bannerSVGWrapper-qc0szY[viewbox*="600 106"] {
+#app-mount .bannerSVGWrapper-qc0szY[viewbox*="600 106"] {
   min-height: 300px !important;
 }
-#app-mount .topSection-13QKHs .bannerSVGWrapper-qc0szY[viewbox*="600 106"] .banner-2boKnS {
+#app-mount .bannerSVGWrapper-qc0szY[viewbox*="600 106"] .banner-2boKnS {
   border-radius: 0;
   top: calc(-100% + 25px);
   position: absolute;
+}
+#app-mount .pencilContainer-11Kuga {
+  display: none;
 }
 #app-mount .avatar-3QF_VA {
   left: unset;
@@ -5784,6 +5787,7 @@ body,
   background: transparent;
   height: 420px;
   border: none;
+  flex: none;
 }
 #app-mount .body-1Ukv50 .scrollerBase-_bVAAt {
   padding: 0 !important;
@@ -5824,16 +5828,16 @@ body,
 #app-mount .listRow-2nO1T6:hover {
   background: var(--bg-interactive);
 }
-#app-mount .connectedAccounts-fvr7-7 {
+#app-mount .connectedAccounts-2R5M4w {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
-#app-mount .connectedAccountsColumn-2LgTkZ {
+#app-mount .connectedAccountsColumn-1zdyyx {
   margin-left: 0;
 }
-#app-mount .connectedAccountContainer-SlCC-S {
+#app-mount .connectedAccountContainer-3aLMHJ {
   margin: 0;
   width: 100%;
   box-sizing: border-box;
@@ -5842,14 +5846,14 @@ body,
   border: none;
   padding: 12px;
 }
-#app-mount .connectedAccountContainer-SlCC-S:not(:last-child) {
+#app-mount .connectedAccountContainer-3aLMHJ:not(:last-child) {
   margin-bottom: 24px;
 }
-#app-mount .connectedAccountIcon-2vls0t {
+#app-mount .connectedAccountIcon-3FdW8x {
   width: 24px;
   height: 24px;
 }
-#app-mount .connectedAccountNameContainer-EXbBUQ {
+#app-mount .connectedAccountNameContainer-3e9mvO {
   color: var(--text-secondary);
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
