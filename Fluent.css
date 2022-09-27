@@ -5682,13 +5682,21 @@ body,
   flex-direction: column-reverse;
   justify-content: flex-end;
 }
-#app-mount .topSection-13QKHs .banner-1YaD3N {
+#app-mount .topSection-13QKHs .bannerSVGWrapper-qc0szY {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 80%);
+          mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 80%);
+}
+#app-mount .topSection-13QKHs .bannerSVGWrapper-qc0szY circle {
+  display: none;
+}
+#app-mount .topSection-13QKHs .bannerSVGWrapper-qc0szY .banner-1YaD3N {
   position: absolute;
   top: 0;
   left: 0;
   height: 300px;
-  -webkit-mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 80%);
-          mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 80%);
   pointer-events: none;
   width: 100%;
   max-width: unset;
@@ -5712,8 +5720,8 @@ body,
 }
 #app-mount .actionButton-iarQTd {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 24px;
+  right: 24px;
   height: 120px;
   width: 120px;
   border-radius: 50%;
