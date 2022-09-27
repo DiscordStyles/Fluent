@@ -31,31 +31,34 @@ $banner-height: 300px;
 			justify-content: flex-end;
 			gap: 12px;
 		}
-		.bannerSVGWrapper-qc0szY {
-			position: absolute;
-			top: 0;
-			left: 0;
-			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent);
-			z-index: -1;
-			circle {
-				display: none;
-			}
-			foreignObject {
-				mask: none;
-			}
+	}
+	.bannerSVGWrapper-qc0szY {
+		position: absolute;
+		top: 0;
+		left: 0;
+		mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent);
+		z-index: -1;
+		circle {
+			display: none;
+		}
+		foreignObject {
+			mask: none;
+		}
+		.banner-2boKnS {
+			height: $banner-height;
+		}
+		// No custom banner
+		&[viewbox*="600 106"] {
+			min-height: $banner-height !important;
 			.banner-2boKnS {
-				height: $banner-height;
-			}
-			// No custom banner
-			&[viewbox*="600 106"] {
-				min-height: $banner-height !important;
-				.banner-2boKnS {
-					border-radius: 0;
-					top: calc(-100% + 25px);
-					position: absolute;
-				}
+				border-radius: 0;
+				top: calc(-100% + 25px);
+				position: absolute;
 			}
 		}
+	}
+	.pencilContainer-11Kuga {
+		display: none;
 	}
 	.avatar-3QF_VA {
 		left: unset;
@@ -129,6 +132,7 @@ $banner-height: 300px;
 		background: transparent;
 		height: 420px;
 		border: none;
+		flex: none;
 		.scrollerBase-_bVAAt {
 			padding: 0 !important;
 			&::-webkit-scrollbar {
@@ -168,16 +172,16 @@ $banner-height: 300px;
 		}
 	}
 
-	.connectedAccounts-fvr7-7 {
+	.connectedAccounts-2R5M4w {
 		margin: 0;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 24px;
 	}
-	.connectedAccountsColumn-2LgTkZ {
+	.connectedAccountsColumn-1zdyyx {
 		margin-left: 0;
 	}
-	.connectedAccountContainer-SlCC-S {
+	.connectedAccountContainer-3aLMHJ {
 		margin: 0;
 		width: 100%;
 		box-sizing: border-box;
@@ -189,11 +193,11 @@ $banner-height: 300px;
 			margin-bottom: 24px;
 		}
 	}
-	.connectedAccountIcon-2vls0t {
+	.connectedAccountIcon-3FdW8x {
 		width: 24px;
 		height: 24px;
 	}
-	.connectedAccountNameContainer-EXbBUQ {
+	.connectedAccountNameContainer-3e9mvO {
 		@include mixins.text;
 		margin: 0 0 0 8px;
 	}
