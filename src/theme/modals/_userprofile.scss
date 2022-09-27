@@ -30,16 +30,24 @@ $banner-height: 300px;
 			flex-direction: column-reverse;
 			justify-content: flex-end;
 		}
-		.banner-1YaD3N {
+		.bannerSVGWrapper-qc0szY {
 			position: absolute;
 			top: 0;
 			left: 0;
-			height: $banner-height;
 			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 80%);
-			pointer-events: none;
-			width: 100%;
-			max-width: unset;
-			z-index: -2;
+			circle {
+				display: none;
+			}
+			.banner-1YaD3N {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: $banner-height;
+				pointer-events: none;
+				width: 100%;
+				max-width: unset;
+				z-index: -2;
+			}
 		}
 	}
 	.avatar-3QF_VA {
@@ -60,8 +68,8 @@ $banner-height: 300px;
 	}
 	.actionButton-iarQTd {
 		position: absolute;
-		top: 32px;
-		right: 32px;
+		top: 24px;
+		right: 24px;
 		height: 120px;
 		width: 120px;
 		border-radius: 50%;
