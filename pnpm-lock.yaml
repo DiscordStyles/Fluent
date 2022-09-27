@@ -1,10 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
-  bd-scss: ^2.0.9
+  bd-scss: ^2.0.11
 
 dependencies:
-  bd-scss: 2.0.9
+  bd-scss: 2.0.11
 
 packages:
 
@@ -16,15 +16,15 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /autoprefixer/10.4.8_postcss@8.4.16:
-    resolution: {integrity: sha512-75Jr6Q/XpTqEf6D2ltS5uMewJIx5irCU1oBYJrWjFenq/m12WRRrz6g15L1EIoYvPLXTbEry7rDOwrcYNj77xw==}
+  /autoprefixer/10.4.12_postcss@8.4.16:
+    resolution: {integrity: sha512-WrCGV9/b97Pa+jtwf5UGaRjgQIg7OK3D06GnoYoZNcG1Xb8Gt3EfuKjlhh9i/VtT16g6PYjZ69jdJ2g8FxSC4Q==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      browserslist: 4.21.3
-      caniuse-lite: 1.0.30001375
+      browserslist: 4.21.4
+      caniuse-lite: 1.0.30001412
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -32,16 +32,16 @@ packages:
       postcss-value-parser: 4.2.0
     dev: false
 
-  /bd-scss/2.0.9:
-    resolution: {integrity: sha512-lO6nAqt0IskBU83rDgviiASkk4q1BIu8jTtv20Ys7HxaOMJlUBkdYJmUtf9HwOYstcXuV6mECtUTL84Jtr4jug==}
+  /bd-scss/2.0.11:
+    resolution: {integrity: sha512-xC3GdkL8maMH+IXArbv6FgBB4u+/fzbj2IgMBw6Eo1NCG+bL9zH76D660xABv7iW6K8C78GSBRjUCC/6Kx3qLg==}
     hasBin: true
     dependencies:
-      autoprefixer: 10.4.8_postcss@8.4.16
+      autoprefixer: 10.4.12_postcss@8.4.16
       chalk: 5.0.1
       chokidar: 3.5.3
       postcss: 8.4.16
       sade: 1.8.1
-      sass: 1.54.4
+      sass: 1.55.0
     dev: false
 
   /binary-extensions/2.2.0:
@@ -56,19 +56,19 @@ packages:
       fill-range: 7.0.1
     dev: false
 
-  /browserslist/4.21.3:
-    resolution: {integrity: sha512-898rgRXLAyRkM1GryrrBHGkqA5hlpkV5MhtZwg9QXeiyLUYs2k00Un05aX5l2/yJIOObYKOpS2JNo8nJDE7fWQ==}
+  /browserslist/4.21.4:
+    resolution: {integrity: sha512-CBHJJdDmgjl3daYjN5Cp5kbTf1mUhZoS+beLklHIvkOWscs83YAhLlF3Wsh/lciQYAcbBJgTOD44VtG31ZM4Hw==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001375
-      electron-to-chromium: 1.4.217
+      caniuse-lite: 1.0.30001412
+      electron-to-chromium: 1.4.264
       node-releases: 2.0.6
-      update-browserslist-db: 1.0.5_browserslist@4.21.3
+      update-browserslist-db: 1.0.9_browserslist@4.21.4
     dev: false
 
-  /caniuse-lite/1.0.30001375:
-    resolution: {integrity: sha512-kWIMkNzLYxSvnjy0hL8w1NOaWNr2rn39RTAVyIwcw8juu60bZDWiF1/loOYANzjtJmy6qPgNmn38ro5Pygagdw==}
+  /caniuse-lite/1.0.30001412:
+    resolution: {integrity: sha512-+TeEIee1gS5bYOiuf+PS/kp2mrXic37Hl66VY6EAfxasIk5fELTktK2oOezYed12H8w7jt3s512PpulQidPjwA==}
     dev: false
 
   /chalk/5.0.1:
@@ -91,8 +91,8 @@ packages:
       fsevents: 2.3.2
     dev: false
 
-  /electron-to-chromium/1.4.217:
-    resolution: {integrity: sha512-iX8GbAMij7cOtJPZo02CClpaPMWjvN5meqXiJXkBgwvraNWTNH0Z7F9tkznI34JRPtWASoPM/xWamq3oNb49GA==}
+  /electron-to-chromium/1.4.264:
+    resolution: {integrity: sha512-AZ6ZRkucHOQT8wke50MktxtmcWZr67kE17X/nAXFf62NIdMdgY6xfsaJD5Szoy84lnkuPWH+4tTNE3s2+bPCiw==}
     dev: false
 
   /escalade/3.1.1:
@@ -215,8 +215,8 @@ packages:
       mri: 1.2.0
     dev: false
 
-  /sass/1.54.4:
-    resolution: {integrity: sha512-3tmF16yvnBwtlPrNBHw/H907j8MlOX8aTBnlNX1yrKx24RKcJGPyLhFUwkoKBKesR3unP93/2z14Ll8NicwQUA==}
+  /sass/1.55.0:
+    resolution: {integrity: sha512-Pk+PMy7OGLs9WaxZGJMn7S96dvlyVBwwtToX895WmCpAOr5YiJYEUJfiJidMuKb613z2xNWcXCHEuOvjZbqC6A==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -237,13 +237,13 @@ packages:
       is-number: 7.0.0
     dev: false
 
-  /update-browserslist-db/1.0.5_browserslist@4.21.3:
-    resolution: {integrity: sha512-dteFFpCyvuDdr9S/ff1ISkKt/9YZxKjI9WlRR99c180GaztJtRa/fn18FdxGVKVsnPY7/a/FDN68mcvUmP4U7Q==}
+  /update-browserslist-db/1.0.9_browserslist@4.21.4:
+    resolution: {integrity: sha512-/xsqn21EGVdXI3EXSum1Yckj3ZVZugqyOZQ/CxYPBD/R+ko9NSUScf8tFF4dOKY+2pvSSJA/S+5B8s4Zr4kyvg==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:
-      browserslist: 4.21.3
+      browserslist: 4.21.4
       escalade: 3.1.1
       picocolors: 1.0.0
     dev: false
