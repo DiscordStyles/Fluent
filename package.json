@@ -12,6 +12,6 @@
     "build": "bd-scss build"
   },
   "dependencies": {
-    "bd-scss": "^2.0.9"
+    "bd-scss": "^2.0.11"
   }
 }
