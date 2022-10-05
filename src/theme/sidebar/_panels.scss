@@ -27,11 +27,28 @@
 			// Move avatar to chat area.
 			.avatarWrapper-1B9FTW {
 				position: absolute;
-				left: calc(var(--channels-width) + var(--chat-spacing-x));
-				margin-top: -85px;
+				left: calc(var(--server-size) / -1 - 10px);
 				min-width: unset;
+				margin: 0 0 8px 0;
+				padding: 0;
+				width: var(--server-size);
+				height: var(--server-size);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: var(--rounded);
+				transition: box-shadow 0.15s var(--transition);
+
+				.avatar-1EWyVD {
+					cursor: default;
+				}
+
 				&:hover {
 					background: transparent;
+					box-shadow: var(--server-hover-selected)
+				}
+				&[aria-expanded="true"] {
+					box-shadow: var(--server-hover-selected)
 				}
 			}
 

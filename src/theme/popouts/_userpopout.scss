@@ -1,6 +1,7 @@
 @use '../mixins';
 
 #app-mount {
+	// Members list
 	.userPopout-2j1gM4 {
 		border-radius: var(--rounded-high);
 		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
@@ -109,5 +110,12 @@
 		padding: 0 24px 24px;
 		margin: 0;
 		background: transparent;
+	}
+
+
+
+	// Bottom left thingy
+	.accountProfilePopoutWrapper-3GskID {
+		left: 0;
 	}
 }

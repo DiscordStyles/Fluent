@@ -111,10 +111,10 @@
 		}
 	}
 
-	// Mention/Link Channel
+	// @Mention/Link Channel
 	.wrapper-1ZcZW- {
-		background: rgb(var(--accent));
-		color: var(--accent-text);
+		background: rgb(var(--accent), .1);
+		color: rgb(var(--accent));
 		font-weight: var(--font-weight-semibold);
 		cursor: default;
 		&:hover {

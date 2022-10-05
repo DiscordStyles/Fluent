@@ -2,14 +2,13 @@
 
 Brings the look of Windows 11 to Discord.
 
-![Server Chat](https://i.imgur.com/WasgeFy.png)
-![User Settings](https://i.imgur.com/3uL8y2m.png)
+![Server Chat](https://i.imgur.com/IcVwWMB.png)
+![User Settings](https://i.imgur.com/k49BT0N.png)
 
 ## Download
 
 BetterDiscord Download: [https://betterdiscord.app/theme/Fluent](https://betterdiscord.app/Download?id=662)  
 Powercord Install: `git clone https://github.com/DiscordStyles/Fluent --branch deploy`  
-Goosemod Install: Search for `Fluent` in the Goosemod Theme store and install it from there.
 
 ## Contributing
 

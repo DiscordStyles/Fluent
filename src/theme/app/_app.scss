@@ -25,7 +25,14 @@ body,
 	border-top: 1px solid var(--border-high);
 	border-left: 1px solid var(--border-high);
 	border-top-left-radius: var(--rounded);
+
+	// Make bottom left status picker visible in server list.
+	overflow: visible;
 }
+.content-1SgpWY {
+	width: calc(100vw - var(--server-container));
+}
+
 
 // Version
 .layer-86YKbF:not(.baseLayer-W6S8cY) .info-3pQQBb > span:first-child::before {
