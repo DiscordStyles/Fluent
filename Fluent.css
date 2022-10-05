@@ -44,6 +44,7 @@
   --server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x), inset 0 1px 0 var(--btn-border-t), inset -1px 0 var(--btn-border-x), inset 0 -1px 0 var(--btn-border-b);
   --server-icon-shape: 50%;
   --server-folder-icon-shape: 2px;
+  --channel-padding: 8px;
   --banner-height: 155px;
   --win-btn-height: 32px;
   --win-btn-width: 52px;
@@ -203,6 +204,11 @@ body,
   border-top: 1px solid var(--border-high);
   border-left: 1px solid var(--border-high);
   border-top-left-radius: var(--rounded);
+  overflow: visible;
+}
+
+.content-1SgpWY {
+  width: calc(100vw - var(--server-container));
 }
 
 .layer-86YKbF:not(.baseLayer-W6S8cY) .info-3pQQBb > span:first-child::before {
@@ -474,6 +480,9 @@ body,
 #app-mount .guilds-2JjMmN.hidden-10MsGQ + .base-2jDfDU {
   border: none;
 }
+#app-mount .guilds-2JjMmN > ul[role=tree] {
+  margin-bottom: var(--server-container);
+}
 #app-mount .scroller-3X7KbA {
   background: var(--bg-main);
   padding-top: 0;
@@ -482,7 +491,6 @@ body,
   height: var(--server-size) !important;
   margin-bottom: 4px;
 }
-
 #app-mount .guilds-2JjMmN [class*=pill] {
   width: 4px;
   margin-left: 0;
@@ -867,8 +875,7 @@ body,
   font-weight: var(--font-weight-normal);
 }
 #app-mount .mainContent-20q_Hp {
-  padding: 0;
-  height: 36px;
+  padding: var(--channel-padding) 0;
   cursor: var(--cursor);
 }
 #app-mount .unread-36eUEm {
@@ -922,9 +929,6 @@ body,
   stroke: var(--bg-alt);
 }
 
-#app-mount .containerDefault-3TQ5YN {
-  margin: 0;
-}
 #app-mount .containerDefault-3TQ5YN .wrapper-1S43wv {
   padding-right: 0;
 }
@@ -939,9 +943,6 @@ body,
 #app-mount .container-1-ERn5 {
   display: flex;
   flex-direction: column-reverse;
-}
-#app-mount .container-1-ERn5.communityInfoVisible-3zc5_s {
-  margin-bottom: 25px;
 }
 #app-mount .header-3OsQeK {
   border-radius: var(--btn-radius);
@@ -1066,12 +1067,27 @@ body,
 }
 #app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW {
   position: absolute;
-  left: calc(var(--channels-width) + var(--chat-spacing-x));
-  margin-top: -85px;
+  left: calc(var(--server-size) / -1 - 10px);
   min-width: unset;
+  margin: 0 0 8px 0;
+  padding: 0;
+  width: var(--server-size);
+  height: var(--server-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--rounded);
+  transition: box-shadow 0.15s var(--transition);
+}
+#app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW .avatar-1EWyVD {
+  cursor: default;
 }
 #app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW:hover {
   background: transparent;
+  box-shadow: var(--server-hover-selected);
+}
+#app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW[aria-expanded=true] {
+  box-shadow: var(--server-hover-selected);
 }
 #app-mount .panels-3wFtMD > .container-YkUktl .nameTag-sc-gpq {
   display: none;
@@ -1428,8 +1444,8 @@ body,
   color: hsl(var(--discord-red));
 }
 #app-mount .wrapper-1ZcZW- {
-  background: rgb(var(--accent));
-  color: var(--accent-text);
+  background: rgb(var(--accent), 0.1);
+  color: rgb(var(--accent));
   font-weight: var(--font-weight-semibold);
   cursor: default;
 }
@@ -1544,7 +1560,7 @@ body,
 }
 
 #app-mount .form-3gdLxP {
-  padding: 28px var(--chat-spacing-x) 0 calc(var(--chat-spacing-x) + 56px);
+  padding: 28px var(--chat-spacing-x) 0 var(--chat-spacing-x);
   margin-top: 0;
 }
 #app-mount .form-3gdLxP::before {
@@ -2605,6 +2621,9 @@ body,
   padding: 0 24px 24px;
   margin: 0;
   background: transparent;
+}
+#app-mount .accountProfilePopoutWrapper-3GskID {
+  left: 0;
 }
 
 #status-picker .statusItem-2hiCNB {
