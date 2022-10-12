@@ -24,7 +24,7 @@
 
 	.container-2qVG6q {
 		@include mixins.card($fgap: 0);
-		cursor: default;
+		cursor: var(--cursor);
 		transition: none;
 		&:hover {
 			box-shadow: none;

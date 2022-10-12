@@ -40,7 +40,7 @@
 				transition: box-shadow 0.15s var(--transition);
 
 				.avatar-1EWyVD {
-					cursor: default;
+					cursor: var(--cursor);
 				}
 
 				&:hover {

@@ -121,7 +121,7 @@
 		background: rgb(var(--accent), .1);
 		color: rgb(var(--accent));
 		font-weight: var(--font-weight-semibold);
-		cursor: default;
+		cursor: var(--cursor);
 		&:hover {
 			box-shadow: inset 0 0 0 100vmax var(--btn-bg-hover);
 		}
@@ -132,7 +132,7 @@
 		background: transparent;
 		border-color: var(--border-high);
 		border-radius: 50px;
-		cursor: default;
+		cursor: var(--cursor);
 		transition: none;
 		&:hover {
 			background: var(--bg-interactive-high);
