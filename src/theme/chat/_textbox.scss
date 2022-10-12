@@ -2,8 +2,8 @@
 
 #app-mount {
 	.form-3gdLxP {
-		padding: 18px var(--chat-spacing-x) 0 calc(var(--chat-spacing-x) + 56px);
-		//padding: 28px var(--chat-spacing-x) 0 calc(var(--chat-spacing-x) + 56px);
+		padding: 18px var(--chat-spacing-x) 0 var(--chat-spacing-x);
+		//padding: 28px var(--chat-spacing-x) 0 var(--chat-spacing-x);
 		margin-top: 0;
 		&::before {
 			content: none;

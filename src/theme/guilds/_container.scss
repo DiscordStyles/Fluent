@@ -8,6 +8,9 @@
 				border: none;
 			}
 		}
+		& > ul[role="tree"] {
+			margin-bottom: var(--server-container);
+		}
 	}
 	.scroller-3X7KbA {
 		background: var(--bg-main);
@@ -16,5 +19,9 @@
 			height: var(--server-size) !important;
 			margin-bottom: 4px;
 		}
+	}
+	.container-1NXEtd {
+		// overflow: hidden;
+		// border-top-left-radius: var(--rounded);
 	}
 }

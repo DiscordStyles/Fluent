@@ -3,7 +3,7 @@
 Brings the look of Windows 11 to Discord.
 
 ![Server Chat](./screenshots/2022-02-22_170832.png)
-![User Settings](https://i.imgur.com/3uL8y2m.png)
+![User Settings](https://i.imgur.com/k49BT0N.png)
 <sup>1 In the screenshots I also use [this](https://betterdiscord.app/theme/RadialStatus) theme</sup><br/>
 <sup>2 The screenshots are taken in a 4k screen with 150% scaling</sup><br/>
 <sup>3 The screenshots are not frecuently updated, the theme will probably be more similar to the ones found in [Fluent](https://github.com/DiscordStyles/Fluent)</sup><br/>
@@ -11,8 +11,6 @@ Brings the look of Windows 11 to Discord.
 ## Download
 
 BetterDiscord: [Download](https://github.com/xsm2/Fluent/releases/latest)
-
-Powercord Install: `git clone https://github.com/xsm2/Fluent`
 
 ## Contributing
 
