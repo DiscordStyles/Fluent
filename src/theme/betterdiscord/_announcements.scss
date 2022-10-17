@@ -1,7 +1,7 @@
 #app-mount {
 	#bd-notices {
         .bd-notice, .bd-notice-info{
-            height: calc(var(--win-btn-height) + 8px);
+            height: calc(var(--win-btn-height) + 9px);
             padding-top: 5px;
             .bd-notice-close{
                 right: 160px !important;
@@ -9,6 +9,14 @@
             }
             .bd-notice-content{}
             .bd-notice-button{}
+        }
+    }
+
+    .notice-2HEN-u{
+        height: calc(var(--win-btn-height) + 9px) !important;
+        padding-top: 5px;
+        .closeButton-30b1gR{
+            height: 100%;
         }
     }
 }
