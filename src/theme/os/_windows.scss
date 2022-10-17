@@ -13,7 +13,7 @@
 }
 
 .typeWindows-2-g3UY {
-	height: var(--win-btn-height);
+	//height: var(--win-btn-height);
     $withd-title: calc(82px + var(--channels-width));
 	margin-left: #{$withd-title};
 	max-width: calc(100% - #{$withd-title});

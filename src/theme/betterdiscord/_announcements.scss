@@ -1,0 +1,14 @@
+#app-mount {
+	#bd-notices {
+        .bd-notice, .bd-notice-info{
+            height: calc(var(--win-btn-height) + 8px);
+            padding-top: 5px;
+            .bd-notice-close{
+                right: 160px !important;
+                height: 100%;
+            }
+            .bd-notice-content{}
+            .bd-notice-button{}
+        }
+    }
+}
