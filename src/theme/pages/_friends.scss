@@ -1,4 +1,4 @@
-@use "../mixins";
+@use '../mixins';
 
 #app-mount {
 	.container-2cd8Mz {
@@ -25,7 +25,7 @@
 		}
 
 		&::before {
-			content: "";
+			content: '';
 			position: absolute;
 			height: 1px;
 			width: 100%;
@@ -62,7 +62,7 @@
 		position: relative;
 
 		&::before {
-			content: "";
+			content: '';
 			display: block;
 			height: 0;
 			width: var(--pill-width);

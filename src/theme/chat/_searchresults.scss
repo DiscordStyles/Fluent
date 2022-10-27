@@ -45,11 +45,11 @@
 	.message-24k8JL {
 		padding-bottom: 0;
 	}
-	
+
 	.pageControl-1XvHg0 {
 		padding-bottom: 16px;
 		& > .pageButton-1GMGeJ,
-		div[role="button"] {
+		div[role='button'] {
 			@include mixins.btn;
 			@include mixins.btnSecondary;
 			min-height: 32px;

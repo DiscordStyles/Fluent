@@ -54,7 +54,7 @@
 		font-size: 0;
 		color: var(--text-primary);
 		&::before {
-			content: "Settings";
+			content: 'Settings';
 			font-size: var(--font-size-xs);
 			display: block;
 		}
@@ -64,7 +64,6 @@
 		.standardSidebarView-E9Pc3j {
 			background: var(--bg-main);
 		}
-
 
 		.sidebarRegion-1VBisG {
 			flex: 0;
@@ -92,11 +91,11 @@
 				svg {
 					display: none;
 				}
-	
+
 				.selectedBackground-1qyzak {
 					background: rgb(var(--accent));
 				}
-	
+
 				// ~~Disabled icons (for now hopefully)
 				// &::before {
 				// 	content: "";
@@ -107,7 +106,7 @@
 				// 	background-position: center;
 				// }
 				&::after {
-					content: "";
+					content: '';
 					position: absolute;
 					left: 0;
 					height: 0;
@@ -115,7 +114,7 @@
 					border-radius: 4px;
 					background: rgb(var(--accent));
 					opacity: 0;
-					transition: .15s var(--transition);
+					transition: 0.15s var(--transition);
 				}
 				&:hover {
 					background: var(--bg-interactive);
@@ -155,7 +154,7 @@
 			padding: 0 32px 32px;
 			max-width: 1000px;
 			& > div {
-				animation: settingsIn .25s ease forwards;
+				animation: settingsIn 0.25s ease forwards;
 			}
 		}
 	}

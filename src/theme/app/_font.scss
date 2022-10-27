@@ -1,29 +1,34 @@
 @font-face {
 	font-family: 'Segoe UI';
-	src: local("Segoe UI Light"),	url("https://discordstyles.github.io/Fluent/fonts/light.woff2") format("woff2");
+	src: local('Segoe UI Light'),
+		url('https://discordstyles.github.io/Fluent/fonts/light.woff2') format('woff2');
 	font-weight: 100;
 }
 
 @font-face {
 	font-family: 'Segoe UI';
-	src: local("Segoe UI Semilight"), url("https://discordstyles.github.io/Fluent/fonts/semilight.woff2") format("woff2");
+	src: local('Segoe UI Semilight'),
+		url('https://discordstyles.github.io/Fluent/fonts/semilight.woff2') format('woff2');
 	font-weight: 200;
 }
 
 @font-face {
 	font-family: 'Segoe UI';
-	src: local("Segoe UI"), url("https://discordstyles.github.io/Fluent/fonts/normal.woff2") format("woff2");
+	src: local('Segoe UI'),
+		url('https://discordstyles.github.io/Fluent/fonts/normal.woff2') format('woff2');
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: 'Segoe UI';
-	src: local("Segoe UI Semibold"), url("https://discordstyles.github.io/Fluent/fonts/semibold.woff2") format("woff2");
+	src: local('Segoe UI Semibold'),
+		url('https://discordstyles.github.io/Fluent/fonts/semibold.woff2') format('woff2');
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: 'Segoe UI';
-	src: local("Segoe UI Bold"), url("https://discordstyles.github.io/Fluent/fonts/bold.woff2") format("woff2");
+	src: local('Segoe UI Bold'),
+		url('https://discordstyles.github.io/Fluent/fonts/bold.woff2') format('woff2');
 	font-weight: 700;
 }

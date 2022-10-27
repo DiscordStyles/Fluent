@@ -5,9 +5,9 @@
 		padding: 0 32px 32px;
 		max-width: 1000px;
 		& > div {
-			animation: settingsIn .25s ease forwards;
+			animation: settingsIn 0.25s ease forwards;
 		}
-		div[aria-hidden="true"][style="height: 60px;"] {
+		div[aria-hidden='true'][style='height: 60px;'] {
 			display: none;
 		}
 	}
@@ -71,7 +71,7 @@
 		}
 
 		&:not(.roleRow-3LoHQ6 + .roleRow-3LoHQ6) {
-			border-radius: var(--rounded-high) var(--rounded-high) 0 0;	
+			border-radius: var(--rounded-high) var(--rounded-high) 0 0;
 		}
 
 		&:first-of-type {
@@ -119,7 +119,7 @@
 			border-radius: var(--rounded);
 			position: relative;
 			&::before {
-				content: "";
+				content: '';
 				position: absolute;
 				left: 0;
 				top: 50%;

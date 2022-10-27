@@ -1,5 +1,6 @@
 // Wack ass text flickering
-html, span:not([class*="spinner-"], [class*="spinnerItem"]) {
+html,
+span:not([class*='spinner-'], [class*='spinnerItem']) {
 	backface-visibility: hidden;
 }
 
@@ -13,9 +14,9 @@ body,
 }
 
 // Remove pointer from clickable
-[class*="clickable-"],
-[class*="cursorPointer-"],
-[class*="selectable-"] {
+[class*='clickable-'],
+[class*='cursorPointer-'],
+[class*='selectable-'] {
 	cursor: var(--cursor) !important;
 }
 
@@ -33,11 +34,10 @@ body,
 	width: calc(100vw - var(--server-container));
 }
 
-
 // Version
 .layer-86YKbF:not(.baseLayer-W6S8cY) .info-3pQQBb > span:first-child::before {
 	display: block;
-	content: "Fluent v" var(--fluent-version);
+	content: 'Fluent v' var(--fluent-version);
 	text-transform: none;
 }
 

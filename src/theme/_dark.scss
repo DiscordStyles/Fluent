@@ -1,6 +1,5 @@
 .theme-dark,
-html.theme-dark #app-mount .theme-light .root-g14mjS,
-html.theme-dark .theme-light {
+html.theme-dark #app-mount .theme-light .root-g14mjS {
 	--dark-bg-h: var(--dark-background-hue, 0);
 	--dark-bg-s: var(--dark-background-saturation, 0%);
 
@@ -8,6 +7,10 @@ html.theme-dark .theme-light {
 	--bg-alt: hsl(var(--dark-bg-h) var(--dark-bg-s) 15%);
 	--bg-content: hsl(var(--dark-bg-h) var(--dark-bg-s) 17%);
 	--bg-content-alt: hsl(var(--dark-bg-h) var(--dark-bg-s) 18%);
+
+	--bg-transparent: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.25);
+	--bg-transparent-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.35);
+	--bg-transparent-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.4);
 
 	--bg-interactive: hsl(var(--dark-bg-h) var(--dark-bg-s) 18%);
 	--bg-interactive-high: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
@@ -23,7 +26,7 @@ html.theme-dark .theme-light {
 	--bg-menu-item-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
 
 	--chat-bubble-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 18%);
-	--chat-mention-bubble: hsl(var(--dark-bg-h) var(--dark-bg-s) 100% / .05);
+	--chat-mention-bubble: hsl(var(--dark-bg-h) var(--dark-bg-s) 100% / 0.05);
 
 	--border: hsl(var(--dark-bg-h) var(--dark-bg-s) 11%);
 	--border-mid: hsl(var(--dark-bg-h) var(--dark-bg-s) 20%);
@@ -32,17 +35,17 @@ html.theme-dark .theme-light {
 	--pill-unread: hsl(var(--dark-bg-h) var(--dark-bg-s) 60%);
 	--pill-hovered: #fff;
 
-	--btn-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .2);
-	--btn-bg-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .25);
-	--btn-bg-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .1);
-	--btn-border-t: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .3);
-	--btn-border-x: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .1);
-	--btn-border-b: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .1);
-	--btn-border-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / .2);
-	
+	--btn-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.2);
+	--btn-bg-hover: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.25);
+	--btn-bg-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.1);
+	--btn-border-t: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.3);
+	--btn-border-x: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.1);
+	--btn-border-b: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.1);
+	--btn-border-active: hsl(var(--dark-bg-h) var(--dark-bg-s) 40% / 0.2);
+
 	--scrollbar-background: hsl(var(--dark-bg-h) var(--dark-bg-s) 50%);
 
-	--server-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 50% / .2);
+	--server-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 50% / 0.2);
 	--folder-bg: var(--server-bg);
 
 	--textbox-bg: hsl(var(--dark-bg-h) var(--dark-bg-s) 18%);

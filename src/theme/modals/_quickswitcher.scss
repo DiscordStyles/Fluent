@@ -1,4 +1,4 @@
-@use "../mixins";
+@use '../mixins';
 
 #app-mount {
 	.container-qBnZJg {
@@ -16,7 +16,7 @@
 		margin: 0 -12px 0 0;
 		max-height: none;
 		background: transparent;
-		div[style="height: 15px;"] {
+		div[style='height: 15px;'] {
 			height: 16px !important;
 		}
 	}
@@ -68,7 +68,7 @@
 			padding: 0 16px;
 			cursor: var(--cursor);
 			&::before {
-				content: "";
+				content: '';
 				position: absolute;
 				top: 50%;
 				left: 0;
@@ -81,7 +81,7 @@
 				transition: var(--pill-transition);
 			}
 		}
-		&[aria-selected="true"] {
+		&[aria-selected='true'] {
 			background: var(--bg-interactive);
 			.content-vQY7Mf {
 				&::before {

@@ -1,10 +1,13 @@
 .theme-light,
-html.theme-light #app-mount .theme-light .root-g14mjS,
-html.theme-light .force-theme.theme-light {
+html.theme-light #app-mount .theme-light .root-g14mjS {
 	--bg-main: #f3f3f3;
 	--bg-alt: #fafafa;
 	--bg-content: #fbfbfb;
 	--bg-content-alt: #f6f6f6;
+
+	--bg-transparent: hsl(0 0% 40% / 0.25);
+	--bg-transparent-hover: hsl(0 0% 40% / 0.35);
+	--bg-transparent-active: hsl(0 0% 40% / 0.4);
 
 	--bg-interactive: #eaeaea;
 	--bg-interactive-hover: #ededed;
@@ -20,7 +23,7 @@ html.theme-light .force-theme.theme-light {
 	--bg-menu-item-hover: #f3f3f3;
 
 	--chat-bubble-bg: var(--bg-main);
-	--chat-mention-bubble: hsl(0 0% 0% / .05);
+	--chat-mention-bubble: hsl(0 0% 0% / 0.05);
 
 	--border: #e5e5e5;
 	--border-mid: #e8e8e8;
@@ -30,12 +33,12 @@ html.theme-light .force-theme.theme-light {
 	--pill-hovered: #fff;
 
 	--btn-bg: hsl(0 0% 100%);
-	--btn-bg-hover: hsl(0 0% 0% / .005);
-	--btn-bg-active: hsl(0 0% 100% / .005);
-	--btn-border-t: hsl(0 0% 0% / .06);
-	--btn-border-x: hsl(0 0% 0% / .06);
-	--btn-border-b: hsl(0 0% 0% / .15);
-	--btn-border-active: hsl(0 0% 0% / .15);
+	--btn-bg-hover: hsl(0 0% 0% / 0.005);
+	--btn-bg-active: hsl(0 0% 100% / 0.005);
+	--btn-border-t: hsl(0 0% 0% / 0.06);
+	--btn-border-x: hsl(0 0% 0% / 0.06);
+	--btn-border-b: hsl(0 0% 0% / 0.15);
+	--btn-border-active: hsl(0 0% 0% / 0.15);
 
 	--scrollbar-background: hsl(0 0% 50%);
 

@@ -1,9 +1,9 @@
 #app-mount {
-	[class*="tabBar-"] {
+	[class*='tabBar-'] {
 		display: flex;
 		height: auto;
-		[class*="item-"],
-		[class*="tabBarItem-"] {
+		[class*='item-'],
+		[class*='tabBarItem-'] {
 			margin: 0;
 			border: none;
 			padding: 10px 12px;
@@ -15,7 +15,7 @@
 			text-transform: none;
 			font-weight: var(--font-weight-normal);
 			&::before {
-				content: "";
+				content: '';
 				height: 2px;
 				width: 0%;
 				display: block;
@@ -26,12 +26,12 @@
 				bottom: 0;
 				left: 50%;
 				transform: translateX(-50%);
-				transition: opacity .15s var(--transition), width .15s var(--transition);
+				transition: opacity 0.15s var(--transition), width 0.15s var(--transition);
 			}
 			&:hover {
 				color: var(--text-primary) !important;
 			}
-			&[aria-selected="true"] {
+			&[aria-selected='true'] {
 				color: var(--text-primary) !important;
 				&::before {
 					width: 40%;
