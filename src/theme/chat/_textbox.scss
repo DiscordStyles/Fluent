@@ -16,7 +16,7 @@
 		position: relative;
 		margin-bottom: 42px;
 		&::before {
-			content: "";
+			content: '';
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -119,7 +119,7 @@
 		&:hover svg {
 			background: var(--interactive-active);
 		}
-		&[aria-expanded="true"] svg {
+		&[aria-expanded='true'] svg {
 			background: rgb(var(--accent)) !important;
 		}
 	}
@@ -128,22 +128,22 @@
 		.button-f2h6uQ {
 			padding: 0 !important;
 		}
-		
+
 		// Gift Icon
 		& > button[aria-label] {
-		 svg {
-			 mask: url(mono.$gift) center/cover;
-			 background: var(--interactive-normal);
-			 transition: var(--transition);
-			 transition-property: background;
-			 path {
-				 display: none;
-			 }
-		 }
-		 &:hover svg {
-			 background: var(--interactive-normal);
-		 }
-	 }
+			svg {
+				mask: url(mono.$gift) center/cover;
+				background: var(--interactive-normal);
+				transition: var(--transition);
+				transition-property: background;
+				path {
+					display: none;
+				}
+			}
+			&:hover svg {
+				background: var(--interactive-normal);
+			}
+		}
 	}
 	// GIF
 	.button-f2h6uQ {
@@ -195,5 +195,4 @@
 			background: var(--interactive-active);
 		}
 	}
-
 }

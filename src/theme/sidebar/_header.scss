@@ -1,8 +1,8 @@
-@use "../mixins";
+@use '../mixins';
 
 #app-mount {
-	.sidebar-1tnWFu .content-2a4AW9 > div[style="height: 84px;"],
-	.sidebar-1tnWFu .content-2a4AW9 > div[style="height: 16px;"] {
+	.sidebar-1tnWFu .content-2a4AW9 > div[style='height: 84px;'],
+	.sidebar-1tnWFu .content-2a4AW9 > div[style='height: 16px;'] {
 		display: none;
 	}
 

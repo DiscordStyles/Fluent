@@ -1,14 +1,14 @@
 :root {
 	--fluent-version: '1.0.11';
 
-	--transition: cubic-bezier(0,0,0,1);
+	--transition: cubic-bezier(0, 0, 0, 1);
 
 	--accent-text: #000;
 	--accent-solid: rgb(var(--accent));
 
 	--pill-width: 4px;
 	--pill-height: 16px;
-	--pill-transition: opacity .15s var(--transition), height .15s var(--transition);
+	--pill-transition: opacity 0.15s var(--transition), height 0.15s var(--transition);
 
 	--btn-radius: 6px;
 	--rounded-high: 8px;
@@ -54,7 +54,9 @@
 	--server-icon-size: 36px;
 	--server-container: calc(var(--server-size) + 16px);
 	--server-size: 48px;
-	--server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x), inset 0 1px 0 var(--btn-border-t), inset -1px 0 var(--btn-border-x), inset 0 -1px 0 var(--btn-border-b);
+	--server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x),
+		inset 0 1px 0 var(--btn-border-t), inset -1px 0 var(--btn-border-x),
+		inset 0 -1px 0 var(--btn-border-b);
 	--server-icon-shape: 50%;
 	--server-folder-icon-shape: 2px;
 

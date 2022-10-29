@@ -36,7 +36,8 @@
 		.iconWrapper-2awDjA {
 			margin: 0;
 		}
-		a[href="https://support.discord.com"] {
+		a[href="https://support.discord.com"]
+		{
 			display: none;
 		}
 	}*/
@@ -71,7 +72,7 @@
 		}
 
 		&::before {
-			content: "";
+			content: '';
 			position: absolute;
 			bottom: 0;
 			left: 0;

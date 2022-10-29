@@ -1,9 +1,9 @@
 {
-    "name": "Fluent",
-    "description": "Brings the look of Windows 11 to Discord.",
-    "version": "1.0.0",
-    "author": "Gibbu#1211",
-    "theme": "Fluent.theme.css",
-    "consent": ["ext_listing"],
-    "license": "MIT"
+	"name": "Fluent",
+	"description": "Brings the look of Windows 11 to Discord.",
+	"version": "1.0.0",
+	"author": "Gibbu#1211",
+	"theme": "Fluent.theme.css",
+	"consent": ["ext_listing"],
+	"license": "MIT"
 }

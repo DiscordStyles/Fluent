@@ -45,10 +45,10 @@
 
 				&:hover {
 					background: transparent;
-					box-shadow: var(--server-hover-selected)
+					box-shadow: var(--server-hover-selected);
 				}
-				&[aria-expanded="true"] {
-					box-shadow: var(--server-hover-selected)
+				&[aria-expanded='true'] {
+					box-shadow: var(--server-hover-selected);
 				}
 			}
 
