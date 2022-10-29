@@ -13,7 +13,7 @@
 		margin: 0 0 4px 0;
 		height: auto;
 		@include mixins.card;
-		
+
 		.avatar-3mTjvZ {
 			width: 22px !important;
 			height: 22px !important;
@@ -37,11 +37,11 @@
 				display: none;
 			}
 			&::before {
-				content: "Profile";
+				content: 'Profile';
 				@include mixins.cardTitle;
 			}
 			&::after {
-				content: "Avatar, banner, about me, profile colour";
+				content: 'Avatar, banner, about me, profile colour';
 				@include mixins.cardDesc;
 			}
 		}
@@ -65,7 +65,7 @@
 				justify-content: flex-end;
 				align-items: center;
 				&::before {
-					content: "";
+					content: '';
 					width: 16px;
 					height: 16px;
 					mask: url(mono.$chevron-right) center/cover;
@@ -128,7 +128,7 @@
 			}
 		}
 		&::before {
-			content: "";
+			content: '';
 			@include mixins.cardIcon;
 		}
 		&:not(:first-child) {
@@ -145,8 +145,6 @@
 	.fieldTitle-2g5r_V {
 		@include mixins.cardTitle;
 	}
-
-
 
 	.userSettingsSecurity-2kODPN {
 		.h1-34Txb0 {
@@ -165,12 +163,12 @@
 					@include mixins.btnSecondary;
 				}
 				&::before {
-					content: "";
+					content: '';
 					mask-image: url(mono.$password);
 					@include mixins.cardIcon;
 				}
 				&::after {
-					content: "Password";
+					content: 'Password';
 					@include mixins.cardTitle;
 					flex: 1;
 				}
@@ -181,11 +179,11 @@
 					@include mixins.subTitle;
 					color: transparent;
 					&::before {
-						content: "Security";
+						content: 'Security';
 						color: var(--text-primary);
 					}
 					img {
-						display: none
+						display: none;
 					}
 				}
 				& > .modeDefault-2fEh7a {
@@ -196,11 +194,11 @@
 					border-radius: var(--rounded) var(--rounded) 0 0;
 					margin-bottom: 0;
 					&::before {
-						content: "Two-factor authentication";
+						content: 'Two-factor authentication';
 						@include mixins.cardTitle;
 					}
 					&::after {
-						content: "";
+						content: '';
 						@include mixins.cardIcon;
 						mask-image: url(mono.$lock-closed);
 						position: absolute;
@@ -238,7 +236,7 @@
 						@include mixins.card(column, flex-start);
 						padding-left: 60px;
 						&::before {
-							content: "";
+							content: '';
 							@include mixins.cardIcon;
 							mask-image: url(mono.$phone-lock);
 							position: absolute;
@@ -247,7 +245,7 @@
 							left: 18px;
 						}
 						.modeDefault-2fEh7a:first-child::before {
-							content: "SMS backup";
+							content: 'SMS backup';
 							@include mixins.cardTitle;
 							margin-bottom: 4px;
 						}
@@ -276,7 +274,7 @@
 				user-select: none;
 				font-size: 0 !important;
 				&::before {
-					content: "Danger zone";
+					content: 'Danger zone';
 					font-size: var(--font-size);
 					color: var(--text-primary);
 				}
@@ -284,7 +282,7 @@
 			.children-1xdcWE {
 				@include mixins.card;
 				&::before {
-					content: "";
+					content: '';
 					@include mixins.cardIcon;
 					mask-image: url(mono.$user-delete);
 				}
@@ -294,7 +292,7 @@
 				flex: 1;
 				@include mixins.cardDesc;
 				&::before {
-					content: "Disable account";
+					content: 'Disable account';
 					@include mixins.cardTitle;
 				}
 			}

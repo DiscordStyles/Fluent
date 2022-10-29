@@ -14,7 +14,7 @@
 	}
 
 	// Section title
-	[class^="margin"] > .title-3hptVQ,
+	[class^='margin'] > .title-3hptVQ,
 	.marginTop40-Q4o1tS > .sectionTitle-3j2YI1 > .title-3hptVQ,
 	.title-3hptVQ.marginBottom8-emkd0_,
 	.sectionTitle-3j2YI1 .title-3hptVQ:not(h1) {
@@ -54,7 +54,7 @@
 			@include mixins.cardDesc;
 		}
 		& + .title-3hptVQ,
-		& + div[class^="margin"]:not(.container-1zDvAE) {
+		& + div[class^='margin']:not(.container-1zDvAE) {
 			margin-top: 40px;
 		}
 	}
@@ -65,11 +65,11 @@
 	}
 
 	// Spacing resets
-	[class^="margin"] + [class^="margin"] {
+	[class^='margin'] + [class^='margin'] {
 		margin-top: 40px;
 		margin-bottom: 0;
 	}
-	.children-1xdcWE > [class^="marginBottom"]:not(:only-child):first-child {
+	.children-1xdcWE > [class^='marginBottom']:not(:only-child):first-child {
 		margin-bottom: 0;
 	}
 	.title-3hptVQ.defaultMarginh3-2aILfT {

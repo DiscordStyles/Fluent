@@ -10,7 +10,7 @@
 		border-bottom-color: var(--btn-border-b);
 		border-radius: var(--btn-radius);
 		cursor: var(--cursor);
-		transition: box-shadow .15s var(--transition);
+		transition: box-shadow 0.15s var(--transition);
 		padding: 6px 6px 6px 12px;
 
 		.value-26hJ01 {
@@ -53,10 +53,10 @@
 		&.focused-ODgjnC {
 			background: var(--bg-menu-item-hover);
 		}
-		&[aria-selected="true"] {
+		&[aria-selected='true'] {
 			background: var(--bg-menu-item-hover);
 			&::before {
-				content: "";
+				content: '';
 				position: absolute;
 				top: 50%;
 				left: 0;

@@ -1,11 +1,11 @@
 #app-mount {
-	.cozy-VmLDNB[data-is-author-self="true"] {
+	.cozy-VmLDNB[data-is-author-self='true'] {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
 		.contents-2MsGLg {
 			width: fit-content;
-			background: rgb(var(--accent), .05);
+			background: rgb(var(--accent), 0.05);
 			& > .messageContent-2t3eCI {
 				background: transparent;
 			}

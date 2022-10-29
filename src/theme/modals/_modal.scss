@@ -1,16 +1,16 @@
 @use '../mixins';
 
-#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq) {
+#app-mount .root-g14mjS:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) {
 	border: 1px solid var(--border-high);
 	border-radius: var(--rounded);
 	background: var(--bg-content);
 	box-shadow: var(--shadow-dialog);
 	transform: none !important;
-	animation: fadeInFromBottom .15s var(--transition) forwards !important;
+	animation: fadeInFromBottom 0.15s var(--transition) forwards !important;
 	width: 548px;
 
-	[class^="modalCloseButton-"],
-	[class^="closeButton-"] {
+	[class^='modalCloseButton-'],
+	[class^='closeButton-'] {
 		display: none;
 	}
 	.input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
@@ -33,22 +33,22 @@
 		.size24-17l95E {
 			@include mixins.modalTitle;
 		}
-		button[type="button"].button-f2h6uQ:not(.lookFilled-yCfaCM) {
+		button[type='button'].button-f2h6uQ:not(.lookFilled-yCfaCM) {
 			display: none;
 		}
 	}
-	
+
 	.content-2hZxGK {
 		padding: 0 24px 24px !important;
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		.marginBottom20-315RVT {
 			margin-bottom: 0;
 			& + * {
 				margin-top: 20px;
 			}
 		}
-		div[class][style^="position: absolute;"]:not(.file-input) {
+		div[class][style^='position: absolute;']:not(.file-input) {
 			display: none;
 		}
 		.title-3hptVQ {
@@ -77,7 +77,7 @@
 			&:only-child {
 				grid-column: 2/3;
 			}
-			&[type="button"]:not(.lookFilled-yCfaCM) {
+			&[type='button']:not(.lookFilled-yCfaCM) {
 				@include mixins.btn;
 				@include mixins.btnSecondary;
 			}

@@ -8,7 +8,7 @@
 	.scroller-WSmht3 {
 		background: transparent;
 		padding: 8px 2px 8px 8px !important;
-		div[style="height: 8px;"] {
+		div[style='height: 8px;'] {
 			display: none;
 		}
 	}
@@ -39,7 +39,7 @@
 		.interactive-1vLZ_I {
 			cursor: var(--cursor);
 			&::before {
-				content: "";
+				content: '';
 				border-radius: 50px;
 				position: absolute;
 				top: 50%;
@@ -79,7 +79,7 @@
 		display: none;
 	}
 	
-	.link-39sEB3[href="/channels/@me"] .linkButtonIcon-7rsZcu {
+	.link-39sEB3[href='/channels/@me'] .linkButtonIcon-7rsZcu {
 		mask: url(mono.$people) center/cover;
 		background: var(--interactive-normal);
 		g {

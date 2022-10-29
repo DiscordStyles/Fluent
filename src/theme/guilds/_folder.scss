@@ -9,8 +9,8 @@
 	}
 	.folderIconWrapper-1oRIZr {
 		border-radius: var(--rounded);
-		transition: box-shadow .15s var(--transition);
-		&[style^="background-color"] {
+		transition: box-shadow 0.15s var(--transition);
+		&[style^='background-color'] {
 			background: var(--folder-bg) !important;
 			&:hover {
 				box-shadow: var(--server-hover-selected);
@@ -37,7 +37,7 @@
 		height: calc(var(--server-icon-size) / 1.8);
 	}
 
-	[id^="folder-items"][role="group"] {
+	[id^='folder-items'][role='group'] {
 		height: auto !important;
 	}
 }

@@ -10,7 +10,7 @@
 			min-height: 48px;
 			padding: 0 12px;
 		}
-	
+
 		// Avatar
 		.baseLayout-8AMrwn {
 			flex-direction: column;
@@ -19,13 +19,13 @@
 			&:not(.preview-Z55SA3) {
 				@include mixins.card;
 				margin-bottom: 4px;
-		
+
 				&::before {
-					content: "";
+					content: '';
 					@include mixins.cardIcon;
 					grid-area: icon;
 				}
-		
+
 				.channelTextArea-1VQBuV {
 					grid-area: input;
 					margin: 18px 0 36px;
@@ -33,7 +33,7 @@
 				.bioTextArea-dDGOeC {
 					border: none;
 				}
-	
+
 				.description-30xx7u {
 					margin: 0;
 					grid-area: desc;
@@ -65,8 +65,8 @@
 				display: grid;
 				grid-template-columns: 22px 1fr auto;
 				grid-template-areas:
-					"icon title button"
-					"icon desc button";
+					'icon title button'
+					'icon desc button';
 				&::before {
 					mask-image: url(mono.$image);
 				}
@@ -80,9 +80,9 @@
 				display: grid;
 				grid-template-columns: 22px 1fr;
 				grid-template-areas:
-					"icon title"
-					"icon desc"
-					"input input";
+					'icon title'
+					'icon desc'
+					'input input';
 				&::before {
 					mask-image: url(mono.$user-question);
 				}
@@ -102,7 +102,7 @@
 			position: relative;
 			margin-bottom: 42px;
 			&::before {
-				content: "";
+				content: '';
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -121,7 +121,6 @@
 				}
 			}
 		}
-	
 	}
 	// Avatar changer
 	.optionBox-1UOevl {
@@ -138,7 +137,7 @@
 		box-sizing: border-box;
 
 		.banner-3D8GgT {
-			mask: linear-gradient(hsl(0 0% 0% / .5), transparent 90%);
+			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 90%);
 			position: absolute;
 			width: 100%;
 			height: 60%;
@@ -155,9 +154,9 @@
 			top: 24px;
 			right: 24px;
 			left: unset;
-			background: hsl(0 0% 100% / .2);
+			background: hsl(0 0% 100% / 0.2);
 			border-color: transparent;
-			box-shadow: 0 0 0 4px hsl(0 0% 100% / .2);
+			box-shadow: 0 0 0 4px hsl(0 0% 100% / 0.2);
 			border-radius: 50%;
 		}
 		.headerTop-3GPUSF {

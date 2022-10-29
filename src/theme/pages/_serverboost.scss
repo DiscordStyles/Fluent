@@ -9,7 +9,7 @@
 
 	.tierWrapper-CsnudO {
 		box-shadow: none !important;
-		&[style*="box-shadow: rgba(0, 0, 0, 0.2)"] {
+		&[style*='box-shadow: rgba(0, 0, 0, 0.2)'] {
 			box-shadow: var(--shadow-flyout) !important;
 		}
 	}

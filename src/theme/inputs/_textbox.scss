@@ -22,7 +22,8 @@
 		&:hover {
 			background: var(--textbox-bg-hover);
 		}
-		&:focus, &:focus-within {
+		&:focus,
+		&:focus-within {
 			background: var(--textbox-bg-active) !important;
 			box-shadow: inset 0 -1px 0 rgb(var(--accent));
 			border-bottom-color: rgb(var(--accent));
@@ -36,11 +37,11 @@
 			content: none;
 		}
 		input {
-		 padding: 0;
-	 }
-	 .multiInputLast-35zVz0 input {
-		 padding-left: 36px;
-	 }
+			padding: 0;
+		}
+		.multiInputLast-35zVz0 input {
+			padding-left: 36px;
+		}
 	}
 	.inputWrapper-1YNMmM > svg {
 		width: 18px;

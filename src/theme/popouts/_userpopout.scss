@@ -1,97 +1,107 @@
 @use '../mixins';
 
 #app-mount {
-	// Members list
-	.userPopout-2j1gM4 {
-		border-radius: var(--rounded-high);
+	.userPopoutOuter-3AVBmJ {
 		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
-		width: 300px !important;
-		box-sizing: border-box;
-		background: var(--bg-main);
-		.avatarWrapper-eenWra {
+		padding: 0;
+		.bannerSVGWrapper-qc0szY {
+			min-height: 120px !important;
+			foreignObject {
+				y: -30;
+				mask: none;
+			}
+		}
+		.avatarWrapperNormal-1tQ3Je {
 			position: absolute;
-			top: 24px;
-			right: 24px;
+			top: 16px;
+			right: 16px;
 			left: unset;
-		}
-		.avatar-2Vndt_ {
-			background: hsl(0 0% 100% / .2);
+			background: hsl(0 0% 100% / 0.2);
 			border-color: transparent;
-			box-shadow: 0 0 0 2px hsl(0 0% 100% / .2);
+			box-shadow: 0 0 0 8px hsl(0 0% 100% / 0.2);
+			circle[fill='black'] {
+				opacity: 0 !important;
+			}
 		}
-		.size12-oc4dx4 {
-			@include mixins.subText;
-			text-transform: none;
+		.overlayBackground-1KgwVi {
+			overflow: visible;
+			position: static;
+			z-index: 2;
+			margin-top: 0;
+			& > .section-3FmfOT:first-child {
+				padding: 0;
+				position: absolute;
+				top: 16px;
+				left: 16px;
+			}
+			& > .divider-1tWBgZ {
+				display: none;
+			}
 		}
-		.headerTop-3GPUSF {
+		.profileBadges-31rDHI {
+			position: absolute;
+			right: unset;
+			left: 16px;
+			top: 66px;
+			z-index: 2;
+			background: transparent;
 			padding: 0;
-			position: absolute;
-			top: 0;
-			padding: 24px;
-			box-sizing: border-box;
-			height: 160px;
-			width: 100%;
-			display: flex;
-			flex-direction: column-reverse;
-			justify-content: flex-end;
-			gap: 8px;
 		}
 	}
-	.headerNormal-3Zn_yu {
-		width: 100%;
-		border-radius: var(--rounded) var(--rounded) 0 0;
-		overflow: hidden;
-		height: 160px;
-		position: relative;
-		.banner-1YaD3N {
-			display: none;
-		}
-		.bannerPremium-kkSkPv{
-			mask: linear-gradient(hsl(0 0% 0% / .5), transparent 90%);
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			display:block !important;
-			left: 0;
-			max-width: unset;
-		}
-	}
-	.nickname-t08Mck {
-		max-width: 180px;
-	}
-	.profileBadges-2pItdR {
-		position: static;
-		max-width: unset;
-		justify-content: flex-start;
-	}
-
-	.body-2wLx-E {
-		margin-top: -24px;
-		padding: 0 24px 24px !important;
-		& > div[aria-hidden="true"] {
-			display: none;
-		}
-		&::-webkit-scrollbar {
-			display: none;
-		}
-	}
-	.bodyInnerWrapper-2bQs1k {
+	.userProfileInnerWithBanner-3CJ1Og {
 		background: transparent;
 	}
-	.note-Go5ZP2 {
-		margin: 0;
+	.userProfileInner-3F03PX:not(.userProfileInnerNonPremium-1XjSjn) {
+		.role-2TIOKu {
+			background: var(--bg-transparent);
+		}
+		.inputDefault-3FGxgL {
+			background: var(--bg-transparent);
+			border-color: var(--bg-transparent);
+			&:hover {
+				background: var(--bg-transparent-hover);
+			}
+			&:focus {
+				background: var(--bg-transparent-active) !important;
+			}
+		}
 	}
-	.divider-1wtgZ3 {
-		display: none;
+	.userProfileInnerNonPremium-1XjSjn {
+		background: var(--bg-main);
+		.overlayBackground-1KgwVi {
+			margin: 0;
+			background: transparent;
+			padding: 0 8px 8px;
+		}
 	}
-	.button-f2h6uQ ~ .aboutMeSection-PUghFQ {
-		margin-top: 24px;
+	.banner-2boKnS {
+		mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 90%);
+		position: absolute;
+		width: 100%;
+		height: 120px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		max-width: unset;
+		[role='button'] {
+			display: none;
+		}
+	}
+	.userPopoutInner-1hXSeY::before {
+		content: none;
 	}
 
-	.rolesList-3uZoaa {
+	.nameTag-H6kSJ0 {
+		line-height: normal;
+	}
+
+	.messageInputContainer-2rGDH8 {
+		border: none;
+		border-radius: unset;
+	}
+
+	.roles-3zC7MX {
 		gap: 8px;
 	}
 	.role-2TIOKu {
@@ -102,6 +112,7 @@
 		padding: 6px 8px;
 		height: unset;
 		border-radius: 50px;
+		border: none;
 	}
 	.roleCircle-3K9O3d {
 		margin: 0;
@@ -122,23 +133,6 @@
 	}
 	.roleName-2ZJJYR {
 		margin: 0 0 0 4px;
-	}
-
-	.footer-3naVBw {
-		padding: 0 24px 24px;
-		margin: 0;
-		background: transparent;
-	}
-
-	.buttonInner-1RE0NV{
-		svg {
-			transform: scale(1.7)
-		}
-	}
-	.toolbar-37BrJ5{
-		height: 40px;
-		top: 0px;
-		bottom: 300px !important;
 	}
 
 	// Bottom left thingy

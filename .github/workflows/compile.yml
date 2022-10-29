@@ -1,31 +1,31 @@
-name: "Compile SCSS"
+name: 'Compile SCSS'
 
-on: "push"
+on: 'push'
 
 jobs:
   build:
-    name: "Build CSS"
-    runs-on: "ubuntu-latest"
+    name: 'Build CSS'
+    runs-on: 'ubuntu-latest'
     steps:
-      - name: "Checkout Repo"
-        uses: "actions/checkout@v2"
-      - name: "Setup NodeJS"
-        uses: "actions/setup-node@v1"
+      - name: 'Checkout Repo'
+        uses: 'actions/checkout@v2'
+      - name: 'Setup NodeJS'
+        uses: 'actions/setup-node@v1'
         with:
           node-version: 16
-      - name: "Install PNPM"
-        uses: "pnpm/action-setup@v2.1.0"
+      - name: 'Install PNPM'
+        uses: 'pnpm/action-setup@v2.1.0'
         with:
           version: 6.0.2
-      - name: "Clean install of dependencies"
-        run: "pnpm i"
-      - name: "Run build script"
-        run: "pnpm build"
-      - name: "Copy powercord_manifest.json"
-        run: "cp powercord_manifest.json dist/powercord_manifest.json"
-      - name: "Deploy"
-        uses: "peaceiris/actions-gh-pages@v3"
+      - name: 'Clean install of dependencies'
+        run: 'pnpm i'
+      - name: 'Run build script'
+        run: 'pnpm build'
+      - name: 'Copy powercord_manifest.json'
+        run: 'cp powercord_manifest.json dist/powercord_manifest.json'
+      - name: 'Deploy'
+        uses: 'peaceiris/actions-gh-pages@v3'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: "deploy"
-          publish_dir: "./dist"
+          publish_branch: 'deploy'
+          publish_dir: './dist'
