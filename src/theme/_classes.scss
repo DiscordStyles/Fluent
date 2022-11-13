@@ -1,0 +1,651 @@
+@use 'sass:map';
+@use 'sass:string';
+@use 'sass:list';
+
+// 	How to use this?
+// 	- import the file: @use '../classes' as *;
+// 	- use the `cls` function: #{cls(...)}
+
+// 	Query params:
+// 	`.` = Access a deeper level of the map.
+// 	`+` = Combine two selectors together.
+// 	`!` = Wrap the right side of the ! inside a :not() selector.
+// 	` ` = Acts as a normal CSS selector. `great-grandparent child.container` = `.oldman .children`
+
+$classmap: (
+	'mount': '#app-mount',
+	'common': (
+		'overflow': '.overflow-1wOqNV',
+		'clickable': '.clickable-31pE3P',
+		'flex': '.flex-2S1XBF',
+		'mode': (
+			'mouse': '.mouse-mode'
+		),
+		'motion': (
+			'full': '.full-motion'
+		)
+	),
+	'app': (
+		'devToolsWrapper': '.appDevToolsWrapper-1QxdQf',
+		'outer': '.app-3xd6d0',
+		'inner': '.app-2CXKsg',
+		'bg': '.bg-1QIAus',
+		'layers': '.layers-OrUESM',
+		'layer': '.layer-86YKbF',
+		'baseLayer': '.baseLayer-W6S8cY',
+		'base': '.base-2jDfDU',
+		'baseContent': '.content-1SgpWY'
+	),
+	'windows': (
+		'titleBar': '.typeWindows-2-g3UY',
+		'wordMark': '.wordmarkWindows-2dq6rw',
+		'button': '.winButton-3UMjdg',
+		'close': '.winButtonClose-3Q8ZH5'
+	),
+	'guilds': (
+		'container': '.guilds-2JjMmN',
+		'tree': '.tree-3agP2X',
+		'unread': (
+			'top': '.unreadMentionsIndicatorTop-2bTgUU',
+			'bottom': '.unreadMentionsIndicatorBottom-3RJMnQ',
+			'bar': '.unreadMentionsBar-ZXXoOH'
+		),
+		'list': (
+			'item': '.listItem-3SmSlK',
+			'itemWrapper': '.listItemWrapper-3d87LP',
+			'blob': '.blobContainer-ikKyFs',
+			'bloblSelected': '.selected-3c78Ai',
+			'server': '.wrapper-28eC3z',
+			'inner': '.wrapper-3kah-n',
+			'innerSelected': '.selected-1Drb7Z',
+			'icon': '.icon-3AqZ2e',
+			'svg': '.svg-2zuE5p',
+			'pill': '.pill-L_aLMQ',
+			'pillItem': '.item-2LIpTv',
+			'addJoin': '.tutorialContainer-2jwoiB',
+			'circleButton': '.circleIconButton-1VxDrg',
+			'circleIcon': '.circleIcon-3489FI',
+			'childWrapper': '.childWrapper-1j_1ub'
+		),
+		'folder': (
+			'container': '.folder-241Joy',
+			'wrapper': '.wrapper-38slSD',
+			'folderHover': '.hover-3m7-WT',
+			'iconWrapper': '.folderIconWrapper-1oRIZr',
+			'closedWrapper': '.closedFolderIconWrapper-3tRb2d',
+			'openedBackground': '.expandedFolderBackground-1kSAf6',
+			'collapsed': '.collapsed-uGXEbi',
+			'icon': '.guildIcon-2I5sfu'
+		),
+		'servers': '.scroller-3X7KbA > div[aria-label]',
+		'separator': '.guildSeparator-a4uisj',
+		'scroller': '.scroller-3X7KbA',
+		'home': '.tutorialContainer-1pL9QS',
+		'homePill': 'pill-L_aLMQ'
+	),
+	'sidebar': (
+		'sidebar': '.sidebar-1tnWFu',
+		'container': '.container-1NXEtd',
+		'head': (
+			'container': '.container-1-ERn5',
+			'header': '.header-3OsQeK',
+			'content': '.headerContent-2SNbie',
+			'guildIcon': '.guildIconContainer-3QvE6w',
+			'name': '.name-3Uvkvr',
+			'button': '.headerButton-1nmDZ3',
+			'children': '.headerChildren-2qV9P8',
+			'icon': '.button-2BMPJJ',
+			'selected': '.selected-1GtAC5',
+			'image': '.bannerImage-ubW8K',
+			'img': '.bannerImg-2PzH6z',
+			'search': '.searchBar-3TnChZ'
+		),
+		'dms': (
+			'container': '.privateChannels-oVe7HL',
+			'scroller': '.scroller-WSmht3',
+			'user': '.channel-1Shao0',
+			'interactive': '.interactive-1vLZ_I',
+			'layout': '.layout-1LjVue',
+			'selected': '.selected-3veCBZ'
+		),
+		'channels': (
+			'scroller': '.scroller-1ox3I2',
+			'content': '.content-2a4AW9',
+			'category': (
+				'container': '.containerDefault-3TQ5YN',
+				'wrapper': '.wrapper-1S43wv',
+				'content': '.mainContent-uDGa6R',
+				'arrow': '.arrow-2HswgU',
+				'name': 'name-3BUDLf',
+				'children': '.children-3MeUvj'
+			)
+		),
+		'channel': (
+			'container': '.containerDefault-YUSmu3',
+			'containerSelected': '.selected-2TbFuo',
+			'wrapper': '.wrapper-NhbLHG',
+			'selected': '.modeSelected-3DmyhH',
+			'unread': '.modeUnread-3Cxepe',
+			'muted': '.modeMuted-2T4MDZ',
+			'content': '.content-1gYQeQ',
+			'mainContent': '.mainContent-20q_Hp',
+			'iconContainer': '.iconContainer-21RCa3',
+			'icon': '.icon-2W8DHg',
+			'name': '.name-28HaxV',
+			'channelName': '.channelName-3KPsGw',
+			'unreadPill': '.unread-36eUEm'
+		),
+		'panels': (
+			'container': '.panels-3wFtMD',
+			'user': (
+				'container': '.container-YkUktl',
+				'avatarWrapper': '.avatarWrapper-1B9FTW',
+				'avatar': '.wrapper-1VLyxH',
+				'name': '.nameTag-sc-gpq',
+				'username': '.usernameContainer-3PPkWq',
+				'title': '.title-338goq',
+				'tag': '.subtext-2HDqJ7'
+			)
+		),
+		'connected': (
+			'wrapper': '.wrapper-3Hk9OB',
+			'container': '.container-1zzFcN',
+			'info': (
+				'container': '.connection-3k9QeF',
+				'inner': '.inner-llGtyq',
+				'status': '.rtcConnectionStatus-c5A6Av',
+				'ping': '.ping-2IpLcU',
+				'label': '.labelWrapper-1HofQ-',
+				'labelButton': '.statusWithPopout-1MDqs1',
+				'channel': '.channel-3prF2u',
+				'buttons': '.connection-3k9QeF > .flex-2S1XBF',
+				'button': '.button-12Fmur',
+				'buttonContents': '.contents-3ca1mk'
+			),
+			'actions': (
+				'container': '.actionButtons-2vEOUh',
+				'button': '.button-1EGGcP',
+				'buttonContents': '.contents-3ca1mk',
+				'buttonIcon': '.buttonIcon-2Zsrs2'
+			)
+		)
+	),
+	'title': (
+		'container': '.container-ZMc96U',
+		'children': (
+			'container': '.children-3xh0VB',
+			'titleWrapper': '.titleWrapper-24Kyzc',
+			'title': '.title-17SveM',
+			'divider': '.divider-q3P9HC',
+			'topic': '.topic-11NuQZ'
+		),
+		'toolbar': (
+			'container': '.toolbar-3_r2xA',
+			'icon': '.icon-1ELUnB',
+			'iconWrapper': '.iconWrapper-2awDjA',
+			'selected': '.selected-29KTGM'
+		),
+		'search': (
+			'outer': '.search-39IXmY',
+			'inner': '.search-2Mwzzq',
+			'bar': '.searchBar-jGtisZ',
+			'icon': '.icon-tZMHgY',
+			'iconContainer': '.iconContainer-1RqWJj',
+			'iconVisible': '.visible-2yTnyW',
+			'draftEditor': (
+				'root': '.DraftEditor-root',
+				'placeholder': '.public-DraftEditorPlaceholder-root',
+				'placeholderInner': '.public-DraftEditorPlaceholder-inner',
+				'editor': '.DraftEditor-editorContainer',
+				'content': '.public-DraftEditor-content'
+			)
+		)
+	),
+	'chat': (
+		'container': '.chat-2ZfjoI',
+		'content': '.content-1jQy2l',
+		'bars': (
+			'button': '.barButtonMain-2GIx4o',
+			'buttonIcon': '.barButtonIcon-bMvzp2',
+			'newMessages': (
+				'container': '.newMessagesBar-1hF-9G',
+				'content': '.span-3lFnWr'
+			),
+			'jumpTo': '.jumpToPresentBar-1cEnH0',
+			'attachments': (
+				'container': '.channelAttachmentArea-HwpkuQ',
+				'item': '.upload-vLbqu-',
+				'itemContainer': '.uploadContainer-TCg-Ji',
+				'icon': '.icon-2bPCaV',
+				'name': (
+					'container': '.filenameContainer-2qwz8w',
+					'text': '.filename-jyRDv_'
+				)
+			),
+			'reply': (
+				'attachedBars': '.attachedBars-2BCP3l',
+				'clip': '.clipContainer-31nYlH',
+				'bar': '.replyBar-1oi75v',
+				'label': '.replyLabel-WWnhHi',
+				'username': '.username-u-ebrn'
+			)
+		),
+		'reply': (
+			'container': '.repliedMessage-3Z6XBG',
+			'avatar': '.replyAvatar-sHd2sU',
+			'username': '.username-h_Y3Us',
+			'text': '.repliedTextPreview-1bvxun'
+		),
+		'messages': (
+			'container': '.chatContent-3KubbW',
+			'wrapper': '.messagesWrapper-RpOMA3',
+			'scroller': '.scroller-kQBbkU',
+			'scrollerContent': '.scrollerContent-2SW0kQ',
+			'scrollerInner': '.scrollerInner-2PPAp2',
+			'scrollerSpacer': '.scrollerSpacer-3AqkT9',
+			'icon': '.iconWrapper-3plkqh'
+		),
+		'divider': (
+			'container': '.divider-IqmEqJ',
+			'content': '.content-3spvdd',
+			'unread': '.isUnread-3Lojb-'
+		),
+		'message': (
+			'container': '.message-2CShn3',
+			'listItem': '.messageListItem-ZZ7v6g',
+			'cozy': '.cozyMessage-1DWF9U',
+			'content': '.contents-2MsGLg',
+			'avatar': '.avatar-2e8lTP',
+			'header': '.header-2jRmjb',
+			'headerText': '.headerText-2z4IhQ',
+			'username': '.username-h_Y3Us',
+			'timestamp': '.timestamp-p1Df1m',
+			'timestampInline': '.timestampInline-_lS3aK',
+			'markup': '.markup-eYLPri',
+			'groupStart': '.groupStart-3Mlgv1',
+			'selected': '.selected-2LX7Jy',
+			'replying': '.replying-eZ7p5z',
+			'mentioned': '.mentioned-Tre-dv'
+		),
+		'embed': (
+			'wrapper': '.embedWrapper-1MtIDg',
+			'gridContainer': '.gridContainer-1cF_Ic',
+			'grid': '.grid-1aWVsE',
+			'remove': '.embedSuppressButton-1rZHq6',
+			'provider': '.embedProvider-1GSN0c',
+			'link': '.embedLink-1TLNja',
+			'author': '.embedAuthor-TJIHp5',
+			'authorLink': '.embedAuthorNameLink-1NK1y6',
+			'title': '.embedTitle-2n1pEb',
+			'titleLink': '.embedTitleLink-1QbYA-',
+			'video': '.embedVideo-2ixt5A',
+			'media': '.embedMedia-1mdWSP',
+			'videoActions': '.embedVideoActions-2XdFk2',
+			'imageContent': '.imageContent-3Av-9c'
+		),
+		'codeContent': (
+			'container': '.container-rr3Ruk',
+			'code': '.textContainer-36wgKK',
+			'footer': (
+				'container': '.footer-GXWBBp',
+				'expand': '.toggleExpandSection-1710zV',
+				'open': '.openFullPreviewSection-31zc2v',
+				'gap': '.footerGap-1kdFHQ',
+				'name': '.attachmentName-vgRpzs',
+				'size': '.formattedSize-1YbZww',
+				'download': '.downloadSection-20OayS',
+				'downloadButton': '.downloadButton-2PkwZg',
+				'language': '.codeIcon-Ni8XUA'
+			)
+		),
+		'reactions': (
+			'container': '.reactions-3ryImn',
+			'reaction': '.reaction-3vwAF2',
+			'inner': '.reactionInner-YJjOtT',
+			'count': '.reactionCount-26U4As',
+			'emoji': '.emoji'
+		),
+		'emoji': (
+			'container': '.emojiContainer-2XKwXX',
+			'image': '.emoji',
+			'jumbo': '.jumboable'
+		),
+		'actions': (
+			'container': '.buttonContainer-1502pf',
+			'buttons': '.buttons-3dF5Kd',
+			'wrapper': '.wrapper-2vIMkT',
+			'button': '.button-3bklZh',
+			'icon': '.icon-1zidb7'
+		),
+		'textbox': (
+			'container': '.form-3gdLxP',
+			'channelTextarea': '.channelTextArea-1FufC0',
+			'scroller': '.scrollableContainer-15eg7h',
+			'inner': '.inner-NQg18Y',
+			'attach': (
+				'wrapper': '.attachWrapper-3slhXI',
+				'button': '.attachButton-_ACFSu',
+				'inner': '.attachButtonInner-2mwer8'
+			),
+			'textarea': '.textArea-2CLwUE',
+			'placeholder': '.placeholder-1rCBhr',
+			'slate': '.slateTextArea-27tjG0',
+			'buttons': (
+				'container': '.buttons-uaqb-5',
+				'button': '.button-f2h6uQ',
+				'contents': '.contents-3ca1mk',
+				'wrapper': '.buttonWrapper-3YFQGJ',
+				'emoji': '.emojiButton-3FRTuj',
+				'sprite': '.sprite-2lxwfc',
+				'sticker': '.stickerButton-1-nFh2'
+			),
+			'typing': (
+				'container': '.typing-2J1mQU',
+				'dots': '.typingDots-1Y8dki',
+				'ellipsis': '.ellipsis-1e7x0D',
+				'text': '.text-3S7XCz'
+			),
+			'cooldown': (
+				'container': '.cooldownWrapper-2k1jHK',
+				'slowIcon': '.slowModeIcon-35Psjn'
+			)
+		),
+		'announcement': (
+			'textbox': '.wrapper-2SplAX',
+			'content': '.content-2M_BlY',
+			'image': '.image-3FliiM',
+			'text': '.text-2GfGMu',
+			'buttonContainer': '.buttonContainer-KMz3Ex',
+			'button': '.button-cO0-d9'
+		),
+		'altchat': (
+			'container': '.container-3XgAHv',
+			'chat': '.chat-25x62K',
+			'chatContent': '.chatContent-3KubbW',
+			'divider': '.divider-AZrXIA',
+			'followBar': (
+				'container': '.container-3YcgdM',
+				'buttons': '.buttons-BK5gED',
+				'button': '.button-DAkLIy'
+			)
+		)
+	),
+	'forum': (
+		'container': '.container-3wLKDe',
+		'list': (
+			'container': '.list-3FIpnh',
+			'content': '.content-2a4AW9'
+		),
+		'header': (
+			'container': '.header-1Uy0p6',
+			'titleContainer': '.titleContainer-2YK93J',
+			'icon': '.prefixElement-1U4XhR',
+			'searchIcon': '.searchIcon-2Nw0OL',
+			'form': '.container-JhuCwn',
+			'inputWrapper': '.inputWrapper-1YNMmM',
+			'row': '..headerRow-1MKoR-'
+		),
+		'row': '.row-uezxzk',
+		'card': (
+			'container': '.container-2qVG6q',
+			'left': '.left-r1N3TH',
+			'body': '.body-hCVwsC',
+			'unread': '.hasUnreads-3kKLnS',
+			'tags': '.tags-2CaEuN',
+			'tag': (
+				'container': '.pill-3pRQlO',
+				'text': '.text-sm-semibold-3TWn25'
+			),
+			'header': '.header-2W779F',
+			'headerText': '.headerText-3MQ6n4',
+			'title': '.postTitleText-2ARr84',
+			'emoji': '.emoji-Z6vF9e',
+			'new': (
+				'wrapper': '.newBadgeWrapper-J629On',
+				'badge': '.newBadge-1LcB6t'
+			),
+			'message': (
+				'text': '.message-1zs6Od',
+				'author': '.author-22H8ZU'
+			),
+			'footer': '.footer-3dzxcR',
+			'counter': (
+				'container': '.messageCountBox-XEP63e',
+				'icon': '.messageCountIcon-2CvKyY',
+				'number': '.messageCountText-J-9pag'
+			),
+			'divider': '.bullet-3kDmK0',
+			'date': '.text-sm-normal-3Zj3Iv',
+			'selected': '.selected-24z1Ou'
+		),
+		'sidebar': (
+			'container': '.sidebarCard-1Gn1ch',
+			'footer': '.container-2IhveL'
+		)
+	),
+	'members': (
+		'container': '.container-2o3qEW',
+		'wrap': '.membersWrap-3NUR2t',
+		'scroller': '.members-3WRCEx',
+		'content': '.content-2a4AW9',
+		'header': '.membersGroup-2eiWxl'
+	),
+	'member': (
+		'container': '.member-2gU6Ar',
+		'layout': '.layout-1qmrhw',
+		'avatar': '.avatar-6qzftW',
+		'content': '.content-1U25dZ',
+		'nameAndDecorators': '.nameAndDecorators-3ERwy2',
+		'name': '.name-3Vmqxm',
+		'username': (
+			'outer': '.username-u-ebrn',
+			'inner': '.username-i5-wv-'
+		),
+		'subText': '.subText-OGOWMj',
+		'selected': '.selected-1-Z6gm'
+	),
+	'popout': (
+		'menu': (
+			'container': '.menu-1QACrS',
+			'scroller': '.scroller-1bVxF5',
+			'group': '[role="group"]',
+			'separator': '.separator-1So4YB',
+			'quickReactions': (
+				'container': '.wrapper--nA0oy',
+				'item': '.customItem-2CxBSo',
+				'button': '.button-1zW0-r',
+				'icon': '.icon-Yl4xbA'
+			),
+			'sub': (
+				'container': '.submenuContainer-3EVTeH',
+				'padding': '.submenuPaddingContainer-_k62dJ'
+			),
+			'item': (
+				'container': '.item-1OdjEX',
+				'label': '.label-2gNW3x',
+				'iconContainer': '.iconContainer-1-SsTR',
+				'arrow': '.arrow-2HswgU',
+				'colourDefault': '.colorDefault-CDqZdO',
+				'colourDanger': '.colorDanger-3n-KnP',
+				'focused': '.focused-3qFvc8',
+				'hideInteraction': '.hideInteraction-2jPGL_'
+			)
+		),
+		'user': (
+			'outer': '.userPopoutOuter-3AVBmJ',
+			'outerThemed': '.userProfileOuterUnthemed-2b2rsv',
+			'inner': '.userPopoutInner-1hXSeY',
+			'innerNonPremium': '.userProfileInnerThemedNonPremium-1gT-zY',
+			'innerWithBanner': '.userProfileInnerThemedWithBanner-2624Yx',
+			'innerWithoutBanner': '.userProfileInnerThemedPremiumWithoutBanner-1yMS1H',
+			'bannerWrapper': '.bannerSVGWrapper-qc0szY',
+			'banner': '.banner-2boKnS',
+			'avatarWrapper': '.avatarWrapper-3y0KZ1',
+			'avatarNormal': '.avatarWrapperNormal-1tQ3Je',
+			'overlay': '.overlayBackground-1KgwVi',
+			'section': '.section-3FmfOT',
+			'divider': '.divider-1tWBgZ',
+			'badges': '.profileBadges-31rDHI',
+			'nameTag': '.nameTag-H6kSJ0',
+			'messageContainer': '.messageInputContainer-2rGDH8',
+			'scroller': '.scroller-1jBQYo'
+		),
+		'currentUser': (
+			'wrapper': '.accountProfilePopoutWrapper-3GskID'
+		)
+	),
+	'settings': (
+		'layer': '.layer-86YKbF:not(.baseLayer-W6S8cY)',
+		'sidebar': (
+			'container': '.sidebar-nqHbhN',
+			'region': '.sidebarRegion-1VBisG',
+			'scroller': '.sidebarRegionScroller-FXiQOh',
+			'side': '.side-2ur1Qk',
+			'header': '.header-2Kx1US',
+			'item': '.item-3XjbnG',
+			'selected': '.selected-g-kMVV',
+			'separator': '.separator-2wx7h6',
+			'premium': '.premiumTab-39eQzY',
+			'premiumLabel': '.premiumLabel-3HPvdB',
+			'socials': '.socialLinks-3ywLUf',
+			'socialsLink': '.anchor-1MIwyf',
+			'info': '.info-3pQQBb',
+			'infoLine': '.line-18uChy',
+			'badge': '.textBadge-1fdDPJ'
+		)
+	),
+	'tooltip': (
+		'container': '.tooltip-14MtrL',
+		'right': '.tooltipRight-2TSb42',
+		'bottom': '.tooltipBottom-2WzfVx',
+		'primary': '.tooltipPrimary-3qLMbS',
+		'pointer': '.tooltipPointer-3L49xb',
+		'content': '.tooltipContent-Nejnvh',
+		'guilds': (
+			'container': '.listItemTooltip-eHcnUw',
+			'rowName': '.rowGuildName-21wur6',
+			'name': '.guildNameText-jBFbNC',
+			'muted': '.muteText-13RgwP'
+		)
+	),
+	'roles': (
+		'root': '.root-jbEB5E',
+		'roles': '.roles-3zC7MX',
+		'role': '.role-2TIOKu',
+		'circle': '.roleCircle-3K9O3d',
+		'name': '.roleName-2ZJJYR'
+	),
+	'input': (
+		'container': '.input-2g-os5',
+		'wrapper': '.inputWrapper-BB4B-',
+		'iconPrefix': 'inputPrefix-1HHwWv',
+		'multiInput': '.multiInput-1VARjC',
+		'multiInputLast': '.multiInputLast-35zVz0',
+		'multiField': '.multiInputField-1zyopx',
+		'default': '.inputDefault-3FGxgL'
+	),
+	'buttons': (
+		'button': '.button-f2h6uQ',
+		'content': '.contents-3ca1mk',
+		'look': (
+			'filled': '.lookFilled-yCfaCM',
+			'link': '.lookLink-15mFoz',
+			'outline': '.lookOutlined-3yKVGo'
+		),
+		'size': (
+			'small': '.sizeSmall-wU2dO-'
+		),
+		'colour': (
+			'brand': '.colorBrand-I6CyqQ',
+			'primary': '.colorPrimary-2AuQVo',
+			'red': '.colorRed-rQXKgM'
+		)
+	)
+);
+
+// Shamelessly yoinked from: https://stackoverflow.com/a/42295154/12689721
+@function split($string, $separator) {
+	$split-arr: ();
+	$index: string.index($string, $separator);
+	@while $index != null {
+		$item: string.slice($string, 1, $index - 1);
+		$split-arr: append($split-arr, $item);
+		$string: string.slice($string, $index + 1);
+		$index: string.index($string, $separator);
+	}
+	$split-arr: append($split-arr, $string);
+	@return $split-arr;
+}
+@function remove-nth($list, $index) {
+	$result: ();
+	$index: if($index < 0, list.length($list) + $index + 1, $index);
+
+	@for $i from 1 through list.length($list) {
+		@if $i != $index {
+			$result: append($result, nth($list, $i));
+		}
+	}
+
+	@return split(list.nth($result, 1), ',');
+}
+// Shamelessly yoinked from: https://stackoverflow.com/a/62698329/12689721
+@function str-trim($string) {
+	@if (str-slice($string, 1, 1) == ' ') {
+		@return str-trim(str-slice($string, 2));
+	} @else if (str-slice($string, str-length($string), -1) == ' ') {
+		@return str-trim(str-slice($string, 1, -2));
+	} @else {
+		@return $string;
+	}
+}
+
+@function join-list($list, $join: '') {
+	$string: '';
+	@each $key in $list {
+		$string: $string + $join + $key;
+	}
+	@return string.unquote($string);
+}
+@function get-class($map, $keys) {
+	@each $key in split($keys, '.') {
+		$map: map.get($map, $key);
+	}
+	@return $map;
+}
+@function format($keys) {
+	$cls: ();
+	$return: null;
+	@if (string.index($keys, '+')) {
+		@each $class in split($keys, '+') {
+			$cls: list.append($cls, get-class($classmap, $class));
+		}
+	}
+	@if (string.index($keys, '!')) {
+		$classes: split($keys, '!');
+		$first: get-class($classmap, list.nth($classes, 1));
+		$rest: null;
+		@each $class in remove-nth($classes, 1) {
+			@if ($rest == null) {
+				$rest: get-class($classmap, $class);
+			} @else {
+				$rest: $rest + ',' + get-class($classmap, $class);
+			}
+		}
+		$return: $first + ':not(' + $rest + ')';
+	}
+
+	@if ($return == null) {
+		@return if(list.length($cls) != 0, join-list($cls), get-class($classmap, $keys));
+	}
+	@return $return;
+}
+
+@function cls($keys) {
+	$groups: ();
+
+	@each $group in split($keys, ' ') {
+		$groups: list.append($groups, format($group));
+	}
+
+	@return str-trim(join-list($groups, ' '));
+}

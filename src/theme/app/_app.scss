@@ -1,3 +1,5 @@
+@use '../classes' as *;
+
 // Wack ass text flickering
 html,
 span:not([class*='spinner-'], [class*='spinnerItem']) {
@@ -5,11 +7,11 @@ span:not([class*='spinner-'], [class*='spinnerItem']) {
 }
 
 body,
-.appMount-2yBXZl,
-.app-2CXKsg {
+#{cls('mount')},
+#{cls('app.inner')} {
 	background: var(--bg-main);
 }
-.bg-1QIAus {
+#{cls('app.bg')} {
 	background: transparent;
 }
 
@@ -21,7 +23,7 @@ body,
 }
 
 // Content
-.base-2jDfDU {
+#{cls('app.base')} {
 	background: var(--bg-alt);
 	border-top: 1px solid var(--border-high);
 	border-left: 1px solid var(--border-high);
@@ -30,22 +32,22 @@ body,
 	// Make bottom left status picker visible in server list.
 	overflow: visible;
 }
-.content-1SgpWY {
+#{cls('app.baseContent')} {
 	width: calc(100vw - var(--server-container));
 }
 
 // Version
-.layer-86YKbF:not(.baseLayer-W6S8cY) .info-3pQQBb > span:first-child::before {
+#{cls('settings.layer settings.sidebar.info')} > #{cls('settings.sidebar.infoLine')}:first-child::before {
 	display: block;
 	content: 'Fluent v' var(--fluent-version);
 	text-transform: none;
 }
 
 // Settings animation fixes
-.layer-86YKbF {
+#{cls('app.layer')} {
 	transform: scale(1) !important;
 	z-index: 1;
-	&.baseLayer-W6S8cY {
+	&#{cls('app.baseLayer')} {
 		transform: none !important;
 		opacity: 1 !important;
 		padding-top: 0 !important;

@@ -1,5 +1,7 @@
-#app-mount {
-	.container-ZMc96U {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('title.container')} {
 		background: var(--bg-alt);
 		border-bottom: 1px solid var(--border-mid);
 		height: var(--toolbar-height);
@@ -9,13 +11,13 @@
 		}
 	}
 	// title-31SJ6t container-ZMc96U
-	.children-3xh0VB {
+	#{cls('title.children.container')} {
 		margin-right: 16px;
 
-		& > .iconWrapper-2awDjA {
+		& > #{cls('title.toolbar.iconWrapper')} {
 			margin: 0 16px 0 0;
 		}
-		.divider-q3P9HC {
+		#{cls('title.children.divider')} {
 			display: none;
 		}
 
@@ -24,40 +26,40 @@
 		}
 	}
 
-	.toolbar-3_r2xA {
+	#{cls('title.toolbar.container')} {
 		gap: 16px;
-		.iconWrapper-2awDjA {
+		#{cls('title.toolbar.iconWrapper')} {
 			margin: 0;
 		}
-		a[href="https://support.discord.com"]
+		a[href='https://support.discord.com']
 		{
 			display: none;
 		}
 	}
 
 	// Search
-	.search-39IXmY {
+	#{cls('title.search.outer')} {
 		border-radius: var(--rounded);
 		overflow: hidden;
 		margin: 0 0 0 8px;
 		order: 1;
 	}
-	.searchBar-jGtisZ {
+	#{cls('title.search.bar')} {
 		background: var(--textbox-bg);
 		border: 1px solid var(--textbox-border);
 		height: 30px;
 		padding: 0;
 		width: calc(var(--members-width) - 32px);
 
-		.DraftEditor-root {
+		#{cls('title.search.draftEditor.root')} {
 			padding-top: 4px;
 		}
-		.public-DraftEditor-content,
-		.public-DraftEditorPlaceholder-root {
+		#{cls('title.search.draftEditor.content')},
+		#{cls('title.search.draftEditor.placeholder')} {
 			padding-left: 8px;
 			padding-right: 8px;
 		}
-		.icon-tZMHgY {
+		#{cls('title.search.icon')} {
 			height: 28px;
 		}
 

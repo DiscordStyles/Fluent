@@ -1,11 +1,13 @@
-#app-mount {
-	.chat-2ZfjoI {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('chat.container')} {
 		background: transparent;
 	}
-	.content-1jQy2l::before {
+	#{cls('chat.content')}::before {
 		content: none;
 	}
-	.chatContent-3KubbW {
+	#{cls('chat.messages.container')} {
 		background: var(--bg-alt);
 		&:only-child {
 			margin-right: 0;
@@ -13,12 +15,12 @@
 		}
 	}
 
-	.scrollerSpacer-3AqkT9 {
+	#{cls('chat.messages.scrollerSpacer')} {
 		height: 0;
 	}
 
 	// Chat icon
-	.iconWrapper-3plkqh {
+	#{cls('chat.messages.icon')} {
 		background: var(--bg-content);
 		border: 1px solid var(--border-mid);
 	}
