@@ -1,9 +1,11 @@
-#app-mount {
-	.channelAttachmentArea-HwpkuQ {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('chat.bars.attachments.container')} {
 		margin: 0;
 		padding: 16px;
 	}
-	.upload-vLbqu- {
+	#{cls('chat.bars.attachments.item')} {
 		background: var(--bg-alt);
 		border: 1px solid var(--border-high);
 	}

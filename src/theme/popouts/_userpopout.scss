@@ -1,17 +1,18 @@
 @use '../mixins';
+@use '../classes' as *;
 
-#app-mount {
-	.userPopoutOuter-3AVBmJ {
+#{cls('mount')} {
+	#{cls('popout.user.outer')} {
 		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
 		padding: 0;
-		.bannerSVGWrapper-qc0szY {
+		#{cls('popout.user.nonPremium popout.user.bannerWrapper')} {
 			min-height: 120px !important;
 			foreignObject {
 				y: -30;
 				mask: none;
 			}
 		}
-		.avatarWrapperNormal-1tQ3Je {
+		#{cls('popout.user.avatarNormal')} {
 			position: absolute;
 			top: 16px;
 			right: 16px;
@@ -23,22 +24,25 @@
 				opacity: 0 !important;
 			}
 		}
-		.overlayBackground-1KgwVi {
+		#{cls('popout.user.overlay')} {
 			overflow: visible;
 			position: static;
 			z-index: 2;
 			margin-top: 0;
-			& > .section-3FmfOT:first-child {
+			& > #{cls('popout.user.section')}:first-child {
 				padding: 0;
 				position: absolute;
 				top: 16px;
 				left: 16px;
 			}
-			& > .divider-1tWBgZ {
+			& > #{cls('popout.user.divider')} {
 				display: none;
 			}
+			#{cls('popout.user.section')} {
+				padding-right: 0 !important;
+			}
 		}
-		.profileBadges-31rDHI {
+		#{cls('popout.user.badges')} {
 			position: absolute;
 			right: unset;
 			left: 16px;
@@ -48,14 +52,14 @@
 			padding: 0;
 		}
 	}
-	.userProfileInnerWithBanner-3CJ1Og {
+	#{cls('popout.user.innerWithBanner')} {
 		background: transparent;
 	}
-	.userProfileInner-3F03PX:not(.userProfileInnerNonPremium-1XjSjn) {
-		.role-2TIOKu {
+	#{cls('popout.user.inner!popout.user.innerNonPremium')} {
+		#{cls('roles.role')} {
 			background: var(--bg-transparent);
 		}
-		.inputDefault-3FGxgL {
+		#{cls('input.default')} {
 			background: var(--bg-transparent);
 			border-color: var(--bg-transparent);
 			&:hover {
@@ -66,15 +70,15 @@
 			}
 		}
 	}
-	.userProfileInnerNonPremium-1XjSjn {
+	#{cls('popout.user.innerNonPremium')} {
 		background: var(--bg-main);
-		.overlayBackground-1KgwVi {
+		#{cls('popout.user.overlay')} {
 			margin: 0;
 			background: transparent;
 			padding: 0 8px 8px;
 		}
 	}
-	.banner-2boKnS {
+	#{cls('popout.user.banner')} {
 		mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 90%);
 		position: absolute;
 		width: 100%;
@@ -88,23 +92,23 @@
 			display: none;
 		}
 	}
-	.userPopoutInner-1hXSeY::before {
+	#{cls('popout.user.inner')}::before {
 		content: none;
 	}
 
-	.nameTag-H6kSJ0 {
+	#{cls('popout.user.nameTag')} {
 		line-height: normal;
 	}
 
-	.messageInputContainer-2rGDH8 {
+	#{cls('popout.user.messageContainer')} {
 		border: none;
 		border-radius: unset;
 	}
 
-	.roles-3zC7MX {
+	#{cls('roles.roles')} {
 		gap: 8px;
 	}
-	.role-2TIOKu {
+	#{cls('roles.role')} {
 		color: var(--text-secondary);
 		line-height: var(--line-height);
 		background: var(--bg-content);
@@ -114,7 +118,7 @@
 		border-radius: 50px;
 		border: none;
 	}
-	.roleCircle-3K9O3d {
+	#{cls('roles.circle')} {
 		margin: 0;
 		height: 100%;
 		border-radius: 0;
@@ -131,12 +135,12 @@
 			margin-left: 22px;
 		}
 	}
-	.roleName-2ZJJYR {
+	#{cls('roles.name')} {
 		margin: 0 0 0 4px;
 	}
 
 	// Bottom left thingy
-	.accountProfilePopoutWrapper-3GskID {
+	#{cls('popout.currentUser.wrapper')} {
 		left: 0;
 	}
 }
