@@ -1,28 +1,28 @@
 @use '../mixins';
+@use '../classes' as *;
 
-#app-mount {
-	.container-3wLKDe {
+#{cls('mount')} {
+	#{cls('forum.container')} {
 		background: transparent;
 	}
 
-	.header-1Uy0p6 {
+	#{cls('forum.header.container')} {
 		background: transparent;
 		box-shadow: none;
 		border: none;
 	}
-	.titleContainer-2YK93J {
+	#{cls('forum.header.titleContainer')} {
 		align-items: center;
 		gap: 16px;
 		cursor: default;
 	}
-	.container-JhuCwn {
+	#{cls('forum.header.form')} {
 		padding: 0;
-		.input-2g-os5 {
+		#{cls('input.container')} {
 			margin-top: 0;
 		}
 	}
-
-	.container-2qVG6q {
+	#{cls('forum.card.container')} {
 		@include mixins.card($fgap: 0);
 		cursor: var(--cursor);
 		transition: none;
@@ -32,29 +32,28 @@
 			background: var(--bg-content-alt);
 		}
 	}
-
-	.sidebarCard-1Gn1ch,
-	.container-2IhveL {
-		@include mixins.card($fdir: column, $aitem: flex-start);
-	}
-
-	.pill-3pRQlO {
+	#{cls('forum.card.tag.container')} {
 		border: 1px solid var(--border-high);
 		background: transparent;
 		height: 28px;
-		.emoji-Z6vF9e {
+		#{cls('forum.card.emoji')} {
 			margin-right: 8px;
 			width: 14px;
 			height: 14px;
 		}
-		.text-sm-semibold-3TWn25 {
+		#{cls('forum.card.tag.text')} {
 			font-size: var(--font-size-xs);
 		}
 		&:hover {
 			background: var(--bg-interactive-high);
 		}
-		&.selected-24z1Ou {
+		&#{cls('forum.card.selected')} {
 			border-color: rgb(var(--accent));
 		}
+	}
+
+	#{cls('forum.sidebar.container')},
+	#{cls('forum.sidebar.footer')} {
+		@include mixins.card($fdir: column, $aitem: flex-start);
 	}
 }

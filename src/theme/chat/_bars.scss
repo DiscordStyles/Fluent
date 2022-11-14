@@ -1,19 +1,20 @@
 @use '../assets/mono';
 @use '../mixins';
+@use '../classes' as *;
 
-#app-mount {
+#{cls('mount')} {
 	// Typing
-	.typing-2J1mQU {
+	#{cls('chat.textbox.typing.container')} {
 		bottom: unset;
 		top: 2px;
 		left: 0;
-		padding: 0 88px;
+		padding: 0 var(--chat-spacing-x);
 		right: 0;
 	}
 
 	// New message & jump to present
-	.newMessagesBar-1hF-9G,
-	.jumpToPresentBar-1cEnH0 {
+	#{cls('chat.bars.newMessages.container')},
+	#{cls('chat.bars.jumpTo')} {
 		border-radius: var(--btn-radius);
 		opacity: 1;
 		left: unset;
@@ -39,9 +40,9 @@
 	}
 
 	// New message
-	.newMessagesBar-1hF-9G {
+	#{cls('chat.bars.newMessages.container')} {
 		top: 16px;
-		.barButtonIcon-bMvzp2 {
+		#{cls('chat.bars.buttonIcon')} {
 			mask: url(mono.$comment-check) center/cover;
 			background: currentColor;
 			path {
@@ -51,7 +52,7 @@
 	}
 
 	// Jump to present
-	.jumpToPresentBar-1cEnH0 {
+	#{cls('chat.bars.jumpTo')} {
 		bottom: 0;
 		padding-bottom: 0;
 		& > span {

@@ -1,23 +1,25 @@
-#app-mount {
-	.tooltip-14MtrL {
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('tooltip.container')} {
 		box-shadow: var(--shadow-flyout);
 		font-size: 14px;
 		border-radius: var(--rounded);
 	}
-	.tooltipContent-Nejnvh {
+	#{cls('tooltip.content')} {
 		padding: 6px 8px;
 	}
-	.tooltipPointer-3L49xb {
+	#{cls('tooltip.pointer')} {
 		border-top-color: var(--border-high);
 	}
 
-	.tooltipPrimary-3qLMbS {
+	#{cls('tooltip.primary')} {
 		border: 1px solid var(--bg-highest);
 		background: var(--bg-high);
 	}
 
-	.guildNameText-jBFbNC,
-	.tooltipContent-Nejnvh {
+	#{cls('tooltip.guilds.name')},
+	#{cls('tooltip.content')} {
 		font-weight: 500;
 	}
 }
