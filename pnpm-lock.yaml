@@ -2,12 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@discordstyles/classes': ^0.0.8
-  bd-scss: ^2.0.11
+  bd-scss: ^2.0.12
   prettier: ^2.7.1
 
 dependencies:
   '@discordstyles/classes': 0.0.8
-  bd-scss: 2.0.11
+  bd-scss: 2.0.12
 
 devDependencies:
   prettier: 2.7.1
@@ -42,8 +42,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: false
 
-  /bd-scss/2.0.11:
-    resolution: {integrity: sha512-xC3GdkL8maMH+IXArbv6FgBB4u+/fzbj2IgMBw6Eo1NCG+bL9zH76D660xABv7iW6K8C78GSBRjUCC/6Kx3qLg==}
+  /bd-scss/2.0.12:
+    resolution: {integrity: sha512-J3S0IfiWKLZxa0bcSHX4YoJMHTiQzCpqBPVXN/CtzkZStH82iQIHoHNl87LIhDsbp8J5Ez/X8v3VsLcf6hUp8g==}
     hasBin: true
     dependencies:
       autoprefixer: 10.4.12_postcss@8.4.17
