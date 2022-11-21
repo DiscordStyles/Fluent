@@ -2514,10 +2514,10 @@ body,
   box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
   padding: 0;
 }
-#app-mount .userPopoutOuter-3AVBmJ .bannerSVGWrapper-qc0szY {
+#app-mount .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY {
   min-height: 120px !important;
 }
-#app-mount .userPopoutOuter-3AVBmJ .bannerSVGWrapper-qc0szY foreignObject {
+#app-mount .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY foreignObject {
   y: -30;
   -webkit-mask: none;
           mask: none;
@@ -2540,7 +2540,7 @@ body,
   z-index: 2;
   margin-top: 0;
 }
-#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi > .section-3FmfOT:first-child {
+#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi > .section-3FmfOT:first-of-type {
   padding: 0;
   position: absolute;
   top: 16px;
