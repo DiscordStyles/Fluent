@@ -5,7 +5,7 @@
 	#{cls('popout.user.outer')} {
 		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
 		padding: 0;
-		#{cls('popout.user.nonPremium popout.user.bannerWrapper')} {
+		#{cls('popout.user.innerNonPremium popout.user.bannerWrapper')} {
 			min-height: 120px !important;
 			foreignObject {
 				y: -30;
@@ -29,7 +29,7 @@
 			position: static;
 			z-index: 2;
 			margin-top: 0;
-			& > #{cls('popout.user.section')}:first-child {
+			& > #{cls('popout.user.section')}:first-of-type {
 				padding: 0;
 				position: absolute;
 				top: 16px;

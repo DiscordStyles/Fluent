@@ -12,7 +12,8 @@
 		"build": "bd-scss build"
 	},
 	"dependencies": {
-		"bd-scss": "^2.0.11"
+		"@discordstyles/classes": "^0.0.8",
+		"bd-scss": "^2.0.12"
 	},
 	"devDependencies": {
 		"prettier": "^2.7.1"
