@@ -16,6 +16,6 @@
 		"bd-scss": "^2.0.12"
 	},
 	"devDependencies": {
-		"prettier": "^2.7.1"
+		"prettier": "^2.8.0"
 	}
 }
