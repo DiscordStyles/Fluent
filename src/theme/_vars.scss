@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '1.0.11';
+	--fluent-version: '1.0.12';
 
 	--transition: cubic-bezier(0, 0, 0, 1);
 
@@ -54,9 +54,8 @@
 	--server-icon-size: 36px;
 	--server-container: calc(var(--server-size) + 16px);
 	--server-size: 48px;
-	--server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x),
-		inset 0 1px 0 var(--btn-border-t), inset -1px 0 var(--btn-border-x),
-		inset 0 -1px 0 var(--btn-border-b);
+	--server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x), inset 0 1px 0 var(--btn-border-t),
+		inset -1px 0 var(--btn-border-x), inset 0 -1px 0 var(--btn-border-b);
 	--server-icon-shape: 50%;
 	--server-folder-icon-shape: 2px;
 
