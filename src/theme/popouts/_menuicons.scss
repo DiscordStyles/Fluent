@@ -45,6 +45,7 @@ $icons: (
 	'user-context-mute-channel': mono.$speaker-off,
 	'user-context-voice-move': mono.$move,
 	'user-context-devmode-copy-id': mono.$copy,
+	'user-context-add-friend-nickname': mono.$rename,
 
 	// Settings
 	'user-settings-cog-My_Account': mono.$user,
@@ -71,6 +72,9 @@ $icons: (
 	'user-settings-cog-Overlay': mono.$overlay,
 	'user-settings-cog-changelog': mono.$document-clock,
 	'user-settings-cog-Hypesquad_Online': mono.$star,
+	'user-settings-cog-Sessions': mono.$phone-laptop,
+	'user-settings-cog-Friend_Requests': mono.$user-available,
+	'user-settings-cog-Activity_Privacy': mono.$shield-check,
 
 	// Channel (right click toolbar)
 	'channel-context-mute-channel': mono.$speaker-off,
@@ -97,6 +101,8 @@ $icons: (
 	'guild-header-popout-change-nickname': mono.$pen,
 	'guild-header-popout-hide-muted-channels': mono.$eye,
 	'guild-header-popout-leave': mono.$sign-out,
+	'guild-header-popout-application-directory': mono.$app-store,
+	'guild-header-popout-report-raid': mono.$megaphone,
 
 	// Server dropdown (right click)
 	'guild-context-mark-guild-read': mono.$eye,
@@ -119,11 +125,16 @@ $icons: (
 	'message-actions-mark-unread': mono.$comment-note,
 	'message-actions-copy-link': mono.$link,
 	'message-actions-tts': mono.$speaker,
-	'message-actions-copy-id': mono.$copy
+	'message-actions-copy-id': mono.$copy,
+
+	// Current User / Status picker
+	'account-set-custom-status': mono.$status,
+	'account-switch-account': mono.$user-swap
 );
 
-.item-1OdjEX {
-	.icon-E4cW1l {
+.item-1OdjEX:not(#account-status-picker) {
+	.icon-E4cW1l,
+	& > .iconContainer-1-SsTR:first-of-type {
 		display: none;
 	}
 	&[role='menuitem']:not([id^='message-add-reaction-']),
@@ -139,8 +150,11 @@ $icons: (
 			background: var(--text-primary);
 		}
 	}
+	&#account-set-custom-status {
+		flex-direction: row !important;
+	}
 	@each $label, $icon in $icons {
-		&[id='#{$label}']::before {
+		&##{$label}::before {
 			content: '';
 			@if list.index($icon, 'danger') {
 				mask-image: url(list.nth($icon, 1));

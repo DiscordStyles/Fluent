@@ -1,5 +1,7 @@
-#app-mount .menu-1QACrS {
-	min-width: 180px;
+@use '../classes' as *;
+
+#{cls('mount popout.menu.container')} {
+	min-width: 280px;
 	background: var(--bg-menu);
 	border: 1px solid var(--border-high);
 	border-radius: var(--rounded-high);
