@@ -5,7 +5,7 @@
 	#{cls('popout.user.outer')} {
 		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
 		padding: 0;
-		#{cls('popout.user.innerNonPremium popout.user.bannerWrapper')} {
+		#{cls('profile.innerNonPremium profile.bannerWrapper')} {
 			min-height: 120px !important;
 			foreignObject {
 				y: -30;
@@ -24,7 +24,7 @@
 				opacity: 0 !important;
 			}
 		}
-		#{cls('popout.user.overlay')} {
+		#{cls('profile.overlay')} {
 			overflow: visible;
 			position: static;
 			z-index: 2;
@@ -52,10 +52,10 @@
 			padding: 0;
 		}
 	}
-	#{cls('popout.user.innerWithBanner')} {
+	#{cls('profile.innerWithBanner')} {
 		background: transparent;
 	}
-	#{cls('popout.user.inner!popout.user.innerNonPremium')} {
+	#{cls('profile.inner!profile.innerNonPremium')} {
 		#{cls('roles.role')} {
 			background: var(--bg-transparent);
 		}
@@ -70,9 +70,9 @@
 			}
 		}
 	}
-	#{cls('popout.user.innerNonPremium')} {
+	#{cls('profile.innerNonPremium')} {
 		background: var(--bg-main);
-		#{cls('popout.user.overlay')} {
+		#{cls('profile.overlay')} {
 			margin: 0;
 			background: transparent;
 			padding: 0 8px 8px;

@@ -1,7 +1,9 @@
 @use '../mixins';
 @use '../assets/mono';
+@use '../classes' as *;
 
 $banner-height: 300px;
 
-#app-mount {
+#{cls('mount modal.root')} {
+	background: red !important;
 }

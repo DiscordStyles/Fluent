@@ -1,7 +1,7 @@
 @use '../classes' as *;
 
 #{cls('mount')} {
-	#{cls('popout.currentUser.wrapper popout.user.overlay>popout.menu.container')} {
+	#{cls('popout.currentUser.wrapper profile.overlay>popout.menu.container')} {
 		background: transparent;
 		padding: 0;
 		border: none;
