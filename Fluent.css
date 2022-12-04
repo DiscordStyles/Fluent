@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "1.0.12";
+  --fluent-version: "1.0.13";
   --transition: cubic-bezier(0, 0, 0, 1);
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
@@ -40,7 +40,6 @@
   --chat-spacing-x: 24px;
   --server-icon-size: 28px;
   --server-container: calc(var(--server-size) + 16px);
-  --server-size: 48px;
   --server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x), inset 0 1px 0 var(--btn-border-t),
   	inset -1px 0 var(--btn-border-x), inset 0 -1px 0 var(--btn-border-b);
   --server-icon-shape: 50%;
@@ -49,6 +48,7 @@
   --banner-height: 155px;
   --win-btn-height: 32px;
   --win-btn-width: 52px;
+  --profile-premium-text-shadow: 0 2px 5px hsl(0 0% 0% / 0.75);
   --discord-pink: 302 calc(var(--saturation-factor, 1) * 100%) 72.5%;
   --discord-red: 359 calc(var(--saturation-factor, 1) * 82.6%) 59.4%;
   --discord-grey: 217 8% 34%;
@@ -2509,129 +2509,9 @@ body,
   margin-top: -6px;
 }
 
-#app-mount .userPopoutOuter-3AVBmJ {
-  box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
-  padding: 0;
-}
-#app-mount .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY {
-  min-height: 120px !important;
-}
-#app-mount .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY foreignObject {
-  y: -30;
-  -webkit-mask: none;
-          mask: none;
-}
-#app-mount .userPopoutOuter-3AVBmJ .avatarWrapperNormal-1tQ3Je {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  left: unset;
-  background: hsla(0deg, 0%, 100%, 0.2);
-  border-color: transparent;
-  box-shadow: 0 0 0 8px hsla(0deg, 0%, 100%, 0.2);
-}
-#app-mount .userPopoutOuter-3AVBmJ .avatarWrapperNormal-1tQ3Je circle[fill=black] {
-  opacity: 0 !important;
-}
-#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi {
-  overflow: visible;
-  position: static;
-  z-index: 2;
-  margin-top: 0;
-}
-#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi > .section-3FmfOT:first-of-type {
-  padding: 0;
-  position: absolute;
-  top: 16px;
-  left: 16px;
-}
-#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi > .divider-1tWBgZ {
-  display: none;
-}
-#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi .section-3FmfOT {
-  padding-right: 0 !important;
-}
-#app-mount .userPopoutOuter-3AVBmJ .profileBadges-31rDHI {
-  position: absolute;
-  right: unset;
-  left: 16px;
-  top: 66px;
-  z-index: 2;
-  background: transparent;
-  padding: 0;
-}
-#app-mount .userProfileInnerThemedWithBanner-2624Yx {
-  background: transparent;
-}
-#app-mount .userPopoutInner-1hXSeY:not(.userProfileInnerThemedNonPremium-1gT-zY) .role-2TIOKu {
-  background: var(--bg-transparent);
-}
-#app-mount .userPopoutInner-1hXSeY:not(.userProfileInnerThemedNonPremium-1gT-zY) .inputDefault-3FGxgL {
-  background: var(--bg-transparent);
-  border-color: var(--bg-transparent);
-}
-#app-mount .userPopoutInner-1hXSeY:not(.userProfileInnerThemedNonPremium-1gT-zY) .inputDefault-3FGxgL:hover {
-  background: var(--bg-transparent-hover);
-}
-#app-mount .userPopoutInner-1hXSeY:not(.userProfileInnerThemedNonPremium-1gT-zY) .inputDefault-3FGxgL:focus {
-  background: var(--bg-transparent-active) !important;
-}
-#app-mount .userProfileInnerThemedNonPremium-1gT-zY {
-  background: var(--bg-main);
-}
-#app-mount .userProfileInnerThemedNonPremium-1gT-zY .overlayBackground-1KgwVi {
-  margin: 0;
-  background: transparent;
-  padding: 0 8px 8px;
-}
-#app-mount .banner-2boKnS {
-  -webkit-mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
-          mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
-  position: absolute;
-  width: 100%;
-  height: 120px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-width: unset;
-}
-#app-mount .banner-2boKnS [role=button] {
-  display: none;
-}
-#app-mount .userPopoutInner-1hXSeY::before {
-  content: none;
-}
-#app-mount .nameTag-H6kSJ0 {
-  line-height: normal;
-}
-#app-mount .messageInputContainer-2rGDH8 {
-  border: none;
-  border-radius: unset;
-}
-#app-mount .roles-3zC7MX {
-  gap: 8px;
-}
-#app-mount .role-2TIOKu {
-  color: var(--text-secondary);
-  line-height: var(--line-height);
-  background: var(--bg-content);
-  margin: 0;
-  padding: 6px 8px;
-  height: unset;
-  border-radius: 50px;
-  border: none;
-}
-#app-mount .roleCircle-3K9O3d {
-  margin: 0;
-}
-#app-mount .roleName-2ZJJYR {
-  margin: 0 0 0 4px;
-}
 #app-mount .accountProfilePopoutWrapper-3GskID {
   left: 0;
 }
-
 #app-mount .accountProfilePopoutWrapper-3GskID .overlayBackground-1KgwVi > .menu-1QACrS {
   background: transparent;
   padding: 0;
@@ -3505,6 +3385,272 @@ body,
 }
 #app-mount .listWrapper-2DwCYS {
   border-left: 1px solid var(--border-high);
+}
+
+#app-mount .userProfileInnerThemedWithBanner-2624Yx {
+  background: transparent;
+}
+#app-mount .userProfileInner-3F03PX:not(.userProfileInnerThemedNonPremium-1gT-zY) .role-2TIOKu {
+  background: var(--bg-transparent);
+}
+#app-mount .userProfileInner-3F03PX:not(.userProfileInnerThemedNonPremium-1gT-zY) .discrimBase-KriZSj {
+  color: #aaa;
+}
+#app-mount .userProfileInner-3F03PX:not(.userProfileInnerThemedNonPremium-1gT-zY) .inputDefault-3FGxgL {
+  background: var(--bg-transparent);
+  border-color: var(--bg-transparent);
+}
+#app-mount .userProfileInner-3F03PX:not(.userProfileInnerThemedNonPremium-1gT-zY) .inputDefault-3FGxgL:hover {
+  background: var(--bg-transparent-hover);
+}
+#app-mount .userProfileInner-3F03PX:not(.userProfileInnerThemedNonPremium-1gT-zY) .inputDefault-3FGxgL:focus {
+  background: var(--bg-transparent-active) !important;
+  border-bottom-color: var(--profile-message-input-border-color);
+  box-shadow: inset 0 -1px 0 var(--profile-message-input-border-color);
+}
+#app-mount .userProfileInnerThemedNonPremium-1gT-zY {
+  background: var(--bg-main);
+}
+#app-mount .userProfileInnerThemedNonPremium-1gT-zY .overlayBackground-1KgwVi {
+  margin: 0;
+  background: transparent;
+  padding: 0 8px 8px;
+}
+#app-mount .roles-3zC7MX {
+  gap: 8px;
+}
+#app-mount .role-2TIOKu {
+  color: var(--text-secondary);
+  line-height: var(--line-height);
+  background: var(--bg-content);
+  margin: 0;
+  padding: 6px 8px;
+  height: unset;
+  border-radius: 50px;
+  border: none;
+}
+#app-mount .roleCircle-3K9O3d {
+  margin: 0;
+}
+#app-mount .roleName-2ZJJYR {
+  margin: 0 0 0 4px;
+}
+
+#app-mount .userPopoutOuter-3AVBmJ {
+  box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
+  padding: 0;
+}
+#app-mount .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY {
+  min-height: 120px !important;
+}
+#app-mount .userPopoutOuter-3AVBmJ .userProfileInnerThemedNonPremium-1gT-zY .bannerSVGWrapper-qc0szY foreignObject {
+  y: -30;
+  -webkit-mask: none;
+          mask: none;
+}
+#app-mount .userPopoutOuter-3AVBmJ .avatarWrapperNormal-1tQ3Je {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  left: unset;
+  background: hsla(0deg, 0%, 100%, 0.2);
+  border-color: transparent;
+  box-shadow: 0 0 0 8px hsla(0deg, 0%, 100%, 0.2);
+}
+#app-mount .userPopoutOuter-3AVBmJ .avatarWrapperNormal-1tQ3Je circle[fill=black] {
+  opacity: 0 !important;
+}
+#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi {
+  overflow: visible;
+  position: static;
+  z-index: 2;
+  margin-top: 0;
+}
+#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi > .section-3FmfOT:first-of-type {
+  padding: 0;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi > .divider-1tWBgZ {
+  display: none;
+}
+#app-mount .userPopoutOuter-3AVBmJ .overlayBackground-1KgwVi .section-3FmfOT {
+  padding-right: 0 !important;
+}
+#app-mount .userPopoutOuter-3AVBmJ .profileBadges-31rDHI {
+  position: absolute;
+  right: unset;
+  left: 16px;
+  top: 66px;
+  z-index: 2;
+  background: transparent;
+  padding: 0;
+}
+#app-mount .userPopoutOuter-3AVBmJ .profileBadge22-3OAigE {
+  filter: drop-shadow(var(--profile-premium-text-shadow));
+}
+#app-mount .userPopoutOuter-3AVBmJ .banner-2boKnS {
+  -webkit-mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
+          mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: unset;
+  pointer-events: none;
+}
+#app-mount .userPopoutOuter-3AVBmJ .banner-2boKnS [role=button] {
+  display: none;
+}
+#app-mount .userPopoutInner-1hXSeY::before {
+  content: none;
+}
+#app-mount .nameTag-H6kSJ0 {
+  line-height: normal;
+  text-shadow: var(--profile-premium-text-shadow);
+}
+#app-mount .messageInputContainer-2rGDH8 {
+  border: none;
+  border-radius: unset;
+}
+
+#app-mount .userProfileModalOuter-1FYL8T {
+  padding: 0;
+}
+#app-mount .userProfileModalOuter-1FYL8T .bannerSVGWrapper-qc0szY {
+  overflow: visible;
+  pointer-events: none;
+}
+#app-mount .userProfileModalOuter-1FYL8T .bannerSVGWrapper-qc0szY foreignObject {
+  -webkit-mask: none;
+          mask: none;
+}
+#app-mount .userProfileModalOuter-1FYL8T .banner-2boKnS {
+  -webkit-mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
+          mask: linear-gradient(hsla(0deg, 0%, 0%, 0.5), transparent 90%);
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: unset;
+}
+#app-mount .userProfileModalOuter-1FYL8T .banner-2boKnS [role=button] {
+  display: none;
+}
+#app-mount .userProfileModalInner-3fh3QA::before {
+  content: none;
+}
+#app-mount .userProfileModalInner-3fh3QA:not(.userProfileInnerThemedNonPremium-1gT-zY) .tabBarItem-3VvT2z::before {
+  background: var(--profile-message-input-border-color);
+}
+#app-mount .userProfileModalInner-3fh3QA:not(.userProfileInnerThemedNonPremium-1gT-zY) .textarea-_59yqs:focus {
+  border-bottom-color: var(--profile-message-input-border-color);
+  box-shadow: inset 0 -1px 0 var(--profile-message-input-border-color);
+}
+#app-mount .userProfileModalInner-3fh3QA.userProfileInnerThemedNonPremium-1gT-zY .userProfileModalOverlayBackground-8p3-eU {
+  padding: 0;
+}
+#app-mount .topSection-1Khgkv {
+  margin-bottom: 0;
+  height: 180px;
+  z-index: 0;
+}
+#app-mount .topSection-1Khgkv .wrapper-1VLyxH {
+  top: 24px;
+  right: 24px;
+  left: unset;
+  background: hsla(0deg, 0%, 100%, 0.2);
+  border-color: transparent;
+  box-shadow: 0 0 0 8px hsla(0deg, 0%, 100%, 0.2);
+}
+#app-mount .topSection-1Khgkv .wrapper-1VLyxH circle[fill=black] {
+  fill: transparent;
+}
+#app-mount .header-1_vWwx {
+  position: unset;
+}
+#app-mount .headerTop-212g15 {
+  position: unset;
+}
+#app-mount .badgeList-2pMvZX {
+  position: absolute;
+  top: 104px;
+  left: 24px;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+#app-mount .profileBadge24-3UMhUO {
+  filter: drop-shadow(var(--profile-premium-text-shadow));
+}
+#app-mount .actionButton-D1ZvXj {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50% !important;
+  background: hsla(0deg, 0%, 0%, 0.6) !important;
+  margin: 0;
+  color: #fff !important;
+  opacity: 0;
+  transition: opacity 0.15s var(--transition) !important;
+}
+#app-mount .actionButton-D1ZvXj .contents-3ca1mk {
+  white-space: normal;
+}
+#app-mount .actionButton-D1ZvXj:hover {
+  opacity: 1;
+}
+#app-mount .relationshipButtons-pZ_UWl div[class][role=button] {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+#app-mount .body-_QAKrE {
+  overflow: visible;
+  flex: none;
+}
+#app-mount .userProfileModalOverlayBackground-8p3-eU {
+  position: unset;
+  margin-top: 0;
+}
+#app-mount .container-1U-qVy {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 1;
+  padding: 0;
+}
+#app-mount .nameTag-2ysfG3 {
+  text-shadow: var(--profile-premium-text-shadow);
+  font-size: 24px;
+}
+#app-mount .customStatusText-3ca2B1 {
+  font-weight: var(--font-weight-semibold);
+  max-width: 400px;
+  text-shadow: var(--profile-premium-text-shadow);
+}
+#app-mount .divider-1NpGam {
+  display: none;
+}
+#app-mount .tabBarContainer-2UG0vy {
+  margin: 8px;
+  border: none;
+}
+#app-mount .tabBar-2StdUa {
+  gap: 0;
+}
+#app-mount .listScroller-XCVa1H, #app-mount .infoScroller-3MqKC5 {
+  max-height: 330px;
+  height: 330px;
 }
 
 #app-mount .container-2cd8Mz {
@@ -4507,7 +4653,7 @@ body,
 #app-mount .layer-86YKbF ~ .layer-86YKbF .accountProfileCard-lbN7n- {
   background: transparent;
 }
-#app-mount .layer-86YKbF ~ .layer-86YKbF .banner-1YaD3N {
+#app-mount .layer-86YKbF ~ .layer-86YKbF .banner-2boKnS {
   display: none;
 }
 #app-mount .layer-86YKbF ~ .layer-86YKbF .userInfo-regn9W {
