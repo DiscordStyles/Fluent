@@ -51,45 +51,23 @@
 			background: transparent;
 			padding: 0;
 		}
-	}
-	#{cls('profile.innerWithBanner')} {
-		background: transparent;
-	}
-	#{cls('profile.inner!profile.innerNonPremium')} {
-		#{cls('roles.role')} {
-			background: var(--bg-transparent);
+		#{cls('popout.user.badgeImage')} {
+			filter: drop-shadow(var(--profile-premium-text-shadow));
 		}
-		#{cls('input.default')} {
-			background: var(--bg-transparent);
-			border-color: var(--bg-transparent);
-			&:hover {
-				background: var(--bg-transparent-hover);
+		#{cls('profile.banner')} {
+			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 90%);
+			position: absolute;
+			width: 100%;
+			height: 120px;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			max-width: unset;
+			pointer-events: none;
+			[role='button'] {
+				display: none;
 			}
-			&:focus {
-				background: var(--bg-transparent-active) !important;
-			}
-		}
-	}
-	#{cls('profile.innerNonPremium')} {
-		background: var(--bg-main);
-		#{cls('profile.overlay')} {
-			margin: 0;
-			background: transparent;
-			padding: 0 8px 8px;
-		}
-	}
-	#{cls('popout.user.banner')} {
-		mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 90%);
-		position: absolute;
-		width: 100%;
-		height: 120px;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		max-width: unset;
-		[role='button'] {
-			display: none;
 		}
 	}
 	#{cls('popout.user.inner')}::before {
@@ -98,35 +76,11 @@
 
 	#{cls('popout.user.nameTag')} {
 		line-height: normal;
+		text-shadow: var(--profile-premium-text-shadow);
 	}
 
 	#{cls('popout.user.messageContainer')} {
 		border: none;
 		border-radius: unset;
-	}
-
-	#{cls('roles.roles')} {
-		gap: 8px;
-	}
-	#{cls('roles.role')} {
-		color: var(--text-secondary);
-		line-height: var(--line-height);
-		background: var(--bg-content);
-		margin: 0;
-		padding: 6px 8px;
-		height: unset;
-		border-radius: 50px;
-		border: none;
-	}
-	#{cls('roles.circle')} {
-		margin: 0;
-	}
-	#{cls('roles.name')} {
-		margin: 0 0 0 4px;
-	}
-
-	// Bottom left thingy
-	#{cls('popout.currentUser.wrapper')} {
-		left: 0;
 	}
 }

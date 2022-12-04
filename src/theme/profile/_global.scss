@@ -1,0 +1,55 @@
+@use '../classes' as *;
+
+#{cls('mount')} {
+	#{cls('profile.innerWithBanner')} {
+		background: transparent;
+	}
+	#{cls('profile.inner!profile.innerNonPremium')} {
+		#{cls('roles.role')} {
+			background: var(--bg-transparent);
+		}
+		#{cls('popout.user.discrim')} {
+			color: #aaa;
+		}
+		#{cls('input.default')} {
+			background: var(--bg-transparent);
+			border-color: var(--bg-transparent);
+			&:hover {
+				background: var(--bg-transparent-hover);
+			}
+			&:focus {
+				background: var(--bg-transparent-active) !important;
+				border-bottom-color: var(--profile-message-input-border-color);
+				box-shadow: inset 0 -1px 0 var(--profile-message-input-border-color);
+			}
+		}
+	}
+	#{cls('profile.innerNonPremium')} {
+		background: var(--bg-main);
+		#{cls('profile.overlay')} {
+			margin: 0;
+			background: transparent;
+			padding: 0 8px 8px;
+		}
+	}
+
+	#{cls('roles.roles')} {
+		gap: 8px;
+	}
+	#{cls('roles.role')} {
+		color: var(--text-secondary);
+		line-height: var(--line-height);
+		background: var(--bg-content);
+		margin: 0;
+		padding: 6px 8px;
+		height: unset;
+		border-radius: 50px;
+		border: none;
+	}
+	#{cls('roles.circle')} {
+		margin: 0;
+	}
+	#{cls('roles.name')} {
+		margin: 0 0 0 4px;
+	}
+}
