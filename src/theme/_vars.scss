@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '1.0.12';
+	--fluent-version: '1.0.13';
 
 	--transition: cubic-bezier(0, 0, 0, 1);
 
@@ -53,7 +53,6 @@
 
 	--server-icon-size: 36px;
 	--server-container: calc(var(--server-size) + 16px);
-	--server-size: 48px;
 	--server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x), inset 0 1px 0 var(--btn-border-t),
 		inset -1px 0 var(--btn-border-x), inset 0 -1px 0 var(--btn-border-b);
 	--server-icon-shape: 50%;
@@ -65,6 +64,8 @@
 
 	--win-btn-height: 32px;
 	--win-btn-width: 52px;
+
+	--profile-premium-text-shadow: 0 2px 5px hsl(0 0% 0% / 0.75);
 
 	--discord-pink: 302 calc(var(--saturation-factor, 1) * 100%) 72.5%;
 	--discord-red: 359 calc(var(--saturation-factor, 1) * 82.6%) 59.4%;

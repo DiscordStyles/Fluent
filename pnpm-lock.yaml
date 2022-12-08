@@ -1,12 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@discordstyles/classes': ^0.0.9
+  '@discordstyles/classes': ^0.0.11
   bd-scss: ^2.0.12
   prettier: ^2.8.0
 
 dependencies:
-  '@discordstyles/classes': 0.0.9
+  '@discordstyles/classes': 0.0.11
   bd-scss: 2.0.12
 
 devDependencies:
@@ -14,8 +14,8 @@ devDependencies:
 
 packages:
 
-  /@discordstyles/classes/0.0.9:
-    resolution: {integrity: sha512-mge39eFZvZWX2EEJD4MukZFkDs8sr9N7z1miVQeCsSFaiEo2Ujruu8hjzT+dG3sNNfEwSRNyGauFEWlcDrvxHw==}
+  /@discordstyles/classes/0.0.11:
+    resolution: {integrity: sha512-V9EH1xIEar9DKjH33ijJV8dkZKk/p+yoZFBSirZTjzYFpxZ18bxr8fD+i2s/9Lcumq3el8+pymyTuIYGLAU5nA==}
     dev: false
 
   /anymatch/3.1.3:
