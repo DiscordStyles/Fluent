@@ -13,7 +13,8 @@
 			display: none;
 		}
 		& > .item-1OdjEX,
-		& > .submenuContainer-3EVTeH {
+		& > .submenuContainer-3EVTeH,
+		& > div:not([class]) {
 			margin: 6px;
 		}
 	}

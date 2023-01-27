@@ -36,8 +36,9 @@
 			cursor: var(--cursor);
 		}
 
-		.interactive-1vLZ_I {
+		.interactive-26HRN_ {
 			cursor: var(--cursor);
+			background: transparent;
 			&::before {
 				content: '';
 				border-radius: 50px;
@@ -60,10 +61,10 @@
 			justify-content: center;
 		}
 
-		&:hover .interactive-1vLZ_I {
+		&:hover .interactive-26HRN_ {
 			background: var(--bg-interactive-high);
 		}
-		.selected-3veCBZ {
+		.selected-26oxtA {
 			background: var(--bg-interactive-high);
 			&::before {
 				height: var(--pill-height);
@@ -75,11 +76,14 @@
 		}
 	}
 
-	.link-39sEB3[href='/channels/@me'] .linkButtonIcon-7rsZcu {
-		mask: url(mono.$people) center/cover;
-		background: var(--interactive-normal);
-		g {
-			display: none;
+	.link-39sEB3 {
+		cursor: var(--cursor);
+		&[href='/channels/@me'] .linkButtonIcon-7rsZcu {
+			mask: url(mono.$people) center/cover;
+			background: var(--interactive-normal);
+			g {
+				display: none;
+			}
 		}
 	}
 }
