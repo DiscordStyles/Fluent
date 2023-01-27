@@ -2465,6 +2465,11 @@ body,
   height: 14px;
   transform: translateY(0);
 }
+#app-mount .menu-1QACrS .groupLabel-16o1xl {
+  padding-top: 0;
+  padding-bottom: 6px;
+  min-height: auto;
+}
 #app-mount .menu-1QACrS .item-1OdjEX {
   margin: 0;
   border-radius: var(--rounded);
@@ -2503,9 +2508,7 @@ body,
   color: rgb(var(--accent));
 }
 #app-mount .menu-1QACrS [role=menuitemcheckbox],
-#app-mount .menu-1QACrS [id^=message-actions-],
-#app-mount .menu-1QACrS [id^=message-],
-#app-mount .menu-1QACrS [id*=copy-id] {
+#app-mount .menu-1QACrS [role=menuitemradio], #app-mount .menu-1QACrS > div > div + div .item-1OdjEX {
   flex-direction: row;
 }
 #app-mount .menu-1QACrS .submenuContainer-3EVTeH .item-1OdjEX {
@@ -3897,16 +3900,16 @@ body,
   bottom: unset;
 }
 
-#app-mount [role=slider] .bar-1Bhnl9 {
+#app-mount [role=slider] .bar-2H7Q9u {
   height: 4px;
 }
-#app-mount [role=slider] .barFill-2Bh7CX {
+#app-mount [role=slider] .barFill-3RgCsY {
   background: rgb(var(--accent));
 }
-#app-mount [role=slider] .track-1BI4CA {
+#app-mount [role=slider] .track-3I-RwH {
   left: 10px;
 }
-#app-mount [role=slider] .grabber-2GQyvM {
+#app-mount [role=slider] .grabber-3R-Rx9 {
   border: 4px solid var(--bg-highest);
   margin-top: 0;
   background: rgb(var(--accent));
@@ -3917,6 +3920,11 @@ body,
   transform: translateY(-50%);
   margin-left: -10px;
   margin-top: -2px;
+}
+#app-mount [role=slider].mini-28oMa3 .grabber-3R-Rx9 {
+  width: 12px;
+  height: 12px;
+  top: 100%;
 }
 
 #app-mount [role=menuitemcheckbox] .iconContainer-1-SsTR {
