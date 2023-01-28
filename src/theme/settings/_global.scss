@@ -1,24 +1,30 @@
 @use '../assets/mono';
 @use '../mixins';
 
-#app-mount .layer-86YKbF.layer-86YKbF ~ .layer-86YKbF {
-	h1.title-3hptVQ {
-		@include mixins.title;
-	}
-	.divider-_0um2u,
-	.divider-ogkn3u {
-		display: none;
+#app-mount .layer-86YKbF ~ .layer-86YKbF {
+	// Main title
+	.contentColumn-1C7as6 {
+		& > .heading-lg-semibold-14ouVv:first-child,
+		& > div > div:first-child > .sectionTitle-LdcnyP:first-child .title-lXcL8p,
+		& > div:first-child > .sectionTitle-LdcnyP:first-child .title-lXcL8p {
+			@include mixins.title;
+		}
 	}
 	.title-2dsDLn {
 		cursor: var(--cursor);
 	}
 
 	// Section title
-	[class^='margin'] > .title-3hptVQ,
-	.marginTop40-Q4o1tS > .sectionTitle-3j2YI1 > .title-3hptVQ,
-	.title-3hptVQ.marginBottom8-emkd0_,
-	.sectionTitle-3j2YI1 .title-3hptVQ:not(h1) {
+	[class^='margin'] > .title-lXcL8p,
+	.marginTop40-Q4o1tS > .sectionTitle-LdcnyP > .title-lXcL8p,
+	.title-lXcL8p.marginBottom8-emkd0_,
+	.sectionTitle-LdcnyP .title-lXcL8p:not(h1) {
 		@include mixins.subTitle;
+	}
+
+	// Dividers
+	[class*='divider-'] {
+		display: none;
 	}
 
 	// Section description/text
@@ -27,8 +33,8 @@
 	}
 
 	// Form description (use data to make discord work, ect...)
-	.title-3hptVQ.marginBottom8-emkd0_,
-	.title-3hptVQ.defaultMarginh3-2aILfT {
+	.title-lXcL8p.marginBottom8-emkd0_,
+	.title-lXcL8p.defaultMarginh3-2aILfT {
 		& + .description-30xx7u.formText-2ngGjI {
 			background: var(--bg-content);
 			border-radius: var(--rounded);
@@ -43,18 +49,18 @@
 	}
 
 	// Switches
-	.container-1zDvAE {
+	.container-31PmuA {
 		@include mixins.card(column, flex-start);
 		margin-top: 0;
 		margin-bottom: 4px;
-		.title-2dsDLn {
+		.title-2yADjX {
 			@include mixins.cardTitle;
 		}
-		.note-2C4pGr {
+		.note-3SS3a9 {
 			@include mixins.cardDesc;
 		}
-		& + .title-3hptVQ,
-		& + div[class^='margin']:not(.container-1zDvAE) {
+		& + .title-lXcL8p,
+		& + div[class^='margin']:not(.container-31PmuA) {
 			margin-top: 40px;
 		}
 	}
@@ -72,7 +78,7 @@
 	.children-1xdcWE > [class^='marginBottom']:not(:only-child):first-child {
 		margin-bottom: 0;
 	}
-	.title-3hptVQ.defaultMarginh3-2aILfT {
+	.title-lXcL8p.defaultMarginh3-2aILfT {
 		margin-top: 40px;
 	}
 

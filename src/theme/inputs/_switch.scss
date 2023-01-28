@@ -1,4 +1,4 @@
-#app-mount .container-2nx-BQ {
+#app-mount .container-1QtPKm {
 	background: transparent !important;
 	width: 40px;
 	height: 20px;
@@ -25,8 +25,7 @@
 			border-radius: 7px;
 			display: block;
 			background: var(--text-secondary);
-			transition: background 0.15s var(--transition), transform 0.15s var(--transition),
-				width 0.15s var(--transition), height 0.15s var(--transition);
+			transition: background 0.15s var(--transition), transform 0.15s var(--transition), width 0.15s var(--transition), height 0.15s var(--transition);
 		}
 		&:hover {
 			&:not(:checked) {
