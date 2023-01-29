@@ -5,7 +5,8 @@
 	.accountProfileCard-lbN7n- {
 		background: transparent;
 	}
-	.banner-2boKnS {
+	.banner-2boKnS,
+	.bannerSVGWrapper-qc0szY {
 		display: none;
 	}
 	.userInfo-regn9W {
@@ -118,10 +119,15 @@
 			display: flex;
 			align-items: center;
 		}
-		.text-md-normal-304U3g {
+		.text-md-normal-2rFCH3 {
 			@include mixins.cardDesc;
 			line-height: normal;
 			color: var(--text-muted) !important;
+			& > span {
+				font-size: inherit;
+				line-height: inherit;
+				color: inherit !important;
+			}
 			button {
 				padding: 0;
 				margin-left: 12px;
@@ -151,7 +157,7 @@
 			@include mixins.subTitle;
 		}
 
-		& > .children-1xdcWE {
+		& > .children-2C96Ex {
 			// Password and authentication
 			& > div:first-child {
 				@include mixins.card;
@@ -174,8 +180,8 @@
 				}
 			}
 			// 2FA Enabled
-			& > div:last-child > div > div {
-				& > .title-3hptVQ {
+			& > div.flex-2S1XBF > div > div {
+				& > .h5-2feg8J:first-child {
 					@include mixins.subTitle;
 					color: transparent;
 					&::before {
@@ -186,7 +192,7 @@
 						display: none;
 					}
 				}
-				& > .modeDefault-2fEh7a {
+				& > .modeDefault-3Warim {
 					@include mixins.card(column, flex-start);
 					@include mixins.cardDesc;
 					padding-left: 60px !important;
@@ -226,13 +232,13 @@
 				}
 				& > .marginTop40-Q4o1tS {
 					margin-top: 0;
-					.sectionTitle-3j2YI1 {
+					.sectionTitle-LdcnyP {
 						display: none;
 					}
 					.marginBottom8-emkd0_ {
 						margin: 0;
 					}
-					.children-1xdcWE {
+					.children-2C96Ex {
 						@include mixins.card(column, flex-start);
 						padding-left: 60px;
 						&::before {
@@ -268,7 +274,7 @@
 
 		// Account removal
 		& ~ .marginTop40-Q4o1tS {
-			.title-3hptVQ {
+			.h5-2feg8J {
 				@include mixins.subTitle;
 				color: transparent;
 				user-select: none;
@@ -279,7 +285,7 @@
 					color: var(--text-primary);
 				}
 			}
-			.children-1xdcWE {
+			.children-2C96Ex {
 				@include mixins.card;
 				&::before {
 					content: '';
@@ -287,7 +293,7 @@
 					mask-image: url(mono.$user-delete);
 				}
 			}
-			.description-30xx7u {
+			.description-foE_WP {
 				margin-bottom: 0;
 				flex: 1;
 				@include mixins.cardDesc;

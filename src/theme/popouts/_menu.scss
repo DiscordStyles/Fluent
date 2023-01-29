@@ -13,7 +13,8 @@
 			display: none;
 		}
 		& > .item-1OdjEX,
-		& > .submenuContainer-3EVTeH {
+		& > .submenuContainer-3EVTeH,
+		& > div:not([class]) {
 			margin: 6px;
 		}
 	}
@@ -65,6 +66,12 @@
 		}
 	}
 
+	.groupLabel-16o1xl {
+		padding-top: 0;
+		padding-bottom: 6px;
+		min-height: auto;
+	}
+
 	.item-1OdjEX {
 		margin: 0;
 		border-radius: var(--rounded);
@@ -107,9 +114,8 @@
 	}
 
 	[role='menuitemcheckbox'],
-	[id^='message-actions-'],
-	[id^='message-'],
-	[id*='copy-id'] {
+	[role='menuitemradio'],
+	& > div > div + div .item-1OdjEX {
 		flex-direction: row;
 	}
 
