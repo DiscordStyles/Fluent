@@ -11,11 +11,34 @@
 			content: none;
 		}*/
 	}
+	//Fix padding toolbar en streaming
 	.fullScreen-KhZZcz{
 		.container-ZMc96U, .transparent-1lUmft{
 			padding-right: 0px;
 		}
 	}
+	//Fix boton mostrar chat en streaming
+		//pantalla completa
+	.wrapper-1gVUIN.fullScreen-KhZZcz.video-3n15R6 {
+		.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F.chatButton-10jXXp{
+			padding-right: 0px;
+		}
+	}
+		//ventana
+	.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F.chatButton-10jXXp{
+		padding-right: 160px;
+	}
+	//Fix padding streaming
+	.content-1SgpWY{
+		position: absolute !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
+	//Fix boton pantalla completa en streaming
+	.flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.flex-3BkGQD{
+		padding-right: 0px;
+	}
+	
 	// title-31SJ6t container-ZMc96U
 	#{cls('title.children.container')} {
 		margin-right: 16px;
