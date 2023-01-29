@@ -1,182 +1,33 @@
 @use '../../assets/mono';
 @use '../../mixins';
 
-#app-mount {
-	.layer-86YKbF ~ .layer-86YKbF {
-		.notice-1Qe0b_ {
-			border: 1px solid var(--border);
-			background: var(--bg-content-alt);
-			border-radius: var(--rounded);
-			min-height: 48px;
-			padding: 0 12px;
+#app-mount #profile-customization-tab {
+	.top-K_jibn {
+		border: none;
+	}
+	.baseLayoutProfileThemes-1Jj-oN {
+		flex-direction: column;
+	}
+	.customizationSection-IGy2fS {
+		@include mixins.card;
+		justify-content: space-between;
+		.description-foE_WP {
+			display: none;
 		}
-
-		// Avatar
-		.baseLayout-8AMrwn {
+		&:last-child {
 			flex-direction: column;
+			align-items: flex-start;
 		}
-		.customizationSection-IGy2fS {
-			&:not(.preview-Z55SA3) {
-				@include mixins.card;
-				margin-bottom: 4px;
-
-				&::before {
-					content: '';
-					@include mixins.cardIcon;
-					grid-area: icon;
-				}
-
-				.channelTextArea-1VQBuV {
-					grid-area: input;
-					margin: 18px 0 36px;
-				}
-				.bioTextArea-dDGOeC {
-					border: none;
-				}
-
-				.description-30xx7u {
-					margin: 0;
-					grid-area: desc;
-				}
-				.buttonsContainer-12kYno {
-					flex-direction: row-reverse;
-					gap: 18px;
-				}
-				button {
-					margin: 0;
-				}
-				.h5-2RwDNl {
-					@include mixins.cardTitle;
-					margin-bottom: 0;
-					grid-area: title;
-				}
-				.lookFilled-1Gx00P.colorBrand-3pXr91 {
-					@include mixins.btn;
-					@include mixins.btnSecondary;
-				}
-			}
-			&:nth-child(1)::before {
-				mask-image: url(mono.$user);
-			}
-			&:nth-child(2)::before {
-				mask-image: url(mono.$palette);
-			}
-			&:nth-child(3) {
-				display: grid;
-				grid-template-columns: 22px 1fr auto;
-				grid-template-areas:
-					'icon title button'
-					'icon desc button';
-				&::before {
-					mask-image: url(mono.$image);
-				}
-				button {
-					@include mixins.btn;
-					@include mixins.btnSecondary;
-					grid-area: button;
-				}
-			}
-			&:nth-child(4) {
-				display: grid;
-				grid-template-columns: 22px 1fr;
-				grid-template-areas:
-					'icon title'
-					'icon desc'
-					'input input';
-				&::before {
-					mask-image: url(mono.$user-question);
-				}
-			}
-		}
-		.preview-Z55SA3 {
-			margin: 0;
-			padding: 32px 0 0;
-			& > h5 {
-				display: none;
-			}
-		}
-		.channelTextArea-1VQBuV {
-			background: var(--textbox-bg);
-			border-radius: var(--rounded);
-			border: 1px solid var(--textbox-border);
-			position: relative;
-			margin-bottom: 42px;
-			&::before {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 1px;
-				background: var(--textbox-underline);
-			}
-			&:hover {
-				background: var(--textbox-bg-hover);
-			}
-			&:focus-within {
-				background: var(--bg-alt);
-				&::before {
-					height: 2px;
-					background: rgb(var(--accent));
-				}
-			}
-		}
-	}
-	// Avatar changer
-	.optionBox-1UOevl {
-		background: var(--bg-main);
-		border: 1px solid var(--border-high);
-		border-radius: var(--rounded);
-	}
-
-	// Preview
-	.profileBannerPreview-3mLIdO {
-		border-radius: var(--rounded-high);
-		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
-		width: 400px !important;
-		box-sizing: border-box;
-
-		.banner-3D8GgT {
-			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 90%);
-			position: absolute;
-			width: 100%;
-			height: 60%;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			pointer-events: none;
-			user-select: none;
-			z-index: 0;
-		}
-
-		.avatarUploader-qEFQS2 {
-			position: absolute;
-			top: 24px;
-			right: 24px;
-			left: unset;
-			background: hsl(0 0% 100% / 0.2);
-			border-color: transparent;
-			box-shadow: 0 0 0 4px hsl(0 0% 100% / 0.2);
-			border-radius: 50%;
-		}
-		.headerTop-3GPUSF {
-			padding: 0;
-			padding: 24px;
-			box-sizing: border-box;
-			height: 160px;
-			width: 100%;
-			display: flex;
-			flex-direction: column-reverse;
-			justify-content: flex-end;
+		&.withDivider-14SSKx:not(.section-2ZF4mt) .buttonsContainer-12kYno {
+			flex-direction: row-reverse;
 			gap: 8px;
 		}
-		.popoutInfo-16MuYF {
-			position: relative;
-			z-index: 1;
-		}
-		.size12-oc4dx4 {
-			@include mixins.subText;
-			text-transform: none;
-		}
+	}
+	.title-1HgbhV {
+		margin: 0;
+	}
+
+	.tryItOutSection-W9qeGH {
+		display: none;
 	}
 }
