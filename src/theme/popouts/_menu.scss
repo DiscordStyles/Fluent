@@ -12,7 +12,8 @@
 		&::-webkit-scrollbar {
 			display: none;
 		}
-		& > .item-5ApiZt {
+		& > .item-5ApiZt,
+		& > div:not([class]) {
 			margin: 6px;
 		}
 	}
