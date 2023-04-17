@@ -9,7 +9,7 @@ Brings the look of Windows 11 to Discord.
 
 BetterDiscord Download: [https://betterdiscord.app/theme/Fluent](https://betterdiscord.app/Download?id=662)  
 Powercord Install: `git clone https://github.com/DiscordStyles/Fluent --branch deploy`  
-Vencord link: `https://github.com/DiscordStyles/Fluent/blob/deploy/Fluent.theme.css`
+Vencord link: `https://raw.githubusercontent.com/DiscordStyles/Fluent/deploy/Fluent.theme.css`
 
 ## Contributing
 
