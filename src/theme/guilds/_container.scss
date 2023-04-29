@@ -20,4 +20,8 @@
 			margin-bottom: 4px;
 		}
 	}
+
+	div[aria-hidden="true"][style="height: 84px;"]{
+		display:none;
+	  }
 }
