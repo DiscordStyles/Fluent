@@ -57,14 +57,11 @@
 		.buttonWrapper-3YFQGJ {
 			cursor: var(--cursor);
 		}
-		& > *:not(:last-child) {
-			margin-right: 16px !important;
-		}
 	}
 
 	.attachWrapper-3slhXI {
 		position: absolute;
-		bottom: -32px;
+		bottom: -42px;
 		left: 0;
 		button {
 			padding: 0;
