@@ -60,7 +60,7 @@
 		}
 	}
 
-	&.layer-86YKbF ~ .layer-86YKbF {
+	& ~ .layer-86YKbF {
 		.standardSidebarView-E9Pc3j {
 			background: var(--bg-main);
 		}
@@ -75,7 +75,7 @@
 		.sidebar-nqHbhN {
 			width: 270px;
 			padding: 0 16px 16px;
-			.item-3XjbnG {
+			.item-2GWPIy {
 				font-size: var(--font-size-sm);
 				border-radius: var(--rounded);
 				padding: 8px 12px;
@@ -119,7 +119,7 @@
 				&:hover {
 					background: var(--bg-interactive);
 				}
-				&.selected-g-kMVV {
+				&.selected-1sf9UK {
 					background: var(--bg-interactive);
 					.premiumLabel-V52REm {
 						color: var(--accent-text);
@@ -136,10 +136,10 @@
 					}
 				}
 			}
-			.header-2Kx1US {
+			.header-2F5_LB {
 				display: none;
 			}
-			.separator-2wx7h6 {
+			.separator-2N511j {
 				height: 0;
 			}
 		}

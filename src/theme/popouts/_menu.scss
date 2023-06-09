@@ -52,6 +52,9 @@
 		& > .item-5ApiZt:last-child {
 			margin-bottom: 0;
 		}
+		& > .hideInteraction-1vQrZJ {
+			padding: 0;
+		}
 	}
 	[role='separator'] {
 		margin: 2px 6px;
@@ -118,7 +121,7 @@
 
 	[role='menuitemcheckbox'],
 	[role='menuitemradio'],
-	& > div > div + div .item-5ApiZt {
+	& > div > div:not([class]) + div:not([class]) .item-5ApiZt {
 		flex-direction: row;
 	}
 

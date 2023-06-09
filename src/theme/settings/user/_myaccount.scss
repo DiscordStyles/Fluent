@@ -6,7 +6,7 @@
 		background: transparent;
 	}
 	.banner-2boKnS,
-	.bannerSVGWrapper-qc0szY {
+	.bannerSVGWrapper-2CLfzN {
 		display: none;
 	}
 	.userInfo-regn9W {
@@ -88,10 +88,11 @@
 		background: transparent;
 		border-radius: 0;
 		.field-21XZwa {
-			&:first-child::before {
+			&:first-child::before,
+			&:nth-child(2)::before {
 				mask-image: url(mono.$user);
 			}
-			&:nth-child(2)::before {
+			&:nth-child(3)::before {
 				mask-image: url(mono.$mail);
 			}
 			&:last-child::before {
