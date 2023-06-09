@@ -69,6 +69,15 @@
 				display: none;
 			}
 		}
+		#{cls('popout.user.nickName')} {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			max-width: 220px;
+		}
+		// &.theme-light #{cls('roles.role')} {
+
+		// }
 	}
 	#{cls('popout.user.inner')}::before {
 		content: none;

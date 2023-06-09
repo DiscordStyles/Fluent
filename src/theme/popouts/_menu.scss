@@ -13,7 +13,7 @@
 			display: none;
 		}
 		& > .item-5ApiZt,
-		& > div:not([class]) {
+		& > div:not([class], [role='group']) {
 			margin: 6px;
 		}
 	}
@@ -84,6 +84,10 @@
 		}
 		.iconContainer-Ksy8Oj {
 			margin: 0;
+			display: flex;
+			svg {
+				margin: auto;
+			}
 		}
 		.icon-3XHs8t {
 			color: currentColor;

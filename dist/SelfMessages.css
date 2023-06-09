@@ -4,7 +4,6 @@
   align-items: flex-end;
 }
 #app-mount .cozy-VmLDNB[data-is-author-self=true] .contents-2MsGLg {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background: rgb(var(--accent), 0.05);
