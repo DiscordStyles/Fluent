@@ -46,6 +46,7 @@ $icons: (
 	'user-context-voice-move': mono.$move,
 	'user-context-devmode-copy-id': mono.$copy,
 	'user-context-add-friend-nickname': mono.$rename,
+	'user-context-soundboard-sound-mute': mono.$speaker-off,
 
 	// Settings
 	'user-settings-cog-My_Account': mono.$user,
@@ -126,6 +127,9 @@ $icons: (
 	'message-actions-copy-link': mono.$link,
 	'message-actions-tts': mono.$speaker,
 	'message-actions-copy-id': mono.$copy,
+	'message-actions-copy-text': mono.$copy,
+	'message-actions-report': mono.$megaphone,
+	'message-actions-devmode-copy-id': mono.$copy,
 
 	// Current User / Status picker
 	'account-set-custom-status': mono.$status,
@@ -133,9 +137,12 @@ $icons: (
 );
 
 .item-5ApiZt:not(#account-status-picker) {
-	.icon-E4cW1l,
-	& > .iconContainer-Ksy8Oj:first-of-type {
-		display: none;
+	.icon-3XHs8t,
+	.iconContainer-Ksy8Oj:has(.icon-3XHs8t):not(:has(path[d*='M18.625'])) {
+		display: none !important;
+	}
+	&[aria-haspopup='true'] {
+		flex-direction: row;
 	}
 	&[role='menuitem']:not([id^='message-add-reaction-']),
 	&[role='menuitemcheckbox'] {
@@ -150,11 +157,8 @@ $icons: (
 			background: var(--text-primary);
 		}
 	}
-	&#account-set-custom-status {
-		flex-direction: row !important;
-	}
 	@each $label, $icon in $icons {
-		&##{$label}::before {
+		&[id^='#{$label}']::before {
 			content: '';
 			@if list.index($icon, 'danger') {
 				mask-image: url(list.nth($icon, 1));
