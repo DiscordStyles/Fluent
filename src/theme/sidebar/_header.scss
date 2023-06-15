@@ -22,8 +22,10 @@
 		.headerContent-2SNbie {
 			flex: 1;
 		}
-		.headerChildren-2qV9P8 {
+		.headerChildren-2qV9P8 * {
 			display: flex;
+			align-items: center;
+    		justify-content: center;
 		}
 
 		.guildIconContainer-3QvE6w {
@@ -32,6 +34,11 @@
 		.name-3Uvkvr {
 			font-weight: var(--font-weight-normal);
 			max-width: calc(var(--channels-width) - 64px);
+		}
+		
+		.guildIconV2Container-2H8IRS + .name-3Uvkvr {
+			font-weight: var(--font-weight-normal);
+			max-width: calc(var(--channels-width) - 88px);
 		}
 
 		&:hover {
