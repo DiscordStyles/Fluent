@@ -1,9 +1,15 @@
 #app-mount {
-	.stickyScroller-2KHfQk, .stickyHeader-fX4ei6 {
+	.stickyScroller-2KHfQk, .stickyHeader-fX4ei6, .scroller-1TOeMq {
         background-color: var(--bg-alt);
     }
 
     .container-3u6dG-.scroller-2XLwLg.auto-2TJ1RH.scrollerBase-1Pkza4 {
         background-color: var(--bg-alt);
+    }
+
+    .libraryHeader-2loraV {
+        margin-top: 44px;
+        padding-right: 0px !important;
+        border-top: 1px solid var(--border-mid);
     }
 }
