@@ -31,7 +31,7 @@
 			font-weight: var(--font-weight-normal);
 			&::before {
 				content: '';
-				height: 2px;
+				height: var(--pill-width);
 				width: 0%;
 				display: block;
 				opacity: 0;

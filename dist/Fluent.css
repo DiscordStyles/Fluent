@@ -1702,7 +1702,7 @@ body,
 }
 #app-mount .attachWrapper-3slhXI {
   position: absolute;
-  bottom: -42px;
+  bottom: -35px;
   left: 0;
 }
 #app-mount .attachWrapper-3slhXI button {
@@ -3433,7 +3433,7 @@ body,
 }
 #app-mount .nav-1zWVQw .navButton-1XuvI-::before {
   content: "";
-  height: 2px;
+  height: var(--pill-width);
   width: 0%;
   display: block;
   opacity: 0;
