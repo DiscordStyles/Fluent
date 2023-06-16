@@ -56,4 +56,17 @@
 	#{cls('forum.sidebar.footer')} {
 		@include mixins.card($fdir: column, $aitem: flex-start);
 	}
+
+	.searchBox-3IjAC1{
+		width: 100%;
+	}
+	.container-2rzKKA{
+		background: var(--bg-content);
+	}
+	.container-1PloNW.card-2JNtco.mainCard-3KBsBI {
+		background: var(--bg-content);
+		.contentPreview-3fWiuC{
+			background: var(--bg-content-alt);
+		}
+	}
 }
