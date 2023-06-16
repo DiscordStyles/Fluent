@@ -1392,6 +1392,18 @@ body,
   background: var(--bg-content);
   border: 1px solid var(--border-mid);
 }
+#app-mount .wrapper-3HVHpV {
+  background: var(--bg-alt);
+}
+#app-mount .wrapper-3HVHpV .wrapper-15CKyy {
+  background: var(--bg-alt);
+}
+#app-mount .wrapper-3HVHpV .wrapper-15CKyy .contents-1UYEBX {
+  background: var(--bg-alt);
+}
+#app-mount .wrapper-3HVHpV .wrapper-15CKyy .attachmentContainer-1zVy8E {
+  background: var(--bg-alt);
+}
 
 #app-mount .message-2CShn3.selected-2LX7Jy.cozyMessage-1DWF9U .contents-2MsGLg {
   display: block;
