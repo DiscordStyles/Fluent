@@ -57,16 +57,25 @@
 		@include mixins.card($fdir: column, $aitem: flex-start);
 	}
 
+	//SubThreads/SubForums searchbox
 	.searchBox-3IjAC1{
 		width: 100%;
 	}
+	//SubThreads/SubForums entries
 	.container-2rzKKA{
 		background: var(--bg-content);
 	}
+	//Forum Cards
 	.container-1PloNW.card-2JNtco.mainCard-3KBsBI {
 		background: var(--bg-content);
+
 		.contentPreview-3fWiuC{
 			background: var(--bg-content-alt);
 		}
+
+		.textContentFooter-2JnNv8 {
+			background: linear-gradient(180deg, rgba(255,0,0,0), var(--bg-alt));
+		}
 	}
+	
 }

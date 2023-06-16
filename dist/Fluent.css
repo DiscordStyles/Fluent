@@ -2391,6 +2391,21 @@ body,
   gap: 0 18px;
   position: relative;
 }
+#app-mount .searchBox-3IjAC1 {
+  width: 100%;
+}
+#app-mount .container-2rzKKA {
+  background: var(--bg-content);
+}
+#app-mount .container-1PloNW.card-2JNtco.mainCard-3KBsBI {
+  background: var(--bg-content);
+}
+#app-mount .container-1PloNW.card-2JNtco.mainCard-3KBsBI .contentPreview-3fWiuC {
+  background: var(--bg-content-alt);
+}
+#app-mount .container-1PloNW.card-2JNtco.mainCard-3KBsBI .textContentFooter-2JnNv8 {
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0), var(--bg-alt));
+}
 
 #app-mount .container-2o3qEW,
 #app-mount .members-3WRCEx,
