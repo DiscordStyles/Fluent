@@ -96,11 +96,11 @@
 
 	.attachWrapper-3slhXI {
 		position: absolute;
-		bottom: -35px;
+		bottom: -32px;
 		left: 0;
 		button {
 			padding: 0;
-			margin: 0;
+			margin: 0 !important;
 		}
 	}
 	.attachButton-_ACFSu {
@@ -143,8 +143,10 @@
 		}
 	}
 	// GIF
-	.button-f2h6uQ {
-		.contents-3ca1mk {
+	.button-ejjZWC {
+		//padding: 0 !important;
+		//margin-left: 10px !important;
+		.contents-3NembX {
 			margin: 0;
 			padding: 0;
 		}

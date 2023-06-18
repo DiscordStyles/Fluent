@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "1.0.18";
+  --fluent-version: "1.0.19";
   --transition: cubic-bezier(0, 0, 0, 1);
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
@@ -463,7 +463,6 @@ body,
 #app-mount [class*=tabBar-] [class*=item-],
 #app-mount [class*=tabBar-] [class*=tabBarItem-] {
   margin: 0;
-  margin-bottom: 5px;
   border: none;
   padding: 10px 12px;
   height: auto;
@@ -488,6 +487,7 @@ body,
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.15s var(--transition), width 0.15s var(--transition);
+  margin-bottom: 1px;
 }
 #app-mount [class*=tabBar-] [class*=item-]:hover,
 #app-mount [class*=tabBar-] [class*=tabBarItem-]:hover {
@@ -930,6 +930,7 @@ body,
   cursor: var(--cursor);
 }
 #app-mount .unread-36eUEm {
+  display: none;
   border-radius: 50px;
   left: 0;
   width: 4px;
@@ -1720,12 +1721,12 @@ body,
 }
 #app-mount .attachWrapper-3slhXI {
   position: absolute;
-  bottom: -35px;
+  bottom: -32px;
   left: 0;
 }
 #app-mount .attachWrapper-3slhXI button {
   padding: 0;
-  margin: 0;
+  margin: 0 !important;
 }
 #app-mount .attachButton-_ACFSu svg {
   -webkit-mask: url('data:image/svg+xml; utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2Zm0 1.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17ZM12 7a.75.75 0 0 1 .75.75v3.5h3.5a.75.75 0 0 1 0 1.5h-3.5v3.5a.75.75 0 0 1-1.5 0v-3.5h-3.5a.75.75 0 0 1 0-1.5h3.5v-3.5A.75.75 0 0 1 12 7Z" /></svg>') center/cover;
@@ -1762,21 +1763,21 @@ body,
 #app-mount .buttons-uaqb-5 > button[aria-label]:hover svg {
   background: var(--interactive-normal);
 }
-#app-mount .button-f2h6uQ .contents-3ca1mk {
+#app-mount .button-ejjZWC .contents-3NembX {
   margin: 0;
   padding: 0;
 }
-#app-mount .button-f2h6uQ #icon svg {
+#app-mount .button-ejjZWC #icon svg {
   -webkit-mask: url('data:image/svg+xml; utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.75 3.501A3.25 3.25 0 0 1 22 6.751v10.503a3.25 3.25 0 0 1-3.25 3.25H5.25A3.25 3.25 0 0 1 2 17.254V6.75a3.25 3.25 0 0 1 3.25-3.25h13.5Zm0 1.5H5.25a1.75 1.75 0 0 0-1.75 1.75v10.503c0 .966.784 1.75 1.75 1.75h13.5a1.75 1.75 0 0 0 1.75-1.75V6.75a1.75 1.75 0 0 0-1.75-1.75ZM8.015 8.872c.596 0 1.019.082 1.502.314a.625.625 0 0 1-.541 1.127c-.3-.144-.54-.19-.961-.19-.867 0-1.504.796-1.504 1.872 0 1.077.638 1.876 1.504 1.876.428 0 .791-.18.98-.501L9 13.355v-.734h-.376a.625.625 0 0 1-.618-.532L8 11.997c0-.314.231-.574.533-.619l.092-.006h1.002c.314 0 .573.23.618.532l.007.093-.002 1.547-.006.056-.021.09-.02.055c-.377.89-1.241 1.376-2.188 1.376-1.626 0-2.754-1.413-2.754-3.126 0-1.713 1.127-3.123 2.754-3.123Zm4.614.122c.314 0 .574.232.618.533l.007.092v4.763a.625.625 0 0 1-1.243.092l-.007-.092V9.619c0-.345.28-.625.625-.625Zm2.996 0 1.997.007a.625.625 0 0 1 .088 1.244l-.092.006-1.371-.005V12h1.123c.314 0 .574.232.618.534l.007.092a.625.625 0 0 1-.533.618l-.092.007-1.123-.001v1.115a.625.625 0 0 1-.532.619l-.092.006a.625.625 0 0 1-.619-.532l-.006-.093V9.617a.625.625 0 0 1 .534-.616l.093-.007Z" /></svg>') center/cover;
           mask: url('data:image/svg+xml; utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.75 3.501A3.25 3.25 0 0 1 22 6.751v10.503a3.25 3.25 0 0 1-3.25 3.25H5.25A3.25 3.25 0 0 1 2 17.254V6.75a3.25 3.25 0 0 1 3.25-3.25h13.5Zm0 1.5H5.25a1.75 1.75 0 0 0-1.75 1.75v10.503c0 .966.784 1.75 1.75 1.75h13.5a1.75 1.75 0 0 0 1.75-1.75V6.75a1.75 1.75 0 0 0-1.75-1.75ZM8.015 8.872c.596 0 1.019.082 1.502.314a.625.625 0 0 1-.541 1.127c-.3-.144-.54-.19-.961-.19-.867 0-1.504.796-1.504 1.872 0 1.077.638 1.876 1.504 1.876.428 0 .791-.18.98-.501L9 13.355v-.734h-.376a.625.625 0 0 1-.618-.532L8 11.997c0-.314.231-.574.533-.619l.092-.006h1.002c.314 0 .573.23.618.532l.007.093-.002 1.547-.006.056-.021.09-.02.055c-.377.89-1.241 1.376-2.188 1.376-1.626 0-2.754-1.413-2.754-3.126 0-1.713 1.127-3.123 2.754-3.123Zm4.614.122c.314 0 .574.232.618.533l.007.092v4.763a.625.625 0 0 1-1.243.092l-.007-.092V9.619c0-.345.28-.625.625-.625Zm2.996 0 1.997.007a.625.625 0 0 1 .088 1.244l-.092.006-1.371-.005V12h1.123c.314 0 .574.232.618.534l.007.092a.625.625 0 0 1-.533.618l-.092.007-1.123-.001v1.115a.625.625 0 0 1-.532.619l-.092.006a.625.625 0 0 1-.619-.532l-.006-.093V9.617a.625.625 0 0 1 .534-.616l.093-.007Z" /></svg>') center/cover;
   background: var(--interactive-normal);
   transition: var(--transition);
   transition-property: background;
 }
-#app-mount .button-f2h6uQ #icon svg path {
+#app-mount .button-ejjZWC #icon svg path {
   display: none;
 }
-#app-mount .button-f2h6uQ:hover #icon svg {
+#app-mount .button-ejjZWC:hover #icon svg {
   background: var(--interactive-active);
 }
 #app-mount .sprite-2lxwfc {
@@ -2179,6 +2180,24 @@ body,
 }
 #app-mount div.controlButton-2PMNom {
   margin: 0;
+}
+#app-mount button.controlButton-2PMNom {
+  background: var(--btn-bg);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  box-shadow: none !important;
+  border: 1px solid var(--btn-border-x);
+  border-top-color: var(--btn-border-t);
+  border-bottom-color: var(--btn-border-b);
+  cursor: var(--cursor);
+}
+#app-mount button.controlButton-2PMNom:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+}
+#app-mount button.controlButton-2PMNom:active {
+  background: var(--btn-bg-active) !important;
+  border-color: var(--btn-border-active);
 }
 #app-mount .contextMenuContainer-1RO4DQ {
   display: flex;
@@ -3810,6 +3829,100 @@ body,
 #app-mount .listScroller-XCVa1H, #app-mount .infoScroller-3MqKC5 {
   max-height: 330px;
   height: 330px;
+}
+
+#app-mount .profilePanel-2VBkh8 {
+  border-left: 1px solid var(--border-high);
+  background: var(--bg-altuserPanelInner-3KPel3);
+}
+#app-mount .profilePanel-2VBkh8 .userPanelOuter-XfFELn:not(.userProfileOuterThemed-2BgJCM),
+#app-mount .profilePanel-2VBkh8 .userPanelInner-3KPel3 {
+  background: transparent;
+}
+#app-mount .profilePanel-2VBkh8 .bannerSVGWrapper-2CLfzN {
+  overflow: visible;
+  pointer-events: none;
+}
+#app-mount .profilePanel-2VBkh8 .bannerSVGWrapper-2CLfzN foreignObject {
+  -webkit-mask: none;
+          mask: none;
+}
+#app-mount .profilePanel-2VBkh8 .banner-1YaD3N {
+  -webkit-mask: linear-gradient(hsla(0, 0%, 0%, 0.5), transparent 90%);
+          mask: linear-gradient(hsla(0, 0%, 0%, 0.5), transparent 90%);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: unset;
+}
+#app-mount .profilePanel-2VBkh8 .banner-1YaD3N [role=button] {
+  display: none;
+}
+#app-mount .profilePanel-2VBkh8 .gifTag-1TvtGO {
+  display: none;
+}
+#app-mount .profilePanel-2VBkh8 .avatarWrapperNormal-ahVUaC {
+  top: 24px;
+  right: 24px;
+  left: unset;
+  background: hsla(0, 0%, 100%, 0.2);
+  border-color: transparent;
+  box-shadow: 0 0 0 8px hsla(0, 0%, 100%, 0.2);
+}
+#app-mount .profilePanel-2VBkh8 .avatarWrapperNormal-ahVUaC circle[fill=black] {
+  fill: transparent;
+}
+#app-mount .profilePanel-2VBkh8 .badgelistGroup-_4Ddiq {
+  position: absolute;
+  top: 85px;
+  left: 16px;
+  padding: 0;
+  margin: 0;
+}
+#app-mount .profilePanel-2VBkh8 .badgeList-2hF9ig {
+  background: transparent;
+  padding: 0;
+}
+#app-mount .profilePanel-2VBkh8 .overlayBackground-2aa7wt {
+  position: unset;
+  background: var(--bg-transparent);
+}
+#app-mount .profilePanel-2VBkh8 .overlayBackground-2aa7wt:nth-child(2) > .section-28YDOf:first-of-type {
+  padding: 0;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+#app-mount .profilePanel-2VBkh8 .overlayBackground-2aa7wt:nth-child(2) > .section-28YDOf:first-of-type + .divider-2dDziJ {
+  display: none;
+}
+#app-mount .profilePanel-2VBkh8 .profilePanelConnections-1tVK8j {
+  background: transparent;
+}
+#app-mount .profilePanel-2VBkh8 .profilePanelConnections-1tVK8j button {
+  background: var(--btn-bg);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  box-shadow: none !important;
+  border: 1px solid var(--btn-border-x);
+  border-top-color: var(--btn-border-t);
+  border-bottom-color: var(--btn-border-b);
+  cursor: var(--cursor);
+}
+#app-mount .profilePanel-2VBkh8 .profilePanelConnections-1tVK8j button:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+}
+#app-mount .profilePanel-2VBkh8 .profilePanelConnections-1tVK8j button:active {
+  background: var(--btn-bg-active) !important;
+  border-color: var(--btn-border-active);
+}
+#app-mount .profilePanel-2VBkh8 .mutualFriendsDivider-_X_dLc {
+  border: none;
+  margin-top: 12px;
 }
 
 #app-mount .container-2cd8Mz {
