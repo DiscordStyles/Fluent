@@ -79,6 +79,7 @@
 		cursor: var(--cursor);
 	}
 	#{cls('sidebar.channel.unreadPill')} {
+		display: none;
 		border-radius: 50px;
 		left: 0;
 		width: 4px;

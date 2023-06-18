@@ -36,6 +36,9 @@
 	div.controlButton-2PMNom {
 		margin: 0;
 	}
+	button.controlButton-2PMNom {
+		@include mixins.btnSecondary;
+	}
 
 	.contextMenuContainer-1RO4DQ {
 		display: flex;
