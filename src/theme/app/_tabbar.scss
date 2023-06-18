@@ -5,7 +5,7 @@
 	[class*='item-'],
 	[class*='tabBarItem-'] {
 		margin: 0;
-		margin-bottom: 5px;
+		
 		border: none;
 		padding: 10px 12px;
 		height: auto;
@@ -28,6 +28,7 @@
 			left: 50%;
 			transform: translateX(-50%);
 			transition: opacity 0.15s var(--transition), width 0.15s var(--transition);
+			margin-bottom: 1px;
 		}
 		&:hover {
 			color: var(--text-primary) !important;
