@@ -1,0 +1,87 @@
+@use '../mixins';
+
+#app-mount {
+	.profilePanel-2VBkh8 {
+		border-left: 1px solid var(--border-high);
+		background: var(--bg-altuserPanelInner-3KPel3);
+
+		.userPanelOuter-XfFELn:not(.userProfileOuterThemed-2BgJCM),
+		.userPanelInner-3KPel3 {
+			background: transparent;
+		}
+
+		.bannerSVGWrapper-2CLfzN {
+			overflow: visible;
+			pointer-events: none;
+			foreignObject {
+				mask: none;
+			}
+		}
+		.banner-1YaD3N {
+			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 90%);
+			position: absolute;
+			width: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			max-width: unset;
+			[role='button'] {
+				display: none;
+			}
+		}
+		.gifTag-1TvtGO {
+			display: none;
+		}
+
+		.avatarWrapperNormal-ahVUaC {
+			top: 24px;
+			right: 24px;
+			left: unset;
+			background: hsl(0 0% 100% / 0.2);
+			border-color: transparent;
+			box-shadow: 0 0 0 8px hsl(0 0% 100% / 0.2);
+			circle[fill='black'] {
+				fill: transparent;
+			}
+		}
+
+		.badgelistGroup-_4Ddiq {
+			position: absolute;
+			top: 85px;
+			left: 16px;
+			padding: 0;
+			margin: 0;
+		}
+		.badgeList-2hF9ig {
+			background: transparent;
+			padding: 0;
+		}
+
+		.overlayBackground-2aa7wt {
+			position: unset;
+			background: var(--bg-transparent);
+			&:nth-child(2) > .section-28YDOf:first-of-type {
+				padding: 0;
+				position: absolute;
+				top: 16px;
+				left: 16px;
+				& + .divider-2dDziJ {
+					display: none;
+				}
+			}
+		}
+
+		.profilePanelConnections-1tVK8j {
+			background: transparent;
+
+			button {
+				@include mixins.btnSecondary;
+			}
+		}
+		.mutualFriendsDivider-_X_dLc {
+			border: none;
+			margin-top: 12px;
+		}
+	}
+}
