@@ -1405,6 +1405,9 @@ body,
 #app-mount .wrapper-3HVHpV .wrapper-15CKyy .attachmentContainer-1zVy8E {
   background: var(--bg-alt);
 }
+#app-mount .children-3xh0VB {
+  height: 100%;
+}
 
 #app-mount .message-2CShn3.selected-2LX7Jy.cozyMessage-1DWF9U .contents-2MsGLg {
   display: block;
