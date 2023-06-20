@@ -2,18 +2,22 @@
 
 #app-mount {
 	.form-3gdLxP {
-		margin: 0 12px 12px 0;
-		padding: 8px 8px 8px 14px;
+		margin: 0 12px 12px 12px;//0 12px 12px 0;
+		padding: 8px;//8px 8px 8px 14px;
 		background: var(--bg-main);
 		min-height: var(--bottombar-height);
 		align-items: center;
 		display: flex;
 		border: 1px solid var(--border-high);
-		border-left: none;
-		border-radius: 0 var(--rounded) var(--rounded) 0;
+		//border-left: none;
+		border-radius: var(--rounded);//0 var(--rounded) var(--rounded) 0;
 		box-sizing: border-box;
 		&::before {
 			content: none;
+		}
+
+		.wrapper-2SplAX {
+			margin-bottom: 0px;
 		}
 	}
 	.channelTextArea-1FufC0 {

@@ -16,20 +16,21 @@
 
 	.searchBar-2aylmZ {
 		margin: 0;
-		position: absolute;
+		//position: absolute;
 		bottom: 12px;
 		right: 12px;
 		left: 0;
 		z-index: 1;
 		height: var(--bottombar-height);
-		background: var(--bg-main);
+		//background: var(--bg-main);
 		padding: 10px 10px 10px 14px;
-		border: 1px solid var(--border-high);
+		//border: 1px solid var(--border-high);
 		border-left: none;
 		border-radius: 0 var(--rounded) var(--rounded) 0;
+		background: var(--bg);
 
 		.inner-2pOSmK {
-			background: var(--bg-alt);
+			background: var(--bg-content-alt);//background: var(--bg-alt);
 			border-radius: var(--rounded);
 			flex-direction: row-reverse;
 			padding: 0 10px;
@@ -44,7 +45,7 @@
 				bottom: 0;
 			}
 			&:focus-within {
-				background: var(--bg-content-alt);
+				background: var(--bg-content);//background: var(--bg-content-alt);
 				&::before {
 					height: 2px;
 					background: rgb(var(--accent));

@@ -1092,26 +1092,24 @@ body,
   position: absolute;
   box-sizing: border-box;
   bottom: 11px;
-  left: 12px;
+  left: 8px;
   background: var(--bg-main);
-  padding: 8px 14px;
-  width: calc(var(--channels-width) - 12px);
-  border-radius: var(--rounded) 0 0 var(--rounded);
+  padding: 8px 8px;
+  width: calc(var(--channels-width) - 16px);
+  border-radius: var(--rounded);
   border: 1px solid var(--border-high);
-  border-right: none;
   height: var(--bottombar-height);
   z-index: 1;
-}
-#app-mount .panels-3wFtMD > .container-YkUktl::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  height: calc(var(--bottombar-height) / 2);
-  width: 1px;
-  background: var(--border-mid);
+  /*&::before {
+  	content: '';
+  	position: absolute;
+  	right: 0;
+  	height: calc(var(--bottombar-height) / 2);
+  	width: 1px;
+  	background: var(--border-mid);
+  }*/
 }
 #app-mount .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF {
-  gap: 8px;
   height: 75%;
   width: 100%;
 }
@@ -1170,8 +1168,8 @@ body,
   padding-bottom: 0;
   position: absolute;
   bottom: calc(var(--bottombar-height) + 9px);
-  left: 12px;
-  right: 12px;
+  left: 8px;
+  right: 7px;
   border-radius: var(--rounded) var(--rounded) 0 0;
   background: var(--bg-main);
   padding: 8px 8px 11px 8px;
@@ -1743,19 +1741,21 @@ body,
 }
 
 #app-mount .form-3gdLxP {
-  margin: 0 12px 12px 0;
-  padding: 8px 8px 8px 14px;
+  margin: 0 12px 12px 12px;
+  padding: 8px;
   background: var(--bg-main);
   min-height: var(--bottombar-height);
   align-items: center;
   display: flex;
   border: 1px solid var(--border-high);
-  border-left: none;
-  border-radius: 0 var(--rounded) var(--rounded) 0;
+  border-radius: var(--rounded);
   box-sizing: border-box;
 }
 #app-mount .form-3gdLxP::before {
   content: none;
+}
+#app-mount .form-3gdLxP .wrapper-2SplAX {
+  margin-bottom: 0px;
 }
 #app-mount .channelTextArea-1FufC0 {
   margin: 0;
@@ -4001,20 +4001,18 @@ body,
 }
 #app-mount .searchBar-2aylmZ {
   margin: 0;
-  position: absolute;
   bottom: 12px;
   right: 12px;
   left: 0;
   z-index: 1;
   height: var(--bottombar-height);
-  background: var(--bg-main);
   padding: 10px 10px 10px 14px;
-  border: 1px solid var(--border-high);
   border-left: none;
   border-radius: 0 var(--rounded) var(--rounded) 0;
+  background: var(--bg);
 }
 #app-mount .searchBar-2aylmZ .inner-2pOSmK {
-  background: var(--bg-alt);
+  background: var(--bg-content-alt);
   border-radius: var(--rounded);
   flex-direction: row-reverse;
   padding: 0 10px;
@@ -4030,7 +4028,7 @@ body,
   bottom: 0;
 }
 #app-mount .searchBar-2aylmZ .inner-2pOSmK:focus-within {
-  background: var(--bg-content-alt);
+  background: var(--bg-content);
 }
 #app-mount .searchBar-2aylmZ .inner-2pOSmK:focus-within::before {
   height: 2px;
@@ -4179,6 +4177,9 @@ body,
   margin-top: 44px;
   padding-right: 0px !important;
   border-top: 1px solid var(--border-mid);
+}
+#app-mount .libraryFilter-1nwg6T {
+  width: 240px;
 }
 
 #app-mount .perksModal-CLcR1c {
