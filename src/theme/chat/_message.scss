@@ -4,11 +4,20 @@
 	.message-2CShn3.selected-2LX7Jy.cozyMessage-1DWF9U .contents-2MsGLg {
 		display: block;
 		width: 100%;
+		background: var(--bg-content);
+		.textArea-2CLwUE {
+			height: auto;
+			min-height: auto;
+		}
 		.channelTextArea-220_Gz {
 			margin-top: 0;
 		}
 		.slateTextArea-27tjG0 {
 			padding-top: 0;
+			padding-bottom: 0;
+		}
+		.inner-NQg18Y::before {
+			content: none;
 		}
 	}
 	.operations-3q3u6E {

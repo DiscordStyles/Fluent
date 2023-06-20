@@ -5,7 +5,6 @@
 // Icons
 $icons: (
 	// Messages
-	'message-add-reaction': mono.$emoji,
 	'message-edit': mono.$pen,
 	'message-actions-edit': mono.$pen,
 	'message-actions-pin': mono.$pin,
@@ -15,10 +14,12 @@ $icons: (
 	'message-thread': mono.$comment-multi,
 	'message-mark-unread': mono.$comment-dismiss,
 	'message-copy-link': mono.$link,
+	'message-copy-text': mono.$text,
 	'message-tts': mono.$speaker,
 	'message-actions-delete': (mono.$delete, 'danger'),
 	'message-delete': (mono.$delete, 'danger'),
 	'message-devmode-copy-id': mono.$copy,
+	'message-report': mono.$megaphone,
 
 	// User
 	'user-context-mark-channel-read': mono.$eye,
@@ -100,10 +101,11 @@ $icons: (
 	'guild-header-popout-notifications': mono.$bell,
 	'guild-header-popout-privacy': mono.$shield-check,
 	'guild-header-popout-change-nickname': mono.$pen,
-	'guild-header-popout-hide-muted-channels': mono.$eye,
 	'guild-header-popout-leave': mono.$sign-out,
 	'guild-header-popout-application-directory': mono.$app-store,
 	'guild-header-popout-report-raid': mono.$megaphone,
+	'guild-header-popout-active-threads': mono.$comment-multi,
+	'guild-header-popout-insights': mono.$eye,
 
 	// Server dropdown (right click)
 	'guild-context-mark-guild-read': mono.$eye,
@@ -136,7 +138,7 @@ $icons: (
 	'account-switch-account': mono.$user-swap
 );
 
-.item-5ApiZt:not(#account-status-picker) {
+.item-5ApiZt:not(#account-status-picker, [role='menuitemcheckbox'], [role='menuitemradio']) {
 	.icon-3XHs8t,
 	.iconContainer-Ksy8Oj:has(.icon-3XHs8t):not(:has(path[d*='M18.625'])) {
 		display: none !important;

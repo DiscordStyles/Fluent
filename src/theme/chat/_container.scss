@@ -16,12 +16,23 @@
 	}
 
 	#{cls('chat.messages.scrollerSpacer')} {
-		height: 0;
+		height: 24px;
 	}
 
 	// Chat icon
 	#{cls('chat.messages.icon')} {
 		background: var(--bg-content);
 		border: 1px solid var(--border-mid);
+	}
+
+	.messagesWrapper-RpOMA3::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: calc(100% - 8px);
+		height: 24px;
+		background: linear-gradient(transparent, var(--bg-alt));
+		z-index: 2;
+		pointer-events: none;
 	}
 }
