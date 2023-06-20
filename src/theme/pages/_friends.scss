@@ -1,6 +1,12 @@
 @use '../mixins';
 
 #app-mount {
+	.peopleColumn-1wMU14 {
+		position: relative;
+	}
+	.peopleList-2VBrVI {
+		padding-bottom: calc(var(--bottombar-height) * 1.5);
+	}
 	.container-2cd8Mz {
 		background: var(--bg-alt);
 	}
@@ -9,48 +15,50 @@
 	}
 
 	.searchBar-2aylmZ {
-		margin: 16px 16px 0;
-		background: var(--textbox-bg);
-		position: relative;
-		overflow: hidden;
-		border: 1px solid var(--textbox-border);
-		border-radius: var(--rounded);
+		margin: 0;
+		position: absolute;
+		bottom: 12px;
+		right: 12px;
+		left: 0;
+		z-index: 1;
+		height: var(--bottombar-height);
+		background: var(--bg-main);
+		padding: 10px 10px 10px 14px;
+		border: 1px solid var(--border-high);
+		border-left: none;
+		border-radius: 0 var(--rounded) var(--rounded) 0;
 
-		.input-2m5SfJ {
-			height: auto;
-			padding: 4px 8px;
-			min-height: auto;
-			margin: 0;
-			line-height: var(--line-height);
-		}
-
-		&::before {
-			content: '';
-			position: absolute;
-			height: 1px;
-			width: 100%;
-			background: var(--textbox-underline);
-			bottom: 0;
-		}
-
-		&:hover {
-			background: var(--textbox-bg-hover);
-		}
-		&:focus-within {
-			background: var(--textbox-bg-active);
+		.inner-2pOSmK {
+			background: var(--bg-alt);
+			border-radius: var(--rounded);
+			flex-direction: row-reverse;
+			padding: 0 10px;
+			overflow: hidden;
 			&::before {
-				height: 2px;
-				background: rgb(var(--accent));
+				content: '';
+				height: 1px;
+				width: 100%;
+				background: var(--textbox-underline);
+				position: absolute;
+				left: 0;
+				bottom: 0;
 			}
+			&:focus-within {
+				background: var(--bg-content-alt);
+				&::before {
+					height: 2px;
+					background: rgb(var(--accent));
+				}
+			}
+		}
+		.input-2m5SfJ {
+			padding: 0 10px;
+			margin: 0;
 		}
 	}
 
 	.title-x4dI75 {
 		margin: 16px;
-	}
-	.peopleList-2VBrVI {
-		margin: 0 0 109px;
-		border-bottom: 1px solid var(--border-mid);
 	}
 	.peopleListItem-u6dGxF {
 		height: auto !important;
