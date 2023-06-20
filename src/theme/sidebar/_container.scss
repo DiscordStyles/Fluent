@@ -19,6 +19,9 @@
 			display: none;
 		}
 	}
+	.content-yjf30S > li:last-child {
+		padding-bottom: calc(var(--bottombar-height) + 32px);
+	}
 	.container-1NXEtd {
 		background: var(--bg-alt);
 	}

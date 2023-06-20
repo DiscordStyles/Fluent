@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '1.0.19';
+	--fluent-version: '1.1.0';
 
 	--transition: cubic-bezier(0, 0, 0, 1);
 
@@ -15,6 +15,8 @@
 	--rounded: 4px;
 
 	--toolbar-height: 45px;//64px
+
+	--bottombar-height: 64px;
 
 	--font-weight-light: 300;
 	--font-weight-semilight: 350;
