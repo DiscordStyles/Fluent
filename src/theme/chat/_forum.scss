@@ -7,20 +7,20 @@
 	}
 
 	#{cls('forum.header.container')} {
-		background: transparent;
+		//background: transparent;
 		box-shadow: none;
 		border: none;
 	}
 	#{cls('forum.header.titleContainer')} {
 		align-items: center;
-		gap: 16px;
+		//gap: 16px;
 		cursor: default;
 	}
 	#{cls('forum.header.form')} {
-		padding: 0;
+		/*padding: 0;
 		#{cls('input.container')} {
 			margin-top: 0;
-		}
+		}*/
 	}
 	#{cls('forum.card.container')} {
 		@include mixins.card($fgap: 0);
@@ -77,5 +77,9 @@
 			background: linear-gradient(180deg, rgba(255,0,0,0), var(--bg-alt));
 		}
 	}
-	
+
+	//Under the Search bar
+	.matchingPostsRow-2IiEQ1 {
+		background: var(--background-primary);
+	}
 }
