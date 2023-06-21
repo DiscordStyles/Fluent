@@ -56,7 +56,15 @@
 		background: transparent;
 	}
 	.replyBar-1oi75v {
-		background: var(--bg-alt);
+		background: var(--bg-main);//var(--bg-alt);
+		.text-sm-normal-AEQz4v {
+			margin-left: 50px;
+		}
+		.actions-1mkm4H {
+			.closeButton-3IEry2 {
+				padding: 2px 9px 12px 16px;
+			}
+		}
 	}
 
 	// Jump to present
