@@ -1515,7 +1515,7 @@ body,
   content: none;
 }
 #app-mount .operations-3q3u6E {
-  padding: 12px;
+  padding: 0px 12px 12px 12px;
 }
 #app-mount .mentioned-Tre-dv, #app-mount .replying-eZ7p5z {
   background: rgb(var(--chat-mention-colour), 0.05);
@@ -1738,6 +1738,47 @@ body,
 
 .theme-light #app-mount .mentioned-Tre-dv {
   background: rgb(var(--accent), 0.15);
+}
+
+.contents-2MsGLg {
+  width: unset !important;
+  display: inline-block !important;
+}
+
+.contents-2MsGLg *:not(.buttons-uaqb-5, .buttons-uaqb-5 *,
+.operations-3q3u6E,
+.header-2jRmjb, .header-2jRmjb *,
+.editor-H2NA06 *,
+.channelTextArea-220_Gz.channelTextArea-1VQBuV, .channelTextArea-220_Gz.channelTextArea-1VQBuV *) {
+  width: unset !important;
+  display: inline-block;
+}
+
+.inner-NQg18Y:not(.sansAttachButton-1ERHue) .buttons-uaqb-5 {
+  align-items: last baseline !important;
+  margin-top: auto;
+  height: 26px;
+}
+
+.textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil {
+  display: inline;
+}
+
+.message-2CShn3.selected-2LX7Jy {
+  background-color: unset;
+}
+
+.channelTextArea-220_Gz.channelTextArea-1VQBuV {
+  padding-bottom: 8px;
+}
+
+.scrollableContainer-15eg7h.webkit-QgSAqd {
+  width: 100%;
+}
+
+.positionLayer-1cndvf:not(div[style*="position: absolute; bottom: 74px; right: 21px;"]) {
+  bottom: 100px !important;
+  right: 21px !important;
 }
 
 #app-mount .form-3gdLxP {
@@ -2398,20 +2439,18 @@ body,
   background: transparent;
 }
 #app-mount .header-1Uy0p6 {
-  background: transparent;
   box-shadow: none;
   border: none;
 }
 #app-mount .titleContainer-2YK93J {
   align-items: center;
-  gap: 16px;
   cursor: default;
 }
 #app-mount .container-JhuCwn {
-  padding: 0;
-}
-#app-mount .container-JhuCwn .input-2g-os5 {
-  margin-top: 0;
+  /*padding: 0;
+  .input-2g-os5 {
+  	margin-top: 0;
+  }*/
 }
 #app-mount .container-2qVG6q {
   background: var(--bg-content);
@@ -2476,6 +2515,9 @@ body,
 }
 #app-mount .container-1PloNW.card-2JNtco.mainCard-3KBsBI .textContentFooter-2JnNv8 {
   background: linear-gradient(180deg, rgba(255, 0, 0, 0), var(--bg-alt));
+}
+#app-mount .matchingPostsRow-2IiEQ1 {
+  background: var(--background-primary);
 }
 
 #app-mount .container-2o3qEW,

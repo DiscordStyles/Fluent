@@ -25,9 +25,8 @@
 	}
 
 	.channelTextArea-220_Gz.channelTextArea-1VQBuV:has(+ .operations-3q3u6E) {
-		padding-top: 16px;
+		//padding-top: 16px;
 	}
-
 	  
 	.mentioned-Tre-dv, .replying-eZ7p5z {
 		background: rgb(var(--chat-mention-colour), 0.05);
@@ -205,4 +204,52 @@
 // Light theme
 .theme-light #app-mount .mentioned-Tre-dv {
 	background: rgb(var(--accent), 0.15);
+}
+
+//Edit Message
+.contents-2MsGLg {
+	width: unset !important;
+	display: inline-block !important;
+}
+
+.contents-2MsGLg *:not(.buttons-uaqb-5, .buttons-uaqb-5 *, 
+					.operations-3q3u6E, 
+					.header-2jRmjb, .header-2jRmjb *, 
+					.editor-H2NA06 *, 
+					.channelTextArea-220_Gz.channelTextArea-1VQBuV, .channelTextArea-220_Gz.channelTextArea-1VQBuV *) {
+	width: unset !important;
+	display: inline-block;
+}
+
+//emoji buttom position
+.inner-NQg18Y:not(.sansAttachButton-1ERHue) {
+	.buttons-uaqb-5{
+		align-items: last baseline !important;
+		margin-top: auto;
+		height: 26px;
+	}
+}
+
+.textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil{
+	display: inline;
+}
+
+.message-2CShn3.selected-2LX7Jy{
+	background-color: unset;
+}
+
+.channelTextArea-220_Gz.channelTextArea-1VQBuV{
+
+	padding-bottom: 8px;
+}
+
+.scrollableContainer-15eg7h.webkit-QgSAqd{
+	width: 100%;
+}
+
+//Emoji layer position
+.positionLayer-1cndvf:not(div[style*="position: absolute; bottom: 74px; right: 21px;"] ) {
+	//right: calc(50% - 496px/2) !important;
+	bottom: 100px !important; 
+	right: 21px !important;
 }
