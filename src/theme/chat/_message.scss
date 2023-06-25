@@ -212,7 +212,8 @@
 					.operations-3q3u6E, 
 					.header-2jRmjb, .header-2jRmjb *, 
 					.editor-H2NA06 *, 
-					.channelTextArea-220_Gz.channelTextArea-1VQBuV, .channelTextArea-220_Gz.channelTextArea-1VQBuV *) {
+					.channelTextArea-220_Gz.channelTextArea-1VQBuV, .channelTextArea-220_Gz.channelTextArea-1VQBuV *,
+					.markup-eYLPri.messageContent-2t3eCI *) {
 	width: unset !important;
 	display: inline-block;
 }
@@ -225,6 +226,14 @@
 		height: 26px;
 	}
 }
+
+//Padding for editing messages
+.message-2CShn3.cozyMessage-1DWF9U.cozy-VmLDNB:not(.groupStart-3Mlgv1){
+	.channelTextArea-220_Gz.channelTextArea-1VQBuV{
+		padding-top: 12px;
+	}
+}
+
 
 .textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil{
 	display: inline;
