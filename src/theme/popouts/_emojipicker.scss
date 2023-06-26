@@ -4,12 +4,14 @@
 		border-radius: var(--rounded);
 		border: 1px solid var(--border-high);
 		box-shadow: var(--shadow-flyout);
-		grid-template-rows: 40px auto;
 		padding-top: 4px;
 		[class^='header-']:not([aria-expanded]) {
 			border-bottom: 1px solid var(--border-high);
 			box-shadow: none;
 		}
+	}
+	.contentWrapper-3vHNP2:has(.nav-1zWVQw){
+		grid-template-rows: 40px auto;
 	}
 	.inspector-DFKXwB {
 		border-top: 1px solid var(--border-high);
