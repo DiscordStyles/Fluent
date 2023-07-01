@@ -2,10 +2,11 @@
 
 Brings the look of Windows 11 to Discord.
 
-![Server Chat](https://i.imgur.com/IcVwWMB.png)
-![User Settings](https://i.imgur.com/k49BT0N.png)
+![Server Chat](https://github.com/DiscordStyles/Fluent/assets/20338746/2c78434b-731d-4c4b-b043-c72d63a63fa4)
+![User Settings](https://github.com/DiscordStyles/Fluent/assets/20338746/986f751f-e8fd-4f6c-aafd-1f669a29abf9)
 
 ## Download
+
 
 BetterDiscord Download: [https://betterdiscord.app/theme/Fluent](https://betterdiscord.app/Download?id=662)  
 Powercord Install: `git clone https://github.com/DiscordStyles/Fluent --branch deploy`  
