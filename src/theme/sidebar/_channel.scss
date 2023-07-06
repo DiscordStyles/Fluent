@@ -2,7 +2,6 @@
 
 #app-mount {
 	.wrapper-NhbLHG {
-		--locked-background: var(--bg-alt);
 		padding: 2px 0;
 
 		&::before {
@@ -32,7 +31,6 @@
 			opacity: 1;
 		}
 		&.modeSelected-3DmyhH {
-			--locked-background: var(--bg-interactive-high);
 			&::before {
 				background: rgb(var(--accent));
 				scale: 1;
@@ -41,11 +39,8 @@
 				background: var(--bg-interactive-high);
 			}
 		}
-		&:hover {
-			--locked-background: var(--bg-interactive-high-hover);
-			.link-1_kTxV {
-				background: var(--bg-interactive-high-hover);
-			}
+		&:hover .link-1_kTxV {
+			background: var(--bg-interactive-high-hover);
 		}
 	}
 	.unread-36eUEm {
@@ -94,10 +89,11 @@
 
 		// Channel icons
 		.icon-2W8DHg {
-			// Normal channel
+			// Text channel
 			&:has(path[d^='M5.88657 21C5.57547']),
-			&:has(path[d^='M14 8C14 7.44772']) {
-				mask-image: url(mono.$chat);
+			&:has(path[d^='M14 8C14 7.44772']),
+			&:has(path[d^='M5.43309 21C5.35842 21']) {
+				mask-image: url(mono.$comment);
 			}
 			// Announcements
 			&:has(path[d^='M19.1 4V5.12659L4.85']) {
@@ -120,33 +116,42 @@
 			&:has(path[d^='M5.00328 17.5C4.69218 17.5']) {
 				mask-image: url(mono.$search);
 			}
+			// Events
+			&:has(path[d^='M14 13C14 14.1']) {
+				mask-image: url(mono.$rss);
+			}
+			// Ongoing events
+			&:has(path[d^='M19 3h-1V1h-2v2H8V1H6v2H5c-1.11']) {
+				mask-image: url(mono.$calendar-clock);
+			}
 		}
-		// Locked channel
+		// Channel modifiers (locked/threads)
 		.iconContainer-21RCa3 {
-			// position: relative;
-			&:has(path[d^='M21.025 5V4C21.025']) {
-				&::before {
-					content: '';
-					position: absolute;
-					top: -4px;
-					right: -4px;
-					background: var(--interactive-normal);
-					display: block;
-					width: 12px;
-					height: 12px;
-					z-index: 1;
-					mask: url(mono.$lock-closed) center/cover;
-				}
-				&::after {
-					content: '';
-					position: absolute;
-					top: -4px;
-					right: -5px;
-					background: var(--locked-background);
-					width: 14px;
-					height: 14px;
-					border-radius: 50%;
-				}
+			// Locked channel
+			&:has(path[d^='M21.025 5V4C21.025'])::before {
+				mask: url(mono.$lock-closed-filled) center/cover;
+				top: -3px;
+				right: -2px;
+				content: '';
+				position: absolute;
+				background: var(--interactive-normal);
+				display: block;
+				width: 12px;
+				height: 12px;
+				z-index: 1;
+			}
+			// Threads in that channel
+			&:has(path[d^='M5.43309 21C5.35842 21'])::before {
+				mask: url(mono.$comment-multi-filled) center/cover;
+				bottom: -2px;
+				right: -2px;
+				content: '';
+				position: absolute;
+				background: var(--interactive-normal);
+				display: block;
+				width: 12px;
+				height: 12px;
+				z-index: 1;
 			}
 		}
 	}
