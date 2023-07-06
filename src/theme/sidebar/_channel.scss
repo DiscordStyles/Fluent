@@ -93,7 +93,7 @@
 			&:has(path[d^='M5.88657 21C5.57547']),
 			&:has(path[d^='M14 8C14 7.44772']),
 			&:has(path[d^='M5.43309 21C5.35842 21']) {
-				mask-image: url(mono.$comment);
+				mask-image: url(mono.$chat);
 			}
 			// Announcements
 			&:has(path[d^='M19.1 4V5.12659L4.85']) {
@@ -101,7 +101,7 @@
 			}
 			// Threads
 			&:has(path[d^='M6.56929 14.6869H2.34375C1.97079']) {
-				mask-image: url(mono.$chat-question);
+				mask-image: url(mono.$chat-multiple);
 			}
 			// Voice
 			&:has(path[d^='M11.383 3.07904C11.009']),
