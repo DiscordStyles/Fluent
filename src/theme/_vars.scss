@@ -1,5 +1,5 @@
 :root {
-	--fluent-version: '1.1.0';
+	--fluent-version: '1.1.1';
 
 	--transition: cubic-bezier(0, 0, 0, 1);
 
@@ -8,7 +8,7 @@
 
 	--pill-width: 4px;
 	--pill-height: 16px;
-	--pill-transition: opacity 0.15s var(--transition), height 0.15s var(--transition);
+	--pill-transition: scale 0.15s var(--transition);
 
 	--btn-radius: 6px;
 	--rounded-high: 8px;

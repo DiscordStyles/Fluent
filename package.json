@@ -1,11 +1,4 @@
 {
-	"name": "fluent",
-	"version": "1.0.0",
-	"description": "Brings the look of Windows 11 to Discord.",
-	"repository": "https://github.com/DiscordStyles/Fluent",
-	"author": "Gibbu <Gibbu_@hotmail.com>",
-	"license": "MIT",
-	"private": false,
 	"type": "module",
 	"scripts": {
 		"dev": "bd-scss dev",
