@@ -96,7 +96,8 @@
 				mask-image: url(mono.$chat);
 			}
 			// Announcements
-			&:has(path[d^='M19.1 4V5.12659L4.85']) {
+			&:has(path[d^='M19.1 4V5.12659L4.85']),
+			&:has(path[d^='M19.0999 3.99994V5.12653L4.84988']) {
 				mask-image: url(mono.$megaphone);
 			}
 			// Threads
@@ -124,15 +125,19 @@
 			&:has(path[d^='M19 3h-1V1h-2v2H8V1H6v2H5c-1.11']) {
 				mask-image: url(mono.$calendar-clock);
 			}
+			// Locked channel
+			&:has(path[d^='M17 11V7C17 4.243']) {
+				mask-image: url(mono.$lock-closed);
+			}
 		}
 		// Channel modifiers (locked/threads)
 		.iconContainer-21RCa3 {
 			// Locked channel
 			&:has(path[d^='M21.025 5V4C21.025'])::before {
+				content: '';
 				mask: url(mono.$lock-closed-filled) center/cover;
 				top: -3px;
 				right: -2px;
-				content: '';
 				position: absolute;
 				background: var(--interactive-normal);
 				display: block;
@@ -141,7 +146,8 @@
 				z-index: 1;
 			}
 			// Threads in that channel
-			&:has(path[d^='M5.43309 21C5.35842 21'])::before {
+			&:has(path[d^='M5.43309 21C5.35842 21'])::before,
+			&:has(path[d^='M19.0999 3.99994V5.12653L4.84988'])::before {
 				mask: url(mono.$comment-multi-filled) center/cover;
 				bottom: -2px;
 				right: -2px;
