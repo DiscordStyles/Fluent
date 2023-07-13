@@ -2,12 +2,22 @@
 @use '../theme/assets/mono';
 @use '../theme/assets/brand';
 
+.wrapper-NhbLHG {
+	--fluent-icons-color: var(--interactive-normal);
+	&.modeMuted-2T4MDZ {
+		--fluent-icons-color: var(--interactive-muted);
+	}
+	&.modeUnread-3Cxepe {
+		--fluent-icons-color: var(--interactive-active);
+	}
+}
+
 .link-1_kTxV {
 	path {
 		display: none;
 	}
 	svg {
-		background: currentColor;
+		background: var(--fluent-icons-color);
 	}
 
 	// Channel actions (open chat, create invite, channel setting)
@@ -75,7 +85,7 @@
 			top: -3px;
 			right: -2px;
 			position: absolute;
-			background: var(--interactive-normal);
+			background: var(--fluent-icons-color);
 			display: block;
 			width: 12px;
 			height: 12px;
@@ -89,7 +99,7 @@
 			right: -2px;
 			content: '';
 			position: absolute;
-			background: var(--interactive-normal);
+			background: var(--fluent-icons-color);
 			display: block;
 			width: 12px;
 			height: 12px;
