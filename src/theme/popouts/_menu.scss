@@ -79,12 +79,7 @@
 		border-radius: var(--rounded);
 		padding: 8px 12px;
 		cursor: var(--cursor);
-		flex-direction: row-reverse;
 		gap: 8px;
-
-		.label-3CEiKJ:only-child {
-			order: -1;
-		}
 		.iconContainer-Ksy8Oj {
 			margin: 0;
 			display: flex;
@@ -118,13 +113,6 @@
 			color: rgb(var(--accent));
 		}
 	}
-
-	[role='menuitemcheckbox'],
-	[role='menuitemradio'],
-	& > div > div:not([class]) + div:not([class]) .item-5ApiZt {
-		flex-direction: row;
-	}
-
 	// Reset
 	.submenuContainer-3EVTeH {
 		.item-5ApiZt {

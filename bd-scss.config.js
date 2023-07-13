@@ -10,5 +10,5 @@ export default {
 		authorId: '174868361040232448'
 	},
 	baseImport: 'https://discordstyles.github.io/Fluent/Fluent.css',
-	addons: [['src/addons/_selfmessages.scss', 'dist/SelfMessages.css']]
+	addons: [['src/addons/_icons.scss', 'dist/Icons.css']]
 };
