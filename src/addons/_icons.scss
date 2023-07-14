@@ -34,7 +34,8 @@
 	// Text channel
 	svg:has(path[d^='M5.88657 21C5.57547']),
 	svg:has(path[d^='M14 8C14 7.44772']),
-	svg:has(path[d^='M5.43309 21C5.35842 21']) {
+	svg:has(path[d^='M5.43309 21C5.35842 21']),
+	svg:has(path[d^='M22.545 4.91992V3.91992C22.545 2.79992']) {
 		mask-image: url(mono.$chat);
 	}
 	// Announcements
@@ -79,7 +80,8 @@
 		// Locked channel
 		&:has(path[d^='M21.025 5V4C21.025'])::before,
 		&:has(path[d^='M13 4C13 3.66767 13.0405'])::before,
-		&:has(path[d^='M22.545 4.87988V5.87988H23.28C23.4126'])::before {
+		&:has(path[d^='M22.545 4.87988V5.87988H23.28C23.4126'])::before,
+		&:has(path[d^='M15.44 6.99992C15.5725 6.99992'])::before {
 			content: '';
 			mask: url(mono.$lock-closed-filled) center/cover;
 			top: -3px;
@@ -92,8 +94,9 @@
 			z-index: 1;
 		}
 		// Threads in that channel
-		&:has(path[d^='M5.43309 21C5.35842 21'])::before,
-		&:has(path[d^='M19.0999 3.99994V5.12653L4.84988'])::before {
+		&:has(path[d^='M5.43309 21C5.35842 21'])::after,
+		&:has(path[d^='M19.0999 3.99994V5.12653L4.84988'])::after,
+		&:has(path[d^='M23.44 12.9599C12.9098 12.9599'])::after {
 			mask: url(mono.$comment-multi-filled) center/cover;
 			bottom: -2px;
 			right: -2px;
