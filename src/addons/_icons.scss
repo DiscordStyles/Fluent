@@ -74,6 +74,11 @@
 	svg:has(path[d^='M17 11V7C17 4.243']) {
 		mask-image: url(mono.$lock-closed);
 	}
+	
+	// Members channel
+	svg:has(path[d^='M14 8.00598C14 10.211 12.206 12.006']) {
+		mask-image: url(mono.$people);
+	}
 
 	// Channel modifiers (locked/threads)
 	.iconContainer-21RCa3 {
