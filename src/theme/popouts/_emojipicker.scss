@@ -5,13 +5,13 @@
 		border: 1px solid var(--border-high);
 		box-shadow: var(--shadow-flyout);
 		padding-top: 4px;
+		border-bottom: 1px solid var(--border-high);
 		[class^='header-']:not([aria-expanded]) {
-			border-bottom: 1px solid var(--border-high);
 			box-shadow: none;
 		}
-	}
-	.contentWrapper-3vHNP2:has(.nav-1zWVQw){
-		grid-template-rows: 40px auto;
+		&:has(.nav-1zWVQw) {
+			grid-template-rows: 40px auto;
+		}
 	}
 	.inspector-DFKXwB {
 		border-top: 1px solid var(--border-high);
