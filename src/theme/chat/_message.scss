@@ -1,7 +1,7 @@
 @use '../mixins';
 
 #app-mount {
-	.message-2CShn3.selected-2LX7Jy.cozyMessage-1DWF9U .contents-2MsGLg {
+	.message-2CShn3:has(.channelTextArea-1VQBuV).cozyMessage-1DWF9U .contents-2MsGLg {
 		display: block;
 		width: 100%;
 		background: var(--bg-content);
@@ -19,9 +19,12 @@
 		.inner-NQg18Y::before {
 			content: none;
 		}
+		.buttons-uaqb-5 {
+			height: auto;
+		}
 	}
 	.operations-3q3u6E {
-		padding: 12px;
+		padding: 8px 16px 16px 16px;
 	}
 	.mentioned-Tre-dv {
 		background: rgb(var(--chat-mention-colour), 0.05);
