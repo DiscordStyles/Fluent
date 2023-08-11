@@ -10,7 +10,7 @@ This will help you get started.
 - Basic knowledge of the terminal/command prompt.
 
 Install Dependencies:  
-Open a terminal/command prompt and use the following command: `npm run install` in the Fluent folder.
+Open a terminal/command prompt and use the following command: `npm install` in the Fluent folder.
 
 ## Development
 

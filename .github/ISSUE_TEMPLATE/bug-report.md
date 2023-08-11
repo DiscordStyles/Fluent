@@ -22,7 +22,7 @@ _If applicable, add screenshots to help explain your problem_
 
 **Discord channel**: _Stable/PTB/Canary_  
 **OS**: _Windows/Linux/OSX_  
-**Mod**: _BetterDiscord/Powercord/GooseMod_  
+**Mod**: _BetterDiscord/Powercord/GooseMod/Vencord_  
 **Discord language**: _Your language_
 
 ### Additional context

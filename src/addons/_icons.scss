@@ -75,6 +75,11 @@
 		mask-image: url(mono.$lock-closed);
 	}
 
+	// Members channel
+	svg:has(path[d^='M14 8.00598C14 10.211 12.206 12.006']) {
+		mask-image: url(mono.$people);
+	}
+
 	// Channel modifiers (locked/threads)
 	.iconContainer-21RCa3 {
 		// Locked channel
@@ -254,7 +259,7 @@ $icons: (
 	'user-context-add-friend': mono.$user-add,
 	'user-context-remove-friend': mono.$user-delete,
 	'user-context-block': mono.$user-denied,
-	'user-context-mute': mono.$speaker-off,
+	'user-context-mute': mono.$mic-off,
 	'user-context-disable-video': mono.$video-off,
 	'user-context-voice-mute': mono.$mic-off,
 	'user-context-voice-deafen': mono.$speaker-off,
@@ -268,6 +273,7 @@ $icons: (
 	'user-context-devmode-copy-id': mono.$copy,
 	'user-context-add-friend-nickname': mono.$rename,
 	'user-context-soundboard-sound-mute': mono.$speaker-off,
+	'user-context-deafen': mono.$speaker-off,
 
 	// Settings
 	'user-settings-cog-My_Account': mono.$user,
@@ -297,8 +303,10 @@ $icons: (
 	'user-settings-cog-Sessions': mono.$phone-laptop,
 	'user-settings-cog-Friend_Requests': mono.$user-available,
 	'user-settings-cog-Activity_Privacy': mono.$shield-check,
+	'user-settings-cog-Family_Center': mono.$people,
 
 	// Channel (right click toolbar)
+	'channel-context-mark-channel-read': mono.$eye,
 	'channel-context-mute-channel': mono.$speaker-off,
 	'channel-context-copy-channel-topic': mono.$copy,
 	'channel-context-edit-channel': mono.$pen,
@@ -326,6 +334,7 @@ $icons: (
 	'guild-header-popout-report-raid': mono.$megaphone,
 	'guild-header-popout-active-threads': mono.$comment-multi,
 	'guild-header-popout-insights': mono.$eye,
+	'guild-header-popout-hide-muted-channels': mono.$eye,
 
 	// Server dropdown (right click)
 	'guild-context-mark-guild-read': mono.$eye,
@@ -344,6 +353,8 @@ $icons: (
 	'guild-context-create-event': mono.$calendar,
 
 	// Message more options
+	'message-actions-add-reaction-0': mono.$emoji,
+	'message-actions-add-reaction-1': mono.$emoji-laugh,
 	'message-actions-reply': mono.$reply,
 	'message-actions-mark-unread': mono.$comment-note,
 	'message-actions-copy-link': mono.$link,
@@ -358,9 +369,8 @@ $icons: (
 	'account-switch-account': mono.$user-swap
 );
 
-.item-5ApiZt:not(#account-status-picker, [role='menuitemcheckbox'], [role='menuitemradio'], .hideInteraction-1vQrZJ) {
-	.icon-3XHs8t,
-	.iconContainer-Ksy8Oj:has(.icon-3XHs8t):not(:has(path[d*='M18.625'])) {
+.item-5ApiZt:not(#account-status-picker, [role='menuitemradio'], .hideInteraction-1vQrZJ) {
+	.icon-3XHs8t {
 		display: none !important;
 	}
 	&[role='menuitem'],
@@ -372,6 +382,9 @@ $icons: (
 			mask-position: center;
 			background: currentColor;
 			margin-right: 8px;
+		}
+		& + .layer-2BGhQ8 .item-5ApiZt::before {
+			content: none;
 		}
 		&.focused-3qFvc8::before {
 			background: var(--text-primary);

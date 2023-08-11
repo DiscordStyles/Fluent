@@ -8,26 +8,17 @@
 
 		// User area
 		& > .container-YkUktl {
-			position: absolute;
 			box-sizing: border-box;
-			bottom: 11px;
-			left: 12px;
 			background: var(--bg-main);
 			padding: 8px 14px;
+			margin-left: 11px;
+			margin-bottom: 12px;
 			width: calc(var(--channels-width) - 12px);
 			border-radius: var(--rounded) 0 0 var(--rounded);
 			border: 1px solid var(--border-high);
 			border-right: none;
 			height: var(--bottombar-height);
 			z-index: 1;
-			&::before {
-				content: '';
-				position: absolute;
-				right: 0;
-				height: calc(var(--bottombar-height) / 2);
-				width: 1px;
-				background: var(--border-mid);
-			}
 			& > .flex-2S1XBF {
 				gap: 8px;
 				height: 75%;
@@ -60,38 +51,33 @@
 			opacity: 1;
 			visibility: visible;
 		}
-
-		&:has(.wrapper-3Hk9OB) {
-			background-color: red;
-		}
 	}
 
 	// Voice connected
 	.container-1zzFcN {
-		background: transparent;
-		padding-bottom: 0;
 		position: absolute;
-		bottom: calc(var(--bottombar-height) + 9px);
-		left: 12px;
+		left: 11px;
 		right: 12px;
+		bottom: 0;
 		border-radius: var(--rounded) var(--rounded) 0 0;
 		background: var(--bg-main);
-		padding: 8px 8px 11px 8px;
+		padding: 0;
 		border: 1px solid var(--border-high);
 		border-bottom: none;
 		flex-direction: column-reverse;
 		display: flex;
 		gap: 8px;
+		z-index: 1;
 		& > .flex-2S1XBF {
-			padding-bottom: 0;
+			padding: 8px 8px 11px 8px;
 			position: relative;
-			z-index: 1;
+			z-index: 2;
 			&::before {
 				content: '';
 				position: absolute;
-				inset: -8px;
+				inset: 0;
+				background: var(--bg-main);
 				border-radius: var(--rounded) var(--rounded) 0 0;
-				background-color: var(--bg-main);
 			}
 			& > .flex-2S1XBF {
 				gap: 4px;
@@ -101,7 +87,7 @@
 				}
 			}
 			&:hover + .actionButtons-2vEOUh {
-				bottom: calc(100% - 2px);
+				bottom: calc(100% - 8px);
 				opacity: 1;
 				visibility: visible;
 				transition-delay: 0.45s;
@@ -110,6 +96,9 @@
 		a[href^='/channel'] {
 			display: none;
 		}
+	}
+	.wrapper-3Hk9OB + .container-YkUktl {
+		border-radius: 0 0 0 var(--rounded);
 	}
 	.inner-llGtyq {
 		position: relative;
@@ -128,7 +117,7 @@
 	}
 	.actionButtons-2vEOUh {
 		position: absolute;
-		bottom: calc(0% - 2px);
+		bottom: 0;
 		width: calc(100% - 16px);
 		background: var(--bg-main);
 		border-radius: var(--rounded) var(--rounded) 0 0;
@@ -148,5 +137,11 @@
 			opacity: 1;
 			bottom: calc(100% - 2px);
 		}
+	}
+	.panel-2ZFCRb {
+		border: none;
+		background: transparent;
+		margin-bottom: 56px;
+		padding: 8px 16px;
 	}
 }
