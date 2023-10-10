@@ -1039,7 +1039,7 @@ body,
   z-index: 1;
 }
 #app-mount .container-1zzFcN > .flex-2S1XBF {
-  padding: 8px 8px 11px 8px;
+  padding: 11px 0px 11px 15px;
   position: relative;
   z-index: 2;
 }
@@ -1154,10 +1154,42 @@ body,
   bottom: calc(100% - 2px);
 }
 #app-mount .panel-2ZFCRb {
-  border: none;
-  background: transparent;
   margin-bottom: 56px;
-  padding: 8px 16px;
+  margin-left: 7px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 8px;
+  border-radius: var(--rounded);
+  background: var(--bg-main);
+  border: 1px solid var(--border-high);
+}
+#app-mount .panel-2ZFCRb .button-12Fmur {
+  border-radius: var(--btn-radius);
+  padding: 4px 10px;
+  line-height: 20px;
+  font-size: var(--font-size-sm);
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: var(--btn-bg);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  box-shadow: none !important;
+  border: 1px solid var(--btn-border-x);
+  border-top-color: var(--btn-border-t);
+  border-bottom-color: var(--btn-border-b);
+  cursor: var(--cursor);
+}
+#app-mount .panel-2ZFCRb .button-12Fmur:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+}
+#app-mount .panel-2ZFCRb .button-12Fmur:active {
+  background: var(--btn-bg-active) !important;
+  border-color: var(--btn-border-active);
 }
 
 #app-mount .privateChannels-oVe7HL {
@@ -2255,27 +2287,11 @@ body,
   align-items: center;
   box-sizing: border-box;
   text-decoration: none;
-  background: var(--btn-bg);
-  font-weight: var(--font-weight-regular);
-  color: var(--text-primary);
-  box-shadow: none !important;
-  border: 1px solid var(--btn-border-x);
-  border-top-color: var(--btn-border-t);
-  border-bottom-color: var(--btn-border-b);
-  cursor: var(--cursor);
   height: 32px;
   padding: 4px;
   width: auto;
   position: static;
   border-radius: 0 var(--btn-radius) var(--btn-radius) 0 !important;
-}
-#app-mount .contextMenuNub-NuTZ_U:hover {
-  background: var(--btn-bg-hover);
-  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
-}
-#app-mount .contextMenuNub-NuTZ_U:active {
-  background: var(--btn-bg-active) !important;
-  border-color: var(--btn-border-active);
 }
 #app-mount .contextMenuNub-NuTZ_U svg {
   cursor: var(--cursor);
@@ -2283,9 +2299,6 @@ body,
 #app-mount .video-3n15R6 .transparent-1lUmft {
   background: transparent;
   border-bottom: none;
-}
-#app-mount .horizontal-112GEH.justifyEnd-2G0m6w.alignCenter-14kD11 {
-  padding-right: var(--server-container);
 }
 
 #app-mount .channelAttachmentArea-HwpkuQ {
@@ -6030,6 +6043,15 @@ body,
   width: 12px;
   height: 12px;
   z-index: 1;
+}
+
+.sendIcon-1HcEzu {
+  -webkit-mask: url('data:image/svg+xml; utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.694 12 2.299 3.272c-.236-.607.356-1.188.942-.982l.093.04 18 9a.75.75 0 0 1 .097 1.283l-.097.058-18 9c-.583.291-1.217-.244-1.065-.847l.03-.096L5.694 12 2.299 3.272 5.694 12ZM4.402 4.54l2.61 6.71h6.627a.75.75 0 0 1 .743.648l.007.102a.75.75 0 0 1-.649.743l-.101.007H7.01l-2.609 6.71L19.322 12 4.401 4.54Z" /></svg>') center/cover;
+          mask: url('data:image/svg+xml; utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.694 12 2.299 3.272c-.236-.607.356-1.188.942-.982l.093.04 18 9a.75.75 0 0 1 .097 1.283l-.097.058-18 9c-.583.291-1.217-.244-1.065-.847l.03-.096L5.694 12 2.299 3.272 5.694 12ZM4.402 4.54l2.61 6.71h6.627a.75.75 0 0 1 .743.648l.007.102a.75.75 0 0 1-.649.743l-.101.007H7.01l-2.609 6.71L19.322 12 4.401 4.54Z" /></svg>') center/cover;
+  background: var(--fluent-icons-color);
+}
+.sendIcon-1HcEzu path {
+  display: none;
 }
 
 svg:not([name=GamepadDisabled]) path[d="M14.99 11C14.99 12.66 13.66 14 12 14C10.34 14 9 12.66 9 11V5C9 3.34 10.34 2 12 2C13.66 2 15 3.34 15 5L14.99 11ZM12 16.1C14.76 16.1 17.3 14 17.3 11H19C19 14.42 16.28 17.24 13 17.72V21H11V17.72C7.72 17.23 5 14.41 5 11H6.7C6.7 14 9.24 16.1 12 16.1ZM12 4C11.2 4 11 4.66667 11 5V11C11 11.3333 11.2 12 12 12C12.8 12 13 11.3333 13 11V5C13 4.66667 12.8 4 12 4Z"] {
