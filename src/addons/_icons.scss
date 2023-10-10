@@ -54,6 +54,9 @@
 	svg:has(path[d^='M15 12C15 12.0007 15']) {
 		mask-image: url(mono.$speaker);
 	}
+	svg:has(path[d^='M19.2929 9.8299L19.9409 9.18278C21.353']) {
+		mask-image: url(mono.$pen);
+	}
 	// Rules
 	svg:has(path[d^='M33 34.5833V7.49998H35V36.6666H9C6.791']) {
 		mask-image: url(mono.$important);
