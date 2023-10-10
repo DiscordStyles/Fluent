@@ -67,7 +67,7 @@
 	}
 	.contextMenuNub-NuTZ_U {
 		@include mixins.btn;
-		@include mixins.btnSecondary;
+		//@include mixins.btnSecondary;
 		height: 32px;
 		padding: 4px;
 		width: auto;
@@ -82,9 +82,5 @@
 	.video-3n15R6 .transparent-1lUmft {
 		background: transparent;
 		border-bottom: none;
-	}
-
-	.horizontal-112GEH.justifyEnd-2G0m6w.alignCenter-14kD11 {
-		padding-right: var(--server-container);
 	}
 }
