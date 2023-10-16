@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "1.1.5";
+  --fluent-version: "1.1.6";
   --transition: cubic-bezier(0, 0, 0, 1);
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
@@ -1057,7 +1057,7 @@ body,
 #app-mount .wrapper-3Hk9OB + .container-YkUktl {
   border-radius: 0 0 0 var(--rounded);
 }
-#app-mount .inner-llGtyq {
+#app-mount .inner-C_MH0f {
   position: relative;
 }
 #app-mount .rtcConnectionStatus-c5A6Av {
@@ -1117,11 +1117,13 @@ body,
   opacity: 1;
   bottom: calc(100% - 8px);
 }
-#app-mount .panel-2ZFCRb {
+#app-mount .activityPanel-9icbyU {
   border: none;
   background: transparent;
-  margin-bottom: 56px;
   padding: 8px 16px;
+}
+#app-mount .activityPanel-9icbyU:has(+ .wrapper-VSquwh:not(:empty)) {
+  margin-bottom: 56px;
 }
 
 #app-mount .privateChannels-oVe7HL {
