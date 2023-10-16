@@ -1,5 +1,5 @@
 :root {
-  --fluent-version: "1.1.4";
+  --fluent-version: "1.1.5";
   --transition: cubic-bezier(0, 0, 0, 1);
   --accent-text: #000;
   --accent-solid: rgb(var(--accent));
@@ -47,6 +47,8 @@
   --server-folder-icon-shape: 2px;
   --channel-padding: 8px;
   --banner-height: 155px;
+  --profile-modal-height: 700px;
+  --profile-modal-width: 800px;
   --win-btn-height: 32px;
   --win-btn-width: 52px;
   --profile-premium-text-shadow: 0 2px 5px hsl(0 0% 0% / 0.75);
@@ -263,25 +265,25 @@ body,
   background-color: var(--scrollbar-background) !important;
 }
 
-.chatContent-3KubbW .scroller-kQBbkU::-webkit-scrollbar,
+.chatContent-2O4SXb .scroller-kQBbkU::-webkit-scrollbar,
 .peopleList-2VBrVI::-webkit-scrollbar,
 .scroller-2qwVWY::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
-.chatContent-3KubbW .scroller-kQBbkU::-webkit-scrollbar-track,
+.chatContent-2O4SXb .scroller-kQBbkU::-webkit-scrollbar-track,
 .peopleList-2VBrVI::-webkit-scrollbar-track,
 .scroller-2qwVWY::-webkit-scrollbar-track {
   background: transparent !important;
   border-color: transparent !important;
 }
-.chatContent-3KubbW .scroller-kQBbkU::-webkit-scrollbar-thumb,
+.chatContent-2O4SXb .scroller-kQBbkU::-webkit-scrollbar-thumb,
 .peopleList-2VBrVI::-webkit-scrollbar-thumb,
 .scroller-2qwVWY::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-background);
 }
 
-.members-3WRCEx::-webkit-scrollbar,
+.members-2y1nVj::-webkit-scrollbar,
 .container-1NXEtd .scroller-1ox3I2::-webkit-scrollbar,
 .sidebarRegionScroller-FXiQOh::-webkit-scrollbar,
 .scroller-WSmht3::-webkit-scrollbar {
@@ -920,7 +922,7 @@ body,
   background: transparent;
   border: none;
 }
-#app-mount .panels-3wFtMD > .container-YkUktl {
+#app-mount .panels-3wFtMD > .container-1CH86i {
   box-sizing: border-box;
   background: var(--bg-main);
   padding: 8px 14px;
@@ -933,12 +935,12 @@ body,
   height: var(--bottombar-height);
   z-index: 1;
 }
-#app-mount .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF {
+#app-mount .panels-3wFtMD > .container-1CH86i > .flex-2S1XBF {
   gap: 8px;
   height: 75%;
   width: 100%;
 }
-#app-mount .panels-3wFtMD > .container-YkUktl button {
+#app-mount .panels-3wFtMD > .container-1CH86i button {
   border-radius: var(--btn-radius);
   padding: 4px 10px;
   line-height: 20px;
@@ -957,36 +959,36 @@ body,
   cursor: var(--cursor);
   flex: 1;
 }
-#app-mount .panels-3wFtMD > .container-YkUktl button:hover {
+#app-mount .panels-3wFtMD > .container-1CH86i button:hover {
   background: var(--btn-bg-hover);
   border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 }
-#app-mount .panels-3wFtMD > .container-YkUktl button:active {
+#app-mount .panels-3wFtMD > .container-1CH86i button:active {
   background: var(--btn-bg-active) !important;
   border-color: var(--btn-border-active);
 }
-#app-mount .panels-3wFtMD > .container-YkUktl button svg {
+#app-mount .panels-3wFtMD > .container-1CH86i button svg {
   width: 18px;
   height: 18px;
 }
-#app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW {
+#app-mount .panels-3wFtMD > .container-1CH86i .avatarWrapper-1B9FTW {
   padding: 6px;
   min-width: unset;
   margin: 0 8px 0 0;
 }
-#app-mount .panels-3wFtMD > .container-YkUktl .avatarWrapper-1B9FTW:hover {
+#app-mount .panels-3wFtMD > .container-1CH86i .avatarWrapper-1B9FTW:hover {
   background: transparent;
   box-shadow: var(--server-hover-selected);
 }
-#app-mount .panels-3wFtMD > .container-YkUktl .nameTag-sc-gpq {
+#app-mount .panels-3wFtMD > .container-1CH86i .nameTag-sc-gpq {
   display: none;
 }
-#app-mount .panels-3wFtMD:hover .container-1zzFcN {
+#app-mount .panels-3wFtMD:hover .container-2NLBJg {
   translate: 0 0;
   opacity: 1;
   visibility: visible;
 }
-#app-mount .container-1zzFcN {
+#app-mount .container-2NLBJg {
   position: absolute;
   left: 11px;
   right: 12px;
@@ -1001,22 +1003,23 @@ body,
   gap: 8px;
   z-index: 1;
 }
-#app-mount .container-1zzFcN > .flex-2S1XBF {
+#app-mount .container-2NLBJg > .flex-2S1XBF {
   padding: 8px 8px 11px 8px;
   position: relative;
   z-index: 2;
 }
-#app-mount .container-1zzFcN > .flex-2S1XBF::before {
+#app-mount .container-2NLBJg > .flex-2S1XBF::before {
   content: "";
   position: absolute;
   inset: 0;
   background: var(--bg-main);
   border-radius: var(--rounded) var(--rounded) 0 0;
+  z-index: -1;
 }
-#app-mount .container-1zzFcN > .flex-2S1XBF > .flex-2S1XBF {
+#app-mount .container-2NLBJg > .flex-2S1XBF > .flex-2S1XBF {
   gap: 4px;
 }
-#app-mount .container-1zzFcN > .flex-2S1XBF > .flex-2S1XBF button {
+#app-mount .container-2NLBJg > .flex-2S1XBF > .flex-2S1XBF button {
   border-radius: var(--btn-radius);
   padding: 4px 10px;
   line-height: 20px;
@@ -1034,21 +1037,21 @@ body,
   border-bottom-color: var(--btn-border-b);
   cursor: var(--cursor);
 }
-#app-mount .container-1zzFcN > .flex-2S1XBF > .flex-2S1XBF button:hover {
+#app-mount .container-2NLBJg > .flex-2S1XBF > .flex-2S1XBF button:hover {
   background: var(--btn-bg-hover);
   border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 }
-#app-mount .container-1zzFcN > .flex-2S1XBF > .flex-2S1XBF button:active {
+#app-mount .container-2NLBJg > .flex-2S1XBF > .flex-2S1XBF button:active {
   background: var(--btn-bg-active) !important;
   border-color: var(--btn-border-active);
 }
-#app-mount .container-1zzFcN > .flex-2S1XBF:hover + .actionButtons-2vEOUh {
+#app-mount .container-2NLBJg > .flex-2S1XBF:hover + .actionButtons-1DmM2g {
   bottom: calc(100% - 8px);
   opacity: 1;
   visibility: visible;
   transition-delay: 0.45s;
 }
-#app-mount .container-1zzFcN a[href^="/channel"] {
+#app-mount .container-2NLBJg a[href^="/channel"] {
   display: none;
 }
 #app-mount .wrapper-3Hk9OB + .container-YkUktl {
@@ -1069,7 +1072,7 @@ body,
   width: 24px;
   height: 24px;
 }
-#app-mount .actionButtons-2vEOUh {
+#app-mount .actionButtons-1DmM2g {
   position: absolute;
   bottom: 0;
   width: calc(100% - 16px);
@@ -1083,7 +1086,7 @@ body,
   transition: 0.15s var(--transition) 0s;
   z-index: 0;
 }
-#app-mount .actionButtons-2vEOUh .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ {
+#app-mount .actionButtons-1DmM2g .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ {
   border-radius: var(--btn-radius);
   padding: 4px 10px;
   line-height: 20px;
@@ -1101,18 +1104,18 @@ body,
   border-bottom-color: var(--btn-border-b);
   cursor: var(--cursor);
 }
-#app-mount .actionButtons-2vEOUh .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ:hover {
+#app-mount .actionButtons-1DmM2g .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ:hover {
   background: var(--btn-bg-hover);
   border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 }
-#app-mount .actionButtons-2vEOUh .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ:active {
+#app-mount .actionButtons-1DmM2g .button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ:active {
   background: var(--btn-bg-active) !important;
   border-color: var(--btn-border-active);
 }
-#app-mount .actionButtons-2vEOUh:hover {
+#app-mount .actionButtons-1DmM2g:hover {
   visibility: visible;
   opacity: 1;
-  bottom: calc(100% - 2px);
+  bottom: calc(100% - 8px);
 }
 #app-mount .panel-2ZFCRb {
   border: none;
@@ -1277,16 +1280,16 @@ body,
   background: linear-gradient(90deg, rgb(var(--accent), 0.5), rgb(var(--accent)));
 }
 
-#app-mount .chat-2ZfjoI {
+#app-mount .chat-9g_3Xj {
   background: transparent;
 }
-#app-mount .content-1jQy2l::before {
+#app-mount .content-18rAwf::before {
   content: none;
 }
-#app-mount .chatContent-3KubbW {
+#app-mount .chatContent-2O4SXb {
   background: var(--bg-alt);
 }
-#app-mount .chatContent-3KubbW:only-child {
+#app-mount .chatContent-2O4SXb:only-child {
   margin-right: 0;
   border-top-right-radius: 0;
 }
@@ -1552,7 +1555,7 @@ body,
   background: rgb(var(--accent), 0.15);
 }
 
-#app-mount .form-3gdLxP {
+#app-mount .form-3qe0Ni {
   margin: 0 12px 12px 0;
   padding: 8px 8px 8px 14px;
   background: var(--bg-main);
@@ -1564,19 +1567,19 @@ body,
   border-radius: 0 var(--rounded) var(--rounded) 0;
   box-sizing: border-box;
 }
-#app-mount .form-3gdLxP::before {
+#app-mount .form-3qe0Ni::before {
   content: none;
 }
-#app-mount .channelTextArea-1FufC0 {
+#app-mount .channelTextArea-1deLlK {
   margin: 0;
   background: var(--bg-alt);
   position: relative;
   border-radius: var(--rounded);
 }
-#app-mount .channelTextArea-1FufC0:focus-within {
+#app-mount .channelTextArea-1deLlK:focus-within {
   background: var(--bg-content-alt);
 }
-#app-mount .channelTextArea-1FufC0:focus-within .inner-NQg18Y::before {
+#app-mount .channelTextArea-1deLlK:focus-within .inner-NQg18Y::before {
   height: 2px;
   background: rgb(var(--accent));
 }
@@ -2262,18 +2265,18 @@ body,
   position: relative;
 }
 
-#app-mount .container-2o3qEW,
-#app-mount .members-3WRCEx,
-#app-mount .members-3WRCEx > div {
+#app-mount .container-2vWgD2,
+#app-mount .members-2y1nVj,
+#app-mount .members-2y1nVj > div {
   background: var(--bg-alt);
 }
-#app-mount .membersWrap-3NUR2t {
+#app-mount .membersWrap-3GwLFp {
   border-left: 1px solid var(--border-mid);
   min-width: var(--members-width);
   width: var(--members-width);
   height: 100%;
 }
-#app-mount .members-3WRCEx {
+#app-mount .members-2y1nVj {
   width: 100%;
   padding: 8px 2px 8px 8px !important;
   box-sizing: border-box;
@@ -5087,7 +5090,7 @@ body,
   margin-top: 40px;
 }
 
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) {
   border: 1px solid var(--border-high);
   border-radius: var(--rounded);
   background: var(--bg-content);
@@ -5096,21 +5099,21 @@ body,
   animation: fadeInFromBottom 0.15s var(--transition) forwards !important;
   width: 548px;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) [class^=modalCloseButton-],
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) [class^=closeButton-] {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) [class^=modalCloseButton-],
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) [class^=closeButton-] {
   display: none;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .input-2g-os5.multiInput-1VARjC {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .input-2g-os5.multiInput-1VARjC {
   background: var(--bg-high);
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx):hover,
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .input-2g-os5.multiInput-1VARjC:hover {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx):hover,
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .input-2g-os5.multiInput-1VARjC:hover {
   background: var(--bg-higher);
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .header-1kWa4s,
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .header-1R3myj,
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .header-1zd7se {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .header-1kWa4s,
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .header-1R3myj,
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .header-1zd7se {
   padding: 24px;
   align-items: center;
   height: auto;
@@ -5118,51 +5121,51 @@ body,
   box-shadow: none;
   background: var(--bg-content);
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .header-1kWa4s .size24-17l95E,
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .header-1R3myj .size24-17l95E,
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .header-1zd7se .size24-17l95E {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .header-1kWa4s .size24-17l95E,
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .header-1R3myj .size24-17l95E,
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .header-1zd7se .size24-17l95E {
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-lg);
   margin-bottom: 12px;
   color: var(--text-primary);
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .header-1kWa4s button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM),
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .header-1R3myj button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM),
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .header-1zd7se button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM) {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .header-1kWa4s button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM),
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .header-1R3myj button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM),
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .header-1zd7se button[type=button].button-f2h6uQ:not(.lookFilled-yCfaCM) {
   display: none;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .content-2hZxGK {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .content-2hZxGK {
   padding: 0 24px 24px !important;
   display: flex;
   flex-direction: column;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .content-2hZxGK .marginBottom20-315RVT {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .content-2hZxGK .marginBottom20-315RVT {
   margin-bottom: 0;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .content-2hZxGK .marginBottom20-315RVT + * {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .content-2hZxGK .marginBottom20-315RVT + * {
   margin-top: 20px;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .content-2hZxGK div[class][style^="position: absolute;"]:not(.file-input) {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .content-2hZxGK div[class][style^="position: absolute;"]:not(.file-input) {
   display: none;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .content-2hZxGK .title-3hptVQ {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .content-2hZxGK .title-3hptVQ {
   text-transform: none;
   color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .content-2hZxGK .optionHeader-27AHfD {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .content-2hZxGK .optionHeader-27AHfD {
   color: var(--text-secondary) !important;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .size16-rrJ6ag {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .size16-rrJ6ag {
   color: var(--text-secondary);
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-lg);
   margin: 0;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .footer-IubaaS {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .footer-IubaaS {
   padding: 24px;
   background: var(--bg-main);
   box-shadow: none;
@@ -5171,10 +5174,10 @@ body,
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .footer-IubaaS button:only-child {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .footer-IubaaS button:only-child {
   grid-column: 2/3;
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .footer-IubaaS button[type=button]:not(.lookFilled-yCfaCM) {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .footer-IubaaS button[type=button]:not(.lookFilled-yCfaCM) {
   border-radius: var(--btn-radius);
   padding: 4px 10px;
   line-height: 20px;
@@ -5192,15 +5195,15 @@ body,
   border-bottom-color: var(--btn-border-b);
   cursor: var(--cursor);
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .footer-IubaaS button[type=button]:not(.lookFilled-yCfaCM):hover {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .footer-IubaaS button[type=button]:not(.lookFilled-yCfaCM):hover {
   background: var(--btn-bg-hover);
   border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .footer-IubaaS button[type=button]:not(.lookFilled-yCfaCM):active {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .footer-IubaaS button[type=button]:not(.lookFilled-yCfaCM):active {
   background: var(--btn-bg-active) !important;
   border-color: var(--btn-border-active);
 }
-#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN) .buttonsRight-21z8KV {
+#app-mount .root-1CAIjD:not(.modal-3Crloo, .carouselModal-1eUFoq, .root-2uUafN, .root-8LYsGj) .buttonsRight-21z8KV {
   gap: 8px;
 }
 
