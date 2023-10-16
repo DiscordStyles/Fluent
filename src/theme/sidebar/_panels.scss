@@ -7,7 +7,7 @@
 		border: none;
 
 		// User area
-		& > .container-YkUktl {
+		& > .container-1CH86i {
 			box-sizing: border-box;
 			background: var(--bg-main);
 			padding: 8px 14px;
@@ -46,7 +46,7 @@
 				display: none;
 			}
 		}
-		&:hover .container-1zzFcN {
+		&:hover .container-2NLBJg {
 			translate: 0 0;
 			opacity: 1;
 			visibility: visible;
@@ -54,7 +54,7 @@
 	}
 
 	// Voice connected
-	.container-1zzFcN {
+	.container-2NLBJg {
 		position: absolute;
 		left: 11px;
 		right: 12px;
@@ -78,6 +78,7 @@
 				inset: 0;
 				background: var(--bg-main);
 				border-radius: var(--rounded) var(--rounded) 0 0;
+				z-index: -1;
 			}
 			& > .flex-2S1XBF {
 				gap: 4px;
@@ -86,7 +87,7 @@
 					@include mixins.btnSecondary;
 				}
 			}
-			&:hover + .actionButtons-2vEOUh {
+			&:hover + .actionButtons-1DmM2g {
 				bottom: calc(100% - 8px);
 				opacity: 1;
 				visibility: visible;
@@ -115,7 +116,7 @@
 		width: 24px;
 		height: 24px;
 	}
-	.actionButtons-2vEOUh {
+	.actionButtons-1DmM2g {
 		position: absolute;
 		bottom: 0;
 		width: calc(100% - 16px);
@@ -135,7 +136,7 @@
 		&:hover {
 			visibility: visible;
 			opacity: 1;
-			bottom: calc(100% - 2px);
+			bottom: calc(100% - 8px);
 		}
 	}
 	.panel-2ZFCRb {
