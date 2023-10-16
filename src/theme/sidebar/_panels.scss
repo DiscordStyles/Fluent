@@ -101,7 +101,7 @@
 	.wrapper-3Hk9OB + .container-YkUktl {
 		border-radius: 0 0 0 var(--rounded);
 	}
-	.inner-llGtyq {
+	.inner-C_MH0f {
 		position: relative;
 	}
 	.rtcConnectionStatus-c5A6Av {
@@ -139,10 +139,12 @@
 			bottom: calc(100% - 8px);
 		}
 	}
-	.panel-2ZFCRb {
+	.activityPanel-9icbyU {
 		border: none;
 		background: transparent;
-		margin-bottom: 56px;
 		padding: 8px 16px;
+		&:has(+ .wrapper-VSquwh:not(:empty)) {
+			margin-bottom: 56px;
+		}
 	}
 }
