@@ -1,13 +1,13 @@
 @use '../classes' as *;
 
-#{cls('mount')} {
-	#{cls('chat.container')} {
+#app-mount {
+	.chat-9g_3Xj {
 		background: transparent;
 	}
-	#{cls('chat.content')}::before {
+	.content-18rAwf::before {
 		content: none;
 	}
-	#{cls('chat.messages.container')} {
+	.chatContent-2O4SXb {
 		background: var(--bg-alt);
 		&:only-child {
 			margin-right: 0;
@@ -15,7 +15,7 @@
 		}
 	}
 
-	#{cls('chat.messages.scrollerSpacer')} {
+	.scrollerSpacer-3AqkT9 {
 		height: 24px;
 	}
 
