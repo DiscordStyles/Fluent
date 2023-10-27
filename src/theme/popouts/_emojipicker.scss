@@ -6,7 +6,7 @@
 		box-shadow: var(--shadow-flyout);
 		padding-top: 4px;
 		border-bottom: 1px solid var(--border-high);
-		[class^='header-']:not([aria-expanded]) {
+		[class^='header_']:not([aria-expanded]) {
 			box-shadow: none;
 		}
 		&:has(.nav__2bf35) {
@@ -68,8 +68,8 @@
 		border-bottom-color: var(--textbox-underline);
 		transition: none;
 
-		[class^='input-'],
-		[class^='inner-'] {
+		[class^='input_'],
+		[class^='inner_'] {
 			box-sizing: border-box;
 			margin: 0;
 			padding: 0;
@@ -77,7 +77,7 @@
 				display: none;
 			}
 		}
-		[class^='input-'] {
+		[class^='input_'] {
 			padding: 0 8px;
 		}
 
