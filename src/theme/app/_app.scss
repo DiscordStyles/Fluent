@@ -2,7 +2,7 @@
 
 // Wack ass text flickering
 html,
-span:not([class*='spinner-'], [class*='spinnerItem']) {
+span:not([class*='spinner_'], [class*='spinnerItem']) {
 	backface-visibility: hidden;
 }
 
@@ -16,9 +16,9 @@ body,
 }
 
 // Remove pointer from clickable
-[class*='clickable-'],
-[class*='cursorPointer-'],
-[class*='selectable-'] {
+[class*='clickable_'],
+[class*='cursorPointer_'],
+[class*='selectable_'] {
 	cursor: var(--cursor) !important;
 }
 

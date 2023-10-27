@@ -1,23 +1,23 @@
 @use '../mixins';
 
 #app-mount {
-	.profilePanel-2VBkh8 {
+	.profilePanel__12596 {
 		border-left: 1px solid var(--border-high);
-		background: var(--bg-altuserPanelInner-3KPel3);
+		background: var(--bg-altuserPanelInner_eddf4c);
 
-		.userPanelOuter-XfFELn:not(.userProfileOuterThemed-2BgJCM),
-		.userPanelInner-3KPel3 {
+		.userPanelOuter__880e5:not(.userProfileOuterThemed__6eb84),
+		.userPanelInner_eddf4c {
 			background: transparent;
 		}
 
-		.bannerSVGWrapper-2CLfzN {
+		.bannerSVGWrapper__3e7b0 {
 			overflow: visible;
 			pointer-events: none;
 			foreignObject {
 				mask: none;
 			}
 		}
-		.banner-1YaD3N {
+		.banner__6d414 {
 			mask: linear-gradient(hsl(0 0% 0% / 0.5), transparent 90%);
 			position: absolute;
 			width: 100%;
@@ -30,11 +30,11 @@
 				display: none;
 			}
 		}
-		.gifTag-1TvtGO {
+		.gifTag__9db5a {
 			display: none;
 		}
 
-		.avatarWrapperNormal-ahVUaC {
+		.avatarWrapperNormal__0bddb {
 			top: 24px;
 			right: 24px;
 			left: unset;
@@ -46,40 +46,40 @@
 			}
 		}
 
-		.badgelistGroup-_4Ddiq {
+		.badgelistGroup__53eaa {
 			position: absolute;
 			top: 85px;
 			left: 16px;
 			padding: 0;
 			margin: 0;
 		}
-		.badgeList-2hF9ig {
+		.badgeList_ef4131 {
 			background: transparent;
 			padding: 0;
 		}
 
-		.overlayBackground-2aa7wt {
+		.overlayBackground__86b78 {
 			position: unset;
 			background: var(--bg-transparent);
-			&:nth-child(2) > .section-28YDOf:first-of-type {
+			&:nth-child(2) > .section__6f61e:first-of-type {
 				padding: 0;
 				position: absolute;
 				top: 16px;
 				left: 16px;
-				& + .divider-2dDziJ {
+				& + .divider_ed0c1d {
 					display: none;
 				}
 			}
 		}
 
-		.profilePanelConnections-1tVK8j {
+		.profilePanelConnections__3c232 {
 			background: transparent;
 
 			button {
 				@include mixins.btnSecondary;
 			}
 		}
-		.mutualFriendsDivider-_X_dLc {
+		.mutualFriendsDivider_c21dfe {
 			border: none;
 			margin-top: 12px;
 		}

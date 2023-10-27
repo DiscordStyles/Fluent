@@ -2,17 +2,17 @@
 @use '../theme/assets/mono';
 @use '../theme/assets/brand';
 
-.wrapper-NhbLHG {
+.wrapper__7bcde {
 	--fluent-icons-color: var(--interactive-normal);
-	&.modeMuted-2T4MDZ {
+	&.modeMuted__0aeea {
 		--fluent-icons-color: var(--interactive-muted);
 	}
-	&.modeUnread-3Cxepe {
+	&.modeUnread_f74c03 {
 		--fluent-icons-color: var(--interactive-active);
 	}
 }
 
-.link-1_kTxV {
+.link__95dc0 {
 	path {
 		display: none;
 	}
@@ -81,7 +81,7 @@
 	}
 
 	// Channel modifiers (locked/threads)
-	.iconContainer-21RCa3 {
+	.iconContainer__3f9b0 {
 		// Locked channel
 		&:has(path[d^='M21.025 5V4C21.025'])::before,
 		&:has(path[d^='M13 4C13 3.66767 13.0405'])::before,
@@ -117,7 +117,7 @@
 }
 
 // Send button
-.sendIcon-1HcEzu {
+.sendIcon__461ff {
 	mask: url(mono.$paper-plane) center/cover;
 	background: var(--fluent-icons-color);
 	path {
@@ -369,8 +369,8 @@ $icons: (
 	'account-switch-account': mono.$user-swap
 );
 
-.item-5ApiZt:not(#account-status-picker, [role='menuitemradio'], .hideInteraction-1vQrZJ) {
-	.icon-3XHs8t {
+.item__183e8:not(#account-status-picker, [role='menuitemradio'], .hideInteraction__2790e) {
+	.icon_f09dde {
 		display: none !important;
 	}
 	&[role='menuitem'],
@@ -383,7 +383,7 @@ $icons: (
 			background: currentColor;
 			margin-right: 8px;
 		}
-		& + .layer-2BGhQ8 .item-5ApiZt::before {
+		& + .layer_ec16dd .item__183e8::before {
 			content: none;
 		}
 		&.focused-3qFvc8::before {

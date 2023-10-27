@@ -5,7 +5,7 @@
 	background: var(--bg-content);
 	border-radius: var(--rounded);
 	overflow: hidden;
-	.item-1TA5qI {
+	.item_b7fb7e {
 		background: transparent;
 		margin: 0;
 		border-radius: 0;
@@ -15,7 +15,7 @@
 		&:hover {
 			background: var(--bg-content-alt);
 		}
-		&[aria-checked='true'] .radioBar-1XgZqD > div:first-child {
+		&[aria-checked='true'] .radioBar__40e1b > div:first-child {
 			background: var(--radio-bar-accent-color, var(--accent-solid));
 			border-color: var(--radio-bar-accent-color, var(--accent-solid));
 			&::before {
@@ -23,7 +23,7 @@
 			}
 		}
 	}
-	.radioBar-1XgZqD {
+	.radioBar__40e1b {
 		border-radius: 0;
 		padding: 16px !important;
 		display: flex;

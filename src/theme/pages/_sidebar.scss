@@ -1,24 +1,24 @@
 @use '../mixins';
 
 #app-mount {
-	.container-1oAagU {
+	.container__0a6a9 {
 		background: transparent;
 	}
-	.nowPlayingColumn-1eCBCN {
+	.nowPlayingColumn_f5023f {
 		background: transparent;
 	}
 
-	.scroller-hE2gWq {
+	.scroller__00e7e {
 		border-left: 1px solid var(--border-mid);
 		margin: 0;
 	}
 
-	.header-Imy05m {
+	.header__123bf {
 		margin: 0 0 16px;
 		@include mixins.subTitle;
 	}
 
-	.itemCard-3Etziu {
+	.itemCard__1f162 {
 		border-radius: var(--rounded);
 		border: 1px solid var(--border);
 		background: var(--bg-content);
@@ -34,19 +34,19 @@
 			background: var(--bg-content-alt);
 		}
 	}
-	.header-3jUeHi {
+	.header__77ddf {
 		padding: 12px;
 	}
-	.body-16rSsp {
+	.body__83069 {
 		margin: 0;
 		border-top: 1px solid var(--border);
 		border-radius: 0;
 		background: transparent;
 	}
-	.section-3G9aLW {
+	.section_efc22d {
 		background: transparent;
 	}
-	.voiceSectionDetails-3jGIB4 {
+	.voiceSectionDetails_b9919a {
 		cursor: var(--cursor);
 	}
 }
