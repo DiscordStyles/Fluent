@@ -1,20 +1,20 @@
 @use '../mixins';
 
 #app-mount {
-	.peopleColumn-1wMU14 {
+	.peopleColumn__51df3 {
 		position: relative;
 	}
-	.peopleList-2VBrVI {
+	.peopleList__2379e {
 		padding-bottom: calc(var(--bottombar-height) * 1.5);
 	}
-	.container-2cd8Mz {
+	.container__5c7e7 {
 		background: var(--bg-alt);
 	}
-	.tabBody-2dgbAs::before {
+	.tabBody_b3d268::before {
 		content: none;
 	}
 
-	.searchBar-2aylmZ {
+	.searchBar_ff8800 {
 		margin: 0;
 		position: absolute;
 		bottom: 12px;
@@ -28,7 +28,7 @@
 		border-left: none;
 		border-radius: 0 var(--rounded) var(--rounded) 0;
 
-		.inner-2pOSmK {
+		.inner__999f6 {
 			background: var(--bg-alt);
 			border-radius: var(--rounded);
 			flex-direction: row-reverse;
@@ -51,16 +51,16 @@
 				}
 			}
 		}
-		.input-2m5SfJ {
+		.input__74754 {
 			padding: 0 10px;
 			margin: 0;
 		}
 	}
 
-	.title-x4dI75 {
+	.title_dc625c {
 		margin: 16px;
 	}
-	.peopleListItem-u6dGxF {
+	.peopleListItem_d14722 {
 		height: auto !important;
 		margin: 0 4px 4px 16px;
 		padding: 8px 16px;
@@ -85,7 +85,7 @@
 			z-index: 1;
 		}
 
-		.actionButton-3-B2x- {
+		.actionButton__23182 {
 			@include mixins.btn;
 			@include mixins.btnSecondary;
 			width: auto;
@@ -95,7 +95,7 @@
 		&:hover {
 			background: var(--bg-interactive-high);
 		}
-		&.active-2UF8Zh {
+		&.active__6b8ff {
 			background: var(--bg-interactive-high);
 			&::before {
 				height: var(--pill-height);
@@ -105,7 +105,7 @@
 	}
 
 	// Add friend
-	.addFriendInputWrapper-kkoSV9 {
+	.addFriendInputWrapper__4bf8e {
 		padding: 0;
 		border: none;
 		background: transparent;

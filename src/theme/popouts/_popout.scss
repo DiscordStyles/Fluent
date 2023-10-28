@@ -1,8 +1,8 @@
 @use '../mixins';
 
 #app-mount [role='dialog'] {
-	.header-3_zmOb,
-	.header-1w9Q93 {
+	.header__53b07,
+	.header_f5cc88 {
 		border-bottom: 1px solid var(--border-high);
 		background: var(--bg-alt);
 		box-shadow: none;
@@ -16,7 +16,7 @@
 		}
 	}
 
-	[class^='jumpButton-'] {
+	[class^='jumpButton_'] {
 		@include mixins.btn;
 		@include mixins.btnSecondary;
 		height: auto;

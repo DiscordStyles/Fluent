@@ -1,17 +1,17 @@
-.platform-win #app-mount .typeWindows-3ILlhq + div {
-	.layer-86YKbF {
+.platform-win #app-mount .typeWindows__5fa63 + div {
+	.layer__2efaa  {
 		top: 0;
 		padding-top: 0;
-		&.baseLayer-W6S8cY {
+		&.baseLayer__8fda3 {
 			padding-top: calc(var(--win-btn-height) + 4px) !important;
 		}
 	}
-	.standardSidebarView-E9Pc3j {
+	.standardSidebarView__1129a {
 		top: 0;
 	}
 }
 
-.typeWindows-3ILlhq {
+.typeWindows__5fa63 {
 	height: var(--win-btn-height);
 	z-index: 2;
 	background: transparent;
@@ -21,11 +21,11 @@
 	pointer-events: none;
 	right: 0;
 }
-.winButton-3SigSb {
+.winButton__88672 {
 	height: calc(var(--win-btn-height) + 4px);
 	width: var(--win-btn-width);
 	cursor: var(--cursor);
 }
-.wordmarkWindows-1rsity {
+.wordmarkWindows__05c46 {
 	display: none;
 }
