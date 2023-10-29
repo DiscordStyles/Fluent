@@ -2,7 +2,7 @@
 @use '../mixins';
 
 #app-mount {
-	.guilds-2JjMmN {
+	.guilds__2b93a {
 		[class*='pill'] {
 			width: 4px;
 			margin-left: 0;
@@ -40,7 +40,7 @@
 			}
 		}
 	}
-	.listItem-3SmSlK {
+	.listItem_fa7b36 {
 		margin: 0 0 4px;
 		width: var(--server-container);
 		position: relative;
@@ -56,14 +56,14 @@
 		width: var(--server-size);
 		height: var(--server-size);
 	}
-	.wrapper-2PSQCG {
+	.wrapper__3af0b {
 		cursor: var(--cursor);
 	}
-	.wrapper-3kah-n {
+	.wrapper_d281dd {
 		position: relative;
 		transition: box-shadow 0.15s var(--transition);
 		&:hover,
-		&.selected-1Drb7Z {
+		&.selected_f5ec8e {
 			box-shadow: var(--server-hover-selected);
 		}
 	}
@@ -79,8 +79,8 @@
 		}
 	}
 
-	.icon-3AqZ2e,
-	.childWrapper-1j_1ub {
+	.icon__0cbed,
+	.childWrapper__01b9c {
 		width: var(--server-icon-size);
 		height: var(--server-icon-size);
 		border-radius: var(--server-icon-shape);
@@ -88,7 +88,7 @@
 		z-index: 2;
 	}
 
-	.homeIcon-r0w4ny {
+	.homeIcon__00b1b {
 		width: 75%;
 		height: 75%;
 		mask: url(mono.$home) center/cover;
@@ -98,23 +98,23 @@
 		}
 	}
 
-	.childWrapper-1j_1ub {
+	.childWrapper__01b9c {
 		background: transparent;
 		font-weight: var(--font-weight-semibold);
 	}
-	.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
+	.wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
 		background: transparent;
 		color: var(--text-primary);
 	}
 
-	.circleIconButton-1VxDrg {
+	.circleIconButton_d8df29 {
 		background: transparent;
-		&.selected-2r1Hvo {
+		&.selected__5250e {
 			background: transparent;
 		}
 	}
 
-	.blobContainer-ikKyFs:active {
+	.blobContainer__5ee50:active {
 		transform: none;
 	}
 }

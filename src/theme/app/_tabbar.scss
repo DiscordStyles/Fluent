@@ -1,9 +1,9 @@
-#app-mount [class*='tabBar-'] {
+#app-mount [class*='tabBar_'] {
 	display: flex;
 	height: auto;
 	gap: 0;
-	[class*='item-'],
-	[class*='tabBarItem-'] {
+	[class*='item_'],
+	[class*='tabBarItem_'] {
 		margin: 0;
 		
 		border: none;

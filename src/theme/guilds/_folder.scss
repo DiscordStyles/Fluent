@@ -1,13 +1,13 @@
 #app-mount {
-	.wrapper-38slSD {
+	.wrapper_ed1dea {
 		width: 100%;
 	}
-	.closedFolderIconWrapper-3tRb2d {
+	.closedFolderIconWrapper__7321f {
 		padding: 6px;
 		position: relative;
 		z-index: 1;
 	}
-	.folderIconWrapper-1oRIZr {
+	.folderIconWrapper__72239 {
 		border-radius: var(--rounded);
 		transition: box-shadow 0.15s var(--transition);
 		&[style^='background-color'] {
@@ -17,21 +17,21 @@
 			}
 		}
 	}
-	.expandedFolderBackground-1kSAf6 {
+	.expandedFolderBackground__1bec6 {
 		border-radius: var(--rounded);
 		height: 100%;
 		width: var(--server-size);
 		left: 50%;
 		transform: translateX(-50%);
-		&:not(.collapsed-uGXEbi) {
+		&:not(.collapsed__0a270) {
 			background: var(--server-bg);
 		}
 	}
-	.folder-241Joy {
+	.folder__17546 {
 		background: transparent;
 		cursor: var(--cursor);
 	}
-	.guildIcon-2I5sfu {
+	.guildIcon__2e5ab {
 		border-radius: var(--server-folder-icon-shape);
 		width: calc(var(--server-icon-size) / 1.8);
 		height: calc(var(--server-icon-size) / 1.8);

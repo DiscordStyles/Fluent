@@ -1,12 +1,34 @@
+@use '../mixins';
 @use '../classes' as *;
 
 #{cls('mount')} {
-	#{cls('chat.bars.attachments.container')} {
-		margin: 0;
-		padding: 16px;
+	#{cls('chat.altchat.container')} {
+		border-left: 1px solid var(--border-mid);
+		border-radius: 0;
+		background: transparent;
 	}
-	#{cls('chat.bars.attachments.item')} {
+	#{cls('chat.altchat.chat')}::before {
+		content: none;
+	}
+
+	#{cls('chat.altchat.followBar.container')} {
 		background: var(--bg-alt);
-		border: 1px solid var(--border-high);
+		box-shadow: none;
+		border-top: 1px solid var(--border-mid);
+		border-bottom: 1px solid var(--border-mid);
+
+		#{cls('chat.altchat.followBar.button')} {
+			@include mixins.btn;
+			@include mixins.btnSecondary;
+			& > div {
+				background: transparent;
+				border-radius: 0;
+				border: none;
+			}
+		}
+	}
+	#{cls('chat.altchat.divider')} {
+		height: 0;
+		background: var(--border-mid);
 	}
 }

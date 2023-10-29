@@ -1,7 +1,7 @@
 @use '../mixins';
 
 #app-mount {
-	.container-2McqkF {
+	.container_d6dad3 {
 		border: 1px solid var(--border);
 		background: var(--bg-menu);
 		border-radius: var(--rounded);
@@ -12,7 +12,7 @@
 			display: none;
 		}
 	}
-	.option-ayUoaq {
+	.option_b5597b {
 		@include mixins.text;
 		height: auto;
 		border-radius: var(--rounded);
@@ -27,29 +27,29 @@
 			background: var(--bg-menu-item);
 		}
 	}
-	.plusIcon-1RVszG {
+	.plusIcon__36244 {
 		display: none;
 	}
 
-	.header-1BR0Ro {
+	.header_b24bd1 {
 		padding: 8px 12px;
 	}
-	.resultsGroup-cfY57t {
+	.resultsGroup_ea9b64 {
 		padding: 4px;
 		margin: 0;
 		&::before {
 			content: none;
 		}
-		& ~ .resultsGroup-cfY57t {
+		& ~ .resultsGroup_ea9b64 {
 			padding-top: 0;
 		}
 	}
-	.filter-2QaH9y,
-	.displayedNick-1atSpT {
+	.filter_bd5fe7,
+	.displayedNick_df9a16 {
 		color: var(--text-primary);
 	}
-	.answer-14OVbQ,
-	.displayUsername-UTerwm {
+	.answer__9ff92,
+	.displayUsername_aea59a {
 		color: var(--text-tertiary);
 	}
 }

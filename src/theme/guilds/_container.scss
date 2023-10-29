@@ -1,10 +1,10 @@
 #app-mount {
-	.guilds-2JjMmN {
+	.guilds__2b93a {
 		width: var(--server-container);
 		background: transparent;
-		&.hidden-10MsGQ {
+		&.hidden__7c832 {
 			display: none;
-			& + .base-2jDfDU {
+			& + .base__3e6af {
 				border: none;
 			}
 		}
@@ -12,11 +12,10 @@
 			margin-bottom: var(--server-container);
 		}
 	}
-	.scroller-3X7KbA {
+	.scroller__3d071 {
 		background: var(--bg-main);
 		//padding-top: 0;
-		//margin-bottom: 64px;
-		.tutorialContainer-1pL9QS + div:not([class]) {
+		.tutorialContainer__890ea + div:not([class]) {
 			height: var(--server-size) !important;
 			margin-bottom: 4px;
 		}

@@ -1,12 +1,12 @@
 @use '../mixins';
 
 #app-mount {
-	.searchResultsWrap-5RVOkx {
+	.searchResultsWrap__9f374 {
 		border-left: 1px solid var(--border-mid);
 		background: var(--bg-alt);
 		width: 475px;
 	}
-	.searchHeader-1r_ZSh {
+	.searchHeader__19d87 {
 		background: var(--bg-main);
 		border-bottom: 1px solid var(--border-mid);
 		padding: 8px 8px 8px 16px;
@@ -26,24 +26,24 @@
 	.channelName-3w2Y3c {
 		background: transparent;
 	}
-	.container-rZM65Y .button-cfOvv- {
+	.container__7db35 .button_f8244b {
 		@include mixins.btn;
 		@include mixins.btnSecondary;
 		height: auto;
 	}
-	.searchResult-O9NDji {
+	.searchResult_dcd237 {
 		background: transparent;
 		border-radius: 0;
 		margin-bottom: 0;
 		cursor: var(--cursor);
-		.cozy-VmLDNB {
+		.cozy_f5c119 {
 			padding-left: calc(var(--chat-spacing-x) + 20px);
 		}
-		.avatar-2e8lTP {
+		.avatar__08316 {
 			left: calc(var(--chat-spacing-x) / 2 - 16px);
 		}
 	}
-	.message-24k8JL {
+	.message_d8db25 {
 		padding-bottom: 0;
 	}
 
