@@ -7,7 +7,7 @@
 		width: 100% !important;
 	}
 
-	[class*='subtitle-'],
+	[class*='subtitle_'],
 	.title-1_TkpU {
 		text-align: left;
 	}
@@ -18,7 +18,7 @@
 	.heading-xl-medium-_XBxHT {
 		@include mixins.modalTitle;
 	}
-	[class*='subtitle-'] {
+	[class*='subtitle_'] {
 		@include mixins.modalSubTitle;
 		margin-top: 0;
 		color: var(--text-secondary) !important;

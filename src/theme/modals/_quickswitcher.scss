@@ -1,11 +1,11 @@
 @use '../mixins';
 
 #app-mount {
-	.container-qBnZJg {
+	.container_f03f1d {
 		max-height: 500px;
 		height: 50vh;
 	}
-	.quickswitcher-pKcM9U {
+	.quickswitcher_a3d29a {
 		//height: 100%;
 		padding: 16px 16px 0;
 		border-radius: var(--rounded);
@@ -18,7 +18,7 @@
 			border: 0px !important;
 		}
 	}
-	.scroller-2qwVWY {
+	.scroller__52ae7 {
 		margin: 0 -12px 0 0;
 		max-height: none;
 		background: transparent;
@@ -27,7 +27,7 @@
 		}
 	}
 
-	.input-3r5zZY {
+	.input__848cd {
 		background: var(--textbox-bg);
 		border: 1px solid var(--textbox-border);
 		height: 32px;
@@ -56,20 +56,20 @@
 		}
 	}
 
-	div:not([class]) > .content-vQY7Mf {
+	div:not([class]) > .content_ad5076 {
 		height: auto;
 		line-height: normal;
 		padding: 12px 12px 6px;
 	}
-	.header-1ZpMzy {
+	.header_a2a437 {
 		margin: 0;
 		@include mixins.subText;
 		text-transform: none;
 	}
 
-	.result-u66Ywh {
+	.result__25f11 {
 		border-radius: var(--rounded);
-		.content-vQY7Mf {
+		.content_ad5076 {
 			position: relative;
 			padding: 0 16px;
 			cursor: var(--cursor);
@@ -89,7 +89,7 @@
 		}
 		&[aria-selected='true'] {
 			background: var(--bg-interactive);
-			.content-vQY7Mf {
+			.content_ad5076 {
 				&::before {
 					height: var(--pill-height);
 					opacity: 1;

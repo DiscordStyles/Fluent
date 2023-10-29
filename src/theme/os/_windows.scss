@@ -1,25 +1,25 @@
-.platform-win #app-mount /*.typeWindows-3ILlhq + div*/ {
-	.layer-86YKbF {
+.platform-win #app-mount /*.typeWindows__5fa63 + div*/ {
+	.layer__2efaa {
 		top: 0;
 		padding-top: 0;
-		&.baseLayer-W6S8cY {
+		&.baseLayer__8fda3 {
 			//padding-top: calc(var(--win-btn-height) + 4px) !important;
 		}
 	}
-	.standardSidebarView-E9Pc3j {
+	.standardSidebarView__1129a {
 		top: 0;
 	}
 	
 }
 
-.typeWindows-3ILlhq {
+.typeWindows__5fa63 {
 	//height: var(--win-btn-height);
     $withd-title: calc(82px + var(--channels-width));
 	margin-left: #{$withd-title};
 	max-width: calc(100% - #{$withd-title});
     margin-top: 0px;
     height: calc(var(--win-btn-height) + 18px);
-	z-index: 2;
+	//z-index: 2; REVISAR - CAMBIO NUEVO
 	background: transparent;
 	position: fixed;
 	width: calc(100% - 72px - var(--server-size));
@@ -27,11 +27,11 @@
 	pointer-events: none;
 	right: 0;
 }
-.winButton-3SigSb {
-	height: calc(var(--win-btn-height) + 18px);
+.winButton__88672 {
+	height: calc(var(--win-btn-height) + 18px); //calc(var(--win-btn-height) + 4px);
 	width: var(--win-btn-width);
 	cursor: var(--cursor);
 }
-.wordmarkWindows-1rsity {
+.wordmarkWindows__05c46 {
 	display: none;
 }

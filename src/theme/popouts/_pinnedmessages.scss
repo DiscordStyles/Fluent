@@ -1,22 +1,22 @@
 @use '../mixins';
 
 #app-mount {
-	.messagesPopoutWrap-3zryHW {
+	.messagesPopoutWrap_b3b384 {
 		@include mixins.popoutContainer;
 
-		.messageGroupWrapper-1jf_7C {
+		.messageGroupWrapper_f8c6e9 {
 			background: transparent;
 		}
-		.cozy-VmLDNB.wrapper-30-Nkg {
+		.cozy_f5c119.wrapper__09ecc {
 			padding: 8px 16px 8px 72px;
 			img {
 				left: 16px;
 			}
-			.header-2jRmjb {
+			.header__39b23 {
 				margin-bottom: 6px;
 			}
 		}
-		.actionButtons-2mNSAB {
+		.actionButtons__0ac05 {
 			top: 0;
 			right: 0;
 		}
