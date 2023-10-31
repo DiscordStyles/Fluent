@@ -2,12 +2,12 @@
 @use '../assets/mono';
 
 #app-mount {
-	.panels-3wFtMD {
+	.panels__58331 {
 		background: transparent;
 		border: none;
 
 		// User area
-		& > .container-1CH86i {
+		& > .container_ca50b9 {
 			box-sizing: border-box;
 			bottom: 11px;
 			left: 8px;//12px
@@ -21,7 +21,7 @@
 			//border-right: none;
 			height: var(--bottombar-height);
 			z-index: 1;
-			& > .flex-2S1XBF {
+			& > .flex_f5fbb7 {
 				//gap: 8px;
 				height: 75%;
 				width: 100%;
@@ -35,7 +35,7 @@
 					height: 18px;
 				}
 			}
-			.avatarWrapper-1B9FTW {
+			.avatarWrapper_ba5175 {
 				padding: 4px;//6px
 				min-width: unset;
 				//margin: 0 8px 0 0;
@@ -45,11 +45,11 @@
 					box-shadow: var(--server-hover-selected);
 				}
 			}
-			.nameTag-sc-gpq {
+			.nameTag__0e320 {
 				display: none;
 			}
 		}
-		&:hover .container-2NLBJg {
+		&:hover .container_d667ff {
 			translate: 0 0;
 			opacity: 1;
 			visibility: visible;
@@ -57,7 +57,7 @@
 	}
 
 	// Voice connected
-	.container-2NLBJg {
+	.container_d667ff {
 		position: absolute;
 		left: 7px;//11px
 		right: 8px;//12px
@@ -71,7 +71,7 @@
 		display: flex;
 		gap: 8px;
 		z-index: 1;
-		& > .flex-2S1XBF {
+		& > .flex_f5fbb7 {
 			padding: 11px 0px 11px 15px; //8px 8px 11px 8px;
 			position: relative;
 			z-index: 2;
@@ -83,7 +83,7 @@
 				border-radius: var(--rounded) var(--rounded) 0 0;
 				z-index: -1;
 			}
-			& > .flex-2S1XBF {
+			& > .flex_f5fbb7 {
 				gap: 4px;
 				margin-left: 0px;
 				margin-right: 8px;
@@ -92,7 +92,7 @@
 					@include mixins.btnSecondary;
 				}
 			}
-			&:hover + .actionButtons-1DmM2g {
+			&:hover + .actionButtons_b58cbb {
 				bottom: calc(100% - 8px);
 				opacity: 1;
 				visibility: visible;
@@ -103,25 +103,25 @@
 			display: none;
 		}
 	}
-	.wrapper-3Hk9OB + .container-1CH86i {
+	.wrapper__0ed4a + .container_ca50b9 {
 		border-radius: 0 0 0 var(--rounded);
 	}
-	.inner-C_MH0f {
+	.inner_ab95dc {
 		position: relative;
 	}
-	.rtcConnectionStatus-c5A6Av {
+	.rtcConnectionStatus__40882 {
 		display: flex;
 		align-items: center;
-		.button-ejjZWC {
+		.button_afdfd9 {
 			padding: 0;
 			margin-left: 4px;
 		}
 	}
-	.ping-2IpLcU {
+	.ping__47992 {
 		width: 24px;
 		height: 24px;
 	}
-	.actionButtons-1DmM2g {
+	.actionButtons_b58cbb {
 		position: absolute;
 		bottom: 0;
 		width: calc(100% - 16px);
@@ -134,7 +134,7 @@
 		visibility: hidden;
 		transition: 0.15s var(--transition) 0s;
 		z-index: 0;
-		.button-1EGGcP.buttonColor-3bP3fX.colorBrand-I6CyqQ {
+		.button__66e8c.buttonColor_a6eb73.colorBrand-I6CyqQ {
 			@include mixins.btn;
 			@include mixins.btnSecondary;
 		}
@@ -144,12 +144,11 @@
 			bottom: calc(100% - 8px);
 		}
 	}
-
-	.activityPanel-9icbyU {
+	.activityPanel__22355 {
 		border: none;
 		background: transparent;
 		padding: 8px 16px;
-		&:has(+ .wrapper-VSquwh:not(:empty)) {
+		&:has(+ .wrapper__0ed4a:not(:empty)) {
 			margin-bottom: 56px;
 		}
 	}

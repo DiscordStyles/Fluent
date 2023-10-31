@@ -1,14 +1,14 @@
 #app-mount {
-	.list-2x9Cl9 {
+	.list__02208 {
 		padding: 4px 0 0 0;
-		.draggable-S2aEx4 {
+		.draggable__081c0 {
 			height: auto;
 			&:not(:last-child) {
 				margin-bottom: 4px;
 			}
 		}
 	}
-	.voiceUser-3nRK-K {
+	.voiceUser__0470a {
 		height: auto;
 		&::before {
 			content: '';
@@ -26,26 +26,26 @@
 			z-index: 1;
 		}
 
-		&:hover .content-1Tgc42 {
+		&:hover .content_b60865 {
 			background: var(--bg-interactive-high);
 		}
-		&.selected-1oxcpH {
+		&.selected__471ca {
 			&::before {
 				height: var(--pill-height);
 				opacity: 1;
 			}
-			.content-1Tgc42 {
+			.content_b60865 {
 				background: var(--bg-interactive-high);
 			}
-			&:hover .content-1Tgc42 {
+			&:hover .content_b60865 {
 				background: var(--bg-interactive-high-hover);
 			}
 		}
 	}
-	.avatarSpeaking-2pCGrZ {
+	.avatarSpeaking_c95053 {
 		box-shadow: inset 0 0 0 2px rgb(var(--accent)), inset 0 0 0 4px var(--bg-alt);
 	}
-	.content-1Tgc42 {
+	.content_b60865 {
 		margin: 0;
 		padding: 2px 8px 2px 32px;
 	}
