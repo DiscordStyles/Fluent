@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@discordstyles/classes':
-    specifier: ^0.0.14
-    version: 0.0.14
+    specifier: ^0.0.15
+    version: 0.0.15
   bd-scss:
     specifier: 2.0.14
     version: 2.0.14
@@ -15,8 +19,8 @@ devDependencies:
 
 packages:
 
-  /@discordstyles/classes@0.0.14:
-    resolution: {integrity: sha512-Pz2UFnBnKWLoFjYdjF+6E7UZb4GWs3O9GEcjDJB/7rLy2s73JA6FtwCAR3px21/+Q8FcOY/wH20OPv4H3zH2OA==}
+  /@discordstyles/classes@0.0.15:
+    resolution: {integrity: sha512-KKkG9P0dtUu9VgGWJyHMe7KQir9HACz++7QQVRQ/GRu8PDRB8WJu1oqK0lCpBr9MCfthFSFkrCF8bLsT62WX/w==}
     dev: false
 
   /anymatch@3.1.3:

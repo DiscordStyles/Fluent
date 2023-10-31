@@ -19,7 +19,7 @@
 	max-width: calc(100% - #{$withd-title});
     margin-top: 0px;
     height: calc(var(--win-btn-height) + 18px);
-	//z-index: 2; REVISAR - CAMBIO NUEVO
+	z-index: 2;
 	background: transparent;
 	position: fixed;
 	width: calc(100% - 72px - var(--server-size));
