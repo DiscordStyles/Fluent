@@ -2,10 +2,10 @@
 @use '../assets/mono';
 
 #app-mount {
-	.privateChannels-oVe7HL {
+	.privateChannels__93473 {
 		background: transparent;
 	}
-	.scroller-WSmht3 {
+	.scroller__4b984 {
 		background: transparent;
 		padding: 8px 2px 8px 8px !important;
 		div[style='height: 8px;'] {
@@ -13,7 +13,7 @@
 		}
 	}
 
-	.searchBar-3TnChZ {
+	.searchBar_e4ea2a {
 		height: var(--toolbar-height);
 		box-shadow: none;
 		border-bottom: 1px solid var(--border-mid);
@@ -25,18 +25,18 @@
 		}
 	}
 
-	.channel-1Shao0 {
+	.channel_c21703 {
 		max-width: unset;
 		margin: 0 0 4px 0;
 		padding: 0;
 
-		.layout-1LjVue {
+		.layout__59abc {
 			height: 48px;
 			padding: 0 18px;
 			cursor: var(--cursor);
 		}
 
-		.interactive-26HRN_ {
+		.interactive__776ee {
 			cursor: var(--cursor);
 			background: transparent;
 			&::before {
@@ -54,17 +54,17 @@
 			}
 		}
 
-		.content-66wMin {
+		.content_f767b8 {
 			height: 100%;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 		}
 
-		&:hover .interactive-26HRN_ {
+		&:hover .interactive__776ee {
 			background: var(--bg-interactive-high);
 		}
-		.selected-26oxtA {
+		.selected_d94cf9 {
 			background: var(--bg-interactive-high);
 			&::before {
 				height: var(--pill-height);
@@ -76,14 +76,9 @@
 		}
 	}
 
-	.arrowIcon-3Q91hj{
-		display: none;
-	}
-	
-
-	.link-39sEB3 {
+	.link__2e8e1 {
 		cursor: var(--cursor);
-		&[href='/channels/@me'] .linkButtonIcon-7rsZcu {
+		&[href='/channels/@me'] .linkButtonIcon__2f35b {
 			mask: url(mono.$people) center/cover;
 			background: var(--interactive-normal);
 			g {
@@ -91,4 +86,8 @@
 			}
 		}
 	}
+
+	/*.arrowIcon-3Q91hj{ REVISAR
+		display: none;
+	}*/
 }
