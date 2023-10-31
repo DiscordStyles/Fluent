@@ -5,7 +5,7 @@
 		"build": "bd-scss build"
 	},
 	"dependencies": {
-		"@discordstyles/classes": "^0.0.13",
+		"@discordstyles/classes": "^0.0.15",
 		"bd-scss": "2.0.14"
 	},
 	"devDependencies": {

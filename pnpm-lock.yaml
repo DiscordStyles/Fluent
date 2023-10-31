@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@discordstyles/classes':
-    specifier: ^0.0.13
-    version: 0.0.13
+    specifier: ^0.0.14
+    version: 0.0.14
   bd-scss:
     specifier: 2.0.14
     version: 2.0.14
@@ -15,8 +15,8 @@ devDependencies:
 
 packages:
 
-  /@discordstyles/classes@0.0.13:
-    resolution: {integrity: sha512-PyVAiQ4bP+MpT9ET/Jq1EdbH9JNTAcT/AY3KjQMsInJZdvZ97dTnEGSCpQqZOWnTzIIS4+5hCbjz0lEvyxOD9w==}
+  /@discordstyles/classes@0.0.14:
+    resolution: {integrity: sha512-Pz2UFnBnKWLoFjYdjF+6E7UZb4GWs3O9GEcjDJB/7rLy2s73JA6FtwCAR3px21/+Q8FcOY/wH20OPv4H3zH2OA==}
     dev: false
 
   /anymatch@3.1.3:
@@ -35,8 +35,8 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.22.1
-      caniuse-lite: 1.0.30001547
-      fraction.js: 4.3.6
+      caniuse-lite: 1.0.30001558
+      fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
       postcss: 8.4.31
@@ -52,7 +52,7 @@ packages:
       chokidar: 3.5.3
       postcss: 8.4.31
       sade: 1.8.1
-      sass: 1.69.2
+      sass: 1.69.5
     dev: false
 
   /binary-extensions@2.2.0:
@@ -72,14 +72,14 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001547
-      electron-to-chromium: 1.4.549
+      caniuse-lite: 1.0.30001558
+      electron-to-chromium: 1.4.571
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: false
 
-  /caniuse-lite@1.0.30001547:
-    resolution: {integrity: sha512-W7CrtIModMAxobGhz8iXmDfuJiiKg1WADMO/9x7/CLNin5cpSbuBjooyoIUVB5eyCc36QuTVlkVa1iB2S5+/eA==}
+  /caniuse-lite@1.0.30001558:
+    resolution: {integrity: sha512-/Et7DwLqpjS47JPEcz6VnxU9PwcIdVi0ciLXRWBQdj1XFye68pSQYpV0QtPTfUKWuOaEig+/Vez2l74eDc1tPQ==}
     dev: false
 
   /chalk@5.3.0:
@@ -102,8 +102,8 @@ packages:
       fsevents: 2.3.3
     dev: false
 
-  /electron-to-chromium@1.4.549:
-    resolution: {integrity: sha512-gpXfJslSi4hYDkA0mTLEpYKRv9siAgSUgZ+UWyk+J5Cttpd1ThCVwdclzIwQSclz3hYn049+M2fgrP1WpvF8xg==}
+  /electron-to-chromium@1.4.571:
+    resolution: {integrity: sha512-Sc+VtKwKCDj3f/kLBjdyjMpNzoZsU6WuL/wFb6EH8USmHEcebxRXcRrVpOpayxd52tuey4RUDpUsw5OS5LhJqg==}
     dev: false
 
   /escalade@3.1.1:
@@ -118,8 +118,8 @@ packages:
       to-regex-range: 5.0.1
     dev: false
 
-  /fraction.js@4.3.6:
-    resolution: {integrity: sha512-n2aZ9tNfYDwaHhvFTkhFErqOMIb8uyzSQ+vGJBjZyanAKZVbGUQ1sngfk9FdkBw7G26O7AgNjLcecLffD1c7eg==}
+  /fraction.js@4.3.7:
+    resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
     dev: false
 
   /fsevents@2.3.3:
@@ -232,8 +232,8 @@ packages:
       mri: 1.2.0
     dev: false
 
-  /sass@1.69.2:
-    resolution: {integrity: sha512-48lDtG/9OuSQZ9oNmJMUXI2QdCakAWrAGjpX/Fy6j4Og8dEAyE598x5GqCqnHkwV7+I5w8DJpqjm581q5HNh3w==}
+  /sass@1.69.5:
+    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:

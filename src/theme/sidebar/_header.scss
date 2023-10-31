@@ -1,17 +1,17 @@
 @use '../mixins';
 
 #app-mount {
-	.sidebar-1tnWFu .content-yjf30S > div[style='height: 84px;'],
-	.sidebar-1tnWFu .content-yjf30S > div[style='height: 16px;'] {
+	.sidebar_ded4b5 .content__23cab > div[style='height: 84px;'],
+	.sidebar_ded4b5 .content__23cab > div[style='height: 16px;'] {
 		display: none;
 	}
 
-	.container-1-ERn5 {
+	.container__7c79d {
 		display: flex;
 		flex-direction: column-reverse;
 	}
 
-	.header-3OsQeK {
+	.header__104ca {
 		@include mixins.btn;
 		@include mixins.btnSecondary;
 		margin: 8px;
@@ -19,17 +19,17 @@
 		height: 42px;
 		transition: none;
 
-		.headerContent-2SNbie {
+		.headerContent_ee8727 {
 			flex: 1;
 		}
-		.headerChildren-2qV9P8 {
+		.headerChildren__7cd0b {
 			display: flex;
 		}
 
-		.guildIconContainer-3QvE6w {
+		.guildIconContainer_a995c7 {
 			display: none;
 		}
-		.name-3Uvkvr {
+		.name_c08dbc {
 			font-weight: var(--font-weight-normal);
 			max-width: calc(var(--channels-width) - 64px);
 		}
@@ -40,7 +40,7 @@
 	}
 
 	// Banner
-	.animatedContainer-2laTjx {
+	.animatedContainer__341f6 {
 		background: transparent;
 		height: var(--banner-height);
 		box-shadow: none;
@@ -50,7 +50,7 @@
 		opacity: 1 !important;
 		border-bottom: 1px solid var(--border-mid);
 	}
-	.bannerImage-ubW8K- {
+	.bannerImage__39c51 {
 		overflow: hidden;
 		width: 100%;
 		transform: none !important;
@@ -66,11 +66,11 @@
 	}
 
 	// Public tag
-	.communityInfoContainer-1dMVpU {
+	.communityInfoContainer__286d6 {
 		margin-top: 75px;
 		left: 0;
 	}
-	.communityInfoPill-2Mll66 {
+	.communityInfoPill_d3f445 {
 		border-radius: var(--rounded);
 		background: var(--bg-main);
 	}
