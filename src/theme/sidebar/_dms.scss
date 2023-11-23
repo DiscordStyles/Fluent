@@ -44,13 +44,18 @@
 				border-radius: 50px;
 				position: absolute;
 				top: 50%;
-				transform: translateY(-50%);
+				translate: 0 -50%;
 				width: var(--pill-width);
-				height: 0;
+				height: var(--pill-height);
+				scale: 0;
 				left: 0;
 				opacity: 0;
-				background: rgb(var(--accent));
+				background: var(--pill-unread);
 				transition: var(--pill-transition);
+			}
+			&:not(.selected_d94cf9):has(.highlighted__7bba7)::before {
+				scale: 1 0.65;
+				opacity: 1;
 			}
 		}
 
@@ -67,8 +72,9 @@
 		.selected_d94cf9 {
 			background: var(--bg-interactive-high);
 			&::before {
-				height: var(--pill-height);
+				scale: 1;
 				opacity: 1;
+				background: rgb(var(--accent));
 			}
 			&:hover {
 				background: var(--bg-interactive-high-hover);

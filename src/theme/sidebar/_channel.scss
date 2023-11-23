@@ -1,6 +1,7 @@
 #app-mount {
 	.wrapper__7bcde {
 		padding: 2px 0;
+		margin-left: 0;
 
 		&::before {
 			content: '';
@@ -23,7 +24,7 @@
 				background: var(--interactive-muted);
 			}
 		}
-		&.modeUnread_f74c03::before {
+		&.modeUnreadImportant_efb53e::before {
 			background: var(--pill-unread);
 			scale: 1 0.65;
 			opacity: 1;
