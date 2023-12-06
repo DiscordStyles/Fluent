@@ -122,15 +122,17 @@
 	}
 
 	// Gift
-	svg:has(path[d^='M16.886 7.999H20C21.104']) {
+	svg:has(path[d^='M4 6a4 4 0 0 1 4-4h.09c1.8 0 3.39 1.18 3.91 2.9A4.09']) {
 		mask: url(mono.$gift) center/cover;
 	}
 	// Gif Picker
-	svg:has(path[d^='m2 2c-1.1046']) {
+	svg:has(
+			path[d^='M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm2.18 13.87a2.9 2.9 0 0 1-1.66-.49 3.18 3.18 0 0 1-1.12-1.35A4.88']
+		) {
 		mask: url(mono.$gif) center/28px;
 	}
 	// Sticker
-	svg:has(path[d^='M12.0002 0.662583V5.40204C12.0002']) {
+	svg:has(path[d^='M6 2h12a4 4 0 0 1 4 4v7.5a.5.5 0 0 1-.5.5H19a5']) {
 		mask: url(mono.$sticker) center/28px;
 	}
 	// Emoji
