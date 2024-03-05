@@ -15,14 +15,7 @@
 	.participant__43dbf {
 		margin: 0;
 	}
-	//REVISAR - MI CAMBIO
-	/*.actionButton-2S7dMn{
-		margin-left: 2px !important;
-		margin-right: 2px !important;
-	}
-	.flex-2S1XBF {
-		gap: 4px;
-	}*/
+
 	.wrapper__3f3a7 {
 		gap: 4px; //8px;
 		.button_afdfd9 {
@@ -37,6 +30,10 @@
 		}
 		button.red_a51ba8 {
 			@include mixins.btnDanger;
+		}
+		.white__10e89{
+			color: default;
+    		background: default;
 		}
 	}
 

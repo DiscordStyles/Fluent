@@ -45,10 +45,9 @@
 	}
 
 	.cozy_f5c119 {
-		//REVISAR - MI CAMBIO
-		/*.groupStart__56db5 {//.groupStart-3Mlgv1{
+		.groupStart__56db5 {
 			margin-top: 8px;
-		}*/
+		}
 		.avatar__08316 {
 			left: var(--chat-spacing-x);
 			margin-top: 0;
@@ -214,9 +213,8 @@
 .contents_f41bb2 *:not(.buttons_ce5b56, .buttons_ce5b56 *, 
 					.operations__07224, 
 					.header__39b23, .header__39b23 *,
-					//.editor-H2NA06 *, REVISAR
 					.channelTextArea_af1f8b.channelTextArea__56a36, .channelTextArea_af1f8b.channelTextArea__56a36 *,
-					.markup_a7e664 *) {//REVISAR
+					.markup_a7e664 *) {
 	width: unset !important;
 	display: inline-block;
 }
@@ -237,25 +235,16 @@
 	}
 }
 
-/* REVISAR
-.textArea-2CLwUE.textAreaSlate-9-y-k2.slateContainer-3x9zil{
+.textArea__74543.textAreaSlate_e0e383.slateContainer_b692b3{
 	display: inline;
 }
 
-.message-2CShn3.selected-2LX7Jy{
+.message__80c10.selected_fd9051{
 	background-color: unset;
 }
 
-.channelTextArea_af1f8b.channelTextArea__56a36{
-	padding-bottom: 8px;
-}
-
-.scrollableContainer-15eg7h.webkit-QgSAqd{
-	width: 100%;
-}*/
-
-//Emoji layer position REVISAR - hay que cambiar el style del div
-/*.positionLayer__50609:not(div[style*="position: absolute; bottom: 74px; right: 21px;"] ) {//position: absolute; bottom: 111px; right: 16px
+//Emoji layer position
+.positionLayer__50609:not(div[style*="position: absolute; bottom: 74px; right: 276px;"] ) {
 	bottom: 100px !important; 
 	right: 21px !important;
-}*/
+}
