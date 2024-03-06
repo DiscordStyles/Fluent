@@ -719,7 +719,6 @@ body,
   width: 100%;
 }
 #app-mount .closedFolderIconWrapper__7321f {
-  padding: 6px;
   position: relative;
   z-index: 1;
 }
@@ -749,8 +748,8 @@ body,
 }
 #app-mount .guildIcon__2e5ab {
   border-radius: var(--server-folder-icon-shape);
-  width: calc(var(--server-icon-size) / 1.8);
-  height: calc(var(--server-icon-size) / 1.8);
+  width: calc(var(--server-icon-size) / 1.9);
+  height: calc(var(--server-icon-size) / 1.9);
 }
 #app-mount [id^=folder-items][role=group] {
   height: auto !important;
@@ -3517,6 +3516,7 @@ body,
 }
 
 #app-mount .scroller__9c698,
+#app-mount .stickyHeader_aa58d0.header_b5ab54.row__89c5d.stickyHeader__48071,
 #app-mount .container__0eeef.scroller__311cd.auto__76cc7.scrollerBase__2b744 {
   background-color: var(--bg-alt);
 }
