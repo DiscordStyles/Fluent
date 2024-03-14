@@ -205,18 +205,15 @@
 }
 
 //Edit Message
-.contents_f41bb2 {
+.message__80c10.cozyMessage__64ce7.selected_fd9051.wrapper__09ecc.cozy_f5c119:not(.zalgo__39311) {
 	width: unset !important;
 	display: inline-block !important;
-}
-
-.contents_f41bb2 *:not(.buttons_ce5b56, .buttons_ce5b56 *, 
-					.operations__07224, 
-					.header__39b23, .header__39b23 *,
-					.channelTextArea_af1f8b.channelTextArea__56a36, .channelTextArea_af1f8b.channelTextArea__56a36 *,
-					.markup_a7e664 *) {
-	width: unset !important;
-	display: inline-block;
+	//Padding for editing messages
+	:not(.groupStart__56db5){
+		.channelTextArea_af1f8b.channelTextArea__56a36{
+			padding-top: 12px;
+		}
+	}
 }
 
 //Emoji buttom position
@@ -228,12 +225,6 @@
 	}
 }
 
-//Padding for editing messages
-.message__80c10.cozyMessage__64ce7.cozy_f5c119:not(.groupStart__56db5){
-	.channelTextArea_af1f8b.channelTextArea__56a36{
-		padding-top: 12px;
-	}
-}
 
 .textArea__74543.textAreaSlate_e0e383.slateContainer_b692b3{
 	display: inline;
