@@ -219,6 +219,10 @@ body,
   width: calc(100vw - var(--server-container));
 }
 
+.content__4bf10:has(.hidden__3ab58) {
+  width: unset;
+}
+
 .layer__2efaa :not(.baseLayer__8fda3) .info__755e1 > .line__75801:first-child::before {
   display: block;
   content: "Fluent v" var(--fluent-version);
@@ -321,15 +325,18 @@ body,
 #app-mount .wrapper-1gVUIN.fullScreen-KhZZcz.video-3n15R6 .button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F.chatButton-10jXXp {
   padding-right: 0px;
 }
-#app-mount .button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F.chatButton-10jXXp {
-  padding-right: 160px;
-}
 #app-mount .content-1SgpWY {
   position: absolute !important;
   width: 100% !important;
   height: 100% !important;
 }
 #app-mount .flex-2S1XBF.flex-3BkGQD.horizontal-112GEH.flex-3BkGQD {
+  padding-right: 0px;
+}
+#app-mount .topControls_d202b0.controlSection_daa0d5, #app-mount .button_afdfd9.chatButton_c6f407 {
+  margin-top: calc(var(--win-btn-height) + 21px);
+}
+#app-mount .transparent__7f3e0 {
   padding-right: 0px;
 }
 #app-mount .children__32014 {
@@ -2172,8 +2179,8 @@ body,
   border-color: hsla(0, 0%, 0%, 0.2);
 }
 #app-mount .wrapper__3f3a7 .white__10e89 {
-  color: default;
-  background: default;
+  color: unset !important;
+  background: unset !important;
 }
 #app-mount div.controlButton_ab2899 {
   margin: 0;
@@ -2839,6 +2846,9 @@ body,
   padding-top: 0;
   margin-left: 0;
   background: transparent;
+}
+#app-mount .container__23c08, #app-mount .container_dd448f {
+  background: var(--bg-main);
 }
 
 #app-mount .autocomplete-3jLKb0j,
@@ -5739,7 +5749,7 @@ body,
 }
 
 .winButton__88672 {
-  height: calc(var(--win-btn-height) + 18px);
+  height: calc(var(--win-btn-height) + 21px);
   width: var(--win-btn-width);
   cursor: var(--cursor);
 }

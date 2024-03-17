@@ -32,8 +32,12 @@ body,
 	// Make bottom left status picker visible in server list.
 	overflow: visible;
 }
-#{cls('app.baseContent')}:not(:has(.hidden__3ab58)) {
+#{cls('app.baseContent')} {
 	width: calc(100vw - var(--server-container));
+}
+// Full Screen Streaming
+#{cls('app.baseContent')}:has(.hidden__3ab58){
+	width: unset;
 }
 
 // Version
