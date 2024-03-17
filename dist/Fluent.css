@@ -1131,7 +1131,8 @@ body,
   left: -1px;
   visibility: hidden;
   transition: 0.15s var(--transition) 0s;
-  z-index: 0;
+  z-index: 1;
+  padding-bottom: 20px;
 }
 #app-mount .actionButtons_b58cbb .button__66e8c.buttonColor_a6eb73.colorBrand-I6CyqQ {
   border-radius: var(--btn-radius);
@@ -1172,11 +1173,38 @@ body,
   border: 1px solid var(--border-high);
   margin-left: 7px;
   position: absolute;
+  z-index: 0;
   bottom: 75px;
-  width: 229px;
+  width: 230px;
 }
 #app-mount .activityPanel__22355:has(+ .wrapper__0ed4a:not(:empty)) {
-  margin-bottom: 95px;
+  margin-bottom: 56px;
+}
+#app-mount .activityPanel__22355 .button__4f306 {
+  border-radius: var(--btn-radius);
+  padding: 4px 10px;
+  line-height: 20px;
+  font-size: var(--font-size-sm);
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: var(--btn-bg);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-primary);
+  box-shadow: none !important;
+  border: 1px solid var(--btn-border-x);
+  border-top-color: var(--btn-border-t);
+  border-bottom-color: var(--btn-border-b);
+  cursor: var(--cursor);
+}
+#app-mount .activityPanel__22355 .button__4f306:hover {
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
+}
+#app-mount .activityPanel__22355 .button__4f306:active {
+  background: var(--btn-bg-active) !important;
+  border-color: var(--btn-border-active);
 }
 
 #app-mount {
