@@ -2,8 +2,11 @@
 @use '../theme/assets/mono';
 @use '../theme/assets/brand';
 
-.wrapper__7bcde {
+:root {
 	--fluent-icons-color: var(--interactive-normal);
+}
+
+.wrapper__7bcde {
 	&.modeMuted__0aeea {
 		--fluent-icons-color: var(--interactive-muted);
 	}
@@ -122,7 +125,40 @@
 		}
 	}
 }
-z
+
+.lottieIcon__9d8ab {
+	svg {
+		background: var(--fluent-icons-color);
+	}
+	g {
+		display: none;
+	}
+	// Chatbox gift
+	svg:has(path[d^=' M-7,10 C-8.104999542236328,10 -9,9.104999542236328 -9,8 C-9,8 -9,2.5']) {
+		mask-image: url(mono.$gift);
+	}
+	// Chatbox gifs
+	svg:has(path[d^=' M-7,-10 C-8.656999588012695,-10 -10,-8.656999588012695 -10,-7 C-10,-7']) {
+		mask-image: url(mono.$gif);
+	}
+	// Chatbox stickers
+	svg:has(path[d^=' M-6,-10 C-6,-10 6,-10 6,-10 C8.208999633789062,-10 10,-8.208999633789062']) {
+		mask-image: url(mono.$sticker);
+	}
+
+	// User area mute mic
+	svg:has(path[d^=' M-4,-1.4600000381469727 C-4,-3.6689999103546143 -2.2090001106262207']) {
+		mask-image: url(mono.$mic);
+	}
+	// User area deafen
+	svg:has(path[d^=' M-8,-0.2879999876022339 C-8,-4.705999851226807 -4.418000221252441']) {
+		mask-image: url(mono.$speaker);
+	}
+	// User area settings
+	svg:has(path[d^=' M-1.4420000314712524,-10.906000137329102 C-1.8949999809265137,-10.847000122070312']) {
+		mask-image: url(mono.$cog);
+	}
+}
 
 // Voice channel status
 .pencilIcon__1ec62 {
