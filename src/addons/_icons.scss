@@ -167,6 +167,31 @@
 	svg:has(path[d^=' M-1.4420000314712524,-10.906000137329102 C-1.8949999809265137,-10.847000122070312']) {
 		mask-image: url(mono.$cog);
 	}
+
+	// Voice chat noise suppresion
+	svg:has(path[d^=' M0,-5 C0,-5 0,-5 0,-5 C0.5519999861717224,-5 1,-4.552000045776367 1,-4']) {
+		mask-image: url(mono.$mic-sparkle);
+	}
+	// Voice chat disconnect
+	svg:has(path[d^=' M9.335000038146973,-1.8179999589920044 C4.184999942779541,-6.9670000076293945']) {
+		mask-image: url(mono.$plug-disconnected);
+	}
+	// Voice chat disconnect
+	svg:has(path[d^=' M-5.5,-8 C-5.5,-8 -1.253999948501587,-8 -1.253999948501587,-8 C-1.253999948501587,-8']) {
+		mask-image: url(mono.$camera);
+	}
+	// Voice chat share screen
+	svg:has(path[d^=' M1,7.5 C1,7.776000022888184 1.2239999771118164,8']) {
+		mask-image: url(mono.$dual-screen-desktop);
+	}
+	// Voice chat activities
+	svg:has(path[d^=' M10,-8 C10,-8 10,-6.485000133514404 10,-6.485000133514404 C10,-4.894000053405762']) {
+		mask-image: url(mono.$rocket);
+	}
+	// Voice chat soundboard
+	svg:has(path[d^=' M-0.6899999976158142,0.6899999976158142 C0.6679999828338623,2.0480000972747803']) {
+		mask-image: url(mono.$sound-source);
+	}
 }
 .container_ca50b9 .button__4f306[aria-checked='true'] {
 	svg {
