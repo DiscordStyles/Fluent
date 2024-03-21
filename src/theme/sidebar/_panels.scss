@@ -133,6 +133,12 @@
 			@include mixins.btn;
 			@include mixins.btnSecondary;
 		}
+		.button__66e8c {
+			height: 100%;
+		}
+		.lottieIcon__9d8ab svg {
+			--fluent-icons-color: black;
+		}
 		&:hover {
 			visibility: visible;
 			opacity: 1;
@@ -145,6 +151,7 @@
 		padding: 8px 16px;
 		&:has(+ .wrapper__0ed4a:not(:empty)) {
 			margin-bottom: 56px;
+			z-index: 1;
 		}
 	}
 }
