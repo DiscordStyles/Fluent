@@ -1,6 +1,6 @@
 #app-mount {
-	.button_afdfd9,
-	.button_afdfd9 {
+	.button__581d0,
+	.button__581d0 {
 		border-radius: var(--btn-radius);
 		padding: 4px 10px;
 		line-height: 20px;
@@ -16,32 +16,32 @@
 		[class*='shine'] {
 			display: none;
 		}
-		.contents_fb6220 {
+		.contents__322f4 {
 			display: flex;
 			align-items: center;
 			gap: 8px;
 		}
 
-		&.buttonColor_a6eb73 {
+		&.buttonColor__7bad9 {
 			background: rgb(var(--accent));
 			color: var(--accent-text);
 		}
-		&.lookFilled__19298 {
+		&.lookFilled__950dd {
 			border: 1px solid var(--btn-border-x);
 			border-top-color: var(--btn-border-t);
 			border-bottom-color: var(--btn-border-b);
 			font-weight: var(--font-weight-semibold);
 			transition: box-shadow 0.15s var(--transition);
-			&.colorBrand_b2253e,
+			&.colorBrand__27d57,
 			&.colorGreen-3y-Z79 {
 				background: rgb(var(--accent));
 				color: var(--accent-text);
 			}
-			&.colorRed_d6b062 {
+			&.colorRed__5a617 {
 				background: hsl(var(--discord-red));
 			}
 			&.colorGrey-2iAG-B,
-			&.colorPrimary__6ed40 {
+			&.colorPrimary_ebe632 {
 				background: var(--btn-bg);
 				font-weight: var(--font-weight-regular);
 				color: var(--text-primary);
@@ -53,9 +53,9 @@
 					border-color: var(--btn-border-active) !important;
 				}
 			}
-			&.colorBrand_b2253e,
+			&.colorBrand__27d57,
 			&.colorGreen-3y-Z79,
-			&.colorRed_d6b062 {
+			&.colorRed__5a617 {
 				&:hover {
 					box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / 0.1);
 					border-color: hsl(0 0% 0% / 0.1);
@@ -67,11 +67,11 @@
 			}
 		}
 
-		&.lookOutlined__46d54 {
+		&.lookOutlined__014b5 {
 			cursor: pointer;
 			border: none;
 			background: transparent !important;
-			.contents_fb6220 {
+			.contents__322f4 {
 				background: none;
 			}
 
@@ -98,18 +98,18 @@
 				opacity: 0.07;
 			}
 
-			&.colorRed_d6b062 {
+			&.colorRed__5a617 {
 				color: hsl(var(--discord-red));
 			}
 		}
-		&.lookLink__93965 {
+		&.lookLink_a2da25 {
 			cursor: pointer;
 			color: rgb(var(--accent));
-			.contents_fb6220 {
+			.contents__322f4 {
 				background: none;
 			}
 
-			&.sizeMin__94642 {
+			&.sizeMin__508da {
 				font-size: var(--font-size-xs);
 			}
 			&:hover {
@@ -128,7 +128,7 @@
 			margin-left: 0;
 		}
 	}
-	.component__43381 {
+	.component_d53fb7 {
 		margin: 4px !important;
 	}
 }

@@ -1,4 +1,4 @@
-#app-mount .container__871ba {
+#app-mount .container__2ed72 {
 	background: transparent !important;
 	width: 40px;
 	height: 20px;
@@ -17,7 +17,9 @@
 		margin: 0;
 		padding: 0 4px;
 		cursor: var(--cursor);
-		transition: background 0.15s var(--transition), border-color 0.15s var(--transition);
+		transition:
+			background 0.15s var(--transition),
+			border-color 0.15s var(--transition);
 		&::before {
 			content: '';
 			width: 12px;
@@ -25,7 +27,11 @@
 			border-radius: 7px;
 			display: block;
 			background: var(--text-secondary);
-			transition: background 0.15s var(--transition), transform 0.15s var(--transition), width 0.15s var(--transition), height 0.15s var(--transition);
+			transition:
+				background 0.15s var(--transition),
+				transform 0.15s var(--transition),
+				width 0.15s var(--transition),
+				height 0.15s var(--transition);
 		}
 		&:hover {
 			&:not(:checked) {

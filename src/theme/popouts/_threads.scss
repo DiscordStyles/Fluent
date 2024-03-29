@@ -1,10 +1,10 @@
 @use '../mixins';
 
 #app-mount {
-	.container__8261a {
+	.container_f93da8 {
 		@include mixins.popoutContainer;
 	}
-	.header__53b07 {
+	.header__6d44a {
 		border-bottom: 1px solid var(--border-high);
 		background: var(--bg-alt);
 		padding: 0 12px;
@@ -13,7 +13,7 @@
 			margin: 0;
 		}
 	}
-	.divider_dec9ac {
+	.divider__622af {
 		background: var(--border-high);
 		height: 100%;
 	}

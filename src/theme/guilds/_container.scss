@@ -4,7 +4,7 @@
 		background: transparent;
 		&.hidden__7c832 {
 			display: none;
-			& + .base__3e6af {
+			& + .base_c0676e {
 				border: none;
 			}
 		}
@@ -12,10 +12,10 @@
 			margin-bottom: var(--server-container);
 		}
 	}
-	.scroller__3d071 {
+	.scroller_de945b {
 		background: var(--bg-main);
 		padding-top: 0;
-		.tutorialContainer__890ea + div:not([class]) {
+		.tutorialContainer_b06ae6 + div:not([class]) {
 			height: var(--server-size) !important;
 			margin-bottom: 4px;
 		}

@@ -7,7 +7,7 @@
 		border: none;
 
 		// User area
-		& > .container_ca50b9 {
+		& > .container_debb33 {
 			box-sizing: border-box;
 			background: var(--bg-main);
 			padding: 8px 14px;
@@ -19,7 +19,7 @@
 			border-right: none;
 			height: var(--bottombar-height);
 			z-index: 1;
-			& > .flex_f5fbb7 {
+			& > .flex_f18b02 {
 				gap: 8px;
 				height: 75%;
 				width: 100%;
@@ -33,7 +33,7 @@
 					height: 18px;
 				}
 			}
-			.avatarWrapper_ba5175 {
+			.avatarWrapper__500a6 {
 				padding: 6px;
 				min-width: unset;
 				margin: 0 8px 0 0;
@@ -42,11 +42,11 @@
 					box-shadow: var(--server-hover-selected);
 				}
 			}
-			.nameTag__0e320 {
+			.nameTag__77ab2 {
 				display: none;
 			}
 		}
-		&:hover .container_d667ff {
+		&:hover .container_e1958d {
 			translate: 0 0;
 			opacity: 1;
 			visibility: visible;
@@ -54,7 +54,7 @@
 	}
 
 	// Voice connected
-	.container_d667ff {
+	.container_e1958d {
 		position: absolute;
 		left: 11px;
 		right: 12px;
@@ -68,7 +68,7 @@
 		display: flex;
 		gap: 8px;
 		z-index: 1;
-		& > .flex_f5fbb7 {
+		& > .flex_f18b02 {
 			padding: 8px 8px 11px 8px;
 			position: relative;
 			z-index: 2;
@@ -80,14 +80,14 @@
 				border-radius: var(--rounded) var(--rounded) 0 0;
 				z-index: -1;
 			}
-			& > .flex_f5fbb7 {
+			& > .flex_f18b02 {
 				gap: 4px;
 				button {
 					@include mixins.btn;
 					@include mixins.btnSecondary;
 				}
 			}
-			&:hover + .actionButtons_b58cbb {
+			&:hover + .actionButtons__85e3c {
 				bottom: calc(100% - 8px);
 				opacity: 1;
 				visibility: visible;
@@ -98,25 +98,25 @@
 			display: none;
 		}
 	}
-	.wrapper__0ed4a + .container_ca50b9 {
+	.wrapper_e832ee + .container_debb33 {
 		border-radius: 0 0 0 var(--rounded);
 	}
 	.inner_ab95dc {
 		position: relative;
 	}
-	.rtcConnectionStatus__40882 {
+	.rtcConnectionStatus_e749c4 {
 		display: flex;
 		align-items: center;
-		.button_afdfd9 {
+		.button__581d0 {
 			padding: 0;
 			margin-left: 4px;
 		}
 	}
-	.ping__47992 {
+	.ping__838d2 {
 		width: 24px;
 		height: 24px;
 	}
-	.actionButtons_b58cbb {
+	.actionButtons__85e3c {
 		position: absolute;
 		bottom: 0;
 		width: calc(100% - 16px);
@@ -129,14 +129,14 @@
 		visibility: hidden;
 		transition: 0.15s var(--transition) 0s;
 		z-index: 0;
-		.button__66e8c.buttonColor_a6eb73.colorBrand-I6CyqQ {
+		.button_b82d53.buttonColor__7bad9.colorBrand-I6CyqQ {
 			@include mixins.btn;
 			@include mixins.btnSecondary;
 		}
-		.button__66e8c {
+		.button_b82d53 {
 			height: 100%;
 		}
-		.lottieIcon__9d8ab svg {
+		.lottieIcon_c7076c svg {
 			--fluent-icons-color: black;
 		}
 		&:hover {
@@ -145,11 +145,11 @@
 			bottom: calc(100% - 8px);
 		}
 	}
-	.activityPanel__22355 {
+	.activityPanel_b73e7a {
 		border: none;
 		background: transparent;
 		padding: 8px 16px;
-		&:has(+ .wrapper__0ed4a:not(:empty)) {
+		&:has(+ .wrapper_e832ee:not(:empty)) {
 			margin-bottom: 56px;
 			z-index: 1;
 		}

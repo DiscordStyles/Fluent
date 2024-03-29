@@ -1,21 +1,21 @@
 @use '../../assets/mono';
 @use '../../mixins';
 
-#app-mount .layer-86YKbF ~ .layer-86YKbF {
-	.accountProfileCard-lbN7n- {
+#app-mount .layer_f7d46a ~ .layer_f7d46a {
+	.accountProfileCard__744d8 {
 		background: transparent;
 	}
 	.banner-2boKnS,
-	.bannerSVGWrapper-2CLfzN {
+	.bannerSVGWrapper__8a38c {
 		display: none;
 	}
-	.userInfo-regn9W {
+	.userInfo_fb7651 {
 		padding: 18px;
 		margin: 0 0 4px 0;
 		height: auto;
 		@include mixins.card;
 
-		.avatar-3mTjvZ {
+		.avatar__6c108 {
 			width: 22px !important;
 			height: 22px !important;
 			background: var(--text-primary);
@@ -79,15 +79,15 @@
 			background: var(--bg-content-alt) !important;
 		}
 	}
-	.background-3d_SjE {
+	.background__4e802 {
 		margin: 0;
 		background: transparent;
 		padding: 0;
 	}
-	.fieldList-in8WkP {
+	.fieldList__4e6dd {
 		background: transparent;
 		border-radius: 0;
-		.field-21XZwa {
+		.field__69fa0 {
 			&:first-child::before,
 			&:nth-child(2)::before {
 				mask-image: url(mono.$user);
@@ -100,7 +100,7 @@
 			}
 		}
 	}
-	.field-21XZwa {
+	.field__69fa0 {
 		@include mixins.card;
 		.sizeMin-1mJd1x {
 			margin-left: 8px;
@@ -110,17 +110,17 @@
 				text-decoration: underline;
 			}
 		}
-		.fieldButtonList-28BYbB {
+		.fieldButtonList_fd9518 {
 			gap: 18px;
 			button {
 				margin: 0;
 			}
 		}
-		.usernameInnerRow-1-STdK {
+		.usernameInnerRow_c95e17 {
 			display: flex;
 			align-items: center;
 		}
-		.text-md-normal-2rFCH3 {
+		.text-md-normal__6a4eb {
 			@include mixins.cardDesc;
 			line-height: normal;
 			color: var(--text-muted) !important;
@@ -142,23 +142,23 @@
 			margin-top: 4px;
 		}
 	}
-	.constrainedRow-3y91Xf {
+	.constrainedRow__72f7a {
 		margin: 0;
 		.size16-rrJ6ag {
 			font-size: var(--font-size-xs);
 			color: var(--text-muted);
 		}
 	}
-	.fieldTitle-2g5r_V {
+	.fieldTitle_f182ed {
 		@include mixins.cardTitle;
 	}
 
-	.userSettingsSecurity-2kODPN {
+	.userSettingsSecurity__6051f {
 		.h1-34Txb0 {
 			@include mixins.subTitle;
 		}
 
-		& > .children-2C96Ex {
+		& > .children_aba8cb {
 			// Password and authentication
 			& > div:first-child {
 				@include mixins.card;
@@ -181,8 +181,8 @@
 				}
 			}
 			// 2FA Enabled
-			& > div.flex-2S1XBF > div > div {
-				& > .h5-2feg8J:first-child {
+			& > div.flex_f18b02 > div > div {
+				& > .h5__28baa:first-child {
 					@include mixins.subTitle;
 					color: transparent;
 					&::before {
@@ -193,7 +193,7 @@
 						display: none;
 					}
 				}
-				& > .modeDefault-3Warim {
+				& > .modeDefault__2e882 {
 					@include mixins.card(column, flex-start);
 					@include mixins.cardDesc;
 					padding-left: 60px !important;
@@ -231,15 +231,15 @@
 						}
 					}
 				}
-				& > .marginTop40-Q4o1tS {
+				& > .marginTop40_bda863 {
 					margin-top: 0;
-					.sectionTitle-LdcnyP {
+					.sectionTitle__3e02b {
 						display: none;
 					}
-					.marginBottom8-emkd0_ {
+					.marginBottom8_ce1fb9 {
 						margin: 0;
 					}
-					.children-2C96Ex {
+					.children_aba8cb {
 						@include mixins.card(column, flex-start);
 						padding-left: 60px;
 						&::before {
@@ -256,7 +256,7 @@
 							@include mixins.cardTitle;
 							margin-bottom: 4px;
 						}
-						.flex-2S1XBF {
+						.flex_f18b02 {
 							padding: 18px;
 							border-top: 1px solid var(--border);
 							margin: 16px -60px -18px;
@@ -274,8 +274,8 @@
 		}
 
 		// Account removal
-		& ~ .marginTop40-Q4o1tS {
-			.h5-2feg8J {
+		& ~ .marginTop40_bda863 {
+			.h5__28baa {
 				@include mixins.subTitle;
 				color: transparent;
 				user-select: none;
@@ -286,7 +286,7 @@
 					color: var(--text-primary);
 				}
 			}
-			.children-2C96Ex {
+			.children_aba8cb {
 				@include mixins.card;
 				&::before {
 					content: '';
@@ -294,7 +294,7 @@
 					mask-image: url(mono.$user-delete);
 				}
 			}
-			.description-foE_WP {
+			.description_b0e07c {
 				margin-bottom: 0;
 				flex: 1;
 				@include mixins.cardDesc;
@@ -303,7 +303,7 @@
 					@include mixins.cardTitle;
 				}
 			}
-			.buttonContainer-cmXa0P {
+			.buttonContainer__44ac1 {
 				flex-direction: row-reverse;
 				gap: 16px;
 				button {

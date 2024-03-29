@@ -1,22 +1,20 @@
-#app-mount .root_a28985 {
-	.content-Lj791F {
-		gap: 24px;
-		& > div[style*='relative']:not([class]) {
+#app-mount .root_a28985 .content-Lj791F {
+	gap: 24px;
+	& > div[style*='relative']:not([class]) {
+		width: 100% !important;
+		& > div {
 			width: 100% !important;
-			& > div {
-				width: 100% !important;
-			}
 		}
-		& + .footerSeparator-VzAYwb {
-			grid-template-columns: 1fr;
-			.inline-3eaUwP {
-				flex-direction: row-reverse;
-				width: 100%;
+	}
+	& + .footerSeparator-VzAYwb {
+		grid-template-columns: 1fr;
+		.inline-3eaUwP {
+			flex-direction: row-reverse;
+			width: 100%;
+			flex: 1;
+			gap: 8px;
+			button {
 				flex: 1;
-				gap: 8px;
-				button {
-					flex: 1;
-				}
 			}
 		}
 	}

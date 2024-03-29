@@ -5,7 +5,7 @@
 $banner-height: 300px;
 
 #app-mount {
-	.userProfileModalOuter-2wdWjU {
+	.userProfileModalOuter_a65559 {
 		border-radius: var(--rounded);
 		width: clamp(var(--profile-modal-width), 100vmax, var(--profile-modal-width));
 		height: clamp(var(--profile-modal-height), 100vmax, var(--profile-modal-height));
@@ -13,7 +13,7 @@ $banner-height: 300px;
 		overflow: hidden;
 		display: flex;
 		flex-direction: column;
-		.bannerSVGWrapper-2CLfzN {
+		.bannerSVGWrapper__8a38c {
 			min-height: unset !important;
 			min-width: unset !important;
 			width: 100%;
@@ -26,7 +26,7 @@ $banner-height: 300px;
 				width: 100%;
 				height: 100%;
 			}
-			.banner-1YaD3N {
+			.banner__6d414 {
 				height: 100%;
 				width: 100%;
 				min-height: unset;
@@ -64,13 +64,13 @@ $banner-height: 300px;
 			margin: 0;
 		}
 	}
-	.userProfileModalInner-3dx9L9 {
+	.userProfileModalInner__99b1e {
 		&::before {
 			width: 100%;
 			height: 100%;
 		}
 	}
-	.userProfileModalOverlayBackground-2dAaBg {
+	.userProfileModalOverlayBackground__7ec35 {
 		margin: 0;
 		border-radius: 0;
 		background: transparent;
@@ -84,7 +84,7 @@ $banner-height: 300px;
 		height: 100px;
 		position: unset;
 
-		.scrollerBase-1Pkza4 {
+		.scrollerBase_f742b2 {
 			padding: 24px !important;
 		}
 	}

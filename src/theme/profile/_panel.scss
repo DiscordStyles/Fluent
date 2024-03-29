@@ -1,16 +1,16 @@
 @use '../mixins';
 
 #app-mount {
-	.profilePanel__12596 {
+	.profilePanel_e2cafe {
 		border-left: 1px solid var(--border-high);
-		background: var(--bg-altuserPanelInner_eddf4c);
+		background: var(--bg-altuserPanelInner_f9edb8);
 
-		.userPanelOuter__880e5:not(.userProfileOuterThemed__6eb84),
-		.userPanelInner_eddf4c {
+		.userPanelOuter_eb00b1:not(.userProfileOuterThemed__1fbd7),
+		.userPanelInner_f9edb8 {
 			background: transparent;
 		}
 
-		.bannerSVGWrapper__3e7b0 {
+		.bannerSVGWrapper__8a38c {
 			overflow: visible;
 			pointer-events: none;
 			foreignObject {
@@ -34,7 +34,7 @@
 			display: none;
 		}
 
-		.avatarWrapperNormal__0bddb {
+		.avatarWrapperNormal__36eec {
 			top: 24px;
 			right: 24px;
 			left: unset;
@@ -46,40 +46,40 @@
 			}
 		}
 
-		.badgelistGroup__53eaa {
+		.badgelistGroup__8f7c7 {
 			position: absolute;
 			top: 85px;
 			left: 16px;
 			padding: 0;
 			margin: 0;
 		}
-		.badgeList_ef4131 {
+		.badgeList__76720 {
 			background: transparent;
 			padding: 0;
 		}
 
-		.overlayBackground__86b78 {
+		.overlayBackground__2666e {
 			position: unset;
 			background: var(--bg-transparent);
-			&:nth-child(2) > .section__6f61e:first-of-type {
+			&:nth-child(2) > .section__62b44:first-of-type {
 				padding: 0;
 				position: absolute;
 				top: 16px;
 				left: 16px;
-				& + .divider_ed0c1d {
+				& + .divider_e6f9ab {
 					display: none;
 				}
 			}
 		}
 
-		.profilePanelConnections__3c232 {
+		.profilePanelConnections__34438 {
 			background: transparent;
 
 			button {
 				@include mixins.btnSecondary;
 			}
 		}
-		.mutualFriendsDivider_c21dfe {
+		.mutualFriendsDivider__2c616 {
 			border: none;
 			margin-top: 12px;
 		}

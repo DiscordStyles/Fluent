@@ -1,7 +1,7 @@
 @use '../assets/mono';
 
 #app-mount {
-	.form__13a2c {
+	.form_d8a4a1 {
 		margin: 0 12px 12px 0;
 		padding: 8px 8px 8px 14px;
 		background: var(--bg-main);
@@ -16,7 +16,7 @@
 			content: none;
 		}
 	}
-	.channelTextArea__2e60f {
+	.channelTextArea_c2094b {
 		margin: 0;
 		background: var(--bg-alt);
 		position: relative;
@@ -38,10 +38,10 @@
 		position: absolute;
 		display: block;
 	}
-	.sansAttachButton__996a4:has(.attachWrapper__6354f) {
+	.sansAttachButton__5f863:has(.attachWrapper_d01704) {
 		padding-left: 0;
 	}
-	.attachButton_b1db83 {
+	.attachButton__56f98 {
 		height: 44px !important;
 		width: 46px !important;
 		svg {
@@ -57,7 +57,7 @@
 			background: var(--interactive-active);
 		}
 	}
-	.scrollableContainer__33e06 {
+	.scrollableContainer_ff917f {
 		background: transparent;
 		padding-right: 8px;
 		border-radius: var(--rounded);
@@ -66,7 +66,7 @@
 			display: none;
 		}
 
-		.button_afdfd9 {
+		.button__581d0 {
 			padding: 0 10px;
 			margin: 0;
 			height: 100%;
@@ -80,17 +80,17 @@
 				background: var(--interactive-active);
 			}
 		}
-		.contents_fb6220 {
+		.contents__322f4 {
 			margin: 0;
 			padding: 0;
 			height: 100%;
 		}
-		.buttonWrapper__69593 {
+		.buttonWrapper_bd4bd7 {
 			cursor: var(--cursor);
 		}
 	}
 
-	.typingDots_d92d42 {
+	.typingDots__0448d {
 		filter: drop-shadow(0 3px 5px hsl(0 0% 0% / 0.5));
 	}
 

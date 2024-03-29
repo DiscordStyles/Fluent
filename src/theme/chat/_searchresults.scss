@@ -1,11 +1,11 @@
 @use '../mixins';
 
 #app-mount {
-	.searchResultsWrap__9f374 {
+	.searchResultsWrap__2e184 {
 		border-left: 1px solid var(--border-mid);
 		background: var(--bg-alt);
 	}
-	.searchHeader__19d87 {
+	.searchHeader__4d70e {
 		background: var(--bg-main);
 		border-bottom: 1px solid var(--border-mid);
 		padding: 8px 8px 8px 16px;
@@ -25,12 +25,12 @@
 	.channelName-3w2Y3c {
 		background: transparent;
 	}
-	.container__7db35 .button_f8244b {
+	.container__3be1d .button_ef08e7 {
 		@include mixins.btn;
 		@include mixins.btnSecondary;
 		height: auto;
 	}
-	.searchResult_dcd237 {
+	.searchResult__00093 {
 		background: transparent;
 		border-radius: 0;
 		margin-bottom: 0;
@@ -42,7 +42,7 @@
 			left: calc(var(--chat-spacing-x) / 2 - 16px);
 		}
 	}
-	.message_d8db25 {
+	.message__7e601 {
 		padding-bottom: 0;
 	}
 

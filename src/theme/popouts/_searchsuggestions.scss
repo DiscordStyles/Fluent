@@ -1,7 +1,7 @@
 @use '../mixins';
 
 #app-mount {
-	.container_d6dad3 {
+	.container__84c26 {
 		border: 1px solid var(--border);
 		background: var(--bg-menu);
 		border-radius: var(--rounded);
@@ -12,7 +12,7 @@
 			display: none;
 		}
 	}
-	.option_b5597b {
+	.option__91497 {
 		@include mixins.text;
 		height: auto;
 		border-radius: var(--rounded);
@@ -27,29 +27,29 @@
 			background: var(--bg-menu-item);
 		}
 	}
-	.plusIcon__36244 {
+	.plusIcon__3ff01 {
 		display: none;
 	}
 
-	.header_b24bd1 {
+	.header__00739 {
 		padding: 8px 12px;
 	}
-	.resultsGroup_ea9b64 {
+	.resultsGroup_b221b0 {
 		padding: 4px;
 		margin: 0;
 		&::before {
 			content: none;
 		}
-		& ~ .resultsGroup_ea9b64 {
+		& ~ .resultsGroup_b221b0 {
 			padding-top: 0;
 		}
 	}
-	.filter_bd5fe7,
-	.displayedNick_df9a16 {
+	.filter__851fb,
+	.displayedNick_ee206c {
 		color: var(--text-primary);
 	}
 	.answer__9ff92,
-	.displayUsername_aea59a {
+	.displayUsername__41697 {
 		color: var(--text-tertiary);
 	}
 }

@@ -3,7 +3,9 @@
 
 #{cls('mount')} {
 	#{cls('popout.user.outer')} {
-		box-shadow: 0 0 0 1px var(--border-high), var(--shadow-flyout);
+		box-shadow:
+			0 0 0 1px var(--border-high),
+			var(--shadow-flyout);
 		padding: 0;
 		#{cls('profile.innerNonPremium profile.bannerWrapper')} {
 			min-height: 120px !important;

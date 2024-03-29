@@ -15,7 +15,7 @@
 		&:hover {
 			background: var(--bg-content-alt);
 		}
-		&[aria-checked='true'] .radioBar__40e1b > div:first-child {
+		&[aria-checked='true'] .radioBar__70669 > div:first-child {
 			background: var(--radio-bar-accent-color, var(--accent-solid));
 			border-color: var(--radio-bar-accent-color, var(--accent-solid));
 			&::before {
@@ -23,7 +23,7 @@
 			}
 		}
 	}
-	.radioBar__40e1b {
+	.radioBar__70669 {
 		border-radius: 0;
 		padding: 16px !important;
 		display: flex;

@@ -1,6 +1,6 @@
 @use '../../mixins';
 
-#app-mount .layer-86YKbF ~ .layer-86YKbF {
+#app-mount .layer_f7d46a ~ .layer_f7d46a {
 	.accountList-305sx3 {
 		@include mixins.card(column, stretch);
 		margin-bottom: 4px;
@@ -24,11 +24,11 @@
 		margin: 0;
 	}
 
-	.connectionList-11Q_X- {
+	.connectionList__5b340 {
 		margin-top: 40px;
 		gap: 4px;
 	}
-	.connection-YOVI9j {
+	.connection__6dbd8 {
 		background: var(--bg-content);
 		border-radius: var(--rounded);
 		border: 1px solid var(--border);
@@ -39,15 +39,15 @@
 			margin: 0;
 		}
 	}
-	.connectionHeader-Ixbb1s {
+	.connectionHeader__2b82f {
 		padding: 16px;
 		background: transparent;
 	}
-	.connectionOptionsWrapper-3aVWcp {
+	.connectionOptionsWrapper__1b820 {
 		padding: 16px;
 		border-top: 1px solid var(--border);
 	}
-	.connectionOptions-JJ1YEi {
+	.connectionOptions__06d4b {
 		display: flex;
 		gap: 16px;
 	}
@@ -55,7 +55,7 @@
 		@include mixins.cardDesc;
 		margin: 0;
 	}
-	.integrationsWrapper-1V-5L9 {
+	.integrationsWrapper__57a1b {
 		padding: 0;
 		margin: 0 16px 16px;
 		border: 1px solid var(--border);
@@ -66,7 +66,7 @@
 			display: none;
 		}
 	}
-	.integration-1qC-fv {
+	.integration_b27c42 {
 		margin: 0;
 		border-radius: 0;
 		background: transparent;

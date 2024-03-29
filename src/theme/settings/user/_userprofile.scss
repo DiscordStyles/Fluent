@@ -8,26 +8,26 @@
 	.baseLayoutProfileThemes-1Jj-oN {
 		flex-direction: column;
 	}
-	.customizationSection-IGy2fS {
+	.customizationSection__0f57e {
 		@include mixins.card;
 		justify-content: space-between;
-		.description-foE_WP {
+		.description_b0e07c {
 			display: none;
 		}
 		&:last-child {
 			flex-direction: column;
 			align-items: flex-start;
 		}
-		&.withDivider-14SSKx:not(.section-2ZF4mt) .buttonsContainer-12kYno {
+		&.withDivider__600e1:not(.section__38065) .buttonsContainer__8fc55 {
 			flex-direction: row-reverse;
 			gap: 8px;
 		}
 	}
-	.title-1HgbhV {
+	.title__7a155 {
 		margin: 0;
 	}
 
-	.tryItOutSection-W9qeGH {
+	.tryItOutSection_d658ca {
 		display: none;
 	}
 }

@@ -1,12 +1,12 @@
 #app-mount {
-	.sidebar_ded4b5 {
+	.sidebar_e031be {
 		width: var(--channels-width);
 		background: var(--bg-alt);
 		border-right: 1px solid var(--border-mid);
 		box-sizing: border-box;
 		border-radius: var(--rounded) 0 0 0;
 		overflow: visible;
-		.scroller_f0f183 {
+		.scroller__1f498 {
 			padding: 8px !important;
 			&::-webkit-scrollbar {
 				display: none;
@@ -19,13 +19,13 @@
 			display: none;
 		}
 	}
-	.content__23cab > li:last-child {
+	.content__690c5 > li:last-child {
 		padding-bottom: 16px;
 	}
-	.container__590e2 {
+	.container__7e23c {
 		background: var(--bg-alt);
 	}
-	.sectionDivider__68d2a {
+	.sectionDivider__9dbcb {
 		margin-top: 8px;
 	}
 }

@@ -24,14 +24,14 @@
 		}
 	}
 
-	.name__16feb {
+	.name__7afe8 {
 		@include mixins.text;
 	}
 
 	&:hover .layout_bb8e67 {
 		background: var(--bg-interactive-high);
 	}
-	&.selected__9800b .layout_bb8e67 {
+	&.selected__7f4cb .layout_bb8e67 {
 		background: var(--bg-interactive-high);
 		&::before {
 			height: var(--pill-height);

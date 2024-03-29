@@ -4,10 +4,10 @@
 	.chat__52833 {
 		background: transparent;
 	}
-	.content__1a4fe::before {
+	.content__01e65::before {
 		content: none;
 	}
-	.chatContent__5dca8 {
+	.chatContent_f087cb {
 		background: var(--bg-alt);
 		&:only-child {
 			margin-right: 0;
@@ -15,7 +15,7 @@
 		}
 	}
 
-	.scrollerSpacer__9cd32 {
+	.scrollerSpacer__6b1b6 {
 		height: 24px;
 	}
 
@@ -25,7 +25,7 @@
 		border: 1px solid var(--border-mid);
 	}
 
-	.messagesWrapper_ea2b0b::before {
+	.messagesWrapper_add28b::before {
 		content: '';
 		position: absolute;
 		bottom: 0;
