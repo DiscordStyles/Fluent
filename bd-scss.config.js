@@ -9,10 +9,10 @@ export default {
 		invite: 'ZHthyCw',
 		authorId: '174868361040232448'
 	},
-	dev: {
-		target: 'src/dev.scss',
-		output: "C:/Users/tomme/AppData/Roaming/Vencord/themes"
-	},
+	// dev: {
+	// 	target: 'src/dev.scss',
+	// 	output: "C:/Users/tomme/AppData/Roaming/Vencord/themes"
+	// },
 	baseImport: 'https://discordstyles.github.io/Fluent/Fluent.css',
 	addons: [['src/addons/_icons.scss', 'dist/Icons.css']]
 };
