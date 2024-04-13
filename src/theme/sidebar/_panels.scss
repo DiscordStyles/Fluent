@@ -33,6 +33,9 @@
 					height: 18px;
 				}
 			}
+			[class*="withTagAsButton"] { //fix game activity toogle on Vencord
+				min-width: min-content !important;
+			}
 			.avatarWrapper__500a6 {
 				padding: 6px;
 				min-width: unset;
@@ -46,16 +49,18 @@
 				display: none;
 			}
 		}
-		&:hover .container_e1958d {
+		.container_e1958d {
 			translate: 0 0;
-			opacity: 1;
-			visibility: visible;
+			&:hover {
+				opacity: 1;
+				visibility: visible;
+			}
 		}
 	}
 
 	// Voice connected
 	.container_e1958d {
-		position: absolute;
+		margin: 0 11px;
 		left: 11px;
 		right: 12px;
 		bottom: 0;
@@ -66,7 +71,6 @@
 		border-bottom: none;
 		flex-direction: column-reverse;
 		display: flex;
-		gap: 8px;
 		z-index: 1;
 		& > .flex_f18b02 {
 			padding: 8px 8px 11px 8px;
@@ -87,16 +91,34 @@
 					@include mixins.btnSecondary;
 				}
 			}
-			&:hover + .actionButtons__85e3c {
-				bottom: calc(100% - 8px);
-				opacity: 1;
-				visibility: visible;
-				transition-delay: 0.45s;
+		}
+		.voiceUsers__12c6d {
+			gap: 8px;
+		}
+		& > .voiceUsers__665a5 {
+			padding: 8px 8px 0px 8px;
+			position: relative;
+			z-index: 2;
+			overflow: hidden !important;
+			margin: 0;
+			&::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				background: var(--bg-main);
+				border-radius: var(--rounded) var(--rounded) 0 0;
+				z-index: -1;
 			}
 		}
-		a[href^='/channel'] {
-			display: none;
+		&:hover .actionButtons__85e3c {
+			bottom: calc(100% - 8px);
+			opacity: 1;
+			visibility: visible;
+			transition-delay: 0.45s;
 		}
+		// a[href^='/channel'] {
+		// 	display: none;
+		// }
 	}
 	.wrapper_e832ee + .container_debb33 {
 		border-radius: 0 0 0 var(--rounded);
@@ -139,19 +161,16 @@
 		.lottieIcon_c7076c svg {
 			--fluent-icons-color: black;
 		}
-		&:hover {
-			visibility: visible;
-			opacity: 1;
-			bottom: calc(100% - 8px);
-		}
 	}
 	.activityPanel_b73e7a {
 		border: none;
 		background: transparent;
 		padding: 8px 16px;
 		&:has(+ .wrapper_e832ee:not(:empty)) {
-			margin-bottom: 56px;
-			z-index: 1;
+			.wrapper_e832ee > & {
+				margin-bottom: calc(100% - 3px);
+			}
+			z-index: 0;
 		}
 	}
 }
