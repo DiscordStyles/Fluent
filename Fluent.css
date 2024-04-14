@@ -975,6 +975,10 @@ body,
   width: 18px;
   height: 18px;
 }
+#app-mount .panels__58331 > .container_debb33 [class*=withTagAsButton] {
+  min-width: -moz-min-content !important;
+  min-width: min-content !important;
+}
 #app-mount .panels__58331 > .container_debb33 .avatarWrapper__500a6 {
   padding: 6px;
   min-width: unset;
@@ -987,13 +991,15 @@ body,
 #app-mount .panels__58331 > .container_debb33 .nameTag__77ab2 {
   display: none;
 }
-#app-mount .panels__58331:hover .container_e1958d {
+#app-mount .panels__58331 .container_e1958d {
   translate: 0 0;
+}
+#app-mount .panels__58331 .container_e1958d:hover {
   opacity: 1;
   visibility: visible;
 }
 #app-mount .container_e1958d {
-  position: absolute;
+  margin: 0 11px;
   left: 11px;
   right: 12px;
   bottom: 0;
@@ -1004,7 +1010,6 @@ body,
   border-bottom: none;
   flex-direction: column-reverse;
   display: flex;
-  gap: 8px;
   z-index: 1;
 }
 #app-mount .container_e1958d > .flex_f18b02 {
@@ -1049,14 +1054,29 @@ body,
   background: var(--btn-bg-active) !important;
   border-color: var(--btn-border-active);
 }
-#app-mount .container_e1958d > .flex_f18b02:hover + .actionButtons__85e3c {
+#app-mount .container_e1958d .voiceUsers__12c6d {
+  gap: 8px;
+}
+#app-mount .container_e1958d > .voiceUsers__665a5 {
+  padding: 8px 8px 0px 8px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden !important;
+  margin: 0;
+}
+#app-mount .container_e1958d > .voiceUsers__665a5::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg-main);
+  border-radius: var(--rounded) var(--rounded) 0 0;
+  z-index: -1;
+}
+#app-mount .container_e1958d:hover .actionButtons__85e3c {
   bottom: calc(100% - 8px);
   opacity: 1;
   visibility: visible;
   transition-delay: 0.45s;
-}
-#app-mount .container_e1958d a[href^="/channel"] {
-  display: none;
 }
 #app-mount .wrapper_e832ee + .container_debb33 {
   border-radius: 0 0 0 var(--rounded);
@@ -1122,19 +1142,16 @@ body,
 #app-mount .actionButtons__85e3c .lottieIcon_c7076c svg {
   --fluent-icons-color: black;
 }
-#app-mount .actionButtons__85e3c:hover {
-  visibility: visible;
-  opacity: 1;
-  bottom: calc(100% - 8px);
-}
 #app-mount .activityPanel_b73e7a {
   border: none;
   background: transparent;
   padding: 8px 16px;
 }
 #app-mount .activityPanel_b73e7a:has(+ .wrapper_e832ee:not(:empty)) {
-  margin-bottom: 56px;
-  z-index: 1;
+  z-index: 0;
+}
+.wrapper_e832ee > #app-mount .activityPanel_b73e7a:has(+ .wrapper_e832ee:not(:empty)) {
+  margin-bottom: calc(100% - 3px);
 }
 
 #app-mount .privateChannels__9b518 {
