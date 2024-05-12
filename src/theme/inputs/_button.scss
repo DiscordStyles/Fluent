@@ -23,7 +23,7 @@
 		}
 
 		&.buttonColor__7bad9 {
-			background: rgb(var(--accent));
+			background: var(--accent);
 			color: var(--accent-text);
 		}
 		&.lookFilled__950dd {
@@ -34,7 +34,7 @@
 			transition: box-shadow 0.15s var(--transition);
 			&.colorBrand__27d57,
 			&.colorGreen-3y-Z79 {
-				background: rgb(var(--accent));
+				background: var(--accent);
 				color: var(--accent-text);
 			}
 			&.colorRed__5a617 {
@@ -104,7 +104,7 @@
 		}
 		&.lookLink_a2da25 {
 			cursor: pointer;
-			color: rgb(var(--accent));
+			color: var(--accent);
 			.contents__322f4 {
 				background: none;
 			}

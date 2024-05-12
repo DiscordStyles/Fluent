@@ -27,9 +27,10 @@
 		padding: 8px 16px 16px 16px;
 	}
 	.mentioned_fa6fd2 {
-		background: rgb(var(--chat-mention-colour), 0.05);
+		background: var(--chat-mention-colour);
+		opacity: 0.05;
 		&::before {
-			background: rgb(var(--chat-mention-colour));
+			background: var(--chat-mention-colour);
 		}
 
 		&.groupStart__7b93c .contents_d3ae0d {
@@ -125,8 +126,9 @@
 
 	// @Mention/Link Channel
 	.wrapper_f5f4c9 {
-		background: rgb(var(--accent), 0.1);
-		color: rgb(var(--accent));
+		background: var(--accent);
+		opacity: 0.1;
+		color: var(--accent);
 		font-weight: var(--font-weight-semibold);
 		cursor: default;
 		&:hover {
@@ -145,9 +147,9 @@
 			background: var(--bg-interactive-high);
 		}
 		&.reactionMe__0fffc {
-			border-color: rgb(var(--accent));
+			border-color: var(--accent);
 			.reactionCount__2c34d {
-				color: rgb(var(--accent));
+				color: var(--accent);
 			}
 		}
 	}
@@ -196,5 +198,6 @@
 
 // Light theme
 .theme-light #app-mount .mentioned_fa6fd2 {
-	background: rgb(var(--accent), 0.15);
+	background: var(--accent);
+	opacity: 0.15;
 }

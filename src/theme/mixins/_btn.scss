@@ -29,7 +29,7 @@
 }
 
 @mixin btnPrimary {
-	background: rgb(var(--accent));
+	background: var(--accent);
 	color: var(--accent-text);
 	transition: box-shadow 0.15s var(--transition);
 	font-weight: var(--font-weight-semibold);
@@ -37,12 +37,12 @@
 	border-top-color: var(--btn-border-t);
 	border-bottom-color: var(--btn-border-b);
 	&:hover {
-		background: rgb(var(--accent));
+		background: var(--accent);
 		box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / 0.1) !important;
 		border-color: hsl(0 0% 0% / 0.1);
 	}
 	&:active {
-		background: rgb(var(--accent));
+		background: var(--accent);
 		box-shadow: inset 0 0 0 100vmax hsl(0 0% 0% / 0.2) !important;
 		border-color: hsl(0 0% 0% / 0.2);
 	}

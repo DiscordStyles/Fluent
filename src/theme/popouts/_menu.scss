@@ -110,7 +110,7 @@
 			color: hsl(var(--discord-pink));
 		}
 		&.colorBrand-3cPPsm {
-			color: rgb(var(--accent));
+			color: var(--accent);
 		}
 	}
 	// Reset

@@ -46,8 +46,8 @@
 			width: 18px;
 		}
 		&:checked {
-			background: rgb(var(--accent));
-			border-color: rgb(var(--accent));
+			background: var(--accent);
+			border-color: var(--accent);
 			&::before {
 				background: var(--accent-text);
 				transform: translateX(18px);

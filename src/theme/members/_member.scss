@@ -19,7 +19,7 @@
 			height: 0;
 			left: 0;
 			opacity: 0;
-			background: rgb(var(--accent));
+			background: var(--accent);
 			transition: var(--pill-transition);
 		}
 	}
