@@ -27,7 +27,8 @@
 		padding: 8px 16px 16px 16px;
 	}
 	.mentioned_fa6fd2 {
-		background: rgb(from var(--chat-mention-colour) r g b, 0.05);
+		$color: 'rgb(from var(--chat-mention-colour) r g b, 0.05)';
+		background: unquote($color);
 		&::before {
 			background: var(--chat-mention-colour);
 		}
@@ -125,7 +126,8 @@
 
 	// @Mention/Link Channel
 	.wrapper_f5f4c9 {
-		background: rgb(from var(--accent) r g b, 0.1);
+		$color: 'rgb(from var(--accent) r g b, 0.1)';
+		background: unquote($color);
 		color: var(--accent);
 		font-weight: var(--font-weight-semibold);
 		cursor: default;
@@ -196,5 +198,6 @@
 
 // Light theme
 .theme-light #app-mount .mentioned_fa6fd2 {
-	background: rgb(from var(--accent) r g b, 0.15);
+	$color: 'rgb(from var(--accent) r g b, 0.15)';
+	background: unquote($color);
 }

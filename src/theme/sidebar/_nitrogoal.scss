@@ -3,6 +3,7 @@
 		margin: -8px 0 0 0;
 	}
 	.progressBar_db0972 {
-		background: linear-gradient(90deg, rgb(from var(--accent) r g b, 0.5), var(--accent));
+		$color: 'rgb(from var(--accent) r g b / .5)';
+		background: linear-gradient(90deg, unquote($color), var(--accent));
 	}
 }
