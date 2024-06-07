@@ -12,9 +12,13 @@
 		border-left: none;
 		border-radius: 0 var(--rounded) var(--rounded) 0;
 		box-sizing: border-box;
-		&::before {
+		&::before,
+		&::after {
 			content: none;
 		}
+	}
+	.channelTextAreaContainer__37a67 {
+		width: 100%;
 	}
 	.channelTextArea_c2094b {
 		margin: 0;
