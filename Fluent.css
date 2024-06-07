@@ -1603,8 +1603,11 @@ body,
   border-radius: 0 var(--rounded) var(--rounded) 0;
   box-sizing: border-box;
 }
-#app-mount .form_d8a4a1::before {
+#app-mount .form_d8a4a1::before, #app-mount .form_d8a4a1::after {
   content: none;
+}
+#app-mount .channelTextAreaContainer__37a67 {
+  width: 100%;
 }
 #app-mount .channelTextArea_c2094b {
   margin: 0;
@@ -3009,106 +3012,6 @@ body,
 #app-mount .messageInputContainer-2rGDH8 {
   border: none;
   border-radius: unset;
-}
-
-#app-mount .userProfileModalOuter_a65559 {
-  border-radius: var(--rounded);
-  width: clamp(var(--profile-modal-width), 100vmax, var(--profile-modal-width));
-  height: clamp(var(--profile-modal-height), 100vmax, var(--profile-modal-height));
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-#app-mount .userProfileModalOuter_a65559 .bannerSVGWrapper__8a38c {
-  min-height: unset !important;
-  min-width: unset !important;
-  width: 100%;
-  border-radius: var(--rounded);
-  overflow: hidden;
-  -webkit-mask: linear-gradient(white, transparent);
-          mask: linear-gradient(white, transparent);
-}
-#app-mount .userProfileModalOuter_a65559 .bannerSVGWrapper__8a38c foreignObject {
-  all: unset;
-  -webkit-mask: none;
-          mask: none;
-  width: 100%;
-  height: 100%;
-}
-#app-mount .userProfileModalOuter_a65559 .bannerSVGWrapper__8a38c .banner__6d414 {
-  height: 100%;
-  width: 100%;
-  min-height: unset;
-}
-#app-mount .userProfileModalOuter_a65559 .bannerSVGWrapper__8a38c .banner__6d414 div {
-  display: none;
-}
-#app-mount .userProfileModalOuter_a65559 .topSection-13QKHs {
-  margin: 0;
-}
-#app-mount .userProfileModalOuter_a65559 .header-S26rhB {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-#app-mount .userProfileModalOuter_a65559 .avatar-3QF_VA {
-  right: 24px;
-  top: 24px;
-  left: unset;
-  background: hsla(0, 0%, 100%, 0.2);
-  border-color: transparent;
-  box-shadow: 0 0 0 12px hsla(0, 0%, 100%, 0.2);
-}
-#app-mount .userProfileModalOuter_a65559 .avatar-3QF_VA circle[fill=black] {
-  fill: transparent;
-}
-#app-mount .userProfileModalOuter_a65559 .headerTop-1PNKck {
-  position: unset;
-}
-#app-mount .userProfileModalOuter_a65559 .badgeList-2aoHPw {
-  position: absolute;
-  top: 224px;
-  right: 24px;
-  margin: 0;
-}
-#app-mount .userProfileModalInner__99b1e::before {
-  width: 100%;
-  height: 100%;
-}
-#app-mount .userProfileModalOverlayBackground__7ec35 {
-  margin: 0;
-  border-radius: 0;
-  background: transparent;
-  flex: 1;
-  overflow: visible;
-  position: unset;
-}
-#app-mount .body-1Ukv50 {
-  flex: 1;
-  overflow: visible;
-  height: 100px;
-  position: unset;
-}
-#app-mount .body-1Ukv50 .scrollerBase_f742b2 {
-  padding: 24px !important;
-}
-#app-mount .container-3g15px {
-  padding: 12px 24px;
-}
-#app-mount .tabBarContainer-sCZC4w {
-  margin: 0;
-  padding: 12px 12px 0;
-}
-#app-mount .container-3g15px > div:first-child {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  text-shadow: 0 2px 5px black;
-}
-#app-mount .container-3g15px > div:last-child {
-  position: relative;
-  z-index: 1;
 }
 
 #app-mount .profilePanel_e2cafe {
@@ -5132,7 +5035,7 @@ body,
   margin-top: 40px;
 }
 
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) {
   border: 1px solid var(--border-high);
   border-radius: var(--rounded);
   background: var(--bg-content);
@@ -5141,21 +5044,21 @@ body,
   animation: fadeInFromBottom 0.15s var(--transition) forwards !important;
   width: 548px;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) [class^=modalCloseButton_],
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) [class^=closeButton_] {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) [class^=modalCloseButton_],
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) [class^=closeButton_] {
   display: none;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .input-2g-os5.multiInput-1VARjC {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx),
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .input-2g-os5.multiInput-1VARjC {
   background: var(--bg-high);
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx):hover,
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .input-2g-os5.multiInput-1VARjC:hover {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .input-2g-os5:not(.multiInput-1VARjC):not(.multiInputField-1zyopx):hover,
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .input-2g-os5.multiInput-1VARjC:hover {
   background: var(--bg-higher);
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .header-1kWa4s,
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .header-1R3myj,
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .header-1zd7se {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .header-1kWa4s,
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .header-1R3myj,
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .header-1zd7se {
   padding: 24px;
   align-items: center;
   height: auto;
@@ -5163,51 +5066,51 @@ body,
   box-shadow: none;
   background: var(--bg-content);
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .header-1kWa4s .size24-17l95E,
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .header-1R3myj .size24-17l95E,
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .header-1zd7se .size24-17l95E {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .header-1kWa4s .size24-17l95E,
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .header-1R3myj .size24-17l95E,
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .header-1zd7se .size24-17l95E {
   font-weight: var(--font-weight-semibold);
   font-size: var(--font-size-lg);
   margin-bottom: 12px;
   color: var(--text-primary);
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .header-1kWa4s button[type=button].button__581d0:not(.lookFilled-yCfaCM),
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .header-1R3myj button[type=button].button__581d0:not(.lookFilled-yCfaCM),
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .header-1zd7se button[type=button].button__581d0:not(.lookFilled-yCfaCM) {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .header-1kWa4s button[type=button].button__581d0:not(.lookFilled-yCfaCM),
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .header-1R3myj button[type=button].button__581d0:not(.lookFilled-yCfaCM),
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .header-1zd7se button[type=button].button__581d0:not(.lookFilled-yCfaCM) {
   display: none;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .content-2hZxGK {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .content-2hZxGK {
   padding: 0 24px 24px !important;
   display: flex;
   flex-direction: column;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .content-2hZxGK .marginBottom20__9fcf3 {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .content-2hZxGK .marginBottom20__9fcf3 {
   margin-bottom: 0;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .content-2hZxGK .marginBottom20__9fcf3 + * {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .content-2hZxGK .marginBottom20__9fcf3 + * {
   margin-top: 20px;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .content-2hZxGK div[class][style^="position: absolute;"]:not(.file-input) {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .content-2hZxGK div[class][style^="position: absolute;"]:not(.file-input) {
   display: none;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .content-2hZxGK .title-3hptVQ {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .content-2hZxGK .title-3hptVQ {
   text-transform: none;
   color: var(--text-tertiary);
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height);
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .content-2hZxGK .optionHeader-27AHfD {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .content-2hZxGK .optionHeader-27AHfD {
   color: var(--text-secondary) !important;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .size16-rrJ6ag {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .size16-rrJ6ag {
   color: var(--text-secondary);
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-lg);
   margin: 0;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .footer_e0b400 {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .footer_e0b400 {
   padding: 24px;
   background: var(--bg-main);
   box-shadow: none;
@@ -5216,10 +5119,10 @@ body,
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .footer_e0b400 button:only-child {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .footer_e0b400 button:only-child {
   grid-column: 2/3;
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .footer_e0b400 button[type=button]:not(.lookFilled-yCfaCM) {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .footer_e0b400 button[type=button]:not(.lookFilled-yCfaCM) {
   border-radius: var(--btn-radius);
   padding: 4px 10px;
   line-height: 20px;
@@ -5237,15 +5140,15 @@ body,
   border-bottom-color: var(--btn-border-b);
   cursor: var(--cursor);
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .footer_e0b400 button[type=button]:not(.lookFilled-yCfaCM):hover {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .footer_e0b400 button[type=button]:not(.lookFilled-yCfaCM):hover {
   background: var(--btn-bg-hover);
   border-color: var(--btn-border-t) var(--btn-border-x) var(--btn-border-b);
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .footer_e0b400 button[type=button]:not(.lookFilled-yCfaCM):active {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .footer_e0b400 button[type=button]:not(.lookFilled-yCfaCM):active {
   background: var(--btn-bg-active) !important;
   border-color: var(--btn-border-active);
 }
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) .buttonsRight-21z8KV {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) .buttonsRight-21z8KV {
   gap: 8px;
 }
 
