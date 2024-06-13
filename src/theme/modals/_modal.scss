@@ -1,6 +1,6 @@
 @use '../mixins';
 
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root-8LYsGj) {
+#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) {
 	border: 1px solid var(--border-high);
 	border-radius: var(--rounded);
 	background: var(--bg-content);
