@@ -49,7 +49,7 @@
 			box-sizing: border-box;
 		}
 	}
-	.wrapper-28eC3z {
+	.wrapper_a6f950 {
 		border-radius: var(--rounded);
 		cursor: var(--cursor);
 		width: var(--server-size);
@@ -58,11 +58,11 @@
 	.wrapper__9916c {
 		cursor: var(--cursor);
 	}
-	.wrapper__8436d {
+	.wrapper_a6f950 {
 		position: relative;
 		transition: box-shadow 0.15s var(--transition);
 		&:hover,
-		&.selected_ae80f7 {
+		&.selected_b420e6 {
 			box-shadow: var(--server-hover-selected);
 		}
 	}
@@ -78,8 +78,8 @@
 		}
 	}
 
-	.icon__11cf1,
-	.childWrapper_a6ce15 {
+	.icon_e2a8c1,
+	.childWrapperNoHoverBg_bc176a {
 		width: var(--server-icon-size);
 		height: var(--server-icon-size);
 		border-radius: var(--server-icon-shape);
@@ -87,7 +87,7 @@
 		z-index: 2;
 	}
 
-	.wrapper__8436d svg {
+	.wrapper_a6f950 svg {
 		width: 75%;
 		height: 75%;
 		mask: url(mono.$home) center/cover;
@@ -97,11 +97,11 @@
 		}
 	}
 
-	.childWrapper_a6ce15 {
+	.childWrapperNoHoverBg_bc176a {
 		background: transparent;
 		font-weight: var(--font-weight-semibold);
 	}
-	.wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15 {
+	.wrapper_a6f950.selected_ae80f7 .childWrapperNoHoverBg_bc176a {
 		background: transparent;
 		color: var(--text-primary);
 	}
