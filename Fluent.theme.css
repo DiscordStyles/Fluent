@@ -14,7 +14,6 @@
   --accent: 98, 205, 254; /* The colour used throughout the app | R,G,B format | Default: 98, 205, 254 */
   --channels-width: 300px; /* Size of the server channel/dms list | Default: 300px */
   --members-width: 280px; /* Size of the members list | Default: 280px */
-  --server-size: 48px; /* Size of each server in the server list | Default: 48px */
   --dark-background-hue: 0; /* The hue of the background colour. | Options: 0 to 360 | Default: 0 */
   --dark-background-saturation: 0%; /* How much of the colour should be visible. | Must end in a % | Default: 0% */
 }

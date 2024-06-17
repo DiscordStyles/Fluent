@@ -39,6 +39,7 @@
   --chat-padding-x: 16px;
   --chat-spacing-y: 32px;
   --chat-spacing-x: 24px;
+  --server-size: 48px;
   --server-icon-size: 28px;
   --server-container: calc(var(--server-size) + 16px);
   --server-hover-selected: inset 0 0 0 100vmax var(--server-bg), inset 1px 0 0 var(--btn-border-x), inset 0 1px 0 var(--btn-border-t),
@@ -624,7 +625,7 @@ body,
   border-radius: var(--rounded);
   box-sizing: border-box;
 }
-#app-mount .wrapper-28eC3z {
+#app-mount .wrapper_a6f950 {
   border-radius: var(--rounded);
   cursor: var(--cursor);
   width: var(--server-size);
@@ -633,11 +634,11 @@ body,
 #app-mount .wrapper__9916c {
   cursor: var(--cursor);
 }
-#app-mount .wrapper__8436d {
+#app-mount .wrapper_a6f950 {
   position: relative;
   transition: box-shadow 0.15s var(--transition);
 }
-#app-mount .wrapper__8436d:hover, #app-mount .wrapper__8436d.selected_ae80f7 {
+#app-mount .wrapper_a6f950:hover, #app-mount .wrapper_a6f950.selected_b420e6 {
   box-shadow: var(--server-hover-selected);
 }
 #app-mount .svg-2zuE5p {
@@ -650,29 +651,29 @@ body,
   width: 100%;
   height: 100%;
 }
-#app-mount .icon__11cf1,
-#app-mount .childWrapper_a6ce15 {
+#app-mount .icon_e2a8c1,
+#app-mount .childWrapperNoHoverBg_bc176a {
   width: var(--server-icon-size);
   height: var(--server-icon-size);
   border-radius: var(--server-icon-shape);
   position: relative;
   z-index: 2;
 }
-#app-mount .wrapper__8436d svg {
+#app-mount .wrapper_a6f950 svg {
   width: 75%;
   height: 75%;
   -webkit-mask: url('data:image/svg+xml; utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.55 2.533a2.25 2.25 0 0 1 2.9 0l6.75 5.695c.508.427.8 1.056.8 1.72v9.802a1.75 1.75 0 0 1-1.75 1.75h-3a1.75 1.75 0 0 1-1.75-1.75v-5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75v5a1.75 1.75 0 0 1-1.75 1.75h-3A1.75 1.75 0 0 1 3 19.75V9.947c0-.663.292-1.292.8-1.72l6.75-5.694Z" /></svg>') center/cover;
           mask: url('data:image/svg+xml; utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.55 2.533a2.25 2.25 0 0 1 2.9 0l6.75 5.695c.508.427.8 1.056.8 1.72v9.802a1.75 1.75 0 0 1-1.75 1.75h-3a1.75 1.75 0 0 1-1.75-1.75v-5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0-.75.75v5a1.75 1.75 0 0 1-1.75 1.75h-3A1.75 1.75 0 0 1 3 19.75V9.947c0-.663.292-1.292.8-1.72l6.75-5.694Z" /></svg>') center/cover;
   background: var(--interactive-normal);
 }
-#app-mount .wrapper__8436d svg path {
+#app-mount .wrapper_a6f950 svg path {
   display: none;
 }
-#app-mount .childWrapper_a6ce15 {
+#app-mount .childWrapperNoHoverBg_bc176a {
   background: transparent;
   font-weight: var(--font-weight-semibold);
 }
-#app-mount .wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15 {
+#app-mount .wrapper_a6f950.selected_ae80f7 .childWrapperNoHoverBg_bc176a {
   background: transparent;
   color: var(--text-primary);
 }
@@ -2097,16 +2098,12 @@ body,
 }
 #app-mount .contextMenuContainer__7fb37 {
   display: flex;
-  height: 32px;
-  width: 70px;
   overflow: hidden;
-}
-#app-mount .contextMenuContainer__7fb37 > svg {
-  transform: translateX(6px) scale(1.2726);
 }
 #app-mount .contextMenuContainer__7fb37 foreignObject {
   -webkit-mask: none;
           mask: none;
+  width: 42px;
 }
 #app-mount .contextMenuContainer__7fb37 button {
   border-radius: var(--btn-radius);
