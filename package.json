@@ -6,7 +6,7 @@
 	},
 	"dependencies": {
 		"@discordstyles/classes": "^0.0.16",
-		"bd-scss": "2.0.14"
+		"bd-scss": "2.0.15"
 	},
 	"devDependencies": {
 		"prettier": "^3.2.5"
