@@ -1,12 +1,12 @@
 #app-mount {
-	.sidebar_e031be {
+	.sidebar_a4d4d9 {
 		width: var(--channels-width);
 		background: var(--bg-alt);
 		border-right: 1px solid var(--border-mid);
 		box-sizing: border-box;
 		border-radius: var(--rounded) 0 0 0;
 		overflow: visible;
-		.scroller__1f498 {
+		.scroller_c43953 {
 			padding: 8px !important;
 			&::-webkit-scrollbar {
 				display: none;
@@ -15,17 +15,17 @@
 				padding-top: 0;
 			}
 		}
-		&.hidden__3ab58 {
+		&.hidden_a4d4d9 {
 			display: none;
 		}
 	}
-	.content__690c5 > li:last-child {
+	.content_eed6a8 > li:last-child {
 		padding-bottom: 16px;
 	}
-	.container__7e23c {
+	.container_ee69e0 {
 		background: var(--bg-alt);
 	}
-	.sectionDivider__9dbcb {
+	.sectionDivider_c43953 {
 		margin-top: 8px;
 	}
 }

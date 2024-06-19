@@ -1,7 +1,7 @@
 @use '../assets/mono';
 
 #app-mount {
-	.form_d8a4a1 {
+	.form_a7d72e {
 		margin: 0 12px 12px 0;
 		padding: 8px 8px 8px 14px;
 		background: var(--bg-main);
@@ -17,23 +17,23 @@
 			content: none;
 		}
 	}
-	.channelTextAreaContainer__37a67 {
+	.channelTextAreaContainer_d0696b {
 		width: 100%;
 	}
-	.channelTextArea_c2094b {
+	.channelTextArea_a7d72e {
 		margin: 0;
 		background: var(--bg-alt);
 		position: relative;
 		border-radius: var(--rounded);
 		&:focus-within {
 			background: var(--bg-content-alt);
-			.inner__9fd0b::before {
+			.inner_d0696b::before {
 				height: 2px;
 				background: var(--accent);
 			}
 		}
 	}
-	.inner__9fd0b::before {
+	.inner_d0696b::before {
 		content: '';
 		width: 100vw;
 		height: 1px;
@@ -42,10 +42,10 @@
 		position: absolute;
 		display: block;
 	}
-	.sansAttachButton__5f863:has(.attachWrapper_d01704) {
+	.sansAttachButton_d0696b:has(.attachWrapper_f298d4) {
 		padding-left: 0;
 	}
-	.attachButton__56f98 {
+	.attachButton_f298d4 {
 		height: 44px !important;
 		width: 46px !important;
 		svg {
@@ -61,7 +61,7 @@
 			background: var(--interactive-active);
 		}
 	}
-	.scrollableContainer_ff917f {
+	.scrollableContainer_d0696b {
 		background: transparent;
 		padding-right: 8px;
 		border-radius: var(--rounded);
@@ -70,7 +70,7 @@
 			display: none;
 		}
 
-		.button__581d0 {
+		.button_dd4f85 {
 			padding: 0 10px;
 			margin: 0;
 			height: 100%;
@@ -84,17 +84,17 @@
 				background: var(--interactive-active);
 			}
 		}
-		.contents__322f4 {
+		.contents_dd4f85 {
 			margin: 0;
 			padding: 0;
 			height: 100%;
 		}
-		.buttonWrapper_bd4bd7 {
+		.buttonWrapper_cecf00 {
 			cursor: var(--cursor);
 		}
 	}
 
-	.typingDots__0448d {
+	.typingDots_d7ebeb {
 		filter: drop-shadow(0 3px 5px hsl(0 0% 0% / 0.5));
 	}
 
@@ -113,7 +113,7 @@
 		mask: url(mono.$sticker) center/28px;
 	}
 	// Emoji
-	.sprite__294b3 {
+	.sprite_af14ca {
 		width: 26px;
 		height: 26px;
 		mask: url(mono.$emoji) center/cover;
