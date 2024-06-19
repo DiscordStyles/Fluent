@@ -1,7 +1,7 @@
 @use '../mixins';
 
 #app-mount {
-	.select_fe2671 {
+	.select_f6639d {
 		background: var(--btn-bg);
 		font-weight: var(--font-weight-regular);
 		color: var(--text-normal);
@@ -30,7 +30,7 @@
 		}
 	}
 
-	.popout_a6e77f {
+	.popout_f6639d {
 		background: var(--bg-menu);
 		border-radius: var(--rounded);
 		border: 1px solid var(--border);
@@ -42,7 +42,7 @@
 		gap: 4px;
 		max-height: 350px !important;
 	}
-	.option_eb83e4 {
+	.option_f6639d {
 		border-radius: var(--rounded);
 		font-size: var(--font-size-sm);
 		padding: 10px 14px;
@@ -68,7 +68,7 @@
 			}
 		}
 	}
-	.selectedIcon_e9ecc2 {
+	.selectedIcon_f6639d {
 		display: none;
 	}
 	.optionLabel-1h0MHL {

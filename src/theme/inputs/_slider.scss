@@ -1,14 +1,14 @@
 #app-mount [role='slider'] {
-	.bar_e58961 {
+	.bar_c7a159 {
 		height: 4px;
 	}
-	.barFill__1f56b {
+	.barFill_c7a159 {
 		background: rgb(var(--accent));
 	}
-	.track_b31f5a {
+	.track_c7a159 {
 		left: 10px;
 	}
-	.grabber_e3daf3 {
+	.grabber_c7a159 {
 		border: 4px solid var(--bg-highest);
 		margin-top: 0;
 		background: rgb(var(--accent));
@@ -21,7 +21,7 @@
 		margin-top: -2px;
 	}
 
-	&.mini_d6d84c .grabber_e3daf3 {
+	&.mini_c7a159 .grabber_c7a159 {
 		width: 12px;
 		height: 12px;
 		top: 100%;

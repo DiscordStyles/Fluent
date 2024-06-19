@@ -2,7 +2,7 @@
 @use '../mixins';
 
 #app-mount {
-	.guilds__2b93a {
+	.guilds_a4d4d9 {
 		[class*='pill'] {
 			width: 4px;
 			margin-left: 0;
@@ -39,7 +39,7 @@
 			}
 		}
 	}
-	.listItem__48528 {
+	.listItem_c96c45 {
 		margin: 0 0 4px;
 		width: var(--server-container);
 		position: relative;
@@ -49,20 +49,20 @@
 			box-sizing: border-box;
 		}
 	}
-	.wrapper_a6f950 {
+	.wrapper_f90abb {
 		border-radius: var(--rounded);
 		cursor: var(--cursor);
 		width: var(--server-size);
 		height: var(--server-size);
 	}
-	.wrapper__9916c {
+	.wrapper_c5f96a {
 		cursor: var(--cursor);
 	}
-	.wrapper_a6f950 {
+	.wrapper_f90abb {
 		position: relative;
 		transition: box-shadow 0.15s var(--transition);
 		&:hover,
-		&.selected_b420e6 {
+		&.selected_f90abb {
 			box-shadow: var(--server-hover-selected);
 		}
 	}
@@ -78,8 +78,8 @@
 		}
 	}
 
-	.icon_e2a8c1,
-	.childWrapperNoHoverBg_bc176a {
+	.icon_f90abb,
+	.childWrapperNoHoverBg_f90abb {
 		width: var(--server-icon-size);
 		height: var(--server-icon-size);
 		border-radius: var(--server-icon-shape);
@@ -87,7 +87,7 @@
 		z-index: 2;
 	}
 
-	.wrapper_a6f950 svg {
+	.wrapper_f90abb svg {
 		width: 75%;
 		height: 75%;
 		mask: url(mono.$home) center/cover;
@@ -97,23 +97,23 @@
 		}
 	}
 
-	.childWrapperNoHoverBg_bc176a {
+	.childWrapperNoHoverBg_f90abb {
 		background: transparent;
 		font-weight: var(--font-weight-semibold);
 	}
-	.wrapper_a6f950.selected_ae80f7 .childWrapperNoHoverBg_bc176a {
+	.wrapper_f90abb.selected_ae80f7 .childWrapperNoHoverBg_f90abb {
 		background: transparent;
 		color: var(--text-primary);
 	}
 
-	.circleIconButton__05cf2 {
+	.circleIconButton_db6521 {
 		background: transparent;
-		&.selected_aded59 {
+		&.selected_db6521 {
 			background: transparent;
 		}
 	}
 
-	.blobContainer_c44493:active {
+	.blobContainer_a5ad63:active {
 		transform: none;
 	}
 }

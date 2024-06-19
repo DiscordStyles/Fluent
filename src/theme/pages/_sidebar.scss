@@ -1,24 +1,24 @@
 @use '../mixins';
 
 #app-mount {
-	.container__3673d {
+	.container_bf550a {
 		background: transparent;
 	}
-	.nowPlayingColumn_b025fe {
+	.nowPlayingColumn_c2739c {
 		background: transparent;
 	}
 
-	.scroller__7c25e {
+	.scroller_bf550a {
 		border-left: 1px solid var(--border-mid);
 		margin: 0;
 	}
 
-	.header_c56a27 {
+	.header_bf550a {
 		margin: 0 0 16px;
 		@include mixins.subTitle;
 	}
 
-	.itemCard_b64118 {
+	.itemCard_f02fcf {
 		border-radius: var(--rounded);
 		border: 1px solid var(--border);
 		background: var(--bg-content);
@@ -34,19 +34,19 @@
 			background: var(--bg-content-alt);
 		}
 	}
-	.header__3cd76 {
+	.header_cd82a7 {
 		padding: 12px;
 	}
-	.body__616e6 {
+	.body_cd82a7 {
 		margin: 0;
 		border-top: 1px solid var(--border);
 		border-radius: 0;
 		background: transparent;
 	}
-	.section__253ec {
+	.section_cd82a7 {
 		background: transparent;
 	}
-	.voiceSectionDetails__00679 {
+	.voiceSectionDetails_cd82a7 {
 		cursor: var(--cursor);
 	}
 }

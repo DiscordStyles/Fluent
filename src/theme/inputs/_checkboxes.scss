@@ -1,5 +1,5 @@
 #app-mount [role='menuitemcheckbox'] {
-	.iconContainer__5d61c {
+	.iconContainer_d90b3d {
 		border: 1px solid var(--text-muted);
 		border-radius: var(--rounded);
 		width: 18px;
@@ -23,7 +23,7 @@
 	svg {
 		display: none;
 	}
-	&[aria-checked='true'] .iconContainer__5d61c {
+	&[aria-checked='true'] .iconContainer_d90b3d {
 		border-color: rgb(var(--accent));
 		background: rgb(var(--accent));
 		&::before {

@@ -1,18 +1,18 @@
 @use '../mixins';
 
 #app-mount {
-	.container_eb737e {
+	.container_f1c3d9 {
 		@include mixins.popoutContainer;
 	}
-	.container__7c2c1 {
+	.container_ddb5b4 {
 		padding: 0;
 		margin: 0;
 	}
-	.channelHeader_ea0f89 {
+	.channelHeader_f3978e {
 		background: var(--bg-main);
 		padding: 0 12px;
 	}
-	.messageContainer_cb3d47 {
+	.messageContainer_ddb5b4 {
 		padding-top: 0;
 		margin-left: 0;
 		background: transparent;

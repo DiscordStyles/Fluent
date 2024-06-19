@@ -1,6 +1,6 @@
 @use '../mixins';
 
-#app-mount .root_a28985:not(.modal_d2e7a7, .carouselModal__7e22f, .root-2uUafN, .root_a28985) {
+#app-mount .root_f9a4c9:not(.modal_aee8c6, .carouselModal_d2b9a1, .root-2uUafN, .root_f9a4c9) {
 	border: 1px solid var(--border-high);
 	border-radius: var(--rounded);
 	background: var(--bg-content);
@@ -33,7 +33,7 @@
 		.size24-17l95E {
 			@include mixins.modalTitle;
 		}
-		button[type='button'].button__581d0:not(.lookFilled-yCfaCM) {
+		button[type='button'].button_dd4f85:not(.lookFilled-yCfaCM) {
 			display: none;
 		}
 	}
@@ -42,7 +42,7 @@
 		padding: 0 24px 24px !important;
 		display: flex;
 		flex-direction: column;
-		.marginBottom20__9fcf3 {
+		.marginBottom20_f7730b {
 			margin-bottom: 0;
 			& + * {
 				margin-top: 20px;
@@ -64,7 +64,7 @@
 		margin: 0;
 	}
 
-	.footer_e0b400 {
+	.footer_f9a4c9 {
 		padding: 24px;
 		background: var(--bg-main);
 		box-shadow: none;

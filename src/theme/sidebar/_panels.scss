@@ -2,12 +2,12 @@
 @use '../assets/mono';
 
 #app-mount {
-	.panels__58331 {
+	.panels_a4d4d9 {
 		background: transparent;
 		border: none;
 
 		// User area
-		& > .container_debb33 {
+		& > .container_b2ca13 {
 			box-sizing: border-box;
 			background: var(--bg-main);
 			padding: 8px 14px;
@@ -19,7 +19,7 @@
 			border-right: none;
 			height: var(--bottombar-height);
 			z-index: 1;
-			& > .flex_f18b02 {
+			& > .flex_bba380 {
 				gap: 8px;
 				height: 75%;
 				width: 100%;
@@ -36,7 +36,7 @@
 			[class*="withTagAsButton"] { //fix game activity toogle on Vencord
 				min-width: min-content !important;
 			}
-			.avatarWrapper__500a6 {
+			.avatarWrapper_b2ca13 {
 				padding: 6px;
 				min-width: unset;
 				margin: 0 8px 0 0;
@@ -45,11 +45,11 @@
 					box-shadow: var(--server-hover-selected);
 				}
 			}
-			.nameTag__77ab2 {
+			.nameTag_b2ca13 {
 				display: none;
 			}
 		}
-		.container_e1958d {
+		.container_adcaac {
 			translate: 0 0;
 			&:hover {
 				opacity: 1;
@@ -59,7 +59,7 @@
 	}
 
 	// Voice connected
-	.container_e1958d {
+	.container_adcaac {
 		margin: 0 11px;
 		left: 11px;
 		right: 12px;
@@ -72,7 +72,7 @@
 		flex-direction: column-reverse;
 		display: flex;
 		z-index: 1;
-		& > .flex_f18b02 {
+		& > .flex_bba380 {
 			padding: 8px 8px 11px 8px;
 			position: relative;
 			z-index: 2;
@@ -84,7 +84,7 @@
 				border-radius: var(--rounded) var(--rounded) 0 0;
 				z-index: -1;
 			}
-			& > .flex_f18b02 {
+			& > .flex_bba380 {
 				gap: 4px;
 				button {
 					@include mixins.btn;
@@ -92,10 +92,10 @@
 				}
 			}
 		}
-		.voiceUsers__12c6d {
+		.voiceUsers_fb2f1c {
 			gap: 8px;
 		}
-		& > .voiceUsers__665a5 {
+		& > .voiceUsers_adcaac {
 			padding: 8px 8px 0px 8px;
 			position: relative;
 			z-index: 2;
@@ -110,7 +110,7 @@
 				z-index: -1;
 			}
 		}
-		&:hover .actionButtons__85e3c {
+		&:hover .actionButtons_adcaac {
 			bottom: calc(100% - 8px);
 			opacity: 1;
 			visibility: visible;
@@ -120,25 +120,25 @@
 		// 	display: none;
 		// }
 	}
-	.wrapper_e832ee + .container_debb33 {
+	.wrapper_adcaac + .container_b2ca13 {
 		border-radius: 0 0 0 var(--rounded);
 	}
-	.inner_ab95dc {
+	.inner_adcaac {
 		position: relative;
 	}
-	.rtcConnectionStatus_e749c4 {
+	.rtcConnectionStatus_c0cb95 {
 		display: flex;
 		align-items: center;
-		.button__581d0 {
+		.button_dd4f85 {
 			padding: 0;
 			margin-left: 4px;
 		}
 	}
-	.ping__838d2 {
+	.ping_c0cb95 {
 		width: 24px;
 		height: 24px;
 	}
-	.actionButtons__85e3c {
+	.actionButtons_adcaac {
 		position: absolute;
 		bottom: 0;
 		width: calc(100% - 16px);
@@ -151,24 +151,24 @@
 		visibility: hidden;
 		transition: 0.15s var(--transition) 0s;
 		z-index: 0;
-		.button_b82d53.buttonColor__7bad9.colorBrand-I6CyqQ {
+		.button_adcaac.buttonColor_adcaac.colorBrand-I6CyqQ {
 			@include mixins.btn;
 			@include mixins.btnSecondary;
 		}
-		.button_b82d53 {
+		.button_adcaac {
 			height: 100%;
 		}
-		.lottieIcon_c7076c svg {
+		.lottieIcon_f73ef7 svg {
 			--fluent-icons-color: black;
 		}
 	}
-	.activityPanel_b73e7a {
+	.activityPanel_a4d4d9 {
 		border: none;
 		background: transparent;
 		padding: 8px 16px;
-		&:has(+ .wrapper_e832ee:not(:empty)) {
+		&:has(+ .wrapper_adcaac:not(:empty)) {
 			z-index: 0;
-			.wrapper_e832ee > & {
+			.wrapper_adcaac > & {
 				margin-bottom: calc(100% - 3px);
 			}
 		}

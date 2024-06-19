@@ -1,5 +1,5 @@
 #app-mount {
-	.wrapper__612a5 {
+	.wrapper_d8bfb3 {
 		padding: 2px 0;
 		margin-left: 0;
 
@@ -18,50 +18,50 @@
 			z-index: 1;
 		}
 
-		&.modeMuted_f0a72e {
-			.icon__67ab4,
-			.iconContainer__6a580:has(path[d^='M21.025 5V4C21.025'])::before {
+		&.modeMuted_d8bfb3 {
+			.icon_d8bfb3,
+			.iconContainer_d8bfb3:has(path[d^='M21.025 5V4C21.025'])::before {
 				background: var(--interactive-muted);
 			}
 		}
-		&.modeUnreadImportant__35358::before {
+		&.modeUnreadImportant_d8bfb3::before {
 			background: var(--pill-unread);
 			scale: 1 0.65;
 			opacity: 1;
 		}
-		&.modeSelected__473f1 {
+		&.modeSelected_d8bfb3 {
 			&::before {
 				background: rgb(var(--accent));
 				scale: 1;
 			}
-			.link_ddbb36 {
+			.link_d8bfb3 {
 				background: var(--bg-interactive-high);
 			}
 		}
-		&:hover .link_ddbb36 {
+		&:hover .link_d8bfb3 {
 			background: var(--bg-interactive-high-hover);
 		}
-		&.typeThread__5fb37 {
+		&.typeThread_d8bfb3 {
 			padding-left: 32px;
 		}
 	}
-	.unread__48cf4 {
+	.unread_d8bfb3 {
 		display: none;
 	}
-	.link_ddbb36 {
+	.link_d8bfb3 {
 		border-radius: var(--rounded);
 		margin-left: 0;
 		margin-right: 0;
 		padding: 8px 8px 8px 16px;
 		cursor: var(--cursor);
 
-		.name__4eb92 {
+		.name_d8bfb3 {
 			font-weight: var(--font-weight-normal);
 		}
 
 		// Icons
-		.actionIcon_b149a2,
-		.icon__67ab4 {
+		.actionIcon_f6f816,
+		.icon_d8bfb3 {
 			mask-size: cover;
 			mask-position: center;
 			background: var(--interactive-normal);
@@ -69,13 +69,13 @@
 				display: none;
 			}
 		}
-		.iconBase_bf11e7 {
+		.iconBase_f6f816 {
 			cursor: var(--cursor);
 		}
 	}
 
 	// Browser Channels
-	.wrapper__612a5:has(+ .sectionDivider__9dbcb) {
+	.wrapper_d8bfb3:has(+ .sectionDivider_c43953) {
 		margin-top: 8px;
 	}
 }
