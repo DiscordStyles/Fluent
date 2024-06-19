@@ -19,8 +19,8 @@
 		display: none;
 	}
 	&[aria-checked='true'] .iconContainer_d90b3d {
-		border-color: rgb(var(--accent));
-		background: rgb(var(--accent));
+		border-color: var(--accent);
+		background: var(--accent);
 		&::before {
 			opacity: 1;
 		}

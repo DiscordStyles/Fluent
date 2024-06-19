@@ -93,7 +93,7 @@
 				}
 
 				.selectedBackground-1qyzak {
-					background: rgb(var(--accent));
+					background: var(--accent);
 				}
 
 				// ~~Disabled icons (for now hopefully)
@@ -112,7 +112,7 @@
 					height: 0;
 					width: 4px;
 					border-radius: 4px;
-					background: rgb(var(--accent));
+					background: var(--accent);
 					opacity: 0;
 					transition: 0.15s var(--transition);
 				}

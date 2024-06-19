@@ -48,7 +48,7 @@
 			background: var(--bg-interactive-high);
 		}
 		&#{cls('forum.card.selected')} {
-			border-color: rgb(var(--accent));
+			border-color: var(--accent);
 		}
 	}
 

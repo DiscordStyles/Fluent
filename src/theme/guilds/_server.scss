@@ -34,7 +34,7 @@
 			@for $i from 21 through 40 {
 				span[style*='height: #{$i}'] {
 					transform: scale(1, 1) !important;
-					background: rgb(var(--accent));
+					background: var(--accent);
 				}
 			}
 		}

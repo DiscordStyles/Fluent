@@ -80,7 +80,7 @@
 			background: var(--bg-alt);
 			&::before {
 				height: 2px;
-				background: rgb(var(--accent));
+				background: var(--accent);
 			}
 		}
 	}

@@ -21,9 +21,8 @@
 			align-items: center;
 			gap: 8px;
 		}
-
 		&.buttonColor_adcaac {
-			background: rgb(var(--accent));
+			background: var(--accent);
 			color: var(--accent-text);
 		}
 		&.lookFilled_dd4f85 {
@@ -34,7 +33,7 @@
 			transition: box-shadow 0.15s var(--transition);
 			&.colorBrand_dd4f85,
 			&.colorGreen-3y-Z79 {
-				background: rgb(var(--accent));
+				background: var(--accent);
 				color: var(--accent-text);
 			}
 			&.colorRed_dd4f85 {
@@ -104,7 +103,7 @@
 		}
 		&.lookLink_dd4f85 {
 			cursor: pointer;
-			color: rgb(var(--accent));
+			color: var(--accent);
 			.contents_dd4f85 {
 				background: none;
 			}

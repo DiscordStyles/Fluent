@@ -47,7 +47,7 @@
 				background: var(--bg-content-alt);
 				&::before {
 					height: 2px;
-					background: rgb(var(--accent));
+					background: var(--accent);
 				}
 			}
 		}
@@ -74,7 +74,7 @@
 			display: block;
 			height: 0;
 			width: var(--pill-width);
-			background: rgb(var(--accent));
+			background: var(--accent);
 			border-radius: 50px;
 			transition: var(--pill-transition);
 			opacity: 0;

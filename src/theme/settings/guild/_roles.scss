@@ -124,7 +124,7 @@
 				left: 0;
 				top: 50%;
 				transform: translateY(-50%);
-				background: rgb(var(--accent));
+				background: var(--accent);
 				width: var(--pill-width);
 				height: 0;
 				opacity: 0;
