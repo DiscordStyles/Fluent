@@ -1607,7 +1607,8 @@ body,
 #app-mount .form_a7d72e::before, #app-mount .form_a7d72e::after {
   content: none;
 }
-#app-mount .channelTextAreaContainer_d0696b {
+#app-mount .channelTextAreaContainer_d0696b,
+#app-mount .channelBottomBarArea_a7d72e {
   width: 100%;
 }
 #app-mount .channelTextArea_a7d72e {
