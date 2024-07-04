@@ -2,7 +2,7 @@
   --fluent-version: "1.1.7";
   --transition: cubic-bezier(0, 0, 0, 1);
   --accent-text: #000;
-  --accent-solid: rgb(var(--accent));
+  --accent-solid: var(--accent);
   --pill-width: 4px;
   --pill-height: 16px;
   --pill-transition: scale 0.15s var(--transition);
@@ -59,7 +59,7 @@
   --text-normal: var(--text-primary);
   --text-muted: var(--text-tertiary);
   --interactive-muted: var(--text-quaternary);
-  --text-link: rgb(var(--accent));
+  --text-link: var(--accent);
 }
 
 .theme-dark,
@@ -363,7 +363,7 @@ body,
 }
 #app-mount .searchBar__5a20a:focus-within::before {
   height: 2px;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 
 #app-mount [class*=tabBar_] {
@@ -392,7 +392,7 @@ body,
   display: block;
   opacity: 0;
   border-radius: 30px;
-  background: rgb(var(--accent));
+  background: var(--accent);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -536,83 +536,83 @@ body,
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 21"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 22"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 23"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 24"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 25"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 26"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 27"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 28"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 29"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 30"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 31"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 32"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 33"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 34"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 35"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 36"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 37"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 38"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 39"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .guilds_a4d4d9 [class*=pill] span[style*="height: 40"] {
   transform: scale(1, 1) !important;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .listItem_c96c45 {
   margin: 0 0 4px;
@@ -786,7 +786,7 @@ body,
   opacity: 1;
 }
 #app-mount .wrapper_d8bfb3.modeSelected_d8bfb3::before {
-  background: rgb(var(--accent));
+  background: var(--accent);
   scale: 1;
 }
 #app-mount .wrapper_d8bfb3.modeSelected_d8bfb3 .link_d8bfb3 {
@@ -1245,7 +1245,7 @@ body,
 #app-mount .channel_c91bad .selected_f5eb4b::before {
   scale: 1;
   opacity: 1;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .channel_c91bad .selected_f5eb4b:hover {
   background: var(--bg-interactive-high-hover);
@@ -1279,7 +1279,7 @@ body,
   display: block;
   height: 0;
   width: var(--pill-width);
-  background: rgb(var(--accent));
+  background: var(--accent);
   border-radius: 50px;
   transition: var(--pill-transition);
   opacity: 0;
@@ -1303,7 +1303,7 @@ body,
   background: var(--bg-interactive-high-hover);
 }
 #app-mount .avatarSpeaking_cdc675 {
-  box-shadow: inset 0 0 0 2px rgb(var(--accent)), inset 0 0 0 4px var(--bg-alt);
+  box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 4px var(--bg-alt);
 }
 #app-mount .content_cdc675 {
   margin: 0;
@@ -1314,7 +1314,7 @@ body,
   margin: -8px 0 0 0;
 }
 #app-mount .progressBar_db0972 {
-  background: linear-gradient(90deg, rgb(var(--accent), 0.5), rgb(var(--accent)));
+  background: linear-gradient(90deg, rgb(from var(--accent) r g b/5%), var(--accent));
 }
 
 #app-mount .chat_a7d72e {
@@ -1374,10 +1374,10 @@ body,
   padding: 8px 16px 16px 16px;
 }
 #app-mount .mentioned_d5deea {
-  background: rgb(var(--chat-mention-colour), 0.05);
+  background: rgb(from var(--chat-mention-colour) r g b/5%);
 }
 #app-mount .mentioned_d5deea::before {
-  background: rgb(var(--chat-mention-colour));
+  background: var(--chat-mention-colour);
 }
 #app-mount .mentioned_d5deea.groupStart_d5deea .contents_ec86aa {
   background: var(--chat-mention-bubble) !important;
@@ -1477,8 +1477,8 @@ body,
   color: hsl(var(--discord-red));
 }
 #app-mount .wrapper_d4fa29 {
-  background: rgb(var(--accent), 0.1);
-  color: rgb(var(--accent));
+  background: rgb(from var(--accent) r g b/10%);
+  color: var(--accent);
   font-weight: var(--font-weight-semibold);
   cursor: default;
 }
@@ -1496,10 +1496,10 @@ body,
   background: var(--bg-interactive-high);
 }
 #app-mount .reaction_ec6b19.reactionMe_ec6b19 {
-  border-color: rgb(var(--accent));
+  border-color: var(--accent);
 }
-#app-mount .reaction_ec6b19.reactionMe_ec6b19 .reactionCount_ec6b19 {
-  color: rgb(var(--accent));
+#app-mount .reaction_ec6b19.reactionMe_ec6b19 .reactionCount__2c34d {
+  color: var(--accent);
 }
 #app-mount .markup_d6076c code {
   background: var(--bg-alt);
@@ -1589,7 +1589,7 @@ body,
 }
 
 .theme-light #app-mount .mentioned_d5deea {
-  background: rgb(var(--accent), 0.15);
+  background: rgb(from var(--accent) r g b/15%);
 }
 
 #app-mount .form_a7d72e {
@@ -1622,7 +1622,7 @@ body,
 }
 #app-mount .channelTextArea_a7d72e:focus-within .inner_d0696b::before {
   height: 2px;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .inner_d0696b::before {
   content: "";
@@ -1881,7 +1881,7 @@ body,
   border-color: var(--btn-border-active);
 }
 #app-mount .searchHeader_b7c924 .item-3XjbnG.selected-g-kMVV {
-  background: rgb(var(--accent));
+  background: var(--accent);
   color: var(--accent-text);
   transition: box-shadow 0.15s var(--transition);
   font-weight: var(--font-weight-semibold);
@@ -1890,12 +1890,12 @@ body,
   border-bottom-color: var(--btn-border-b);
 }
 #app-mount .searchHeader_b7c924 .item-3XjbnG.selected-g-kMVV:hover {
-  background: rgb(var(--accent));
+  background: var(--accent);
   box-shadow: inset 0 0 0 100vmax hsla(0, 0%, 0%, 0.1) !important;
   border-color: hsla(0, 0%, 0%, 0.1);
 }
 #app-mount .searchHeader_b7c924 .item-3XjbnG.selected-g-kMVV:active {
-  background: rgb(var(--accent));
+  background: var(--accent);
   box-shadow: inset 0 0 0 100vmax hsla(0, 0%, 0%, 0.2) !important;
   border-color: hsla(0, 0%, 0%, 0.2);
 }
@@ -1981,7 +1981,7 @@ body,
   border-color: var(--btn-border-active);
 }
 #app-mount .pageControl-1XvHg0 > .pageButton-1GMGeJ.activeButton-LRWFC_ {
-  background: rgb(var(--accent));
+  background: var(--accent);
   color: var(--accent-text);
   transition: box-shadow 0.15s var(--transition);
   font-weight: var(--font-weight-semibold);
@@ -1990,12 +1990,12 @@ body,
   border-bottom-color: var(--btn-border-b);
 }
 #app-mount .pageControl-1XvHg0 > .pageButton-1GMGeJ.activeButton-LRWFC_:hover {
-  background: rgb(var(--accent));
+  background: var(--accent);
   box-shadow: inset 0 0 0 100vmax hsla(0, 0%, 0%, 0.1) !important;
   border-color: hsla(0, 0%, 0%, 0.1);
 }
 #app-mount .pageControl-1XvHg0 > .pageButton-1GMGeJ.activeButton-LRWFC_:active {
-  background: rgb(var(--accent));
+  background: var(--accent);
   box-shadow: inset 0 0 0 100vmax hsla(0, 0%, 0%, 0.2) !important;
   border-color: hsla(0, 0%, 0%, 0.2);
 }
@@ -2328,7 +2328,7 @@ body,
   background: var(--bg-interactive-high);
 }
 #app-mount .pill_f055c3.selected__50db4 {
-  border-color: rgb(var(--accent));
+  border-color: var(--accent);
 }
 #app-mount .sidebarCard-1Gn1ch,
 #app-mount .container-2IhveL {
@@ -2381,7 +2381,7 @@ body,
   height: 0;
   left: 0;
   opacity: 0;
-  background: rgb(var(--accent));
+  background: var(--accent);
   transition: var(--pill-transition);
 }
 #app-mount .member_a31c43 .name_e9f61e {
@@ -2560,7 +2560,7 @@ body,
   color: hsl(var(--discord-pink));
 }
 #app-mount .menu__088f7 .item_d90b3d.colorBrand-3cPPsm {
-  color: rgb(var(--accent));
+  color: var(--accent);
 }
 #app-mount .menu__088f7 .submenuContainer-3EVTeH .item_d90b3d {
   flex-direction: row;
@@ -2753,7 +2753,7 @@ body,
   width: var(--pill-width);
   height: 0;
   border-radius: 30px;
-  background: rgb(var(--accent));
+  background: var(--accent);
   opacity: 0;
   transition: var(--pill-transition);
 }
@@ -2806,7 +2806,7 @@ body,
   display: block;
   opacity: 0;
   border-radius: 30px;
-  background: rgb(var(--accent));
+  background: var(--accent);
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -2868,8 +2868,8 @@ body,
 #app-mount .container__33507:not(.searchBar_e0840f):focus-within,
 #app-mount .container_effbe2:focus-within {
   background: var(--textbox-bg-high-active) !important;
-  box-shadow: inset 0 -1px 0 rgb(var(--accent));
-  border-bottom-color: rgb(var(--accent));
+  box-shadow: inset 0 -1px 0 var(--accent);
+  border-bottom-color: var(--accent);
 }
 #app-mount .listWrapper_d8cdac {
   border-left: 1px solid var(--border-high);
@@ -3153,7 +3153,7 @@ body,
 }
 #app-mount .searchBar_e0840f .inner__999f6:focus-within::before {
   height: 2px;
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .searchBar_e0840f .input__48d49 {
   padding: 0 10px;
@@ -3176,7 +3176,7 @@ body,
   display: block;
   height: 0;
   width: var(--pill-width);
-  background: rgb(var(--accent));
+  background: var(--accent);
   border-radius: 50px;
   transition: var(--pill-transition);
   opacity: 0;
@@ -3358,7 +3358,7 @@ body,
   height: 4px;
 }
 #app-mount [role=slider] .barFill_c7a159 {
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount [role=slider] .track_c7a159 {
   left: 10px;
@@ -3366,7 +3366,7 @@ body,
 #app-mount [role=slider] .grabber_c7a159 {
   border: 4px solid var(--bg-highest);
   margin-top: 0;
-  background: rgb(var(--accent));
+  background: var(--accent);
   box-shadow: var(--shadow-flyout);
   width: 20px;
   height: 20px;
@@ -3406,8 +3406,8 @@ body,
   display: none;
 }
 #app-mount [role=menuitemcheckbox][aria-checked=true] .iconContainer_d90b3d {
-  border-color: rgb(var(--accent));
-  background: rgb(var(--accent));
+  border-color: var(--accent);
+  background: var(--accent);
 }
 #app-mount [role=menuitemcheckbox][aria-checked=true] .iconContainer_d90b3d::before {
   opacity: 1;
@@ -3433,8 +3433,8 @@ body,
   display: none;
 }
 #app-mount [role=menuitemradio][aria-checked=true] .iconContainer_d90b3d {
-  border-color: rgb(var(--accent));
-  background: rgb(var(--accent));
+  border-color: var(--accent);
+  background: var(--accent);
 }
 #app-mount [role=menuitemradio][aria-checked=true] .iconContainer_d90b3d::before {
   opacity: 1;
@@ -3467,7 +3467,7 @@ body,
 }
 #app-mount .button_dd4f85.buttonColor_adcaac,
 #app-mount .button_dd4f85.buttonColor_adcaac {
-  background: rgb(var(--accent));
+  background: var(--accent);
   color: var(--accent-text);
 }
 #app-mount .button_dd4f85.lookFilled_dd4f85,
@@ -3481,7 +3481,7 @@ body,
 #app-mount .button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85, #app-mount .button_dd4f85.lookFilled_dd4f85.colorGreen-3y-Z79,
 #app-mount .button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85,
 #app-mount .button_dd4f85.lookFilled_dd4f85.colorGreen-3y-Z79 {
-  background: rgb(var(--accent));
+  background: var(--accent);
   color: var(--accent-text);
 }
 #app-mount .button_dd4f85.lookFilled_dd4f85.colorRed_dd4f85,
@@ -3563,7 +3563,7 @@ body,
 #app-mount .button_dd4f85.lookLink_dd4f85,
 #app-mount .button_dd4f85.lookLink_dd4f85 {
   cursor: pointer;
-  color: rgb(var(--accent));
+  color: var(--accent);
 }
 #app-mount .button_dd4f85.lookLink_dd4f85 .contents_dd4f85,
 #app-mount .button_dd4f85.lookLink_dd4f85 .contents_dd4f85 {
@@ -3625,8 +3625,8 @@ body,
 #app-mount .input-2g-os5.multiInput-1VARjC:focus,
 #app-mount .input-2g-os5.multiInput-1VARjC:focus-within {
   background: var(--textbox-bg-active) !important;
-  box-shadow: inset 0 -1px 0 rgb(var(--accent));
-  border-bottom-color: rgb(var(--accent));
+  box-shadow: inset 0 -1px 0 var(--accent);
+  border-bottom-color: var(--accent);
 }
 #app-mount .input-2g-os5.textArea-3WXAeD {
   height: auto !important;
@@ -3712,8 +3712,8 @@ body,
   width: 18px;
 }
 #app-mount .container_cebd1c input:checked {
-  background: rgb(var(--accent));
-  border-color: rgb(var(--accent));
+  background: var(--accent);
+  border-color: var(--accent);
 }
 #app-mount .container_cebd1c input:checked::before {
   background: var(--accent-text);
@@ -3860,7 +3860,7 @@ body,
   transform: translateY(-50%);
   width: 3px;
   height: var(--pill-height);
-  background: rgb(var(--accent));
+  background: var(--accent);
   border-radius: 30%;
 }
 #app-mount .selectedIcon_f6639d {
@@ -3871,10 +3871,10 @@ body,
 }
 
 #app-mount .container-2uPlB3 .selectedProgressBar-11z5d9 {
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .container-2uPlB3 .colorBrand-21Le_q {
-  color: rgb(var(--accent));
+  color: var(--accent);
 }
 
 #app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .contentColumn_c25c6d > .heading-lg-semibold__85c17:first-child, #app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .contentColumn_c25c6d > div > div:first-child > .sectionTitle_a6ae9b:first-child .title_c46f6a, #app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .contentColumn_c25c6d > div:first-child > .sectionTitle_a6ae9b:first-child .title_c46f6a {
@@ -4065,7 +4065,7 @@ body,
   display: none;
 }
 #app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .sidebar_c25c6d .item_a0 .selectedBackground-1qyzak {
-  background: rgb(var(--accent));
+  background: var(--accent);
 }
 #app-mount .layer_d4b6c5 ~ .layer_d4b6c5 .sidebar_c25c6d .item_a0::after {
   content: "";
@@ -4074,7 +4074,7 @@ body,
   height: 0;
   width: 4px;
   border-radius: 4px;
-  background: rgb(var(--accent));
+  background: var(--accent);
   opacity: 0;
   transition: 0.15s var(--transition);
 }
@@ -4953,7 +4953,7 @@ body,
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: rgb(var(--accent));
+  background: var(--accent);
   width: var(--pill-width);
   height: 0;
   opacity: 0;
@@ -5206,8 +5206,8 @@ body,
 }
 #app-mount .input_f4e139:focus, #app-mount .input_f4e139:focus-within {
   background: var(--textbox-bg-active) !important;
-  box-shadow: inset 0 -1px 0 rgb(var(--accent));
-  border-bottom-color: rgb(var(--accent));
+  box-shadow: inset 0 -1px 0 var(--accent);
+  border-bottom-color: var(--accent);
 }
 #app-mount div:not([class]) > .content_f14193 {
   height: auto;
@@ -5238,7 +5238,7 @@ body,
   transform: translateY(-50%);
   width: var(--pill-width);
   height: 0;
-  background: rgb(var(--accent));
+  background: var(--accent);
   border-radius: 30px;
   opacity: 0;
   transition: var(--pill-transition);
@@ -5566,8 +5566,8 @@ body,
   width: 18px;
 }
 #app-mount .bd-switch input:checked {
-  background: rgb(var(--accent));
-  border-color: rgb(var(--accent));
+  background: var(--accent);
+  border-color: var(--accent);
 }
 #app-mount .bd-switch input:checked::before {
   background: var(--accent-text);

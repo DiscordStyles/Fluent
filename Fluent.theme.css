@@ -11,7 +11,7 @@
 @import url('https://discordstyles.github.io/Fluent/Fluent.css');
 
 :root {
-  --accent: 98, 205, 254; /* The colour used throughout the app | R,G,B format | Default: 98, 205, 254 */
+  --accent: rgb(98, 205, 254); /* The colour used throughout the app | Default: 98, 205, 254 */
   --channels-width: 300px; /* Size of the server channel/dms list | Default: 300px */
   --members-width: 280px; /* Size of the members list | Default: 280px */
   --dark-background-hue: 0; /* The hue of the background colour. | Options: 0 to 360 | Default: 0 */
