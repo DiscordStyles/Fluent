@@ -1348,26 +1348,26 @@ body,
   pointer-events: none;
 }
 
-#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_ec86aa {
+#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_f9f2ca {
   display: block;
   width: 100%;
   background: var(--bg-content);
 }
-#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_ec86aa .textArea_d0696b {
+#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_f9f2ca .textArea_d0696b {
   height: auto;
   min-height: auto;
 }
-#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_ec86aa .channelTextArea_d5deea {
+#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_f9f2ca .channelTextArea_d5deea {
   margin-top: 0;
 }
-#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_ec86aa .slateTextArea_e52116 {
+#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_f9f2ca .slateTextArea_e52116 {
   padding-top: 0;
   padding-bottom: 0;
 }
-#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_ec86aa .inner_d0696b::before {
+#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_f9f2ca .inner_d0696b::before {
   content: none;
 }
-#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_ec86aa .buttons_d0696b {
+#app-mount .message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_f9f2ca .buttons_d0696b {
   height: auto;
 }
 #app-mount .operations_ed9386 {
@@ -1379,20 +1379,20 @@ body,
 #app-mount .mentioned_d5deea::before {
   background: var(--chat-mention-colour);
 }
-#app-mount .mentioned_d5deea.groupStart_d5deea .contents_ec86aa {
+#app-mount .mentioned_d5deea.groupStart_d5deea .contents_f9f2ca {
   background: var(--chat-mention-bubble) !important;
 }
-#app-mount .mentioned_d5deea.groupStart_d5deea .contents_ec86aa .messageContent_ec86aa:not(:empty) {
+#app-mount .mentioned_d5deea.groupStart_d5deea .contents_f9f2ca .messageContent_f9f2ca:not(:empty) {
   background: transparent !important;
 }
-#app-mount .mentioned_d5deea:not(.groupStart_d5deea) .messageContent_ec86aa:not(:empty) {
+#app-mount .mentioned_d5deea:not(.groupStart_d5deea) .messageContent_f9f2ca:not(:empty) {
   background: var(--chat-mention-bubble) !important;
 }
-#app-mount .cozy_ec86aa .avatar_ec86aa {
+#app-mount .cozy_f9f2ca .avatar_ec86aa {
   left: var(--chat-spacing-x);
   margin-top: 0;
 }
-#app-mount .cozy_ec86aa .contents_ec86aa > .messageContent_ec86aa:not(:empty) {
+#app-mount .cozy_f9f2ca .contents_f9f2ca > .messageContent_f9f2ca:not(:empty) {
   margin-left: 0;
   padding: var(--chat-padding-y) var(--chat-padding-x);
   background: var(--chat-bubble-bg);
@@ -1400,33 +1400,33 @@ body,
   display: inline-block;
   max-width: calc(100% - var(--chat-spacing-x));
 }
-#app-mount .cozy_ec86aa .container_e62b38 {
+#app-mount .cozy_f9f2ca .container_e62b38 {
   padding: 0;
 }
-#app-mount .cozy_ec86aa.groupStart_d5deea .contents_ec86aa {
+#app-mount .cozy_f9f2ca.groupStart_d5deea .contents_f9f2ca {
   background: var(--chat-bubble-bg);
   display: inline-block;
   border-radius: var(--rounded) var(--rounded);
   max-width: 100%;
 }
-#app-mount .cozy_ec86aa.groupStart_d5deea .contents_ec86aa .header_ec86aa {
+#app-mount .cozy_f9f2ca.groupStart_d5deea .contents_f9f2ca .header_f9f2ca {
   padding-top: var(--chat-padding-y);
   padding-right: var(--chat-padding-x);
   padding-bottom: 2px;
   padding-left: var(--chat-padding-x);
   margin-left: 0;
 }
-#app-mount .cozy_ec86aa.groupStart_d5deea .contents_ec86aa .messageContent_ec86aa:empty {
+#app-mount .cozy_f9f2ca.groupStart_d5deea .contents_f9f2ca .messageContent_f9f2ca:empty {
   margin-top: 8px;
   display: block;
 }
-#app-mount .cozy_ec86aa.groupStart_d5deea .contents_ec86aa .messageContent_ec86aa:not(:empty) {
+#app-mount .cozy_f9f2ca.groupStart_d5deea .contents_f9f2ca .messageContent_f9f2ca:not(:empty) {
   padding-top: 0;
 }
-#app-mount .cozy_ec86aa.isSystemMessage_ec86aa .messageContent_ec86aa {
+#app-mount .cozy_f9f2ca.isSystemMessage_ec86aa .messageContent_f9f2ca {
   padding: 16px !important;
 }
-#app-mount .cozy_ec86aa.wrapper_ec86aa {
+#app-mount .cozy_f9f2ca.wrapper_ec86aa {
   padding-left: calc(var(--chat-spacing-x) + 56px);
   padding-right: calc(var(--chat-spacing-x) - 11px) !important;
 }
