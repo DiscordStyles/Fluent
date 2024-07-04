@@ -3,7 +3,7 @@
 		height: 4px;
 	}
 	.barFill_c7a159 {
-		background: rgb(var(--accent));
+		background: var(--accent);
 	}
 	.track_c7a159 {
 		left: 10px;
@@ -11,7 +11,7 @@
 	.grabber_c7a159 {
 		border: 4px solid var(--bg-highest);
 		margin-top: 0;
-		background: rgb(var(--accent));
+		background: var(--accent);
 		box-shadow: var(--shadow-flyout);
 		width: 20px;
 		height: 20px;

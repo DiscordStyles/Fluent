@@ -74,7 +74,7 @@
 			&::before {
 				scale: 1;
 				opacity: 1;
-				background: rgb(var(--accent));
+				background: var(--accent);
 			}
 			&:hover {
 				background: var(--bg-interactive-high-hover);

@@ -4,7 +4,7 @@
 	--transition: cubic-bezier(0, 0, 0, 1);
 
 	--accent-text: #000;
-	--accent-solid: rgb(var(--accent));
+	--accent-solid: var(--accent);
 
 	--pill-width: 4px;
 	--pill-height: 16px;
@@ -79,5 +79,5 @@
 	--text-normal: var(--text-primary);
 	--text-muted: var(--text-tertiary);
 	--interactive-muted: var(--text-quaternary);
-	--text-link: rgb(var(--accent));
+	--text-link: var(--accent);
 }
