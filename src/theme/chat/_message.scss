@@ -1,7 +1,7 @@
 @use '../mixins';
 
 #app-mount {
-	.message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_ec86aa {
+	.message_d5deea:has(.channelTextArea_d0696b).cozyMessage_d5deea .contents_f9f2ca {
 		display: block;
 		width: 100%;
 		background: var(--bg-content);
@@ -32,24 +32,24 @@
 			background: var(--chat-mention-colour);
 		}
 
-		&.groupStart_d5deea .contents_ec86aa {
+		&.groupStart_d5deea .contents_f9f2ca {
 			background: var(--chat-mention-bubble) !important;
-			.messageContent_ec86aa:not(:empty) {
+			.messageContent_f9f2ca:not(:empty) {
 				background: transparent !important;
 			}
 		}
-		&:not(.groupStart_d5deea) .messageContent_ec86aa:not(:empty) {
+		&:not(.groupStart_d5deea) .messageContent_f9f2ca:not(:empty) {
 			background: var(--chat-mention-bubble) !important;
 		}
 	}
 
-	.cozy_ec86aa {
+	.cozy_f9f2ca {
 		.avatar_ec86aa {
 			left: var(--chat-spacing-x);
 			margin-top: 0;
 		}
 
-		.contents_ec86aa > .messageContent_ec86aa:not(:empty) {
+		.contents_f9f2ca > .messageContent_f9f2ca:not(:empty) {
 			margin-left: 0;
 			padding: var(--chat-padding-y) var(--chat-padding-x);
 			background: var(--chat-bubble-bg);
@@ -61,20 +61,20 @@
 			padding: 0;
 		}
 
-		&.groupStart_d5deea .contents_ec86aa {
+		&.groupStart_d5deea .contents_f9f2ca {
 			background: var(--chat-bubble-bg);
 			display: inline-block;
 			border-radius: var(--rounded) var(--rounded);
 			max-width: 100%;
 
-			.header_ec86aa {
+			.header_f9f2ca {
 				padding-top: var(--chat-padding-y);
 				padding-right: var(--chat-padding-x);
 				padding-bottom: 2px;
 				padding-left: var(--chat-padding-x);
 				margin-left: 0;
 			}
-			.messageContent_ec86aa {
+			.messageContent_f9f2ca {
 				&:empty {
 					margin-top: 8px;
 					display: block;
@@ -85,7 +85,7 @@
 			}
 		}
 
-		&.isSystemMessage_ec86aa .messageContent_ec86aa {
+		&.isSystemMessage_ec86aa .messageContent_f9f2ca {
 			padding: 16px !important;
 		}
 
