@@ -8,7 +8,7 @@
 			}
 		}
 	}
-	.voiceUser_cdc675 {
+	.voiceUser_d80634 {
 		height: auto;
 		&::before {
 			content: '';
@@ -26,28 +26,28 @@
 			z-index: 1;
 		}
 
-		&:hover .content_cdc675 {
+		&:hover .content_d80634 {
 			background: var(--bg-interactive-high);
 		}
-		&.selected_cdc675 {
+		&.selected_d80634 {
 			&::before {
 				height: var(--pill-height);
 				opacity: 1;
 			}
-			.content_cdc675 {
+			.content_d80634 {
 				background: var(--bg-interactive-high);
 			}
-			&:hover .content_cdc675 {
+			&:hover .content_d80634 {
 				background: var(--bg-interactive-high-hover);
 			}
 		}
 	}
-	.avatarSpeaking_cdc675 {
+	.avatarSpeaking_d80634 {
 		box-shadow:
 			inset 0 0 0 2px var(--accent),
 			inset 0 0 0 4px var(--bg-alt);
 	}
-	.content_cdc675 {
+	.content_d80634 {
 		margin: 0;
 		padding: 2px 8px 2px 32px;
 	}

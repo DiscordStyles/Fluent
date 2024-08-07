@@ -30,7 +30,7 @@
 		margin: 0 0 4px 0;
 		padding: 0;
 
-		.layout_f9647d {
+		.layout_ec8679 {
 			height: 48px;
 			padding: 0 18px;
 			cursor: var(--cursor);
@@ -53,13 +53,13 @@
 				background: var(--pill-unread);
 				transition: var(--pill-transition);
 			}
-			&:not(.selected_f5eb4b):has(.highlighted_f9647d)::before {
+			&:not(.selected_f5eb4b):has(.highlighted_ec8679)::before {
 				scale: 1 0.65;
 				opacity: 1;
 			}
 		}
 
-		.content_f9647d {
+		.content_ec8679 {
 			height: 100%;
 			display: flex;
 			flex-direction: column;

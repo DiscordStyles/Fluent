@@ -23,7 +23,7 @@
 			height: auto;
 		}
 	}
-	.operations_ed9386 {
+	.operations_baf0d6 {
 		padding: 8px 16px 16px 16px;
 	}
 	.mentioned_d5deea {
@@ -44,7 +44,7 @@
 	}
 
 	.cozy_f9f2ca {
-		.avatar_ec86aa {
+		.avatar_f9f2ca {
 			left: var(--chat-spacing-x);
 			margin-top: 0;
 		}
@@ -57,7 +57,7 @@
 			display: inline-block;
 			max-width: calc(100% - var(--chat-spacing-x));
 		}
-		.container_e62b38 {
+		.container_d76df7 {
 			padding: 0;
 		}
 
@@ -85,39 +85,39 @@
 			}
 		}
 
-		&.isSystemMessage_ec86aa .messageContent_f9f2ca {
+		&.isSystemMessage_f9f2ca .messageContent_f9f2ca {
 			padding: 16px !important;
 		}
 
-		&.wrapper_ec86aa {
+		&.wrapper_f9f2ca {
 			padding-left: calc(var(--chat-spacing-x) + 56px);
 			padding-right: calc(var(--chat-spacing-x) - 11px) !important;
 		}
 	}
 
-	.embedFull_ad0b71 {
+	.embedFull_b0068a {
 		background: var(--chat-bubble-bg);
 	}
 
-	.markup_d6076c pre {
+	.markup_f8f345 pre {
 		margin: 0;
 		max-width: 100%;
 	}
 
 	// Message/attachment actions
-	.wrapper_ef319f {
+	.wrapper_f7e168 {
 		background: var(--bg-content);
 		border-radius: var(--btn-radius);
 		box-shadow: var(--shadow-flyout);
 		height: auto;
-		.button_ef319f {
+		.button_f7e168 {
 			@include mixins.btn;
 			@include mixins.btnSecondary;
 			width: auto;
 			height: auto;
 			min-width: auto;
 			border-radius: 0;
-			&.dangerous_ef319f {
+			&.dangerous_f7e168 {
 				color: hsl(var(--discord-red));
 			}
 		}
@@ -146,50 +146,50 @@
 		}
 		&.reactionMe_ec6b19 {
 			border-color: var(--accent);
-			.reactionCount__2c34d {
+			.reactionCount_ec6b19 {
 				color: var(--accent);
 			}
 		}
 	}
 
 	// Codeblocks/file embeds
-	.markup_d6076c code {
+	.markup_f8f345 code {
 		background: var(--bg-alt);
 		border-color: var(--border-mid);
 	}
 
-	.textContainer_ad9cbd {
+	.textContainer_d8e2d0 {
 		background: var(--bg-content);
 		border-radius: var(--rounded);
 		border: 1px solid var(--border-mid);
 	}
-	.footer_ad9cbd {
+	.footer_d8e2d0 {
 		background: transparent;
 		border: none;
 		margin-top: 4px;
 		padding: 0;
 		height: auto;
 	}
-	.toggleExpandSection_ad9cbd,
-	.anchor-1MIwyf.downloadSection_ad9cbd,
-	.codeIcon_ad9cbd {
+	.toggleExpandSection_d8e2d0,
+	.anchor-1MIwyf.downloadSection_d8e2d0,
+	.codeIcon_d8e2d0 {
 		@include mixins.btn;
 		@include mixins.btnSecondary;
 		margin-right: 4px;
 		min-height: 34px;
 		min-width: 38px;
 	}
-	.openFullPreviewSection_ad9cbd {
+	.openFullPreviewSection_d8e2d0 {
 		@include mixins.btn;
 		@include mixins.btnSecondary;
 		min-height: 34px;
 	}
-	.downloadButton_ad9cbd {
+	.downloadButton_d8e2d0 {
 		padding: 0;
 		width: 16px;
 		height: 16px;
 	}
-	.anchor-1MIwyf.downloadSection_ad9cbd {
+	.anchor-1MIwyf.downloadSection_d8e2d0 {
 		margin-left: 8px;
 	}
 }

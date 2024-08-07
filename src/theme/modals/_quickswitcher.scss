@@ -50,20 +50,20 @@
 		}
 	}
 
-	div:not([class]) > .content_f14193 {
+	div:not([class]) > .content_e3c1c6 {
 		height: auto;
 		line-height: normal;
 		padding: 12px 12px 6px;
 	}
-	.header_f14193 {
+	.header_e3c1c6 {
 		margin: 0;
 		@include mixins.subText;
 		text-transform: none;
 	}
 
-	.result_f14193 {
+	.result_e3c1c6 {
 		border-radius: var(--rounded);
-		.content_f14193 {
+		.content_e3c1c6 {
 			position: relative;
 			padding: 0 16px;
 			cursor: var(--cursor);
@@ -83,7 +83,7 @@
 		}
 		&[aria-selected='true'] {
 			background: var(--bg-interactive);
-			.content_f14193 {
+			.content_e3c1c6 {
 				&::before {
 					height: var(--pill-height);
 					opacity: 1;

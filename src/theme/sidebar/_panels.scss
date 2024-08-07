@@ -19,7 +19,7 @@
 			border-right: none;
 			height: var(--bottombar-height);
 			z-index: 1;
-			& > .flex_bba380 {
+			& > .flex_dc333f {
 				gap: 8px;
 				height: 75%;
 				width: 100%;
@@ -72,7 +72,7 @@
 		flex-direction: column-reverse;
 		display: flex;
 		z-index: 1;
-		& > .flex_bba380 {
+		& > .flex_dc333f {
 			padding: 8px 8px 11px 8px;
 			position: relative;
 			z-index: 2;
@@ -84,7 +84,7 @@
 				border-radius: var(--rounded) var(--rounded) 0 0;
 				z-index: -1;
 			}
-			& > .flex_bba380 {
+			& > .flex_dc333f {
 				gap: 4px;
 				button {
 					@include mixins.btn;

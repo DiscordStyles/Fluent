@@ -5,7 +5,7 @@
 	margin: 0;
 	padding: 2px 0;
 	background: transparent;
-	.layout_e9f61e {
+	.layout_d808b0 {
 		height: 48px;
 		padding: 0 16px;
 		cursor: var(--cursor);
@@ -24,14 +24,14 @@
 		}
 	}
 
-	.name_e9f61e {
+	.name_d808b0 {
 		@include mixins.text;
 	}
 
-	&:hover .layout_e9f61e {
+	&:hover .layout_d808b0 {
 		background: var(--bg-interactive-high);
 	}
-	&.selected_e9f61e .layout_e9f61e {
+	&.selected_d808b0 .layout_d808b0 {
 		background: var(--bg-interactive-high);
 		&::before {
 			height: var(--pill-height);
