@@ -423,9 +423,6 @@ body,
 #app-mount .guilds_a4d4d9.hidden_fea3ef + .base_a4d4d9 {
   border: none;
 }
-#app-mount .guilds_a4d4d9 > ul[role=tree] {
-  margin-bottom: var(--server-container);
-}
 #app-mount .scroller_fea3ef {
   background: var(--bg-main);
   padding-top: 0;
@@ -1620,16 +1617,20 @@ body,
 #app-mount .channelTextArea_a7d72e:focus-within {
   background: var(--bg-content-alt);
 }
-#app-mount .channelTextArea_a7d72e:focus-within .inner_d0696b::before {
+#app-mount .channelTextArea_a7d72e:focus-within .inner_bdf0de::before {
   height: 2px;
   background: var(--accent);
 }
-#app-mount .inner_d0696b::before {
+#app-mount .inner_bdf0de {
+  padding: 0;
+}
+#app-mount .inner_bdf0de::before {
   content: "";
   width: 100vw;
   height: 1px;
   background: var(--textbox-underline);
   bottom: 0;
+  top: unset;
   position: absolute;
   display: block;
 }
@@ -1653,34 +1654,40 @@ body,
 #app-mount .attachButton_f298d4:hover svg {
   background: var(--interactive-active);
 }
-#app-mount .scrollableContainer_d0696b {
+#app-mount .floatingBars_bdf0de {
+  display: none;
+}
+#app-mount .channelAppLauncher_df39bd {
+  display: var(--fluent-chatbox-app-button, none);
+}
+#app-mount .scrollableContainer_bdf0de {
   background: transparent;
   padding-right: 8px;
   border-radius: var(--rounded);
 }
-#app-mount .scrollableContainer_d0696b::-webkit-scrollbar {
+#app-mount .scrollableContainer_bdf0de::-webkit-scrollbar {
   display: none;
 }
-#app-mount .scrollableContainer_d0696b .button_dd4f85 {
+#app-mount .scrollableContainer_bdf0de .button_dd4f85 {
   padding: 0 10px;
   margin: 0;
   height: 100%;
 }
-#app-mount .scrollableContainer_d0696b .button_dd4f85 svg {
+#app-mount .scrollableContainer_bdf0de .button_dd4f85 svg {
   background: var(--interactive-normal);
 }
-#app-mount .scrollableContainer_d0696b .button_dd4f85 path {
+#app-mount .scrollableContainer_bdf0de .button_dd4f85 path {
   display: none;
 }
-#app-mount .scrollableContainer_d0696b .button_dd4f85:hover svg {
+#app-mount .scrollableContainer_bdf0de .button_dd4f85:hover svg {
   background: var(--interactive-active);
 }
-#app-mount .scrollableContainer_d0696b .contents_dd4f85 {
+#app-mount .scrollableContainer_bdf0de .contents_dd4f85 {
   margin: 0;
   padding: 0;
   height: 100%;
 }
-#app-mount .scrollableContainer_d0696b .buttonWrapper_f9af59 {
+#app-mount .scrollableContainer_bdf0de .buttonWrapper_f9af59 {
   cursor: var(--cursor);
 }
 #app-mount .typingDots_d7ebeb {
@@ -1710,6 +1717,10 @@ body,
 }
 #app-mount .sprite_d91a75:hover {
   background: var(--interactive-active);
+}
+
+.decorativeLayer_efde15.decorativeLayerActive_efde15 {
+  display: none;
 }
 
 #app-mount .typing__6fd1d {
