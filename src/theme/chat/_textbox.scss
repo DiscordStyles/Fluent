@@ -28,20 +28,24 @@
 		border-radius: var(--rounded);
 		&:focus-within {
 			background: var(--bg-content-alt);
-			.inner_d0696b::before {
+			.inner_bdf0de::before {
 				height: 2px;
 				background: var(--accent);
 			}
 		}
 	}
-	.inner_d0696b::before {
-		content: '';
-		width: 100vw;
-		height: 1px;
-		background: var(--textbox-underline);
-		bottom: 0;
-		position: absolute;
-		display: block;
+	.inner_bdf0de {
+		padding: 0;
+		&::before {
+			content: '';
+			width: 100vw;
+			height: 1px;
+			background: var(--textbox-underline);
+			bottom: 0;
+			top: unset;
+			position: absolute;
+			display: block;
+		}
 	}
 	.sansAttachButton_d0696b:has(.attachWrapper_f298d4) {
 		padding-left: 0;
@@ -62,7 +66,13 @@
 			background: var(--interactive-active);
 		}
 	}
-	.scrollableContainer_d0696b {
+	.floatingBars_bdf0de {
+		display: none;
+	}
+	.channelAppLauncher_df39bd {
+		display: var(--fluent-chatbox-app-button, none);
+	}
+	.scrollableContainer_bdf0de {
 		background: transparent;
 		padding-right: 8px;
 		border-radius: var(--rounded);
@@ -126,4 +136,9 @@
 			background: var(--interactive-active);
 		}
 	}
+}
+
+// Remove halloween stuff
+.decorativeLayer_efde15.decorativeLayerActive_efde15 {
+	display: none;
 }
