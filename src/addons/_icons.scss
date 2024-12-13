@@ -147,13 +147,11 @@
 	}
 
 	// User area mute mic
-	svg:has(path[d^=' M1025.219970703125,-87.2040023803711 C1025.219970703125,-87.2040023803711']),
-	svg:has(path[d^=' M681.219970703125,212.79600524902344 C681.219970703125,212.79600524902344']),
-	svg:has(path[d^=' M67.22000122070312,823.7960205078125 C67.22000122070312,823.7960205078125']) {
+	svg:has(g[transform='matrix(1,0,0,1,12,12)'] > path) {
 		mask-image: url(mono.$mic);
 	}
 	// User area deafen
-	svg:has(path[d^=' M-8,-0.2879999876022339 C-8,-4.705999851226807 -4.418000221252441']) {
+	svg:has(g[transform='matrix(1,0,0,1,12,12.288000106811523)'] > path) {
 		mask-image: url(mono.$speaker);
 	}
 	// User area settings
@@ -455,7 +453,7 @@ $icons: (
 	'account-switch-account': mono.$user-swap
 );
 
-.item_d90b3d:not(#account-status-picker, [role='menuitemradio'], .hideInteraction_d90b3d) {
+.item_d90b3d:not(#account-status-picker, [role='menuitemradio'], .hideInteraction_d90b3d, [id^='message-actions-add-reaction']) {
 	.icon_d90b3d {
 		display: none !important;
 	}

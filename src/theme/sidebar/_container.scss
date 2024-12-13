@@ -1,6 +1,6 @@
 #app-mount {
 	.sidebar_a4d4d9 {
-		width: var(--channels-width);
+		width: var(--channels-width) !important;
 		background: var(--bg-alt);
 		border-right: 1px solid var(--border-mid);
 		box-sizing: border-box;
