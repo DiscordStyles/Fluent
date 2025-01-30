@@ -1,24 +1,24 @@
 @use '../mixins';
 
 #app-mount {
-	.wrapper_d880dc {
+	.wrapper_cb9592 {
 		background: var(--bg-main);
 		border-bottom: 1px solid var(--border-mid);
-		&.minimum_d880dc {
+		&.minimum_cb9592 {
 			height: 300px;
 		}
 	}
-	.voiceCallWrapper_bae578 {
+	.voiceCallWrapper_a21736 {
 		padding-bottom: 0;
 		gap: 12px;
 	}
-	.participant_ea9cce {
+	.participant_c8dbe9 {
 		margin: 0;
 	}
 
-	.wrapper_b6e2f9 {
+	.wrapper__1405b {
 		gap: 8px;
-		.button_dd4f85 {
+		.button__201d5 {
 			@include mixins.btn;
 			@include mixins.btnSecondary;
 			height: 32px;
@@ -28,19 +28,19 @@
 				height: 18px;
 			}
 		}
-		button.red_ef18ee {
+		button.red_f1ceac {
 			@include mixins.btnDanger;
 		}
 	}
 
-	div.controlButton_b6e2f9 {
+	div.controlButton__1405b {
 		margin: 0;
 	}
-	button.controlButton_b6e2f9 {
+	button.controlButton__1405b {
 		@include mixins.btnSecondary;
 	}
 
-	.contextMenuContainer_ef18ee {
+	.contextMenuContainer_f1ceac {
 		display: flex;
 		overflow: hidden;
 		foreignObject {
@@ -55,7 +55,7 @@
 			width: 44px;
 		}
 	}
-	.contextMenuNub_ef18ee {
+	.contextMenuNub_f1ceac {
 		@include mixins.btn;
 		@include mixins.btnSecondary;
 		height: 32px;
@@ -69,7 +69,7 @@
 	}
 
 	// Video
-	.video_d880dc .transparent_fc4f04 {
+	.video_cb9592 .transparent__9293f {
 		background: transparent;
 		border-bottom: none;
 	}

@@ -1,13 +1,13 @@
 #app-mount {
-	.wrapper_bc7085 {
+	.wrapper__48112 {
 		width: 100%;
 	}
-	.closedFolderIconWrapper_bc7085 {
+	.closedFolderIconWrapper__48112 {
 		padding: 6px;
 		position: relative;
 		z-index: 1;
 	}
-	.folderIconWrapper_bc7085 {
+	.folderIconWrapper__48112 {
 		border-radius: var(--rounded);
 		transition: box-shadow 0.15s var(--transition);
 		&[style^='background-color'] {
@@ -17,21 +17,21 @@
 			}
 		}
 	}
-	.expandedFolderBackground_bc7085 {
+	.expandedFolderBackground__48112 {
 		border-radius: var(--rounded);
 		height: 100%;
 		width: var(--server-size);
 		left: 50%;
 		transform: translateX(-50%);
-		&:not(.collapsed_bc7085) {
+		&:not(.collapsed__48112) {
 			background: var(--server-bg);
 		}
 	}
-	.folder_bc7085 {
+	.folder__48112 {
 		background: transparent;
 		cursor: var(--cursor);
 	}
-	.guildIcon_bc7085 {
+	.guildIcon__48112 {
 		border-radius: var(--server-folder-icon-shape);
 		width: calc(var(--server-icon-size) / 1.8);
 		height: calc(var(--server-icon-size) / 1.8);

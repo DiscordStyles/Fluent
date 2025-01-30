@@ -1,11 +1,11 @@
 @use '../mixins';
 
-#app-mount .member_a31c43 {
+#app-mount .member__5d473 {
 	max-width: none;
 	margin: 0;
 	padding: 2px 0;
 	background: transparent;
-	.layout_d808b0 {
+	.layout__91a9d {
 		height: 48px;
 		padding: 0 16px;
 		cursor: var(--cursor);
@@ -24,14 +24,14 @@
 		}
 	}
 
-	.name_d808b0 {
+	.name__91a9d {
 		@include mixins.text;
 	}
 
-	&:hover .layout_d808b0 {
+	&:hover .layout__91a9d {
 		background: var(--bg-interactive-high);
 	}
-	&.selected_d808b0 .layout_d808b0 {
+	&.selected__91a9d .layout__91a9d {
 		background: var(--bg-interactive-high);
 		&::before {
 			height: var(--pill-height);

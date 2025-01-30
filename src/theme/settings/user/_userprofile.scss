@@ -8,26 +8,26 @@
 	.baseLayoutProfileThemes-1Jj-oN {
 		flex-direction: column;
 	}
-	.customizationSection_b3a5c2 {
+	.customizationSection_ace4f5 {
 		@include mixins.card;
 		justify-content: space-between;
-		.description_b89ec7 {
+		.description_ddd181 {
 			display: none;
 		}
 		&:last-child {
 			flex-direction: column;
 			align-items: flex-start;
 		}
-		&.withDivider_b3a5c2:not(.section_c95253) .buttonsContainer_a611c9 {
+		&.withDivider_ace4f5:not(.section__999b5) .buttonsContainer_ffefd9 {
 			flex-direction: row-reverse;
 			gap: 8px;
 		}
 	}
-	.title_b3a5c2 {
+	.title_ace4f5 {
 		margin: 0;
 	}
 
-	.tryItOutSection_eb2d2c {
+	.tryItOutSection__9d295 {
 		display: none;
 	}
 }

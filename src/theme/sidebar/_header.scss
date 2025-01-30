@@ -1,17 +1,17 @@
 @use '../mixins';
 
 #app-mount {
-	.sidebar_a4d4d9 .content_eed6a8 > div[style='height: 84px;'],
-	.sidebar_a4d4d9 .content_eed6a8 > div[style='height: 16px;'] {
+	.sidebar_c48ade .content__99f8c > div[style='height: 84px;'],
+	.sidebar_c48ade .content__99f8c > div[style='height: 16px;'] {
 		display: none;
 	}
 
-	.container_fd6364 {
+	.container_f37cb1 {
 		display: flex;
 		flex-direction: column-reverse;
 	}
 
-	.header_fd6364 {
+	.header_f37cb1 {
 		@include mixins.btn;
 		@include mixins.btnSecondary;
 		margin: 8px;
@@ -19,17 +19,17 @@
 		height: 42px;
 		transition: none;
 
-		.headerContent_fd6364 {
+		.headerContent_f37cb1 {
 			flex: 1;
 		}
-		.headerChildren_fd6364 {
+		.headerChildren_f37cb1 {
 			display: flex;
 		}
 
-		.guildIconContainer_ed9816 {
+		.guildIconContainer__85d16 {
 			display: none;
 		}
-		.name_fd6364 {
+		.name_f37cb1 {
 			font-weight: var(--font-weight-normal);
 			max-width: calc(var(--channels-width) - 64px);
 		}
@@ -40,7 +40,7 @@
 	}
 
 	// Banner
-	.animatedContainer_fd6364 {
+	.animatedContainer_f37cb1 {
 		background: transparent;
 		height: var(--banner-height);
 		box-shadow: none;
@@ -50,7 +50,7 @@
 		opacity: 1 !important;
 		border-bottom: 1px solid var(--border-mid);
 	}
-	.bannerImage_fd6364 {
+	.bannerImage_f37cb1 {
 		overflow: hidden;
 		width: 100%;
 		transform: none !important;
@@ -66,11 +66,11 @@
 	}
 
 	// Public tag
-	.communityInfoContainer_fd6364 {
+	.communityInfoContainer_f37cb1 {
 		margin-top: 75px;
 		left: 0;
 	}
-	.communityInfoPill_fd6364 {
+	.communityInfoPill_f37cb1 {
 		border-radius: var(--rounded);
 		background: var(--bg-main);
 	}

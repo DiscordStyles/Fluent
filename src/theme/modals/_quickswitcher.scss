@@ -1,18 +1,18 @@
 @use '../mixins';
 
 #app-mount {
-	.container_f4e139 {
+	.container_ac6cb0 {
 		max-height: 500px;
 		height: 50vh;
 	}
-	.quickswitcher_f4e139 {
+	.quickswitcher_ac6cb0 {
 		height: 100%;
 		padding: 16px 16px 0;
 		border-radius: var(--rounded);
 		box-shadow: none;
 		background: var(--bg-main);
 	}
-	.scroller_f4e139 {
+	.scroller_ac6cb0 {
 		margin: 0 -12px 0 0;
 		max-height: none;
 		background: transparent;
@@ -21,7 +21,7 @@
 		}
 	}
 
-	.input_f4e139 {
+	.input_ac6cb0 {
 		background: var(--textbox-bg);
 		border: 1px solid var(--textbox-border);
 		height: 32px;
@@ -50,20 +50,20 @@
 		}
 	}
 
-	div:not([class]) > .content_e3c1c6 {
+	div:not([class]) > .content__71961 {
 		height: auto;
 		line-height: normal;
 		padding: 12px 12px 6px;
 	}
-	.header_e3c1c6 {
+	.header__71961 {
 		margin: 0;
 		@include mixins.subText;
 		text-transform: none;
 	}
 
-	.result_e3c1c6 {
+	.result__71961 {
 		border-radius: var(--rounded);
-		.content_e3c1c6 {
+		.content__71961 {
 			position: relative;
 			padding: 0 16px;
 			cursor: var(--cursor);
@@ -83,7 +83,7 @@
 		}
 		&[aria-selected='true'] {
 			background: var(--bg-interactive);
-			.content_e3c1c6 {
+			.content__71961 {
 				&::before {
 					height: var(--pill-height);
 					opacity: 1;

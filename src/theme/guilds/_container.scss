@@ -1,27 +1,27 @@
 #app-mount {
-	.guilds_a4d4d9 {
+	.guilds_c48ade {
 		width: var(--server-container);
 		background: transparent;
-		&.hidden_fea3ef {
+		&.hidden_ef3116 {
 			display: none;
-			& + .base_a4d4d9 {
+			& + .base_c48ade {
 				border: none;
 			}
 		}
 	}
-	.scroller_fea3ef {
+	.scroller_ef3116 {
 		background: var(--bg-main);
 		padding-top: 0;
-		.tutorialContainer_f9623d + div:not([class]) {
+		.tutorialContainer__1f388 + div:not([class]) {
 			height: var(--server-size) !important;
 			margin-bottom: 4px;
 		}
 	}
-	.gradient_d71945 {
+	.gradient_f8ec41 {
 		background: linear-gradient(to top, var(--bg-main) 0, rgba(0, 0, 0, 0) 100%);
 		top: -8px;
 	}
-	.footer_d71945 {
+	.footer__214dc {
 		background: transparent;
 	}
 }

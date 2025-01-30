@@ -5,7 +5,7 @@
 	background: var(--bg-content);
 	border-radius: var(--rounded);
 	overflow: hidden;
-	.item_eb92a8 {
+	.item__001a7 {
 		background: transparent;
 		margin: 0;
 		border-radius: 0;
@@ -15,7 +15,7 @@
 		&:hover {
 			background: var(--bg-content-alt);
 		}
-		&[aria-checked='true'] .radioBar_eb92a8 > div:first-child {
+		&[aria-checked='true'] .radioBar__001a7 > div:first-child {
 			background: var(--radio-bar-accent-color, var(--accent-solid));
 			border-color: var(--radio-bar-accent-color, var(--accent-solid));
 			&::before {
@@ -23,7 +23,7 @@
 			}
 		}
 	}
-	.radioBar_eb92a8 {
+	.radioBar__001a7 {
 		border-radius: 0;
 		padding: 16px !important;
 		display: flex;

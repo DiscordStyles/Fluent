@@ -2,7 +2,7 @@
 @use '../mixins';
 
 #app-mount {
-	.guilds_a4d4d9 {
+	.guilds_c48ade {
 		[class*='pill'] {
 			width: 4px;
 			margin-left: 0;
@@ -39,7 +39,7 @@
 			}
 		}
 	}
-	.listItem_c96c45 {
+	.listItem__650eb {
 		margin: 0 0 4px;
 		width: var(--server-container);
 		position: relative;
@@ -49,20 +49,20 @@
 			box-sizing: border-box;
 		}
 	}
-	.wrapper_f90abb {
+	.wrapper__6e9f8 {
 		border-radius: var(--rounded);
 		cursor: var(--cursor);
 		width: var(--server-size);
 		height: var(--server-size);
 	}
-	.wrapper_c5f96a {
+	.wrapper_cc5dd2 {
 		cursor: var(--cursor);
 	}
-	.wrapper_f90abb {
+	.wrapper__6e9f8 {
 		position: relative;
 		transition: box-shadow 0.15s var(--transition);
 		&:hover,
-		&.selected_f90abb {
+		&.selected__6e9f8 {
 			box-shadow: var(--server-hover-selected);
 		}
 	}
@@ -78,8 +78,8 @@
 		}
 	}
 
-	.icon_f90abb,
-	.childWrapperNoHoverBg_f90abb {
+	.icon__6e9f8,
+	.childWrapperNoHoverBg__6e9f8 {
 		width: var(--server-icon-size);
 		height: var(--server-icon-size);
 		border-radius: var(--server-icon-shape);
@@ -87,7 +87,7 @@
 		z-index: 2;
 	}
 
-	.wrapper_f90abb svg {
+	.wrapper__6e9f8 svg {
 		width: 75%;
 		height: 75%;
 		mask: url(mono.$home) center/cover;
@@ -97,23 +97,23 @@
 		}
 	}
 
-	.childWrapperNoHoverBg_f90abb {
+	.childWrapperNoHoverBg__6e9f8 {
 		background: transparent;
 		font-weight: var(--font-weight-semibold);
 	}
-	.wrapper_f90abb.selected_ae80f7 .childWrapperNoHoverBg_f90abb {
+	.wrapper__6e9f8.selected_ae80f7 .childWrapperNoHoverBg__6e9f8 {
 		background: transparent;
 		color: var(--text-primary);
 	}
 
-	.circleIconButton_db6521 {
+	.circleIconButton__5bc7e {
 		background: transparent;
-		&.selected_db6521 {
+		&.selected__5bc7e {
 			background: transparent;
 		}
 	}
 
-	.blobContainer_a5ad63:active {
+	.blobContainer_e5445c:active {
 		transform: none;
 	}
 }

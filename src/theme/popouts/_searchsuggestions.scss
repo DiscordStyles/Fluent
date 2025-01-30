@@ -1,7 +1,7 @@
 @use '../mixins';
 
 #app-mount {
-	.container_eedf95 {
+	.container__55c99 {
 		border: 1px solid var(--border);
 		background: var(--bg-menu);
 		border-radius: var(--rounded);
@@ -12,7 +12,7 @@
 			display: none;
 		}
 	}
-	.option_b0286e {
+	.option__56fec {
 		@include mixins.text;
 		height: auto;
 		border-radius: var(--rounded);
@@ -27,29 +27,29 @@
 			background: var(--bg-menu-item);
 		}
 	}
-	.plusIcon_b0286e {
+	.plusIcon__56fec {
 		display: none;
 	}
 
-	.header_b0286e {
+	.header__56fec {
 		padding: 8px 12px;
 	}
-	.resultsGroup_b0286e {
+	.resultsGroup__56fec {
 		padding: 4px;
 		margin: 0;
 		&::before {
 			content: none;
 		}
-		& ~ .resultsGroup_b0286e {
+		& ~ .resultsGroup__56fec {
 			padding-top: 0;
 		}
 	}
-	.filter_b0286e,
-	.displayedNick_b0286e {
+	.filter__56fec,
+	.displayedNick__56fec {
 		color: var(--text-primary);
 	}
-	.answer_b0286e,
-	.displayUsername_b0286e {
+	.answer__56fec,
+	.displayUsername__56fec {
 		color: var(--text-tertiary);
 	}
 }

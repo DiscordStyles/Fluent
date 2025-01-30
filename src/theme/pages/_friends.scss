@@ -1,20 +1,20 @@
 @use '../mixins';
 
 #app-mount {
-	.peopleColumn_c2739c {
+	.peopleColumn__133bf {
 		position: relative;
 	}
-	.peopleList_e0840f {
+	.peopleList__5ec2f {
 		padding-bottom: calc(var(--bottombar-height) * 1.5);
 	}
-	.container_c2739c {
+	.container__133bf {
 		background: var(--bg-alt);
 	}
-	.tabBody_c2739c::before {
+	.tabBody__133bf::before {
 		content: none;
 	}
 
-	.searchBar_e0840f {
+	.searchBar__5ec2f {
 		margin: 0;
 		position: absolute;
 		bottom: 12px;
@@ -57,10 +57,10 @@
 		}
 	}
 
-	.title_a1cafe {
+	.title__1472a {
 		margin: 16px;
 	}
-	.peopleListItem_d51464 {
+	.peopleListItem_cc6179 {
 		height: auto !important;
 		margin: 0 4px 4px 16px;
 		padding: 8px 16px;
@@ -85,7 +85,7 @@
 			z-index: 1;
 		}
 
-		.actionButton_e01b91 {
+		.actionButton_f8fa06 {
 			@include mixins.btn;
 			@include mixins.btnSecondary;
 			width: auto;
@@ -95,7 +95,7 @@
 		&:hover {
 			background: var(--bg-interactive-high);
 		}
-		&.active_d51464 {
+		&.active_cc6179 {
 			background: var(--bg-interactive-high);
 			&::before {
 				height: var(--pill-height);
@@ -105,7 +105,7 @@
 	}
 
 	// Add friend
-	.addFriendInputWrapper_de812f {
+	.addFriendInputWrapper__72ba7 {
 		padding: 0;
 		border: none;
 		background: transparent;

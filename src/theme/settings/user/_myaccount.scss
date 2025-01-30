@@ -1,21 +1,21 @@
 @use '../../assets/mono';
 @use '../../mixins';
 
-#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 {
-	.accountProfileCard_b69b77 {
+#app-mount .layer__960e4 ~ .layer__960e4 {
+	.accountProfileCard__1fed1 {
 		background: transparent;
 	}
 	.banner-2boKnS,
 	.bannerSVGWrapper_b32cc2 {
 		display: none;
 	}
-	.userInfo_b69b77 {
+	.userInfo__1fed1 {
 		padding: 18px;
 		margin: 0 0 4px 0;
 		height: auto;
 		@include mixins.card;
 
-		.avatar_b69b77 {
+		.avatar__1fed1 {
 			width: 22px !important;
 			height: 22px !important;
 			background: var(--text-primary);
@@ -79,15 +79,15 @@
 			background: var(--bg-content-alt) !important;
 		}
 	}
-	.background_b69b77 {
+	.background__1fed1 {
 		margin: 0;
 		background: transparent;
 		padding: 0;
 	}
-	.fieldList_b69b77 {
+	.fieldList__1fed1 {
 		background: transparent;
 		border-radius: 0;
-		.field_b69b77 {
+		.field__1fed1 {
 			&:first-child::before,
 			&:nth-child(2)::before {
 				mask-image: url(mono.$user);
@@ -100,7 +100,7 @@
 			}
 		}
 	}
-	.field_b69b77 {
+	.field__1fed1 {
 		@include mixins.card;
 		.sizeMin-1mJd1x {
 			margin-left: 8px;
@@ -110,13 +110,13 @@
 				text-decoration: underline;
 			}
 		}
-		.fieldButtonList_b69b77 {
+		.fieldButtonList__1fed1 {
 			gap: 18px;
 			button {
 				margin: 0;
 			}
 		}
-		.usernameInnerRow_b69b77 {
+		.usernameInnerRow__1fed1 {
 			display: flex;
 			align-items: center;
 		}
@@ -142,23 +142,23 @@
 			margin-top: 4px;
 		}
 	}
-	.constrainedRow_b69b77 {
+	.constrainedRow__1fed1 {
 		margin: 0;
 		.size16-rrJ6ag {
 			font-size: var(--font-size-xs);
 			color: var(--text-muted);
 		}
 	}
-	.fieldTitle_b69b77 {
+	.fieldTitle__1fed1 {
 		@include mixins.cardTitle;
 	}
 
-	.userSettingsSecurity_ad4a7c {
+	.userSettingsSecurity__2666b {
 		.h1-34Txb0 {
 			@include mixins.subTitle;
 		}
 
-		& > .children_a6ae9b {
+		& > .children__7bffb {
 			// Password and authentication
 			& > div:first-child {
 				@include mixins.card;
@@ -181,8 +181,8 @@
 				}
 			}
 			// 2FA Enabled
-			& > div.flex_dc333f > div > div {
-				& > .h5_c46f6a:first-child {
+			& > div.flex__7c0ba > div > div {
+				& > .h5_b717a1:first-child {
 					@include mixins.subTitle;
 					color: transparent;
 					&::before {
@@ -193,7 +193,7 @@
 						display: none;
 					}
 				}
-				& > .modeDefault_b89ec7 {
+				& > .modeDefault_ddd181 {
 					@include mixins.card(column, flex-start);
 					@include mixins.cardDesc;
 					padding-left: 60px !important;
@@ -231,15 +231,15 @@
 						}
 					}
 				}
-				& > .marginTop40_f7730b {
+				& > .marginTop40_fd297e {
 					margin-top: 0;
-					.sectionTitle_a6ae9b {
+					.sectionTitle__7bffb {
 						display: none;
 					}
-					.marginBottom8_f7730b {
+					.marginBottom8_fd297e {
 						margin: 0;
 					}
-					.children_a6ae9b {
+					.children__7bffb {
 						@include mixins.card(column, flex-start);
 						padding-left: 60px;
 						&::before {
@@ -256,7 +256,7 @@
 							@include mixins.cardTitle;
 							margin-bottom: 4px;
 						}
-						.flex_dc333f {
+						.flex__7c0ba {
 							padding: 18px;
 							border-top: 1px solid var(--border);
 							margin: 16px -60px -18px;
@@ -274,8 +274,8 @@
 		}
 
 		// Account removal
-		& ~ .marginTop40_f7730b {
-			.h5_c46f6a {
+		& ~ .marginTop40_fd297e {
+			.h5_b717a1 {
 				@include mixins.subTitle;
 				color: transparent;
 				user-select: none;
@@ -286,7 +286,7 @@
 					color: var(--text-primary);
 				}
 			}
-			.children_a6ae9b {
+			.children__7bffb {
 				@include mixins.card;
 				&::before {
 					content: '';
@@ -294,7 +294,7 @@
 					mask-image: url(mono.$user-delete);
 				}
 			}
-			.description_b89ec7 {
+			.description_ddd181 {
 				margin-bottom: 0;
 				flex: 1;
 				@include mixins.cardDesc;
@@ -303,7 +303,7 @@
 					@include mixins.cardTitle;
 				}
 			}
-			.buttonContainer_adabdf {
+			.buttonContainer_d286c5 {
 				flex-direction: row-reverse;
 				gap: 16px;
 				button {

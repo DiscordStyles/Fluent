@@ -1,6 +1,6 @@
 @use '../../mixins';
 
-#app-mount .layer_d4b6c5 ~ .layer_d4b6c5 {
+#app-mount .layer__960e4 ~ .layer__960e4 {
 	.accountList-305sx3 {
 		@include mixins.card(column, stretch);
 		margin-bottom: 4px;
@@ -24,11 +24,11 @@
 		margin: 0;
 	}
 
-	.connectionList_e2a436 {
+	.connectionList_c7f964 {
 		margin-top: 40px;
 		gap: 4px;
 	}
-	.connection_e2a436 {
+	.connection_c7f964 {
 		background: var(--bg-content);
 		border-radius: var(--rounded);
 		border: 1px solid var(--border);
@@ -39,15 +39,15 @@
 			margin: 0;
 		}
 	}
-	.connectionHeader_e2a436 {
+	.connectionHeader_c7f964 {
 		padding: 16px;
 		background: transparent;
 	}
-	.connectionOptionsWrapper_e2a436 {
+	.connectionOptionsWrapper_c7f964 {
 		padding: 16px;
 		border-top: 1px solid var(--border);
 	}
-	.connectionOptions_e2a436 {
+	.connectionOptions_c7f964 {
 		display: flex;
 		gap: 16px;
 	}
@@ -55,7 +55,7 @@
 		@include mixins.cardDesc;
 		margin: 0;
 	}
-	.integrationsWrapper_e2a436 {
+	.integrationsWrapper_c7f964 {
 		padding: 0;
 		margin: 0 16px 16px;
 		border: 1px solid var(--border);
@@ -66,7 +66,7 @@
 			display: none;
 		}
 	}
-	.integration_e2a436 {
+	.integration_c7f964 {
 		margin: 0;
 		border-radius: 0;
 		background: transparent;

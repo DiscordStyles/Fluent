@@ -1,7 +1,7 @@
 @use '../assets/mono';
 
 #app-mount {
-	.form_a7d72e {
+	.form_f75fb0 {
 		margin: 0 12px 12px 0;
 		padding: 8px 8px 8px 14px;
 		background: var(--bg-main);
@@ -18,23 +18,23 @@
 		}
 	}
 	.channelTextAreaContainer_d0696b,
-	.channelBottomBarArea_a7d72e {
+	.channelBottomBarArea_f75fb0 {
 		width: 100%;
 	}
-	.channelTextArea_a7d72e {
+	.channelTextArea_f75fb0 {
 		margin: 0;
 		background: var(--bg-alt);
 		position: relative;
 		border-radius: var(--rounded);
 		&:focus-within {
 			background: var(--bg-content-alt);
-			.inner_bdf0de::before {
+			.inner__74017::before {
 				height: 2px;
 				background: var(--accent);
 			}
 		}
 	}
-	.inner_bdf0de {
+	.inner__74017 {
 		padding: 0;
 		&::before {
 			content: '';
@@ -47,10 +47,10 @@
 			display: block;
 		}
 	}
-	.sansAttachButton_d0696b:has(.attachWrapper_f298d4) {
+	.sansAttachButton__74017:has(.attachWrapper__0923f) {
 		padding-left: 0;
 	}
-	.attachButton_f298d4 {
+	.attachButton__0923f {
 		height: 44px !important;
 		width: 46px !important;
 		svg {
@@ -66,13 +66,13 @@
 			background: var(--interactive-active);
 		}
 	}
-	.floatingBars_bdf0de {
+	.floatingBars__74017 {
 		display: none;
 	}
-	.channelAppLauncher_df39bd {
+	.channelAppLauncher_e6e74f {
 		display: var(--fluent-chatbox-app-button, none);
 	}
-	.scrollableContainer_bdf0de {
+	.scrollableContainer__74017 {
 		background: transparent;
 		padding-right: 8px;
 		border-radius: var(--rounded);
@@ -81,7 +81,7 @@
 			display: none;
 		}
 
-		.button_dd4f85 {
+		.button__201d5 {
 			padding: 0 10px;
 			margin: 0;
 			height: 100%;
@@ -95,17 +95,17 @@
 				background: var(--interactive-active);
 			}
 		}
-		.contents_dd4f85 {
+		.contents__201d5 {
 			margin: 0;
 			padding: 0;
 			height: 100%;
 		}
-		.buttonWrapper_f9af59 {
+		.buttonWrapper__24af7 {
 			cursor: var(--cursor);
 		}
 	}
 
-	.typingDots_d7ebeb {
+	.typingDots_b88801 {
 		filter: drop-shadow(0 3px 5px hsl(0 0% 0% / 0.5));
 	}
 
@@ -124,7 +124,7 @@
 		mask: url(mono.$sticker) center/28px;
 	}
 	// Emoji
-	.sprite_d91a75 {
+	.sprite__04eed {
 		width: 26px;
 		height: 26px;
 		mask: url(mono.$emoji) center/cover;
@@ -139,6 +139,6 @@
 }
 
 // Remove halloween stuff
-.decorativeLayer_efde15.decorativeLayerActive_efde15 {
+.decorativeLayer_eaf2fb.decorativeLayerActive_eaf2fb {
 	display: none;
 }
